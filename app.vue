@@ -1,6 +1,9 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <Navbar />
+    <NuxtPage />
+    <Footer />
   </div>
 </template>
+
+<style scoped></style>

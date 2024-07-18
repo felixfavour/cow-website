@@ -1,0 +1,88 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,100..900&family=Inter:wght@400..700&display=swap");
+
+:root {
+  --primary-color: #A855F7;
+  --accent-color: #FF8980;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.emphasis-text {
+  font-family: "Fraunces", cursive;
+  font-style: italic;
+  background: -webkit-linear-gradient(left, #8946C9, #442263);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.emphasis-text.text-white {
+  background: -webkit-linear-gradient(left, #ffffff, #d3a4ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bricolage Grotesque", sans-serif;
+
+}
+
+.primary-btn {
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  height: 45px;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.primary-btn.taller {
+  height: 50px;
+}
+
+.ghost-btn {
+  border-radius: 12px;
+  color: black;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* LAYOUT SYSTEM */
+.section > .inner {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* ANIMATIONS */
+@keyframes moving-bg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.moving-bg-anim {
+  animation: moving-bg 10s ease infinite;
+  -webkit-animation: moving-bg 10s ease infinite;
+}
