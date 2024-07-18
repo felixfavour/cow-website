@@ -158,8 +158,7 @@ useHead({
     },
     {
       name: "og:image",
-      content:
-        "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow-og.webp?alt=media&token=73072d61-418e-4eb2-8739-5f45ca9273a0",
+      content: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
     },
   ],
 })
