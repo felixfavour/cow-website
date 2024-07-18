@@ -2,7 +2,7 @@
   <div class="section footer py-[5%]">
     <div class="inner">
       <div class="row-one flex justify-between mb-[5%]">
-        <div class="col-ctn w-[30%]">
+        <div class="col-ctn w-[35%]">
           <div class="logo-ctn flex items-center gap-3 text-xl w-[250px]">
             <Logo />
             <h6 class="font-bold">Cloud of Worship</h6>

@@ -1,10 +1,10 @@
 <template>
-  <div class="section point-maker py-[5%]">
+  <div class="section point-maker py-[3%]">
     <div
       class="inner flex items-center justify-between gap-10"
       :class="{ 'flex-row-reverse': !isTextStart }"
     >
-      <div class="col flex flex-col gap-5 w-[45%] justify-start">
+      <div class="col flex flex-col gap-5 w-[40%] justify-start">
         <slot name="texts" />
       </div>
       <div class="col img-ctn min-h-[620px] w-[45%] moving-bg-anim">
@@ -29,5 +29,7 @@ const props = defineProps({
   );
   border-radius: 32px;
   background-size: 150%;
+  display: grid;
+  place-items: center;
 }
 </style>

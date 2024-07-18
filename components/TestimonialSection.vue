@@ -1,17 +1,19 @@
 <template>
-  <div class="testimonial-bg section min-h-[400px]">
+  <div class="testimonial-bg section min-h-[300px]">
     <div class="testimonial-bg-overlay"></div>
-    <div class="inner flex py-[5%] text-white relative h-[100%] inset-0">
+    <div
+      class="inner flex py-[5%] justify-between text-white relative h-[100%] inset-0"
+    >
       <h4 class="text-4xl w-[65%] font-bold">
         “CoW felt so easy to use, we love it and we would definitely recommend
         to all our churches. You too try it out!”
       </h4>
-      <div class="user-ctn flex place-items-end pt-[15%]">
+      <div class="user-ctn flex place-items-end pt-[5%]">
         <div class="user flex items-center gap-3 bottom-0">
           <img
             src="~/assets/images/user.png"
             alt="Yinka Adenikinju"
-            class="w-[70px] h-[70px] object-cover rounded-full"
+            class="w-[70px] h-[70px] object-cover rounded-full border-4 border-purple-500"
           />
           <div class="texts">
             <div class="name font-semibold text-lg mb-2">Yinka Adenikinju</div>

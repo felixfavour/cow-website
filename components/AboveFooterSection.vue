@@ -3,7 +3,7 @@
     <div
       class="inner flex justify-between items-center p-[5%] rounded-[32px] bg-purple-100 overflow-hidden"
     >
-      <div class="texts w-[45%]">
+      <div class="texts w-[40%]">
         <h3 class="text-4xl font-bold">
           Cloud of Worship is your church’s literal
           <span class="emphasis-text">powerpoint</span>.
@@ -37,16 +37,54 @@
           </div>
         </div>
       </div>
-      <div class="image-carousel-ctn w-[45%]">
+      <div class="image-carousel-ctn w-[55%]">
         <div class="image-carousel flex gap-4 relative">
-          <img src="~/assets/images/dummy-img.png" alt="Carousel Image" />
-          <img
-            src="~/assets/images/dummy-img.png"
-            alt="Carousel Image"
-            class="opacity-30"
-          />
+          <div
+            :class="{
+              'image-one': activeImage === 0,
+              'image-two': activeImage === 1,
+              'image-three': activeImage === 2,
+            }"
+            class="rounded-3xl border-4 border-purple-200 shadow-2xl h-[350px] min-w-[530px] object-cover transition-all"
+          ></div>
+          <div
+            :class="{
+              'image-two': activeImage === 0,
+              'image-three': activeImage === 1,
+              'image-one': activeImage === 2,
+            }"
+            class="rounded-3xl border-4 opacity-30 scale-95 border-purple-200 shadow-2xl h-[350px] min-w-[530px] object-cover transition-all"
+          ></div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+const activeImage = ref(0)
+
+onMounted(() => {
+  setInterval(() => {
+    activeImage.value = (activeImage.value + 1) % 3
+  }, 2000)
+})
+</script>
+
+<style scoped>
+.image-one {
+  background: url("~/assets/images/song.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-two {
+  background: url("~/assets/images/text.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-three {
+  background: url("~/assets/images/bible.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+</style>
