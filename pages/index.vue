@@ -33,7 +33,7 @@
         ></div>
         <div class="live-slide absolute right-[4%] -bottom-[0%]">
           <video
-            class="border-8 border-b-0 border-gray-300 rounded-t-[24px] w-[400px]"
+            class="border-8 border-b-0 bg-gray-300 border-gray-300 rounded-t-[24px] w-[400px]"
             src="~/assets/videos/live-slide.mp4"
             autoplay
             muted
