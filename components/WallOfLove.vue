@@ -2,8 +2,10 @@
   <div class="testimonial-bg section min-h-[400px]">
     <div class="testimonial-bg-overlay"></div>
 
-    <div class="inner py-[5%] relative h-[100%] inset-0">
-      <h3 class="text-5xl w-[65%] font-bold text-white mb-[5%]">
+    <div class="inner py-[10%] md:py-[5%] relative h-[100%] inset-0">
+      <h3
+        class="text-3xl md:text-5xl w-[65%] font-bold text-white mb-[7.5%] md:mb-[5%]"
+      >
         Wall of
         <span class="emphasis-text text-white">love</span>.
       </h3>

@@ -2,22 +2,28 @@
   <div class="testimonial-bg section min-h-[300px]">
     <div class="testimonial-bg-overlay"></div>
     <div
-      class="inner flex py-[5%] justify-between text-white relative h-[100%] inset-0"
+      class="inner flex-col lg:flex lg:flex-row py-[10%] md:py-[5%] justify-between text-white relative h-[100%] inset-0"
     >
-      <h4 class="text-4xl w-[65%] font-bold">
+      <h4
+        class="text-2xl md:text-3xl 2xl:text-4xl text-center lg:text-left w-[100%] xl:w-[60%] 2xl:w-[65%] font-bold"
+      >
         “CoW felt so easy to use, we love it and we would definitely recommend
         to all our churches. You too try it out!”
       </h4>
-      <div class="user-ctn flex place-items-end pt-[5%]">
+      <div
+        class="user-ctn flex justify-center lg:justify-normal place-items-end pt-[10%] md:pt-[5%]"
+      >
         <div class="user flex items-center gap-3 bottom-0">
           <img
             src="~/assets/images/user.png"
             alt="Yinka Adenikinju"
-            class="w-[70px] h-[70px] object-cover rounded-full border-4 border-purple-500"
+            class="w-[50px] h-[50px] md:w-[70px] md:h-[70px] object-cover rounded-full border-2 md:border-4 border-purple-500"
           />
           <div class="texts">
-            <div class="name font-semibold text-lg mb-2">Yinka Adenikinju</div>
-            <div class="folio text-sm text-slate-300">
+            <div class="name font-semibold text-md md:text-lg mb-1 md:mb-2">
+              Yinka Adenikinju
+            </div>
+            <div class="folio text-xs md:text-sm text-slate-300">
               Head, Media Department, <br />
               Foursquare Gospel Church, Salvation Chapel
             </div>

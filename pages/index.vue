@@ -1,20 +1,24 @@
 <template>
   <div class="section page">
     <!-- HERO SECTION -->
-    <div class="inner pt-[3%]">
-      <div class="texts max-w-[1000px] text-center mx-auto flex flex-col gap-6">
-        <h1 class="text-7xl font-bold">
+    <div class="inner pt-[10%] md:pt-[3%]">
+      <div
+        class="texts max-w-[900px] 2xl:max-w-[1000px] text-center mx-auto flex flex-col gap-4 2xl:gap-6"
+      >
+        <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
           Craft
           <span class="emphasis-text">the best</span>
           on-screen experience for your church.
         </h1>
-        <p class="description text-lg font-medium w-[65%] mx-auto">
+        <p
+          class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[65%] mx-auto"
+        >
           A free browser-based presentation software to display song lyrics,
           scriptures, videos and fully customizable slides for your growing
           church.
         </p>
       </div>
-      <div class="actions mt-[3%] text-center">
+      <div class="actions mt-[7.5%] md:mt-[2%] text-center">
         <a
           href="https://app.cloudofworship.com"
           class="primary-btn taller w-[200px] mx-auto"
@@ -26,20 +30,20 @@
         </div>
       </div>
       <div
-        class="hero-media h-[650px] flex justify-center items-end relative overflow-hidden"
+        class="hero-media h-[295px] md:h-[40px] lg:h-[650px] flex justify-center items-end relative overflow-hidden"
       >
         <div
-          class="main-hero-img pt-[5%] border-8 border-b-0 border-gray-100 rounded-t-[32px] h-[600px] w-[1050px]"
+          class="main-hero-img pt-[5%] border-4 md:border-8 border-b-0 border-gray-100 rounded-t-[16px] md:rounded-t-[32px] h-[220px] md:h-[400px] lg:h-[600px] w-[100%] md:w-[1050px]"
         ></div>
-        <div class="live-slide absolute right-[4%] -bottom-[0%]">
+        <div class="live-slide absolute right-[1%] -bottom-[0%]">
           <video
-            class="border-8 border-b-0 bg-gray-300 border-gray-300 rounded-t-[24px] w-[400px]"
+            class="border-4 border-b-0 bg-gray-300 border-gray-300 rounded-t-[16px] w-[200px]"
             src="~/assets/videos/live-slide.mp4"
             autoplay
             muted
             loop
           />
-          <LiveSlideIndicator visible class="top-6 right-8" />
+          <LiveSlideIndicator visible class="top-3 right-4 scale-75" />
         </div>
       </div>
     </div>
@@ -53,12 +57,12 @@
     <!-- POINT MAKER SECTION ONE -->
     <PointMaker is-text-start class="mt-[3%]">
       <template #texts>
-        <h3 class="text-5xl font-bold">
+        <h3 class="text-3xl md:text-5xl font-bold">
           Craft
           <span class="emphasis-text">the best</span>
           on-screen experience for your church.
         </h3>
-        <p class="description text-lg font-medium">
+        <p class="description xl:text-md 2xl:text-lg md:font-medium">
           A free browser-based presentation software to display song lyrics,
           scriptures, videos and fully customizable slides for your church.
         </p>
@@ -67,19 +71,19 @@
         </nuxt-link>
       </template>
       <template #img>
-        <div class="img-wrapper one"></div>
+        <div class="img-wrapper one h-[320px] md:h-[580px]"></div>
       </template>
     </PointMaker>
 
     <!-- POINT MAKER SECTION TWO -->
     <PointMaker>
       <template #texts>
-        <h3 class="text-5xl font-bold">
+        <h3 class="text-3xl md:text-5xl font-bold">
           Craft
           <span class="emphasis-text">the best</span>
           on-screen experience for your church.
         </h3>
-        <p class="description text-lg font-medium">
+        <p class="description xl:text-md 2xl:text-lg md:font-medium">
           A free browser-based presentation software to display song lyrics,
           scriptures, videos and fully customizable slides for your church.
         </p>
@@ -88,19 +92,19 @@
         </nuxt-link>
       </template>
       <template #img>
-        <div class="img-wrapper two"></div>
+        <div class="img-wrapper two h-[380px] md:h-[700px]"></div>
       </template>
     </PointMaker>
 
     <!-- POINT MAKER SECTION Three -->
     <PointMaker is-text-start>
       <template #texts>
-        <h3 class="text-5xl font-bold">
+        <h3 class="text-3xl md:text-5xl font-bold">
           Craft
           <span class="emphasis-text">the best</span>
           on-screen experience for your church.
         </h3>
-        <p class="description text-lg font-medium">
+        <p class="description xl:text-md 2xl:text-lg md:font-medium">
           A free browser-based presentation software to display song lyrics,
           scriptures, videos and fully customizable slides for your church.
         </p>
@@ -109,19 +113,19 @@
         </nuxt-link>
       </template>
       <template #img>
-        <div class="img-wrapper three"></div>
+        <div class="img-wrapper three h-[320px] md:h-[580px]"></div>
       </template>
     </PointMaker>
 
     <!-- POINT MAKER SECTION FOUR -->
     <PointMaker class="mb-[3%]">
       <template #texts>
-        <h3 class="text-5xl font-bold">
+        <h3 class="text-3xl md:text-5xl font-bold">
           Craft
           <span class="emphasis-text">the best</span>
           on-screen experience for your church.
         </h3>
-        <p class="description text-lg font-medium w-[70%]">
+        <p class="description xl:text-md 2xl:text-lg md:font-medium">
           A free browser-based presentation software to display song lyrics,
           scriptures, videos and fully customizable slides for your church.
         </p>
@@ -130,7 +134,7 @@
         </nuxt-link>
       </template>
       <template #img>
-        <div class="img-wrapper four"></div>
+        <div class="img-wrapper four h-[320px] md:h-[640px]"></div>
       </template>
     </PointMaker>
 
@@ -168,34 +172,29 @@ useHead({
 .main-hero-img {
   background: url("~/assets/images/hero-main.jpg");
   background-size: cover;
-  background-position: top;
 }
 .img-wrapper.one {
   background: url("~/assets/images/browser-first.png") no-repeat;
   background-size: contain;
   background-position: center;
-  height: 580px;
   width: 120%;
 }
 .img-wrapper.two {
   background: url("~/assets/images/team-workflow.png") no-repeat;
   background-size: contain;
   background-position: center;
-  height: 700px;
   width: 120%;
 }
 .img-wrapper.three {
   background: url("~/assets/images/offline-ready.png") no-repeat;
   background-size: contain;
   background-position: center;
-  height: 580px;
-  width: 120%;
+  width: 110%;
 }
 .img-wrapper.four {
   background: url("~/assets/images/actions.png") no-repeat;
   background-size: contain;
   background-position: center;
-  height: 640px;
-  width: 130%;
+  width: 120%;
 }
 </style>

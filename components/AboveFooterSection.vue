@@ -1,21 +1,21 @@
 <template>
   <div class="section above-footer my-[5%]">
     <div
-      class="inner flex justify-between items-center p-[5%] rounded-[32px] bg-purple-100 overflow-hidden"
+      class="inner flex flex-col lg:flex-row justify-between items-center p-6 py-10 md:p-12 md:py-16 lg:p-[5%] lg:py-[5%] rounded-[32px] bg-[#FFE9E8] overflow-hidden gap-8 lg:gap-0"
     >
-      <div class="texts w-[40%]">
-        <h3 class="text-4xl font-bold">
+      <div class="texts w-[95%] lg:w-[40%]">
+        <h3 class="text-3xl 2xl:text-4xl font-bold">
           Cloud of Worship is your church’s literal
           <span class="emphasis-text">powerpoint</span>.
         </h3>
-        <div class="early-users flex my-[7%]">
+        <div class="early-users flex my-[3%] lg:my-[7%]">
           <img
             src="~/assets/images/rcf-unilag.png"
             alt="Early Users"
             class="w-[60px] h-[60px] object-cover rounded-full border-4 border-purple-600"
           />
           <img
-            src="~/assets/images/rcf-unilag.png"
+            src="~/assets/images/foursquare.png"
             alt="Early Users"
             class="w-[60px] h-[60px] object-cover rounded-full border-4 border-purple-600 relative ml-[-10px]"
           />
@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <div class="image-carousel-ctn w-[55%]">
+      <div class="image-carousel-ctn w-[95%] lg:w-[40%]">
         <div class="image-carousel flex gap-4 relative">
           <div
             :class="{
