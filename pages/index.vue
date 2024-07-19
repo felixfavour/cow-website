@@ -35,9 +35,9 @@
         <div
           class="main-hero-img pt-[5%] border-4 md:border-8 border-b-0 border-gray-100 rounded-t-[16px] md:rounded-t-[32px] h-[220px] md:h-[400px] lg:h-[600px] w-[100%] md:w-[1050px]"
         ></div>
-        <div class="live-slide absolute right-[1%] -bottom-[0%]">
+        <div class="live-slide absolute right-[1%] md:right-[4%] -bottom-[0%]">
           <video
-            class="border-4 border-b-0 bg-gray-300 border-gray-300 rounded-t-[16px] w-[200px]"
+            class="border-4 md:border-8 border-b-0 bg-gray-300 border-gray-300 rounded-t-[16px] md:rounded-t-[24px] w-[200px] md:w-[400px]"
             src="~/assets/videos/live-slide.mp4"
             autoplay
             muted
