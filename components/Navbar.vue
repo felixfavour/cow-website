@@ -45,7 +45,7 @@
         </li>
         <li class="nav-item hidden md:block">
           <a
-            href="https://app.cloudofworship.com"
+            href="https://app.cloudofworship.com/signup"
             class="primary-btn text-xs md:text-sm"
           >
             Sign up for free

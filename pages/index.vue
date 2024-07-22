@@ -20,7 +20,7 @@
       </div>
       <div class="actions mt-[7.5%] md:mt-[2%] text-center">
         <a
-          href="https://app.cloudofworship.com"
+          href="https://app.cloudofworship.com/signup"
           class="primary-btn taller w-[200px] mx-auto"
         >
           Get started for free
@@ -58,17 +58,17 @@
     <PointMaker is-text-start class="mt-[3%]">
       <template #texts>
         <h3 class="text-3xl md:text-5xl font-bold">
-          Craft
-          <span class="emphasis-text">the best</span>
-          on-screen experience for your church.
+          No
+          <span class="emphasis-text">installations</span>. <br />Just log on
+          and start projecting.
         </h3>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
-          A free browser-based presentation software to display song lyrics,
-          scriptures, videos and fully customizable slides for your church.
+          Say goodbye to cumbersome downloads and installation processes—our
+          innovative platform brings worship presentation to your fingertips,
+          directly through your web browser. With support for all platforms
+          (Mac, Windows, Linux, iOS, Android).
         </p>
-        <nuxt-link to="/app" class="primary-btn w-[200px] mt-[5%]">
-          Get started for free
-        </nuxt-link>
+        <a href="https://app.cloudofworship.com/signup">Get started for free</a>
       </template>
       <template #img>
         <div class="img-wrapper one h-[320px] md:h-[580px]"></div>
@@ -79,17 +79,15 @@
     <PointMaker>
       <template #texts>
         <h3 class="text-3xl md:text-5xl font-bold">
-          Craft
-          <span class="emphasis-text">the best</span>
-          on-screen experience for your church.
+          Empower your media team with a
+          <span class="emphasis-text">collaborative</span> team workflow
         </h3>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
-          A free browser-based presentation software to display song lyrics,
-          scriptures, videos and fully customizable slides for your church.
+          Work together with your team in real-time, no matter where you are.
+          Whether you’re selecting songs, editing slides, or opening a
+          scripture, everyone can contribute simultaneously.
         </p>
-        <nuxt-link to="/app" class="primary-btn w-[200px] mt-[5%]">
-          Get started for free
-        </nuxt-link>
+        <a href="https://app.cloudofworship.com/signup">Get started for free</a>
       </template>
       <template #img>
         <div class="img-wrapper two h-[380px] md:h-[700px]"></div>
@@ -100,17 +98,16 @@
     <PointMaker is-text-start>
       <template #texts>
         <h3 class="text-3xl md:text-5xl font-bold">
-          Craft
-          <span class="emphasis-text">the best</span>
-          on-screen experience for your church.
+          100% Reliable with
+          <span class="emphasis-text">offline-ready</span> technology
         </h3>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
-          A free browser-based presentation software to display song lyrics,
-          scriptures, videos and fully customizable slides for your church.
+          Empower your team to deliver exceptional experiences to your
+          congregation without being tethered to an internet connection. Bring
+          confidence and consistency to your services with our offline-ready
+          capability.
         </p>
-        <nuxt-link to="/app" class="primary-btn w-[200px] mt-[5%]">
-          Get started for free
-        </nuxt-link>
+        <a href="https://app.cloudofworship.com/signup">Get started for free</a>
       </template>
       <template #img>
         <div class="img-wrapper three h-[320px] md:h-[580px]"></div>
@@ -121,17 +118,15 @@
     <PointMaker class="mb-[3%]">
       <template #texts>
         <h3 class="text-3xl md:text-5xl font-bold">
-          Craft
-          <span class="emphasis-text">the best</span>
-          on-screen experience for your church.
+          There's
+          <span class="emphasis-text">more</span> to do with Cloud of Worship.
         </h3>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
-          A free browser-based presentation software to display song lyrics,
-          scriptures, videos and fully customizable slides for your church.
+          Whether it's searching for a scripture, editing templated slides,
+          searching songs and hymns in our global songs database—there's plenty
+          of things to try out and more are added every week.
         </p>
-        <nuxt-link to="/app" class="primary-btn w-[200px] mt-[5%]">
-          Get started for free
-        </nuxt-link>
+        <a href="https://app.cloudofworship.com/signup">Get started for free</a>
       </template>
       <template #img>
         <div class="img-wrapper four h-[320px] md:h-[640px]"></div>
