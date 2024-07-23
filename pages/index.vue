@@ -68,7 +68,11 @@
           directly through your web browser. With support for all platforms
           (Mac, Windows, Linux, iOS, Android).
         </p>
-        <a href="https://app.cloudofworship.com/signup">Get started for free</a>
+        <a
+          class="primary-btn w-[200px] mt-[5%]"
+          href="https://app.cloudofworship.com/signup"
+          >Get started for free</a
+        >
       </template>
       <template #img>
         <div class="img-wrapper one h-[320px] md:h-[580px]"></div>
@@ -87,7 +91,11 @@
           Whether you’re selecting songs, editing slides, or opening a
           scripture, everyone can contribute simultaneously.
         </p>
-        <a href="https://app.cloudofworship.com/signup">Get started for free</a>
+        <a
+          class="primary-btn w-[200px] mt-[5%]"
+          href="https://app.cloudofworship.com/signup"
+          >Get started for free</a
+        >
       </template>
       <template #img>
         <div class="img-wrapper two h-[380px] md:h-[700px]"></div>
@@ -107,7 +115,11 @@
           confidence and consistency to your services with our offline-ready
           capability.
         </p>
-        <a href="https://app.cloudofworship.com/signup">Get started for free</a>
+        <a
+          class="primary-btn w-[200px] mt-[5%]"
+          href="https://app.cloudofworship.com/signup"
+          >Get started for free</a
+        >
       </template>
       <template #img>
         <div class="img-wrapper three h-[320px] md:h-[580px]"></div>
@@ -126,7 +138,11 @@
           searching songs and hymns in our global songs database—there's plenty
           of things to try out and more are added every week.
         </p>
-        <a href="https://app.cloudofworship.com/signup">Get started for free</a>
+        <a
+          class="primary-btn w-[200px] mt-[5%]"
+          href="https://app.cloudofworship.com/signup"
+          >Get started for free</a
+        >
       </template>
       <template #img>
         <div class="img-wrapper four h-[320px] md:h-[640px]"></div>

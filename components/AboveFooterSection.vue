@@ -12,22 +12,22 @@
           <img
             src="~/assets/images/rcf-unilag.png"
             alt="Early Users"
-            class="w-[60px] h-[60px] object-cover rounded-full border-4 border-purple-600"
+            class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-cover rounded-full border-2 md:border-4 border-purple-600"
           />
           <img
             src="~/assets/images/foursquare.png"
             alt="Early Users"
-            class="w-[60px] h-[60px] object-cover rounded-full border-4 border-purple-600 relative ml-[-10px]"
+            class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-cover rounded-full border-2 md:border-4 border-purple-600 relative ml-[-10px]"
           />
           <img
             src="~/assets/images/rcf-unilag.png"
             alt="Early Users"
-            class="w-[60px] h-[60px] object-cover rounded-full border-4 border-purple-600 relative ml-[-10px]"
+            class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-cover rounded-full border-2 md:border-4 border-purple-600 relative ml-[-10px]"
           />
         </div>
-        <div class="actions mt-[3%]">
+        <div class="actions mt-8 md:mt-[3%]">
           <a
-            href="https://app.cloudofworship.com"
+            href="https://app.cloudofworship.com/signup"
             class="primary-btn taller w-[200px]"
           >
             Get started for free
