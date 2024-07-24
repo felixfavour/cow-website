@@ -30,10 +30,10 @@
         </div>
       </div>
       <div
-        class="hero-media h-[295px] md:h-[40px] lg:h-[650px] flex justify-center items-end relative overflow-hidden"
+        class="hero-media h-[295px] md:h-[450px] lg:h-[650px] flex justify-center items-end relative overflow-hidden"
       >
         <div
-          class="main-hero-img pt-[5%] border-4 md:border-8 border-b-0 border-gray-100 rounded-t-[16px] md:rounded-t-[32px] h-[220px] md:h-[400px] lg:h-[600px] w-[100%] md:w-[1050px]"
+          class="main-hero-img pt-[5%] border-4 md:border-8 border-b-0 md:border-b-0 border-gray-100 rounded-t-[16px] md:rounded-t-[32px] h-[220px] md:h-[400px] lg:h-[600px] w-[100%] md:w-[1050px]"
         ></div>
         <div class="live-slide absolute right-[1%] md:right-[4%] -bottom-[0%]">
           <video
@@ -158,6 +158,7 @@
 </template>
 
 <script setup>
+useGtag()
 useHead({
   title: "Cloud of Worship - Presentation software for your growing church",
   meta: [

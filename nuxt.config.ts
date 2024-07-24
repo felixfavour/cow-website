@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-07-18',
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-gtag"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-gtag", "@nuxt/image"],
   head: {
     title: "Cloud of Worship - Presentation software for your growing church",
     meta: [
