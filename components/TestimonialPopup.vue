@@ -1,11 +1,5 @@
 <template>
-  <div
-    class="senja-embed"
-    data-id="6e74a851-b499-491c-aaa3-9248e85f8fe9"
-    data-mode="shadow"
-    data-lazyload="true"
-    style="display: block"
-  ></div>
+  <div class="empty-div"></div>
 </template>
 
 <script setup>
