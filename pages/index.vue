@@ -21,7 +21,7 @@
       <div class="actions mt-[7.5%] md:mt-[2%] text-center">
         <a
           href="https://app.cloudofworship.com/signup"
-          class="primary-btn taller w-[200px] mx-auto"
+          class="primary-btn taller w-[220px] mx-auto"
         >
           Get started for free
         </a>
@@ -71,7 +71,7 @@
           (Mac, Windows, Linux, iOS, Android).
         </p>
         <a
-          class="primary-btn w-[200px] mt-[5%]"
+          class="primary-btn w-[220px] mt-[5%]"
           href="https://app.cloudofworship.com/signup"
           >Get started for free</a
         >
@@ -94,7 +94,7 @@
           scripture, everyone can contribute simultaneously.
         </p>
         <a
-          class="primary-btn w-[200px] mt-[5%]"
+          class="primary-btn w-[220px] mt-[5%]"
           href="https://app.cloudofworship.com/signup"
           >Get started for free</a
         >
@@ -118,7 +118,7 @@
           capability.
         </p>
         <a
-          class="primary-btn w-[200px] mt-[5%]"
+          class="primary-btn w-[220px] mt-[5%]"
           href="https://app.cloudofworship.com/signup"
           >Get started for free</a
         >
@@ -141,7 +141,7 @@
           of things to try out and more are added every week.
         </p>
         <a
-          class="primary-btn w-[200px] mt-[5%]"
+          class="primary-btn w-[220px] mt-[5%]"
           href="https://app.cloudofworship.com/signup"
           >Get started for free</a
         >
@@ -156,6 +156,8 @@
 
     <!-- ABOVE FOOTER SECTION -->
     <AboveFooterSection />
+
+    <TestimonialPopup />
   </div>
 </template>
 

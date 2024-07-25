@@ -31,7 +31,7 @@
         <div class="actions mt-8 md:mt-[3%]">
           <a
             href="https://app.cloudofworship.com/signup"
-            class="primary-btn taller w-[200px]"
+            class="primary-btn taller w-[220px]"
           >
             Get started for free
           </a>

@@ -4,6 +4,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "nuxt-gtag"],
   head: {
+    charset: "utf-8",
+    htmlAttrs: {
+      lang: "en",
+    },
+    lang: "en",
+    viewport: "initial-scale=1",
     title: "Cloud of Worship - Presentation software for your growing church",
     meta: [
       {

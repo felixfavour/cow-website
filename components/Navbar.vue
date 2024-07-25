@@ -22,7 +22,7 @@
         </li>
         <li class="nav-item">
           <nuxt-link to="/" class="nav-link flex items-center gap-1">
-            Resources <ArrowDown />
+            Changelog
           </nuxt-link>
         </li>
         <li class="nav-item">
