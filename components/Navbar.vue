@@ -32,9 +32,9 @@
       <ul
         class="flex items-center gap-2 md:gap-3 text-sm md:text-base lg:text-lg w-auto"
       >
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <button></button>
-        </li>
+        </li> -->
         <li class="nav-item hidden md:block">
           <a
             href="https://app.cloudofworship.com"

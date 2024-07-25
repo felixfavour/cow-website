@@ -18,7 +18,8 @@
       >
         <div class="user flex items-center gap-3 bottom-0">
           <img
-            src="~/assets/images/yinka.jpg"
+            src="https://revaise.s3.us-east-2.amazonaws.com/website/yinka.webp"
+            loading="lazy"
             alt="Yinka Adenikinju"
             class="w-[50px] h-[50px] md:w-[70px] md:h-[70px] object-cover rounded-full border-2 md:border-4 border-purple-500"
           />
@@ -53,7 +54,8 @@
 .testimonial-bg-overlay {
   position: absolute;
   inset: 0;
-  background: url("~/assets/images/ctn-bg.webp") center no-repeat;
+  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/ctn-bg.webp")
+    center no-repeat;
   background-size: cover;
 }
 </style>

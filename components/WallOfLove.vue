@@ -13,7 +13,7 @@
         class="senja-embed"
         data-id="6e74a851-b499-491c-aaa3-9248e85f8fe9"
         data-mode="shadow"
-        data-lazyload="false"
+        data-lazyload="true"
         style="display: block"
       ></div>
     </div>
@@ -54,7 +54,8 @@ useHead({
 .testimonial-bg-overlay {
   position: absolute;
   inset: 0;
-  background: url("~/assets/images/ctn-bg.webp") center no-repeat;
+  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/ctn-bg.webp")
+    center no-repeat;
   background-size: cover;
 }
 </style>

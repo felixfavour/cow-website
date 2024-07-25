@@ -38,10 +38,12 @@
         <div class="live-slide absolute right-[1%] md:right-[4%] -bottom-[0%]">
           <video
             class="border-4 md:border-8 border-b-0 bg-gray-300 border-gray-300 rounded-t-[16px] md:rounded-t-[24px] w-[200px] md:w-[400px]"
-            src="~/assets/videos/live-slide.mp4"
+            src="https://revaise.s3.us-east-2.amazonaws.com/website/live-slide.mp4"
             autoplay
             muted
             loop
+            playsinline
+            poster="https://revaise.s3.us-east-2.amazonaws.com/website/live-poster.webp"
           />
           <LiveSlideIndicator visible class="top-3 right-4 scale-75" />
         </div>
@@ -158,7 +160,6 @@
 </template>
 
 <script setup>
-useGtag()
 useHead({
   title: "Cloud of Worship - Presentation software for your growing church",
   meta: [
@@ -178,33 +179,43 @@ useHead({
     },
   ],
 })
+
+onMounted(() => {
+  if (location.hostname !== "localhost") {
+    useGtag()
+  }
+})
 </script>
 
 <style scoped>
 .main-hero-img {
-  background: url("~/assets/images/hero-main.jpg");
+  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/hero-main.webp");
   background-size: cover;
 }
 .img-wrapper.one {
-  background: url("~/assets/images/browser-first.png") no-repeat;
+  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/browser-first.webp")
+    no-repeat;
   background-size: contain;
   background-position: center;
   width: 120%;
 }
 .img-wrapper.two {
-  background: url("~/assets/images/team-workflow.png") no-repeat;
+  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/team-workflow.webp")
+    no-repeat;
   background-size: contain;
   background-position: center;
   width: 120%;
 }
 .img-wrapper.three {
-  background: url("~/assets/images/offline-ready.png") no-repeat;
+  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/offline-ready.webp")
+    no-repeat;
   background-size: contain;
   background-position: center;
   width: 110%;
 }
 .img-wrapper.four {
-  background: url("~/assets/images/actions.png") no-repeat;
+  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/actions.webp")
+    no-repeat;
   background-size: contain;
   background-position: center;
   width: 120%;
