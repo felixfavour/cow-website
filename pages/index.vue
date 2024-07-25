@@ -164,22 +164,22 @@
 <script setup>
 useHead({
   title: "Cloud of Worship - Presentation software for your growing church",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Display song lyrics, scriptures, videos and fully customizable slides for your growing church all on the web.",
-    },
-    {
-      name: "keywords",
-      content:
-        "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-    },
-    {
-      name: "og:image",
-      content: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
-    },
-  ],
+})
+useSeoMeta({
+  title: "Cloud of Worship - Presentation software for your growing church",
+  ogTitle: "Cloud of Worship - Presentation software for your growing church",
+  description:
+    "Free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
+  ogDescription:
+    "Free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
+  keywords:
+    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+  ogImage: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+  ogSiteName: "Cloud of Worship",
+  ogUrl: "https://cloudofworship.com",
+  ogType: "website",
+  ogLocale: "en_US",
+  canonical: "https://cloudofworship.com",
 })
 
 onMounted(() => {
