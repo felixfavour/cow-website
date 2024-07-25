@@ -6,8 +6,9 @@
       <h3
         class="text-3xl md:text-5xl w-[65%] font-bold text-white mb-[7.5%] md:mb-[5%]"
       >
-        Wall of
-        <span class="emphasis-text text-white">love</span>.
+        What
+        <span class="emphasis-text text-white">people are saying</span> about
+        Cloud of Worship.
       </h3>
       <div
         class="senja-embed"
@@ -43,7 +44,7 @@ useHead({
 
 .testimonial-bg {
   background: linear-gradient(
-    90deg,
+    -90deg,
     rgba(137, 70, 201, 1) 0%,
     rgba(68, 34, 99, 1) 100%
   );
