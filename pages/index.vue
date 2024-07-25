@@ -157,11 +157,12 @@
     <!-- ABOVE FOOTER SECTION -->
     <AboveFooterSection />
 
-    <TestimonialPopup />
+    <TestimonialPopup v-if="showTestimonialPopup" />
   </div>
 </template>
 
 <script setup>
+const showTestimonialPopup = ref(false)
 useHead({
   title: "Cloud of Worship - Presentation software for your growing church",
 })
@@ -186,6 +187,16 @@ onMounted(() => {
   if (location.hostname !== "localhost") {
     useGtag()
   }
+
+  // show testimonial popup on mobile
+  if (window.innerWidth >= 768) {
+    showTestimonialPopup.value = true
+  }
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      showTestimonialPopup.value = true
+    }
+  })
 })
 </script>
 
