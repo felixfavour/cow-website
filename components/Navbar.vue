@@ -20,10 +20,42 @@
             Changelog
           </nuxt-link>
         </li>
-        <li class="nav-item">
-          <nuxt-link to="/" class="nav-link flex items-center gap-1">
+        <li class="nav-item group relative">
+          <nuxt-link to="#" class="nav-link flex items-center gap-1">
             Features <ArrowDown />
           </nuxt-link>
+          <div
+            class="ul-ctn pt-4 hidden group-hover:block hover:block absolute w-[200px] z-10 left-[-80%] transition-all"
+          >
+            <ul
+              class="link-dropdown p-2 border border-gray-100 rounded-lg shadow-lg transition-all bg-white"
+            >
+              <li>
+                <nuxt-link
+                  to="/features/browser-ready"
+                  class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                >
+                  Browser-ready UX
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link
+                  to="/features/offline-first"
+                  class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                >
+                  Offline-first experience
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link
+                  to="/features/team-workflow"
+                  class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                >
+                  Team Workflow
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item">
           <nuxt-link to="/pricing" class="nav-link"> Pricing </nuxt-link>

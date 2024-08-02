@@ -17,17 +17,19 @@
           <h6 class="text-lg font-bold mb-4">UNIQUE FEATURES</h6>
           <ul class="flex gap-3 flex-col">
             <li>
-              <nuxt-link to="/" class="font-medium"
+              <nuxt-link to="/features/browser-ready" class="font-medium"
                 >Browser-ready UX
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/" class="font-medium"
+              <nuxt-link to="/features/offline-first" class="font-medium"
                 >Offline-first experience
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/" class="font-medium">Team workflow </nuxt-link>
+              <nuxt-link to="/features/team-workflow" class="font-medium"
+                >Team workflow
+              </nuxt-link>
             </li>
           </ul>
         </div>
