@@ -189,11 +189,11 @@ onMounted(() => {
   }
 
   // show testimonial popup on mobile
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 768 && location.hostname !== "localhost") {
     showTestimonialPopup.value = true
   }
   window.addEventListener("resize", () => {
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 768 && location.hostname !== "localhost") {
       showTestimonialPopup.value = true
     }
   })

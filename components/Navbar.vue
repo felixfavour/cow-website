@@ -3,12 +3,15 @@
     class="navbar section h-[60px] md:h-[85px] flex items-center bg-white sticky top-0 right-0 left-0 z-10"
   >
     <div class="inner flex justify-between items-center w-full md:px-4 lg:px-8">
-      <div class="logo-ctn flex items-center gap-3 text-xl w-[250px]">
+      <nuxt-link
+        to="/"
+        class="logo-ctn flex items-center gap-3 text-xl w-[250px]"
+      >
         <Logo class="w-[32px] md:w-auto" />
         <h6 class="font-bold text-base md:text-lg lg:text-xl whitespace-nowrap">
           Cloud of Worship
         </h6>
-      </div>
+      </nuxt-link>
       <ul
         class="nav-actions hidden md:flex items-center gap-4 md:gap-6 lg:gap-8 text-xs md:text-sm font-medium"
       >
@@ -21,7 +24,7 @@
           </nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/" class="nav-link flex items-center gap-1">
+          <nuxt-link to="/changelog" class="nav-link flex items-center gap-1">
             Changelog
           </nuxt-link>
         </li>
