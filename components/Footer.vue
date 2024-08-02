@@ -5,10 +5,13 @@
         class="row-one flex flex-wrap lg:flex-nowrap lg:flex justify-between mb-[5%] gap-8 lg:gap-0"
       >
         <div class="col-ctn w-[100%] lg:w-[35%]">
-          <div class="logo-ctn flex items-center gap-3 text-xl w-[250px]">
+          <nuxt-link
+            to="/"
+            class="logo-ctn flex items-center gap-3 text-xl w-[250px]"
+          >
             <Logo />
             <h6 class="font-bold">Cloud of Worship</h6>
-          </div>
+          </nuxt-link>
         </div>
         <div class="col-ctn w-[45%] lg:w-[auto]">
           <h6 class="text-lg font-bold mb-4">UNIQUE FEATURES</h6>
@@ -32,10 +35,16 @@
           <h6 class="text-lg font-bold mb-4">RESOURCES</h6>
           <ul class="flex gap-3 flex-col">
             <li>
-              <nuxt-link to="/" class="font-medium">Roadmap </nuxt-link>
+              <a
+                href="https://cloudofworshippers.featurebase.app/roadmap"
+                class="font-medium"
+                >Roadmap
+              </a>
             </li>
             <li>
-              <nuxt-link to="/" class="font-medium">What’s new! 💜 </nuxt-link>
+              <nuxt-link to="/changelog" class="font-medium"
+                >What’s new! 💜
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -43,7 +52,9 @@
           <h6 class="text-lg font-bold mb-4">SUPPORT</h6>
           <ul class="flex gap-3 flex-col">
             <li>
-              <nuxt-link to="/" class="font-medium">Contact CoW </nuxt-link>
+              <nuxt-link to="/contact" class="font-medium"
+                >Contact CoW
+              </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/" class="font-medium"
