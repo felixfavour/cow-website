@@ -51,23 +51,23 @@
 <script setup>
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Changelog - updates every week - Cloud of Worship",
+  title: "Pricing - Cloud of Worship",
 })
 useSeoMeta({
-  title: "Changelog - updates every week - Cloud of Worship",
-  ogTitle: "Changelog - updates every week - Cloud of Worship",
+  title: "Pricing - Cloud of Worship",
+  ogTitle: "Pricing - Cloud of Worship",
   description:
-    "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
+    "We believe every congregation deserves to enjoy a quality time in church with affordable tool that helps them to be more connected to God, regardless of their location; our free browser-based presentation software helps us achieve this goal.",
   ogDescription:
-    "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
+    "We believe every congregation deserves to enjoy a quality time in church with affordable tool that helps them to be more connected to God, regardless of their location; our free browser-based presentation software helps us achieve this goal.",
   keywords:
     "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
   ogImage: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
   ogSiteName: "Cloud of Worship",
-  ogUrl: "https://cloudofworship.com/changelog",
+  ogUrl: "https://cloudofworship.com/pricing",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/changelog",
+  canonical: "https://cloudofworship.com/pricing",
 })
 
 const changelogs = [

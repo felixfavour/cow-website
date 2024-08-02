@@ -147,11 +147,11 @@
 <script setup>
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Changelog - updates every week - Cloud of Worship",
+  title: "Terms of Service - Cloud of Worship",
 })
 useSeoMeta({
-  title: "Changelog - updates every week - Cloud of Worship",
-  ogTitle: "Changelog - updates every week - Cloud of Worship",
+  title: "Terms of Service - Cloud of Worship",
+  ogTitle: "Terms of Service - Cloud of Worship",
   description:
     "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
   ogDescription:
@@ -160,10 +160,10 @@ useSeoMeta({
     "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
   ogImage: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
   ogSiteName: "Cloud of Worship",
-  ogUrl: "https://cloudofworship.com/changelog",
+  ogUrl: "https://cloudofworship.com/terms-of-service",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/changelog",
+  canonical: "https://cloudofworship.com/terms-of-service",
 })
 
 onMounted(() => {

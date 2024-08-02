@@ -63,23 +63,26 @@
 <script setup>
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Changelog - updates every week - Cloud of Worship",
+  title:
+    "Church presentation software where you can work together - Cloud of Worship",
 })
 useSeoMeta({
-  title: "Changelog - updates every week - Cloud of Worship",
-  ogTitle: "Changelog - updates every week - Cloud of Worship",
+  title:
+    "Church presentation software where you can work together - Cloud of Worship",
+  ogTitle:
+    "Church presentation software where you can work together - Cloud of Worship",
   description:
-    "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
+    "Work with your team in real-time, wherever you are. Whether you’re adding lyrics, editing slides, or opening scripture.",
   ogDescription:
-    "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
+    "Work with your team in real-time, wherever you are. Whether you’re adding lyrics, editing slides, or opening scripture.",
   keywords:
     "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
   ogImage: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
   ogSiteName: "Cloud of Worship",
-  ogUrl: "https://cloudofworship.com/changelog",
+  ogUrl: "https://cloudofworship.com/features/team-workflow",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/changelog",
+  canonical: "https://cloudofworship.com/features/team-workflow",
 })
 
 onMounted(() => {
