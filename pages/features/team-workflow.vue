@@ -110,7 +110,4 @@ onMounted(() => {
   display: grid;
   place-items: center;
 }
-.page > .inner {
-  background: url("~/assets/images/multiplayer.webp") no-repeat;
-}
 </style>
