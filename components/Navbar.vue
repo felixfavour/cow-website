@@ -16,7 +16,9 @@
         class="nav-actions hidden md:flex items-center gap-4 md:gap-6 lg:gap-8 text-xs md:text-sm font-medium"
       >
         <li class="nav-item">
-          <nuxt-link to="/" class="nav-link"> Partner </nuxt-link>
+          <nuxt-link to="/changelog" class="nav-link flex items-center gap-1">
+            Changelog
+          </nuxt-link>
         </li>
         <li class="nav-item">
           <nuxt-link to="/" class="nav-link flex items-center gap-1">
@@ -24,12 +26,12 @@
           </nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/changelog" class="nav-link flex items-center gap-1">
-            Changelog
-          </nuxt-link>
+          <nuxt-link to="/pricing" class="nav-link"> Pricing </nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/" class="nav-link"> Wall of Love </nuxt-link>
+          <nuxt-link to="/wall-of-love" class="nav-link">
+            Wall of Love
+          </nuxt-link>
         </li>
       </ul>
       <ul

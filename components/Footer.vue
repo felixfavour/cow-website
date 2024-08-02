@@ -62,7 +62,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/" class="font-medium">Partner </nuxt-link>
+              <nuxt-link to="/pricing" class="font-medium">Pricing </nuxt-link>
             </li>
           </ul>
         </div>
