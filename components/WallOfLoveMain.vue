@@ -1,5 +1,5 @@
 <template>
-  <div class="testimonial-bg section min-h-[400px]">
+  <div class="testimonial-bg section min-h-[200px]">
     <div class="testimonial-bg-overlay"></div>
 
     <div class="py-[10%] md:py-[5%] relative h-[100%] inset-0">

@@ -38,11 +38,11 @@
         <div
           class="main-hero-img pt-[5%] img-ctn rounded-t-[16px] md:rounded-t-[32px] h-[220px] md:h-[400px] lg:h-[600px] w-[100%] md:w-[1050px relative"
         >
-          <img
+          <!-- <img
             src="~/assets/images/multiplayer.png"
             class="absolute inset-0"
             alt="Browser-ready UX"
-          />
+          /> -->
           <img
             src="https://revaise.s3.us-east-2.amazonaws.com/website/team-workflow.webp"
             alt="Browser-ready UX"

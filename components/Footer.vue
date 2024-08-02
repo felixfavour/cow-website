@@ -59,7 +59,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/" class="font-medium"
+              <nuxt-link to="/contact" class="font-medium"
                 >Help Center (FAQs)
               </nuxt-link>
             </li>

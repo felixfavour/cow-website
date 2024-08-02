@@ -70,11 +70,11 @@
           directly through your web browser. With support for all platforms
           (Mac, Windows, Linux, iOS, Android).
         </p>
-        <a
-          class="primary-btn w-[220px] mt-[5%]"
-          href="https://app.cloudofworship.com/signup"
-          >Get started for free</a
-        >
+        <nuxt-link
+          class="primary-btn w-[220px] mt-[5%] gap-8"
+          to="/features/browser-ready"
+          >See more info <ArrowDown class="-rotate-90" white-color
+        /></nuxt-link>
       </template>
       <template #img>
         <div class="img-wrapper one h-[320px] md:h-[580px]"></div>
@@ -93,11 +93,11 @@
           Whether you’re selecting songs, editing slides, or opening a
           scripture, everyone can contribute simultaneously.
         </p>
-        <a
-          class="primary-btn w-[220px] mt-[5%]"
-          href="https://app.cloudofworship.com/signup"
-          >Get started for free</a
-        >
+        <nuxt-link
+          class="primary-btn w-[220px] mt-[5%] gap-8"
+          to="/features/team-workflow"
+          >See more info <ArrowDown class="-rotate-90" white-color
+        /></nuxt-link>
       </template>
       <template #img>
         <div class="img-wrapper two h-[380px] md:h-[700px]"></div>
@@ -117,11 +117,11 @@
           confidence and consistency to your services with our offline-ready
           capability.
         </p>
-        <a
-          class="primary-btn w-[220px] mt-[5%]"
-          href="https://app.cloudofworship.com/signup"
-          >Get started for free</a
-        >
+        <nuxt-link
+          class="primary-btn w-[220px] mt-[5%] gap-8"
+          to="/features/offline-first"
+          >See more info <ArrowDown class="-rotate-90" white-color
+        /></nuxt-link>
       </template>
       <template #img>
         <div class="img-wrapper three h-[320px] md:h-[580px]"></div>

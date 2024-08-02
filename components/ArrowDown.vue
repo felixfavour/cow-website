@@ -8,10 +8,16 @@
   >
     <path
       d="M4.5 6.75L9 11.25L13.5 6.75"
-      stroke="black"
+      :stroke="props.whiteColor ? 'white' : 'black'"
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
   </svg>
 </template>
+
+<script setup>
+const props = defineProps({
+  whiteColor: Boolean,
+})
+</script>
