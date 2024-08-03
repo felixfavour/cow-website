@@ -73,6 +73,24 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.7.8",
+    title: "Version Perseverance",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Download progress, keyboard navigation, and more.",
+    changes: [
+      "Added a feature to display download percentages during the initial setup, providing users with progress feedback.",
+      "Fixed issues with keyboard arrow actions in QuickActions for smoother navigation and control.",
+      "Resolved problems where users remained on saved slides unintentionally.",
+      "Fixed the clearing of saved slides after they have been added, ensuring they remain accessible.",
+      "Fixed an issue preventing the upload of batch media slides, improving the media management workflow.",
+      "Introduced the New Living Translation (NLT) Bible version, expanding scripture options for users.",
+      "Fixed an issue where banner links incorrectly opened in new tabs, ensuring proper link behavior.",
+      "Resolved slight issues related to banner notifications, enhancing overall user experience and reliability.",
+    ],
+    date: "August 3, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.7.7",
     title: "Version Purity",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -91,7 +109,7 @@ const changelogs = [
       "Corrected layout shifts occurring when the “not found” banner is active, maintaining layout integrity.",
     ],
     date: "July 27, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.7.6",
