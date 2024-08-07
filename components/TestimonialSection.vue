@@ -7,11 +7,10 @@
       <h4
         class="text-2xl md:text-3xl 2xl:text-4xl text-center leading-[4vh] lg:text-left w-[100%] xl:leading-[3rem] xl:w-[60%] 2xl:w-[70%] 2xl:leading-[3.5rem] font-bold"
       >
-        “After four months of use, we love its versatility—displaying everything
-        from PowerPoint slides to videos with animated backgrounds. The app’s
-        ability for different users to create accounts and share lyrics fosters
-        community. Cloud of Worship is indispensable, and we highly recommend it
-        for any congregation looking to enhance their worship experience.”
+        “The app’s ability for different users to create accounts and share
+        lyrics fosters community. Cloud of Worship is indispensable, and we
+        highly recommend it for any congregation looking to enhance their
+        worship experience.”
       </h4>
       <div
         class="user-ctn flex justify-center lg:justify-normal place-items-end pt-[10%] md:pt-[5%]"

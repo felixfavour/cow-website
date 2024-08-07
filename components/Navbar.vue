@@ -13,7 +13,12 @@
         </h6>
       </nuxt-link>
       <ul
-        class="nav-actions hidden md:flex items-center gap-4 md:gap-6 lg:gap-8 text-xs md:text-sm font-medium"
+        :class="
+          isMenuOpen
+            ? 'visible opacity-100 translate-y-0'
+            : 'invisible opacity-0 translate-y-[100%]'
+        "
+        class="nav-actions transition-all duration-300 fixed inset-0 h-[100%] top-[60px] md:top-[85px] px-[7%] text-lg pt-[7.5%] bg-white lg:h-auto lg:px-0 lg:static lg:bg-transparent flex flex-col lg:pt-0 lg:flex-row lg:items-center gap-6 md:gap-6 lg:gap-8 lg:text-sm font-medium"
       >
         <li class="nav-item">
           <nuxt-link to="/changelog" class="nav-link flex items-center gap-1">
@@ -25,7 +30,7 @@
             Features <ArrowDown />
           </nuxt-link>
           <div
-            class="ul-ctn pt-4 hidden group-hover:block hover:block absolute w-[200px] z-10 left-[-80%] transition-all"
+            class="ul-ctn pt-4 lg:hidden group-hover:block hover:block lg:absolute w-[100%] lg:w-[200px] z-10 left-[-80%] transition-all"
           >
             <ul
               class="link-dropdown p-2 border border-gray-100 rounded-lg shadow-lg transition-all bg-white"
@@ -65,14 +70,29 @@
             Wall of Love
           </nuxt-link>
         </li>
+        <ul class="auth flex flex-col lg:hidden">
+          <li class="nav-item">
+            <a
+              href="https://app.cloudofworship.com"
+              class="ghost-btn md:text-sm"
+            >
+              Sign in
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://app.cloudofworship.com/signup"
+              class="primary-btn text-md md:text-sm"
+            >
+              Sign up for free
+            </a>
+          </li>
+        </ul>
       </ul>
       <ul
         class="flex items-center gap-2 md:gap-3 text-sm md:text-base lg:text-lg w-auto"
       >
-        <!-- <li class="nav-item">
-          <button></button>
-        </li> -->
-        <li class="nav-item hidden md:block">
+        <li class="nav-item hidden lg:block">
           <a
             href="https://app.cloudofworship.com"
             class="ghost-btn text-xs md:text-sm"
@@ -80,7 +100,7 @@
             Sign in
           </a>
         </li>
-        <li class="nav-item hidden md:block">
+        <li class="nav-item hidden lg:block">
           <a
             href="https://app.cloudofworship.com/signup"
             class="primary-btn text-xs md:text-sm"
@@ -88,11 +108,90 @@
             Sign up for free
           </a>
         </li>
+        <li class="nav-item lg:hidden">
+          <button
+            class="menu-btn w-[45px] h-[45px] mt-1"
+            @click="toggleMenu"
+          ></button>
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import lottie from "lottie-web"
+const menuAnim = ref(null)
+const isMenuOpen = ref(false)
+const ariaText = ref("Open Navigation Menu")
+const route = useRoute()
 
-<style scoped></style>
+onMounted(() => {
+  menuAnim.value = loadAnimation()
+  if (window.innerWidth >= 1024) {
+    isMenuOpen.value = true
+  }
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1024) {
+      isMenuOpen.value = true
+    } else {
+      isMenuOpen.value = false
+    }
+  })
+})
+
+const loadAnimation = () => {
+  return lottie.loadAnimation({
+    container: document.querySelector("button.menu-btn"),
+    renderer: "svg",
+    loop: false,
+    autoplay: false,
+    path: "/animation/hamburger.json",
+    name: "Navigation Menu",
+  })
+}
+
+const toggleMenu = () => {
+  if (!isMenuOpen.value) {
+    menuAnim.value.playSegments([0, 17], true)
+    ariaText.value = "Close Navigation Menu"
+    isMenuOpen.value = true
+    document.body.classList.add("modal-open")
+  } else {
+    menuAnim.value.playSegments([17, 0], true)
+    ariaText.value = "Open Navigation Menu"
+    isMenuOpen.value = false
+    document.body.classList.remove("modal-open")
+  }
+}
+
+watch(
+  () => route.path,
+  () => {
+    // Close menu on navigate
+    if (isMenuOpen.value) {
+      toggleMenu()
+    }
+    // Destory and reload animation on navigate
+    if (process.client) {
+      setTimeout(() => {
+        lottie("Navigation Menu")
+        menuAnim.value = this.loadAnimation()
+      }, 1000)
+    }
+  }
+)
+
+const handleMenuClose = () => {
+  menuAnim.value.playSegments([17, 0], true)
+  ariaText.value = "Open Navigation Menu"
+  isMenuOpen.value = false
+  document.body.classList.remove("modal-open")
+}
+</script>
+
+<style scoped>
+.menu-open {
+  visibility: visible;
+}
+</style>
