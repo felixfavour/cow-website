@@ -18,10 +18,9 @@
         <p
           class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[65%] mx-auto"
         >
-          This is firstly a project of service to the church. We believe that
-          every congregation deserves to enjoy a quality time in church with
-          affordable tool that helps them to be more connected to God,
-          regardless of their location.
+          We believe that every congregation deserves to enjoy a quality time in
+          church with affordable tool that helps them to be more connected to
+          God, regardless of their location.
           <br />
         </p>
       </div>
@@ -30,11 +29,11 @@
           href="mailto:hello@cloudofworship.com"
           class="primary-btn taller w-[220px] mx-auto"
         >
-          Partner with us
+          Explore premium offers
         </a>
-        <div class="helper-text text-sm text-center pt-2">
+        <!-- <div class="helper-text text-sm text-center pt-2">
           We hope to never charge.
-        </div>
+        </div> -->
       </div>
     </div>
 
