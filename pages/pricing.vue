@@ -27,7 +27,7 @@
       <div class="actions mt-[10%] md:mt-[5%] text-center">
         <a
           href="mailto:hello@cloudofworship.com"
-          class="primary-btn taller w-[220px] mx-auto"
+          class="primary-btn taller w-[240px] mx-auto"
         >
           Explore premium offers
         </a>
