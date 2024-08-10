@@ -70,8 +70,22 @@ useSeoMeta({
   ogLocale: "en_US",
   canonical: "https://cloudofworship.com/changelog",
 })
-
 const changelogs = [
+  {
+    version: "Beta v0.7.9",
+    title: "Version Hope",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Changelog link, schedules list truncated, fixes and more.",
+    changes: [
+      "Added new UI features for performance benefits.",
+      "Increased alert count to 5 items (copy/content).",
+      "Added changelog link to modal.",
+      "Fixed minor bugs and issues.",
+      "Modified remote songs library.",
+    ],
+    date: "August 10, 2024",
+    latest: true,
+  },
   {
     version: "Beta v0.7.8",
     title: "Version Perseverance",
@@ -88,7 +102,7 @@ const changelogs = [
       "Resolved slight issues related to banner notifications, enhancing overall user experience and reliability.",
     ],
     date: "August 3, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.7.7",
