@@ -70,6 +70,7 @@ useSeoMeta({
   ogLocale: "en_US",
   canonical: "https://cloudofworship.com/changelog",
 })
+
 const changelogs = [
   {
     version: "Beta v0.7.9",

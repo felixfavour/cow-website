@@ -152,16 +152,18 @@ const loadAnimation = () => {
 }
 
 const toggleMenu = () => {
-  if (!isMenuOpen.value) {
-    menuAnim.value.playSegments([0, 17], true)
-    ariaText.value = "Close Navigation Menu"
-    isMenuOpen.value = true
-    document.body.classList.add("modal-open")
-  } else {
-    menuAnim.value.playSegments([17, 0], true)
-    ariaText.value = "Open Navigation Menu"
-    isMenuOpen.value = false
-    document.body.classList.remove("modal-open")
+  if (process.client && window.innerWidth < 1024) {
+    if (!isMenuOpen.value) {
+      menuAnim.value.playSegments([0, 17], true)
+      ariaText.value = "Close Navigation Menu"
+      isMenuOpen.value = true
+      document.body.classList.add("modal-open")
+    } else {
+      menuAnim.value.playSegments([17, 0], true)
+      ariaText.value = "Open Navigation Menu"
+      isMenuOpen.value = false
+      document.body.classList.remove("modal-open")
+    }
   }
 }
 
