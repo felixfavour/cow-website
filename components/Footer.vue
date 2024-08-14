@@ -59,6 +59,13 @@
               </nuxt-link>
             </li>
             <li>
+              <a
+                href="https://chat.whatsapp.com/DeQX11igCSU6YaOoTqY7GY"
+                class="font-medium"
+                >Join our Community
+              </a>
+            </li>
+            <li>
               <nuxt-link to="/contact" class="font-medium"
                 >Help Center (FAQs)
               </nuxt-link>
