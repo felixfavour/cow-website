@@ -76,7 +76,8 @@ const changelogs = [
     version: "Beta v0.8.0",
     title: "Version Defiance",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
-    description: "Changelog link, schedules list truncated, fixes and more.",
+    description:
+      "Customizable lines per song slide, made major fixes and more.",
     changes: [
       "Added a feature to adjust the number of lines per slide for song slides, enhancing customization options.",
       "Fixed an issue with the navbar affecting the sign out process, ensuring smoother user sign outs.",
