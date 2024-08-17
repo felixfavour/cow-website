@@ -73,6 +73,22 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.0",
+    title: "Version Defiance",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Changelog link, schedules list truncated, fixes and more.",
+    changes: [
+      "Added a feature to adjust the number of lines per slide for song slides, enhancing customization options.",
+      "Fixed an issue with the navbar affecting the sign out process, ensuring smoother user sign outs.",
+      "Resolved an issue with church signup to improve the registration flow.",
+      "Fixed the problem of inactive videos playing and cleared video slide tools for better video control.",
+      "Added the ability to delete media files, giving users more control over their media library.",
+      "Introduced a drag-and-copy feature to simplify adding media to slides.",
+    ],
+    date: "August 17, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.7.9",
     title: "Version Hope",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -85,7 +101,7 @@ const changelogs = [
       "Modified remote songs library.",
     ],
     date: "August 10, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.7.8",
