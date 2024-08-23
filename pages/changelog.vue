@@ -73,6 +73,24 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.1",
+    title: "Version Promise",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Enhancements in hymns loading, Bible version settings, and media stability improvements.",
+    changes: [
+      "Updated the hymns loading structure to now load via API, improving data management and performance.",
+      "Added a Bible version settings feature and removed versions from the initial load to streamline the startup process.",
+      "Added Yoruba hymns to the hymns library.",
+      "Updated the hymns to include recent changes and improvements.",
+      "Fixed an issue where the user prompt schedule modal was not closing, ensuring proper functionality.",
+      "Resolved an issue with reloading background videos, enhancing media stability.",
+      "Added a 1-hour limit to the timer feature, providing better control over timed events.",
+    ],
+    date: "August 23, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.8.0",
     title: "Version Defiance",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -87,7 +105,7 @@ const changelogs = [
       "Introduced a drag-and-copy feature to simplify adding media to slides.",
     ],
     date: "August 17, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.7.9",
