@@ -73,6 +73,22 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.2",
+    title: "Version Blessing",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Enhancements in bible search, signup improvements, and more.",
+    changes: [
+      "Fixed issues related to signup, improving the registration experience.",
+      "Optimized asset loading for faster performance by leveraging CloudFront.",
+      "Improved the Bible search functionality for more accurate and efficient results.",
+      "Improved signup experience for new users.",
+      "Added new songs to library.",
+      "Made minor fixes and improvements.",
+    ],
+    date: "August 31, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.8.1",
     title: "Version Promise",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -88,7 +104,7 @@ const changelogs = [
       "Added a 1-hour limit to the timer feature, providing better control over timed events.",
     ],
     date: "August 23, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.8.0",
