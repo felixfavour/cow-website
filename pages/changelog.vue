@@ -73,6 +73,24 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.3",
+    title: "Version Generosity",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Better LIVE control and window management, save remote songs offline, and more.",
+    changes: [
+      "Better and more intuitive LIVE sessions.",
+      "Added the first stage of media stream recording via NDI, introducing new streaming capabilities.",
+      "Fixed various issues and made UI changes for a better user experience.",
+      "Updated the schedule modal to improve its design and functionality.",
+      "Added pagination for saved songs, making it easier to navigate large song lists.",
+      "Enabled saving a user’s songs from other devices for seamless access across platforms.",
+      "Updated the copy and style of the fullscreen prompt for improved clarity and aesthetics.",
+    ],
+    date: "September 7, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.8.2",
     title: "Version Blessing",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -86,7 +104,7 @@ const changelogs = [
       "Made minor fixes and improvements.",
     ],
     date: "August 31, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.8.1",
