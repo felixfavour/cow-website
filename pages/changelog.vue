@@ -74,7 +74,7 @@ useSeoMeta({
 const changelogs = [
   {
     version: "Beta v0.8.4",
-    title: "Version Clarity",
+    title: "Version Moderation",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
     description:
       "New app settings for enhanced control, improved navigation, and updated visual elements.",
