@@ -73,6 +73,22 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.4",
+    title: "Version Clarity",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "New app settings for enhanced control, improved navigation, and updated visual elements.",
+    changes: [
+      "Added more app settings to give users greater control and customization options.",
+      "Fixed issues with scrollable slide toolbars for smoother navigation.",
+      "Added a file dropzone feature to background selection, simplifying media uploads.",
+      "Resolved layout and playback issues for a more stable user experience.",
+      "Updated app icons to enhance the visual appearance and branding.",
+    ],
+    date: "September 14, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.8.3",
     title: "Version Generosity",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -88,7 +104,7 @@ const changelogs = [
       "Updated the copy and style of the fullscreen prompt for improved clarity and aesthetics.",
     ],
     date: "September 7, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.8.2",
