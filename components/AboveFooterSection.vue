@@ -10,19 +10,19 @@
         </h3>
         <div class="early-users flex my-[3%] lg:my-[7%]">
           <img
-            src="https://revaise.s3.us-east-2.amazonaws.com/website/rcf-unilag.webp"
+            src="~/assets/images/rccg.webp"
             loading="lazy"
             alt="Early Users"
             class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-cover rounded-full border-2 md:border-4 border-purple-600"
           />
           <img
-            src="https://revaise.s3.us-east-2.amazonaws.com/website/foursquare.webp"
+            src="~/assets/images/foursquare.webp"
             loading="lazy"
             alt="Early Users"
             class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-cover rounded-full border-2 md:border-4 border-purple-600 relative ml-[-10px]"
           />
           <img
-            src="https://revaise.s3.us-east-2.amazonaws.com/website/rcf-unilag.webp"
+            src="~/assets/images/elevation-church-box.webp"
             loading="lazy"
             alt="Early Users"
             class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-cover rounded-full border-2 md:border-4 border-purple-600 relative ml-[-10px]"
@@ -36,7 +36,8 @@
             Get started for free
           </a>
           <div class="helper-text text-sm pt-2">
-            serving <span class="font-semibold">1000+</span> in congregation
+            serving <span class="font-semibold">100+</span> churches, and
+            thousands in congregation
           </div>
         </div>
       </div>
