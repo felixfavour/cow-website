@@ -74,6 +74,22 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.5",
+    title: "Version Renewal",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Added more Bible versions, improved navigation, and better performance.",
+    changes: [
+      "Added public domain Bible versions and other improvements.",
+      "Added more quick actions for easier navigation.",
+      "Improved access to scriptures for better performance.",
+      "Implemented clear labeling and structure for app-wide actions.",
+      "The schedule modal now opens on load, with various fixes.",
+    ],
+    date: "September 21, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.8.4",
     title: "Version Moderation",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
