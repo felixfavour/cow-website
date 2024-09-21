@@ -80,7 +80,7 @@ const changelogs = [
     description:
       "Added more Bible versions, improved navigation, and better performance.",
     changes: [
-      "Added public domain Bible versions and other improvements.",
+      "Added public domain Bible versions and other improvements. (log out to enable)",
       "Added more quick actions for easier navigation.",
       "Improved access to scriptures for better performance.",
       "Implemented clear labeling and structure for app-wide actions.",
@@ -103,7 +103,7 @@ const changelogs = [
       "Updated app icons to enhance the visual appearance and branding.",
     ],
     date: "September 14, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.8.3",
