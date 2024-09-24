@@ -73,16 +73,18 @@
         <ul class="auth flex flex-col lg:hidden">
           <li class="nav-item">
             <a
-              href="https://app.cloudofworship.com"
-              class="ghost-btn md:text-sm"
+              href="https://github.com/felixfavour/minimalist-church-presentation-software"
+              target="_blank"
+              class="text-lg font-semibold gap-2 md:text-sm bg-gray-100 h-[45px] min-h-[50px] rounded-xl flex items-center justify-center hover:bg-purple-100 transition-all mb-3"
             >
-              Sign in
+              <GithubIcon class="w-8 h-8" />
+              Open Source
             </a>
           </li>
           <li class="nav-item">
             <a
               href="https://app.cloudofworship.com/signup"
-              class="primary-btn text-md md:text-sm"
+              class="primary-btn text-md md:text-sm min-h-[50px]"
             >
               Sign up for free
             </a>
@@ -94,10 +96,11 @@
       >
         <li class="nav-item hidden lg:block">
           <a
-            href="https://app.cloudofworship.com"
-            class="ghost-btn text-xs md:text-sm"
+            href="https://github.com/felixfavour/minimalist-church-presentation-software"
+            target="_blank"
+            class="text-xs md:text-sm bg-gray-100 w-[45px] h-[45px] rounded-xl grid place-items-center hover:bg-purple-100 transition-all"
           >
-            Sign in
+            <GithubIcon class="w-8 h-8" />
           </a>
         </li>
         <li class="nav-item hidden lg:block">
