@@ -64,16 +64,16 @@
               </nuxt-link>
             </li>
             <li>
+              <nuxt-link to="/contact" class="font-medium"
+                >Help Center (FAQs)
+              </nuxt-link>
+            </li>
+            <li>
               <a
                 href="https://chat.whatsapp.com/DeQX11igCSU6YaOoTqY7GY"
                 class="font-medium"
                 >Join our Community
               </a>
-            </li>
-            <li>
-              <nuxt-link to="/contact" class="font-medium"
-                >Help Center (FAQs)
-              </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/pricing" class="font-medium">Pricing </nuxt-link>
@@ -116,4 +116,9 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+.router-link-active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+</style>

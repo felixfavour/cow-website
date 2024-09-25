@@ -1,44 +1,54 @@
 <template>
   <div>
     <div class="section pt-[3%]">
+      <!-- TOP BLOG SECTION -->
       <nuxt-link
         :to="`/blog/${topBlog?._id
           ?.replace('.md', '')
           ?.replace('content:blog:', '')}`"
-        class="inner blog-hero flex items-center relative gap-6 group overflow-hidden rounded-3xl"
+        class="inner blog-hero bg-[#EEDCFF] md:bg-white flex flex-col md:flex-row items-center relative gap-6 group overflow-hidden rounded-3xl"
       >
         <img
           :src="topBlog?.cover"
-          class="h-[600px] 2xl:h-[630px] group-hover:scale-110 transition-all"
+          class="h-auto xl:h-[600px] 2xl:h-[630px] group-hover:scale-110 transition-all object-contain"
         />
         <div
-          class="blog-info absolute bg-white shadow-md w-[27.5%] 2xl:w-[31.5%] min-w-[300px] rounded-3xl p-[2.5%] right-0 top-[10%] flex flex-col gap-4"
+          class="blog-info md:absolute bg-white shadow-md w-[95%] mb-2 md:mb-auto md:w-[50%] xl:w-[47.5%] 2xl:w-[31.5%] min-w-[300px] rounded-3xl p-[5%] md:p-[2%] right-[auto] md:right-[2.5%] xl:right-[5%] top-0 md:top-[4%] lg:top-[10%] xl:top-[17.5%] flex flex-col gap-4"
         >
           <div class="flex tags gap-2 cursor-default">
             <div
               v-for="tag in topBlog?.tag.split(',')"
               :key="tag"
-              class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-sm"
+              class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-xs lg:text-sm"
             >
               {{ tag.trim() }}
             </div>
           </div>
-          <h1 class="text-4xl font-bold group-hover:underline">
+          <h1 class="text-3xl lg:text-4xl font-bold group-hover:underline">
             {{ topBlog?.title }}
           </h1>
-          <p class="text-md">{{ topBlog?.paragraph?.slice(0, 150) }}...</p>
-          <div class="author flex items-center gap-4 mt-4">
-            <img
-              src="~/assets/images/favour.jpeg"
-              alt=""
-              class="rounded-full w-[40px] h-[40px] object-cover"
-            />
-            <span class="text-md font-semibold">{{ topBlog?.author }}</span>
+          <p class="text-sm lg:text-md">
+            {{ topBlog?.paragraph?.slice(0, 200) }}...
+          </p>
+          <div class="flex items-center justify-between mt-4">
+            <div class="author flex items-center gap-4">
+              <img
+                src="~/assets/images/favour.jpeg"
+                alt=""
+                class="rounded-full w-[40px] h-[40px] object-cover"
+              />
+              <span class="text-md font-semibold">{{ topBlog?.author }}</span>
+            </div>
+            <ArrowDown class="w-5 h-5 md:w-6 md:h-6 -rotate-90" />
           </div>
         </div>
       </nuxt-link>
-      <div class="inner py-[5%]">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2.5%]">
+
+      <!-- ALL BLOGS -->
+      <div class="inner py-[10%] md:py-[5%]">
+        <div
+          class="grid grid-cols-1 pb-[10%] md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-[2.5%]"
+        >
           <BlogCard
             v-for="blog in blogsUncategorized"
             :key="blog.title"

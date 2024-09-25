@@ -8,8 +8,6 @@ paragraph: Slides are the foundation of projection in Cloud of Worship. Each ser
 tag: How-to, Guides
 ---
 
-![image.png](Understanding%20Slides%20in%20Cloud%20of%20Worship%20105c512264dc80cba016f3794e06cd2d/image.png)
-
 Slides are the foundation of projection in Cloud of Worship. Each service schedule is composed of different types of slides, each serving a specific purpose. The six primary slide types are
 
 1. Song Slide

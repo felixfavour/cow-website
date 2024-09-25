@@ -9,8 +9,6 @@ tag: How-to, Guides
 status: Done
 ---
 
-![image.png](How%20to%20display%20multiple%20versions%20of%20scripture%20104c512264dc80179321d871b24c0ac6/image.png)
-
 Scripture is an essential part of your church’s service, and seeing verses in different translations can provide even greater depth and understanding. That’s why Cloud of Worship includes multiple (public domain) Bible translations for you to use locally during services.
 
 ## Changing the Bible Version on a Slide

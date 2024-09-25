@@ -2,22 +2,24 @@
   <div
     class="content pt-[7.5%] flex flex-col gap-8 items-center justify-center"
   >
-    <div class="inner max-w-[800px] mx-auto">
+    <div class="inner w-[90%] max-w-[800px] mx-auto">
       <div class="flex items-center tags gap-2 cursor-default mb-4">
         <nuxt-link
           to="/blog"
-          class="font-semibold px-3 py-1 hover:underline bg-purple-500 text-white rounded-full mr-4"
-          >Go Home</nuxt-link
+          class="font-semibold px-3 py-1 bg-purple-500 border-2 border-transparent hover:border-black text-white rounded-full mr-1 lg:mr-4 flex items-center gap-1 text-xs md:text-sm"
+        >
+          <ArrowDown class="w-5 h-5 rotate-90" whiteColor />
+          Go Home</nuxt-link
         >
         <div
           v-for="tag in data?.tag.split(',')"
           :key="tag"
-          class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-sm"
+          class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-xs md:text-sm"
         >
           {{ tag.trim() }}
         </div>
       </div>
-      <h1 class="text-6xl font-bold mb-4">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
         {{ data?.title }}
       </h1>
       <div class="header flex items-center gap-4">
@@ -39,9 +41,9 @@
     </div>
     <img
       :src="data?.cover"
-      class="min-h-[500px] h-[70vh] rounded-3xl group-hover:scale-110 transition-all object-contain"
+      class="w-[95%] xl:w-auto rounded-3xl group-hover:scale-110 transition-all"
     />
-    <section class="max-w-[800px] mx-auto">
+    <section class="w-[90%] max-w-[800px] mx-auto pb-[15%]">
       <article>
         <div class="icons" style="grid-area: icon">
           <BlogSocialMediaIcons class="inner" />
@@ -49,7 +51,7 @@
         <ContentDoc :path="data?._path" style="grid-area: content" />
       </article>
     </section>
-    <AboveFooterSection />
+    <!-- <AboveFooterSection /> -->
   </div>
 </template>
 

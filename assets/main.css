@@ -103,6 +103,7 @@ h6 {
   }
   article ul, article ol {
     padding-left: 2rem;
+    /* line-height: rem; */
   }
   article ul {
     list-style-type: disc;
@@ -111,7 +112,8 @@ h6 {
     list-style-type: decimal;
   }
   article li {
-    /* font-family: "IBM Plex Serif", sans-serif; */
+    margin-bottom: 2%;
+    font-size: 1.1rem;
   }
   article section {
     padding-bottom: 2rem;
@@ -142,16 +144,17 @@ h6 {
   article h2,
   article h2 a {
     font-size: 2.2rem;
-    margin-top: 1.2rem;
+    margin-top: 5%;
     margin-bottom: 1rem;
     font-weight: 800;
     border-bottom: none;
     font-family: "Bricolage Grotesque", sans-serif;
+    line-height: 100%;
   }
   article h3,
   article h3 a {
     font-size: 1.6rem;
-    line-height: 2.5rem;
+    line-height: 100%;
     margin-bottom: 1rem;
     margin-top: 1.2rem;
     font-weight: 800;
@@ -187,8 +190,15 @@ h6 {
     color: var(--primary);
   }
   article aside {
-    font-size: 1.1rem;
-    padding: 2rem;
+    font-size: 3rem;
+}
+  article aside {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1.2rem 1.6rem;
+    margin: 1rem 0;
     background: #F3F4F6;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -196,6 +206,10 @@ h6 {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+  article aside p {
+    font-size: 1.1rem;
+    padding-bottom: 0;
+  }
   article blockquote {
     font-size: 150%;
     line-height: 150%;
@@ -246,5 +260,41 @@ h6 {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  article p, article li {
+    font-size: 1rem;
+  }
+  article h1,
+  article h1 a {
+    font-size: 2.5rem;
+  }
+  article h2,
+  article h2 a {
+    font-size: 2rem;
+  }
+  article h3,
+  article h3 a {
+    font-size: 1.5rem;
+  }
+  article aside p {
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 500px) {
+  article h1,
+  article h1 a {
+    font-size: 2rem;
+  }
+  article h2,
+  article h2 a {
+    font-size: 1.6rem;
+  }
+  article h3,
+  article h3 a {
+    font-size: 1.2rem;
   }
 }

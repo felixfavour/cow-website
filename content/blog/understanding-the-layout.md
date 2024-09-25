@@ -8,10 +8,6 @@ paragraph: With so many presentation software options available today, it’s mu
 tag: How-to, Guides
 ---
 
-# Understanding the Cloud of Worship Layout.
-
-![image.png](Understanding%20the%20Cloud%20of%20Worship%20Layout%20100c512264dc80249eafc8abc49cb785/image.png)
-
 With so many presentation software options available today, it’s much easier to find a tool than it used to be when pioneers like EasyWorship started. When we started building Cloud of Worship, we focused on creating an interface that anyone can use with ease—without needing extensive guidance. A big part of that solution is our intuitive layout.
 
 ## The Cloud of Worship Layout (Control Center)

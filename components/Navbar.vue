@@ -2,7 +2,7 @@
   <div
     class="navbar section h-[60px] md:h-[85px] flex items-center bg-white sticky top-0 right-0 left-0 z-10"
   >
-    <div class="inner flex justify-between items-center w-full md:px-4 lg:px-8">
+    <div class="inner flex justify-between items-center w-full xl:px-8">
       <nuxt-link
         to="/"
         class="logo-ctn flex items-center gap-3 text-xl w-[250px]"
@@ -18,7 +18,7 @@
             ? 'visible opacity-100 translate-y-0'
             : 'invisible opacity-0 translate-y-[100%]'
         "
-        class="nav-actions transition-all duration-300 fixed inset-0 h-[100%] top-[60px] md:top-[85px] px-[7%] text-lg pt-[7.5%] bg-white lg:h-auto lg:px-0 lg:static lg:bg-transparent flex flex-col lg:pt-0 lg:flex-row lg:items-center gap-6 md:gap-6 lg:gap-8 lg:text-sm font-medium"
+        class="nav-actions transition-all duration-300 fixed inset-0 h-[100%] top-[60px] md:top-[85px] px-[7%] text-lg pt-[7.5%] bg-white lg:h-auto lg:px-0 lg:static lg:bg-transparent flex flex-col lg:pt-0 lg:flex-row lg:items-center gap-4 xl:gap-8 lg:text-sm font-medium"
       >
         <li class="nav-item">
           <nuxt-link to="/changelog" class="nav-link flex items-center gap-1">
@@ -26,11 +26,11 @@
           </nuxt-link>
         </li>
         <li class="nav-item group relative">
-          <nuxt-link to="#" class="nav-link flex items-center gap-1">
+          <nuxt-link to="/features" class="nav-link flex items-center gap-1">
             Features <ArrowDown />
           </nuxt-link>
           <div
-            class="ul-ctn pt-4 lg:hidden group-hover:block hover:block lg:absolute w-[100%] lg:w-[200px] z-10 left-[-80%] transition-all"
+            class="ul-ctn pt-4 lg:hidden group-hover:block hover:block lg:absolute w-[100%] lg:w-[205px] z-10 left-[-80%] transition-all"
           >
             <ul
               class="link-dropdown p-2 border border-gray-100 rounded-lg shadow-lg transition-all bg-white"
@@ -69,6 +69,9 @@
           <nuxt-link to="/wall-of-love" class="nav-link">
             Wall of Love
           </nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/blog" class="nav-link"> Support </nuxt-link>
         </li>
         <ul class="auth flex flex-col lg:hidden">
           <li class="nav-item">
@@ -198,5 +201,9 @@ const handleMenuClose = () => {
 <style scoped>
 .menu-open {
   visibility: visible;
+}
+.router-link-active {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 </style>
