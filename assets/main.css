@@ -91,6 +91,122 @@ h6 {
   max-width: 1000px;
 }
 
+
+/* NUXT CONTENT STYLES */
+  article p {
+    padding-bottom: 0.7rem;
+    display: block;
+    font-size: 1.1rem;
+  }
+  article strong {
+    font-weight: 700;
+  }
+  article ul, article ol {
+    padding-left: 2rem;
+  }
+  article ul {
+    list-style-type: disc;
+  }
+  article ol {
+    list-style-type: decimal;
+  }
+  article li {
+    /* font-family: "IBM Plex Serif", sans-serif; */
+  }
+  article section {
+    padding-bottom: 2rem;
+    text-align: left;
+    font-size: 2rem;
+    color: var(--primary);
+  }
+  article section.first {
+    padding-bottom: 1rem;
+  }
+  article em {
+  }
+  article p > .major {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  article a {
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+  article h1,
+  article h1 a {
+    font-size: 3.3rem;
+    margin-bottom: 1rem;
+    border-bottom: none;
+  }
+  article h2,
+  article h2 a {
+    font-size: 2.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    border-bottom: none;
+    font-family: "Bricolage Grotesque", sans-serif;
+  }
+  article h3,
+  article h3 a {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    font-weight: 800;
+    border-bottom: none;
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: #525252;
+  }
+  article h1,
+  article h2,
+  article h3 {
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  article img,
+  article video,
+  article iframe {
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+  }
+  .astro-code {
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+  }
+  .astro-code * {
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  code {
+    font-family: monospace;
+    color: var(--primary);
+  }
+  article aside {
+    font-size: 1.1rem;
+    padding: 2rem;
+    background: #F3F4F6;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+  article blockquote {
+    font-size: 150%;
+    line-height: 150%;
+    border-left: 2px solid;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  article blockquote p {
+    padding-bottom: 0;
+  }
+
 /* ANIMATIONS */
 @keyframes moving-bg {
   0%{background-position:0% 50%}

@@ -37,6 +37,11 @@
           <h6 class="text-lg font-bold mb-4">RESOURCES</h6>
           <ul class="flex gap-3 flex-col">
             <li>
+              <nuxt-link to="/blog" class="font-medium"
+                >Blog & Guides
+              </nuxt-link>
+            </li>
+            <li>
               <a
                 href="https://cloudofworshippers.featurebase.app/roadmap"
                 class="font-medium"

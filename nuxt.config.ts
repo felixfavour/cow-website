@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-07-18',
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-gtag"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-gtag", "@nuxt/content"],
   head: {
     charset: "utf-8",
     htmlAttrs: {
