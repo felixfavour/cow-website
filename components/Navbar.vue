@@ -181,7 +181,7 @@ watch(
       toggleMenu()
     }
     // Destory and reload animation on navigate
-    if (process.client) {
+    if (process.client && lottie) {
       setTimeout(() => {
         lottie("Navigation Menu")
         menuAnim.value = this.loadAnimation()

@@ -8,8 +8,6 @@ paragraph: In the worship experience, song lyrics play a crucial role right alon
 tag: How-to, Guides
 ---
 
-![image.png](How%20to%20Access%20thousands%20of%20songs%20for%20your%20church%20c%20104c512264dc806fafc3e08c5270ce69/image.png)
-
 In the worship experience, song lyrics play a crucial role right alongside scripture. There’s something powerful about following a song with the correct lyrics, and it can be incredibly eye-opening to finally see the right words to a song you may have been singing incorrectly.
 
 At Cloud of Worship, we understand how important it is to get the lyrics right, which is why we’ve made it a top priority. One of the ways we help with this is by preloading our song library with **over 7,000 songs**—and that number continues to grow as more churches contribute their own songs.

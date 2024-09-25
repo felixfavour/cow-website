@@ -8,10 +8,6 @@ paragraph: Cloud of Worship is a browser-based application, meaning it can run o
 tag: How-to, Guides
 ---
 
-# System & Technical Requirements for Cloud of Worship
-
-![image.png](System%20&%20Technical%20Requirements%20for%20Cloud%20of%20Worsh%2086c84c954f824747a4528bd6f57445b8/image.png)
-
 Cloud of Worship is a browser-based application, meaning it can run on virtually any operating system that supports a modern web browser. Whether you’re using **Windows**, **macOS**, **Linux**, **Chromebook**, **Android**, or **iPadOS**, Cloud of Worship is designed to work seamlessly across platforms.
 
 ## Supported Operating Systems and Devices

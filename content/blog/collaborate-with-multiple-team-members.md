@@ -40,7 +40,3 @@ Once they’ve joined, your team can begin working together on schedules, slides
 - **Collaborate remotely**: Team members can work from anywhere and still contribute to the media schedule.
 - **Easy invitations**: Add members via email or a unique signup link.
 - **Real-time teamwork**: Multiple team members can work on one or more schedules simultaneously, improving productivity and collaboration.
-
-![image.png](How%20to%20Collaborate%20with%20Multiple%20Members%20of%20Your%20M%2066e17608a61d42cf80ce66bafeea146a/image%201.png)
-
-![image.png](How%20to%20Collaborate%20with%20Multiple%20Members%20of%20Your%20M%2066e17608a61d42cf80ce66bafeea146a/image%202.png)

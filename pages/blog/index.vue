@@ -46,6 +46,11 @@
 
       <!-- ALL BLOGS -->
       <div class="inner py-[10%] md:py-[5%]">
+        <div class="flex mb-[2%]">
+          <h2 class="text-2xl lg:text-3xl font-bold group-hover:underline">
+            All resources, guides and more
+          </h2>
+        </div>
         <div
           class="grid grid-cols-1 pb-[10%] md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-[2.5%]"
         >

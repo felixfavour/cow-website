@@ -8,8 +8,6 @@ paragraph: Cloud of Worship is a fully browser-based web app, but it also works 
 tag: How-to, Guides
 ---
 
-![image.png](How%20to%20install%20and%20track%20updates%20on%20Cloud%20of%20Worsh%20684444b1b90a4a7aa1cc89d0ad7a1c02/image.png)
-
 Cloud of Worship is a fully browser-based web app, but it also works offline. Once you load the app at [app.cloudofworship.com](http://app.cloudofworship.com/), it caches the most recent version on your device, allowing you to access it without an active internet connection.
 
 ## Installing Cloud of Worship

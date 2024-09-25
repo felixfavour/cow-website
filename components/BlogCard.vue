@@ -11,7 +11,7 @@
         <div
           v-for="tag in blog?.tag.split(',')"
           :key="tag"
-          class="tag uppercase px-2 py-1 rounded-full bg-gray-100 md:text-sm"
+          class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-xs md:text-sm"
         >
           {{ tag.trim() }}
         </div>

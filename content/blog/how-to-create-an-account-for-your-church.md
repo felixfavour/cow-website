@@ -8,8 +8,6 @@ paragraph: Creating an account on Cloud of Worship for your church is quick and 
 tag: How-to, Guides
 ---
 
-![image.png](How%20to%20Create%20an%20Account%20on%20Cloud%20of%20Worship%20100c512264dc8052af43f24e95130f9c/image.png)
-
 Creating an account on Cloud of Worship for your church is quick and easy. Just follow these two simple steps:
 
 ## Step 1: Sign Up as an Administrator

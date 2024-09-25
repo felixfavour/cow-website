@@ -8,11 +8,8 @@ paragraph: Now that your account is all set and you’ve created some slides, it
 tag: How-to, Guides
 ---
 
-![image.png](How%20to%20project%20your%20LIVE%20slides%20to%20another%20display%20100c512264dc80e5806dddc40f0b4a41/image.png)
-
 Now that your account is all set and you’ve created some slides, it’s time to project them to your congregation. This can be done easily by using the **“Go Live”** button in Cloud of Worship.
 
-![image.png](How%20to%20project%20your%20LIVE%20slides%20to%20another%20display%20100c512264dc80e5806dddc40f0b4a41/image%201.png)
 
 <aside>
 💡
@@ -25,7 +22,7 @@ Now that your account is all set and you’ve created some slides, it’s time t
 
 Before you click the **“Go Live”** button, ensure the following:
 
-1. You are connected to a Secondary Display
+1. You are connected to a Secondary Display (with the display extended)
 2. Your slide schedule contains active slides
 3. You have selected a live slide in your slide schedule
 4. You have positioned the Control Center on your Primary Display
@@ -33,7 +30,9 @@ Before you click the **“Go Live”** button, ensure the following:
 
 ### 1. Connect to a Secondary Display
 
-Ensure your computer is connected to a secondary monitor. Typically, this monitor will extend your primary display and is where your slides will be shown.
+Ensure your computer is connected to a secondary monitor. Typically, this monitor will extend your primary display and is where your slides will be shown. 
+
+Also ensure that the secondary monitor is extending the primary monitor, and not mirroring it. (On Windows, you can use the shortcut: **Windows + P** to open the **“Display Settings”** window, and then select the “Extend” option on your primary monitor.)
 
 ### 2. Check Your Slide Schedule Contents
 
