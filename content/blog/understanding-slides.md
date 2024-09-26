@@ -18,6 +18,7 @@ Slides are the foundation of projection in Cloud of Worship. Each service schedu
 6. Countdown Slide
 
 Each slide has unique features and is easily identifiable by specific colors and icons.
+![Colors and icons for Slides in Cloud of Worship](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-slide-types.webp?alt=media&token=6b8b0225-5207-4480-b0b4-5cdd411ad9a4)
 
 ### 1. Song Slide
 

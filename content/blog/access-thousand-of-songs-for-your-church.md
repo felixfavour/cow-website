@@ -28,6 +28,8 @@ It’s that easy! Once the song is added, it will be available in your personal 
 
 ## Sharing Your Song Library with Others
 
+![Adding a song to library - Cloud of Worship](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-share-song.webp?alt=media&token=85cd1361-f9f1-433c-b054-0802ce38d7c5)
+
 We believe in sharing because it strengthens the worship experience across communities. That’s why we encourage you to keep the checkbox that says **“Share this song with other users?”** activated on your account. This enables other churches to benefit from the songs you’ve added, fostering a larger collection of shared worship music.
 
 Remember, sharing is caring—and by contributing to the global library, you’re helping others worship with the right lyrics, just like you.

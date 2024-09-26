@@ -15,6 +15,8 @@ This feature is especially helpful when a team member needs to work from home, t
 
 ## Adding Members to Your Workspace
 
+![Adding Members to Your Workspace](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-invite.webp?alt=media&token=ebc60daa-cc9a-4ffc-95bf-79bde26c9e9d)
+
 Adding new members to your media team is simple. Follow these steps:
 
 1. Click on the “Invite” Button

@@ -26,7 +26,10 @@
           </nuxt-link>
         </li>
         <li class="nav-item group relative">
-          <nuxt-link to="/features" class="nav-link flex items-center gap-1">
+          <nuxt-link
+            to="/features/browser-ready"
+            class="nav-link flex items-center gap-1"
+          >
             Features <ArrowDown />
           </nuxt-link>
           <div
@@ -202,7 +205,7 @@ const handleMenuClose = () => {
 .menu-open {
   visibility: visible;
 }
-.router-link-active {
+li .router-link-exact-active {
   color: var(--primary-color);
   font-weight: 600;
 }

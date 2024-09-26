@@ -14,7 +14,7 @@ Now that your account is all set and you’ve created some slides, it’s time t
 <aside>
 💡
 
-**Tip**: If you’re new to the platform, take a moment to explore the Cloud of Worship layout to better understand how the app works and how to create slides.
+**Tip**: If you’re new to the platform, take a moment to [explore the Cloud of Worship layout](/blog/understanding-the-layout) to better understand how the app works and how to create slides.
 
 </aside>
 

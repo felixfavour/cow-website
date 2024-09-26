@@ -166,7 +166,11 @@ h6 {
   article h2,
   article h3 {
     font-weight: 800;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2.5%;
+  }
+  article h3 {
+    font-weight: 800;
+    margin-bottom: 0.8rem;
   }
   article img,
   article video,
