@@ -74,6 +74,22 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.6",
+    title: "Version Reach",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Added more native yoruba hymns, issue with duplicate background videos and more fixes.",
+    changes: [
+      "Fix issue with duplicate images/videos on background media selection modal.",
+      "Fixed issue with slide backgrounds not loading after selecting schedule.",
+      "Added 600+ native yoruba hymns",
+      "Added multiple text content to help and support users on cloudofworship.com/blog",
+      "Made minor fixes and changes to enhance user experience.",
+    ],
+    date: "September 28, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.8.5",
     title: "Version Renewal",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -88,7 +104,7 @@ const changelogs = [
       "The schedule modal now opens on load, with various fixes.",
     ],
     date: "September 21, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.8.4",
