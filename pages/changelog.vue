@@ -74,6 +74,21 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.7",
+    title: "Version Reach",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Added image uploads, profile avatar, google auth and more!",
+    changes: [
+      "You can now upload media slide images to the cloud!",
+      "Enjoy improved image compression and file upload limits!",
+      "You can now display your profile avatar!",
+      "Sign in effortlessly with Google Authentication!",
+      "Made minor fixes and changes to enhance user experience.",
+    ],
+    date: "October 5, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.8.6",
     title: "Version Reach",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -87,7 +102,7 @@ const changelogs = [
       "Made minor fixes and changes to enhance user experience.",
     ],
     date: "September 28, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.8.5",
