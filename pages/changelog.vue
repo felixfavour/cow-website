@@ -75,7 +75,7 @@ useSeoMeta({
 const changelogs = [
   {
     version: "Beta v0.8.7",
-    title: "Version Reach",
+    title: "Version Purpose",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
     description: "Added image uploads, profile avatar, google auth and more!",
     changes: [
