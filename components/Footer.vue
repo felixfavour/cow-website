@@ -86,7 +86,7 @@
       >
         <div class="col flex flex-col lg:flex-row gap-1 lg:gap-4">
           <p class="font-medium text-gray-600">
-            Cloud of Worship, All Rights Reserved, 2024
+            &copy; CoW Labs, All Rights Reserved, {{ new Date().getFullYear() }}
           </p>
           <ul class="flex gap-4">
             <li>
