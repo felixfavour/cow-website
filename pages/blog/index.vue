@@ -63,6 +63,7 @@
       </div>
     </div>
     <AboveFooterSection />
+    <TestimonialPopup v-if="showTestimonialPopup" />
   </div>
 </template>
 
@@ -71,6 +72,7 @@ const blogsByCategory = ref([])
 const blogsUncategorized = ref([])
 const newBlogs = ref([])
 const sliderData = ref([])
+const showTestimonialPopup = ref(false)
 useSeoMeta({
   title: "Blog, Resources, Guides and More - Cloud of Worship",
   ogTitle: "Blog, Resources, Guides and More - Cloud of Worship",

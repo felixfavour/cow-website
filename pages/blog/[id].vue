@@ -52,6 +52,8 @@
       </article>
     </section>
     <!-- <AboveFooterSection /> -->
+
+    <TestimonialPopup v-if="showTestimonialPopup" />
   </div>
 </template>
 
@@ -63,6 +65,7 @@ const { data } = await useAsyncData(`blog-${params.id}`, () =>
     .findOne()
 )
 const content = await data._rawValue
+const showTestimonialPopup = ref(false)
 
 useSeoMeta({
   title: content.title,
