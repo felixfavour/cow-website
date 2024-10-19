@@ -74,10 +74,41 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.8.9",
+    title: "Version Forbearance",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Added new durations for countdown slides - 1 min & 2 mins, fixed issues and more!",
+    changes: [
+      "Added new durations for countdown slides - 1 min & 2 mins.",
+      "Fixed issue when deleting multiple slides with delete all functionality.",
+      "Fix issue where alert/banner restarts when slide changes.",
+      "Made minor fixes and improvements",
+    ],
+    date: "October 19, 2024",
+    latest: true,
+  },
+  {
+    version: "Beta v0.8.8",
+    title: "Version Adoration",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Added profile settings, email verification and more!",
+    changes: [
+      "Added profile settings.",
+      "You can now change your email address.",
+      "Added compulsory email verification for new users.",
+      "Fixed slides automatically being deleted when they are synced on occasions.",
+      "You can now display your profile avatar!",
+      "Made minor fixes and improvements",
+    ],
+    date: "October 12, 2024",
+    latest: false,
+  },
+  {
     version: "Beta v0.8.7",
     title: "Version Purpose",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
-    description: "Added image uploads, profile avatar, google auth and more!",
+    description: "Added image uploads, profile avatar, google auth and more",
     changes: [
       "You can now upload media slide images to the cloud!",
       "Enjoy improved image compression and file upload limits!",
@@ -86,7 +117,7 @@ const changelogs = [
       "Made minor fixes and changes to enhance user experience.",
     ],
     date: "October 5, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.8.6",
