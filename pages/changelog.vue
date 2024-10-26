@@ -78,7 +78,7 @@ const changelogs = [
     title: "Version Velocity",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
     description:
-      "Added new durations for countdown slides - 1 min & 2 mins, fixed issues and more!",
+      "Introduced a live alert indicator on the control screen, shortcuts panel, undo/redo, new Bible versions, and more!",
     changes: [
       "Introduced a live alert indicator on the control screen.",
       "Added a shortcuts panel with new hotkeys for next, previous, search, and more actions.",
