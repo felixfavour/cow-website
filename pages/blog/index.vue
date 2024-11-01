@@ -90,7 +90,7 @@ useSeoMeta({
   canonical: "https://cloudofworship.com",
 })
 
-const topBlog = computed(() => blogsUncategorized.value?.[2])
+const topBlog = computed(() => blogsUncategorized.value?.[0])
 
 const fetchBlogs = async () => {
   const blogs = await queryContent("/blog")
@@ -116,6 +116,9 @@ const fetchBlogs = async () => {
           ? category_to_article_mapping[tag].push(blog)
           : (category_to_article_mapping[tag] = [blog])
       )
+  })
+  blogs.sort((a, b) => {
+    return new Date(b.created).getTime() - new Date(a.created).getTime()
   })
   blogsUncategorized.value = blogs
 
