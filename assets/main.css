@@ -224,6 +224,40 @@ h6 {
   article blockquote p {
     padding-bottom: 0;
   }
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem 0;
+    border: 1px solid #E5E7EB;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+  article th {
+    background-color: #F3F4F6;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  article th,
+  article td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Make table scrollable horizontally on mobile */
+    article .table-wrapper {
+      overflow-x: auto;
+    }
+    
+    article th,
+    article td {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.95rem;
+    }
+  }
+  
 
 /* ANIMATIONS */
 @keyframes moving-bg {
