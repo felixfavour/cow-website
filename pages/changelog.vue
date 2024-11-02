@@ -74,6 +74,29 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.9.1",
+    title: "Version Solidarity",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "One account per user, flickering backdrop, improved app-wide settings, and more!",
+    changes: [
+      "Enforced one church account per user",
+      "Fixed flickering backdrop issue on slide change",
+      "Added animation settings for slides",
+      "Added app-wide setting for number of lines per slide",
+      "Added storage settings, indicator including local data deletion",
+      "Fixed an issue affecting offline access functionality",
+      "Refined display and screen settings, including media slide background and content background fill type on Edit Content Pane",
+      "Resolved an issue with a wrong error message on the /verify page",
+      "Fixed a bug causing perpetual slide retrieval on schedule change",
+      "Updated Bible versions download process and improved sensitive information handling",
+      "Implemented auto-redirect to home page upon app update",
+      "Switched to NuxtHub for better uptime in Nigeria region",
+    ],
+    date: "November 2, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.9.0",
     title: "Version Velocity",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -94,7 +117,7 @@ const changelogs = [
       "Refreshed and modified the Cloud of Worship page content.",
     ],
     date: "October 26, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.8.9",
