@@ -74,6 +74,23 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.9.2",
+    title: "Version Omnipresence",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Enhanced WebSocket functionality, new shortcuts, and more!",
+    changes: [
+      "Added & Improved WebSocket functionality to reconnect on failure and upgraded to secure WebSocket (WSS).",
+      "Enhanced shortcuts to support full-screen mode.",
+      "Resolved display settings issues, including support for monitors without labels.",
+      "Integrated PostHog for improved user feedback and product experience.",
+      "Added keyboard shortcut to switch live display slides.",
+      'Introduced a new "Go Live" button with livestreaming options.',
+      "Updated livestream pages to support WebSocket integration.",
+    ],
+    date: "November 9, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.9.1",
     title: "Version Solidarity",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -94,7 +111,7 @@ const changelogs = [
       "Switched to NuxtHub for better uptime in Nigeria region",
     ],
     date: "November 2, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.9.0",
