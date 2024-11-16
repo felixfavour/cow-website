@@ -74,7 +74,8 @@ useSeoMeta({
 
 const changelogs = [
   {
-    title: "Version Omnipresence (Latest)",
+    version: "Beta v0.9.3",
+    title: "Version Tenacity",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
     description:
       "Multiple verses per Bible slide, livestream banners, fixes, and more!",
