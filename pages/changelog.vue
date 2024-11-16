@@ -74,6 +74,21 @@ useSeoMeta({
 
 const changelogs = [
   {
+    title: "Version Omnipresence (Latest)",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Multiple verses per Bible slide, livestream banners, fixes, and more!",
+    changes: [
+      "Enabled multiple verses per Bible slide.",
+      "Increased timeout and retries for WebSocket connections.",
+      "Added support for uploading slide background images.",
+      "Implemented alerts and banners in livestream mode.",
+      "Fixed livestream to recognize new slides by default.",
+    ],
+    date: "November 16, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.9.2",
     title: "Version Omnipresence",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -88,7 +103,7 @@ const changelogs = [
       "Updated livestream pages to support WebSocket integration.",
     ],
     date: "November 9, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.9.1",
