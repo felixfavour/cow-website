@@ -74,6 +74,20 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.9.4",
+    title: "Version PUSH",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Multiple verses per Bible slide, livestream banners, fixes, and more!",
+    changes: [
+      "Linked default Bible version to the whole Bible search.",
+      "Removed the login requirement from the church invite screen.",
+      "Fixed a minor issue in the invite user flow.",
+    ],
+    date: "November 23, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.9.3",
     title: "Version Tenacity",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -87,7 +101,7 @@ const changelogs = [
       "Fixed livestream to recognize new slides by default.",
     ],
     date: "November 16, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.9.2",
