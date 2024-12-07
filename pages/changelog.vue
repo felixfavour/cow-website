@@ -74,6 +74,19 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.9.6",
+    title: "Version Communion",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Slide settings for footnotes and fix ESV version issue.",
+    changes: [
+      "Added slide settings to add or remove footnotes.",
+      "Fixed the non-selectable default ESV version issue.",
+      "Added new songs",
+    ],
+    date: "December 7, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.9.5",
     title: "Version Victory",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -83,8 +96,8 @@ const changelogs = [
       "Introduced elaborate and interactive window settings",
       "Minor fixes and improvements",
     ],
-    date: "November 23, 2024",
-    latest: true,
+    date: "December 1, 2024",
+    latest: false,
   },
   {
     version: "Beta v0.9.4",
