@@ -74,6 +74,20 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.9.7",
+    title: "Version Joyful Tidings",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description: "Slide overlays, backgrounds, and christmas updates!",
+    changes: [
+      "Increased the maximum number of alerts configurable in settings.",
+      "Added slide overlays with a maiden type featuring falling snow.",
+      "Introduced new backgrounds for Christmas and updated the background image component.",
+      "Added new songs",
+    ],
+    date: "December 14, 2024",
+    latest: true,
+  },
+  {
     version: "Beta v0.9.6",
     title: "Version Communion",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -84,7 +98,7 @@ const changelogs = [
       "Added new songs",
     ],
     date: "December 7, 2024",
-    latest: true,
+    latest: false,
   },
   {
     version: "Beta v0.9.5",
