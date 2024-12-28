@@ -8,7 +8,9 @@ paragraph: Cloud of Worship is a fantastic tool for your church to display lyric
 tag: How-to, Guides
 ---
 
-In this article, we’ll walk through a step-by-step process to add Cloud of Worship to your vMix setup using the livestream URL. Cloud of Worship is a fantastic tool for your church to display lyrics, scriptures, and other multimedia content seamlessly, and integrating it with vMix makes it even more powerful for live broadcasts.
+In this article, we’ll walk through a step-by-step process to add Cloud of Worship to your vMix setup using the livestream URL.
+
+Cloud of Worship is a fantastic tool for your church to display lyrics, scriptures, and other multimedia content seamlessly, and integrating it with vMix makes it even more powerful for live broadcasts.
 
 To keep this guide easy to follow, let's break down each step and include tips to help you configure the integration without any hassle. Here are the highlighted steps:
 
@@ -19,19 +21,19 @@ To keep this guide easy to follow, let's break down each step and include tips t
 
 ## Step 1: Open Cloud of Worship and Copy Livestream URL
 
-![https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-vmix-2.webp?alt=media&token=fedf0106-7dc1-4ffa-b146-f4daf6fde112](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-vmix-2.webp?alt=media&token=fedf0106-7dc1-4ffa-b146-f4daf6fde112)
+![How to copy livestream URL on Cloud of Worship](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-vmix-2.webp?alt=media&token=fedf0106-7dc1-4ffa-b146-f4daf6fde112)
 
 1. **Log into Cloud of Worship:** Start by logging into your account at [app.cloudofworship.com](https://app.cloudofworship.com/login).
 2. **Find the Livestream URL:** Once logged in, navigate to the **Livestream** section. Here, you’ll see the URL for your live worship stream, which should look similar to this format: ***app.cloudofworship.com/livestream/[livestream_id],*** Copy this URL, as you’ll need it shortly.
 
 ## Step 2: Open vMix and Add a New Web Browser Input
 
-![https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-vmix-3.webp?alt=media&token=173aaa96-d27a-4540-a657-3547b5a17715](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-vmix-3.webp?alt=media&token=173aaa96-d27a-4540-a657-3547b5a17715)
-
 1. **Launch vMix:** Open your vMix software on your computer. Ensure you have an updated version to avoid compatibility issues.
 2. **Add Input:** In the lower left corner, click on the **Add Input** button. This will bring up the “Add Input” menu, allowing you to add different types of media sources.
 
 ## Step 3: Configure the Web Browser Input
+
+![Add new Web Browser Input for Cloud of Worship on vMix](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-vmix-3.webp?alt=media&token=173aaa96-d27a-4540-a657-3547b5a17715)
 
 1. **Select Web Browser:** In the Add Input menu, choose the **Web Browser** option from the list. This will allow you to add the Cloud of Worship stream as a browser source within vMix.
 2. **Paste the URL:** In the **URL field**, paste the livestream link you copied earlier from Cloud of Worship.
