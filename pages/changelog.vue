@@ -32,14 +32,14 @@
 
     <!-- CHANGELOG SECTION -->
     <ChangelogCard
-      v-for="changelog in changelogs"
+      v-for="(changelog, index) in changelogs"
       :key="changelog.version"
       :version="changelog.version"
       :title="changelog.title"
       :description="changelog.description"
       :changes="changelog.changes"
       :date="changelog.date"
-      :latest="changelog.latest"
+      :latest="index === 0"
       :image="changelog.image"
     />
 
@@ -74,6 +74,24 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.12.0",
+    title: "Version Refueling",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Updated changelog modal, added new hymns, set lettercase for slide text content, fixed slides reorder state change on reload, improved live output speed for slower computers, enhanced live output responsiveness during changes, and made general performance improvements.",
+    changes: [
+      "Set lettercase for slide text content.",
+      "Fixed slides reorder state change on reload.",
+      "Improved live output speed for slower computers.",
+      "Enhanced live output responsiveness during changes.",
+      "Made general performance improvements.",
+      "Updated changelog modal.",
+      "Added new hymns.",
+      "Introduced Semantic Versioning.",
+    ],
+    date: "January 11, 2025",
+  },
+  {
     version: "Beta v0.9.7",
     title: "Version Joyful Tidings",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
@@ -85,7 +103,6 @@ const changelogs = [
       "Added new songs",
     ],
     date: "December 14, 2024",
-    latest: true,
   },
   {
     version: "Beta v0.9.6",
@@ -98,7 +115,6 @@ const changelogs = [
       "Added new songs",
     ],
     date: "December 7, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.9.5",
@@ -111,7 +127,6 @@ const changelogs = [
       "Minor fixes and improvements",
     ],
     date: "December 1, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.9.4",
@@ -125,7 +140,6 @@ const changelogs = [
       "Fixed a minor issue in the invite user flow.",
     ],
     date: "November 23, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.9.3",
@@ -141,7 +155,6 @@ const changelogs = [
       "Fixed livestream to recognize new slides by default.",
     ],
     date: "November 16, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.9.2",
@@ -158,7 +171,6 @@ const changelogs = [
       "Updated livestream pages to support WebSocket integration.",
     ],
     date: "November 9, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.9.1",
@@ -181,7 +193,6 @@ const changelogs = [
       "Switched to NuxtHub for better uptime in Nigeria region",
     ],
     date: "November 2, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.9.0",
@@ -204,7 +215,6 @@ const changelogs = [
       "Refreshed and modified the Cloud of Worship page content.",
     ],
     date: "October 26, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.9",
@@ -219,7 +229,6 @@ const changelogs = [
       "Made minor fixes and improvements",
     ],
     date: "October 19, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.8",
@@ -235,7 +244,6 @@ const changelogs = [
       "Made minor fixes and improvements",
     ],
     date: "October 12, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.7",
@@ -250,7 +258,6 @@ const changelogs = [
       "Made minor fixes and changes to enhance user experience.",
     ],
     date: "October 5, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.6",
@@ -266,7 +273,6 @@ const changelogs = [
       "Made minor fixes and changes to enhance user experience.",
     ],
     date: "September 28, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.5",
@@ -283,7 +289,6 @@ const changelogs = [
       "The schedule modal now opens on load, with various fixes.",
     ],
     date: "September 21, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.4",
@@ -299,7 +304,6 @@ const changelogs = [
       "Updated app icons to enhance the visual appearance and branding.",
     ],
     date: "September 14, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.3",
@@ -317,7 +321,6 @@ const changelogs = [
       "Updated the copy and style of the fullscreen prompt for improved clarity and aesthetics.",
     ],
     date: "September 7, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.2",
@@ -333,7 +336,6 @@ const changelogs = [
       "Made minor fixes and improvements.",
     ],
     date: "August 31, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.1",
@@ -351,7 +353,6 @@ const changelogs = [
       "Added a 1-hour limit to the timer feature, providing better control over timed events.",
     ],
     date: "August 23, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.8.0",
@@ -368,7 +369,6 @@ const changelogs = [
       "Introduced a drag-and-copy feature to simplify adding media to slides.",
     ],
     date: "August 17, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.9",
@@ -383,7 +383,6 @@ const changelogs = [
       "Modified remote songs library.",
     ],
     date: "August 10, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.8",
@@ -401,7 +400,6 @@ const changelogs = [
       "Resolved slight issues related to banner notifications, enhancing overall user experience and reliability.",
     ],
     date: "August 3, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.7",
@@ -422,7 +420,6 @@ const changelogs = [
       "Corrected layout shifts occurring when the “not found” banner is active, maintaining layout integrity.",
     ],
     date: "July 27, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.6",
@@ -439,7 +436,6 @@ const changelogs = [
       "Fixed minor bugs and issues for improved experience",
     ],
     date: "July 19, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.5",
@@ -454,7 +450,6 @@ const changelogs = [
       "Fixed minor bugs and issues for improved experience",
     ],
     date: "July 13, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.4",
@@ -469,7 +464,6 @@ const changelogs = [
       "Fixed minor bugs and issues for improved experience",
     ],
     date: "July 6, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.3",
@@ -483,7 +477,6 @@ const changelogs = [
       "Fixed minor bugs and issues for improved experience",
     ],
     date: "Jun 28, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.2",
@@ -499,7 +492,6 @@ const changelogs = [
       "Fixed minor bugs and issues for improved experience",
     ],
     date: "Jun 22, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.1",
@@ -512,7 +504,6 @@ const changelogs = [
       "Fixed minor bugs and issues for improved experience",
     ],
     date: "Jun 15, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.7.0",
@@ -528,7 +519,6 @@ const changelogs = [
       "Fixed minor bugs and issues for improved experience",
     ],
     date: "Jun 8, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.6.5",
@@ -547,7 +537,6 @@ const changelogs = [
       "Want to edit a live slide quickly, double tap the slide in the Live Output pane and make your quick adjustments ;)",
     ],
     date: "Jun 1, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.6.4",
@@ -561,7 +550,6 @@ const changelogs = [
       "Fixed: Recurring download of assets on reload.",
     ],
     date: "May 25, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.6.3",
@@ -579,7 +567,6 @@ const changelogs = [
       "Added dark mode for auth screens",
     ],
     date: "May 18, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.6.2",
@@ -601,7 +588,6 @@ const changelogs = [
       "Added changelog modal",
     ],
     date: "May 11, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.6.1",
@@ -610,7 +596,6 @@ const changelogs = [
     description: "DB Migration, song preview UI, and bug fixes",
     changes: ["DB Migration and bug fixes", "Song and hymn verse preview"],
     date: "May 7, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.6.0",
@@ -624,7 +609,6 @@ const changelogs = [
       "Fixed: Recurring download of assets on reload.",
     ],
     date: "May 4, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.5.9",
@@ -638,7 +622,6 @@ const changelogs = [
       "Fixed: Adjust songcard to allow hymns",
     ],
     date: "Apr 27, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.5.8",
@@ -651,7 +634,6 @@ const changelogs = [
       "Fix: issue with double audio from media video",
     ],
     date: "Apr 27, 2024",
-    latest: false,
   },
   {
     version: "Beta v0.5.7",
@@ -660,7 +642,6 @@ const changelogs = [
     description: "Personal library.",
     changes: ["Personal library", "Added search to library."],
     date: "Apr 26, 2024",
-    latest: false,
   },
 ]
 
