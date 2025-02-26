@@ -25,7 +25,7 @@
       <div class="header flex items-center gap-4">
         <div class="blog-details-left flex items-center gap-4">
           <img
-            src="~/assets/images/favour.jpeg"
+            :src="data?.author_img || '/images/author/favour.jpeg'"
             class="rounded-full w-[50px] h-[50px] object-cover"
             alt=""
           />
@@ -41,7 +41,7 @@
     </div>
     <img
       :src="data?.cover"
-      class="w-[95%] xl:w-auto rounded-3xl group-hover:scale-110 transition-all"
+      class="w-[95%] max-w-[1200px] xl:w-auto rounded-3xl group-hover:scale-110 transition-all"
     />
     <section class="w-[90%] max-w-[800px] mx-auto pb-[15%]">
       <article>

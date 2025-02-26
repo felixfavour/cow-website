@@ -29,7 +29,7 @@
       <div class="flex items-center justify-between mt-6">
         <div class="blog-card-author flex items-center gap-4">
           <img
-            src="~/assets/images/favour.jpeg"
+            :src="blog?.author_img || '/images/author/favour.jpeg'"
             alt=""
             class="rounded-full w-[40px] h-[40px] object-cover"
           />

@@ -17,7 +17,7 @@
         >
           <div class="flex tags gap-2 cursor-default">
             <div
-              v-for="tag in topBlog?.tag.split(',')"
+              v-for="tag in topBlog?.tag?.split(',')"
               :key="tag"
               class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-xs lg:text-sm"
             >
@@ -33,7 +33,7 @@
           <div class="flex items-center justify-between mt-4">
             <div class="author flex items-center gap-4">
               <img
-                src="~/assets/images/favour.jpeg"
+                :src="topBlog?.author_img || '/images/author/favour.jpeg'"
                 alt=""
                 class="rounded-full w-[40px] h-[40px] object-cover"
               />
@@ -103,6 +103,7 @@ const fetchBlogs = async () => {
       "updated",
       "tag",
       "author",
+      "author_img",
       "user_title",
       "paragraph",
     ])
@@ -110,7 +111,7 @@ const fetchBlogs = async () => {
   const category_to_article_mapping = {}
   blogs.map((blog) => {
     blog.tag
-      .split(",")
+      ?.split(",")
       .forEach((tag) =>
         tag in category_to_article_mapping
           ? category_to_article_mapping[tag].push(blog)
