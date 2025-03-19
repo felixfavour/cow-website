@@ -74,6 +74,77 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.16.0",
+    title: "Version Acceleration",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Added improved Bible slide navigation, optimized live streaming performance, and enhanced system settings with new keyboard shortcuts.",
+    changes: [
+      "Added shortcut to open settings.",
+      "Enabled opening Bible slides with book abbreviation and chapter number in Preview Content Pane.",
+      "Improved Bible slide navigation with support for opening slides without adding chapter or by adding only chapter.",
+      "Optimized WebSocket connections to open only when previous connection is closed.",
+      "Enhanced livestream performance with refresh capability when last sync button is clicked.",
+      "Fixed livestream lag and reconnection issues.",
+    ],
+    date: "March 16, 2025",
+  },
+  {
+    version: "Beta v0.15.0",
+    title: "Version Revelation",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Expanded Bible navigation capabilities, improved live streaming stability, and added new text size controls for better presentation flexibility.",
+    changes: [
+      "Added support for opening Bible slides with book abbreviation and chapter number in Preview Content Pane.",
+      "Enabled opening Bible slides without adding chapter or by adding only chapter.",
+      "Optimized WebSocket connection management to open only when previous connection is closed.",
+      "Added refresh capability for livestream connection when last sync button is clicked.",
+      "Fixed livestream lag and reconnection issues.",
+      "Introduced new minimum and maximum slide text size options.",
+    ],
+    date: "March 2, 2025",
+  },
+  {
+    version: "Beta v0.14.0",
+    title: "Version Amplification",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Enhanced Bible navigation functionality, improved user interface stability, and added extended countdown timer capabilities.",
+    changes: [
+      "Fixed Bible slides next/previous navigation quirks.",
+      "Added new minimum and maximum slide text size options.",
+      "Fixed jumpy sidebar behavior when selecting actions.",
+      "Introduced extended countdown timer for specific times.",
+    ],
+    date: "February 23, 2025",
+  },
+  {
+    version: "Beta v0.13.0",
+    title: "Version Ascension",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Improved user interface stability and added extended timer functionality for greater flexibility in service timing.",
+    changes: [
+      "Fixed jumpy sidebar when selecting actions.",
+      "Added extended countdown timer for specific times.",
+      "Used Broadcast Channel API to improve live output responsiveness.",
+    ],
+    date: "January 26, 2025",
+  },
+  {
+    version: "Beta v0.12.1",
+    title: "Version Refinement",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Performance improvements for live output response time and minor UI enhancements.",
+    changes: [
+      "Used Broadcast Channel API to improve live output responsiveness.",
+      "Fixed application version rendering style.",
+    ],
+    date: "January 11, 2025",
+  },
+  {
     version: "Beta v0.12.0",
     title: "Version Refueling",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
