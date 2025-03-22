@@ -74,6 +74,19 @@ useSeoMeta({
 
 const changelogs = [
   {
+    version: "Beta v0.17.0",
+    title: "Version Harmony",
+    image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    description:
+      "Added text formatting improvements with new line spacing options and enhanced content editing capabilities for better presentation.",
+    changes: [
+      "Added line spacing/height option for slides.",
+      "Updated Edit Content pane to reflect line spacing changes in real-time.",
+      "Added shortcut to open settings.",
+    ],
+    date: "March 22, 2025",
+  },
+  {
     version: "Beta v0.16.0",
     title: "Version Acceleration",
     image: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
