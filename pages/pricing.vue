@@ -26,10 +26,11 @@
       </div>
       <div class="actions mt-[10%] md:mt-[5%] text-center">
         <a
-          href="mailto:hello@cloudofworship.com"
+          target="_blank"
+          href="https://app.cloudofworship.com/signup"
           class="primary-btn taller w-[240px] mx-auto"
         >
-          Explore premium offers
+          Sign up for free
         </a>
         <!-- <div class="helper-text text-sm text-center pt-2">
           We hope to never charge.
@@ -39,6 +40,9 @@
 
     <!-- CHURCHES SECTION -->
     <ChurchUsersSection />
+
+    <!-- COMPARISON TABLE SECTION -->
+    <ComparisonTable />
 
     <!-- ABOVE FOOTER SECTION -->
     <AboveFooterSection />
