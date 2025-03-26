@@ -155,6 +155,9 @@
     <!-- WALL OF LOVE SECTION -->
     <WallOfLove />
 
+    <!-- COMPARISON SECTION -->
+    <ComparisonTable />
+
     <!-- ABOVE FOOTER SECTION -->
     <AboveFooterSection />
 

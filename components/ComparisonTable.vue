@@ -3,6 +3,19 @@
     <!-- HERO SECTION -->
     <div class="inner py-[10%] md:py-[5%]">
       <div
+        class="texts max-w-full md:max-w-[65%] mb-[7.5%] md:mb-[3%]"
+        v-if="$route.name === 'index'"
+      >
+        <h3 class="text-3xl md:text-5xl font-bold">
+          You have not seen
+          <span class="emphasis-text">anything like this</span> before.
+        </h3>
+        <p class="description xl:text-md 2xl:text-lg md:font-medium mt-[2%]">
+          Here's how Cloud of Worship compares to other tools you might be
+          familiar with.
+        </p>
+      </div>
+      <div
         class="overflow-x-auto border-4 md:border-8 border-purple-100 rounded-[16px] md:rounded-[32px]"
       >
         <table class="table-auto border-collapse w-full">
