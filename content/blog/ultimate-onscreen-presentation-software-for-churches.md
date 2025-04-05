@@ -1,6 +1,6 @@
 ---
 title: "The Ultimate On-Screen Presentation Software for Churches - Cloud of Worship."
-author: Favour Felix
+author: Kiitan Jones
 cover: https://revaise.s3.us-east-2.amazonaws.com/website/song.webp
 created: April 4, 2025 12:00 PM
 updated: April 4, 2025 12:00 PM
