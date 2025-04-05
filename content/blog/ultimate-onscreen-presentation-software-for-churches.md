@@ -1,5 +1,5 @@
 ---
-title: "The Ultimate On-Screen Presentation Software for Churches - Cloud of Worship."
+title: "The Ultimate On-Screen Presentation Software for Churches"
 author: Kiitan Jones
 author_img: /images/author/kiitan.jpg
 cover: https://revaise.s3.us-east-2.amazonaws.com/website/song.webp
