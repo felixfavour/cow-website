@@ -1,7 +1,7 @@
 ---
 title: Simple Church Media Tools For Non Tech Savvy Teams page
 author: Kiitan Jones
-cover: /images/blog/blog-scripture-versions.png
+cover: /images/blog/simple-church-media-tools.jpg
 author_img: /images/author/kiitan.jpg
 created: July 5, 2025 12:00 PM
 updated: July 5, 2025 12:00 PM
