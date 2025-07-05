@@ -1,5 +1,5 @@
 ---
-title: Simple Church Media Tools For Non Tech Savvy Teams page
+title: Simple Church Media Tools For Non Tech Savvy Teams
 author: Kiitan Jones
 cover: /images/blog/simple-church-media-tools.jpg
 author_img: /images/author/kiitan.jpg
