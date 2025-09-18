@@ -23,7 +23,7 @@ For many churches, especially smaller ones, the media team is often made up of p
 
 These are valid concerns. A church tech tool is only helpful if it’s usable. If it feels intimidating or overly complex, it doesn’t serve the people it’s meant to empower. Unfortunately, many church tech platforms assume a certain level of pro-level operator, leaving many teams overwhelmed or dependent on a single "techie" to keep things running.
 
-## **We Built Cloud of Worship for Simplicity**
+### We Built Cloud of Worship for Simplicity
 
 At Cloud of Worship, we’ve intentionally stripped away complexity. Our mission is to ensure *anyone*, regardless of age or experience, can confidently use the platform to prepare and lead the congregation in a seamless service experience.
 
@@ -34,7 +34,7 @@ Here’s how we’ve made it beginner-friendly:
 - **One-Tap Actions:** We’ve minimized the number of steps required to complete tasks. From organizing songs to displaying bible verses, it’s all just a few clicks away.
 - **No Need for Tech Experts:** If your team can operate a basic laptop, they can use Cloud of Worship. You don’t need the latest gadgets. And if there’s ever a question, our support team is ready to guide you through it.
 
-## **Empowering Teams at Every Skill Level**
+### Empowering Teams at Every Skill Level
 
 What makes us different is not just the features, but how we deliver them. We don’t just serve tech-savvy teams. We equip **growing** teams as well.
 
