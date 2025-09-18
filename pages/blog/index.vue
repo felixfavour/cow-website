@@ -6,7 +6,7 @@
         :to="`/blog/${topBlog?._id
           ?.replace('.md', '')
           ?.replace('content:blog:', '')}`"
-        class="inner blog-hero bg-[#EEDCFF] md:bg-white flex flex-col md:flex-row items-center relative gap-6 group overflow-hidden rounded-3xl"
+        class="inner blog-hero bg-[#EEDCFF] md:bg-[#FFE9E8] flex flex-col md:flex-row items-center relative gap-6 group overflow-hidden rounded-3xl"
       >
         <img
           :src="topBlog?.cover"
@@ -62,7 +62,7 @@
         </div>
       </div>
     </div>
-    <AboveFooterSection />
+    <AboveFooterSection class="mt-[17.5%]" />
     <TestimonialPopup v-if="showTestimonialPopup" />
   </div>
 </template>

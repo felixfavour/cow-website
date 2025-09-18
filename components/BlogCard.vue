@@ -4,7 +4,11 @@
     class="blog-card group"
   >
     <div class="blog-card-image">
-      <img :src="blog?.cover" alt="" class="w-full object-cover rounded-3xl" />
+      <img
+        :src="blog?.cover"
+        alt=""
+        class="w-full h-[220px] object-cover rounded-3xl"
+      />
     </div>
     <div class="blog-card-content mt-6">
       <div class="flex tags gap-2 cursor-default mb-2">

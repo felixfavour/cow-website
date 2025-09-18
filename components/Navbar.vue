@@ -74,7 +74,7 @@
           </nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/blog" class="nav-link"> Support </nuxt-link>
+          <nuxt-link to="/blog" class="nav-link"> Learn </nuxt-link>
         </li>
         <ul class="auth flex flex-col lg:hidden">
           <li class="nav-item">
