@@ -1,8 +1,8 @@
 ---
-title: Why Daniel Chooses Cloud Of Worship Over Paid Church Presentation Software
+title: Why Daniel Chooses Cloud Of Worship Over Paid Church Presentation Software page
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
-cover: /images/blog/testimonial-daniel.webp
+cover: /images/blog/blog-daniel-cloudofworship.webp
 created: September 16, 2025 12:00 PM
 updated: September 16, 2025 12:00 PM
 paragraph: I love using Cloud of Worship. It has helped me go over worrying
