@@ -3,8 +3,8 @@ title: How to enhance projection for your growing student fellowship
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: /images/blog/blog-moshood-olawale-cloudofworship.webp
-created: September 18, 2024 12:00 PM
-updated: September 18, 2024 12:00 PM
+created: September 18, 2025 12:00 PM
+updated: September 18, 2025 12:00 PM
 paragraph: In the fast-paced world of church media, where every second counts
   and excellence is expected, the right tools make all the difference. For
   Moshood Olawale Mustapha, Live Streaming Lead at RCF Unilag and Head of Media
