@@ -1,8 +1,8 @@
 ---
 title: Simple Church Media Tools For Non Tech Savvy Teams
-author: Kiitan Jones
+author: Praise Simileoluwa
 cover: /images/blog/simple-church-media-tools.jpg
-author_img: /images/author/kiitan.jpg
+author_img: /images/author/praise.jpg
 created: July 5, 2025 12:00 PM
 updated: July 5, 2025 12:00 PM
 paragraph: For many churches, especially smaller ones, the media team is often
