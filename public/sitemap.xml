@@ -25,10 +25,37 @@
     <lastmod>2025-03-26T08:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.cloudofworship.com/blog</loc>
+    <loc>https://www.cloudofworship.com/privacy-policy</loc>
     <changefreq>weekly</changefreq>
     <lastmod>2025-03-26T08:00:00+00:00</lastmod>
   </url>
+  <url>
+    <loc>https://www.cloudofworship.com/terms-of-service</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cloudofworship.com/features/browser-ready</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cloudofworship.com/features/offline-first</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cloudofworship.com/features/team-workflow</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+  </url>
+
+  <!-- BLOGS -->
+  <url>
+    <loc>https://www.cloudofworship.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+  </url>  
   <url>
     <loc>https://www.cloudofworship.com/blog/how-to-use-cloud-of-worship-with-OBS-livestream</loc>
     <changefreq>weekly</changefreq>
@@ -90,28 +117,28 @@
     <lastmod>2025-03-26T08:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.cloudofworship.com/privacy-policy</loc>
+    <loc>https://www.cloudofworship.com/blog/how-your-church-media-team-can-use-tech-to-improve-service-engagement</loc>
     <changefreq>weekly</changefreq>
-    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+    <lastmod>2025-09-18T08:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.cloudofworship.com/terms-of-service</loc>
+    <loc>https://www.cloudofworship.com/blog/simple-church-media-tools-for-non-tech-savvy-teams</loc>
     <changefreq>weekly</changefreq>
-    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+    <lastmod>2025-09-18T08:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.cloudofworship.com/features/browser-ready</loc>
+    <loc>https://www.cloudofworship.com/blog/top-five-free-church-presentation-software</loc>
     <changefreq>weekly</changefreq>
-    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+    <lastmod>2025-09-18T08:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.cloudofworship.com/features/offline-first</loc>
+    <loc>https://www.cloudofworship.com/blog/ultimate-onscreen-presentation-software-for-churches</loc>
     <changefreq>weekly</changefreq>
-    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+    <lastmod>2025-09-18T08:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.cloudofworship.com/features/team-workflow</loc>
+    <loc>https://www.cloudofworship.com/blog/why-daniel-chooses-cloud-of-worship-over-paid-church-presentation-software</loc>
     <changefreq>weekly</changefreq>
-    <lastmod>2025-03-26T08:00:00+00:00</lastmod>
+    <lastmod>2025-09-18T08:00:00+00:00</lastmod>
   </url>
 </urlset>
