@@ -1,13 +1,15 @@
 ---
-title: "How to Collaborate with Multiple Members of Your Media Team"
+title: How to Collaborate with Multiple Members of Your Media Team
 author: Favour Felix
 cover: /images/blog/blog-collaborate.png
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
-paragraph: When two or more are gathered, great things can happen—especially in a collaborative workspace! Cloud of Worship allows multiple members of your media team to work together simultaneously, whether they’re in the same location or working remotely.
+paragraph: When two or more are gathered, great things can happen—especially in
+  a collaborative workspace! Cloud of Worship allows multiple members of your
+  media team to work together simultaneously, whether they’re in the same
+  location or working remotely.
 tag: How-to, Guides
 ---
-
 
 When two or more are gathered, great things can happen—especially in a collaborative workspace! Cloud of Worship allows multiple members of your media team to work together simultaneously, whether they’re in the same location or working remotely.
 
@@ -15,7 +17,7 @@ This feature is especially helpful when a team member needs to work from home, t
 
 ## Adding Members to Your Workspace
 
-![Adding Members to Your Workspace](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-invite.webp?alt=media&token=ebc60daa-cc9a-4ffc-95bf-79bde26c9e9d)
+![Adding Members to Your Workspace](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/cow%2Fblog%2Fblog-invite.webp?alt=media\&token=ebc60daa-cc9a-4ffc-95bf-79bde26c9e9d)
 
 Adding new members to your media team is simple. Follow these steps:
 
