@@ -1,5 +1,5 @@
 ---
-title: Why Daniel Chooses Cloud Of Worship Over Paid Church Presentation Software page
+title: Why Daniel Chooses Cloud Of Worship Over Paid Church Presentation Software
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: /images/blog/testimonial-daniel.webp
