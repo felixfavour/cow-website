@@ -3,8 +3,8 @@ title: How One Media Team Transformed Their Church Services with Simple, Powerfu
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: /images/blog/blog-yinka-cloudofworship.png
-created: September 18, 2025 12:00 PM
-updated: September 18, 2025 12:00 PM
+created: September 28, 2025 12:00 PM
+updated: September 28, 2025 12:00 PM
 paragraph: In the fast-paced world of church media, where every second counts
   and excellence is expected, the right tools make all the difference. For
   Moshood Olawale Mustapha, Live Streaming Lead at RCF Unilag and Head of Media
