@@ -54,11 +54,11 @@
 <script setup>
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Pricing - Cloud of Worship",
+  title: "Pricing - It's free to use",
 })
 useSeoMeta({
-  title: "Pricing - Cloud of Worship",
-  ogTitle: "Pricing - Cloud of Worship",
+  title: "Pricing - It's free to use",
+  ogTitle: "Pricing - It's free to use",
   description:
     "We believe every congregation deserves to enjoy a quality time in church with affordable tool that helps them to be more connected to God, regardless of their location; our free browser-based presentation software helps us achieve this goal.",
   ogDescription:
