@@ -2,7 +2,7 @@
 title: "From Tech to the Pulpit: A Simple Shift That Changes Everything"
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
-cover: /images/blog/pulpit-image.webp
+cover: /images/blog/blog-segun-cloudofworship.png
 created: September 26, 2025 12:00 PM
 updated: September 26, 2025 12:00 PM
 paragraph: When churches choose technology for worship, one of the biggest
