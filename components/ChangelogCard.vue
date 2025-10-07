@@ -1,5 +1,5 @@
 <template>
-  <div class="section border-t border-gray-100 py-[5%]">
+  <div class="section border-t border-gray-100 py-8">
     <div
       class="changelog-card inner smaller-inner flex flex-col gap-4 lg:flex-row"
     >
@@ -19,14 +19,18 @@
             Latest
           </div>
         </div>
-        <img
+        <!-- <img
           :src="image"
           :alt="`Image showing ${description}, Cloud of Worship.`"
           loading="lazy"
           class="w-[100%] border-4 lg:border-8 border-gray-100 rounded-xl my-[3%]"
-        />
-        <ul class="list-disc ml-4 text-md leading-8">
-          <li v-for="change in changes" :key="change">
+        /> -->
+        <ul class="list-disc ml-4 text-md leading-8 max-w-[600px]">
+          <li
+            v-for="change in changesReformed"
+            :key="change"
+            class="capitalize"
+          >
             {{ change }}
           </li>
         </ul>
@@ -44,5 +48,13 @@ const props = defineProps({
   changes: [],
   date: String,
   latest: Boolean,
+})
+
+const changesReformed = props.changes.filter((change) => {
+  return !(
+    change?.includes("Merge branch ") ||
+    change?.includes("Merge pull request ") ||
+    change?.trim() === ""
+  )
 })
 </script>
