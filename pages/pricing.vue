@@ -13,7 +13,6 @@
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
           Cloud of Worship is
           <span class="emphasis-text">free</span> <br />
-          help keep the lights on.
         </h1>
         <p
           class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[65%] mx-auto"
@@ -54,11 +53,11 @@
 <script setup>
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Pricing - It's free to use",
+  title: "Pricing - Cloud of Worship is free to use",
 })
 useSeoMeta({
-  title: "Pricing - It's free to use",
-  ogTitle: "Pricing - It's free to use",
+  title: "Pricing - Cloud of Worship is free to use",
+  ogTitle: "Pricing - Cloud of Worship is free to use",
   description:
     "We believe every congregation deserves to enjoy a quality time in church with affordable tool that helps them to be more connected to God, regardless of their location; our free browser-based presentation software helps us achieve this goal.",
   ogDescription:
