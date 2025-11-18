@@ -26,8 +26,7 @@
           Get started for free
         </a>
         <div class="helper-text text-sm text-center pt-2">
-          serving <span class="font-semibold">900+</span> churches, and tens of
-          thousands in congregation
+          serving <span class="font-semibold">1000+</span> churches
         </div>
       </div>
       <div
