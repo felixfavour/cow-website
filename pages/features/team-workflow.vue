@@ -77,7 +77,7 @@ useSeoMeta({
     "Work with your team in real-time, wherever you are. Whether you’re adding lyrics, editing slides, or opening scripture.",
   keywords:
     "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-  ogImage: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/team-workflow",
   ogType: "website",

@@ -64,7 +64,7 @@ useSeoMeta({
     "We believe every congregation deserves to enjoy a quality time in church with affordable tool that helps them to be more connected to God, regardless of their location; our free browser-based presentation software helps us achieve this goal.",
   keywords:
     "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-  ogImage: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/pricing",
   ogType: "website",

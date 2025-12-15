@@ -456,7 +456,7 @@ useSeoMeta({
     "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
   keywords:
     "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-  ogImage: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/changelog",
   ogType: "website",
