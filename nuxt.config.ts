@@ -27,7 +27,7 @@ export default defineNuxtConfig({
       },
       {
         name: 'og:image',
-        content: 'https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp'
+        content: 'https://cloudofworship.com/images/cow-og-image.jpeg'
       },
       { name: "format-detection", content: "telephone=no" },
       { hid: "og:type", property: "og:type", content: "website" },
@@ -39,12 +39,12 @@ export default defineNuxtConfig({
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+        content: "https://cloudofworship.com/images/cow-og-image.jpeg",
       },
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+        content: "https://cloudofworship.com/images/cow-og-image.jpeg",
       },
       {
         hid: "twitter:domain",
