@@ -52,7 +52,7 @@
           </h2>
         </div>
         <div
-          class="grid grid-cols-1 pb-[10%] md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-[2.5%]"
+          class="grid grid-cols-1 pb-[10%] md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-[8] xl:gap-y-12"
         >
           <BlogCard
             v-for="blog in blogsUncategorized"
