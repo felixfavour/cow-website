@@ -13,7 +13,7 @@
     <div class="blog-card-content mt-6">
       <div class="flex tags gap-2 cursor-default mb-2">
         <div
-          v-for="tag in blog?.tag.split(',')"
+          v-for="tag in blog?.tag?.split(',')"
           :key="tag"
           class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-xs md:text-sm"
         >

@@ -5,11 +5,8 @@ author_img: /images/author/praise.jpg
 cover: https://images.unsplash.com/photo-1655847717211-f78e9877b09f?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNlYXJjaCUyMGJpYmxlJTIwb25saW5lfGVufDB8fDB8fHww
 created: December 26, 2025 3:00 PM
 updated: December 26, 2025 3:00 PM
-paragraph: Preparing a sermon is both spiritual and practical. While prayer and
-  study shape the message, the process of finding scriptures, cross-checking
-  verses, and moving between passages can sometimes interrupt the flow of
-  thought. Ideally, scripture search should support inspiration and not slow it
-  down.
+paragraph: Preparing a sermon is both spiritual and practical. While prayer and study shape the message, the process of finding scriptures, cross-checking verses, and moving between passages can sometimes interrupt the flow of thought. Ideally, scripture search should support inspiration and not slow it down.
+tag: How-to, Guides
 ---
 
 # How Searching The Bible Instantly Can Improve Sermon Preparation

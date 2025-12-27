@@ -10,6 +10,7 @@ paragraph: After watching ministry workflows, I can tell you that nothing
   manually-typed verse. The unique beauty of the church service is its seamless
   blending of historic hymns and contemporary worship. We built Cloud of Worship
   (CoW) to finally unite them.
+tag: How-to, Guides
 ---
 
 # How An Integrated Hymnal Can Help Churches Run Smoother Services

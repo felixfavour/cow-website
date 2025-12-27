@@ -11,6 +11,7 @@ paragraph: Every now and then, a story emerges from the community that reminds
   Recently, Judy Tuifangaloka shared an experience that embodies this perfectly.
   Her words capture the heart of what modern church media should be simple,
   accessible, and empowering for anyone who desires to serve.
+tag: How-to, Guides
 ---
 
 # How An Easy To Use Tool Helped A Church Media Volunteer Gain Confidence In One Day
@@ -19,7 +20,7 @@ Every now and then, a story emerges from the community that reminds us why tools
 
 ## **A Tool That Meets You Where You Are**
 
-Judy had just started using the software for the first time when she discovered something surprising,  it wasn’t complicated, intimidating, or “tech-heavy.” Instead, she found it *easy*, *intuitive*, and *inviting*. For many volunteers, especially those who didn’t grow up navigating digital tools, media work can feel overwhelming. Judy’s experience reveals a different story:
+Judy had just started using the software for the first time when she discovered something surprising,  it wasn’t complicated, intimidating, or “tech-heavy.” Instead, she found it _easy_, _intuitive_, and _inviting_. For many volunteers, especially those who didn’t grow up navigating digital tools, media work can feel overwhelming. Judy’s experience reveals a different story:
 
 > “I find it so easy to use… I love all the features it comes with.”
 
@@ -31,7 +32,7 @@ Perhaps the most striking part of Judy’s message is that her 11-year-old daugh
 
 User-friendly tools don’t just improve productivity; **they expand who can participate**. They allow more people young or old, skilled or learning to step forward and serve without hesitation. Judy put it beautifully:
 
-*“If it’s as simple for a young child to use, anyone can use it.”*
+_“If it’s as simple for a young child to use, anyone can use it.”_
 
 This is the kind of accessibility that strengthens teams, reduces burnout, and builds a culture of shared responsibility within the church.
 
