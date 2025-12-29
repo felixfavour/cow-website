@@ -68,14 +68,14 @@ const content = await data._rawValue
 const showTestimonialPopup = ref(false)
 
 useSeoMeta({
-  title: content.title,
-  ogTitle: content.title,
-  description: content.excerpt,
-  ogDescription: content.excerpt,
+  title: content?.title,
+  ogTitle: content?.title,
+  description: content?.excerpt,
+  ogDescription: content?.excerpt,
   keywords:
-    content.tag +
+    content?.tag +
     " cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-  ogImage: content.cover,
+  ogImage: content?.cover,
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com",
   ogType: "website",

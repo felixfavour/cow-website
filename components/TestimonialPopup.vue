@@ -3,7 +3,6 @@
 </template>
 
 <script setup>
-console.log("hi")
 useHead({
   script: [
     {

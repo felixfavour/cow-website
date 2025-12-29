@@ -65,6 +65,9 @@ onMounted(() => {
 
 let scrollAmount = 1 // Speed of the scroll
 function scrollHorizontally() {
+  if (scrollContainer.value === null || scrollContent.value === null) {
+    return
+  }
   scrollContainer.value.scrollLeft += scrollAmount
   // If we've scrolled to the end, reset to start
   if (scrollContainer.value.scrollLeft >= scrollContent.value.scrollWidth / 2) {
