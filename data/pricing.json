@@ -1,0 +1,70 @@
+{
+  "plans": {
+    "free": {
+      "name": "Starter",
+      "description": "For churches with a single steward.",
+      "prices": {
+        "USD": 0,
+        "NGN": 0,
+        "GBP": 0
+      },
+      "features": [
+        "Display Bible passages",
+        "Access over 1,000+ hymns offline",
+        "Add & display your own song lyrics",
+        "100% offline functionality",
+        "Full text search of the entire Bible offline",
+        "Multiple Bible translations (incl. Spanish, Igbo, Yoruba, Hausa)",
+        "Quick scripture lookup (e.g., Gen 1 1)",
+        "Schedule management",
+        "Live editing across multiple devices",
+        "Various slide backgrounds",
+        "Various slide modifications: blur, brightness, font styles, and more",
+        "Slide, lyrics, and verse transitions",
+        "Live output display",
+        "Media playback controls",
+        "Quick actions to access every feature in one place",
+        "Real-time synchronization",
+        "Light/dark mode support",
+        "Customer support",
+        "Growing community",
+        "Auto-sync with cloud",
+        "Frequent updates (view changelog)",
+        "Free storage (up to 100MB)"
+      ]
+    },
+    "teams": {
+      "name": "Teams",
+      "description": "For churches that need collaboration tools for multiple stewards.",
+      "prices": {
+        "USD": 24.99,
+        "NGN": 39999.99,
+        "GBP": 19.99
+      },
+      "pricesYearly": {
+        "USD": 249.99,
+        "NGN": 399999.99,
+        "GBP": 199.99
+      },
+      "features": [
+        "Everything in Starter, plus:",
+        "Access to growing library (9,000+ songs) added by other churches",
+        "Create text slides",
+        "Add images",
+        "Play audio files",
+        "Add local and external videos (YouTube/Vimeo) with playback",
+        "Personal library (save songs & slides)",
+        "Save multiple service schedules and access previous schedules",
+        "Unlimited Full HD slide backgrounds based on searched themes",
+        "Banners/alerts",
+        "Dynamic countdown slides",
+        "Keyboard shortcuts & hotkeys",
+        "Workspace invitations for other team members",
+        "Local media storage",
+        "Slide overlays (snow, confetti, etc.)",
+        "Free storage (up to 5GB, will grow over time)"
+      ],
+      "highlighted": true
+    }
+  }
+}

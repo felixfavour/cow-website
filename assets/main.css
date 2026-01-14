@@ -1,9 +1,8 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,100..900&family=Inter:wght@400..700&display=swap");
 
 :root {
   --primary-color: #9333ea;
-  --accent-color: #FF8980;
+  --accent-color: #ff8980;
 }
 
 * {
@@ -17,7 +16,7 @@
 .emphasis-text {
   font-family: "Fraunces", cursive;
   font-style: italic;
-  background: -webkit-linear-gradient(left, #8946C9, #442263);
+  background: -webkit-linear-gradient(left, #8946c9, #442263);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,6 +65,35 @@ h6 {
   border-color: #442263;
 }
 
+.border-btn {
+  border-radius: 12px;
+  background-color: transparent;
+  color: var(--primary-color);
+  height: 45px;
+  padding: 0.75rem 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  font-weight: 600;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.border-btn.taller {
+  height: 50px;
+}
+.border-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
 .ghost-btn {
   border-radius: 12px;
   color: black;
@@ -91,186 +119,191 @@ h6 {
   max-width: 1000px;
 }
 
-
 /* NUXT CONTENT STYLES */
-  article p {
-    padding-bottom: 0.7rem;
-    display: block;
-    font-size: 1.1rem;
-  }
-  article strong {
-    font-weight: 700;
-  }
-  article ul, article ol {
-    padding-left: 2rem;
-    /* line-height: rem; */
-  }
-  article ul {
-    list-style-type: disc;
-  }
-  article ol {
-    list-style-type: decimal;
-  }
-  article li {
-    margin-bottom: 2%;
-    font-size: 1.1rem;
-  }
-  article section {
-    padding-bottom: 2rem;
-    text-align: left;
-    font-size: 2rem;
-    color: var(--primary);
-  }
-  article section.first {
-    padding-bottom: 1rem;
-  }
-  article em {
-  }
-  article p > .major {
-    font-size: 1.5rem;
-    line-height: 3rem;
-  }
-  article a {
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 1px solid;
-  }
-  article h1,
-  article h1 a {
-    font-size: 3.3rem;
-    margin-bottom: 1rem;
-    border-bottom: none;
-  }
-  article h2,
-  article h2 a {
-    font-size: 2.2rem;
-    margin-top: 5%;
-    margin-bottom: 1rem;
-    font-weight: 800;
-    border-bottom: none;
-    font-family: "Bricolage Grotesque", sans-serif;
-    line-height: 100%;
-  }
-  article h3,
-  article h3 a {
-    font-size: 1.6rem;
-    line-height: 100%;
-    margin-bottom: 1rem;
-    margin-top: 1.2rem;
-    font-weight: 800;
-    border-bottom: none;
-    font-family: "Bricolage Grotesque", sans-serif;
-    color: #525252;
-  }
-  article h1,
-  article h2,
-  article h3 {
-    font-weight: 800;
-    margin-bottom: 2.5%;
-  }
-  article h3 {
-    font-weight: 800;
-    margin-bottom: 0.8rem;
-  }
-  article img,
-  article video,
-  article iframe {
-    width: 100%;
-    margin: 0.5rem 0;
-    border-radius: 1rem;
-  }
-  .astro-code {
-    padding: 1rem 2rem;
-    border-radius: 16px;
-    margin-bottom: 2rem;
-  }
-  .astro-code * {
-    font-family: monospace;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-  code {
-    font-family: monospace;
-    color: var(--primary);
-  }
-  article aside {
-    font-size: 3rem;
+article p {
+  padding-bottom: 0.7rem;
+  display: block;
+  font-size: 1.1rem;
 }
-  article aside {
-    display: flex;
-    gap: 3%;
-    align-items: center;
-    font-size: 3rem;
-    padding: 1.2rem 1.6rem;
-    margin: 1rem 0;
-    background: #F3F4F6;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+article strong {
+  font-weight: 700;
 }
-  article aside p {
-    font-size: 1.1rem;
-    padding-bottom: 0;
-  }
-  article blockquote {
-    font-size: 150%;
-    line-height: 150%;
-    border-left: 2px solid;
-    padding-left: 2rem;
-    margin-bottom: 2rem;
-  }
-  article blockquote p {
-    padding-bottom: 0;
-  }
+article ul,
+article ol {
+  padding-left: 2rem;
+  /* line-height: rem; */
+}
+article ul {
+  list-style-type: disc;
+}
+article ol {
+  list-style-type: decimal;
+}
+article li {
+  margin-bottom: 2%;
+  font-size: 1.1rem;
+}
+article section {
+  padding-bottom: 2rem;
+  text-align: left;
+  font-size: 2rem;
+  color: var(--primary);
+}
+article section.first {
+  padding-bottom: 1rem;
+}
+article em {
+}
+article p > .major {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+article a {
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+article h1,
+article h1 a {
+  font-size: 3.3rem;
+  margin-bottom: 1rem;
+  border-bottom: none;
+}
+article h2,
+article h2 a {
+  font-size: 2.2rem;
+  margin-top: 5%;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  border-bottom: none;
+  font-family: "Bricolage Grotesque", sans-serif;
+  line-height: 100%;
+}
+article h3,
+article h3 a {
+  font-size: 1.6rem;
+  line-height: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+  font-weight: 800;
+  border-bottom: none;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #525252;
+}
+article h1,
+article h2,
+article h3 {
+  font-weight: 800;
+  margin-bottom: 2.5%;
+}
+article h3 {
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+article img,
+article video,
+article iframe {
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 1rem;
+}
+.astro-code {
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+.astro-code * {
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+code {
+  font-family: monospace;
+  color: var(--primary);
+}
+article aside {
+  font-size: 3rem;
+}
+article aside {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1.2rem 1.6rem;
+  margin: 1rem 0;
+  background: #f3f4f6;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+article aside p {
+  font-size: 1.1rem;
+  padding-bottom: 0;
+}
+article blockquote {
+  font-size: 150%;
+  line-height: 150%;
+  border-left: 2px solid;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+article blockquote p {
+  padding-bottom: 0;
+}
 article table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0 2rem 0;
-    border: 1px solid #E5E7EB;
-    overflow: hidden;
-    border-radius: 12px;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem 0;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
-  article th {
-    background-color: #F3F4F6;
-    font-weight: 600;
-    text-align: left;
+article th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  text-align: left;
+}
+
+article th,
+article td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+@media screen and (max-width: 768px) {
+  /* Make table scrollable horizontally on mobile */
+  article .table-wrapper {
+    overflow-x: auto;
   }
 
   article th,
   article td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #E5E7EB;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
   }
-
-  @media screen and (max-width: 768px) {
-    /* Make table scrollable horizontally on mobile */
-    article .table-wrapper {
-      overflow-x: auto;
-    }
-    
-    article th,
-    article td {
-      padding: 0.5rem 0.75rem;
-      font-size: 0.95rem;
-    }
-  }
-  
+}
 
 /* ANIMATIONS */
 @keyframes moving-bg {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .moving-bg-anim {
   animation: moving-bg 10s ease infinite;
   -webkit-animation: moving-bg 10s ease infinite;
 }
 .come-up-1 {
-  animation: come-up 0.3s ease-in-out forwards ;
+  animation: come-up 0.3s ease-in-out forwards;
   -webkit-animation: come-up 0.3s ease-in-out forwards;
 }
 .come-up-2 {
@@ -302,7 +335,8 @@ article table {
 }
 
 @media screen and (max-width: 768px) {
-  article p, article li {
+  article p,
+  article li {
     font-size: 1rem;
   }
   article h1,
@@ -319,7 +353,7 @@ article table {
   }
   article aside p {
     font-size: 1rem;
-}
+  }
 }
 
 @media screen and (max-width: 500px) {

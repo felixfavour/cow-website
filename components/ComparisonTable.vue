@@ -4,7 +4,8 @@
     <div class="inner py-[10%] md:py-[5%]">
       <div
         class="texts max-w-full md:max-w-[65%] mb-[7.5%] md:mb-[3%]"
-        v-if="$route.name === 'index'"
+        :class="{ 'md:max-w-full text-center': $route.name === 'pricing' }"
+        v-if="$route.name === 'index' || $route.name === 'pricing'"
       >
         <h3 class="text-3xl md:text-5xl font-bold">
           You have not seen

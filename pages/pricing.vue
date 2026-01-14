@@ -18,13 +18,12 @@
         <p
           class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[65%] mx-auto"
         >
-          We believe that every congregation deserves to enjoy a quality time in
-          church with affordable tool that helps them to be more connected to
-          God, regardless of their location.
+          We believe every congregation deserves access to quality and
+          affordable tools to enhance their worship experience.
           <br />
         </p>
       </div>
-      <div class="actions mt-[10%] md:mt-[5%] text-center">
+      <!-- <div class="actions mt-[10%] md:mt-[5%] text-center">
         <a
           target="_blank"
           href="https://app.cloudofworship.com/signup"
@@ -32,14 +31,14 @@
         >
           Sign up for free
         </a>
-        <!-- <div class="helper-text text-sm text-center pt-2">
-          We hope to never charge.
-        </div> -->
-      </div>
+      </div> -->
     </div>
 
     <!-- CHURCHES SECTION -->
     <ChurchUsersSection />
+
+    <!-- PRICING SECTION -->
+    <PricingSection />
 
     <!-- COMPARISON TABLE SECTION -->
     <ComparisonTable />
