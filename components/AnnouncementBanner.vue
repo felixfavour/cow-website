@@ -3,7 +3,7 @@
     <div class="inner">
       <a 
         :href="announcementUrl"
-        class="flex items-center justify-center gap-2 text-sm md:text-base font-medium hover:underline"
+        class="flex items-center justify-center gap-2 text-sm md:text-base font-medium hover:underline hover:opacity-90 transition-opacity"
       >
         <span>📢 Cloud of Worship is evolving! Learn what's changing</span>
         <span class="text-xs md:text-sm">→</span>
@@ -15,12 +15,3 @@
 <script setup>
 const announcementUrl = 'https://www.cloudofworship.com/blog/cloud-of-worship-is-evolving-heres-whats-changing'
 </script>
-
-<style scoped>
-.announcement-banner a {
-  transition: opacity 0.2s ease-in-out;
-}
-.announcement-banner a:hover {
-  opacity: 0.9;
-}
-</style>
