@@ -42,13 +42,13 @@ We believe core worship tools should always be accessible. That’s why the esse
 
 Cloud of Worship will always support churches that need **simple, dependable worship projection**.
 
-## **What Unlocks With the Paid Plan**
+## What Unlocks With the Paid Plan
 
 The paid plans are designed for churches that want **more flexibility, collaboration, and creative control**.
 
 When you upgrade, you unlock:
 
-### **Expanded Worship & Media Tools**
+### Expanded Worship & Media Tools
 
 - Access to a **growing shared library of 9,000+ songs** added by other churches
 - Create custom **text slides**
@@ -58,7 +58,7 @@ When you upgrade, you unlock:
 - Slide overlays (snow, confetti, and more)
 - Banners and live alerts
 
-### **Team & Workflow Power**
+### Team & Workflow Power
 
 - Personal libraries for saving songs and slides
 - Save and reuse **multiple service schedules**
@@ -67,15 +67,13 @@ When you upgrade, you unlock:
 - Invite team members into shared workspaces
 - Real-time synchronization across devices
 
-### **Storage, Stability & Growth**
+### Storage, Stability & Growth
 
-- Increased storage
-    - Free: up to **100MB**
-    - Teams: up to **5GB (and growing)**
+- Increased storage (Free for up to **100MB**, up to **5GB+ for teams plan)
 - Local media storage
 - Frequent feature updates with visible changelogs
 
-## **Why We’re Doing This**
+## Why We’re Doing This
 
 Our goal isn’t just to add features. It’s to build a platform where:
 
@@ -85,10 +83,14 @@ Our goal isn’t just to add features. It’s to build a platform where:
 
 A paid plan allows Cloud of Worship to remain **fast, stable, offline-ready**, and built for the realities of church ministry, not just software demos.
 
-### **Start Your Free Upgrade Today**
+### Start Your Free Upgrade Today
 
-Your **1-month free upgraded access** is already waiting.
+Your **1-month free upgraded access** is already waiting (for 1 month after this article goes out).
 
 Experience Cloud of Worship the way it was designed to be **smooth, powerful, and distraction-free**.
 
 [👉 **Upgrade Now**](https://cloudofworship.com/pricing)
+
+### Ends of The Earth Initiative
+
+90% of profits from Teams plan sales go directly to efforts pushing the gospel forward in churches across Africa and other regions. Your subscription helps equip ministries with the tools they need to spread the good news.
