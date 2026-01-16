@@ -13,7 +13,7 @@
         class="absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center hover:bg-white/20 rounded transition-colors"
         aria-label="Close announcement"
       >
-        ✕
+        ×
       </button>
     </div>
   </div>
@@ -25,15 +25,11 @@ const isDismissed = ref(false)
 
 onMounted(() => {
   // Check if banner was dismissed in this session
-  if (process.client) {
-    isDismissed.value = sessionStorage.getItem('announcementDismissed') === 'true'
-  }
+  isDismissed.value = sessionStorage.getItem('announcementDismissed') === 'true'
 })
 
 const dismissBanner = () => {
   isDismissed.value = true
-  if (process.client) {
-    sessionStorage.setItem('announcementDismissed', 'true')
-  }
+  sessionStorage.setItem('announcementDismissed', 'true')
 }
 </script>
