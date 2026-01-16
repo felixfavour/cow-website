@@ -2,7 +2,7 @@
   <div class="announcement-banner bg-[#FF6F65] text-white py-3 px-4 text-center sticky top-0 z-20">
     <div class="inner">
       <a 
-        href="https://www.cloudofworship.com/blog/cloud-of-worship-is-evolving-heres-whats-changing"
+        :href="announcementUrl"
         class="flex items-center justify-center gap-2 text-sm md:text-base font-medium hover:underline"
       >
         <span>📢 Cloud of Worship is evolving! Learn what's changing</span>
@@ -11,6 +11,10 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const announcementUrl = 'https://www.cloudofworship.com/blog/cloud-of-worship-is-evolving-heres-whats-changing'
+</script>
 
 <style scoped>
 .announcement-banner a {
