@@ -356,33 +356,33 @@ const {
 const detectUserLocation = async () => {
   try {
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
-    
+
     // African timezones (excluding South Africa)
     const africanTimezones = [
-      "Africa/Lagos",      // Nigeria
-      "Africa/Accra",      // Ghana
-      "Africa/Nairobi",    // Kenya
-      "Africa/Cairo",      // Egypt
+      "Africa/Lagos", // Nigeria
+      "Africa/Accra", // Ghana
+      "Africa/Nairobi", // Kenya
+      "Africa/Cairo", // Egypt
       "Africa/Addis_Ababa", // Ethiopia
       "Africa/Dar_es_Salaam", // Tanzania
-      "Africa/Kampala",    // Uganda
-      "Africa/Khartoum",   // Sudan
-      "Africa/Kinshasa",   // DR Congo
-      "Africa/Luanda",     // Angola
-      "Africa/Algiers",    // Algeria
+      "Africa/Kampala", // Uganda
+      "Africa/Khartoum", // Sudan
+      "Africa/Kinshasa", // DR Congo
+      "Africa/Luanda", // Angola
+      "Africa/Algiers", // Algeria
       "Africa/Casablanca", // Morocco
-      "Africa/Tunis",      // Tunisia
-      "Africa/Abidjan",    // Ivory Coast
-      "Africa/Bamako",     // Mali
-      "Africa/Dakar",      // Senegal
-      "Africa/Douala",     // Cameroon
-      "Africa/Harare",     // Zimbabwe
-      "Africa/Lusaka",     // Zambia
-      "Africa/Maputo",     // Mozambique
-      "Africa/Tripoli",    // Libya
-      "Africa/Windhoek",   // Namibia
+      "Africa/Tunis", // Tunisia
+      "Africa/Abidjan", // Ivory Coast
+      "Africa/Bamako", // Mali
+      "Africa/Dakar", // Senegal
+      "Africa/Douala", // Cameroon
+      "Africa/Harare", // Zimbabwe
+      "Africa/Lusaka", // Zambia
+      "Africa/Maputo", // Mozambique
+      "Africa/Tripoli", // Libya
+      "Africa/Windhoek", // Namibia
     ]
-    
+
     // South African timezones (should use USD/GBP, not NGN)
     const southAfricanTimezones = ["Africa/Johannesburg"]
 
@@ -398,7 +398,7 @@ const detectUserLocation = async () => {
     if (response.ok) {
       const data = await response.json()
       userCountry.value = data.country_code
-      
+
       // List of African country codes (excluding South Africa)
       const africanCountries = [
         "NG", // Nigeria
@@ -446,7 +446,10 @@ const detectUserLocation = async () => {
       ]
 
       // Show NGN to African countries (except South Africa)
-      if (africanCountries.includes(data.country_code) && availableCurrencies.value.includes("NGN")) {
+      if (
+        africanCountries.includes(data.country_code) &&
+        availableCurrencies.value.includes("NGN")
+      ) {
         selectedCurrency.value = "NGN"
       } else if (data.country_code === "ZA") {
         // South Africa gets USD or GBP
@@ -640,7 +643,7 @@ const getPlanUrl = (plan) => {
   if (plan.isFree) {
     return "https://app.cloudofworship.com/signup"
   }
-  return `https://app.cloudofworship.com/plan_id=${plan.alias}`
+  return `https://app.cloudofworship.com/signup?plan_id=${plan.alias}`
 }
 
 // Auto-detect location after data is loaded
