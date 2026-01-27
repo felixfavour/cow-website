@@ -4,16 +4,13 @@ author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: https://images.unsplash.com/photo-1745852737476-c4fa7b99839a?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGh5bW58ZW58MHx8MHx8fDA%3D
 created: December 26, 2025 1:00 PM
-updated: December 26, 2025 1:00 PM
-paragraph: After watching ministry workflows, I can tell you that nothing
-  disrupts the Flow State of Worship like a scramble for a forgotten hymnal or a
-  manually-typed verse. The unique beauty of the church service is its seamless
-  blending of historic hymns and contemporary worship. We built Cloud of Worship
-  (CoW) to finally unite them.
+description: After watching ministry workflows, I can tell you that nothing disrupts the Flow State of Worship like a scramble for a forgotten hymnal or a manually-typed verse. The unique beauty of the church service is its seamless blending of historic hymns and contemporary worship. We built Cloud of Worship (CoW) to finally unite them.
+paragraph: After watching ministry workflows, I can tell you that nothing disrupts the Flow State of Worship like a scramble for a forgotten hymnal or a manually-typed verse. The unique beauty of the church service is its seamless blending of historic hymns and contemporary worship. We built Cloud of Worship (CoW) to finally unite them.
 tag: How-to, Guides
+updated: December 26, 2025 1:00 PM
 ---
 
-# How An Integrated Hymnal Can Help Churches Run Smoother Services
+#
 
 After watching ministry workflows, I can tell you that nothing disrupts the **Flow State of Worship** like a scramble for a forgotten hymnal or a manually-typed verse. The unique beauty of the church service is its seamless blending of historic hymns and contemporary worship. We built Cloud of Worship (CoW) to finally unite them.
 

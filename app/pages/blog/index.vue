@@ -3,9 +3,7 @@
     <div class="section pt-[3%]">
       <!-- TOP BLOG SECTION -->
       <nuxt-link
-        :to="`/blog/${topBlog?._id
-          ?.replace('.md', '')
-          ?.replace('content:blog:', '')}`"
+        :to="`/${topBlog?.path}`"
         class="inner blog-hero bg-[#EEDCFF] md:bg-[#FFE9E8] flex flex-col md:flex-row items-center relative gap-6 group overflow-hidden rounded-3xl"
       >
         <img
@@ -93,21 +91,7 @@ useSeoMeta({
 const topBlog = computed(() => blogsUncategorized.value?.[0])
 
 const fetchBlogs = async () => {
-  const blogs = await queryContent("/blog")
-    .only([
-      "title",
-      "cover",
-      "_id",
-      "read_time",
-      "created",
-      "updated",
-      "tag",
-      "author",
-      "author_img",
-      "user_title",
-      "paragraph",
-    ])
-    .find()
+  const blogs = await queryCollection("blog").all()
   const category_to_article_mapping = {}
   blogs.map((blog) => {
     blog.tag

@@ -3,9 +3,11 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  compatibilityDate: '2024-07-18',
-  devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-gtag", "@nuxt/content"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-gtag",
+    '@nuxt/content',
+  ],
   head: {
     charset: "utf-8",
     htmlAttrs: {
@@ -67,5 +69,19 @@ export default defineNuxtConfig({
   css: ["@/assets/main.css"],
   gtag: {
     id: 'G-SPPLWBL283'
-  }
+  },
+  studio: {
+    // Studio admin route (default: '/_studio')
+    route: '/_studio',
+
+    // Git repository configuration (owner and repo are required)
+    repository: {
+      provider: 'github', // 'github' or 'gitlab'
+      owner: 'cloudofworship', // your GitHub/GitLab username or organization
+      repo: 'cow-website', // your repository name
+      branch: 'main', // the branch to commit to (default: main)
+    }
+  },
+  devtools: { enabled: true },
+  compatibilityDate: '2024-04-03',
 })

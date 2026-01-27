@@ -168,6 +168,8 @@ article h1 a {
   font-size: 3.3rem;
   margin-bottom: 1rem;
   border-bottom: none;
+  text-decoration: none;
+  color: #000000;
 }
 article h2,
 article h2 a {
@@ -178,6 +180,8 @@ article h2 a {
   border-bottom: none;
   font-family: "Bricolage Grotesque", sans-serif;
   line-height: 100%;
+  text-decoration: none;
+  color: #000000;
 }
 article h3,
 article h3 a {
@@ -189,6 +193,7 @@ article h3 a {
   border-bottom: none;
   font-family: "Bricolage Grotesque", sans-serif;
   color: #525252;
+  text-decoration: none;
 }
 article h1,
 article h2,

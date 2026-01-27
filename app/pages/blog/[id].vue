@@ -48,7 +48,7 @@
         <div class="icons" style="grid-area: icon">
           <BlogSocialMediaIcons class="inner" />
         </div>
-        <ContentDoc :path="data?._path" style="grid-area: content" />
+        <ContentRenderer v-if="data" :value="data" style="grid-area: content" />
       </article>
     </section>
     <!-- <AboveFooterSection /> -->
@@ -58,14 +58,18 @@
 </template>
 
 <script setup>
-const { params } = await useRoute()
+const { params } = useRoute()
 const { data } = await useAsyncData(`blog-${params.id}`, () =>
-  queryContent("/blog")
-    .where({ _id: "content:blog:" + params.id + ".md" })
-    .findOne()
+  queryCollection("blog").path(`/blog/${params.id}`).first()
 )
-const content = await data._rawValue
+const content = data.value
 const showTestimonialPopup = ref(false)
+
+const getDate = (time) => {
+  if (!time) return ""
+  const split = time.split(" ")
+  return split.splice(0, 3).join(" ")
+}
 
 useSeoMeta({
   title: content?.title,
@@ -108,46 +112,63 @@ onMounted(() => {
 })
 </script>
 
-<script>
-export default {
-  data() {
-    return {
-      likes: 0,
-      claps: 0,
-      blogs: [],
-    }
-  },
-  mounted() {
-    this.fetchData()
-  },
-  methods: {
-    async fetchData() {
-      this.blogs = await queryContent("/blog")
-        .only(["title", "cover", "_id", "created", "updated", "author"])
-        .find()
-    },
-    getDate(time) {
-      if (!time) return ""
-      const split = time.split(" ")
-      return split.splice(0, 3).join(" ")
-    },
-    capitalize(str) {
-      if (!str) return "--"
-      const words = str.split(" ")
-      const capitalizedWords = words.map((word) => {
-        const capitalized = word.charAt(0).toUpperCase() + word.slice(1)
-        return capitalized
-      })
-      const capitalizedString = capitalizedWords.join(" ")
-      return capitalizedString
-    },
-    getTags(str) {
-      const tags = new Set()
-      str?.split(",").forEach((tag) => {
-        tags.add(tag)
-      })
-      return tags
-    },
-  },
+<style>
+article {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "content";
+  grid-template-columns: 1fr;
 }
-</script>
+
+article a {
+  color: rgba(139, 92, 246);
+  text-decoration: underline;
+}
+
+article h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0px 5px 0px;
+  font-weight: 700;
+}
+
+article p {
+  line-height: 1.7;
+  margin: 15px 0px;
+}
+
+article ul {
+  padding: revert;
+  margin: revert;
+}
+
+article li {
+  line-height: 1.7;
+}
+
+article hr {
+  margin: 30px 0px;
+}
+
+article iframe {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.icons .inner {
+  position: sticky;
+  top: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+  article {
+    grid-template-areas: "content";
+    grid-template-columns: 1fr;
+  }
+}
+</style>
