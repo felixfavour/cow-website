@@ -76,7 +76,7 @@ export default defineNuxtConfig({
     // Git repository configuration (owner and repo are required)
     repository: {
       provider: 'github', // 'github' or 'gitlab'
-      owner: 'cloudofworship', // your GitHub/GitLab username or organization
+      owner: 'felixfavour', // your GitHub/GitLab username or organization
       repo: 'cow-website', // your repository name
       branch: 'main', // the branch to commit to (default: main)
     }
