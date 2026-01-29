@@ -3,7 +3,7 @@
     <div class="section pt-[3%]">
       <!-- TOP BLOG SECTION -->
       <nuxt-link
-        :to="`/${topBlog?.path}`"
+        :to="`${topBlog?.path}`"
         class="inner blog-hero bg-[#EEDCFF] md:bg-[#FFE9E8] flex flex-col md:flex-row items-center relative gap-6 group overflow-hidden rounded-3xl"
       >
         <img

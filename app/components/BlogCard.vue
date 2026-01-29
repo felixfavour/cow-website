@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="`/${blog?.path}`" class="blog-card group">
+  <nuxt-link :to="`${blog?.path}`" class="blog-card group">
     <div class="blog-card-image">
       <img
         :src="blog?.cover"
