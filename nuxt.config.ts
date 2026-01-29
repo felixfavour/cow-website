@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+  experimental: {
+    sqliteConnector: 'native',
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "nuxt-gtag",
