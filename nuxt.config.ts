@@ -82,14 +82,14 @@ export default defineNuxtConfig({
       branch: 'main', // the branch to commit to (default: main)
     }
   },
-  nitro: {
-    prerender: {
-      // Pre-render the homepage
-      routes: ['/'],
-      // Then crawl all the links on the page
-      crawlLinks: true
-    }
-  },
+  // nitro: {
+  //   prerender: {
+  //     // Pre-render the homepage
+  //     routes: ['/'],
+  //     // Then crawl all the links on the page
+  //     crawlLinks: true
+  //   }
+  // },
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
 })
