@@ -6,11 +6,7 @@ export default defineNuxtConfig({
   experimental: {
     sqliteConnector: 'native',
   },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "nuxt-gtag",
-    '@nuxt/content',
-  ],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-gtag", '@nuxt/content', "nuxt-studio"],
   head: {
     charset: "utf-8",
     htmlAttrs: {
