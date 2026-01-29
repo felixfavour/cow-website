@@ -77,7 +77,7 @@
           <nuxt-link to="/blog" class="nav-link"> Learn </nuxt-link>
         </li>
         <ul class="auth flex flex-col lg:hidden">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a
               href="https://github.com/felixfavour/minimalist-church-presentation-software"
               target="_blank"
@@ -86,7 +86,7 @@
               <GithubIcon class="w-8 h-8" />
               Open Source
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a
               href="https://app.cloudofworship.com/signup"
