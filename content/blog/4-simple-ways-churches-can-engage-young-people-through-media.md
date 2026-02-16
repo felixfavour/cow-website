@@ -48,7 +48,7 @@ These clips travel fast on social media and carry your church’s message beyond
 
 ### **4. Be Real: Show Authenticity**
 
-Today’s youth can spot pretense instantly. What they crave is *authenticity.*
+Today’s youth can spot pretense instantly. What they crave is **authenticity***.*
 
 Show real people, real stories, and real impact. Let testimonies, service moments, and team interactions reflect genuine community and faith. When your media feels personal and honest, young people don’t just watch, they connect.
 
