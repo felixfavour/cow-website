@@ -5,7 +5,7 @@ author_img: /images/author/kiitan.jpg
 cover: /images/blog/blog-cow-evolving.jpg
 created: January 16, 2026 12:00 PM
 updated: January 16, 2026 12:00 PM
-paragraph: At Cloud of Worship, our mission has always been simple; to help churches focus on worship, not technology. As over 1,500+ churches trooped in and joined the platform, we listened closely to what worked, what slowed teams down, and where technology quietly became a burden. That feedback shaped every improvement we’ve made so far.
+paragraph: At Cloud of Worship, our mission has always been simple; to help churches focus on worship, not technology. As over 1,959+ churches trooped in and joined the platform, we listened closely to what worked, what slowed teams down, and where technology quietly became a burden. That feedback shaped every improvement we’ve made so far.
 tag: Guides
 ---
 
@@ -26,10 +26,8 @@ We believe core worship tools should always be accessible. That’s why the esse
 - Add and display your own song lyrics
 - Full-text Bible search (offline)
 - Multiple Bible translations
-    
-    *(English, Spanish, Igbo, Yoruba, Hausa, and more)*
-    
-- Quick scripture lookup (e.g. *Gen 1 1*)
+  _(English, Spanish, Igbo, Yoruba, Hausa, and more)_
+- Quick scripture lookup (e.g. _Gen 1 1_)
 - 100% offline functionality
 - Live editing across devices
 - Live output display
@@ -69,7 +67,7 @@ When you upgrade, you unlock:
 
 ### Storage, Stability & Growth
 
-- Increased storage (Free for up to **100MB**, up to **5GB+ for teams plan)
+- Increased storage (Free for up to **100MB**, up to \*\*5GB+ for teams plan)
 - Local media storage
 - Frequent feature updates with visible changelogs
 

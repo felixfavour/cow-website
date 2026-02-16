@@ -41,7 +41,7 @@
     <PricingSection />
 
     <!-- COMPARISON TABLE SECTION -->
-    <ComparisonTable />
+    <PricingTable />
 
     <!-- ABOVE FOOTER SECTION -->
     <AboveFooterSection />

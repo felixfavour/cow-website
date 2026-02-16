@@ -3,19 +3,17 @@
     <!-- HERO SECTION -->
     <div class="inner pt-[10%] md:pt-[3%]">
       <div
-        class="texts max-w-[900px] 2xl:max-w-[1000px] text-center mx-auto flex flex-col gap-4 2xl:gap-6"
+        class="texts max-w-[1000px] 2xl:max-w-[1100px] text-center mx-auto flex flex-col gap-4 2xl:gap-6"
       >
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
-          Craft
-          <span class="emphasis-text">the best</span>
-          on-screen experience for your church.
+          Run your church media
+          <span class="emphasis-text">smoothly</span>, without the heavy setup
         </h1>
         <p
           class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[65%] mx-auto"
         >
-          A free browser-based presentation software to display song lyrics,
-          scriptures, videos and fully customizable slides for your growing
-          church.
+          Cloud of Worship is a browser-based worship support system built for
+          growing churches that want simple, reliable media setup
         </p>
       </div>
       <div class="actions mt-[7.5%] md:mt-[2%] text-center">
@@ -26,7 +24,7 @@
           Get started for free
         </a>
         <div class="helper-text text-sm text-center pt-2">
-          serving <span class="font-semibold">1,500+</span> churches
+          serving <span class="font-semibold">1,959+</span> churches
         </div>
       </div>
       <div
@@ -155,7 +153,7 @@
     <WallOfLove />
 
     <!-- COMPARISON SECTION -->
-    <ComparisonTable />
+    <PricingTable />
 
     <!-- ABOVE FOOTER SECTION -->
     <AboveFooterSection />
@@ -173,9 +171,9 @@ useSeoMeta({
   title: "Cloud of Worship - Presentation software for your growing church",
   ogTitle: "Cloud of Worship - Presentation software for your growing church",
   description:
-    "Free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
+    "Run your church media smoothly, without the heavy setup. Cloud of Worship is a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
   ogDescription:
-    "Free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
+    "Run your church media smoothly, without the heavy setup. Cloud of Worship is a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
   keywords:
     "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
   ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
