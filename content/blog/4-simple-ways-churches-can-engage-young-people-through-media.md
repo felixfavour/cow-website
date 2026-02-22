@@ -14,7 +14,7 @@ updated: December 26, 2025 12:00 PM
 
 The next generation isn’t just the church of tomorrow, they are the heartbeat of the church *today,* But let’s face it, young people think, interact, and connect differently. They scroll faster, multitask more, and respond to what feels authentic and creative. If the church must continue to reach and disciple this generation effectively, our media must **speak their language** visually, emotionally, and spiritually.
 
-Here are four powerful ways to do just that:
+Here are four powerful ways to do just that;
 
 ### **1. Speak in Visuals, Not Paragraphs**
 
@@ -48,7 +48,7 @@ These clips travel fast on social media and carry your church’s message beyond
 
 ### **4. Be Real: Show Authenticity**
 
-Today’s youth can spot pretense instantly. What they crave is **authenticity***.*
+Today’s youth can spot pretense instantly. What they crave is **authenticity**\*.\*
 
 Show real people, real stories, and real impact. Let testimonies, service moments, and team interactions reflect genuine community and faith. When your media feels personal and honest, young people don’t just watch, they connect.
 
