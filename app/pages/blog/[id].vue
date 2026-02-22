@@ -62,15 +62,15 @@ const { params } = useRoute()
 const { data } = await useAsyncData(`blog-${params.id}`, async () => {
   // Try exact match first
   let result = await queryCollection("blog").path(`/blog/${params.id}`).first()
-  
+
   // If not found, try case-insensitive search
   if (!result) {
     const allBlogs = await queryCollection("blog").all()
-    result = allBlogs.find(blog => 
-      blog.path?.toLowerCase() === `/blog/${params.id}`.toLowerCase()
+    result = allBlogs.find(
+      (blog) => blog.path?.toLowerCase() === `/blog/${params.id}`.toLowerCase()
     )
   }
-  
+
   return result
 })
 const content = data.value

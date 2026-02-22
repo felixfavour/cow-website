@@ -5,7 +5,7 @@ author_img: /images/author/kiitan.jpg
 cover: /images/blog/blog-cow-evolving.jpg
 created: January 16, 2026 12:00 PM
 updated: January 16, 2026 12:00 PM
-paragraph: At Cloud of Worship, our mission has always been simple; to help churches focus on worship, not technology. As over 1,959+ churches trooped in and joined the platform, we listened closely to what worked, what slowed teams down, and where technology quietly became a burden. That feedback shaped every improvement we’ve made so far.
+paragraph: At Cloud of Worship, our mission has always been simple; to help churches focus on worship, not technology. As over 2,032+ churches trooped in and joined the platform, we listened closely to what worked, what slowed teams down, and where technology quietly became a burden. That feedback shaped every improvement we’ve made so far.
 tag: Guides
 ---
 

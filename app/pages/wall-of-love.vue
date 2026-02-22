@@ -23,7 +23,7 @@
           Get started for free
         </a>
         <div class="helper-text text-sm text-center pt-2">
-          serving <span class="font-semibold">1,959+</span> churches
+          serving <span class="font-semibold">2,032+</span> churches
         </div>
       </div>
     </div>
