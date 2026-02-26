@@ -5,11 +5,11 @@ author_img: /images/author/praise.jpg
 cover: https://images.unsplash.com/photo-1740645580366-c4f1de0219dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFRyb3VibGVzaG9vdGluZyUyMCUyNiUyMEhlbHAlMjBHdWlkZXN8ZW58MHx8MHx8fDA%3D
 created: February 26, 2026 7:00 PM
 paragraph: ""
-tag: " Guides"
-updated: February 26, 2026 7:00 PM
 seo:
   title: "Tech Guide: Top 5 Free Presentation Tools (And Why Cloud of Worship Wins)"
   description: As we navigate 2026, church ministry is more digital than ever. From seamless livestreams to interactive sermon notes, technology is no longer a luxury, it’s the backbone of congregational connection. Yet, for many media teams, the very tools meant to simplify Sunday mornings have become a source of "technical friction."
+tag: " Guides"
+updated: February 26, 2026 7:00 PM
 ---
 
 #
