@@ -53,6 +53,6 @@ The #1 question we get is: *"What if the internet fails?"* Modern browser-based 
 
 Technology should never interrupt the flow of the Spirit. While download-based tools served us well in the past, the **Cloud Standard** of 2026 offers a level of freedom that stationary software simply cannot match.
 
-If you are still tied to a single "Media PC," you are working harder than you need to. It’s time to stop downloading and start deploying
+If you are still tied to a single "Media PC," you are working harder than you need to. It’s time to stop downloading and start deploying.
 
- [Experience the freedom of the cloud. Join 1,000+ churches and start your Cloud of Worship journey today—no installation required.](https://app.cloudofworship.com/)
+ **** [Experience the freedom of the cloud. Join 1,000+ churches and start your Cloud of Worship journey today—no installation required.](https://app.cloudofworship.com/)
