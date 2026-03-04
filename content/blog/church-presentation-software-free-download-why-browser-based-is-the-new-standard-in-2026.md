@@ -55,4 +55,4 @@ Technology should never interrupt the flow of the Spirit. While download-based t
 
 If you are still tied to a single "Media PC," you are working harder than you need to. It’s time to stop downloading and start deploying.
 
- **** [Experience the freedom of the cloud. Join 1,000+ churches and start your Cloud of Worship journey today—no installation required.](https://app.cloudofworship.com/)
+ [Experience the freedom of the cloud. Join 1,000+ churches and start your Cloud of Worship journey today—no installation required.](https://app.cloudofworship.com/)
