@@ -6,7 +6,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "generate-llms": "node scripts/generate-llms.js"
   },
   "dependencies": {
     "@nuxt/content": "^3.11.0",
