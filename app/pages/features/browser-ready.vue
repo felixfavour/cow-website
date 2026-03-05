@@ -25,7 +25,7 @@
       </div>
       <div class="actions mt-[10%] md:mt-[5%] text-center">
         <a
-          href="https://app.cloudofworship.com/signup"
+          href="https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=browser_ready"
           class="primary-btn taller w-[220px] mx-auto"
         >
           Get started for free

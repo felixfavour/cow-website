@@ -413,7 +413,7 @@ const planData = computed(() => {
     decimal: null,
     period: "/month",
     buttonText: "Start with Teams",
-    url: "https://app.cloudofworship.com/signup",
+    url: "https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=pricing_table",
   }
 
   if (teamsMonthlyPlan.value) {
@@ -421,7 +421,7 @@ const planData = computed(() => {
     teamsData.symbol = getCurrencySymbol(teamsMonthlyPlan.value.currency)
     teamsData.integer = getPriceInteger(amount)
     teamsData.decimal = getPriceDecimal(amount)
-    teamsData.url = `https://app.cloudofworship.com/signup?plan_id=${teamsMonthlyPlan.value.alias}`
+    teamsData.url = `https://app.cloudofworship.com/signup?plan_id=${teamsMonthlyPlan.value.alias}&utm_source=marketing_website&utm_medium=pricing_table`
   }
 
   return [starterData, teamsData]

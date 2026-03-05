@@ -26,7 +26,7 @@
       <!-- <div class="actions mt-[10%] md:mt-[5%] text-center">
         <a
           target="_blank"
-          href="https://app.cloudofworship.com/signup"
+          href="https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=pricing"
           class="primary-btn taller w-[240px] mx-auto"
         >
           Sign up for free

@@ -17,13 +17,13 @@
       </div>
       <div class="actions mt-[10%] md:mt-[5%] text-center">
         <a
-          href="https://app.cloudofworship.com/signup"
+          href="https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=wall_of_love"
           class="primary-btn taller w-[220px] mx-auto"
         >
           Get started for free
         </a>
         <div class="helper-text text-sm text-center pt-2">
-          serving <span class="font-semibold">2,032+</span> churches
+          serving <span class="font-semibold">2,129+</span> churches
         </div>
       </div>
     </div>
