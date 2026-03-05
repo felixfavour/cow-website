@@ -89,7 +89,7 @@
           </li> -->
           <li class="nav-item">
             <a
-              href="https://app.cloudofworship.com/signup"
+              href="https://app.cloudofworship.com/signup?utm_source=marketing_website"
               class="primary-btn text-md md:text-sm min-h-[50px]"
             >
               Sign up for free
@@ -111,7 +111,7 @@
         </li>
         <li class="nav-item hidden lg:block">
           <a
-            href="https://app.cloudofworship.com/signup"
+            href="https://app.cloudofworship.com/signup?utm_source=marketing_website"
             class="primary-btn text-xs md:text-sm"
           >
             Sign up for free

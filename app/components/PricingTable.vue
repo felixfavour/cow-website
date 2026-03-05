@@ -402,7 +402,7 @@ const planData = computed(() => {
     decimal: null,
     period: "/month",
     buttonText: "Get Started",
-    url: "https://app.cloudofworship.com/signup",
+    url: "https://app.cloudofworship.com/signup?utm_source=marketing_website",
   }
 
   const teamsData = {
