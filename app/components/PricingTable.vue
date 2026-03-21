@@ -189,7 +189,7 @@ const {
     try {
       const apiUrl =
         process.env.NUXT_PUBLIC_API_URL || "https://api.cloudofworship.com"
-      const response = await fetch(`${apiUrl}/api/v1/subscriptions/plans`)
+      const response = await fetch(`${apiUrl}/api/v1/billing/plans`)
 
       if (!response.ok) {
         throw new Error("Failed to fetch pricing plans")
