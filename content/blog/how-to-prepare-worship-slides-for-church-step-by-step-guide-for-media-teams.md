@@ -1,14 +1,14 @@
 ---
 title: How to Prepare Worship Slides for Church (Step-by-Step Guide for Media Teams)
-description: Preparing worship slides is one of the most important responsibilities of a church media team. When done well, it helps the congregation follow along, stay engaged, and focus on the message.  However, without a clear process, slide preparation can become stressful and disorganized.  This guide explains how to prepare worship slides for church in a simple, structured way.
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: https://images.unsplash.com/photo-1558541966-d0c02d9ca1e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V29yc2hpcCUyMFNsaWRlcyUyMGZvciUyMENodXJjaHxlbnwwfHwwfHx8MA%3D%3D
 created: March 23, 2026 10:00 AM
+description: Preparing worship slides is one of the most important responsibilities of a church media team. When done well, it helps the congregation follow along, stay engaged, and focus on the message.  However, without a clear process, slide preparation can become stressful and disorganized.  This guide explains how to prepare worship slides for church in a simple, structured way.
 navigation:
   title: How to Prepare Worship Slides for Church (Step-by-Step Guide for Media Teams)
   description: Preparing worship slides is one of the most important responsibilities of a church media team. When done well, it helps the congregation follow along, stay engaged, and focus on the message.  However, without a clear process, slide preparation can become stressful and disorganized.  This guide explains how to prepare worship slides for church in a simple, structured way.
-paragraph: A smooth worship service doesn’t happen by accident. Behind every seamless experience is a media team working to ensure everything flows correctly.  However, many churches unknowingly make small media mistakes that can distract the congregation and disrupt worship.  The good news is that most of these issues are easy to fix with the right approach and the right tools.
+paragraph: Preparing worship slides is one of the most important responsibilities of a church media team. When done well, it helps the congregation follow along, stay engaged, and focus on the message.  However, without a clear process, slide preparation can become stressful and disorganized.  This guide explains how to prepare worship slides for church in a simple, structured way.
 read_time: ""
 seo:
   title: How to Prepare Worship Slides for Church (Step-by-Step Guide)
