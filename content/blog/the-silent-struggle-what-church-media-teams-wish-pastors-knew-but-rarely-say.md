@@ -1,10 +1,10 @@
 ---
 title: "The Silent Struggle: What Church Media Teams Wish Pastors Knew (But Rarely Say)"
-description: "Every Sunday, while the congregation focuses on worship, there’s a quiet team working behind the scenes, anticipating every move, adjusting in real time, and ensuring the service flows without distraction. “The church media team”  But here’s the reality:  Many of them are carrying pressures they rarely talk about.  This is not about complaints.  It’s about understanding and building better systems for ministry."
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
-cover: https://images.unsplash.com/photo-1629756048596-5f5815f5dfd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2h1cmNoJTIwTWVkaWElMjBUZWFtc3xlbnwwfHwwfHx8MA%3D%3D
+cover: https://images.unsplash.com/photo-1664767144704-c8d649712eba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNodXJjaCUyMG1lZGlhJTIwcHJvamVjdG9yJTIwbGFuZHNjYXBlfGVufDB8fDB8fHww
 created: April 13, 2026 10:00 AM
+description: "Every Sunday, while the congregation focuses on worship, there’s a quiet team working behind the scenes, anticipating every move, adjusting in real time, and ensuring the service flows without distraction. “The church media team”  But here’s the reality:  Many of them are carrying pressures they rarely talk about.  This is not about complaints.  It’s about understanding and building better systems for ministry."
 navigation:
   title: "The Silent Struggle: What Church Media Teams Wish Pastors Knew (But Rarely Say)"
   description: "Every Sunday, while the congregation focuses on worship, there’s a quiet team working behind the scenes, anticipating every move, adjusting in real time, and ensuring the service flows without distraction. “The church media team”  But here’s the reality:  Many of them are carrying pressures they rarely talk about.  This is not about complaints.  It’s about understanding and building better systems for ministry."
