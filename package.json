@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "generate-llms": "node scripts/generate-llms.js"
+    "generate-llms": "node scripts/generate-llms.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@nuxt/content": "^3.11.0",

@@ -1,10 +1,10 @@
 ---
 title: 5 Common Church Media Mistakes That Distract Worship (And How to Fix Them)
-description: A smooth worship service doesn’t happen by accident. Behind every seamless experience is a media team working to ensure everything flows correctly.  However, many churches unknowingly make small media mistakes that can distract the congregation and disrupt worship.  The good news is that most of these issues are easy to fix with the right approach and the right tools.
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: https://media.istockphoto.com/id/1145888870/photo/common-mistakes-motivational-words-quotes-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=9GbEYypoKD8_4XPHg83NX4FYLzS5QtuC7iQ9QKmntjc=
-created: March 19, 2026 10:00 AM
+created: March 20, 2026 10:00 AM
+description: A smooth worship service doesn’t happen by accident. Behind every seamless experience is a media team working to ensure everything flows correctly.  However, many churches unknowingly make small media mistakes that can distract the congregation and disrupt worship.  The good news is that most of these issues are easy to fix with the right approach and the right tools.
 navigation:
   title: 5 Common Church Media Mistakes That Distract Worship (And How to Fix Them)
   description: A smooth worship service doesn’t happen by accident. Behind every seamless experience is a media team working to ensure everything flows correctly.  However, many churches unknowingly make small media mistakes that can distract the congregation and disrupt worship.  The good news is that most of these issues are easy to fix with the right approach and the right tools.
@@ -14,7 +14,7 @@ seo:
   title: 5 Church Media Mistakes That Distract Worship (And How to Fix Them)
   description: Discover 5 common church media mistakes that disrupt worship and learn how to fix them using simple tools like Cloud of Worship.
 tag: How-to, Guides
-updated: March 19, 2026 10:00 AM
+updated: March 20, 2026 10:00 AM
 user_title: 5 Church Media Mistakes That Distract Worship (And How to Fix Them)
 ---
 
