@@ -175,6 +175,7 @@
 </template>
 
 <script setup>
+const { mergeUtmsIntoUrl } = useUtm()
 const selectedCurrency = ref("USD") // Default to USD
 
 // Fetch plans from API using useAsyncData
@@ -402,7 +403,7 @@ const planData = computed(() => {
     decimal: null,
     period: "/month",
     buttonText: "Get Started",
-    url: "https://app.cloudofworship.com/signup?utm_source=marketing_website",
+    url: mergeUtmsIntoUrl("https://app.cloudofworship.com/signup?utm_source=marketing_website"),
   }
 
   const teamsData = {
@@ -413,7 +414,7 @@ const planData = computed(() => {
     decimal: null,
     period: "/month",
     buttonText: "Start with Teams",
-    url: "https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=pricing_table",
+    url: mergeUtmsIntoUrl("https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=pricing_table"),
   }
 
   if (teamsMonthlyPlan.value) {
@@ -421,7 +422,7 @@ const planData = computed(() => {
     teamsData.symbol = getCurrencySymbol(teamsMonthlyPlan.value.currency)
     teamsData.integer = getPriceInteger(amount)
     teamsData.decimal = getPriceDecimal(amount)
-    teamsData.url = `https://app.cloudofworship.com/signup?plan_id=${teamsMonthlyPlan.value.alias}&utm_source=marketing_website&utm_medium=pricing_table`
+    teamsData.url = mergeUtmsIntoUrl(`https://app.cloudofworship.com/signup?plan_id=${teamsMonthlyPlan.value.alias}&utm_source=marketing_website&utm_medium=pricing_table`)
   }
 
   return [starterData, teamsData]

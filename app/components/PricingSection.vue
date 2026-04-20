@@ -278,6 +278,7 @@
 </template>
 
 <script setup>
+const { mergeUtmsIntoUrl } = useUtm()
 const billingCycle = ref("monthly")
 const selectedCurrency = ref("USD") // Default to USD
 const isChangingPrice = ref(false)
@@ -641,9 +642,9 @@ const calculateSavings = (plan) => {
 
 const getPlanUrl = (plan) => {
   if (plan.isFree) {
-    return "https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=pricing_cards"
+    return mergeUtmsIntoUrl("https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=pricing_cards")
   }
-  return `https://app.cloudofworship.com/signup?plan_id=${plan.alias}&utm_source=marketing_website&utm_medium=pricing_cards`
+  return mergeUtmsIntoUrl(`https://app.cloudofworship.com/signup?plan_id=${plan.alias}&utm_source=marketing_website&utm_medium=pricing_cards`)
 }
 
 // Auto-detect location after data is loaded
