@@ -30,7 +30,11 @@
         </div>
         <div class="actions mt-8 md:mt-[3%]">
           <a
-            :href="mergeUtmsIntoUrl('https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=above_footer')"
+            :href="
+              mergeUtmsIntoUrl(
+                'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=above_footer'
+              )
+            "
             class="primary-btn taller w-[220px]"
           >
             Get started for free

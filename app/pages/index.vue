@@ -18,7 +18,11 @@
       </div>
       <div class="actions mt-[7.5%] md:mt-[2%] text-center">
         <a
-          :href="mergeUtmsIntoUrl('https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=hero')"
+          :href="
+            mergeUtmsIntoUrl(
+              'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=hero'
+            )
+          "
           class="primary-btn taller w-[220px] mx-auto"
         >
           Get started for free
@@ -140,7 +144,11 @@
         </p>
         <a
           class="primary-btn w-[220px] mt-[5%]"
-          :href="mergeUtmsIntoUrl('https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=cta')"
+          :href="
+            mergeUtmsIntoUrl(
+              'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=cta'
+            )
+          "
           >Get started for free</a
         >
       </template>

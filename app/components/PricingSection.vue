@@ -642,9 +642,13 @@ const calculateSavings = (plan) => {
 
 const getPlanUrl = (plan) => {
   if (plan.isFree) {
-    return mergeUtmsIntoUrl("https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=pricing_cards")
+    return mergeUtmsIntoUrl(
+      "https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=pricing_cards"
+    )
   }
-  return mergeUtmsIntoUrl(`https://app.cloudofworship.com/signup?plan_id=${plan.alias}&utm_source=marketing_website&utm_medium=pricing_cards`)
+  return mergeUtmsIntoUrl(
+    `https://app.cloudofworship.com/signup?plan_id=${plan.alias}&utm_source=marketing_website&utm_medium=pricing_cards`
+  )
 }
 
 // Auto-detect location after data is loaded
