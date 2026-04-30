@@ -102,46 +102,46 @@ const quickStartCards = [
     icon: '🚀',
     title: 'Getting Started',
     description: 'New here? Start with the basics and be up and running in 10 minutes.',
-    href: '/documentation/getting-started',
+    href: '/docs/getting-started',
   },
   {
     icon: '📖',
     title: 'Guides',
     description: 'Step-by-step help for organizing songs, working with your team, and more.',
-    href: '/documentation/guides',
+    href: '/docs/guides',
   },
   {
     icon: '💡',
     title: 'Examples',
     description: 'Real-world scenarios from worship teams just like yours.',
-    href: '/documentation/examples',
+    href: '/docs/examples',
   },
   {
     icon: '🔖',
     title: 'Resources',
     description: 'Glossary, FAQ, keyboard shortcuts, and more helpful extras.',
-    href: '/documentation/resources',
+    href: '/docs/resources',
   },
 ]
 
 const quickLinks = [
   {
     label: 'Creating Your First Song',
-    href: '/documentation/getting-started/creating-your-first-song',
+    href: '/docs/getting-started/creating-your-first-song',
   },
   {
     label: 'Inviting Team Members',
-    href: '/documentation/getting-started/inviting-team-members',
+    href: '/docs/getting-started/inviting-team-members',
   },
   {
     label: 'Your First Service Walkthrough',
-    href: '/documentation/getting-started/your-first-service',
+    href: '/docs/getting-started/your-first-service',
   },
-  { label: 'Organizing Your Songs', href: '/documentation/guides/organizing-your-songs' },
+  { label: 'Organizing Your Songs', href: '/docs/guides/organizing-your-songs' },
   {
     label: 'Collaborating with Your Team',
-    href: '/documentation/guides/collaborating-with-your-team',
+    href: '/docs/guides/collaborating-with-your-team',
   },
-  { label: 'Frequently Asked Questions', href: '/documentation/resources/faq' },
+  { label: 'Frequently Asked Questions', href: '/docs/resources/faq' },
 ]
 </script>

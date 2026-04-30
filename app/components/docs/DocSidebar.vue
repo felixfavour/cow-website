@@ -2,7 +2,7 @@
   <nav class="doc-sidebar" aria-label="Documentation navigation">
     <!-- Help Center home link -->
     <NuxtLink
-      to="/documentation"
+      to="/docs"
       class="flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-purple-600 mb-6 group transition-colors"
     >
       <svg class="w-4 h-4 group-hover:text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">

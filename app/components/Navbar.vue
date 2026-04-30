@@ -73,8 +73,46 @@
             Wall of Love
           </nuxt-link>
         </li>
-        <li class="nav-item">
-          <nuxt-link to="/blog" class="nav-link"> Learn </nuxt-link>
+        <li class="nav-item group relative">
+          <button
+            class="nav-link flex items-center gap-1 bg-transparent border-0 cursor-pointer font-medium"
+          >
+            Learn <ArrowDown />
+          </button>
+          <div
+            class="ul-ctn pt-4 lg:hidden group-hover:block hover:block lg:absolute w-[100%] lg:w-[220px] z-10 left-[-80%] transition-all"
+          >
+            <ul
+              class="link-dropdown p-2 border border-gray-100 rounded-lg shadow-lg transition-all bg-white"
+            >
+              <li>
+                <nuxt-link
+                  to="/blog"
+                  class="nav-link flex items-center gap-2 p-3 hover:bg-purple-100 transition rounded-lg"
+                >
+                  <div>
+                    <div class="font-semibold text-sm">Blog</div>
+                    <!-- <div class="text-xs text-gray-400">
+                      Updates, guides & resources
+                    </div> -->
+                  </div>
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link
+                  to="/docs"
+                  class="nav-link flex items-center gap-2 p-3 hover:bg-purple-100 transition rounded-lg"
+                >
+                  <div>
+                    <div class="font-semibold text-sm">Product Guide</div>
+                    <!-- <div class="text-xs text-gray-400">
+                      Help center & how-to articles
+                    </div> -->
+                  </div>
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
         </li>
         <ul class="auth flex flex-col lg:hidden">
           <!-- <li class="nav-item">
@@ -89,7 +127,11 @@
           </li> -->
           <li class="nav-item">
             <a
-              :href="mergeUtmsIntoUrl('https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=navbar')"
+              :href="
+                mergeUtmsIntoUrl(
+                  'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=navbar'
+                )
+              "
               class="primary-btn text-md md:text-sm min-h-[50px]"
             >
               Sign up for free
@@ -111,7 +153,11 @@
         </li>
         <li class="nav-item hidden lg:block">
           <a
-            :href="mergeUtmsIntoUrl('https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=navbar')"
+            :href="
+              mergeUtmsIntoUrl(
+                'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=navbar'
+              )
+            "
             class="primary-btn text-xs md:text-sm"
           >
             Sign up for free

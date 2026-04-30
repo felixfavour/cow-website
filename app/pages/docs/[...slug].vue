@@ -62,7 +62,7 @@ const toc = computed(() =>
   doc.value ? getTableOfContents(doc.value.body) : []
 )
 const breadcrumbs = computed(() => getBreadcrumbs(slug.value))
-const prevNext = computed(() => getPrevNext(`/documentation/${slug.value}`))
+const prevNext = computed(() => getPrevNext(`/docs/${slug.value}`))
 
 useSeoMeta({
   title: computed(() =>

@@ -66,10 +66,6 @@
 </template>
 
 <script setup>
-const blogsByCategory = ref([])
-const blogsUncategorized = ref([])
-const newBlogs = ref([])
-const sliderData = ref([])
 const showTestimonialPopup = ref(false)
 useSeoMeta({
   title: "Blog, Resources, Guides and More - Cloud of Worship",
@@ -88,12 +84,12 @@ useSeoMeta({
   canonical: "https://cloudofworship.com",
 })
 
-const topBlog = computed(() => blogsUncategorized.value?.[0])
-
-const fetchBlogs = async () => {
+// Fetch blogs on the server during SSR so data is ready on first paint
+const { data: blogData } = await useAsyncData("blogs", async () => {
   const blogs = await queryCollection("blog").all()
+
   const category_to_article_mapping = {}
-  blogs.map((blog) => {
+  blogs.forEach((blog) => {
     blog.tag
       ?.split(",")
       .forEach((tag) =>
@@ -102,31 +98,30 @@ const fetchBlogs = async () => {
           : (category_to_article_mapping[tag] = [blog])
       )
   })
-  blogs.sort((a, b) => {
-    return new Date(b.created).getTime() - new Date(a.created).getTime()
-  })
-  blogsUncategorized.value = blogs
 
-  const allBlogs = Object.keys(category_to_article_mapping).reduce(
-    (acc, curr) => {
-      const obj = {
-        title: curr,
-        articles: category_to_article_mapping[curr],
-        see: "See All",
-      }
-      acc.push(obj)
-      return acc
-    },
-    []
-  )
+  blogs.sort((a, b) => new Date(b.created).getTime() - new Date(a.created).getTime())
+
+  const allBlogs = Object.keys(category_to_article_mapping).reduce((acc, curr) => {
+    acc.push({ title: curr, articles: category_to_article_mapping[curr], see: "See All" })
+    return acc
+  }, [])
+
   const divisor = Math.ceil(allBlogs.length / 2)
-  blogsByCategory.value = allBlogs
-  newBlogs.value = allBlogs.slice(divisor)
+  const recentBlogPosts = blogs.slice(0, 3).map((x) => ({ ...x, time: 0 }))
 
-  let recentBlogPosts = blogs.slice(0, 3)
-  recentBlogPosts.map((x) => (x.time = 0))
-  sliderData.value = recentBlogPosts
-}
+  return {
+    blogsUncategorized: blogs,
+    blogsByCategory: allBlogs,
+    newBlogs: allBlogs.slice(divisor),
+    sliderData: recentBlogPosts,
+  }
+})
+
+const blogsUncategorized = computed(() => blogData.value?.blogsUncategorized ?? [])
+const blogsByCategory = computed(() => blogData.value?.blogsByCategory ?? [])
+const newBlogs = computed(() => blogData.value?.newBlogs ?? [])
+const sliderData = computed(() => blogData.value?.sliderData ?? [])
+const topBlog = computed(() => blogsUncategorized.value?.[0])
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
@@ -151,8 +146,6 @@ onMounted(() => {
     }
   })
 })
-
-fetchBlogs()
 </script>
 
 <style scoped></style>

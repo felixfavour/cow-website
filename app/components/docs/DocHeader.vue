@@ -2,7 +2,7 @@
   <header class="doc-header mb-8">
     <!-- Breadcrumbs -->
     <nav v-if="breadcrumbs && breadcrumbs.length" class="flex items-center gap-1 flex-wrap mb-4" aria-label="Breadcrumb">
-      <NuxtLink to="/documentation" class="text-sm text-gray-400 hover:text-purple-600 transition-colors">Help Center</NuxtLink>
+      <NuxtLink to="/docs" class="text-sm text-gray-400 hover:text-purple-600 transition-colors">Help Center</NuxtLink>
       <template v-for="(crumb, i) in breadcrumbs" :key="crumb.href">
         <span class="text-gray-300 text-sm">/</span>
         <NuxtLink
