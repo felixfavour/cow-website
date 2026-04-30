@@ -19,5 +19,17 @@ export default defineContentConfig({
         excerpt: z.string().optional(),
       }),
     }),
+    documentation: defineCollection({
+      type: 'page',
+      source: 'documentation/**',
+      schema: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        category: z.string().optional(),
+        lastUpdated: z.string().optional(),
+        order: z.number().optional(),
+        draft: z.boolean().optional(),
+      }),
+    }),
   },
 })

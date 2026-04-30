@@ -1,0 +1,61 @@
+/* Documentation Design Tokens for Cloud of Worship */
+:root {
+  --doc-bg-primary: #fff;
+  --doc-bg-secondary: #f8fafc;
+  --doc-text-primary: #1a202c;
+  --doc-text-secondary: #4a5568;
+  --doc-accent-color: #3b82f6;
+  --doc-border-color: #e2e8f0;
+  --doc-code-bg: #f1f5f9;
+  --doc-callout-note-bg: #e6f0fa;
+  --doc-callout-warning-bg: #fff7e6;
+  --doc-callout-tip-bg: #e6faef;
+  --doc-callout-danger-bg: #fff0f0;
+  --font-sans: 'Inter', Arial, sans-serif;
+  --font-mono: 'Fira Mono', 'Menlo', 'Monaco', monospace;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+h2 {
+  font-size: 1.875rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+body, .doc-content {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+small, .caption {
+  font-size: 0.875rem;
+}
+code, pre {
+  font-size: 0.875rem;
+  font-family: var(--font-mono);
+  background: var(--doc-code-bg);
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+
+/* Spacing scale */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+}
+
+@media (max-width: 900px) {
+  .doc-sidebar, .doc-toc {
+    display: none;
+  }
+  .doc-main-wrapper {
+    flex-direction: column;
+  }
+}
