@@ -1,7 +1,7 @@
 ---
 title: "The Art of Seamless Transitions: Elevating Worship Through Intentional Tech Integration"
 author: Favour Felix
-author_img: /images/author/favour.jpg
+author_img: /images/author/favour.jpeg
 cover: /images/blog/art-of-seamless-transitions-worship-tech.webp
 created: May 28, 2026 12:00 PM
 description: Discover how seamless technology integration and thoughtful transitions can remove distractions, allowing your congregation to focus entirely on worship.

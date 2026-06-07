@@ -333,7 +333,11 @@ const {
       // Use environment variable or default to localhost
       const apiUrl =
         process.env.NUXT_PUBLIC_API_URL || "https://api.cloudofworship.com"
-      const response = await fetch(`${apiUrl}/api/v1/billing/plans`)
+      // The billing API authorizes by Origin; the SSR fetch sends none and gets
+      // a 403, so set an allowed one. Browsers ignore this and send their own.
+      const response = await fetch(`${apiUrl}/api/v1/billing/plans`, {
+        headers: { Origin: "https://cloudofworship.com" },
+      })
 
       if (!response.ok) {
         throw new Error("Failed to fetch pricing plans")
