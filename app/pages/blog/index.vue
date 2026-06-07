@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="section pt-[3%]">
-      <!-- TOP BLOG SECTION -->
+      <!-- TOP BLOG SECTION (page 1 only) -->
       <nuxt-link
+        v-if="topBlog"
         :to="`${topBlog?.path}`"
         class="inner blog-hero bg-[#EEDCFF] md:bg-[#FFE9E8] flex flex-col md:flex-row items-center relative gap-6 group overflow-hidden rounded-3xl"
       >
@@ -50,14 +51,68 @@
           </h2>
         </div>
         <div
-          class="grid grid-cols-1 pb-[10%] md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-[8] xl:gap-y-12"
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-[8] xl:gap-y-12"
         >
-          <BlogCard
-            v-for="blog in blogsUncategorized"
-            :key="blog.title"
-            :blog="blog"
-          />
+          <BlogCard v-for="blog in posts" :key="blog.path" :blog="blog" />
         </div>
+
+        <!-- PAGINATION -->
+        <!-- `custom` so we control aria-current ourselves: vue-router ignores the
+             query string when matching, so it would otherwise mark every ?page link active. -->
+        <nav
+          v-if="totalPages > 1"
+          class="flex items-center justify-center flex-wrap gap-2 mt-12"
+          aria-label="Blog pagination"
+        >
+          <nuxt-link
+            v-if="currentPage > 1"
+            :to="pageLink(currentPage - 1)"
+            custom
+            v-slot="{ href, navigate }"
+          >
+            <a
+              :href="href"
+              rel="prev"
+              class="px-3 py-2 rounded-full border-2 border-gray-200 hover:border-black text-sm font-semibold"
+              @click="navigate"
+              >Prev</a
+            >
+          </nuxt-link>
+          <nuxt-link
+            v-for="n in totalPages"
+            :key="n"
+            :to="pageLink(n)"
+            custom
+            v-slot="{ href, navigate }"
+          >
+            <a
+              :href="href"
+              :aria-current="n === currentPage ? 'page' : undefined"
+              :class="[
+                'w-10 h-10 flex items-center justify-center rounded-full text-sm font-semibold border-2',
+                n === currentPage
+                  ? 'bg-purple-500 text-white border-purple-500'
+                  : 'border-gray-200 hover:border-black',
+              ]"
+              @click="navigate"
+              >{{ n }}</a
+            >
+          </nuxt-link>
+          <nuxt-link
+            v-if="currentPage < totalPages"
+            :to="pageLink(currentPage + 1)"
+            custom
+            v-slot="{ href, navigate }"
+          >
+            <a
+              :href="href"
+              rel="next"
+              class="px-3 py-2 rounded-full border-2 border-gray-200 hover:border-black text-sm font-semibold"
+              @click="navigate"
+              >Next</a
+            >
+          </nuxt-link>
+        </nav>
       </div>
     </div>
     <AboveFooterSection class="mt-[17.5%]" />
@@ -67,9 +122,82 @@
 
 <script setup>
 const showTestimonialPopup = ref(false)
+const route = useRoute()
+const PAGE_SIZE = 12
+
+const requestedPage = computed(() => {
+  const p = parseInt(route.query.page)
+  return Number.isFinite(p) && p > 0 ? p : 1
+})
+
+// Fetch blogs on the server during SSR so data is ready on first paint.
+// Select only the fields the cards need — excluding the heavy `body` AST —
+// then slice to the current page so only those cards are rendered/serialized.
+const { data: blogData } = await useAsyncData(
+  "blogs",
+  async () => {
+    const blogs = await queryCollection("blog")
+      .select(
+        "path",
+        "title",
+        "cover",
+        "tag",
+        "paragraph",
+        "author",
+        "author_img",
+        "created"
+      )
+      .all()
+
+    // `created` is a non-ISO human string (e.g. "may 8, 2026"), so sort via Date.
+    blogs.sort(
+      (a, b) => new Date(b.created).getTime() - new Date(a.created).getTime()
+    )
+
+    const total = blogs.length
+    const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE))
+    const page = Math.min(requestedPage.value, totalPages)
+    const start = (page - 1) * PAGE_SIZE
+
+    // Cards show ≤150 chars, the hero ≤200 — only ship what's displayed.
+    const trunc = (b) => ({ ...b, paragraph: b.paragraph?.slice(0, 200) ?? null })
+
+    return {
+      posts: blogs.slice(start, start + PAGE_SIZE).map(trunc),
+      total,
+      totalPages,
+      page,
+      top: page === 1 && blogs[0] ? trunc(blogs[0]) : null,
+    }
+  },
+  {
+    watch: [requestedPage],
+    default: () => ({ posts: [], total: 0, totalPages: 1, page: 1, top: null }),
+  }
+)
+
+const posts = computed(() => blogData.value?.posts ?? [])
+const topBlog = computed(() => blogData.value?.top)
+const totalPages = computed(() => blogData.value?.totalPages ?? 1)
+const currentPage = computed(() => blogData.value?.page ?? 1)
+
+// page 1 has the clean /blog URL (no ?page=1) so it stays the canonical entry.
+const pageLink = (n) =>
+  n <= 1 ? { path: "/blog", query: {} } : { path: "/blog", query: { page: n } }
+
+const canonicalUrl = computed(() =>
+  currentPage.value <= 1
+    ? "https://cloudofworship.com/blog"
+    : `https://cloudofworship.com/blog?page=${currentPage.value}`
+)
+const pageSuffix = computed(() =>
+  currentPage.value > 1 ? ` - Page ${currentPage.value}` : ""
+)
+
 useSeoMeta({
-  title: "Blog, Resources, Guides and More - Cloud of Worship",
-  ogTitle: "Blog, Resources, Guides and More - Cloud of Worship",
+  title: () => `Blog, Resources, Guides and More - Cloud of Worship${pageSuffix.value}`,
+  ogTitle: () =>
+    `Blog, Resources, Guides and More - Cloud of Worship${pageSuffix.value}`,
   description:
     "Stay up to date with the latest updates, resources, guides and more from Cloud of Worship. See how you can use our software to enhance your worship experience.",
   ogDescription:
@@ -78,50 +206,13 @@ useSeoMeta({
     "cloud of worship, guide, how to, resources, blog, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
   ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
-  ogUrl: "https://cloudofworship.com",
+  ogUrl: () => canonicalUrl.value,
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com",
 })
-
-// Fetch blogs on the server during SSR so data is ready on first paint
-const { data: blogData } = await useAsyncData("blogs", async () => {
-  const blogs = await queryCollection("blog").all()
-
-  const category_to_article_mapping = {}
-  blogs.forEach((blog) => {
-    blog.tag
-      ?.split(",")
-      .forEach((tag) =>
-        tag in category_to_article_mapping
-          ? category_to_article_mapping[tag].push(blog)
-          : (category_to_article_mapping[tag] = [blog])
-      )
-  })
-
-  blogs.sort((a, b) => new Date(b.created).getTime() - new Date(a.created).getTime())
-
-  const allBlogs = Object.keys(category_to_article_mapping).reduce((acc, curr) => {
-    acc.push({ title: curr, articles: category_to_article_mapping[curr], see: "See All" })
-    return acc
-  }, [])
-
-  const divisor = Math.ceil(allBlogs.length / 2)
-  const recentBlogPosts = blogs.slice(0, 3).map((x) => ({ ...x, time: 0 }))
-
-  return {
-    blogsUncategorized: blogs,
-    blogsByCategory: allBlogs,
-    newBlogs: allBlogs.slice(divisor),
-    sliderData: recentBlogPosts,
-  }
+useHead({
+  link: [{ rel: "canonical", href: () => canonicalUrl.value }],
 })
-
-const blogsUncategorized = computed(() => blogData.value?.blogsUncategorized ?? [])
-const blogsByCategory = computed(() => blogData.value?.blogsByCategory ?? [])
-const newBlogs = computed(() => blogData.value?.newBlogs ?? [])
-const sliderData = computed(() => blogData.value?.sliderData ?? [])
-const topBlog = computed(() => blogsUncategorized.value?.[0])
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

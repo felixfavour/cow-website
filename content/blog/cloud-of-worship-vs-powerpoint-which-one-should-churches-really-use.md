@@ -3,7 +3,7 @@ title: "Cloud of Worship vs PowerPoint: Which One Should Churches Really Use?"
 description: Many churches still rely on PowerPoint.  It’s familiar.  It’s available.  It works.  But is it built for church use?
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
-cover: /images/blog/POWER-POINT.png
+cover: /images/blog/POWER-POINT.webp
 created: May 13, 2026 10:00 AM
 navigation:
   title: "Cloud of Worship vs PowerPoint: Which One Should Churches Really Use?"

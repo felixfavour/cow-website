@@ -41,6 +41,8 @@
     </div>
     <img
       :src="data?.cover"
+      fetchpriority="high"
+      decoding="async"
       class="w-[95%] max-h-[600px] object-cover max-w-[1200px] rounded-3xl group-hover:scale-110 transition-all"
     />
     <section class="w-[90%] max-w-[800px] mx-auto pb-[15%]">
@@ -63,12 +65,15 @@ const { data } = await useAsyncData(`blog-${params.id}`, async () => {
   // Try exact match first
   let result = await queryCollection("blog").path(`/blog/${params.id}`).first()
 
-  // If not found, try case-insensitive search
+  // If not found, find the matching path case-insensitively without pulling
+  // every post's full body, then fetch only the one we need.
   if (!result) {
-    const allBlogs = await queryCollection("blog").all()
-    result = allBlogs.find(
-      (blog) => blog.path?.toLowerCase() === `/blog/${params.id}`.toLowerCase()
-    )
+    const target = `/blog/${params.id}`.toLowerCase()
+    const paths = await queryCollection("blog").select("path").all()
+    const match = paths.find((blog) => blog.path?.toLowerCase() === target)
+    if (match?.path) {
+      result = await queryCollection("blog").path(match.path).first()
+    }
   }
 
   return result

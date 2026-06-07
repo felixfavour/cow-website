@@ -3,7 +3,7 @@ title: "Twi Bible Translation for Churches in Ghana: Making Worship More Inclusi
 description: In many Ghanaian churches, Twi-speaking members attend faithfully, yet Scripture is often presented primarily in English. While the message is heard, it is not always fully absorbed.
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
-cover: /images/blog/ChatGPT-Image-Feb-26,-2026,-11-52-28-AM.png
+cover: /images/blog/ChatGPT-Image-Feb-26,-2026,-11-52-28-AM.webp
 created: February 26, 2026 12:00 PM
 paragraph: In many Ghanaian churches, Twi-speaking members attend faithfully, yet Scripture is often presented primarily in English. While the message is heard, it is not always fully absorbed.
 tag: ""

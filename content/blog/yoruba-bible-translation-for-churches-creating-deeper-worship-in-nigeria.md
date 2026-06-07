@@ -2,7 +2,7 @@
 title: "Yoruba Bible Translation for Churches: Creating Deeper Worship in Nigeria"
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
-cover: /images/blog/yoruba-bible-article-image.png
+cover: /images/blog/yoruba-bible-article-image.webp
 created: March 05, 2026 10:00 AM
 description: Worship becomes powerful when people don’t just hear Scripture but understand it in the language that speaks to their heart.  Across Nigeria, many congregations include Yoruba-speaking members. Yet during services, Scripture is often projected only in English. While English communicates the message, Yoruba carries emotion, culture, and depth.
 navigation:

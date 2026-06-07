@@ -1,7 +1,7 @@
 ---
 title: "How to install and track updates on Cloud of Worship"
 author: Favour Felix
-cover: /images/blog/blog-track-updates.png
+cover: /images/blog/blog-track-updates.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: Cloud of Worship is a fully browser-based web app, but it also works offline. Once you load the app, it caches the most recent version on your device, allowing you to access it without an active internet connection.

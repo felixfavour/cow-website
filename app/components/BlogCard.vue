@@ -4,6 +4,8 @@
       <img
         :src="blog?.cover"
         alt=""
+        loading="lazy"
+        decoding="async"
         class="w-full h-[220px] object-cover rounded-3xl"
       />
     </div>

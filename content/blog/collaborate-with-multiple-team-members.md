@@ -1,7 +1,7 @@
 ---
 title: How to Collaborate with Multiple Members of Your Media Team
 author: Favour Felix
-cover: /images/blog/blog-collaborate.png
+cover: /images/blog/blog-collaborate.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: When two or more are gathered, great things can happen—especially in

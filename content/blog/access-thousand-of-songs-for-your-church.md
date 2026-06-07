@@ -1,7 +1,7 @@
 ---
 title: How to Access thousands of songs for your church compiled by others
 author: Favour Felix
-cover: /images/blog/blog-song-library.png
+cover: /images/blog/blog-song-library.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: In the worship experience, song lyrics play a crucial role right

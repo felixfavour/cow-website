@@ -1,7 +1,7 @@
 ---
 title: "Understanding Slides in Cloud of Worship."
 author: Favour Felix
-cover: /images/blog/blog-understanding-slides.png
+cover: /images/blog/blog-understanding-slides.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: Slides are the foundation of projection in Cloud of Worship. Each service schedule is composed of different types of slides, each serving a specific purpose. The six primary slide types are song slides, hymn slides, bible slides, text slides, media slides, and countdown slides.

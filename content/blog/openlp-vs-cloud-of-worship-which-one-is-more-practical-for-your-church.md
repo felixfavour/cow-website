@@ -3,7 +3,7 @@ title: "OpenLP vs Cloud of Worship: Which One Is More Practical for Your Church?
 description: Choosing between free software and modern platforms can be tricky.  On one hand, you want to save money.  On the other hand, you want something that works smoothly every Sunday.  Two options often compared are OpenLP and Cloud of Worship.
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
-cover: /images/blog/OpenLP.png
+cover: /images/blog/OpenLP.webp
 created: May 9, 2026 10:00 AM
 navigation:
   title: "OpenLP vs Cloud of Worship: Which One Is More Practical for Your Church?"

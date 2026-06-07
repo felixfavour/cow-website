@@ -2,7 +2,7 @@
 title: How One Media Team Transformed Their Church Services with Simple, Powerful Tech
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
-cover: /images/blog/blog-yinka-cloudofworship.png
+cover: /images/blog/blog-yinka-cloudofworship.webp
 created: September 28, 2025 12:00 PM
 updated: September 28, 2025 12:00 PM
 paragraph: In the fast-paced world of church media, where every second counts

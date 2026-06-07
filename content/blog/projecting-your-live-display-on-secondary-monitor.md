@@ -1,7 +1,7 @@
 ---
 title: "How to project your LIVE slides to another display"
 author: Favour Felix
-cover: /images/blog/blog-live-display.png
+cover: /images/blog/blog-live-display.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: Now that your account is all set and you’ve created some slides, it’s time to project them to your congregation. This can be done easily by using the “Go Live” button in Cloud of Worship.

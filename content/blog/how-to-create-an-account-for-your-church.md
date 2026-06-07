@@ -1,7 +1,7 @@
 ---
 title: "How to Create an Account on Cloud of Worship"
 author: Favour Felix
-cover: /images/blog/blog-create-account.png
+cover: /images/blog/blog-create-account.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: Creating an account on Cloud of Worship for your church is quick and as easy as following these two simple steps

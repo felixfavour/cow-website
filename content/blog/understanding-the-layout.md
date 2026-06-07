@@ -1,7 +1,7 @@
 ---
 title: "Understanding the Cloud of Worship Layout."
 author: Favour Felix
-cover: /images/blog/blog-understanding-layout.png
+cover: /images/blog/blog-understanding-layout.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: With so many presentation software options available today, it’s much easier to find a tool than it used to be when pioneers like EasyWorship started. When we started building Cloud of Worship, we focused on creating an interface that anyone can use with ease—without needing extensive guidance. A big part of that solution is our intuitive layout.

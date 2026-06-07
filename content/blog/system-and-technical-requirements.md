@@ -1,7 +1,7 @@
 ---
 title: "System & Technical Requirements for Cloud of Worship"
 author: Favour Felix
-cover: /images/blog/blog-system-requirements.png
+cover: /images/blog/blog-system-requirements.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: Cloud of Worship is a browser-based application, meaning it can run on virtually any operating system that supports a modern web browser.

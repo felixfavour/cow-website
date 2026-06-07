@@ -1,7 +1,7 @@
 ---
 title: "How to display multiple versions of scripture"
 author: Favour Felix
-cover: /images/blog/blog-scripture-versions.png
+cover: /images/blog/blog-scripture-versions.webp
 created: September 25, 2024 12:00 PM
 updated: September 25, 2024 12:00 PM
 paragraph: Scripture is an essential part of your church’s service, and seeing verses in different translations can provide even greater depth and understanding. That’s why Cloud of Worship includes multiple (public domain) Bible translations for you to use locally during services.
