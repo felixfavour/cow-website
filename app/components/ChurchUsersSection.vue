@@ -50,6 +50,18 @@
           alt="Gospel Faith Mission International (Gofamint)"
           class="w-[40px] lg:w-[60px]"
         />
+        <img
+          src="~/assets/images/celebration-church.webp"
+          loading="lazy"
+          alt="Celebration Church International"
+          class="w-[40px] lg:w-[60px]"
+        />
+        <img
+          src="~/assets/images/light-nation-church.webp"
+          loading="lazy"
+          alt="The Light Nation Church"
+          class="w-[40px] lg:w-[60px]"
+        />
       </template>
     </div>
   </div>
