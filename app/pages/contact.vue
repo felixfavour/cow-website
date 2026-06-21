@@ -18,13 +18,17 @@
       </div>
       <div class="actions mt-[10%] md:mt-[5%] text-center">
         <a
-          :href="mergeUtmsIntoUrl('https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=contact')"
+          :href="
+            mergeUtmsIntoUrl(
+              'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=contact'
+            )
+          "
           class="primary-btn taller w-[220px] mx-auto"
         >
           Get started for free
         </a>
         <div class="helper-text text-sm text-center pt-2">
-          serving <span class="font-semibold">2,129+</span> churches
+          serving <span class="font-semibold">thousands</span> of churches
         </div>
       </div>
     </div>
