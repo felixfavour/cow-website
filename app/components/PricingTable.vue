@@ -219,33 +219,8 @@ const detectUserLocation = async () => {
   try {
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 
-    // African timezones (excluding South Africa)
-    const africanTimezones = [
-      "Africa/Lagos",
-      "Africa/Accra",
-      "Africa/Nairobi",
-      "Africa/Cairo",
-      "Africa/Addis_Ababa",
-      "Africa/Dar_es_Salaam",
-      "Africa/Kampala",
-      "Africa/Khartoum",
-      "Africa/Kinshasa",
-      "Africa/Luanda",
-      "Africa/Algiers",
-      "Africa/Casablanca",
-      "Africa/Tunis",
-      "Africa/Abidjan",
-      "Africa/Bamako",
-      "Africa/Dakar",
-      "Africa/Douala",
-      "Africa/Harare",
-      "Africa/Lusaka",
-      "Africa/Maputo",
-      "Africa/Tripoli",
-      "Africa/Windhoek",
-    ]
-
-    if (africanTimezones.includes(timezone)) {
+    // Nigerian timezone (only Nigeria gets NGN pricing)
+    if (timezone === "Africa/Lagos") {
       if (availableCurrencies.value.includes("NGN")) {
         selectedCurrency.value = "NGN"
       }
@@ -257,65 +232,12 @@ const detectUserLocation = async () => {
     if (response.ok) {
       const data = await response.json()
 
-      // List of African country codes (excluding South Africa)
-      const africanCountries = [
-        "NG",
-        "GH",
-        "KE",
-        "EG",
-        "ET",
-        "TZ",
-        "UG",
-        "SD",
-        "CD",
-        "AO",
-        "DZ",
-        "MA",
-        "TN",
-        "CI",
-        "ML",
-        "SN",
-        "CM",
-        "ZW",
-        "ZM",
-        "MZ",
-        "LY",
-        "NA",
-        "BF",
-        "BJ",
-        "TG",
-        "RW",
-        "BI",
-        "SO",
-        "SL",
-        "LR",
-        "GM",
-        "GN",
-        "MW",
-        "MG",
-        "GA",
-        "CG",
-        "TD",
-        "NE",
-        "MR",
-        "CF",
-        "ER",
-        "DJ",
-      ]
-
-      // Show NGN to African countries (except South Africa)
+      // Show NGN to Nigeria only
       if (
-        africanCountries.includes(data.country_code) &&
+        data.country_code === "NG" &&
         availableCurrencies.value.includes("NGN")
       ) {
         selectedCurrency.value = "NGN"
-      } else if (data.country_code === "ZA") {
-        // South Africa gets USD or GBP
-        if (availableCurrencies.value.includes("USD")) {
-          selectedCurrency.value = "USD"
-        } else if (availableCurrencies.value.includes("GBP")) {
-          selectedCurrency.value = "GBP"
-        }
       } else if (
         data.country_code === "GB" &&
         availableCurrencies.value.includes("GBP")

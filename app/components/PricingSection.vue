@@ -362,36 +362,8 @@ const detectUserLocation = async () => {
   try {
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 
-    // African timezones (excluding South Africa)
-    const africanTimezones = [
-      "Africa/Lagos", // Nigeria
-      "Africa/Accra", // Ghana
-      "Africa/Nairobi", // Kenya
-      "Africa/Cairo", // Egypt
-      "Africa/Addis_Ababa", // Ethiopia
-      "Africa/Dar_es_Salaam", // Tanzania
-      "Africa/Kampala", // Uganda
-      "Africa/Khartoum", // Sudan
-      "Africa/Kinshasa", // DR Congo
-      "Africa/Luanda", // Angola
-      "Africa/Algiers", // Algeria
-      "Africa/Casablanca", // Morocco
-      "Africa/Tunis", // Tunisia
-      "Africa/Abidjan", // Ivory Coast
-      "Africa/Bamako", // Mali
-      "Africa/Dakar", // Senegal
-      "Africa/Douala", // Cameroon
-      "Africa/Harare", // Zimbabwe
-      "Africa/Lusaka", // Zambia
-      "Africa/Maputo", // Mozambique
-      "Africa/Tripoli", // Libya
-      "Africa/Windhoek", // Namibia
-    ]
-
-    // South African timezones (should use USD/GBP, not NGN)
-    const southAfricanTimezones = ["Africa/Johannesburg"]
-
-    if (africanTimezones.includes(timezone)) {
+    // Nigerian timezone (only Nigeria gets NGN pricing)
+    if (timezone === "Africa/Lagos") {
       if (availableCurrencies.value.includes("NGN")) {
         selectedCurrency.value = "NGN"
       }
@@ -402,67 +374,15 @@ const detectUserLocation = async () => {
     const response = await fetch("https://ipapi.co/json/")
     if (response.ok) {
       const data = await response.json()
+
       userCountry.value = data.country_code
 
-      // List of African country codes (excluding South Africa)
-      const africanCountries = [
-        "NG", // Nigeria
-        "GH", // Ghana
-        "KE", // Kenya
-        "EG", // Egypt
-        "ET", // Ethiopia
-        "TZ", // Tanzania
-        "UG", // Uganda
-        "SD", // Sudan
-        "CD", // DR Congo
-        "AO", // Angola
-        "DZ", // Algeria
-        "MA", // Morocco
-        "TN", // Tunisia
-        "CI", // Ivory Coast
-        "ML", // Mali
-        "SN", // Senegal
-        "CM", // Cameroon
-        "ZW", // Zimbabwe
-        "ZM", // Zambia
-        "MZ", // Mozambique
-        "LY", // Libya
-        "NA", // Namibia
-        "BF", // Burkina Faso
-        "BJ", // Benin
-        "TG", // Togo
-        "RW", // Rwanda
-        "BI", // Burundi
-        "SO", // Somalia
-        "SL", // Sierra Leone
-        "LR", // Liberia
-        "GM", // Gambia
-        "GN", // Guinea
-        "MW", // Malawi
-        "MG", // Madagascar
-        "GA", // Gabon
-        "CG", // Congo
-        "TD", // Chad
-        "NE", // Niger
-        "MR", // Mauritania
-        "CF", // Central African Republic
-        "ER", // Eritrea
-        "DJ", // Djibouti
-      ]
-
-      // Show NGN to African countries (except South Africa)
+      // Show NGN to Nigeria only
       if (
-        africanCountries.includes(data.country_code) &&
+        data.country_code === "NG" &&
         availableCurrencies.value.includes("NGN")
       ) {
         selectedCurrency.value = "NGN"
-      } else if (data.country_code === "ZA") {
-        // South Africa gets USD or GBP
-        if (availableCurrencies.value.includes("USD")) {
-          selectedCurrency.value = "USD"
-        } else if (availableCurrencies.value.includes("GBP")) {
-          selectedCurrency.value = "GBP"
-        }
       } else if (
         data.country_code === "GB" &&
         availableCurrencies.value.includes("GBP")
