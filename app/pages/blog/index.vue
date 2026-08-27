@@ -16,7 +16,7 @@
         >
           <div class="flex tags gap-2 cursor-default">
             <div
-              v-for="tag in topBlog?.tag?.split(',')"
+              v-for="tag in topBlog?.tag?.split(',')?.slice(0, 2)"
               :key="tag"
               class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-xs lg:text-sm"
             >
