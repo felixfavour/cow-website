@@ -12,7 +12,7 @@
           Go Home</nuxt-link
         >
         <div
-          v-for="tag in data?.tag.split(',')"
+          v-for="tag in data?.tag?.split(',')?.slice(0,2)"
           :key="tag"
           class="tag uppercase px-2 py-1 rounded-full bg-gray-100 text-xs md:text-sm"
         >
