@@ -2,7 +2,7 @@
 title: "How to Use Sermon Transcription and Voice Commands in Cloud of Worship"
 author: Favour Felix
 author_img: /images/author/favour.jpeg
-cover: /images/blog/pulpit-image.webp
+cover: https://images.unsplash.com/photo-1547357245-197535806690?auto=format&fit=crop&w=1600&q=80
 created: September 1, 2026 9:00 AM
 updated: September 1, 2026 9:00 AM
 paragraph: "Learn how to transcribe sermons live, detect Bible references, navigate verses, and switch Bible translations using voice commands in Cloud of Worship."
@@ -136,12 +136,9 @@ Sermon transcription does not currently support:
 - A wake phrase or custom trigger word
 - Starting, stopping, or clearing transcription by voice
 - Commands such as “Next chapter,” “Go to chapter 4,” or “Show the whole chapter”
-- Moving through PowerPoint or presentation pages by voice
-- Opening a song, hymn, media item, schedule, or general slide by name
-- Changing to a Bible translation that is not available on the device
-- Changing Bible translations while a non-Bible slide is selected
-- Speech recognition and voice commands in languages other than English
-- A built-in button to save, download, copy, or reopen a transcript from the Transcribe panel
+- Changing a Bible translation that is not available/downloaded on the device
+- Changing translations while a non-Bible slide is selected
+- Languages other than English for speech recognition and voice controls
 
 The transcript in the panel is a working view for the current session. Closing the panel ends the active transcription view, and **Clear transcript** removes the visible text. Do not use the panel as the only permanent sermon record.
 
