@@ -2,7 +2,7 @@
 title: "How to Display Bible Verses Faster During Sermons Using Voice Commands"
 author: Favour Felix
 author_img: /images/author/favour.jpeg
-cover: https://images.unsplash.com/photo-1749410342681-3510f9edb7ad?auto=format&fit=crop&w=1600&q=80
+cover: /images/blog/media-operator-video-editing-computer.webp
 created: August 26, 2026 9:00 AM
 updated: August 26, 2026 9:00 AM
 paragraph: "A practical guide for church media operators on using voice commands to find scriptures, move between verses, switch Bible translations, and reduce delays during live sermons."
