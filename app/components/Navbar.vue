@@ -104,7 +104,7 @@
                   class="nav-link flex items-center gap-2 p-3 hover:bg-purple-100 transition rounded-lg"
                 >
                   <div>
-                    <div class="font-semibold text-sm">Product Guide</div>
+                    <div class="font-semibold text-sm">Help Center</div>
                     <!-- <div class="text-xs text-gray-400">
                       Help center & how-to articles
                     </div> -->

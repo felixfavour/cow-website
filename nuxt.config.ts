@@ -66,6 +66,11 @@ export default defineNuxtConfig({
     ]
   },
   css: ["@/assets/main.css"],
+  routeRules: {
+    // The Help Center moved from /documentation to /docs.
+    '/documentation': { redirect: { to: '/docs', statusCode: 301 } },
+    '/documentation/**': { redirect: { to: '/docs/**', statusCode: 301 } },
+  },
   gtag: {
     id: 'G-SPPLWBL283'
   },

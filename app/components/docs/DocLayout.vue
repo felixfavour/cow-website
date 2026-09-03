@@ -1,58 +1,59 @@
 <template>
-  <div class="docs-layout pt-[80px] md:pt-[96px] min-h-screen bg-white">
-    <div class="docs-layout__inner w-[95%] max-w-[1400px] mx-auto px-2 md:px-4">
-      <!-- Mobile sidebar toggle -->
-      <div class="flex items-center gap-3 py-3 border-b border-gray-100 md:hidden mb-4">
+  <div class="docs-layout section bg-white min-h-screen">
+    <div class="inner !max-w-[1400px]">
+      <!-- Mobile: open the topic drawer -->
+      <div class="flex items-center gap-3 py-3 border-b border-gray-100 md:hidden">
         <button
-          class="flex items-center gap-2 text-sm font-semibold text-purple-600 hover:text-purple-700 transition-colors"
-          @click="mobileSidebarOpen = !mobileSidebarOpen"
-          aria-label="Open navigation menu"
+          type="button"
+          class="flex items-center gap-2 text-sm font-semibold text-purple-700 hover:text-purple-800 transition-colors"
+          aria-label="Browse help topics"
+          @click="mobileSidebarOpen = true"
         >
-          <svg v-if="!mobileSidebarOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-          <svg v-else class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-          Browse Help Topics
+          Browse help topics
         </button>
       </div>
 
-      <!-- Mobile sidebar overlay -->
-      <Transition name="sidebar-fade">
-        <div v-if="mobileSidebarOpen" class="fixed inset-0 z-50 flex md:hidden">
-          <div class="absolute inset-0 bg-black/40" @click="mobileSidebarOpen = false" />
-          <div class="relative z-10 w-[300px] bg-white h-full shadow-2xl overflow-y-auto p-4">
-            <div class="flex items-center justify-between mb-4">
-              <span class="font-bold text-gray-800 text-base">Help Topics</span>
-              <button @click="mobileSidebarOpen = false" class="p-1 text-gray-400 hover:text-gray-700">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+      <Teleport to="body">
+        <Transition name="drawer-fade">
+          <div v-if="mobileSidebarOpen" class="fixed inset-0 z-50 flex md:hidden">
+            <div class="absolute inset-0 bg-black/40" @click="mobileSidebarOpen = false" />
+            <div class="relative z-10 w-[320px] max-w-[88vw] bg-white h-full shadow-2xl overflow-y-auto p-5">
+              <div class="flex items-center justify-between mb-4">
+                <span class="font-bold text-gray-800">Help topics</span>
+                <button
+                  type="button"
+                  class="p-1.5 rounded-lg text-gray-400 hover:text-gray-800 hover:bg-gray-100"
+                  aria-label="Close"
+                  @click="mobileSidebarOpen = false"
+                >
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <DocSidebar :hotkeys="false" @navigate="mobileSidebarOpen = false" />
             </div>
-            <DocSidebar @navigate="mobileSidebarOpen = false" />
           </div>
-        </div>
-      </Transition>
+        </Transition>
+      </Teleport>
 
       <!-- Three-column layout -->
-      <div class="docs-columns flex gap-0 lg:gap-8 xl:gap-12">
-        <!-- Left Sidebar — hidden on mobile -->
-        <aside class="docs-sidebar-col hidden md:block w-[240px] lg:w-[260px] shrink-0 pt-8">
-          <div class="sticky top-24">
-            <DocSidebar />
+      <div class="flex gap-8 xl:gap-14 pt-5 md:pt-10 pb-16 md:pb-24">
+        <aside class="hidden md:block w-[250px] lg:w-[270px] shrink-0">
+          <div class="sticky top-[100px] max-h-[calc(100vh-120px)] overflow-y-auto pr-2 -mr-2 doc-scroll">
+            <DocSidebar hotkeys />
           </div>
         </aside>
 
-        <!-- Main content -->
-        <main class="docs-main flex-1 min-w-0 py-8 md:py-10 max-w-[740px]">
+        <main class="flex-1 min-w-0" :class="contentClass">
           <slot />
         </main>
 
-        <!-- Right TOC — only on wide screens -->
-        <aside v-if="toc && toc.length > 0" class="docs-toc-col hidden xl:block w-[200px] shrink-0 pt-8">
-          <div class="sticky top-24">
+        <aside v-if="toc && toc.length > 0" class="hidden xl:block w-[220px] shrink-0">
+          <div class="sticky top-[100px]">
             <DocTableOfContents :headings="toc" />
           </div>
         </aside>
@@ -65,21 +66,30 @@
 import DocSidebar from '~/components/docs/DocSidebar.vue'
 import DocTableOfContents from '~/components/docs/DocTableOfContents.vue'
 
-defineProps<{
-  toc?: Array<{ level: string; text: string; id: string }>
-}>()
+withDefaults(
+  defineProps<{
+    toc?: Array<{ level: string; text: string; id: string }>
+    contentClass?: string
+  }>(),
+  { toc: () => [], contentClass: 'max-w-[760px]' }
+)
 
 const mobileSidebarOpen = ref(false)
+const route = useRoute()
+watch(() => route.fullPath, () => (mobileSidebarOpen.value = false))
 </script>
 
 <style scoped>
-.sidebar-fade-enter-active,
-.sidebar-fade-leave-active {
+.drawer-fade-enter-active,
+.drawer-fade-leave-active {
   transition: opacity 0.2s ease;
 }
-.sidebar-fade-enter-from,
-.sidebar-fade-leave-to {
+.drawer-fade-enter-from,
+.drawer-fade-leave-to {
   opacity: 0;
 }
+.doc-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #e5e7eb transparent;
+}
 </style>
-

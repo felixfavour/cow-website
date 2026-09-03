@@ -64,8 +64,8 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact" class="font-medium"
-                >Help Center (FAQs)
+              <nuxt-link to="/docs" class="font-medium"
+                >Help Center
               </nuxt-link>
             </li>
             <li>

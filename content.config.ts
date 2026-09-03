@@ -29,6 +29,8 @@ export default defineContentConfig({
         lastUpdated: z.string().optional(),
         order: z.number().optional(),
         draft: z.boolean().optional(),
+        icon: z.string().optional(),
+        featured: z.boolean().optional(),
       }),
     }),
   },

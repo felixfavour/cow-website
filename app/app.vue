@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AnnouncementBanner />
+    <!-- <AnnouncementBanner /> -->
     <Navbar />
     <NuxtPage />
     <Footer />

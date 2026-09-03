@@ -62,6 +62,28 @@ function readBlogPosts() {
 }
 
 /**
+ * Read all Help Center pages from content/documentation/.
+ * <category>/index.md → /docs/<category>, <category>/<slug>.md → /docs/<category>/<slug>
+ */
+function readDocsPages() {
+  const docsDir = join(ROOT, 'content/documentation')
+  const pages = []
+  for (const category of readdirSync(docsDir, { withFileTypes: true })) {
+    if (!category.isDirectory()) continue
+    const files = readdirSync(join(docsDir, category.name)).filter((f) => f.endsWith('.md')).sort()
+    for (const file of files) {
+      const raw = readFileSync(join(docsDir, category.name, file), 'utf-8')
+      const frontmatter = parseFrontmatter(raw)
+      if (frontmatter.draft === 'true') continue
+      const slug = file.replace('.md', '')
+      const path = slug === 'index' ? `/docs/${category.name}` : `/docs/${category.name}/${slug}`
+      pages.push({ path, lastmod: toISODate(frontmatter.lastUpdated) })
+    }
+  }
+  return pages
+}
+
+/**
  * Static page route definitions.
  * Add a new entry here whenever you add a new public page.
  */
@@ -93,7 +115,7 @@ function xmlEscape(str) {
 /**
  * Build the sitemap XML string.
  */
-function buildSitemap(blogPosts) {
+function buildSitemap(blogPosts, docsPages) {
   const today = new Date().toISOString().split('T')[0]
 
   const staticEntries = STATIC_PAGES.map(
@@ -102,6 +124,15 @@ function buildSitemap(blogPosts) {
   ).join('\n')
 
   const blogIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/blog')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${today}</lastmod>\n  </url>`
+
+  const docsIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/docs')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${today}</lastmod>\n  </url>`
+
+  const docsEntries = docsPages
+    .map(
+      ({ path, lastmod }) =>
+        `  <url>\n    <loc>${xmlEscape(BASE_URL + path)}</loc>\n    <changefreq>monthly</changefreq>\n    <lastmod>${lastmod}</lastmod>\n  </url>`,
+    )
+    .join('\n')
 
   const blogEntries = blogPosts
     .map(
@@ -120,6 +151,10 @@ function buildSitemap(blogPosts) {
     blogIndexEntry +
     '\n' +
     blogEntries +
+    '\n' +
+    docsIndexEntry +
+    '\n' +
+    docsEntries +
     '\n</urlset>\n'
   )
 }
@@ -127,6 +162,7 @@ function buildSitemap(blogPosts) {
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 const blogPosts = readBlogPosts()
-const sitemap = buildSitemap(blogPosts)
+const docsPages = readDocsPages()
+const sitemap = buildSitemap(blogPosts, docsPages)
 writeFileSync(join(ROOT, 'public/sitemap.xml'), sitemap, 'utf-8')
-console.log(`✓ Generated public/sitemap.xml (${blogPosts.length} blog posts)`)
+console.log(`✓ Generated public/sitemap.xml (${blogPosts.length} blog posts, ${docsPages.length} help pages)`)
