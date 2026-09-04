@@ -72,7 +72,20 @@ export default defineNuxtConfig({
     '/documentation/**': { redirect: { to: '/docs/**', statusCode: 301 } },
   },
   gtag: {
-    id: 'G-SPPLWBL283'
+    id: 'G-SPPLWBL283',
+    // Analytics must not load until the visitor has accepted. The banner
+    // (components/CookieConsent.vue) calls initialize() once consent is given;
+    // see composables/useCookieConsent.ts.
+    enabled: false,
+    initCommands: [
+      // Consent Mode v2 defaults: denied until the visitor says otherwise.
+      ['consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+      }],
+    ],
   },
   studio: {
     // Studio admin route (default: '/_studio')

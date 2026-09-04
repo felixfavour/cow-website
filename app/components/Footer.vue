@@ -99,6 +99,15 @@
                 >Terms of Service
               </nuxt-link>
             </li>
+            <li>
+              <button
+                type="button"
+                class="font-semibold border-b text-left"
+                @click="reopen"
+              >
+                Cookie settings
+              </button>
+            </li>
           </ul>
         </div>
         <div class="col">
@@ -114,7 +123,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { reopen } = useCookieConsent()
+</script>
 
 <style scoped>
 .router-link-active {

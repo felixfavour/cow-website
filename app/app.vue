@@ -4,6 +4,7 @@
     <Navbar />
     <NuxtPage />
     <Footer />
+    <CookieConsent />
   </div>
 </template>
 
