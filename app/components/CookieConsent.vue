@@ -2,16 +2,16 @@
   <Transition name="consent">
     <div
       v-if="shouldAsk"
-      class="cookie-consent fixed bottom-0 left-0 right-0 z-[60] p-4 md:p-6"
+      class="cookie-consent fixed bottom-0 right-0 z-[60] p-4 md:p-6 w-full md:w-auto"
       role="dialog"
       aria-modal="false"
       aria-labelledby="cookie-consent-title"
       aria-describedby="cookie-consent-description"
     >
       <div
-        class="mx-auto max-w-[880px] bg-white border border-gray-200 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.12)] p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-6"
+        class="ml-auto w-full md:w-[380px] bg-white border border-gray-200 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.12)] p-5 flex flex-col gap-4"
       >
-        <div class="texts flex-1">
+        <div class="texts">
           <h6 id="cookie-consent-title" class="font-bold text-base mb-1">
             Cookies on Cloud of Worship
           </h6>
@@ -25,7 +25,7 @@
           </p>
         </div>
         <div
-          class="actions flex flex-col-reverse sm:flex-row gap-3 md:shrink-0 w-full md:w-auto"
+          class="actions flex flex-col-reverse sm:flex-row sm:justify-end gap-3 w-full"
         >
           <button
             type="button"
