@@ -1,0 +1,6 @@
+# Cloudflare appends its managed AI-crawler rules below this block.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://cloudofworship.com/sitemap.xml

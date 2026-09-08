@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const ROOT = join(__dirname, '..')
 
-const BASE_URL = 'https://www.cloudofworship.com'
+const BASE_URL = 'https://cloudofworship.com'
 
 /**
  * Parse YAML frontmatter fields from a markdown file.
