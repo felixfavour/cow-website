@@ -2,9 +2,9 @@
   <div>
     <div class="section pt-[3%]">
       <!-- TOP BLOG SECTION (page 1 only) -->
-      <nuxt-link
+      <a
         v-if="topBlog"
-        :to="`${topBlog?.path}`"
+        :href="`${topBlog?.path}`"
         class="inner blog-hero bg-[#EEDCFF] md:bg-[#FFE9E8] flex flex-col md:flex-row items-center relative gap-6 group overflow-hidden rounded-3xl"
       >
         <img
@@ -41,7 +41,7 @@
             <ArrowDown class="w-5 h-5 md:w-6 md:h-6 -rotate-90" />
           </div>
         </div>
-      </nuxt-link>
+      </a>
 
       <!-- ALL BLOGS -->
       <div class="inner py-[10%] md:py-[5%]">
@@ -57,61 +57,38 @@
         </div>
 
         <!-- PAGINATION -->
-        <!-- `custom` so we control aria-current ourselves: vue-router ignores the
-             query string when matching, so it would otherwise mark every ?page link active. -->
         <nav
           v-if="totalPages > 1"
           class="flex items-center justify-center flex-wrap gap-2 mt-12"
           aria-label="Blog pagination"
         >
-          <nuxt-link
+          <a
             v-if="currentPage > 1"
-            :to="pageLink(currentPage - 1)"
-            custom
-            v-slot="{ href, navigate }"
+            :href="pageLink(currentPage - 1)"
+            rel="prev"
+            class="px-3 py-2 rounded-full border-2 border-gray-200 hover:border-black text-sm font-semibold"
+            >Prev</a
           >
-            <a
-              :href="href"
-              rel="prev"
-              class="px-3 py-2 rounded-full border-2 border-gray-200 hover:border-black text-sm font-semibold"
-              @click="navigate"
-              >Prev</a
-            >
-          </nuxt-link>
-          <nuxt-link
+          <a
             v-for="n in totalPages"
             :key="n"
-            :to="pageLink(n)"
-            custom
-            v-slot="{ href, navigate }"
+            :href="pageLink(n)"
+            :aria-current="n === currentPage ? 'page' : undefined"
+            :class="[
+              'w-10 h-10 flex items-center justify-center rounded-full text-sm font-semibold border-2',
+              n === currentPage
+                ? 'bg-purple-500 text-white border-purple-500'
+                : 'border-gray-200 hover:border-black',
+            ]"
+            >{{ n }}</a
           >
-            <a
-              :href="href"
-              :aria-current="n === currentPage ? 'page' : undefined"
-              :class="[
-                'w-10 h-10 flex items-center justify-center rounded-full text-sm font-semibold border-2',
-                n === currentPage
-                  ? 'bg-purple-500 text-white border-purple-500'
-                  : 'border-gray-200 hover:border-black',
-              ]"
-              @click="navigate"
-              >{{ n }}</a
-            >
-          </nuxt-link>
-          <nuxt-link
+          <a
             v-if="currentPage < totalPages"
-            :to="pageLink(currentPage + 1)"
-            custom
-            v-slot="{ href, navigate }"
+            :href="pageLink(currentPage + 1)"
+            rel="next"
+            class="px-3 py-2 rounded-full border-2 border-gray-200 hover:border-black text-sm font-semibold"
+            >Next</a
           >
-            <a
-              :href="href"
-              rel="next"
-              class="px-3 py-2 rounded-full border-2 border-gray-200 hover:border-black text-sm font-semibold"
-              @click="navigate"
-              >Next</a
-            >
-          </nuxt-link>
         </nav>
       </div>
     </div>
@@ -182,8 +159,7 @@ const totalPages = computed(() => blogData.value?.totalPages ?? 1)
 const currentPage = computed(() => blogData.value?.page ?? 1)
 
 // page 1 has the clean /blog URL (no ?page=1) so it stays the canonical entry.
-const pageLink = (n) =>
-  n <= 1 ? { path: "/blog", query: {} } : { path: "/blog", query: { page: n } }
+const pageLink = (n) => (n <= 1 ? "/blog" : `/blog?page=${n}`)
 
 const canonicalUrl = computed(() =>
   currentPage.value <= 1

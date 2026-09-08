@@ -18,20 +18,20 @@
           <span aria-hidden="true">👎</span> No
         </button>
       </div>
-      <NuxtLink
+      <a
         v-else-if="feedback === 'no'"
-        to="/contact"
+        href="/contact"
         class="text-sm font-semibold text-purple-700 hover:underline shrink-0"
       >
         Send feedback →
-      </NuxtLink>
+      </a>
     </div>
 
     <!-- Prev / next -->
     <div v-if="prev || next" class="flex flex-col sm:flex-row gap-3 mt-6">
-      <NuxtLink
+      <a
         v-if="prev"
-        :to="prev.path"
+        :href="prev.path"
         class="group flex-1 flex items-center gap-3 p-4 rounded-2xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50/40 transition-all"
       >
         <svg class="w-5 h-5 text-gray-300 group-hover:text-purple-500 shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
@@ -41,12 +41,12 @@
           <div class="text-xs text-gray-400 mb-0.5">Previous</div>
           <div class="text-sm font-semibold text-gray-700 group-hover:text-purple-700 truncate transition-colors">{{ prev.title }}</div>
         </div>
-      </NuxtLink>
+      </a>
       <div v-else class="flex-1 hidden sm:block" />
 
-      <NuxtLink
+      <a
         v-if="next"
-        :to="next.path"
+        :href="next.path"
         class="group flex-1 flex items-center justify-end gap-3 p-4 rounded-2xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50/40 transition-all text-right"
       >
         <div class="min-w-0">
@@ -56,7 +56,7 @@
         <svg class="w-5 h-5 text-gray-300 group-hover:text-purple-500 shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-      </NuxtLink>
+      </a>
     </div>
 
     <!-- Related -->
@@ -64,8 +64,8 @@
       <h2 class="text-lg font-bold text-gray-800 mb-3">Related articles</h2>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <li v-for="a in related" :key="a.path">
-          <NuxtLink
-            :to="a.path"
+          <a
+            :href="a.path"
             class="group flex items-start gap-2.5 p-3 rounded-xl hover:bg-gray-50 transition-colors"
           >
             <svg class="w-4 h-4 mt-0.5 text-gray-300 group-hover:text-purple-500 shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
@@ -75,7 +75,7 @@
               <div class="text-sm font-semibold text-gray-700 group-hover:text-purple-700 transition-colors leading-snug">{{ a.title }}</div>
               <p v-if="a.description" class="text-xs text-gray-500 line-clamp-2 mt-0.5">{{ a.description }}</p>
             </div>
-          </NuxtLink>
+          </a>
         </li>
       </ul>
     </section>

@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="`${blog?.path}`" class="blog-card group">
+  <a :href="`${blog?.path}`" class="blog-card group">
     <div class="blog-card-image">
       <img
         :src="blog?.cover"
@@ -41,7 +41,7 @@
         <ArrowDown class="w-5 h-5 md:w-6 md:h-6 -rotate-90" />
       </div>
     </div>
-  </nuxt-link>
+  </a>
 </template>
 
 <script setup>

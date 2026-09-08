@@ -15,8 +15,8 @@
 
       <ul class="space-y-3">
         <li v-for="(a, i) in category.articles" :key="a.path">
-          <NuxtLink
-            :to="a.path"
+          <a
+            :href="a.path"
             class="group flex items-start gap-4 p-5 rounded-2xl border border-gray-100 bg-white hover:border-purple-200 transition-all"
           >
             <span class="grid place-items-center w-9 h-9 rounded-xl bg-gray-50 text-sm font-bold text-gray-500 group-hover:bg-purple-50 group-hover:text-purple-700 shrink-0 transition-colors" aria-hidden="true">
@@ -31,7 +31,7 @@
             <svg class="w-5 h-5 mt-1 text-gray-300 group-hover:text-purple-500 group-hover:translate-x-1 transition-all shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
             </svg>
-          </NuxtLink>
+          </a>
         </li>
       </ul>
 
@@ -65,7 +65,7 @@
       <p class="text-gray-500 mb-8 max-w-[420px]">
         It might have moved or not exist yet. Try searching the Help Center, or browse by topic.
       </p>
-      <NuxtLink to="/docs" class="primary-btn">Back to Help Center</NuxtLink>
+      <a href="/docs" class="primary-btn">Back to Help Center</a>
     </div>
   </div>
 </template>

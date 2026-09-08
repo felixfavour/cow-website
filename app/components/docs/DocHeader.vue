@@ -1,18 +1,18 @@
 <template>
   <header class="doc-header mb-8">
     <nav v-if="breadcrumbs && breadcrumbs.length" class="flex items-center gap-1.5 flex-wrap mb-5" aria-label="Breadcrumb">
-      <NuxtLink to="/docs" class="text-sm text-gray-400 hover:text-purple-600 transition-colors">Help Center</NuxtLink>
+      <a href="/docs" class="text-sm text-gray-400 hover:text-purple-600 transition-colors">Help Center</a>
       <template v-for="(crumb, i) in breadcrumbs" :key="crumb.href || crumb.label">
         <svg class="w-3.5 h-3.5 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-        <NuxtLink
+        <a
           v-if="i < breadcrumbs.length - 1 && crumb.href"
-          :to="crumb.href"
+          :href="crumb.href"
           class="text-sm text-gray-400 hover:text-purple-600 transition-colors"
         >
           {{ crumb.label }}
-        </NuxtLink>
+        </a>
         <span v-else class="text-sm text-gray-700 font-medium" aria-current="page">{{ crumb.label }}</span>
       </template>
     </nav>
@@ -28,13 +28,13 @@
         <p v-if="subtitle" class="text-lg text-gray-500 leading-relaxed">{{ subtitle }}</p>
 
         <div v-if="lastUpdated || category" class="flex items-center gap-3 flex-wrap mt-4">
-          <NuxtLink
+          <a
             v-if="category"
-            :to="categoryHref || '/docs'"
+            :href="categoryHref || '/docs'"
             class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors"
           >
             {{ category }}
-          </NuxtLink>
+          </a>
           <span v-if="lastUpdated" class="text-xs text-gray-400">Updated {{ formattedDate }}</span>
         </div>
       </div>

@@ -5,31 +5,31 @@
         class="row-one flex flex-wrap lg:flex-nowrap lg:flex justify-between mb-[5%] gap-8 lg:gap-0"
       >
         <div class="col-ctn w-[100%] lg:w-[35%]">
-          <nuxt-link
-            to="/"
-            class="logo-ctn flex items-center gap-3 text-xl w-[250px]"
-          >
+          <a href="/" class="logo-ctn flex items-center gap-3 text-xl w-[250px]">
             <Logo />
             <h6 class="font-bold">Cloud of Worship</h6>
-          </nuxt-link>
+          </a>
         </div>
         <div class="col-ctn w-[45%] lg:w-[auto]">
           <h6 class="text-lg font-bold mb-4">UNIQUE FEATURES</h6>
           <ul class="flex gap-3 flex-col">
             <li>
-              <nuxt-link to="/features/browser-ready" class="font-medium"
+              <a href="/features/browser-ready" class="font-medium"
+                :class="{ active: isActive('/features/browser-ready') }"
                 >Browser-ready UX
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link to="/features/offline-first" class="font-medium"
+              <a href="/features/offline-first" class="font-medium"
+                :class="{ active: isActive('/features/offline-first') }"
                 >Offline-first experience
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link to="/features/team-workflow" class="font-medium"
+              <a href="/features/team-workflow" class="font-medium"
+                :class="{ active: isActive('/features/team-workflow') }"
                 >Team workflow
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>
@@ -37,9 +37,8 @@
           <h6 class="text-lg font-bold mb-4">RESOURCES</h6>
           <ul class="flex gap-3 flex-col">
             <li>
-              <nuxt-link to="/blog" class="font-medium"
-                >Blog & Guides
-              </nuxt-link>
+              <a href="/blog" class="font-medium"
+                :class="{ active: isActive('/blog') }">Blog & Guides </a>
             </li>
             <li>
               <a
@@ -49,9 +48,10 @@
               </a>
             </li>
             <li>
-              <nuxt-link to="/changelog" class="font-medium"
+              <a href="/changelog" class="font-medium"
+                :class="{ active: isActive('/changelog') }"
                 >What’s new! 💜
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>
@@ -59,14 +59,14 @@
           <h6 class="text-lg font-bold mb-4">SUPPORT</h6>
           <ul class="flex gap-3 flex-col">
             <li>
-              <nuxt-link to="/contact" class="font-medium"
+              <a href="/contact" class="font-medium"
+                :class="{ active: isActive('/contact') }"
                 >Contact CoW
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link to="/docs" class="font-medium"
-                >Help Center
-              </nuxt-link>
+              <a href="/docs" class="font-medium"
+                :class="{ active: isActive('/docs') }">Help Center </a>
             </li>
             <li>
               <a
@@ -76,7 +76,8 @@
               </a>
             </li>
             <li>
-              <nuxt-link to="/pricing" class="font-medium">Pricing </nuxt-link>
+              <a href="/pricing" class="font-medium"
+                :class="{ active: isActive('/pricing') }">Pricing </a>
             </li>
           </ul>
         </div>
@@ -90,14 +91,16 @@
           </p>
           <ul class="flex gap-4">
             <li>
-              <nuxt-link to="/privacy-policy" class="font-semibold border-b"
+              <a href="/privacy-policy" class="font-semibold border-b"
+                :class="{ active: isActive('/privacy-policy') }"
                 >Privacy Policy
-              </nuxt-link>
+              </a>
             </li>
             <li>
-              <nuxt-link to="/terms-of-service" class="font-semibold border-b"
+              <a href="/terms-of-service" class="font-semibold border-b"
+                :class="{ active: isActive('/terms-of-service') }"
                 >Terms of Service
-              </nuxt-link>
+              </a>
             </li>
             <li>
               <button
@@ -125,10 +128,14 @@
 
 <script setup>
 const { reopen } = useCookieConsent()
+const route = useRoute()
+
+// Anchors don't get router-link-active, so mark the current page here.
+const isActive = (path) => route.path === path || route.path.startsWith(path + "/")
 </script>
 
 <style scoped>
-.router-link-active {
+a.active {
   color: var(--primary-color);
   font-weight: 600;
 }

@@ -72,11 +72,11 @@
           directly through your web browser. With support for all platforms
           (Mac, Windows, Linux, iOS, Android).
         </p>
-        <nuxt-link
+        <a
           class="primary-btn w-[220px] mt-[5%] gap-8"
-          to="/features/browser-ready"
+          href="/features/browser-ready"
           >See more info <ArrowDown class="-rotate-90" white-color
-        /></nuxt-link>
+        /></a>
       </template>
       <template #img>
         <div class="img-wrapper one h-[320px] md:h-[580px]"></div>
@@ -95,11 +95,11 @@
           Whether you’re selecting songs, editing slides, or opening a
           scripture, everyone can contribute simultaneously.
         </p>
-        <nuxt-link
+        <a
           class="primary-btn w-[220px] mt-[5%] gap-8"
-          to="/features/team-workflow"
+          href="/features/team-workflow"
           >See more info <ArrowDown class="-rotate-90" white-color
-        /></nuxt-link>
+        /></a>
       </template>
       <template #img>
         <div class="img-wrapper two h-[380px] md:h-[700px]"></div>
@@ -119,11 +119,11 @@
           confidence and consistency to your services with our offline-ready
           capability.
         </p>
-        <nuxt-link
+        <a
           class="primary-btn w-[220px] mt-[5%] gap-8"
-          to="/features/offline-first"
+          href="/features/offline-first"
           >See more info <ArrowDown class="-rotate-90" white-color
-        /></nuxt-link>
+        /></a>
       </template>
       <template #img>
         <div class="img-wrapper three h-[320px] md:h-[580px]"></div>

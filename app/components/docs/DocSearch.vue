@@ -72,8 +72,8 @@
 
         <ul v-else-if="results.length" class="max-h-[420px] overflow-y-auto py-1.5">
           <li v-for="(r, i) in results" :key="r.href" role="option" :aria-selected="i === active">
-            <NuxtLink
-              :to="r.href"
+            <a
+              :href="r.href"
               class="block px-5 py-3 transition-colors"
               :class="i === active ? 'bg-purple-50' : 'hover:bg-gray-50'"
               @mouseenter="active = i"
@@ -88,13 +88,13 @@
               </div>
               <div class="text-sm font-semibold text-gray-800 leading-snug">{{ r.title }}</div>
               <p v-if="r.snippet" class="text-xs text-gray-500 leading-relaxed line-clamp-2 mt-0.5">{{ r.snippet }}</p>
-            </NuxtLink>
+            </a>
           </li>
         </ul>
 
         <div v-else class="px-5 py-5 text-sm text-gray-500">
           No results for <span class="font-semibold text-gray-700">“{{ query }}”</span>.
-          <NuxtLink to="/contact" class="text-purple-600 font-semibold hover:underline" @click="close">Contact support</NuxtLink>
+          <a href="/contact" class="text-purple-600 font-semibold hover:underline" @click="close">Contact support</a>
           and we'll help.
         </div>
 
@@ -263,7 +263,7 @@ const onKeydown = (e: KeyboardEvent) => {
     if (r) {
       e.preventDefault()
       close()
-      navigateTo(r.href)
+      window.location.href = r.href
     }
   } else if (e.key === 'Escape') {
     close()

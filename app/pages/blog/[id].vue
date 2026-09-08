@@ -4,12 +4,12 @@
   >
     <div class="inner w-[90%] max-w-[800px] mx-auto">
       <div class="flex items-center tags gap-2 cursor-default mb-4">
-        <nuxt-link
-          to="/blog"
+        <a
+          href="/blog"
           class="font-semibold px-3 py-1 bg-purple-500 border-2 border-transparent hover:border-black text-white rounded-full mr-1 lg:mr-4 flex items-center gap-1 text-xs md:text-sm"
         >
           <ArrowDown class="w-5 h-5 rotate-90" whiteColor />
-          Go Home</nuxt-link
+          Go Home</a
         >
         <div
           v-for="tag in data?.tag?.split(',')?.slice(0,2)"

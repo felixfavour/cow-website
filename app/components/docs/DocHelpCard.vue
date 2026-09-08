@@ -5,12 +5,12 @@
       <p class="text-sm text-gray-600">Our team is happy to answer your questions, and the community is always online.</p>
     </div>
     <div class="flex items-center gap-2 shrink-0">
-      <NuxtLink
-        to="/contact"
+      <a
+        href="/contact"
         class="inline-flex items-center gap-2 px-4 h-[42px] rounded-xl bg-purple-600 text-white text-sm font-semibold hover:bg-purple-700 transition-colors"
       >
         Contact support
-      </NuxtLink>
+      </a>
       <a
         href="https://chat.whatsapp.com/DeQX11igCSU6YaOoTqY7GY"
         target="_blank"

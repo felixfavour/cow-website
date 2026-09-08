@@ -3,15 +3,12 @@
     class="navbar section h-[60px] md:h-[85px] flex items-center bg-white sticky top-0 right-0 left-0 z-10"
   >
     <div class="inner flex justify-between items-center w-full xl:px-8">
-      <nuxt-link
-        to="/"
-        class="logo-ctn flex items-center gap-3 text-xl w-[250px]"
-      >
+      <a href="/" class="logo-ctn flex items-center gap-3 text-xl w-[250px]">
         <Logo class="w-[32px] md:w-auto" />
         <h6 class="font-bold text-base md:text-lg lg:text-xl whitespace-nowrap">
           Cloud of Worship
         </h6>
-      </nuxt-link>
+      </a>
       <ul
         :class="
           isMenuOpen
@@ -21,17 +18,22 @@
         class="nav-actions transition-all duration-300 fixed inset-0 h-[100%] top-[60px] md:top-[85px] px-[7%] text-lg pt-[7.5%] bg-white lg:h-auto lg:px-0 lg:static lg:bg-transparent flex flex-col lg:pt-0 lg:flex-row lg:items-center gap-4 xl:gap-8 lg:text-sm font-medium"
       >
         <li class="nav-item">
-          <nuxt-link to="/changelog" class="nav-link flex items-center gap-1">
+          <a
+            href="/changelog"
+            class="nav-link flex items-center gap-1"
+            :class="{ active: isActive('/changelog') }"
+          >
             Changelog
-          </nuxt-link>
+          </a>
         </li>
         <li class="nav-item group relative">
-          <nuxt-link
-            to="/features/browser-ready"
+          <a
+            href="/features/browser-ready"
             class="nav-link flex items-center gap-1"
+            :class="{ active: isActive('/features', true) }"
           >
             Features <ArrowDown />
-          </nuxt-link>
+          </a>
           <div
             class="ul-ctn pt-4 lg:hidden group-hover:block hover:block lg:absolute w-[100%] lg:w-[205px] z-10 left-[-80%] transition-all"
           >
@@ -39,80 +41,61 @@
               class="link-dropdown p-2 border border-gray-100 rounded-lg shadow-lg transition-all bg-white"
             >
               <li>
-                <nuxt-link
-                  to="/features/browser-ready"
+                <a
+                  href="/features/browser-ready"
                   class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                  :class="{ active: isActive('/features/browser-ready') }"
                 >
                   Browser-ready UX
-                </nuxt-link>
+                </a>
               </li>
               <li>
-                <nuxt-link
-                  to="/features/offline-first"
+                <a
+                  href="/features/offline-first"
                   class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                  :class="{ active: isActive('/features/offline-first') }"
                 >
                   Offline-first experience
-                </nuxt-link>
+                </a>
               </li>
               <li>
-                <nuxt-link
-                  to="/features/team-workflow"
+                <a
+                  href="/features/team-workflow"
                   class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                  :class="{ active: isActive('/features/team-workflow') }"
                 >
                   Team Workflow
-                </nuxt-link>
+                </a>
               </li>
             </ul>
           </div>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/pricing" class="nav-link"> Pricing </nuxt-link>
+          <a
+            href="/pricing"
+            class="nav-link"
+            :class="{ active: isActive('/pricing') }"
+          >
+            Pricing
+          </a>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/wall-of-love" class="nav-link">
+          <a
+            href="/wall-of-love"
+            class="nav-link"
+            :class="{ active: isActive('/wall-of-love') }"
+          >
             Wall of Love
-          </nuxt-link>
+          </a>
         </li>
-        <li class="nav-item group relative">
-          <button
-            class="nav-link flex items-center gap-1 bg-transparent border-0 cursor-pointer font-medium"
+        <li class="nav-item">
+          <a
+            href="/docs"
+            class="nav-link"
+            :class="{ active: isActive('/docs', true) }"
           >
-            Learn <ArrowDown />
-          </button>
-          <div
-            class="ul-ctn pt-4 lg:hidden group-hover:block hover:block lg:absolute w-[100%] lg:w-[220px] z-10 left-[-80%] transition-all"
-          >
-            <ul
-              class="link-dropdown p-2 border border-gray-100 rounded-lg shadow-lg transition-all bg-white"
-            >
-              <li>
-                <nuxt-link
-                  to="/blog"
-                  class="nav-link flex items-center gap-2 p-3 hover:bg-purple-100 transition rounded-lg"
-                >
-                  <div>
-                    <div class="font-semibold text-sm">Blog</div>
-                    <!-- <div class="text-xs text-gray-400">
-                      Updates, guides & resources
-                    </div> -->
-                  </div>
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link
-                  to="/docs"
-                  class="nav-link flex items-center gap-2 p-3 hover:bg-purple-100 transition rounded-lg"
-                >
-                  <div>
-                    <div class="font-semibold text-sm">Help Center</div>
-                    <!-- <div class="text-xs text-gray-400">
-                      Help center & how-to articles
-                    </div> -->
-                  </div>
-                </nuxt-link>
-              </li>
-            </ul>
-          </div>
+            Help Center
+          </a>
         </li>
         <ul class="auth flex flex-col lg:hidden">
           <!-- <li class="nav-item">
@@ -181,6 +164,10 @@ const menuAnim = ref(null)
 const isMenuOpen = ref(false)
 const ariaText = ref("Open Navigation Menu")
 const route = useRoute()
+
+// Anchors don't get router-link-exact-active, so highlight the current section here.
+const isActive = (path, prefix = false) =>
+  prefix ? route.path.startsWith(path) : route.path === path
 
 onMounted(() => {
   menuAnim.value = loadAnimation()
@@ -252,7 +239,7 @@ const handleMenuClose = () => {
 .menu-open {
   visibility: visible;
 }
-li .router-link-exact-active {
+li .nav-link.active {
   color: var(--primary-color);
   font-weight: 600;
 }

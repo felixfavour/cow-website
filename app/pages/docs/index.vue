@@ -22,14 +22,14 @@
 
           <div class="flex flex-wrap items-center justify-center gap-2 mt-5 text-sm">
             <span class="text-gray-400">Popular:</span>
-            <NuxtLink
+            <a
               v-for="link in popularLinks"
               :key="link.href"
-              :to="link.href"
+              :href="link.href"
               class="px-3 py-1 rounded-full bg-white/80 border border-gray-200 text-gray-600 hover:border-purple-300 hover:text-purple-700 transition-colors"
             >
               {{ link.label }}
-            </NuxtLink>
+            </a>
           </div>
         </div>
       </div>
@@ -57,10 +57,10 @@
             </div>
             <div class="min-w-0">
               <h3 class="text-lg font-bold text-gray-900 leading-tight">
-                <NuxtLink :to="cat.path" class="hover:text-purple-700 transition-colors">
+                <a :href="cat.path" class="hover:text-purple-700 transition-colors">
                   <span class="absolute inset-0 rounded-3xl" aria-hidden="true" />
                   {{ cat.title }}
-                </NuxtLink>
+                </a>
               </h3>
               <p class="text-sm text-gray-500 leading-relaxed mt-1">{{ cat.description }}</p>
             </div>
@@ -68,27 +68,27 @@
 
           <ul class="relative z-10 space-y-1 mb-4">
             <li v-for="a in cat.articles.slice(0, 4)" :key="a.path">
-              <NuxtLink
-                :to="a.path"
+              <a
+                :href="a.path"
                 class="flex items-center gap-2 text-sm text-gray-700 hover:text-purple-700 py-1 transition-colors"
               >
                 <svg class="w-3.5 h-3.5 text-gray-300 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
                 <span class="truncate">{{ a.title }}</span>
-              </NuxtLink>
+              </a>
             </li>
           </ul>
 
-          <NuxtLink
-            :to="cat.path"
+          <a
+            :href="cat.path"
             class="relative z-10 mt-auto inline-flex items-center gap-1 text-sm font-semibold text-purple-600 hover:text-purple-800 transition-colors"
           >
             See all {{ cat.articles.length }} {{ cat.articles.length === 1 ? 'article' : 'articles' }}
             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
             </svg>
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@
         <p class="text-gray-500 mb-6">The guides worship teams open most often.</p>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
           <li v-for="a in featured" :key="a.path" class="border-b border-gray-100">
-            <NuxtLink :to="a.path" class="group flex items-start gap-3 py-3.5">
+            <a :href="a.path" class="group flex items-start gap-3 py-3.5">
               <svg class="w-4 h-4 mt-1 text-gray-300 group-hover:text-purple-500 shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h10M4 18h7" />
               </svg>
@@ -108,7 +108,7 @@
                 <div class="text-[15px] font-semibold text-gray-800 group-hover:text-purple-700 transition-colors leading-snug">{{ a.title }}</div>
                 <div class="text-xs text-gray-400 mt-0.5">{{ a.category }}</div>
               </div>
-            </NuxtLink>
+            </a>
           </li>
         </ul>
       </section>
@@ -118,8 +118,8 @@
         <p class="text-gray-500 mb-6">Handy pages to keep open on a Sunday.</p>
         <ul class="space-y-3">
           <li v-for="q in quickReference" :key="q.href">
-            <NuxtLink
-              :to="q.href"
+            <a
+              :href="q.href"
               class="group flex items-center gap-4 p-4 rounded-2xl border border-gray-100 bg-gray-50/60 hover:bg-white hover:border-purple-200 transition-all"
             >
               <span class="grid place-items-center w-11 h-11 rounded-xl bg-white border border-gray-100 text-purple-600 shrink-0">
@@ -132,7 +132,7 @@
               <svg class="w-4 h-4 text-gray-300 group-hover:text-purple-500 group-hover:translate-x-1 transition-all shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
               </svg>
-            </NuxtLink>
+            </a>
           </li>
         </ul>
       </section>
@@ -151,7 +151,7 @@
           </p>
         </div>
         <div class="flex flex-col sm:flex-row gap-3 shrink-0">
-          <NuxtLink to="/contact" class="primary-btn taller sm:w-[200px]">Contact support</NuxtLink>
+          <a href="/contact" class="primary-btn taller sm:w-[200px]">Contact support</a>
           <a
             href="https://chat.whatsapp.com/DeQX11igCSU6YaOoTqY7GY"
             target="_blank"
@@ -164,9 +164,9 @@
       </div>
       <p class="text-center text-sm text-gray-400 mt-6">
         Looking for tips and stories instead?
-        <NuxtLink to="/blog" class="text-purple-600 font-semibold hover:underline">Read the blog</NuxtLink>
+        <a href="/blog" class="text-purple-600 font-semibold hover:underline">Read the blog</a>
         ·
-        <NuxtLink to="/changelog" class="text-purple-600 font-semibold hover:underline">See what's new</NuxtLink>
+        <a href="/changelog" class="text-purple-600 font-semibold hover:underline">See what's new</a>
       </p>
     </div>
   </div>

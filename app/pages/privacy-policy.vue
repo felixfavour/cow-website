@@ -949,7 +949,7 @@
         <li>
           <p>
             By visiting this page on our website:
-            <NuxtLink to="/contact">cloudofworship.com/contact</NuxtLink>
+            <a href="/contact">cloudofworship.com/contact</a>
           </p>
         </li>
       </ul>

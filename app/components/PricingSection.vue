@@ -214,12 +214,12 @@
       <div class="text-center mt-12 max-w-2xl mx-auto">
         <p class="text-gray-600">
           Need something more? <br />
-          <NuxtLink
-            to="/contact"
+          <a
+            href="/contact"
             class="text-purple-600 font-semibold hover:underline"
           >
             Contact us
-          </NuxtLink>
+          </a>
           for custom enterprise solutions tailored to your church's needs.
         </p>
       </div>

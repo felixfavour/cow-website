@@ -2,15 +2,15 @@
   <nav class="doc-sidebar" aria-label="Help Center navigation">
     <DocSearch v-if="showSearch" variant="compact" :hotkeys="hotkeys" class="mb-5" />
 
-    <NuxtLink
-      to="/docs"
+    <a
+      href="/docs"
       class="flex items-center gap-2 px-2 py-1.5 mb-4 text-sm font-semibold rounded-lg transition-colors group"
       :class="route.path === '/docs' ? 'text-purple-700' : 'text-gray-500 hover:text-purple-700'"
       @click="$emit('navigate')"
     >
       <DocIcon name="house" :size="18" weight="regular" />
       Help Center home
-    </NuxtLink>
+    </a>
 
     <ul class="space-y-1">
       <li v-for="cat in categories" :key="cat.slug">
@@ -40,24 +40,24 @@
 
         <ul v-show="isOpen(cat.slug)" class="ml-[13px] pl-3 border-l border-gray-100 mt-0.5 mb-2 space-y-0.5">
           <li>
-            <NuxtLink
-              :to="cat.path"
+            <a
+              :href="cat.path"
               class="block rounded-lg px-2.5 py-1.5 text-[13px] leading-snug transition-colors"
               :class="route.path === cat.path ? 'bg-purple-50 text-purple-700 font-semibold' : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'"
               @click="$emit('navigate')"
             >
               Overview
-            </NuxtLink>
+            </a>
           </li>
           <li v-for="a in cat.articles" :key="a.path">
-            <NuxtLink
-              :to="a.path"
+            <a
+              :href="a.path"
               class="block rounded-lg px-2.5 py-1.5 text-[13px] leading-snug transition-colors"
               :class="route.path === a.path ? 'bg-purple-50 text-purple-700 font-semibold' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'"
               @click="$emit('navigate')"
             >
               {{ a.title }}
-            </NuxtLink>
+            </a>
           </li>
         </ul>
       </li>
