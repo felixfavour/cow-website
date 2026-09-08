@@ -78,7 +78,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com/features/offline-first",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/features/offline-first",
 })
 
 onMounted(() => {

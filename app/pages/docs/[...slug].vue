@@ -126,7 +126,6 @@ useSeoMeta({
   ogType: 'article',
   ogImage: 'https://cloudofworship.com/images/cow-og-image.jpeg',
 })
-useHead({ link: [{ rel: 'canonical', href: canonical }] })
 
 if (!category.value && !doc.value) {
   setResponseStatus(useRequestEvent(), 404)

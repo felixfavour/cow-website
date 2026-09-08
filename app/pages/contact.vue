@@ -175,7 +175,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com/contact",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/contact",
 })
 
 const changelogs = [

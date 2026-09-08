@@ -466,7 +466,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com/changelog",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/changelog",
 })
 
 onMounted(() => {

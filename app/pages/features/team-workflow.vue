@@ -87,7 +87,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com/features/team-workflow",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/features/team-workflow",
 })
 
 onMounted(() => {

@@ -979,7 +979,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com/privacy-policy",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/privacy-policy",
 })
 
 onMounted(() => {

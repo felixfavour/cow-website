@@ -211,7 +211,7 @@ useSeoMeta({
   ogLocale: "en_US",
 })
 useHead({
-  link: [{ rel: "canonical", href: () => canonicalUrl.value }],
+  link: [{ rel: "canonical", href: () => canonicalUrl.value, key: "canonical" }],
 })
 
 onMounted(() => {

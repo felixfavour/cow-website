@@ -62,7 +62,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com/wall-of-love",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/wall-of-love",
 })
 
 const changelogs = [

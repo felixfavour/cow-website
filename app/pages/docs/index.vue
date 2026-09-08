@@ -229,5 +229,4 @@ useSeoMeta({
   ogUrl: 'https://cloudofworship.com/docs',
   ogType: 'website',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://cloudofworship.com/docs' }] })
 </script>

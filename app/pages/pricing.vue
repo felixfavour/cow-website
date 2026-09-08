@@ -69,7 +69,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com/pricing",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/pricing",
 })
 
 const changelogs = [

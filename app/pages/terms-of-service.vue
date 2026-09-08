@@ -163,7 +163,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com/terms-of-service",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/terms-of-service",
 })
 
 onMounted(() => {

@@ -76,7 +76,6 @@ useHead({
   ogUrl: "https://cloudofworship.com/features/browser-ready",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com/features/browser-ready",
 })
 
 onMounted(() => {

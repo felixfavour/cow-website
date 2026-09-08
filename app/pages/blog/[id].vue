@@ -100,7 +100,6 @@ useSeoMeta({
   ogUrl: "https://cloudofworship.com",
   ogType: "website",
   ogLocale: "en_US",
-  canonical: "https://cloudofworship.com",
 })
 
 onMounted(() => {
