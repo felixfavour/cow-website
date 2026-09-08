@@ -178,41 +178,14 @@
 const { mergeUtmsIntoUrl } = useUtm()
 const selectedCurrency = ref("USD") // Default to USD
 
-// Fetch plans from API using useAsyncData
+// Plans come from the shared loader, which retries in the browser when the
+// server-side fetch is refused (see composables/usePricingPlans.ts).
 const {
-  data: apiPlans,
-  pending: loading,
+  plans: apiPlans,
+  loading,
   error,
   refresh: fetchPlans,
-} = await useAsyncData(
-  "pricing-table-plans",
-  async () => {
-    try {
-      const apiUrl =
-        process.env.NUXT_PUBLIC_API_URL || "https://api.cloudofworship.com"
-      // The billing API authorizes by Origin; the SSR fetch sends none and gets
-      // a 403, so set an allowed one. Browsers ignore this and send their own.
-      const response = await fetch(`${apiUrl}/api/v1/billing/plans`, {
-        headers: { Origin: "https://cloudofworship.com" },
-      })
-
-      if (!response.ok) {
-        throw new Error("Failed to fetch pricing plans")
-      }
-
-      const { data } = await response.json()
-      return data || []
-    } catch (err) {
-      console.error("Error fetching plans:", err)
-      throw err
-    }
-  },
-  {
-    default: () => [],
-    server: true,
-    lazy: false,
-  }
-)
+} = usePricingPlans()
 
 // Detect user's country using timezone-based detection
 const detectUserLocation = async () => {
@@ -441,12 +414,19 @@ const tableData = [
   },
 ]
 
-// Auto-detect location after data is loaded
-onMounted(() => {
-  if (apiPlans.value && apiPlans.value.length > 0) {
-    detectUserLocation()
-  }
-})
+// Auto-detect location once plans are available. They can arrive after mount,
+// because the browser retries when the server-side fetch is refused.
+let locationDetected = false
+watch(
+  apiPlans,
+  (plans) => {
+    if (import.meta.client && !locationDetected && plans && plans.length > 0) {
+      locationDetected = true
+      detectUserLocation()
+    }
+  },
+  { immediate: true }
+)
 </script>
 
 <style scoped>
