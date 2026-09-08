@@ -359,8 +359,8 @@ const tableData = [
       ["Add & display your own song lyrics"],
       [
         "Everything in Starter plus",
-        "1,000+ hymns offline",
-        "Access growing library (9,000+ songs)",
+        "3,000+ hymns offline",
+        "Access growing library (13,000+ songs)",
         "Personal library to save songs & slides",
         "Create dynamic text slides",
       ],

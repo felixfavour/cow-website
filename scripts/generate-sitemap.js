@@ -98,6 +98,10 @@ const STATIC_PAGES = [
   { path: '/features/browser-ready', changefreq: 'weekly' },
   { path: '/features/offline-first', changefreq: 'weekly' },
   { path: '/features/team-workflow', changefreq: 'weekly' },
+  { path: '/features/bible-verses', changefreq: 'weekly' },
+  { path: '/features/song-lyrics', changefreq: 'weekly' },
+  { path: '/features/live-projection', changefreq: 'weekly' },
+  { path: '/features/live-transcription', changefreq: 'weekly' },
 ]
 
 /**

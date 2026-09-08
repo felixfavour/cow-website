@@ -35,7 +35,7 @@
             Features <ArrowDown />
           </a>
           <div
-            class="ul-ctn pt-4 lg:hidden group-hover:block hover:block lg:absolute w-[100%] lg:w-[205px] z-10 left-[-80%] transition-all"
+            class="ul-ctn pt-4 lg:hidden group-hover:block hover:block lg:absolute w-[100%] lg:w-[230px] z-10 left-[-80%] transition-all"
           >
             <ul
               class="link-dropdown p-2 border border-gray-100 rounded-lg shadow-lg transition-all bg-white"
@@ -65,6 +65,42 @@
                   :class="{ active: isActive('/features/team-workflow') }"
                 >
                   Team Workflow
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/features/bible-verses"
+                  class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                  :class="{ active: isActive('/features/bible-verses') }"
+                >
+                  Bible & scripture
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/features/song-lyrics"
+                  class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                  :class="{ active: isActive('/features/song-lyrics') }"
+                >
+                  Songs & hymns
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/features/live-projection"
+                  class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                  :class="{ active: isActive('/features/live-projection') }"
+                >
+                  Live projection
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/features/live-transcription"
+                  class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
+                  :class="{ active: isActive('/features/live-transcription') }"
+                >
+                  Live transcription
                 </a>
               </li>
             </ul>

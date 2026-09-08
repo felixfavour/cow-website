@@ -294,7 +294,7 @@ const freePlan = {
   interval: "monthly",
   features: [
     "Display Bible passages",
-    "Access over 1,000+ hymns offline",
+    "Access over 3,000+ hymns offline",
     "Add & display your own song lyrics",
     "100% offline functionality",
     "Full text search of the entire Bible offline",

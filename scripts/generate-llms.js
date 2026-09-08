@@ -134,6 +134,34 @@ const PAGE_DEFINITIONS = [
     file: 'app/pages/features/offline-first.vue',
   },
   {
+    url: `${BASE_URL}/features/bible-verses`,
+    title: 'Bible & Scripture Feature',
+    description:
+      'Project Bible verses in seconds by typing a reference. Multiple translations including Spanish, Igbo, Yoruba and Hausa, full-text Bible search, all stored offline.',
+    file: 'app/pages/features/bible-verses.vue',
+  },
+  {
+    url: `${BASE_URL}/features/song-lyrics`,
+    title: 'Song Lyrics & Hymns Feature',
+    description:
+      'Project song lyrics and hymns. Over 3,000 hymns offline, a shared library of 13,000+ songs on the Teams plan, and jump to any verse or chorus mid song.',
+    file: 'app/pages/features/song-lyrics.vue',
+  },
+  {
+    url: `${BASE_URL}/features/live-projection`,
+    title: 'Live Projection Feature',
+    description:
+      'Dual screen output where controls stay on the operator window, phone and tablet remote control, and an output window OBS can capture for livestream.',
+    file: 'app/pages/features/live-projection.vue',
+  },
+  {
+    url: `${BASE_URL}/features/live-transcription`,
+    title: 'Live Transcription Feature',
+    description:
+      'Transcribes the sermon live and suggests the Bible passage when the preacher names a reference, for the operator to send to screen with one click.',
+    file: 'app/pages/features/live-transcription.vue',
+  },
+  {
     url: `${BASE_URL}/contact`,
     title: 'Contact',
     description:
@@ -180,6 +208,10 @@ function buildLlmsTxt(blogPosts) {
 - [Browser-Ready](${BASE_URL}/features/browser-ready): Run Cloud of Worship directly in your web browser — no downloads or installations needed on any platform.
 - [Team Workflow](${BASE_URL}/features/team-workflow): Real-time collaboration tools for church media teams working across multiple devices.
 - [Offline-First](${BASE_URL}/features/offline-first): Full offline functionality after initial setup, ensuring reliable service even without an internet connection.
+- [Bible & Scripture](${BASE_URL}/features/bible-verses): Type a reference and project the verse in seconds, with multiple translations and full-text Bible search stored offline.
+- [Song Lyrics & Hymns](${BASE_URL}/features/song-lyrics): Over 3,000 hymns offline, 13,000+ shared songs, and jump to any verse or chorus while a song is live.
+- [Live Projection](${BASE_URL}/features/live-projection): Dual screen output, phone remote control, and an output window OBS can capture for livestream.
+- [Live Transcription](${BASE_URL}/features/live-transcription): Transcribes the sermon live and suggests the Bible passage the moment the preacher names it.
 
 ## Optional
 

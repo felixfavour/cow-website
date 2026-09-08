@@ -31,6 +31,30 @@
                 >Team workflow
               </a>
             </li>
+            <li>
+              <a href="/features/bible-verses" class="font-medium"
+                :class="{ active: isActive('/features/bible-verses') }"
+                >Bible & scripture
+              </a>
+            </li>
+            <li>
+              <a href="/features/song-lyrics" class="font-medium"
+                :class="{ active: isActive('/features/song-lyrics') }"
+                >Songs & hymns
+              </a>
+            </li>
+            <li>
+              <a href="/features/live-projection" class="font-medium"
+                :class="{ active: isActive('/features/live-projection') }"
+                >Live projection
+              </a>
+            </li>
+            <li>
+              <a href="/features/live-transcription" class="font-medium"
+                :class="{ active: isActive('/features/live-transcription') }"
+                >Live transcription
+              </a>
+            </li>
           </ul>
         </div>
         <div class="col-ctn w-[45%] lg:w-[auto]">

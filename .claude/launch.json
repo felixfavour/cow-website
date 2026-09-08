@@ -2,11 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "nuxt-dev",
-      "runtimeExecutable": "yarn",
-      "runtimeArgs": ["dev"],
-      "port": 3000,
-      "autoPort": true
+      "name": "cow-website",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "3100"],
+      "port": 3100
     }
   ]
 }
