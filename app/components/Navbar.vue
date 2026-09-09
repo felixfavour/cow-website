@@ -67,7 +67,7 @@
                   Team Workflow
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a
                   href="/features/bible-verses"
                   class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
@@ -102,7 +102,7 @@
                 >
                   Live transcription
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </li>
