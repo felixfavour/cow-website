@@ -12,10 +12,10 @@
       <ul
         :class="
           isMenuOpen
-            ? 'visible opacity-100 translate-y-0'
-            : 'invisible opacity-0 translate-y-[100%]'
+            ? 'visible'
+            : 'invisible lg:visible'
         "
-        class="nav-actions transition-all duration-300 fixed inset-0 h-[100%] top-[60px] md:top-[85px] px-[7%] text-lg pt-[7.5%] bg-white lg:h-auto lg:px-0 lg:static lg:bg-transparent flex flex-col lg:pt-0 lg:flex-row lg:items-center gap-4 xl:gap-8 lg:text-sm font-medium"
+        class="nav-actions fixed inset-0 h-[100%] top-[60px] md:top-[85px] px-[7%] text-lg pt-[7.5%] bg-white lg:h-auto lg:px-0 lg:static lg:bg-transparent flex flex-col lg:pt-0 lg:flex-row lg:items-center gap-4 xl:gap-8 lg:text-sm font-medium"
       >
         <li class="nav-item">
           <a
@@ -67,7 +67,7 @@
                   Team Workflow
                 </a>
               </li>
-              <!-- <li>
+              <li>
                 <a
                   href="/features/bible-verses"
                   class="nav-link flex items-center gap-1 p-3 hover:bg-purple-100 transition rounded-lg"
@@ -102,7 +102,7 @@
                 >
                   Live transcription
                 </a>
-              </li> -->
+              </li>
             </ul>
           </div>
         </li>
