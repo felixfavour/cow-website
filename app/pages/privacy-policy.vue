@@ -974,12 +974,13 @@ useSeoMeta({
     "How Cloud of Worship collects, uses, shares and protects your data, including your content, analytics, payments and live voice transcription, and the privacy rights you have.",
   ogDescription:
     "How Cloud of Worship collects, uses, shares and protects your data, including your content, analytics, payments and live voice transcription, and the privacy rights you have.",
-  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/privacy-policy",
   ogType: "website",
   ogLocale: "en_US",
 })
+
+useOgCard("privacy")
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

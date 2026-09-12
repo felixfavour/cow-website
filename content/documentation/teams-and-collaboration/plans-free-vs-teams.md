@@ -3,25 +3,28 @@ title: "Plans: Free vs Teams"
 description: "What's included on the Free plan, what Teams unlocks, and how your plan is tied to your church."
 category: "Teams & Collaboration"
 order: 3
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-12"
 ---
 
 | | Free | Teams |
 |---|------|-------|
 | Bible, hymns, songs, setlists, text, media slides | ✅ | ✅ |
 | Schedules and My Library | ✅ | ✅ |
-| Time slides, PDF import | ✅ | ✅ |
+| PDF import | ✅ | ✅ |
 | Dark mode, shortcuts, all settings | ✅ | ✅ |
+| Desktop app and NDI output | ✅ | ✅ |
 | Offline use and Bible downloads | ✅ | ✅ |
 | **Search song lyrics** | — | ✅ |
 | **Slide Templates** | — | ✅ |
 | **Alerts / banners** | — | ✅ |
 | **Overlays** | — | ✅ |
 | **Countdown timers** | — | ✅ |
+| **Time slides** | — | ✅ |
 | **YouTube / Vimeo embeds** | — | ✅ |
 | **Sermon transcription** | — | ✅ |
 | **Inviting teammates** | — | ✅ |
 | **Livestream URL (OBS / vMix)** | — | ✅ |
+| **Using CoW on a phone** | — | ✅ |
 | **Cloud storage** | 100 MB | 5 GB |
 | **Background image upload** | 3 MB | 10 MB |
 | **Background video upload** | 250 MB | Unlimited |

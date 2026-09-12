@@ -95,12 +95,17 @@ useSeoMeta({
   keywords:
     content?.tag +
     " cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-  ogImage: content?.cover,
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com",
   ogType: "website",
   ogLocale: "en_US",
 })
+
+if (content?.cover) {
+  useSeoMeta({ ogImage: content.cover, twitterCard: "summary_large_image" })
+} else {
+  useOgCard("blog")
+}
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

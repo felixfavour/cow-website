@@ -3,7 +3,7 @@ title: "Countdown Timers"
 description: "Put a countdown on screen before service starts or between segments. A Teams feature."
 category: "Building Your Service"
 order: 7
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-12"
 ---
 
 *Teams feature.*
@@ -15,5 +15,5 @@ lastUpdated: "2026-09-03"
 3. Click **Create countdown slide**.
 
 ::callout{type="tip"}
-Need the current time instead? **Add Time Slide** displays the time of day and is available on the Free plan.
+Need the current time instead? **Add Time Slide** displays the time of day. Like countdowns, it is a Teams feature.
 ::

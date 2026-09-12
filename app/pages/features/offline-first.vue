@@ -73,12 +73,13 @@ useSeoMeta({
     "Empower your media team to deliver exceptional experiences to your congregation without being tethered to an internet connection.",
   keywords:
     "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/offline-first",
   ogType: "website",
   ogLocale: "en_US",
 })
+
+useOgCard("offlineFirst")
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

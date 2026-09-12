@@ -3,15 +3,17 @@ title: "NDI Live Output"
 description: "Publish the live display as an NDI source on your local network, so OBS, vMix, TriCaster or any NDI receiver can pick up your slides without a capture card."
 category: "Going Live"
 order: 8
-lastUpdated: "2026-09-08"
+lastUpdated: "2026-09-12"
 ---
 
-*Free feature. Desktop app only (macOS and Windows).*
+*Free feature. Desktop app only.*
 
 NDI sends your live display over the local network as a video source. Any NDI receiver on the same network (OBS, vMix, TriCaster, an NDI-capable switcher or monitor) can pick it up and use it like a camera input, with no capture card and no cable between machines.
 
 ::callout{type="important" title="This is the desktop app only"}
-The NDI section appears in **Settings → Display Settings** only when you are running the installed desktop app. In the browser, use the [livestream URL](/docs/going-live/livestream-output-obs-vmix) as a browser source instead.
+The NDI section appears in **Settings → Display Settings** only when you are running the installed [desktop app](/docs/settings-and-shortcuts/desktop-app). In the browser, use the [livestream URL](/docs/going-live/livestream-output-obs-vmix) as a browser source instead.
+
+The desktop app currently ships for **Windows** only, so NDI output is a Windows feature today. The macOS notes below apply to the macOS build once it is released.
 ::
 
 ## Before you start
@@ -28,7 +30,7 @@ The NDI section appears in **Settings → Display Settings** only when you are r
 
 If the live window is not open yet when you flip the toggle, you will see *"NDI will start with the live window"*. That is expected. Open the live display and it begins on its own.
 
-In your receiver, look for a source named **Cow Live Center** on the sending computer.
+In your receiver, look for a source named **CoW Live Output** on the sending computer.
 
 ::callout{type="tip" title="The preference stays on this machine"}
 **Broadcast live output over NDI** is stored on that computer only. It never syncs to your account or to your teammates, so turning it on at the church laptop will not turn it on for someone at home.
@@ -38,7 +40,7 @@ In your receiver, look for a source named **Cow Live Center** on the sending com
 
 | | |
 |---|---|
-| **Source name** | Cow Live Center |
+| **Source name** | CoW Live Output |
 | **Resolution** | Matches the live window, scaled down to fit 1920 x 1080 |
 | **Frame rate** | 30 fps |
 | **Cursor** | Not included |
@@ -52,7 +54,7 @@ The panel under the toggle is the honest state of the broadcast.
 | Row | What it means |
 |-----|---------------|
 | **Status** (with the coloured dot) | *Not broadcasting*, *Starting*, *Broadcasting*, *Needs attention*, or *Unsupported on this system* |
-| **Source** | The name receivers will see. Always Cow Live Center |
+| **Source** | The name receivers will see. Always CoW Live Output |
 | **Resolution** | The captured size and frame rate, or *Waiting for live output* before the first frame arrives |
 | **NDI runtime** | The runtime version that was found and loaded, or *Not detected*. Hover it to see the file it loaded from |
 | **Receivers** | How many receivers are currently pulling the source right now |
@@ -78,7 +80,7 @@ Worry about it only when the badge stays on while something is visibly moving on
 | *This computer's CPU is not supported…* | The NDI runtime cannot run on that processor. There is no workaround on that machine |
 | **Broadcasting** but **Receivers: 0** | The receiver cannot discover the source. See below |
 
-### The receiver cannot find Cow Live Center
+### The receiver cannot find CoW Live Output
 
 - Confirm both machines are on the **same network**, and that it is not a guest network that isolates clients from each other.
 - On Windows, allow **Cloud of Worship** through Windows Firewall, and make sure the network is set to **Private** rather than Public. The app shows this hint in the panel when nothing has connected.
@@ -95,7 +97,7 @@ Both feed your stream, and they solve different problems.
 
 | | NDI | [Livestream URL](/docs/going-live/livestream-output-obs-vmix) |
 |---|---|---|
-| **Where it runs** | Desktop app only | Any browser, any machine |
+| **Where it runs** | Desktop app only (Windows today) | Any browser, any machine |
 | **Needs** | NDI runtime, same local network | An internet connection |
 | **Carries** | The live display exactly as rendered, as video | The slides, rendered again in the receiving browser |
 | **Best for** | A switcher or an OBS machine in the same building | A remote stream operator, or when installing anything is not an option |

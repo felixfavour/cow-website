@@ -180,12 +180,13 @@ useSeoMeta({
     "Stay up to date with the latest updates, resources, guides and more from Cloud of Worship. See how you can use our software to enhance your worship experience.",
   keywords:
     "cloud of worship, guide, how to, resources, blog, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: () => canonicalUrl.value,
   ogType: "website",
   ogLocale: "en_US",
 })
+
+useOgCard("blog")
 useHead({
   link: [{ rel: "canonical", href: () => canonicalUrl.value, key: "canonical" }],
 })

@@ -133,6 +133,15 @@
             Help Center
           </a>
         </li>
+        <li class="nav-item">
+          <a
+            href="/download"
+            class="nav-link"
+            :class="{ active: isActive('/download') }"
+          >
+            Download
+          </a>
+        </li>
         <ul class="auth flex flex-col lg:hidden">
           <!-- <li class="nav-item">
             <a

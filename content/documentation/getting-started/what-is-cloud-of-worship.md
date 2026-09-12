@@ -3,7 +3,7 @@ title: "What is Cloud of Worship?"
 description: "Presentation software for churches that runs in your browser, with a Control Center for you and a Live Display for your congregation."
 category: "Getting Started"
 order: 1
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-12"
 featured: true
 ---
 
@@ -31,6 +31,8 @@ Cloud of Worship runs entirely in your browser.
 - **URL:** `app.cloudofworship.com`
 - **Browsers:** Chrome, Firefox, Safari and Edge. Chrome or Edge are recommended if you want automatic multi-screen detection.
 - **Installable:** you can install CoW to your dock or taskbar as an app. See [Installing Cloud of Worship](/docs/settings-and-shortcuts/installing-cloud-of-worship).
+- **Native desktop app:** on Windows there is also a native desktop app, which adds real multi-monitor windows, [NDI output](/docs/going-live/ndi-output) and background updates. [Download it here](/download), or read [the desktop app guide](/docs/settings-and-shortcuts/desktop-app).
+- **On a phone:** on a Teams plan, a phone is a full operator. You can build slides and drive the projector at the media desk from it. See [using CoW on your phone](/docs/teams-and-collaboration/using-cloud-of-worship-on-your-phone).
 
 You'll normally run it on a laptop connected to a projector or second monitor.
 

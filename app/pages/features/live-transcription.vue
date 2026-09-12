@@ -185,12 +185,13 @@ useSeoMeta({
   ogDescription: description,
   keywords:
     "sermon summary software, sermon notes for church, church sermon transcription, live sermon transcription, sermon nuggets, automatic scripture detection, voice commands church presentation, cloud of worship",
-  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/live-transcription",
   ogType: "website",
   ogLocale: "en_US",
-});
+})
+
+useOgCard("liveTranscription");
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

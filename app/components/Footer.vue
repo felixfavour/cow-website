@@ -123,6 +123,14 @@
             </li>
             <li>
               <a
+                href="/download"
+                class="font-medium"
+                :class="{ active: isActive('/download') }"
+                >Download for Windows
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://chat.whatsapp.com/DeQX11igCSU6YaOoTqY7GY"
                 class="font-medium"
                 >Join our Community

@@ -185,12 +185,13 @@ useSeoMeta({
   ogDescription: description,
   keywords:
     "church projection software, dual screen presentation church, live output projector church, second monitor worship software, obs church livestream slides, church slide remote control, cloud of worship",
-  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/live-projection",
   ogType: "website",
   ogLocale: "en_US",
-});
+})
+
+useOgCard("liveProjection");
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

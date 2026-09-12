@@ -3,7 +3,7 @@ title: "Settings Reference"
 description: "All eleven settings sections: account, subscription, display, microphone, slides, overlays, backgrounds, blank screen, Bible versions, storage and other."
 category: "Settings, Shortcuts & Offline"
 order: 2
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-12"
 ---
 
 Open settings with **Cmd/Ctrl + ,**, the avatar menu, or the **Open App Settings** quick action. Eleven sections:
@@ -15,7 +15,9 @@ Your **Full name** and **Email**, plus your current plan, subscription status, a
 Your plan, and the default **Look and Feel** for new slides: **Default font**, **Default font size** (50–150%), **Default slide alignment**, **Uppercase text**, **Outlined text**, **Bold text**.
 
 ## Display Settings
-**Control Center** screen info · **Live Window Settings** (Open in fullscreen mode; Close live window when this tab is closed) · **Secondary Screens** (pick which monitor is the Live display; Refresh screens). See [Multi-screen setup](/docs/going-live/multi-screen-setup).
+**Control Center** screen info · **Live Window Settings** (Open in fullscreen mode; Close live window when this tab or window is closed; **Let a team member's phone control this output**) · **Secondary Screens** (pick which monitor is the Live display; Refresh screens) · **NDI Live Output** (desktop app only). See [Multi-screen setup](/docs/going-live/multi-screen-setup), [using CoW on your phone](/docs/teams-and-collaboration/using-cloud-of-worship-on-your-phone) and [NDI output](/docs/going-live/ndi-output).
+
+**Let a team member's phone control this output** is on by default and is stored on that computer only. It lets someone on a phone pick this device and take slides live on the screen it is driving, but only while the live window is open here, and you can see who is controlling it above the slide schedule.
 
 ## Microphone Settings
 **Active Microphone**, **Available Microphones**, **Use as default**. Shows **Microphone access denied** if the browser blocks it.

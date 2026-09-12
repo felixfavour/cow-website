@@ -158,12 +158,13 @@ useSeoMeta({
   ogDescription: description,
   keywords:
     "bible verse projection software, project bible verses on screen, church scripture presentation software, bible presentation software for church, display bible verses church, scripture slides, church projection software, cloud of worship",
-  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/bible-verses",
   ogType: "website",
   ogLocale: "en_US",
 })
+
+useOgCard("bibleVerses")
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

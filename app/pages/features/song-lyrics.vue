@@ -164,12 +164,13 @@ useSeoMeta({
   ogDescription: description,
   keywords:
     "church lyrics projection software, song lyrics on screen church, hymn projection software, worship lyrics software, church song presentation software, hymn slides, praise and worship slides, cloud of worship",
-  ogImage: "https://cloudofworship.com/images/cow-og-image.jpeg",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/song-lyrics",
   ogType: "website",
   ogLocale: "en_US",
 })
+
+useOgCard("songLyrics")
 
 onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

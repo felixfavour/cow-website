@@ -124,8 +124,9 @@ useSeoMeta({
   ogDescription: pageDescription,
   ogUrl: canonical,
   ogType: 'article',
-  ogImage: 'https://cloudofworship.com/images/cow-og-image.jpeg',
 })
+
+useOgCard("docs")
 
 if (!category.value && !doc.value) {
   setResponseStatus(useRequestEvent(), 404)

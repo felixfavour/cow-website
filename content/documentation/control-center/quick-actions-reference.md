@@ -3,7 +3,7 @@ title: "Quick Actions Reference"
 description: "Every action available in the Quick Actions Pane, grouped by what it does, with the plan it needs."
 category: "The Control Center"
 order: 6
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-12"
 ---
 
 Actions marked **Teams** require a Teams subscription. Teams-only actions stay visible in the Quick Actions Pane with an upgrade prompt rather than being hidden, so you can always see what's available.
@@ -21,7 +21,7 @@ Actions marked **Teams** require a Teams subscription. Teams-only actions stay v
 | **Song Setlist** | Group multiple songs in one styled slide | Free |
 | **Create Text Slide** | Create slides with notes and more | Free |
 | **Add Media** | Display image, video or audio media | Free |
-| **Add Time Slide** | Display the current time on a slide | Free |
+| **Add Time Slide** | Display the current time on a slide | Teams |
 | **Add Countdown Timer** | Engage your church with countdown | Teams |
 | **Slide Templates** | Use pre-made, fancy slide templates | Teams |
 | **Add YouTube Video** | Embed YouTube videos | Teams |
@@ -63,4 +63,4 @@ Actions marked **Teams** require a Teams subscription. Teams-only actions stay v
 | **Upgrade Plan** | Move to Teams | Free |
 | **Sign Out** | Sign out of your account | Free |
 
-Individual settings pages are directly searchable too: *Profile Settings, Display Settings, Bible Version Settings, Microphone Settings, Slide Settings, Slide Background Settings, Blank Settings, Storage Settings, Subscription Settings.* See the [Settings reference](/docs/settings-and-shortcuts/settings-reference).
+Individual settings pages are directly searchable too: *Profile Settings, Display Settings, Bible Version Settings, Microphone Settings, Slide Settings, Slide Background Settings, Overlay Settings, Blank Settings, Storage Settings, Subscription Settings, Other Settings.* See the [Settings reference](/docs/settings-and-shortcuts/settings-reference).

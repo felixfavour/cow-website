@@ -225,8 +225,9 @@ useSeoMeta({
   ogTitle: title,
   description,
   ogDescription: description,
-  ogImage: 'https://cloudofworship.com/images/cow-og-image.jpeg',
   ogUrl: 'https://cloudofworship.com/docs',
   ogType: 'website',
 })
+
+useOgCard("docs")
 </script>
