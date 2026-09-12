@@ -545,7 +545,7 @@
   <url>
     <loc>https://cloudofworship.com/docs/building-your-service/countdown-timers</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/building-your-service/editing-a-slide</loc>
@@ -615,7 +615,7 @@
   <url>
     <loc>https://cloudofworship.com/docs/control-center/quick-actions-reference</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/control-center/slide-schedule-pane</loc>
@@ -655,7 +655,7 @@
   <url>
     <loc>https://cloudofworship.com/docs/getting-started/what-is-cloud-of-worship</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/getting-started/your-first-five-minutes</loc>
@@ -685,12 +685,12 @@
   <url>
     <loc>https://cloudofworship.com/docs/going-live/multi-screen-setup</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/going-live/ndi-output</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/going-live/opening-the-live-display</loc>
@@ -705,7 +705,12 @@
   <url>
     <loc>https://cloudofworship.com/docs/going-live/stage-display</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://cloudofworship.com/docs/settings-and-shortcuts/desktop-app</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/settings-and-shortcuts</loc>
@@ -715,7 +720,7 @@
   <url>
     <loc>https://cloudofworship.com/docs/settings-and-shortcuts/installing-cloud-of-worship</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/settings-and-shortcuts/keyboard-shortcuts</loc>
@@ -730,7 +735,7 @@
   <url>
     <loc>https://cloudofworship.com/docs/settings-and-shortcuts/settings-reference</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/teams-and-collaboration</loc>
@@ -740,7 +745,7 @@
   <url>
     <loc>https://cloudofworship.com/docs/teams-and-collaboration/plans-free-vs-teams</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/teams-and-collaboration/sermon-transcription</loc>
@@ -748,9 +753,14 @@
     <lastmod>2026-09-03</lastmod>
   </url>
   <url>
+    <loc>https://cloudofworship.com/docs/teams-and-collaboration/using-cloud-of-worship-on-your-phone</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
     <loc>https://cloudofworship.com/docs/teams-and-collaboration/working-as-a-team</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/troubleshooting/account-and-sign-in-problems</loc>
@@ -770,7 +780,7 @@
   <url>
     <loc>https://cloudofworship.com/docs/troubleshooting/live-display-problems</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://cloudofworship.com/docs/troubleshooting/media-and-transcription-problems</loc>
