@@ -31,6 +31,11 @@ export const OG_CARDS = {
   docs: { file: "docs", eyebrow: "Help Center", accent: "Guides, shortcuts", title: "and answers for your tech team." },
   blog: { file: "blog", eyebrow: "Blog", accent: "Guides and stories", title: "for the people who run church services." },
 
+  // Served from app.cloudofworship.com (the operator app repo), not this site.
+  // Regenerated here so the card template stays in one place; copy the output
+  // to that repo's public/images/og/ after running yarn og:generate.
+  app: { file: "app", accent: "Run your service", title: "from any browser. Nothing to install." },
+
   download: { file: "download", eyebrow: "Desktop app", accent: "Download for Windows.", title: "Native projection, NDI output, automatic updates." },
 
   browserReady: { file: "features-browser-ready", eyebrow: "Feature", accent: "No install.", title: "Run your whole service from the browser." },
