@@ -15,6 +15,7 @@ export interface OgCard {
   eyebrow?: string
   accent?: string
   title: string
+  subtitle?: string
 }
 
 export const OG_CARDS = {
@@ -34,7 +35,11 @@ export const OG_CARDS = {
   // Served from app.cloudofworship.com (the operator app repo), not this site.
   // Regenerated here so the card template stays in one place; copy the output
   // to that repo's public/images/og/ after running yarn og:generate.
-  app: { file: "app", accent: "Run your service", title: "from any browser. Nothing to install." },
+  app: {
+    file: "app",
+    title: "Prepare once, use everywhere",
+    subtitle: "Scriptures. Songs. Slides. Sermons - everything",
+  },
 
   download: { file: "download", eyebrow: "Desktop app", accent: "Download for Windows.", title: "Native projection, NDI output, automatic updates." },
 

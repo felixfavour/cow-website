@@ -19,11 +19,17 @@ withDefaults(
     accent?: string
     /** The headline. Keep it under ~90 characters so it stays on four lines. */
     title?: string
+    /**
+     * Supporting line under the headline. Optional — cards that read as one
+     * sentence use `accent` + `title` instead and leave this empty.
+     */
+    subtitle?: string
   }>(),
   {
     eyebrow: "",
     accent: "",
     title: "Presentation software for your growing church.",
+    subtitle: "",
   },
 )
 </script>
@@ -88,7 +94,23 @@ withDefaults(
           }"
         >
           <span v-if="accent" :style="{ color: '#FFE4D6', marginRight: '16px' }">{{ accent }}</span>
-          <span :style="{ fontWeight: 400 }">{{ title }}</span>
+          <span :style="{ fontWeight: accent ? 400 : 700 }">{{ title }}</span>
+        </div>
+
+        <div
+          v-if="subtitle"
+          :style="{
+            display: 'flex',
+            maxWidth: '1048px',
+            marginTop: '26px',
+            fontSize: '46px',
+            lineHeight: 1.3,
+            fontWeight: 400,
+            color: '#FFE4D6',
+            letterSpacing: '-0.01em',
+          }"
+        >
+          {{ subtitle }}
         </div>
       </div>
 

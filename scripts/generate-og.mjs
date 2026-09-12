@@ -56,6 +56,7 @@ try {
       eyebrow: card.eyebrow ?? '',
       accent: card.accent ?? '',
       title: card.title,
+      subtitle: card.subtitle ?? '',
     })
     const html = await fetch(`http://localhost:${port}/__og?${qs}`).then(r => r.text())
     const m = html.match(/<meta property="og:image" content="([^"]+)"/)

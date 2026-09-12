@@ -9,6 +9,7 @@ const props = computed(() => ({
   eyebrow: (route.query.eyebrow as string) || "",
   accent: (route.query.accent as string) || "",
   title: (route.query.title as string) || "",
+  subtitle: (route.query.subtitle as string) || "",
 }))
 
 defineOgImage("Default", props.value)
