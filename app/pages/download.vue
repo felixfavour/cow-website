@@ -105,7 +105,10 @@
         <p class="text-center text-sm mt-6">
           Everything else, every slide type, schedule, setting and shortcut,
           works identically in both.
-          <a href="/docs/settings-and-shortcuts/desktop-app" class="font-bold underline underline-offset-4">
+          <a
+            href="/docs/settings-and-shortcuts/desktop-app"
+            class="font-bold underline underline-offset-4"
+          >
             Read the full guide
           </a>
         </p>
@@ -137,7 +140,7 @@
           </li>
         </ol>
 
-        <p class="text-center text-sm mt-8 max-w-[640px] mx-auto">
+        <p class="text-center text-sm mt-8 max-w-[640px] mx-auto mb-6">
           Your schedules, songs, library and settings live on your account, not
           on the device, so everything you already have is waiting for you as
           soon as you sign in.
@@ -172,7 +175,8 @@ const RELEASES_PAGE =
   "https://github.com/CoW-Labs/cloudofworship/releases/latest"
 
 const downloadUrl = computed(
-  () => release.value?.windows?.url || release.value?.fallbackUrl || RELEASES_PAGE
+  () =>
+    release.value?.windows?.url || release.value?.fallbackUrl || RELEASES_PAGE
 )
 
 const downloadLabel = computed(() =>
@@ -221,21 +225,18 @@ const advantages = [
     title: "NDI for your livestream",
     body: "Publish the live output to OBS, vMix or a switcher over your local network, with no capture card and no second computer running a browser.",
   },
-  {
-    title: "Updates that wait their turn",
-    body: "New versions download quietly in the background and install when you restart, so nothing ever interrupts a service.",
-  },
 ]
 
 const installSteps = [
-  'Download the installer above. It is named <code>Cloud.of.Worship_&lt;version&gt;_x64-setup.exe</code>.',
-  'Run it. Windows may say the publisher is not recognised for a newly released installer. Choose <strong>More info</strong>, then <strong>Run anyway</strong>.',
-  'Sign in with the account you already use, and pick your projector under <strong>Settings → Display Settings</strong>.',
+  "Download the installer above. It is named <code>Cloud.of.Worship_&lt;version&gt;_x64-setup.exe</code>.",
+  "Run it. Windows may say the publisher is not recognised for a newly released installer. Choose <strong>More info</strong>, then <strong>Run anyway</strong>.",
+  "Sign in with the account you already use, and pick your projector under <strong>Settings → Display Settings</strong>.",
 ]
 
 const trackDownload = () => {
   if (typeof window === "undefined") return
-  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") return
+  if (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+    return
   window.gtag?.("event", "desktop_download", {
     version: release.value?.version ?? "unknown",
     platform: platform.value ?? "unknown",
