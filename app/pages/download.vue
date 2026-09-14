@@ -91,7 +91,7 @@
           <span class="emphasis-text">browser can't do</span>.
         </h2>
 
-        <div class="grid md:grid-cols-3 gap-4 md:gap-6 mt-[7%] md:mt-[4%]">
+        <div class="grid md:grid-cols-2 gap-4 md:gap-6 mt-[7%] md:mt-[4%]">
           <div
             v-for="item in advantages"
             :key="item.title"
