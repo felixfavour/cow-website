@@ -219,7 +219,7 @@ const detectPlatform = () => {
 const advantages = [
   {
     title: "Real projector windows",
-    body: "The live and stage displays open as native windows on the monitor you pick. No popup blockers, no dragging them into place every Sunday.",
+    body: "The live and stage displays open as native windows on the monitor you pick. No popup blockers.",
   },
   {
     title: "NDI for your livestream",
