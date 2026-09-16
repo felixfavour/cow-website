@@ -7,7 +7,7 @@ created: May 28, 2026 12:00 PM
 description: Discover how seamless technology integration and thoughtful transitions can remove distractions, allowing your congregation to focus entirely on worship.
 paragraph: Discover how seamless technology integration and thoughtful transitions can remove distractions, allowing your congregation to focus entirely on worship.
 tag: Church media
-updated: May 28, 2026 12:00 PM
+updated: 2026-09-16
 ---
 
 ## The Silent Disruptor: Why Transitions Matter
@@ -34,6 +34,7 @@ Transitioning between songs or from worship into the sermon shouldn't be silent,
 
 - **Musical Pads:** Use subtle ambient pads that hold the key of the song, allowing the worship leader to speak or pray without the sound dropping out entirely.
 - **Visual Continuity:** Ensure your slide templates, fonts, and motion backgrounds maintain a consistent visual language throughout the entire service. Jarring changes in aesthetic distract the eye and disrupt the spirit.
+- **Backstage Timing:** When the band or speaker needs a time cue, start a [stage-only countdown](/blog/how-to-run-a-stage-display-countdown-without-changing-the-live-screen) on their confidence monitor. The congregation keeps seeing the current live slide while the team sees how much time remains.
 - **The 'Bumper' Bridge:** Use short, high-quality video bumpers to provide a visual 'reset' when transitioning from a high-energy worship set to a reflective sermon intro.
 
 ## Empowering Your Volunteers

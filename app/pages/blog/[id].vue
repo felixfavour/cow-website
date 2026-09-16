@@ -33,7 +33,7 @@
             <span class="font-medium">{{ data?.author }}</span> <br />
             <span class="text-sm text-gray-500">
               <span class="smaller_text">Updated </span>
-              <span class="font-medium">{{ getDate(data?.created) }}</span>
+              <span class="font-medium">{{ getDate(data?.updated || data?.created) }}</span>
             </span>
           </div>
         </div>

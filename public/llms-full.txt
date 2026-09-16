@@ -172,6 +172,7 @@ Guides, tutorials, comparisons, and updates for church media teams.
 - [How to Project Your LIVE Slides to Another Display: The Ultimate CoW Setup Guide](https://cloudofworship.com/blog/how-to-project-your-live-slides-to-another-display-the-ultimate-cow-setup-guide)
 - [How to Run a Full Church Service Without Switching Between Multiple Apps](https://cloudofworship.com/blog/how-to-run-a-full-church-service-without-switching-between-multiple-apps): One of the most frustrating parts of church media today is not the service itself.  It’s the constant switching between tools.  Many churches use:      one app for lyrics,    another for scriptures,    another for livestreaming,    PowerPoint for announcements,    and separate notes for service flow.  At first, this seems manageable, until Sunday starts.  Then suddenly:      volunteers are rushing,    windows are overlapping,    transitions become awkward,    and the media team spends more time managing software than supporting the service.  The issue is not lack of effort.  The issue is fragmented workflow.
 - [How to Run a Smooth Church Service Without Technical Errors (Media Team Guide)](https://cloudofworship.com/blog/how-to-run-a-smooth-church-service-without-technical-errors-media-team-guide): A smooth church service doesn’t happen by chance, it’s the result of preparation, coordination, and the right tools.
+- [How to Run a Stage Display Countdown Without Changing the Live Screen](https://cloudofworship.com/blog/how-to-run-a-stage-display-countdown-without-changing-the-live-screen): Give musicians and speakers a private countdown while the congregation keeps seeing the live slide. Here is when to use each countdown and how to control the stage clock.
 - [How to use Cloud of Worship with OBS Studio - Livestream](https://cloudofworship.com/blog/how-to-use-cloud-of-worship-with-OBS-livestream): Cloud of Worship is a great for screen projection and livestreaming, integrating it with OBS Studio makes it even more powerful for live broadcasts.
 - [How to use Cloud of Worship with vMix - Livestream](https://cloudofworship.com/blog/how-to-use-cloud-of-worship-with-vmix-livestream): Cloud of Worship is a fantastic tool for your church to display lyrics, scriptures, and more,integrating it with vMix makes it even more powerful for live broadcasts.
 - [How to Use Sermon Transcription and Voice Commands in Cloud of Worship](https://cloudofworship.com/blog/how-to-use-sermon-transcription-and-voice-commands-in-cloud-of-worship): Learn how to transcribe sermons live, detect Bible references, navigate verses, and switch Bible translations using voice commands in Cloud of Worship.
@@ -677,6 +678,7 @@ Transitioning between songs or from worship into the sermon shouldn't be silent,
 
 - **Musical Pads:** Use subtle ambient pads that hold the key of the song, allowing the worship leader to speak or pray without the sound dropping out entirely.
 - **Visual Continuity:** Ensure your slide templates, fonts, and motion backgrounds maintain a consistent visual language throughout the entire service. Jarring changes in aesthetic distract the eye and disrupt the spirit.
+- **Backstage Timing:** When the band or speaker needs a time cue, start a [stage-only countdown](/blog/how-to-run-a-stage-display-countdown-without-changing-the-live-screen) on their confidence monitor. The congregation keeps seeing the current live slide while the team sees how much time remains.
 - **The 'Bumper' Bridge:** Use short, high-quality video bumpers to provide a visual 'reset' when transitioning from a high-energy worship set to a reflective sermon intro.
 
 ## Empowering Your Volunteers
@@ -4126,6 +4128,51 @@ The difference is not just technical, it’s spiritual and experiential.
 A smooth service is not about perfection, it’s about preparation and simplicity.
 
 With the right habits and tools, media teams can move from **managing stress** to **supporting worship effectively**
+
+---
+
+## Blog: How to Run a Stage Display Countdown Without Changing the Live Screen
+
+URL: https://cloudofworship.com/blog/how-to-run-a-stage-display-countdown-without-changing-the-live-screen
+
+A countdown before service starts belongs on the main screen. A five-minute cue for the worship team between segments usually does not. Cloud of Worship lets the operator send a countdown to the Stage Display while the congregation continues seeing the current live slide.
+
+The [Stage Display](/docs/going-live/stage-display) is the confidence monitor facing your musicians and speakers. It shows what is live, what is next, a timer and the time of day. Opening the display is free. Sending a private countdown to it is a Teams feature.
+
+## Pick the right destination
+
+| Your goal | Choose | What happens |
+|---|---|---|
+| Let the congregation know when service begins | **Live Display** | A countdown slide is added to the schedule and can be taken live. |
+| Give the band or speaker a time cue without changing projection | **Stage Display** | A countdown starts on the confidence monitor only. No slide is added. |
+| Track how long a service or segment has run | **Stage Clock** | The stage stopwatch counts up. |
+
+The stage panel shows a private stage countdown first. If there is none, it mirrors a countdown slide that is live. Otherwise it shows the service stopwatch. This order keeps the stage cue visible even when the congregation's screen is showing something else.
+
+## Start a private countdown
+
+Use the presentation computer that is driving the Stage Display:
+
+1. Open **Quick Actions** and search for **Stage Display Countdown**.
+2. In the **Stage Display** tab, choose a duration or set the minutes and seconds yourself.
+3. Optionally add a short message beneath the timer, such as *Band back in five minutes*.
+4. Click **Start stage countdown**.
+
+For a quick cue, type *5 min countdown* in Quick Actions. You will see separate instant actions for the live output and Stage Display. Choose the stage action when the congregation should not see the timer.
+
+The Stage Display's buttons can pause, resume or reset its private countdown. You can also search for **Start Stage Clock**, **Pause Stage Clock** or **Restart Stage Clock** in the Control Center. Those actions operate whichever stage clock is currently showing.
+
+## Return to the service stopwatch
+
+Search for **Clear Stage Countdown** when the private cue is finished. The service stopwatch keeps running underneath the countdown, so clearing the cue restores its current reading. If the stopwatch was paused before the cue, it returns at the same paused reading.
+
+A private countdown stays at zero until you clear or restart it. Clearing it also lets the Stage Display mirror a live countdown slide again, if one is on the congregation's screen.
+
+The stage clock is controlled from the presentation computer. A phone can add a countdown slide to the shared schedule, but its Quick Actions do not control the Stage Display clock on another device.
+
+For the full setup and both countdown paths, see the [Countdown timers guide](/docs/building-your-service/countdown-timers) and [Multi-screen setup](/docs/going-live/multi-screen-setup).
+
+Photo: [Daniel on Unsplash](https://unsplash.com/photos/a-group-of-people-in-front-of-a-stage-with-screens-9QUG4Iy-4Qs).
 
 ---
 

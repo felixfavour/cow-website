@@ -3,7 +3,7 @@ title: "Using Cloud of Worship on Your Phone"
 description: "Build slides, switch schedules and drive the projector at the media desk from a phone, without taking over anyone else's screen."
 category: "Teams & Collaboration"
 order: 4
-lastUpdated: "2026-09-12"
+lastUpdated: "2026-09-16"
 ---
 
 *Teams feature.*
@@ -18,11 +18,13 @@ The phone opens on the **slide grid**, which is your schedule. Tapping a slide s
 
 | Tab | What it is |
 |-----|------------|
-| **Quick Actions** | The desktop left column, given the whole screen: Bible, songs, hymns, media, My Library, templates, countdowns, PDF import |
+| **Quick Actions** | The desktop left column, given the whole screen: Bible, songs, hymns, media, My Library, templates, countdown slides, PDF import |
 | **Live** | The live preview, the slide schedule under it, and the live output menu |
 | **Schedules** | Switching which service you are working on |
 
 Anything you create on the phone reaches the rest of your team instantly, and their slides reach you. A phone is a full member of the schedule. See [working as a team](/docs/teams-and-collaboration/working-as-a-team).
+
+The phone can create a countdown slide for the congregation. It does not offer [Stage Display](/docs/going-live/stage-display) clock controls, which work on the presentation computer connected to that screen.
 
 ## Driving the projector from a phone
 

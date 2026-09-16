@@ -3,7 +3,7 @@ title: "Quick Actions Reference"
 description: "Every action available in the Quick Actions Pane, grouped by what it does, with the plan it needs."
 category: "The Control Center"
 order: 6
-lastUpdated: "2026-09-12"
+lastUpdated: "2026-09-16"
 ---
 
 Actions marked **Teams** require a Teams subscription. Teams-only actions stay visible in the Quick Actions Pane with an upgrade prompt rather than being hidden, so you can always see what's available.
@@ -22,7 +22,7 @@ Actions marked **Teams** require a Teams subscription. Teams-only actions stay v
 | **Create Text Slide** | Create slides with notes and more | Free |
 | **Add Media** | Display image, video or audio media | Free |
 | **Add Time Slide** | Display the current time on a slide | Teams |
-| **Add Countdown Timer** | Engage your church with countdown | Teams |
+| **Add Countdown Timer** | Open the countdown form for a live slide or private stage timer | Teams |
 | **Slide Templates** | Use pre-made, fancy slide templates | Teams |
 | **Add YouTube Video** | Embed YouTube videos | Teams |
 | **Add Vimeo Video** | Embed Vimeo videos | Teams |
@@ -35,9 +35,16 @@ Actions marked **Teams** require a Teams subscription. Teams-only actions stay v
 | **Go Live** | Open the live presentation window | Free |
 | **Close Live Window** | Close the active presentation window | Free |
 | **Open Stage Display** | Open the confidence-monitor screen for musicians and speakers | Free |
+| **Stage Display Countdown** | Open the countdown form on its Stage Display tab | Teams |
+| **Clear Stage Countdown** | Remove the private countdown and return to the service stopwatch | Teams |
+| **Start Stage Clock** | Start or resume the active stage stopwatch or countdown | Free |
+| **Pause Stage Clock** | Pause the active stage stopwatch or countdown | Free |
+| **Restart Stage Clock** | Restart the active stage stopwatch or countdown | Free |
 | **Promote Slide to Live** | Push the selected slide to the live output | Free |
 | **Add Banners/Alert** | Notify your audience without disruption | Teams |
 | **Remove Alert** | Remove current alert | Teams |
+
+Typing a duration such as *5 min countdown* offers instant actions for both the live output and the Stage Display. Stage clock actions appear on the presentation computer, not on the phone operator screen. See [Countdown timers](/docs/building-your-service/countdown-timers).
 
 ## Library, schedules and workspace
 
