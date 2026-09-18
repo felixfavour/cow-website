@@ -28,7 +28,7 @@
           Get started for free
         </a>
         <div class="helper-text text-sm text-center pt-2">
-          serving <span class="font-semibold">thousands</span> of churches
+          serving <span class="font-semibold">{{ churchCountLabel }}</span> churches
         </div>
       </div>
       <div
@@ -172,6 +172,7 @@
 
 <script setup>
 const { mergeUtmsIntoUrl } = useUtm()
+const { churchCountLabel } = useChurchCount()
 const showTestimonialPopup = ref(false)
 useHead({
   title: "Cloud of Worship - Presentation software for your growing church",
