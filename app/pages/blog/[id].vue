@@ -142,7 +142,9 @@ article {
 
 article a {
   color: rgba(139, 92, 246);
-  text-decoration: underline;
+  /* underline comes from the border-bottom in main.css; setting
+     text-decoration here too would draw a second line */
+  text-decoration: none;
 }
 
 article h1,

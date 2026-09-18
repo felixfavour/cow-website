@@ -77,8 +77,8 @@ const icon = computed(() => {
 }
 .callout__content :deep(a) {
   font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  /* links already get a border-bottom underline from the article styles */
+  text-decoration: none;
   color: inherit;
 }
 .callout__content :deep(code) {
