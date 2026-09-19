@@ -36,6 +36,26 @@ export default defineCachedEventHandler(
       // wording is better than "serving 0 churches".
       return Number.isFinite(count) && count > 0 ? { count } : { count: null }
     } catch (error) {
+      // TEMPORARY DIAGNOSTIC (remove once the production 403 is understood).
+      // The bare FetchError only reports the status, which cannot tell a
+      // Cloudflare edge block apart from the API's own origin validator. The
+      // body and a couple of headers separate them: the validator answers
+      // application/json {"error":"Forbidden: Access denied."}, Cloudflare
+      // answers HTML and always stamps a cf-ray.
+      const err = error as {
+        status?: number
+        data?: unknown
+        response?: { status?: number; headers?: Headers }
+      }
+      const headers = err?.response?.headers
+      console.error('church-count diagnostic', JSON.stringify({
+        status: err?.status ?? err?.response?.status ?? null,
+        contentType: headers?.get?.('content-type') ?? null,
+        cfRay: headers?.get?.('cf-ray') ?? null,
+        server: headers?.get?.('server') ?? null,
+        body: typeof err?.data === 'string' ? err.data.slice(0, 400) : err?.data ?? null,
+      }))
+
       // A homepage that fails to render is far worse than one that says
       // "thousands", so this never throws.
       console.error('Could not read the church count:', error)
