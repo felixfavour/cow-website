@@ -22,8 +22,13 @@ export default defineCachedEventHandler(
   async (): Promise<ChurchCount> => {
     try {
       // The endpoint answers with a bare JSON number, e.g. 4382.
+      //
+      // The API's origin validator rejects anything without an `Origin` header
+      // it recognises, and a server-to-server $fetch sends none — so without
+      // this the call 403s and every page silently shows the fallback wording.
       const body = await $fetch<number | string>(CHURCH_COUNT_API, {
         timeout: 8000,
+        headers: { Origin: 'https://cloudofworship.com' },
       })
       const count = Number(body)
 
