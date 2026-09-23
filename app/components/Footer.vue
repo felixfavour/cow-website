@@ -177,7 +177,7 @@
                 class="font-semibold border-b text-left"
                 @click="reopen"
               >
-                Cookie settings
+                Cookie notice
               </button>
             </li>
           </ul>

@@ -1,122 +1,109 @@
 /**
- * Cookie consent state for the marketing site.
+ * Analytics notice state for the marketing site.
  *
- * Non-essential storage (Google Analytics) stays off until the visitor
- * explicitly accepts. The decision is kept in localStorage and stamped with
- * POLICY_VERSION, so bumping that version re-asks everyone after a material
- * change to the privacy policy.
+ * Google Analytics and PostHog always run, for attribution — this is not a
+ * consent gate. The banner (components/CookieConsent.vue) just lets a
+ * visitor know once. The acknowledgement is kept in localStorage and
+ * stamped with NOTICE_VERSION, so bumping that version shows it again after
+ * a material change to what it says.
  */
 
-export type ConsentStatus = "granted" | "denied"
-
-interface StoredConsent {
-  status: ConsentStatus
+interface StoredNotice {
+  seenAt: string
   version: string
-  decidedAt: string
 }
 
-const STORAGE_KEY = "cow:cookie-consent"
+const STORAGE_KEY = "cow:cookie-notice"
 
-/** Bump when the policy changes materially enough to warrant re-asking. */
-const POLICY_VERSION = "2026-09-04"
+/** Bump when the notice's wording changes materially enough to re-show it. */
+const NOTICE_VERSION = "2026-09-23"
 
 /** Analytics is pointless locally, and it kept the old per-page gtag guards honest. */
 const isLocalHost = () =>
   location.hostname === "localhost" || location.hostname === "127.0.0.1"
 
 /** Reads survive private windows and blocked-storage settings by failing quiet. */
-const readStored = (): StoredConsent | null => {
+const readSeen = (): boolean => {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return null
-    const parsed = JSON.parse(raw) as StoredConsent
-    if (parsed?.version !== POLICY_VERSION) return null
-    if (parsed?.status !== "granted" && parsed?.status !== "denied") return null
-    return parsed
+    if (!raw) return false
+    const parsed = JSON.parse(raw) as StoredNotice
+    return parsed?.version === NOTICE_VERSION
   } catch {
-    return null
+    return false
   }
 }
 
-const writeStored = (status: ConsentStatus) => {
+const writeSeen = () => {
   try {
     localStorage.setItem(
       STORAGE_KEY,
       JSON.stringify({
-        status,
-        version: POLICY_VERSION,
-        decidedAt: new Date().toISOString(),
-      } satisfies StoredConsent)
+        seenAt: new Date().toISOString(),
+        version: NOTICE_VERSION,
+      } satisfies StoredNotice)
     )
   } catch {
-    // Storage unavailable, so the choice holds for this page view only and the
-    // banner will ask again next visit. Better than breaking the page.
+    // Storage unavailable, so the notice will just show again next visit.
   }
 }
 
 export const useCookieConsent = () => {
-  // null = no decision on record yet, so the banner should ask.
-  const status = useState<ConsentStatus | null>("cookie-consent", () => null)
   // Guards against rendering the banner during SSR/hydration, before we know.
-  const resolved = useState<boolean>("cookie-consent-resolved", () => false)
-  // Lets the footer re-open the banner after a decision has been made.
-  const reopened = useState<boolean>("cookie-consent-reopened", () => false)
+  const resolved = useState<boolean>("cookie-notice-resolved", () => false)
+  const seen = useState<boolean>("cookie-notice-seen", () => false)
+  // Lets the footer re-open the banner after it's been dismissed.
+  const reopened = useState<boolean>("cookie-notice-reopened", () => false)
 
-  const gtagStarted = useState<boolean>("cookie-consent-gtag", () => false)
+  const analyticsStarted = useState<boolean>("cookie-notice-analytics", () => false)
 
   const startAnalytics = () => {
-    if (import.meta.server || gtagStarted.value || isLocalHost()) return
+    if (import.meta.server || analyticsStarted.value || isLocalHost()) return
 
     const { gtag, initialize } = useGtag()
     initialize()
-    gtag("consent", "update", {
-      ad_storage: "denied",
-      ad_user_data: "denied",
-      ad_personalization: "denied",
-      analytics_storage: "granted",
+    gtag("consent", "update", { analytics_storage: "granted" })
+
+    const config = useRuntimeConfig().public
+    // Loaded dynamically to keep it out of the main bundle, not to gate it.
+    import("posthog-js").then(({ default: posthog }) => {
+      posthog.init(config.posthogPublicKey, {
+        api_host: config.posthogHost,
+        person_profiles: "identified_only",
+        capture_pageview: true,
+        capture_pageleave: true,
+      })
     })
-    gtagStarted.value = true
+
+    analyticsStarted.value = true
   }
 
-  /** Called once on app start to apply whatever the visitor decided before. */
+  /** Called once on app start: always starts analytics, and shows the notice if unseen. */
   const restore = () => {
     if (import.meta.server) return
-    const stored = readStored()
-    status.value = stored?.status ?? null
+    seen.value = readSeen()
     resolved.value = true
-    if (stored?.status === "granted") startAnalytics()
-  }
-
-  const accept = () => {
-    status.value = "granted"
-    reopened.value = false
-    writeStored("granted")
     startAnalytics()
   }
 
-  const reject = () => {
-    status.value = "denied"
+  const dismiss = () => {
+    seen.value = true
     reopened.value = false
-    writeStored("denied")
-    // Nothing to tear down: with `gtag.enabled: false` the script is never
-    // loaded until startAnalytics() runs, so declining simply leaves it unloaded.
+    writeSeen()
   }
 
-  /** Footer entry point, so a decision is never final. */
+  /** Footer entry point, so a visitor can re-read the notice any time. */
   const reopen = () => {
     reopened.value = true
   }
 
   const shouldAsk = computed(
-    () => resolved.value && (status.value === null || reopened.value)
+    () => resolved.value && (!seen.value || reopened.value)
   )
 
   return {
-    status,
     shouldAsk,
-    hasDecided: computed(() => status.value !== null),
-    accept,
-    reject,
+    dismiss,
     reopen,
     restore,
   }

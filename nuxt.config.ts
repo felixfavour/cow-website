@@ -88,19 +88,18 @@ export default defineNuxtConfig({
   },
   gtag: {
     id: 'G-SPPLWBL283',
-    // Analytics must not load until the visitor has accepted. The banner
-    // (components/CookieConsent.vue) calls initialize() once consent is given;
-    // see composables/useCookieConsent.ts.
+    // initialize() is called from useCookieConsent.ts on app start (not
+    // gated on the notice banner — analytics always runs, for attribution).
+    // Kept lazy purely to keep the script out of the initial page load.
     enabled: false,
-    initCommands: [
-      // Consent Mode v2 defaults: denied until the visitor says otherwise.
-      ['consent', 'default', {
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-        analytics_storage: 'denied',
-      }],
-    ],
+  },
+  runtimeConfig: {
+    public: {
+      // Project API key, safe for client-side code. Loaded lazily from
+      // useCookieConsent.ts on app start, same as gtag above.
+      posthogPublicKey: process.env.NUXT_PUBLIC_POSTHOG_PUBLIC_KEY || 'phc_sZj5IKRKRCd6Mv8GrthWQOlWu4ihmCFry3oQAIKrW9T',
+      posthogHost: process.env.NUXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
+    },
   },
   studio: {
     // Studio admin route (default: '/_studio')

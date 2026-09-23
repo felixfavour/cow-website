@@ -19,7 +19,8 @@
     "lottie-web": "^5.12.2",
     "nuxt": "^4.3.0",
     "nuxt-gtag": "^2.0.7",
-    "nuxt-studio": "^1.2.0"
+    "nuxt-studio": "^1.2.0",
+    "posthog-js": "^1.434.11"
   },
   "devDependencies": {
     "@nuxt/fonts": "^0.14.0",

@@ -9,9 +9,9 @@
       aria-describedby="cookie-consent-description"
     >
       <div
-        class="ml-auto w-full md:w-[380px] bg-white border border-gray-200 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.12)] p-5 flex flex-col gap-4"
+        class="ml-auto w-full md:w-[380px] bg-white border border-gray-200 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.12)] p-5 flex items-center gap-4"
       >
-        <div class="texts">
+        <div class="texts flex-1">
           <h6 id="cookie-consent-title" class="font-bold text-base mb-1">
             Cookies on Cloud of Worship
           </h6>
@@ -19,36 +19,24 @@
             id="cookie-consent-description"
             class="text-sm text-gray-600 leading-relaxed"
           >
-            We use cookies to run this site. With your permission, we also use
-            analytics cookies to see how it is used. You can change this anytime
-            from the footer.
+            We use cookies for attribution, so we know what's working. By
+            continuing to use this site, you accept that.
           </p>
         </div>
-        <div
-          class="actions flex flex-col-reverse sm:flex-row sm:justify-end gap-3 w-full"
+        <button
+          type="button"
+          class="btn-accept font-semibold text-sm px-5 py-3 rounded-lg text-white transition-opacity hover:opacity-90 shrink-0"
+          @click="dismiss"
         >
-          <button
-            type="button"
-            class="btn-reject font-semibold text-sm px-5 py-3 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors w-full sm:w-auto"
-            @click="reject"
-          >
-            Reject non-essential
-          </button>
-          <button
-            type="button"
-            class="btn-accept font-semibold text-sm px-5 py-3 rounded-lg text-white transition-opacity hover:opacity-90 w-full sm:w-auto"
-            @click="accept"
-          >
-            Accept all
-          </button>
-        </div>
+          Got it
+        </button>
       </div>
     </div>
   </Transition>
 </template>
 
 <script setup>
-const { shouldAsk, accept, reject } = useCookieConsent()
+const { shouldAsk, dismiss } = useCookieConsent()
 </script>
 
 <style scoped>
