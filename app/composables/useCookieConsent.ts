@@ -72,6 +72,9 @@ export const useCookieConsent = () => {
         person_profiles: "identified_only",
         capture_pageview: true,
         capture_pageleave: true,
+        // Session recording is opted in at the project level, so it must be
+        // switched off explicitly here or it starts by default.
+        disable_session_recording: true,
       })
     })
 
