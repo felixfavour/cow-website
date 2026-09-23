@@ -22,7 +22,15 @@
           <thead>
             <tr class="bg-purple-50">
               <th
-                class="px-4 md:px-6 py-8 text-left text-purple-900 border-b-4 md:border-b-8 border-purple-100 font-bold align-top"
+                :class="[
+                  'px-4 md:px-6 py-8 text-left text-purple-900 border-b-4 md:border-b-8 border-purple-100 font-bold align-top',
+                  // A floor per column, so a narrow screen scrolls the table
+                  // (it already has overflow-x-auto) instead of crushing the
+                  // plan columns until the price and button text wrap.
+                  index === 0
+                    ? 'min-w-[120px] md:min-w-[160px]'
+                    : 'min-w-[220px] md:min-w-[260px]',
+                ]"
                 v-for="(col, index) in columns"
                 :key="index"
               >
@@ -39,7 +47,7 @@
 
                   <!-- Price Display -->
                   <div class="flex flex-col gap-2 my-2 w-full">
-                    <div class="flex items-baseline gap-1">
+                    <div class="flex items-baseline gap-1 whitespace-nowrap">
                       <span
                         class="text-3xl md:text-4xl font-bold text-purple-900"
                       >
@@ -64,7 +72,7 @@
                       :href="planData[index - 1].url"
                       target="_blank"
                       :class="[
-                        'max-w-[230px] w-full border-btn text-center text-sm md:text-base py-2 md:py-3',
+                        'max-w-[230px] w-full border-btn text-center text-sm md:text-base py-2 md:py-3 whitespace-nowrap',
                         index === 2 ? 'shake-btn' : '',
                       ]"
                     >
@@ -81,11 +89,13 @@
               :key="rowIndex"
               class="odd:bg-white even:bg-purple-50"
             >
-              <td class="px-4 md:px-6 py-4 font-semibold align-top">
+              <td
+                class="px-4 md:px-6 py-4 font-semibold align-top min-w-[120px] md:min-w-[160px]"
+              >
                 {{ row.category }}
               </td>
               <td
-                class="px-4 md:px-6 py-4 align-top"
+                class="px-4 md:px-6 py-4 align-top min-w-[220px] md:min-w-[260px]"
                 v-for="(plan, colIndex) in row.plans"
                 :key="colIndex"
               >
@@ -349,19 +359,25 @@ const tableData = [
         "Full-text Bible search offline",
         "Multiple translations (English, Spanish, Igbo, Yoruba, Hausa, etc)",
         "Quick scripture lookup (e.g., Gen 1:1)",
+        "Sermon transcription with voice commands (20 minutes a week)",
       ],
-      ["Everything in Starter plus", "AI scripture display"],
+      [
+        "Everything in Starter plus",
+        "Sermon transcription with voice commands (3 hours a week)",
+      ],
     ],
   },
   {
     category: "Hymns & Lyrics",
     plans: [
-      ["Add & display your own song lyrics"],
+      [
+        "Add & display your own song lyrics",
+        "Access over 1,300+ hymns offline",
+        "Personal library to save songs & slides",
+      ],
       [
         "Everything in Starter plus",
-        "3,000+ hymns offline",
-        "Access growing library (13,000+ songs)",
-        "Personal library to save songs & slides",
+        "Access growing library (12,000+ songs)",
         "Create dynamic text slides",
       ],
     ],
@@ -373,12 +389,14 @@ const tableData = [
         "Slide backgrounds",
         "Slide modifications: blur, brightness, font styles",
         "Slide, lyrics, and verse transitions",
+        "Add images, audio and local video files",
         "Live output display",
+        "Stage display with service timer",
         "Media playback controls",
       ],
       [
         "Everything in Starter plus",
-        "Add images, audio, local & external videos (YouTube/Vimeo)",
+        "External video playback (YouTube/Vimeo)",
         "Slide overlays (snow, confetti, etc.)",
         "Banners & alerts",
         "Dynamic countdown slides",
@@ -388,11 +406,13 @@ const tableData = [
   {
     category: "Collaboration",
     plans: [
-      ["Live editing across multiple devices", "Real-time sync"],
+      ["Real-time sync", "Up to 5 service schedules"],
       [
         "Everything in Starter plus",
         "Workspace invitations for team members",
-        "Save multiple service schedules & access previous schedules",
+        "Live editing across multiple devices",
+        "Mobile operator app for phones and tablets",
+        "Up to 500 service schedules",
         "Livestream URL for OBS, vMix & streaming software",
       ],
     ],
@@ -409,7 +429,11 @@ const tableData = [
         "Frequent updates",
         "Free storage (up to 100MB)",
       ],
-      ["Everything in Starter plus", "Free storage up to 5GB"],
+      [
+        "Everything in Starter plus",
+        "Slide templates",
+        "Free storage up to 5GB",
+      ],
     ],
   },
 ]

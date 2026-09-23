@@ -69,7 +69,9 @@ h6 {
   border-radius: 12px;
   background-color: transparent;
   color: var(--primary-color);
-  height: 45px;
+  /* min-height, not height: a label that does wrap (a longer plan name, a
+     translated string) grows the button instead of spilling out of it. */
+  min-height: 45px;
   padding: 0.75rem 1.7rem;
   display: flex;
   align-items: center;
@@ -87,7 +89,7 @@ h6 {
   -o-transition: all 0.2s ease-in-out;
 }
 .border-btn.taller {
-  height: 50px;
+  min-height: 50px;
 }
 .border-btn:hover {
   background-color: var(--primary-color);
