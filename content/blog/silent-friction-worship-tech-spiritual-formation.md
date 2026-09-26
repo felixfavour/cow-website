@@ -66,7 +66,7 @@ Tools can make this handoff easy. For example, using Cloud of Worship lets your 
 
 Teach your volunteers to pray through the material as they prepare the service. Building a slide deck is not data entry; it is an encounter with truth.
 
-Show them how to engage with the text while they work. When they import Scripture verses—whether pulling from the ESV, NIV, or NKJV through Cloud of Worship's whole-Bible search—encourage them to read the entire chapter, not just the three verses on the screen. When they paste song lyrics, ask them to reflect on what those words confess about God's character.
+Show them how to engage with the text while they work. When they import Scripture verses—whether pulling from the KJV, NIV, or NKJV through Cloud of Worship's whole-Bible search—encourage them to read the entire chapter, not just the three verses on the screen. When they paste song lyrics, ask them to reflect on what those words confess about God's character.
 
 Give them ownership of the biblical message. If the speaker adds a last-minute reading during the sermon, your operator should know how to find it with quick keyboard shortcuts, confident that they are helping the room read the living Word of God.
 
