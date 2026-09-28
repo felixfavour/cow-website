@@ -391,7 +391,6 @@ const tableData = [
         "Slide, lyrics, and verse transitions",
         "Add images, audio and local video files",
         "Live output display",
-        "Stage display with service timer",
         "Media playback controls",
       ],
       [
@@ -400,6 +399,7 @@ const tableData = [
         "Slide overlays (snow, confetti, etc.)",
         "Banners & alerts",
         "Dynamic countdown slides",
+        "Stage display with service timer",
       ],
     ],
   },

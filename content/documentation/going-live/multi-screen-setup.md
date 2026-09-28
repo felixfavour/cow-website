@@ -3,7 +3,7 @@ title: "Multi-Screen Setup"
 description: "Assign your projector as the Live display and a second monitor as the Stage display from Display Settings."
 category: "Going Live"
 order: 3
-lastUpdated: "2026-09-12"
+lastUpdated: "2026-09-28"
 featured: true
 ---
 
@@ -28,7 +28,7 @@ If the Control Center has ended up on the wrong monitor, click **Move to primary
 CoW detects connected monitors and lists each with its label and resolution. Each screen can be assigned one of two roles:
 
 - Toggle **Live display** on the screen you want to project the service to.
-- Toggle **Stage display** on a screen facing your musicians and speakers. See [Stage display](/docs/going-live/stage-display).
+- Toggle **Stage display** on a screen facing your musicians and speakers (Teams). See [Stage display](/docs/going-live/stage-display).
 
 A screen can only hold one role at a time. Turning **Live display** on for a screen already assigned as the stage display releases it from that role first (and vice versa).
 

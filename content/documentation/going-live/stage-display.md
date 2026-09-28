@@ -3,10 +3,12 @@ title: "Stage Display"
 description: "A confidence monitor for musicians and speakers with live and next content, a service stopwatch, a private countdown and the clock."
 category: "Going Live"
 order: 4
-lastUpdated: "2026-09-16"
+lastUpdated: "2026-09-28"
 ---
 
-The Stage Display is a free confidence monitor for musicians, vocalists and speakers. It shows what's live, what's coming next, a timer and the time of day, without the Control Center's slide editing tools. A countdown sent only to the Stage Display is a Teams feature.
+*Teams feature.*
+
+The Stage Display is a confidence monitor for musicians, vocalists and speakers. It shows what's live, what's coming next, a timer and the time of day, without the Control Center's slide editing tools. On the Starter plan, opening it shows an upgrade screen instead.
 
 ## Opening it
 
@@ -31,7 +33,7 @@ The panel follows this order:
 2. **Live countdown:** If a countdown slide is live and there is no stage countdown, the panel mirrors its remaining time. Its controls stay with the live slide, so the Stage Display has no start or reset buttons for it.
 3. **Service stopwatch:** At other times, the panel counts up. Search Quick Actions for **Start Stage Clock**, **Pause Stage Clock** or **Restart Stage Clock**. The buttons on the Stage Display control this same clock.
 
-To start a private countdown, search for **Stage Display Countdown** in Quick Actions. Choose the **Stage Display** tab, set a duration, optionally add text beneath the timer, then click **Start stage countdown**. Typing a duration such as *5 min countdown* also offers an instant stage action. This requires Teams. See [Countdown timers](/docs/building-your-service/countdown-timers) for both destinations.
+To start a private countdown, search for **Stage Display Countdown** in Quick Actions. Choose the **Stage Display** tab, set a duration, optionally add text beneath the timer, then click **Start stage countdown**. Typing a duration such as *5 min countdown* also offers an instant stage action. See [Countdown timers](/docs/building-your-service/countdown-timers) for both destinations.
 
 The service stopwatch continues underneath a stage countdown. Search for **Clear Stage Countdown** to return to its current reading. A stage countdown remains at zero until you clear or restart it.
 

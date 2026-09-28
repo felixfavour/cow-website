@@ -3,7 +3,7 @@ title: "Quick Actions Reference"
 description: "Every action available in the Quick Actions Pane, grouped by what it does, with the plan it needs."
 category: "The Control Center"
 order: 6
-lastUpdated: "2026-09-16"
+lastUpdated: "2026-09-28"
 ---
 
 Actions marked **Teams** require a Teams subscription. Teams-only actions stay visible in the Quick Actions Pane with an upgrade prompt rather than being hidden, so you can always see what's available.
@@ -34,12 +34,12 @@ Actions marked **Teams** require a Teams subscription. Teams-only actions stay v
 |--------|---------------|------|
 | **Go Live** | Open the live presentation window | Free |
 | **Close Live Window** | Close the active presentation window | Free |
-| **Open Stage Display** | Open the confidence-monitor screen for musicians and speakers | Free |
+| **Open Stage Display** | Open the confidence-monitor screen for musicians and speakers | Teams |
 | **Stage Display Countdown** | Open the countdown form on its Stage Display tab | Teams |
 | **Clear Stage Countdown** | Remove the private countdown and return to the service stopwatch | Teams |
-| **Start Stage Clock** | Start or resume the active stage stopwatch or countdown | Free |
-| **Pause Stage Clock** | Pause the active stage stopwatch or countdown | Free |
-| **Restart Stage Clock** | Restart the active stage stopwatch or countdown | Free |
+| **Start Stage Clock** | Start or resume the active stage stopwatch or countdown | Teams |
+| **Pause Stage Clock** | Pause the active stage stopwatch or countdown | Teams |
+| **Restart Stage Clock** | Restart the active stage stopwatch or countdown | Teams |
 | **Promote Slide to Live** | Push the selected slide to the live output | Free |
 | **Add Banners/Alert** | Notify your audience without disruption | Teams |
 | **Remove Alert** | Remove current alert | Teams |
