@@ -82,34 +82,42 @@
         </div>
       </div>
 
-      <!-- WHAT THE DESKTOP APP ADDS -->
+      <!-- BROWSER FIRST, DESKTOP FOR NDI -->
       <div class="comparison mt-[12%] md:mt-[7%]">
         <h2
           class="text-3xl md:text-4xl 2xl:text-5xl font-bold text-center max-w-[800px] mx-auto"
         >
-          What you get that the
-          <span class="emphasis-text">browser can't do</span>.
+          Your browser already
+          <span class="emphasis-text">does it all</span>.
         </h2>
+        <p
+          class="text-center xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[60%] mx-auto mt-4"
+        >
+          Every slide type, schedule, setting and shortcut works in the browser,
+          on any computer, with nothing to install. Most churches never need
+          more than that.
+        </p>
 
-        <div class="grid md:grid-cols-2 gap-4 md:gap-6 mt-[7%] md:mt-[4%]">
-          <div
-            v-for="item in advantages"
-            :key="item.title"
-            class="p-6 md:p-8 rounded-[24px] bg-gray-50 border border-gray-100"
-          >
-            <h3 class="text-xl font-bold">{{ item.title }}</h3>
-            <p class="mt-2 text-sm md:text-base">{{ item.body }}</p>
+        <div
+          class="max-w-[560px] mx-auto mt-[7%] md:mt-[4%] p-6 md:p-8 rounded-[24px] bg-gray-50 border border-gray-100"
+        >
+          <div class="text-sm font-bold text-[#FF8980]">
+            The one thing the desktop app adds
           </div>
+          <h3 class="mt-2 text-xl font-bold">{{ ndi.title }}</h3>
+          <p class="mt-2 text-sm md:text-base">{{ ndi.body }}</p>
         </div>
 
         <p class="text-center text-sm mt-6">
-          Everything else, every slide type, schedule, setting and shortcut,
-          works identically in both.
+          <a :href="appUrl" class="font-bold underline underline-offset-4">
+            Open Cloud of Worship in your browser
+          </a>
+          <span class="mx-2">·</span>
           <a
             href="/docs/settings-and-shortcuts/desktop-app"
             class="font-bold underline underline-offset-4"
           >
-            Read the full guide
+            Read the desktop guide
           </a>
         </p>
       </div>
@@ -216,16 +224,10 @@ const detectPlatform = () => {
   return "other"
 }
 
-const advantages = [
-  {
-    title: "Real projector windows",
-    body: "The live and stage displays open as native windows on the monitor you pick. No popup blockers.",
-  },
-  {
-    title: "NDI for your livestream",
-    body: "Publish the live output to OBS, vMix or a switcher over your local network, with no capture card and no second computer running a browser.",
-  },
-]
+const ndi = {
+  title: "NDI for your livestream",
+  body: "Publish the live output to OBS, vMix or a switcher over your local network, with no capture card and no second computer running a browser.",
+}
 
 const installSteps = [
   "Download the installer above. It is named <code>Cloud.of.Worship_&lt;version&gt;_x64-setup.exe</code>.",
