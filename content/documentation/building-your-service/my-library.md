@@ -2,7 +2,7 @@
 title: "My Library"
 description: "Your permanent, schedule-independent store of saved songs and slides."
 category: "Building Your Service"
-order: 11
+order: 12
 lastUpdated: "2026-09-03"
 ---
 

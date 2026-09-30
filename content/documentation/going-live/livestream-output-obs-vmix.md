@@ -3,12 +3,16 @@ title: "Livestream Output (OBS / vMix)"
 description: "Feed your live slides into OBS, vMix or similar software as a browser source, so your online congregation sees the same lyrics and scripture as the room."
 category: "Going Live"
 order: 7
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-30"
 ---
 
-*Teams feature.*
+*Unlimited on Teams. Free churches get 5 sessions.*
 
-Beyond the projector, CoW can feed your **online stream**. Click **Go Live → Copy livestream URL** (*"Copy link for OBS, VMix or similar software"*). You'll get a toast confirming *"Livestream URL copied to clipboard."*
+Beyond the projector, CoW can feed your **online stream**. Click **Go Live → Copy livestream link**. You'll get a toast confirming *"Livestream URL copied to clipboard."*
+
+## On the Free plan
+
+Each church on Free gets **5 livestream sessions**. Streaming a schedule on a new day uses one, so a Sunday service and a midweek service are two sessions. The **Go Live** menu shows how many are left, for example *"3 of 5 free sessions left"*. Once they are used, the link shows an upgrade message instead of your slides. See [Plans](/docs/teams-and-collaboration/plans-free-vs-teams#free-allowances).
 
 ## Using the URL
 

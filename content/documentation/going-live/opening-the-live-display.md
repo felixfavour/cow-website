@@ -3,7 +3,7 @@ title: "Opening the Live Display"
 description: "Go Live opens the projection window. Drag it to your projector, go fullscreen, and you're ready to promote slides."
 category: "Going Live"
 order: 1
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-30"
 featured: true
 ---
 
@@ -11,8 +11,10 @@ Click **Go Live** in the Slide Schedule Pane header. It opens a small menu:
 
 | Option | What it does |
 |--------|--------------|
-| **Open Live Window** | *"Opens another browser window with live display"*. Drag this to your projector |
-| **Copy livestream URL** | *"Copy link for OBS, VMix or similar software"*. Teams only, see [Livestream output](/docs/going-live/livestream-output-obs-vmix) |
+| **Open live window** | Opens another browser window with the live display. Drag this to your projector |
+| **Open stage display** | Opens the confidence monitor for musicians and speakers. Teams, see [Stage Display](/docs/going-live/stage-display) |
+| **Copy livestream link** | A link for OBS, vMix or similar software. Free churches get 5 sessions, see [Livestream output](/docs/going-live/livestream-output-obs-vmix) |
+| **Copy stage display link** | Opens the stage display on any phone, tablet or TV. Teams, see [Stage Display](/docs/going-live/stage-display#on-a-phone-tablet-or-tv) |
 
 ::callout{type="important" title="Go Live opens the window, not a slide"}
 **Go Live** opens the output *window*. It does not by itself put a slide on screen. Once the window is open, the button becomes **End Live Session**. To show something, [promote a slide](/docs/going-live/promoting-slides).

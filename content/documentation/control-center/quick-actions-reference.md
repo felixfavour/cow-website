@@ -3,10 +3,10 @@ title: "Quick Actions Reference"
 description: "Every action available in the Quick Actions Pane, grouped by what it does, with the plan it needs."
 category: "The Control Center"
 order: 6
-lastUpdated: "2026-09-28"
+lastUpdated: "2026-09-30"
 ---
 
-Actions marked **Teams** require a Teams subscription. Teams-only actions stay visible in the Quick Actions Pane with an upgrade prompt rather than being hidden, so you can always see what's available.
+Actions marked **Teams** require a Teams subscription. Teams-only actions stay visible in the Quick Actions Pane rather than being hidden. Many of them open on the Free plan so you can try them, and ask you to upgrade only when you create the slide. See [Trying Teams features on Free](/docs/teams-and-collaboration/plans-free-vs-teams#trying-teams-features-on-free).
 
 ## Content creation
 
@@ -23,6 +23,7 @@ Actions marked **Teams** require a Teams subscription. Teams-only actions stay v
 | **Add Media** | Display image, video or audio media | Free |
 | **Add Time Slide** | Display the current time on a slide | Teams |
 | **Add Countdown Timer** | Open the countdown form for a live slide or private stage timer | Teams |
+| **Add Interlude** | An animated break screen with a heading and sub text | Teams |
 | **Slide Templates** | Use pre-made, fancy slide templates | Teams |
 | **Add YouTube Video** | Embed YouTube videos | Teams |
 | **Add Vimeo Video** | Embed Vimeo videos | Teams |

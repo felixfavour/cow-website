@@ -3,7 +3,7 @@ title: "Your First Five Minutes"
 description: "From login to a Bible verse on your projector in five short steps."
 category: "Getting Started"
 order: 5
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-30"
 featured: true
 ---
 
@@ -27,7 +27,7 @@ From the **Quick Actions Pane** on the left, click **Display Bible** and search 
 
 ## 4. Open the live window
 
-Click **Go Live → Open Live Window** in the Slide Schedule Pane header, and drag that window to your projector. Double-click it (or press **F**) to go fullscreen.
+Click **Go Live → Open live window** in the Slide Schedule Pane header, and drag that window to your projector. Double-click it (or press **F**) to go fullscreen.
 
 ## 5. Promote the slide
 

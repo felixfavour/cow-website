@@ -3,7 +3,7 @@ title: "Stage Display"
 description: "A confidence monitor for musicians and speakers with live and next content, a service stopwatch, a private countdown and the clock."
 category: "Going Live"
 order: 4
-lastUpdated: "2026-09-28"
+lastUpdated: "2026-09-30"
 ---
 
 *Teams feature.*
@@ -13,6 +13,12 @@ The Stage Display is a confidence monitor for musicians, vocalists and speakers.
 ## Opening it
 
 Open it with the **Open Stage Display** quick action, or by assigning a monitor to it in **Settings → Display Settings**. See [Multi-screen setup](/docs/going-live/multi-screen-setup).
+
+## On a phone, tablet or TV
+
+Click **Go Live → Copy stage display link** and open the link on any device with a browser. It shows the same Now, Next and timer panels as the Stage Display, and the layout adapts to phones held either way up.
+
+The link only ever shows what's live and what's next. It carries no schedule or Bible data, so it is safe to send to the band's group chat. It updates only while the presentation computer is running the service, and it shows a connection status when it is reconnecting. The timer on the link is read-only: start, pause and reset stay on the presentation computer.
 
 ## Four panels
 
@@ -51,6 +57,6 @@ Nothing on the Stage Display can edit a slide or take one live. Its start, pause
 
 ## It runs from the operator's computer
 
-The Stage Display is fed directly by the Control Center on the same machine, so plug the stage screen into the presentation computer rather than signing in on a separate device. You can run more than one from that computer, for example one for the worship team and one for the preacher.
+The Stage Display window is fed directly by the Control Center on the same machine, so plug the stage screen into the presentation computer. You can run more than one from that computer, for example one for the worship team and one for the preacher. For a screen that isn't plugged in, use the [stage display link](#on-a-phone-tablet-or-tv) instead.
 
 Stage clock actions are available on that computer, not from a phone. Controlling live slides from a separate device is a different job. See [using CoW on your phone](/docs/teams-and-collaboration/using-cloud-of-worship-on-your-phone).

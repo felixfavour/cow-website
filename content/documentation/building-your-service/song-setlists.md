@@ -2,7 +2,7 @@
 title: "Song Setlists"
 description: "Hold several songs in order on a single slide, so you can move through a worship medley without juggling separate slides."
 category: "Building Your Service"
-order: 12
+order: 13
 lastUpdated: "2026-09-03"
 ---
 

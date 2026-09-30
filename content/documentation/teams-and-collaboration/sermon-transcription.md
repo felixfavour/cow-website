@@ -3,10 +3,10 @@ title: "Sermon Transcription"
 description: "Turn your microphone into a live note-taker that surfaces relevant Bible passages automatically as you preach. A Teams feature."
 category: "Teams & Collaboration"
 order: 2
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-30"
 ---
 
-*Teams feature.* Open with **Transcribe Sermon**.
+*Teams feature, with 10 free minutes on Free.* Open with **Transcribe Sermon**.
 
 > *"Transcribe Sermon turns your microphone into a live note-taker; capturing what's being said and surfacing relevant Bible passages automatically as you preach."*
 
@@ -19,6 +19,10 @@ lastUpdated: "2026-09-03"
 | **AI scripture suggestions** | Related verses surface even when you don't quote them directly |
 
 The panel has two tabs, **Transcripts** and **Scriptures**. Before anything is detected the Scriptures tab reads *"Scriptures matching the sermon will appear here automatically."*
+
+## How much you can transcribe
+
+Teams includes **3 hours of transcription every week**, and the limit resets every Monday. A church on Free gets **10 minutes** once, to try it on a real sermon. The panel shows how many free minutes are left, and the timer turns amber when you're close to the end. Once the free minutes are used, transcription is part of Teams.
 
 ## Setup
 

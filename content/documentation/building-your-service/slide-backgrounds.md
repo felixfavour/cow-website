@@ -2,7 +2,7 @@
 title: "Slide Backgrounds"
 description: "Add an image, video, colour or gradient behind a slide, tune blur and brightness, and pick how media fills the screen."
 category: "Building Your Service"
-order: 10
+order: 11
 lastUpdated: "2026-09-03"
 ---
 

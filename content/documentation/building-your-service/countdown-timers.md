@@ -3,10 +3,12 @@ title: "Countdown Timers"
 description: "Create a countdown slide for the congregation or run a private countdown on the stage display. A Teams feature."
 category: "Building Your Service"
 order: 7
-lastUpdated: "2026-09-16"
+lastUpdated: "2026-09-30"
 ---
 
-*Teams feature.* Quick Actions has two countdown destinations. Use **Live Display** when the congregation should see the timer, or **Stage Display** when only the band and speaker need it.
+*Teams feature.* On the Free plan the form still opens so you can try it, and the upgrade prompt appears when you create or start the countdown.
+
+Quick Actions has two countdown destinations. Use **Live Display** when the congregation should see the timer, or **Stage Display** when only the band and speaker need it.
 
 ## Countdown slide for the congregation
 

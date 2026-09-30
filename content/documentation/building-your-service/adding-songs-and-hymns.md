@@ -3,7 +3,7 @@ title: "Adding Songs & Hymns"
 description: "Save your own songs to My Library, pull lyrics for any song, and find hymns by title or number."
 category: "Building Your Service"
 order: 4
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-30"
 ---
 
 ## Adding a song
@@ -23,7 +23,9 @@ There's also a **Share this song with other users?** option when saving.
 
 ## Searching song lyrics
 
-Use **Search song lyrics** to pull lyrics for a song you haven't saved.
+Use **Search song lyrics** to pull lyrics for a song you haven't saved. Matching words are highlighted in the results, and hovering a result scrolls its preview to the line that best matches your search.
+
+*Teams feature, with 10 free songs a month on Free.* Searching and previewing is always free. On the Free plan, adding a song from the results to your schedule uses one of the month's **10 library songs**, and the panel shows how many are left. The count resets at midnight UTC on the 1st of each month. Teams has no limit.
 
 ## Hymns
 

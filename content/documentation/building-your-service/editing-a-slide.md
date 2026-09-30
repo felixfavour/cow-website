@@ -2,7 +2,7 @@
 title: "Editing a Slide"
 description: "Change the font, size, lines per slide and background of a single slide, even while it's live."
 category: "Building Your Service"
-order: 9
+order: 10
 lastUpdated: "2026-09-03"
 ---
 

@@ -3,7 +3,7 @@ title: "The Guided Tour"
 description: "A two-minute, nine-step spotlight tour that appears the first time you reach the Control Center with a slide on your schedule."
 category: "Getting Started"
 order: 6
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-09-30"
 ---
 
 The first time you reach the Control Center with a slide on your schedule, CoW opens a welcome card:
@@ -20,7 +20,7 @@ Click **"Show me around"** to start it, or dismiss it. It doesn't reappear on it
 3. **Preview and Edit Content**: where new slides land.
 4. **Slide Schedule**: your running order. Drag to reorder, click to take live.
 5. **Live Preview**: exactly what your congregation would see.
-6. **Go Live**: open the live window or copy a livestream URL.
+6. **Go Live**: open the live window or stage display, or copy a livestream or stage display link.
 7. **Open a Bible slide**: interactive. The tour pauses here and asks you to actually select or create a Bible slide (try typing a reference like `John 3 16` in the search bar) before continuing.
 8. **Verse Switcher**: type a reference and press Enter. Shorthand works (for example `mat 28 19` → Matthew 28:19).
 9. **Text Formatting**: the toolbar for sizing and styling text.
