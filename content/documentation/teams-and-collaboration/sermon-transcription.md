@@ -22,7 +22,7 @@ The panel has two tabs, **Transcripts** and **Scriptures**. Before anything is d
 
 ## How much you can transcribe
 
-Teams includes **3 hours of transcription every week**, and the limit resets every Monday. A church on Free gets **10 minutes** once, to try it on a real sermon. The panel shows how many free minutes are left, and the timer turns amber when you're close to the end. Once the free minutes are used, transcription is part of Teams.
+Teams includes **3 hours of transcription every week**, and the limit resets every Monday. Minutes you don't use roll over into the next week, so a quiet week leaves you up to 6 hours for the one after. Rollover only carries one week: minutes that were rolled over don't roll again. A church on Free gets **10 minutes** once, to try it on a real sermon. The panel shows how many free minutes are left, and the timer turns amber when you're close to the end. Once the free minutes are used, transcription is part of Teams.
 
 ## Setup
 

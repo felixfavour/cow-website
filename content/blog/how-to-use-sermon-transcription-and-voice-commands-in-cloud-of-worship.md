@@ -176,7 +176,7 @@ Say the complete book, chapter, and verse, then pause briefly. For example, say 
 
 ### The Weekly Timer Reaches Zero
 
-Online transcription stops when your account's weekly allowance is used. The allowance resets on Monday.
+Online transcription stops when your account's weekly allowance is used. The allowance resets on Monday, and any minutes you didn't use last week are added to it.
 
 ## A Simpler Way to Follow the Sermon
 

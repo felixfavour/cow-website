@@ -24,4 +24,4 @@ If the connection drops while you import a PDF or add images, CoW keeps the file
 
 ## Transcription stopped: "Your free minutes are used"
 
-Free churches get 10 transcription minutes once. On Teams the limit is 3 hours a week and resets every Monday. See [Sermon transcription](/docs/teams-and-collaboration/sermon-transcription#how-much-you-can-transcribe).
+Free churches get 10 transcription minutes once. On Teams the limit is 3 hours a week, plus whatever you didn't use the week before, and it resets every Monday. See [Sermon transcription](/docs/teams-and-collaboration/sermon-transcription#how-much-you-can-transcribe).

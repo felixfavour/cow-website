@@ -359,11 +359,11 @@ const tableData = [
         "Full-text Bible search offline",
         "Multiple translations (English, Spanish, Igbo, Yoruba, Hausa, etc)",
         "Quick scripture lookup (e.g., Gen 1:1)",
-        "Sermon transcription with voice commands (20 minutes a week)",
+        "Sermon transcription with voice commands (10 minutes to try it)",
       ],
       [
         "Everything in Starter plus",
-        "Sermon transcription with voice commands (3 hours a week)",
+        "Sermon transcription with voice commands (3 hours a week, unused minutes roll over)",
       ],
     ],
   },

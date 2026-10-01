@@ -22,7 +22,7 @@ lastUpdated: "2026-09-30"
 | **Time slides** | — | ✅ |
 | **Interlude slides** | — | ✅ |
 | **YouTube / Vimeo embeds** | — | ✅ |
-| **Sermon transcription** | 10 minutes, once | 3 hours a week |
+| **Sermon transcription** | 10 minutes, once | 3 hours a week, unused minutes roll over a week |
 | **Inviting teammates** | — | ✅ |
 | **Livestream URL (OBS / vMix)** | 5 sessions | Unlimited |
 | **Stage Display and stage display link** | — | ✅ |
