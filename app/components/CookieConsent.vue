@@ -11,11 +11,6 @@
       <div
         class="ml-auto w-full md:w-[456px] bg-white border border-gray-200 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.12)] p-5 flex items-center gap-4"
       >
-        <div
-          class="cookie-icon shrink-0 w-10 h-10 rounded-full flex items-center justify-center"
-        >
-          <PhCookie :size="22" weight="duotone" aria-hidden="true" />
-        </div>
         <div class="texts flex-1">
           <h6 id="cookie-consent-title" class="font-bold text-base mb-1">
             A cookie for a cookie 🍪
@@ -40,19 +35,12 @@
 </template>
 
 <script setup>
-import { PhCookie } from '@phosphor-icons/vue'
-
 const { shouldAsk, dismiss } = useCookieConsent()
 </script>
 
 <style scoped>
 .btn-accept {
   background-color: var(--primary-color);
-}
-
-.cookie-icon {
-  background-color: color-mix(in srgb, var(--primary-color) 12%, white);
-  color: var(--primary-color);
 }
 
 .policy-link {
