@@ -7,7 +7,7 @@ lastUpdated: "2026-10-13"
 ---
 
 ::callout{type="warning" title="Partly resolved"}
-Most Bible translations and all built-in background videos work again. Media uploaded before the incident is still being restored. We will update this page when everything is back.
+19 of our 38 Bible translations and all preset background videos work again. Media uploaded before the incident is still being restored. We will update this page when everything is back.
 ::
 
 ## Summary
@@ -42,7 +42,7 @@ We resolved the billing issue, but the account has not been reopened yet. AWS ha
 ## What we have done so far
 
 - **Bible translations:** 19 of our 38 translations work again, including KJV, NIV, NKJV, ESV, NLT, AMP and the Nigerian language Bibles.
-- **Background videos:** the six built-in background videos work again.
+- **Background videos:** the six preset background videos work again.
 - **New storage:** we set up a second storage provider, Cloudflare, so new uploads no longer depend on AWS.
 - **Smarter loading:** the app now checks the new storage first and falls back to the old location, so files start working as soon as we move them.
 - **AWS:** we resolved the billing issue and are pressing AWS to reopen the account.
