@@ -3,7 +3,7 @@ title: "Editing a Slide"
 description: "Change the font, size, lines per slide and background of a single slide, even while it's live."
 category: "Building Your Service"
 order: 10
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-10-12"
 ---
 
 Select a slide in the Preview and Edit Content Pane:
@@ -17,6 +17,7 @@ Select a slide in the Preview and Edit Content Pane:
 | **Font dropdown** | Typeface for this slide |
 | **− 90 +** | Font size percentage |
 | **Lines** | Lines of content per slide |
+| **Fit each line on one row** | Song, setlist and hymn slides only. Shrinks the words just enough that no line wraps, instead of shrinking the whole verse to fit |
 | **Background** | Opens the background panel. See [Slide backgrounds](/docs/building-your-service/slide-backgrounds) |
 | **Go Live** | Promote this exact slide immediately |
 

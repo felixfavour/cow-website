@@ -3,7 +3,7 @@ title: "Plans: Free vs Teams"
 description: "What's included on the Free plan, what Teams unlocks, and how your plan is tied to your church."
 category: "Teams & Collaboration"
 order: 3
-lastUpdated: "2026-09-30"
+lastUpdated: "2026-10-12"
 ---
 
 | | Free | Teams |
@@ -14,7 +14,7 @@ lastUpdated: "2026-09-30"
 | Dark mode, shortcuts, all settings | ✅ | ✅ |
 | Desktop app and NDI output | ✅ | ✅ |
 | Offline use and Bible downloads | ✅ | ✅ |
-| **Search song lyrics** | 10 songs a month | Unlimited |
+| **Search song lyrics** | 50 songs a month | Unlimited |
 | **Slide Templates** | — | ✅ |
 | **Alerts / banners** | — | ✅ |
 | **Overlays** | — | ✅ |
@@ -43,7 +43,7 @@ Three features are metered on Free rather than locked, so you can use them for r
 
 | Feature | Free allowance | How it's counted |
 |---------|----------------|------------------|
-| **Search song lyrics** | 10 songs a month | Search is free. Adding a song from the results to your schedule uses one. The count resets at midnight UTC on the 1st of each month. |
+| **Search song lyrics** | 50 songs a month | Search is free. Adding a song from the results to your schedule uses one. The count resets at midnight UTC on the 1st of each month. |
 | **Sermon transcription** | 10 minutes | A one-off allowance per church. The panel shows how many free minutes are left. |
 | **Livestream URL** | 5 sessions | Streaming a schedule on a new day uses one session. The **Go Live** menu shows how many are left. |
 
@@ -56,6 +56,15 @@ Your plan comes from your **church** record, not your personal user record. When
 ::callout{type="warning" title="Expiry heads-up"}
 If your Teams subscription is within **7 days of expiring**, a banner appears across the top of the Control Center.
 ::
+
+## If a payment fails
+
+If your latest Teams payment doesn't go through, a red banner appears in **App Settings → Subscription Settings** with two buttons:
+
+- **Retry payment** tries the charge again. A decline shows the bank's reason. If the charge is still pending, CoW checks until it clears and Teams returns by itself. If your bank needs you to confirm, its confirmation page opens.
+- **Update payment method** lets you switch to a different card.
+
+For the first 3 days the banner tells you when Teams features switch off. After that it tells you until when the payment can still be fixed. **Update payment method** also sits next to **Cancel Subscription**, so you can change your card at any time. If you click a Teams feature while a payment is overdue, the upgrade prompt sends you to fix the payment instead of starting a second subscription. Once the payment clears, Teams features unlock straight away.
 
 ## Upgrading
 

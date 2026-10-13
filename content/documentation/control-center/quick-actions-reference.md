@@ -3,7 +3,7 @@ title: "Quick Actions Reference"
 description: "Every action available in the Quick Actions Pane, grouped by what it does, with the plan it needs."
 category: "The Control Center"
 order: 6
-lastUpdated: "2026-09-30"
+lastUpdated: "2026-10-12"
 ---
 
 Actions marked **Teams** require a Teams subscription. Teams-only actions stay visible in the Quick Actions Pane rather than being hidden. Many of them open on the Free plan so you can try them, and ask you to upgrade only when you create the slide. See [Trying Teams features on Free](/docs/teams-and-collaboration/plans-free-vs-teams#trying-teams-features-on-free).
@@ -71,4 +71,4 @@ Typing a duration such as *5 min countdown* offers instant actions for both the 
 | **Upgrade Plan** | Move to Teams | Free |
 | **Sign Out** | Sign out of your account | Free |
 
-Individual settings pages are directly searchable too: *Profile Settings, Display Settings, Bible Version Settings, Microphone Settings, Slide Settings, Slide Background Settings, Overlay Settings, Blank Settings, Storage Settings, Subscription Settings, Other Settings.* See the [Settings reference](/docs/settings-and-shortcuts/settings-reference).
+Individual settings pages are directly searchable too: *Profile Settings, Display Settings, Bible Version Settings, Microphone Settings, Slide Settings, Slide Background Settings, Overlay Settings (opens Other Settings), Blank Settings, Storage Settings, Subscription Settings, Other Settings.* See the [Settings reference](/docs/settings-and-shortcuts/settings-reference).

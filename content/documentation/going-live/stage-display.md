@@ -3,7 +3,7 @@ title: "Stage Display"
 description: "A confidence monitor for musicians and speakers with live and next content, a service stopwatch, a private countdown and the clock."
 category: "Going Live"
 order: 4
-lastUpdated: "2026-09-30"
+lastUpdated: "2026-10-12"
 ---
 
 *Teams feature.*
@@ -16,9 +16,15 @@ Open it with the **Open Stage Display** quick action, or by assigning a monitor 
 
 ## On a phone, tablet or TV
 
-Click **Go Live → Copy stage display link** and open the link on any device with a browser. It shows the same Now, Next and timer panels as the Stage Display, and the layout adapts to phones held either way up.
+Click **Go Live → Copy stage display link** and open the link on any device with a browser. The link ends in the schedule's 6-character code. If you'd rather type it, open `/stagestream`, enter the code on the **Open the stage display** screen and the same board opens. It shows the same Now, Next and timer panels as the Stage Display, and the layout adapts to phones held either way up.
 
 The link only ever shows what's live and what's next. It carries no schedule or Bible data, so it is safe to send to the band's group chat. It updates only while the presentation computer is running the service, and it shows a connection status when it is reconnecting. The timer on the link is read-only: start, pause and reset stay on the presentation computer.
+
+## Slide pictures and a closed console
+
+When the live or next slide is a presentation page or an image, the Now and Next panels show the picture, fitted edge to edge, on the Stage Display and on the stage display link. Video slides still show a placeholder.
+
+If the Control Center is closed or crashes, the Stage Display shows a warning row instead of leaving stale words on screen as if they were live. Reopen the Control Center and it carries on.
 
 ## Four panels
 

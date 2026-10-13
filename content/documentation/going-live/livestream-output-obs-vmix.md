@@ -3,7 +3,7 @@ title: "Livestream Output (OBS / vMix)"
 description: "Feed your live slides into OBS, vMix or similar software as a browser source, so your online congregation sees the same lyrics and scripture as the room."
 category: "Going Live"
 order: 7
-lastUpdated: "2026-09-30"
+lastUpdated: "2026-10-12"
 ---
 
 *Unlimited on Teams. Free churches get 5 sessions.*
@@ -23,6 +23,10 @@ It shows a **connection status indicator** when connecting or disconnected, and 
 ::callout{type="important" title="The URL is per schedule"}
 The URL is tied to the **currently active schedule**. If you switch schedules, copy a fresh URL.
 ::
+
+## The schedule code
+
+The copied link ends in the schedule's **6-character code**, for example `/livestream/AB12CD`. The code also shows on each schedule row in the schedule list, before *Created*. Anyone can open `/livestream` on its own and type the code into the **Watch the livestream** screen. It tells you if the code is unknown, if there were too many attempts, or if CoW can't be reached. Older links that use the long schedule ID keep working.
 
 ## Step-by-step guides
 
