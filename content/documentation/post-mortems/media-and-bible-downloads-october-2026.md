@@ -33,14 +33,10 @@ We resolved the billing issue, but the account has not been reopened yet. AWS ha
 
 ## Timeline
 
-All times are West Africa Time (WAT).
-
 | Date | What happened |
 |------|---------------|
-| 13 October | New storage provider set up. Bible translations and background videos copied to it. New uploads are being switched over. |
+| 13 October | New storage provider set up. 19 Bible translations and all background videos moved to it. New uploads are being switched over. |
 | 11 to 13 October | Billing issue resolved and support case opened with AWS. Still waiting on a response. |
-| 11 October, about 6:30am | 15 Bible translations made available inside the app itself. |
-| 11 October, about 5:45am | Background videos and the most used Bible translations switched to copies inside the app. |
 | Around 11 October | AWS suspended our account. Media downloads and uploads began to fail. |
 
 ## What we have done so far
@@ -66,7 +62,6 @@ All times are West Africa Time (WAT).
 
 - **Billing:** we are adding a backup payment method and reminders so a billing issue cannot interrupt service again.
 - **Backups:** media will be kept with more than one provider, so one account problem cannot lock your files.
-- **Built-in copies:** core Bible translations and background videos now ship inside the app and work even when our storage is down.
 
 We are sorry. Sunday services depend on Cloud of Worship, and this should not have happened.
 
