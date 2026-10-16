@@ -32,22 +32,33 @@
         </div>
       </div>
       <div
-        class="hero-media h-[295px] md:h-[450px] lg:h-[650px] flex justify-center items-end relative overflow-hidden"
+        class="hero-media pt-[25px] md:pt-[50px] flex justify-center items-end relative overflow-hidden"
       >
         <div
-          class="main-hero-img pt-[5%] border-4 md:border-8 border-b-0 md:border-b-0 border-gray-100 rounded-t-[16px] md:rounded-t-[32px] h-[220px] md:h-[400px] lg:h-[600px] w-[100%] md:w-[1050px]"
-        ></div>
-        <div class="live-slide absolute right-[1%] md:right-[4%] -bottom-[0%]">
-          <video
-            class="border-4 md:border-8 border-b-0 bg-gray-300 border-gray-300 rounded-t-[16px] md:rounded-t-[24px] w-[200px] md:w-[400px]"
-            src="https://revaise.s3.us-east-2.amazonaws.com/website/live-slide.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            poster="https://revaise.s3.us-east-2.amazonaws.com/website/live-poster.webp"
+          class="main-hero-video relative overflow-hidden bg-black border-4 md:border-8 border-b-0 md:border-b-0 border-gray-100 rounded-t-[16px] md:rounded-t-[32px] w-[100%] md:w-[1050px]"
+          style="aspect-ratio: 16 / 9"
+        >
+          <!-- Thumbnail paints first; the YouTube player only loads once the page is idle -->
+          <img
+            :src="`https://i.ytimg.com/vi_webp/${heroVideoId}/maxresdefault.webp`"
+            alt="Cloud of Worship in 45 seconds"
+            width="1280"
+            height="720"
+            fetchpriority="high"
+            decoding="async"
+            class="absolute inset-0 w-full h-full object-cover"
           />
-          <LiveSlideIndicator visible class="top-3 right-4 scale-75" />
+          <iframe
+            v-if="loadHeroVideo"
+            :src="heroVideoSrc"
+            title="Cloud of Worship in 45 seconds"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"
+            class="absolute inset-0 w-full h-full transition-opacity duration-500"
+            :class="heroVideoReady ? 'opacity-100' : 'opacity-0'"
+            @load="heroVideoReady = true"
+          />
         </div>
       </div>
     </div>
@@ -174,6 +185,12 @@
 const { mergeUtmsIntoUrl } = useUtm()
 const { churchCountLabel } = useChurchCount()
 const showTestimonialPopup = ref(false)
+
+const heroVideoId = "uXHuISXJ7yE"
+const heroVideoSrc = `https://www.youtube-nocookie.com/embed/${heroVideoId}?autoplay=1&mute=1&loop=1&playlist=${heroVideoId}&playsinline=1&rel=0&modestbranding=1`
+const loadHeroVideo = ref(false)
+const heroVideoReady = ref(false)
+
 useHead({
   title: "Cloud of Worship - Presentation software for your growing church",
 })
@@ -195,6 +212,14 @@ useSeoMeta({
 useOgCard("home")
 
 onMounted(() => {
+  // Defer the YouTube player (~1MB of JS) until after the page has loaded and gone idle
+  const startHeroVideo = () => {
+    const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200))
+    idle(() => (loadHeroVideo.value = true))
+  }
+  if (document.readyState === "complete") startHeroVideo()
+  else window.addEventListener("load", startHeroVideo, { once: true })
+
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
     useGtag()
   }
@@ -220,10 +245,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.main-hero-img {
-  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/hero-main.webp");
-  background-size: cover;
-}
 .img-wrapper.one {
   background: url("https://revaise.s3.us-east-2.amazonaws.com/website/browser-first.webp")
     no-repeat;
