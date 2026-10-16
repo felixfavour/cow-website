@@ -1,17 +1,21 @@
 <template>
   <div class="announcement-banner bg-[#FF6F65] text-white py-3 px-4 text-center relative">
     <div class="inner flex items-center justify-center">
-      <a 
-        :href="announcementUrl"
-        class="flex items-center justify-center gap-2 text-sm md:text-base font-medium hover:underline hover:opacity-90 transition-opacity"
-      >
-        <span>📢 Cloud of Worship is evolving! Learn what's changing</span>
-        <span class="text-xs md:text-sm">→</span>
-      </a>
+      <p class="text-sm md:text-base font-medium">
+        After 2 years we know, we can tell what the future of church projection looks like.
+        <a
+          :href="announcementUrl"
+          target="_blank"
+          rel="noopener"
+          class="underline underline-offset-2 whitespace-nowrap hover:opacity-90 transition-opacity"
+        >
+          Register for Horizon →
+        </a>
+      </p>
     </div>
   </div>
 </template>
 
 <script setup>
-const announcementUrl = 'https://www.cloudofworship.com/blog/cloud-of-worship-is-evolving-heres-whats-changing'
+const announcementUrl = 'https://luma.com/yerxbo0d'
 </script>
