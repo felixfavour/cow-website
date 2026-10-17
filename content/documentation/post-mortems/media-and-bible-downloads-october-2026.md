@@ -3,11 +3,11 @@ title: "Media and Bible downloads, October 2026"
 description: "Why some media and Bible translations would not download from 11 October 2026, what we have restored, and what is still left."
 category: "Post Mortems"
 order: 1
-lastUpdated: "2026-10-13"
+lastUpdated: "2026-10-17"
 ---
 
 ::callout{type="warning" title="Partly resolved"}
-19 of our 38 Bible translations and all preset background videos work again. Media uploaded before the incident is still being restored. We will update this page when everything is back.
+All 38 Bible translations and all preset background videos work again. Media uploaded before the incident is still being restored. We will update this page when everything is back.
 ::
 
 ## Summary
@@ -35,13 +35,14 @@ We resolved the billing issue, but the account has not been reopened yet. AWS ha
 
 | Date | What happened |
 |------|---------------|
+| 17 October | The remaining 19 Bible translations restored, including MSG, TPT, WEB and the non-English Bibles. All 38 translations now work. |
 | 13 October | New storage provider set up. 19 Bible translations and all background videos moved to it. New uploads are being switched over. |
 | 11 to 13 October | Billing issue resolved and support case opened with AWS. Still waiting on a response. |
 | Around 11 October | AWS suspended our account. Media downloads and uploads began to fail. |
 
 ## What we have done so far
 
-- **Bible translations:** 19 of our 38 translations work again, including KJV, NIV, NKJV, ESV, NLT, AMP and the Nigerian language Bibles.
+- **Bible translations:** all 38 translations work again. 19 came back on 13 October, including KJV, NIV, NKJV, ESV, NLT, AMP and the Nigerian language Bibles. The other 19, including MSG, TPT, WEB and the non-English Bibles, were rebuilt from public sources and checked against second copies on 17 October.
 - **Background videos:** the six preset background videos work again.
 - **New storage:** we set up a second storage provider, Cloudflare, so new uploads no longer depend on AWS.
 - **Smarter loading:** the app now checks the new storage first and falls back to the old location, so files start working as soon as we move them.
@@ -50,7 +51,6 @@ We resolved the billing issue, but the account has not been reopened yet. AWS ha
 ## What is still left
 
 - **Older uploads:** images and videos uploaded before the incident are still locked with AWS. We will move them across as soon as AWS reopens the account.
-- **19 Bible translations:** these include MSG, TPT, WEB and several non-English Bibles. They return with the same move.
 
 ## What you can do until then
 
