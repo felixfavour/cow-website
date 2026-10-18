@@ -7,15 +7,15 @@
  * Or via npm: npm run generate-llms
  */
 
-import { readFileSync, writeFileSync, readdirSync } from 'fs'
-import { join, dirname } from 'path'
-import { fileURLToPath } from 'url'
+import { readFileSync, writeFileSync, readdirSync } from "fs"
+import { join, dirname } from "path"
+import { fileURLToPath } from "url"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
-const ROOT = join(__dirname, '..')
+const ROOT = join(__dirname, "..")
 
-const BASE_URL = 'https://cloudofworship.com'
+const BASE_URL = "https://cloudofworship.com"
 
 /**
  * Strip HTML/Vue template tags and clean up whitespace to produce plain text.
@@ -27,20 +27,20 @@ function stripHtml(html) {
   do {
     prev = result
     result = result
-      .replace(/<script\b[^>]*>[\s\S]*?<\/script[^>]*>/gi, '')
-      .replace(/<style\b[^>]*>[\s\S]*?<\/style[^>]*>/gi, '')
-      .replace(/<!--[\s\S]*?-->/g, '')
+      .replace(/<script\b[^>]*>[\s\S]*?<\/script[^>]*>/gi, "")
+      .replace(/<style\b[^>]*>[\s\S]*?<\/style[^>]*>/gi, "")
+      .replace(/<!--[\s\S]*?-->/g, "")
   } while (result !== prev)
 
   return result
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/\s+/g, ' ')
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
     .trim()
 }
 
@@ -48,9 +48,9 @@ function stripHtml(html) {
  * Extract plain text content from a Vue single-file component.
  */
 function extractVuePageText(filePath) {
-  const content = readFileSync(filePath, 'utf-8')
+  const content = readFileSync(filePath, "utf-8")
   const templateMatch = content.match(/<template>([\s\S]*?)<\/template>/)
-  if (!templateMatch) return ''
+  if (!templateMatch) return ""
   return stripHtml(templateMatch[1])
 }
 
@@ -62,9 +62,9 @@ function parseMarkdown(content) {
   if (!match) return { frontmatter: {}, body: content }
 
   const frontmatter = {}
-  match[1].split('\n').forEach((line) => {
+  match[1].split("\n").forEach((line) => {
     const kv = line.match(/^([\w-]+):\s*(.+)$/)
-    if (kv) frontmatter[kv[1]] = kv[2].replace(/^["']|["']$/g, '')
+    if (kv) frontmatter[kv[1]] = kv[2].replace(/^["']|["']$/g, "")
   })
 
   return { frontmatter, body: match[2] }
@@ -74,19 +74,19 @@ function parseMarkdown(content) {
  * Read and parse all blog posts from content/blog/.
  */
 function readBlogPosts() {
-  const blogDir = join(ROOT, 'content/blog')
+  const blogDir = join(ROOT, "content/blog")
   const files = readdirSync(blogDir)
-    .filter((f) => f.endsWith('.md'))
+    .filter((f) => f.endsWith(".md"))
     .sort()
 
   return files.map((file) => {
-    const raw = readFileSync(join(blogDir, file), 'utf-8')
+    const raw = readFileSync(join(blogDir, file), "utf-8")
     const { frontmatter, body } = parseMarkdown(raw)
-    const slug = file.replace('.md', '')
+    const slug = file.replace(".md", "")
     return {
       slug,
       title: frontmatter.title || slug,
-      description: frontmatter.paragraph || '',
+      description: frontmatter.paragraph || "",
       url: `${BASE_URL}/blog/${slug}`,
       body,
     }
@@ -100,87 +100,87 @@ function readBlogPosts() {
 const PAGE_DEFINITIONS = [
   {
     url: `${BASE_URL}/`,
-    title: 'Home',
+    title: "Home",
     description:
-      'Run your church media smoothly, without the heavy setup. Cloud of Worship is a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.',
-    file: 'app/pages/index.vue',
+      "Run your church media smoothly, without the heavy setup. Cloud of Worship is a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
+    file: "app/pages/index.vue",
   },
   {
     url: `${BASE_URL}/pricing`,
-    title: 'Pricing',
+    title: "Pricing",
     description:
-      'Cloud of Worship is free to use. A Starter plan is available at no cost; a Teams plan is available for $24.99/month or $249.99/year for advanced collaboration features.',
-    file: 'app/pages/pricing.vue',
+      "Cloud of Worship is free to use. A Starter plan is available at no cost; a Teams plan is available for $24.99/month or $249.99/year for advanced collaboration features.",
+    file: "app/pages/pricing.vue",
   },
   {
     url: `${BASE_URL}/features/browser-ready`,
-    title: 'Browser-Ready Feature',
+    title: "Browser-Ready Feature",
     description:
-      'No downloads or installations required. Cloud of Worship runs directly in your web browser on Mac, Windows, Linux, iOS, and Android.',
-    file: 'app/pages/features/browser-ready.vue',
+      "No downloads or installations required. Cloud of Worship runs directly in your web browser on Mac, Windows, Linux, iOS, and Android.",
+    file: "app/pages/features/browser-ready.vue",
   },
   {
     url: `${BASE_URL}/features/team-workflow`,
-    title: 'Team Workflow Feature',
+    title: "Team Workflow Feature",
     description:
-      'Work together with your media team in real-time, no matter where you are.',
-    file: 'app/pages/features/team-workflow.vue',
+      "Work together with your media team in real-time, no matter where you are.",
+    file: "app/pages/features/team-workflow.vue",
   },
   {
     url: `${BASE_URL}/features/offline-first`,
-    title: 'Offline-First Feature',
+    title: "Offline-First Feature",
     description:
-      'Full offline functionality after initial setup, ensuring reliable services even without an internet connection.',
-    file: 'app/pages/features/offline-first.vue',
+      "Full offline functionality after initial setup, ensuring reliable services even without an internet connection.",
+    file: "app/pages/features/offline-first.vue",
   },
   {
     url: `${BASE_URL}/features/bible-verses`,
-    title: 'Bible & Scripture Feature',
+    title: "Bible & Scripture Feature",
     description:
-      'Project Bible verses in seconds by typing a reference. Multiple translations including Spanish, Igbo, Yoruba and Hausa, full-text Bible search, all stored offline.',
-    file: 'app/pages/features/bible-verses.vue',
+      "Project Bible verses in seconds by typing a reference. Multiple translations including Spanish, Igbo, Yoruba and Hausa, full-text Bible search, all stored offline.",
+    file: "app/pages/features/bible-verses.vue",
   },
   {
     url: `${BASE_URL}/features/song-lyrics`,
-    title: 'Song Lyrics & Hymns Feature',
+    title: "Song Lyrics & Hymns Feature",
     description:
-      'Project song lyrics and hymns. Over 3,000 hymns offline, a shared library of 13,000+ songs on the Teams plan, and jump to any verse or chorus mid song.',
-    file: 'app/pages/features/song-lyrics.vue',
+      "Project song lyrics and hymns. Over 3,000 hymns offline, a shared library of 15,000+ songs on the Teams plan, and jump to any verse or chorus mid song.",
+    file: "app/pages/features/song-lyrics.vue",
   },
   {
     url: `${BASE_URL}/features/live-projection`,
-    title: 'Live Projection Feature',
+    title: "Live Projection Feature",
     description:
-      'Dual screen output where controls stay on the operator window, phone and tablet remote control, and an output window OBS can capture for livestream.',
-    file: 'app/pages/features/live-projection.vue',
+      "Dual screen output where controls stay on the operator window, phone and tablet remote control, and an output window OBS can capture for livestream.",
+    file: "app/pages/features/live-projection.vue",
   },
   {
     url: `${BASE_URL}/features/live-transcription`,
-    title: 'Live Transcription Feature',
+    title: "Live Transcription Feature",
     description:
-      'Transcribes the sermon live and suggests the Bible passage when the preacher names a reference, for the operator to send to screen with one click.',
-    file: 'app/pages/features/live-transcription.vue',
+      "Transcribes the sermon live and suggests the Bible passage when the preacher names a reference, for the operator to send to screen with one click.",
+    file: "app/pages/features/live-transcription.vue",
   },
   {
     url: `${BASE_URL}/contact`,
-    title: 'Contact',
+    title: "Contact",
     description:
-      'Get in touch with Cloud of Worship via WhatsApp community, feature requests, feedback, or email.',
-    file: 'app/pages/contact.vue',
+      "Get in touch with Cloud of Worship via WhatsApp community, feature requests, feedback, or email.",
+    file: "app/pages/contact.vue",
   },
   {
     url: `${BASE_URL}/changelog`,
-    title: 'Changelog',
+    title: "Changelog",
     description:
-      'Version history and release notes for the Cloud of Worship app.',
-    file: 'app/pages/changelog.vue',
+      "Version history and release notes for the Cloud of Worship app.",
+    file: "app/pages/changelog.vue",
   },
   {
     url: `${BASE_URL}/wall-of-love`,
-    title: 'Wall of Love',
+    title: "Wall of Love",
     description:
-      'Testimonials and success stories from churches using Cloud of Worship.',
-    file: 'app/pages/wall-of-love.vue',
+      "Testimonials and success stories from churches using Cloud of Worship.",
+    file: "app/pages/wall-of-love.vue",
   },
 ]
 
@@ -188,14 +188,14 @@ const PAGE_DEFINITIONS = [
  * Format a single blog post as a markdown list item.
  */
 function formatBlogEntry(post) {
-  return `- [${post.title}](${post.url})${post.description ? ': ' + post.description : ''}`
+  return `- [${post.title}](${post.url})${post.description ? ": " + post.description : ""}`
 }
 
 /**
  * Build the content of llms.txt (index/summary file).
  */
 function buildLlmsTxt(blogPosts) {
-  const blogLines = blogPosts.map(formatBlogEntry).join('\n')
+  const blogLines = blogPosts.map(formatBlogEntry).join("\n")
 
   return `# Cloud of Worship
 
@@ -209,7 +209,7 @@ function buildLlmsTxt(blogPosts) {
 - [Team Workflow](${BASE_URL}/features/team-workflow): Real-time collaboration tools for church media teams working across multiple devices.
 - [Offline-First](${BASE_URL}/features/offline-first): Full offline functionality after initial setup, ensuring reliable service even without an internet connection.
 - [Bible & Scripture](${BASE_URL}/features/bible-verses): Type a reference and project the verse in seconds, with multiple translations and full-text Bible search stored offline.
-- [Song Lyrics & Hymns](${BASE_URL}/features/song-lyrics): Over 3,000 hymns offline, 13,000+ shared songs, and jump to any verse or chorus while a song is live.
+- [Song Lyrics & Hymns](${BASE_URL}/features/song-lyrics): Over 3,000 hymns offline, 15,000+ shared songs, and jump to any verse or chorus while a song is live.
 - [Live Projection](${BASE_URL}/features/live-projection): Dual screen output, phone remote control, and an output window OBS can capture for livestream.
 - [Live Transcription](${BASE_URL}/features/live-transcription): Transcribes the sermon live and suggests the Bible passage the moment the preacher names it.
 
@@ -237,22 +237,24 @@ function buildLlmsFullTxt(pageDefs, blogPosts) {
     const filePath = join(ROOT, page.file)
     const pageText = extractVuePageText(filePath)
     sections.push(
-      `# ${page.title}\n\nURL: ${page.url}\n\n${page.description}\n\n${pageText}`,
+      `# ${page.title}\n\nURL: ${page.url}\n\n${page.description}\n\n${pageText}`
     )
   }
 
   // Blog index
-  const blogIndex = blogPosts.map(formatBlogEntry).join('\n')
+  const blogIndex = blogPosts.map(formatBlogEntry).join("\n")
   sections.push(
-    `# Blog\n\nURL: ${BASE_URL}/blog\n\nGuides, tutorials, comparisons, and updates for church media teams.\n\n${blogIndex}`,
+    `# Blog\n\nURL: ${BASE_URL}/blog\n\nGuides, tutorials, comparisons, and updates for church media teams.\n\n${blogIndex}`
   )
 
   // Individual blog post content
   for (const post of blogPosts) {
-    sections.push(`## Blog: ${post.title}\n\nURL: ${post.url}\n\n${post.body.trim()}`)
+    sections.push(
+      `## Blog: ${post.title}\n\nURL: ${post.url}\n\n${post.body.trim()}`
+    )
   }
 
-  return sections.join('\n\n---\n\n')
+  return sections.join("\n\n---\n\n")
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
@@ -260,9 +262,9 @@ function buildLlmsFullTxt(pageDefs, blogPosts) {
 const blogPosts = readBlogPosts()
 
 const llmsTxt = buildLlmsTxt(blogPosts)
-writeFileSync(join(ROOT, 'public/llms.txt'), llmsTxt, 'utf-8')
-console.log('✓ Generated public/llms.txt')
+writeFileSync(join(ROOT, "public/llms.txt"), llmsTxt, "utf-8")
+console.log("✓ Generated public/llms.txt")
 
 const llmsFullTxt = buildLlmsFullTxt(PAGE_DEFINITIONS, blogPosts)
-writeFileSync(join(ROOT, 'public/llms-full.txt'), llmsFullTxt, 'utf-8')
-console.log('✓ Generated public/llms-full.txt')
+writeFileSync(join(ROOT, "public/llms-full.txt"), llmsFullTxt, "utf-8")
+console.log("✓ Generated public/llms-full.txt")

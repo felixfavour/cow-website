@@ -17,7 +17,7 @@
         <p
           class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[65%] mx-auto"
         >
-          Over 3,000 hymns offline, more than 13,000 songs shared by other
+          Over 3,000 hymns offline, more than 15,000 songs shared by other
           churches, and your own lyrics typed once and reused every Sunday.
         </p>
       </div>
@@ -115,7 +115,7 @@ const showTestimonialPopup = ref(false)
 const title =
   "Song Lyrics & Hymn Projection Software for Churches - Cloud of Worship"
 const description =
-  "Project song lyrics and hymns on screen. Over 3,000 hymns offline, 13,000+ shared songs, and jump to any verse or chorus mid song. Free to start."
+  "Project song lyrics and hymns on screen. Over 3,000 hymns offline, 15,000+ shared songs, and jump to any verse or chorus mid song. Free to start."
 
 const faqs = [
   {
@@ -136,7 +136,7 @@ const faqs = [
   {
     question: "Is there a shared song library?",
     answer:
-      "Yes. There is access to a growing library of more than 13,000 songs added by other churches, so most of what your team sings is already typed up.",
+      "Yes. There is access to a growing library of more than 15,000 songs added by other churches, so most of what your team sings is already typed up.",
   },
 ]
 
