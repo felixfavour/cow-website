@@ -20,7 +20,7 @@ Cloud of Worship is a new, innovative tool designed specifically for churches, b
 
 This model is particularly beneficial for smaller congregations or organizations looking to minimize expenses while enhancing their services.
 
-In contrast, EasyWorship starts at around $15 per month, providing additional resources and features but requiring a financial commitment that may not be feasible for all churches. 
+In contrast, EasyWorship starts at around $17.50 per month, providing additional resources and features but requiring a financial commitment that may not be feasible for all churches. 
 
 **EasyWorship’s** paid model supports its extensive development and maintenance, but Cloud of Worship’s free model democratizes access to essential worship tools, making it ideal for budget-conscious churches.
 
@@ -94,7 +94,7 @@ With every update, we’re working toward providing churches with a fully-featur
 
 | Features | Cloud of Worship | EasyWorship |
 | --- | --- | --- |
-| Cost / Cheapest Plan | $0 per month | $15 per month |
+| Cost / Cheapest Plan | $0 per month | $17.50 per month |
 | Platform | Windows, Mac, Linux | Windows |
 | Launch Date | August 2024 | Before 2008 (EW2007) |
 | Slide templates and themes | Not yet | Yes |

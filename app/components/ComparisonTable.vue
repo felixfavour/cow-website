@@ -93,7 +93,7 @@ const columns = [
   "Cloud of Worship (Free)",
   "FreeShow (Free)",
   "EasyWorship (Paid)",
-  "VideoPsalm (Paid)",
+  "VideoPsalm (Free)",
   "ProPresenter (Paid)",
 ]
 
@@ -103,9 +103,9 @@ const tableData = [
     values: [
       "Free",
       "Free",
-      "Starts at $18/month",
-      "One-time fee",
-      "Starts at $399",
+      "Starts at $17.50/month",
+      "Free",
+      "Starts at $29/month per computer",
     ],
   },
   {

@@ -46,8 +46,8 @@ But they are built for very different kinds of users.
 
 **ProPresenter**
 
-- One-time license (can be expensive upfront)
-- Additional costs for upgrades and add-ons
+- Subscription from $29/month or $289/year per computer
+- Every extra computer needs its own seat
 - Requires dedicated hardware
 
 **Cloud of Worship**
