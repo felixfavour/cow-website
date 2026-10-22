@@ -1,13 +1,13 @@
 ---
 title: "Media and Bible downloads, October 2026"
-description: "Why some media and Bible translations would not download from 11 October 2026, what we have restored, and what is still left."
+description: "Why some media and Bible translations would not download from 11 October 2026, and how everything was restored by 22 October 2026."
 category: "Post Mortems"
 order: 1
-lastUpdated: "2026-10-17"
+lastUpdated: "2026-10-22"
 ---
 
-::callout{type="warning" title="Partly resolved"}
-All 38 Bible translations and all preset background videos work again. Media uploaded before the incident is still being restored. We will update this page when everything is back.
+::callout{type="success" title="Resolved"}
+Everything is back as of 22 October 2026. All 38 Bible translations, all preset background videos, and the images and videos you uploaded before the incident are available to every church again.
 ::
 
 ## Summary
@@ -29,12 +29,13 @@ If your media was already saved on your computer before the incident, it kept wo
 
 We store media files with Amazon Web Services (AWS). A billing issue on our account led AWS to suspend it, which locked access to the stored files.
 
-We resolved the billing issue, but the account has not been reopened yet. AWS has been slow to respond because we are not on a premium support plan, which gets faster replies. This was a mistake on our side, not something any church did.
+We resolved the billing issue, but AWS was slow to reopen the account because we are not on a premium support plan, which gets faster replies. This was a mistake on our side, not something any church did.
 
 ## Timeline
 
 | Date | What happened |
 |------|---------------|
+| 22 October | Media uploaded before the incident restored and available to all customers. Everything is back. |
 | 17 October | The remaining 19 Bible translations restored, including MSG, TPT, WEB and the non-English Bibles. All 38 translations now work. |
 | 13 October | New storage provider set up. 19 Bible translations and all background videos moved to it. New uploads are being switched over. |
 | 11 to 13 October | Billing issue resolved and support case opened with AWS. Still waiting on a response. |
@@ -46,17 +47,17 @@ We resolved the billing issue, but the account has not been reopened yet. AWS ha
 - **Background videos:** the six preset background videos work again.
 - **New storage:** we set up a second storage provider, Cloudflare, so new uploads no longer depend on AWS.
 - **Smarter loading:** the app now checks the new storage first and falls back to the old location, so files start working as soon as we move them.
-- **AWS:** we resolved the billing issue and are pressing AWS to reopen the account.
+- **Older uploads:** on 22 October, images and videos uploaded before the incident were restored and are now available to all customers.
+- **AWS:** we resolved the billing issue and pressed AWS to reopen the account.
 
 ## What is still left
 
-- **Older uploads:** images and videos uploaded before the incident are still locked with AWS. We will move them across as soon as AWS reopens the account.
+Nothing. All media and Bible translations are available again.
 
-## What you can do until then
+## What to do now
 
-- Open your schedule on the computer you use for service before Sunday, so media already saved there is ready.
-- Do not clear your browser data or reinstall the desktop app for now. Saved media lives there.
-- If a file you need is missing, upload it again. New uploads go to the new storage.
+- You do not need to do anything. Media that looked missing or stuck loading should now appear on its own.
+- If a file you need is still missing, write to us at the address below and we will look into it straight away.
 
 ## What we are changing
 
