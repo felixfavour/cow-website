@@ -85,6 +85,9 @@ export default defineNuxtConfig({
     // The Help Center moved from /documentation to /docs.
     '/documentation': { redirect: { to: '/docs', statusCode: 301 } },
     '/documentation/**': { redirect: { to: '/docs/**', statusCode: 301 } },
+    // Short link for the Horizon event on Luma. Temporary (302) so the
+    // destination can change without browsers caching the old one.
+    '/horizon': { redirect: { to: 'https://luma.com/yerxbo0d', statusCode: 302 } },
   },
   gtag: {
     id: 'G-SPPLWBL283',
