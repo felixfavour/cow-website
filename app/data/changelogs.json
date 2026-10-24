@@ -1,5 +1,16 @@
 [
   {
+    "version": "v1.4.1",
+    "title": "Version Contentment",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 24, 2026",
+    "description": "Bible version dropdown opens at 280px instead of stretching across the viewport",
+    "changes": [
+      "Bible version dropdown opens at 280px instead of stretching across the viewport",
+      "Add Camera action is hidden unless the camera-slide flag is on"
+    ]
+  },
+  {
     "version": "v1.4.0",
     "title": "Version Perseverance",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
