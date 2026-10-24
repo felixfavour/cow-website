@@ -1,5 +1,72 @@
 [
   {
+    "version": "v1.4.0",
+    "title": "Version Perseverance",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 24, 2026",
+    "description": "Bracketed English in pasted lyrics moves into an English translation on review",
+    "changes": [
+      "Bracketed English in pasted lyrics moves into an English translation on review",
+      "Library songs go onto the schedule at once and the claim fills in behind them",
+      "Schedule cards say when they were last updated, not created",
+      "Retry hosted media fetches past a cached response that lacks CORS headers",
+      "Satisfaction prompt can only be closed by answering it, not by backdrop click or Esc",
+      "Add the slide pairs fix plan",
+      "Bible theme picker shows each layout as a thumbnail, matching the slide pair layouts",
+      "Offline notice uses the same card as the update notice",
+      "Slide pairs put a camera beside or over another slide on the Live Output, and the editor previews a camera slide's own feed",
+      "Camera settings popover fits its content, with clearer labels",
+      "Camera slides show a webcam or capture card full screen on the Live Output"
+    ]
+  },
+  {
+    "version": "v1.3.8",
+    "title": "Version Hope",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 22, 2026",
+    "description": "PDF upload uses the pdf.js legacy build so Safari without Map.getOrInsertComputed can read PDFs",
+    "changes": [
+      "PDF upload uses the pdf.js legacy build so Safari without Map.getOrInsertComputed can read PDFs",
+      "Song translations show in purple straight after a deploy, without a hard refresh"
+    ]
+  },
+  {
+    "version": "v1.3.7",
+    "title": "Version Renewal",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 18, 2026",
+    "description": "Toolbar edge fades no longer go stale when the toolbar changes",
+    "changes": [
+      "Toolbar edge fades no longer go stale when the toolbar changes",
+      "Quick search stays responsive while typing in large libraries",
+      "Rolling Stone interlude stays smooth with long headings on 4K and HiDPI screens",
+      "Slides with line auto-fit no longer stutter when a schedule opens or a panel is resized",
+      "Translations show by default, and opening a song slide picks up lyric and translation fixes without pressing Refresh",
+      "Song library count updated to 15,000+",
+      "Add the language a song is sung in and up to 8 translations, then review them line by line before saving",
+      "Song slides can show a translation under each lyric line",
+      "Picked songs show a spinner until they land, and songs used before are added instantly, even offline",
+      "Saving and searching no longer freeze for 10 seconds during busy moments",
+      "Livestream page catches up with /live, and the purple CoW icon on every page",
+      "New default slide-style settings",
+      "Slide toolbars scroll inside their own rounded pill, with edge fades, wheel scrolling and dropdowns that open above it",
+      "Report an issue button on the slide editor, so operators can flag a wrong lyric, verse or slide straight to us"
+    ]
+  },
+  {
+    "version": "v1.3.6",
+    "title": "Version Diligence",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 16, 2026",
+    "description": "Quick search understands Bible references, hymns and songs, with \"see all\" jumps into each panel",
+    "changes": [
+      "Quick search understands Bible references, hymns and songs, with \"see all\" jumps into each panel",
+      "Rolling Stone interlude, the heading rolling in big purple type, row after row",
+      "Library shows saved songs straight away on a slow connection instead of a skeleton that waits on the network",
+      "Bible translations and background videos load from media storage, no longer bundled in the app build"
+    ]
+  },
+  {
     "version": "v1.3.5",
     "title": "Version Commitment",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
