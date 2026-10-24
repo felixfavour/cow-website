@@ -26,11 +26,7 @@
           class="w-[100%] border-4 lg:border-8 border-gray-100 rounded-xl my-[3%]"
         /> -->
         <ul class="list-disc ml-4 text-md leading-8 max-w-[600px]">
-          <li
-            v-for="change in changesReformed"
-            :key="change"
-            class="capitalize"
-          >
+          <li v-for="change in changesReformed" :key="change">
             {{ change }}
           </li>
         </ul>
@@ -50,11 +46,18 @@ const props = defineProps({
   latest: Boolean,
 })
 
-const changesReformed = props.changes.filter((change) => {
-  return !(
-    change?.includes("Merge branch ") ||
-    change?.includes("Merge pull request ") ||
-    change?.trim() === ""
-  )
-})
+const capitalizeFirst = (text) => {
+  const trimmed = text.trim()
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1)
+}
+
+const changesReformed = props.changes
+  .filter((change) => {
+    return !(
+      change?.includes("Merge branch ") ||
+      change?.includes("Merge pull request ") ||
+      change?.trim() === ""
+    )
+  })
+  .map(capitalizeFirst)
 </script>
