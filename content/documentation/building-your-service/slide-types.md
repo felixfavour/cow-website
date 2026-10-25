@@ -1,9 +1,9 @@
 ---
 title: "Slide Types"
-description: "Bible, Song, Song Setlist, Hymn, Text, Media, Countdown, Interlude and Presentation slides, and which Quick Action creates each one."
+description: "Bible, Song, Song Setlist, Hymn, Text, Media, Countdown, Interlude, Camera and Presentation slides, and which Quick Action creates each one."
 category: "Building Your Service"
 order: 2
-lastUpdated: "2026-09-29"
+lastUpdated: "2026-10-25"
 ---
 
 | Type | Badge | Created by |
@@ -16,6 +16,7 @@ lastUpdated: "2026-09-29"
 | **Media** | Media | Add Media / YouTube / Vimeo |
 | **Countdown** | — | Add Countdown Timer |
 | **Interlude** | Interlude | Add Interlude |
+| **Camera** | Camera | Add Camera |
 | **Presentation** | — | Import Slides from PDF |
 
 ## Overlays
@@ -30,4 +31,6 @@ Any slide can also be flagged as an **overlay** (via **⋮ → Duplicate as Over
 - [Adding media](/docs/building-your-service/adding-media)
 - [Countdown timers](/docs/building-your-service/countdown-timers)
 - [Interlude slides](/docs/building-your-service/interlude-slides)
+- [Camera slides](/docs/building-your-service/camera-slides)
+- [Slide pairs](/docs/building-your-service/slide-pairs)
 - [Importing slides from a PDF](/docs/building-your-service/importing-slides-from-pdf)

@@ -3,7 +3,7 @@ title: "Settings Reference"
 description: "All ten settings sections: profile, subscription, display, microphone, slides, backgrounds, blank screen, Bible versions, storage and other."
 category: "Settings, Shortcuts & Offline"
 order: 2
-lastUpdated: "2026-10-12"
+lastUpdated: "2026-10-25"
 ---
 
 Open settings with **Cmd/Ctrl + ,**, the avatar menu, or the **Open App Settings** quick action. Ten sections:
@@ -29,7 +29,7 @@ Your plan, billing and payment method. If a payment has failed, a banner offers 
 **Active Microphone**, **Available Microphones**, **Use as default**. Shows **Microphone access denied** if the browser blocks it.
 
 ## Slide Settings
-Default font · Default font size · Default lines per slide · Default slide alignment · Default background fill type · Uppercase text · Outlined text · Bold text · Text line background · **Song/hymn title and artistes** (show or hide labels) · **Footnotes and credits** · **Transitions between slides** · **Transition interval** · **Micro animations**
+Default font · Default font size · Default lines per slide · **Default line spacing** (Single, Normal or Double) · **Fit each line on one row** (shrinks song and hymn text so each lyric line stays on one row) · Default slide alignment · Default background fill type · Uppercase text · Outlined text · Bold text · Text line background · **Song/hymn title and artistes** (show or hide labels) · **Footnotes and credits** · **Transitions between slides** · **Transition interval** · **Micro animations**
 
 ## Slide Background Settings
 Default background per slide type: colour, gradient, or image.

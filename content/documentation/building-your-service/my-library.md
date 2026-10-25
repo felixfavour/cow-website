@@ -2,8 +2,8 @@
 title: "My Library"
 description: "Your permanent, schedule-independent store of saved songs and slides."
 category: "Building Your Service"
-order: 12
-lastUpdated: "2026-09-03"
+order: 14
+lastUpdated: "2026-10-25"
 ---
 
 **My Library** is your permanent, schedule-independent store of reusable content.
@@ -15,7 +15,7 @@ lastUpdated: "2026-09-03"
 | Tab | Contains | How things get here |
 |-----|----------|---------------------|
 | **Songs** | Every song you've saved | **Add Song**, or the save icon on a song slide |
-| **Slides** | Saved individual slides | A slide's **⋮ → Save to Library** |
+| **Slides** | Saved text, media, hymn, interlude and presentation slides | A slide's **⋮ → Save to Library** |
 
 ## What you can do
 
@@ -23,6 +23,8 @@ lastUpdated: "2026-09-03"
 - **Add to the schedule**: click any item.
 - **Edit**: via **⋮ → Edit** (songs open in the Add Song editor).
 - **Delete**: via **⋮ → Delete**, with confirmation. Deleting from your library is **not reversible**.
+
+A presentation can be saved once all of its pages have uploaded, so the saved copy opens on every device. Adding a saved presentation back to a schedule reuses those uploaded pages and does not use more cloud storage.
 
 Empty states tell you what to do. With no saved songs you'll see *"No songs saved yet. Click the save icon on the Slide card to start saving."*
 

@@ -3,7 +3,7 @@ title: "The Quick Actions Pane"
 description: "Every tool in CoW, presented in an easy-to-search format. One search box covers actions, the Bible, your songs, your library and the hymnal."
 category: "The Control Center"
 order: 2
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-10-25"
 ---
 
 *Left pane.*
@@ -22,6 +22,13 @@ The full list is in the [Quick Actions reference](/docs/control-center/quick-act
 Type into the search box and CoW searches your **actions, the Bible, your songs, your library and the hymnal simultaneously**.
 
 ![Quick Actions search returning actions, scripture, songs and hymns together](/images/docs/05-display-hymns.webp)
+
+It understands what you type:
+
+- **Bible references** such as *John 3:16* or *1 Cor 13*, including common book abbreviations, go straight to scripture.
+- **Hymns** match by title or number. If you don't see yours, the **Can't find the hymn?** row opens the hymn panel with your search already typed in.
+- **Songs** match by title or by a lyric line, and the matching line is highlighted.
+- Each group has a **See all** row that jumps into that panel with your search carried over.
 
 Results are grouped under filter chips (**Bible · Song lyrics · Hymns · Library · Actions · More**) so you can narrow a busy result set.
 

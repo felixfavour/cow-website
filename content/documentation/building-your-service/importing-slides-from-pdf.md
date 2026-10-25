@@ -2,7 +2,7 @@
 title: "Importing Slides from a PDF"
 description: "Turn an existing PDF, such as a printed program or a sermon deck, into slides, one per page."
 category: "Building Your Service"
-order: 9
+order: 11
 lastUpdated: "2026-09-03"
 ---
 

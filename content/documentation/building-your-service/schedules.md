@@ -3,7 +3,7 @@ title: "Schedules"
 description: "A schedule is the ordered set of slides for one service or event. Create one from a template or from blank, then switch, rename or delete."
 category: "Building Your Service"
 order: 1
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-10-25"
 ---
 
 A **schedule** is the ordered set of slides for one service or event.
@@ -22,7 +22,7 @@ Click the **⌄** next to the schedule name in the top bar:
 | **Christmas Schedule** | Seasonal template |
 | **Recent Schedules** | Jump back into something you built before. **See all** shows the full list |
 
-Each row shows who created it and how long ago.
+Each row shows when the schedule was last **updated**. A schedule that hasn't synced yet shows when it was made, or *just now*. Each row also shows its 6-character code, which you can give to someone who needs the [livestream](/docs/going-live/livestream-output-obs-vmix#the-schedule-code) or [stage display](/docs/going-live/stage-display) link.
 
 ## Switching, renaming and deleting
 

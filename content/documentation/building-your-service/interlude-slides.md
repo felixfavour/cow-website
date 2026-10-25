@@ -3,7 +3,7 @@ title: "Interlude Slides"
 description: "An animated break screen with a heading and sub text, for welcomes, offering, announcements and pauses in the service. A Teams feature."
 category: "Building Your Service"
 order: 8
-lastUpdated: "2026-09-30"
+lastUpdated: "2026-10-25"
 ---
 
 *Teams feature.* On the Free plan you can open the panel and try every animation. The upgrade prompt appears when you create the slide.
@@ -31,8 +31,9 @@ When you move from an interlude to the next slide, its text fades out before the
 | **Gathering** | Welcome loops, pre-service, series titles |
 | **Open Heavens** | Service start, conferences, youth |
 | **Fellowship** | Announcements, events, fellowship breaks |
+| **Rolling Stone** | Series titles, welcome, conference breaks |
 
-**CoW Original** is the default. Each animation comes with its own colours, so there is no separate background to pick.
+The heading in **Rolling Stone** rolls across the screen in big purple type, row after row. **CoW Original** is the default. Each animation comes with its own colours, so there is no separate background to pick.
 
 ## Text background
 

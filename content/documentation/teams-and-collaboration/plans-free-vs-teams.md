@@ -3,7 +3,7 @@ title: "Plans: Free vs Teams"
 description: "What's included on the Free plan, what Teams unlocks, and how your plan is tied to your church."
 category: "Teams & Collaboration"
 order: 3
-lastUpdated: "2026-10-12"
+lastUpdated: "2026-10-25"
 ---
 
 | | Free | Teams |
@@ -21,6 +21,7 @@ lastUpdated: "2026-10-12"
 | **Countdown timers** | — | ✅ |
 | **Time slides** | — | ✅ |
 | **Interlude slides** | — | ✅ |
+| **Slide pairs** | — | ✅ |
 | **YouTube / Vimeo embeds** | — | ✅ |
 | **Sermon transcription** | 10 minutes, once | 3 hours a week, unused minutes roll over a week |
 | **Inviting teammates** | — | ✅ |
@@ -56,6 +57,10 @@ Your plan comes from your **church** record, not your personal user record. When
 ::callout{type="warning" title="Expiry heads-up"}
 If your Teams subscription is within **7 days of expiring**, a banner appears across the top of the Control Center.
 ::
+
+## If your Teams plan lapses
+
+Slides you made with a Teams feature stay in your schedule. They just can't be taken live until Teams returns, and CoW shows the upgrade prompt if you try. Nothing is deleted, so renewing brings everything back.
 
 ## If a payment fails
 
