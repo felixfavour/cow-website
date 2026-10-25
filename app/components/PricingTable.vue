@@ -412,7 +412,7 @@ const tableData = [
         "Workspace invitations for team members",
         "Live editing across multiple devices",
         "Mobile operator app for phones and tablets",
-        "Up to 500 service schedules",
+        "Unlimited service schedules",
         "Livestream URL for OBS, vMix & streaming software",
       ],
     ],
