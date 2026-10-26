@@ -1,195 +1,135 @@
 <template>
-  <div class="section page">
-    <!-- HERO SECTION -->
-    <div class="inner pt-[10%] md:pt-[3%]">
-      <div
-        class="texts max-w-[1000px] 2xl:max-w-[1100px] text-center mx-auto flex flex-col gap-4 2xl:gap-6"
-      >
-        <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
-          Run your church media
-          <span class="emphasis-text">smoothly</span>, without the heavy setup
-        </h1>
-        <p
-          class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[65%] mx-auto"
-        >
-          Cloud of Worship is a browser-based worship support system built for
-          growing churches that want simple, reliable media setup
-        </p>
-      </div>
-      <div class="actions mt-[7.5%] md:mt-[2%] text-center">
-        <a
-          :href="
-            mergeUtmsIntoUrl(
-              'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=hero'
-            )
-          "
-          class="primary-btn taller w-[220px] mx-auto"
-        >
-          Get started for free
-        </a>
-        <div class="helper-text text-sm text-center pt-2">
-          serving <span class="font-semibold">{{ churchCountLabel }}</span> churches
-        </div>
-      </div>
-      <div
-        class="hero-media pt-[25px] md:pt-[50px] flex justify-center items-end relative overflow-hidden"
-      >
+  <div class="page">
+    <!-- HERO: pinned while the light horizon scrolls up over it -->
+    <div ref="stage" class="hero-stage relative h-[200svh] -mt-[60px] md:-mt-[76px]">
+      <section class="hero sticky top-0 h-[100svh] overflow-hidden bg-[#101010]">
+        <HeroSlideWall :clear-to="heroText" :covered="progress >= 0.99" class="absolute inset-0" />
         <div
-          class="main-hero-video relative overflow-hidden bg-black border-4 md:border-8 border-b-0 md:border-b-0 border-gray-100 rounded-t-[16px] md:rounded-t-[32px] w-[100%] md:w-[1050px]"
-          style="aspect-ratio: 16 / 9"
+          class="absolute inset-x-0 bottom-0 h-[70%] bg-gradient-to-t from-[#101010] from-60% to-transparent pointer-events-none md:hidden"
+        ></div>
+        <div
+          class="relative mx-auto max-w-[1600px] px-5 md:px-10 lg:px-16 h-full flex flex-col justify-end pb-[clamp(56px,15.5vh,140px)] pointer-events-none"
         >
-          <!-- Thumbnail paints first; the YouTube player only loads once the page is idle -->
-          <img
-            :src="`https://i.ytimg.com/vi_webp/${heroVideoId}/maxresdefault.webp`"
-            alt="Cloud of Worship in 45 seconds"
-            width="1280"
-            height="720"
-            fetchpriority="high"
-            decoding="async"
-            class="absolute inset-0 w-full h-full object-cover"
-          />
-          <iframe
-            v-if="loadHeroVideo"
-            :src="heroVideoSrc"
-            title="Cloud of Worship in 45 seconds"
-            allow="autoplay; encrypted-media; picture-in-picture"
-            allowfullscreen
-            referrerpolicy="strict-origin-when-cross-origin"
-            class="absolute inset-0 w-full h-full transition-opacity duration-500"
-            :class="heroVideoReady ? 'opacity-100' : 'opacity-0'"
-            @load="heroVideoReady = true"
-          />
+          <div ref="heroText" class="w-fit pointer-events-auto">
+            <h1
+              ref="heading"
+              class="text-white font-bold text-[60px] md:text-[76px] lg:text-[90px] leading-[0.943] tracking-[-0.02em]"
+            >
+              <span class="line-slot"><span class="line">Run your church</span></span>
+              <span class="line-slot"><span class="line">media projection easily</span></span>
+            </h1>
+            <div class="exit-slot mt-[22px]">
+              <p ref="subtext" class="max-w-[372px] text-[18px] leading-[1.19] text-[#B7B7B7]">
+                Your sub-1000 church congregation doesn't need overly complex
+                software or overburdened volunteers.
+              </p>
+            </div>
+            <div class="exit-slot -mx-6 mt-[44px] px-6 pt-[8px] pb-[26px] -mb-[26px]">
+              <a
+                ref="cta"
+                :href="
+                  mergeUtmsIntoUrl(
+                    'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=hero'
+                  )
+                "
+                class="pill-btn"
+              >
+                Get started for free
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <!-- The horizon: dark, then brand purple, then lavender, then white. -->
+        <div
+          class="horizon absolute inset-x-0 top-0 h-[200svh] pointer-events-none"
+          :style="{ transform: `translateY(${horizonY}svh)` }"
+          aria-hidden="true"
+        ></div>
+      </section>
     </div>
 
-    <!-- CHURCHES SECTION -->
-    <ChurchUsersSection />
+    <!--
+      One box for these three, so the photo section can stick to the bottom of
+      the screen behind the two above it (and never behind the hero).
+    -->
+    <div class="relative">
+      <HomeFeatures />
 
-    <!-- TESTIMONIAL SECTION -->
-    <TestimonialSection />
+      <HomeProjection />
 
-    <!-- POINT MAKER SECTION ONE -->
-    <PointMaker is-text-start class="mt-[3%]">
-      <template #texts>
-        <h3 class="text-3xl md:text-5xl font-bold">
-          No
-          <span class="emphasis-text">installations</span>. <br />Just log on
-          and start projecting.
-        </h3>
-        <p class="description xl:text-md 2xl:text-lg md:font-medium">
-          Say goodbye to cumbersome downloads and installation processes—our
-          innovative platform brings worship presentation to your fingertips,
-          directly through your web browser. With support for all platforms
-          (Mac, Windows, Linux, iOS, Android).
-        </p>
-        <a
-          class="primary-btn w-[220px] mt-[5%] gap-8"
-          href="/features/browser-ready"
-          >See more info <ArrowDown class="-rotate-90" white-color
-        /></a>
-      </template>
-      <template #img>
-        <div class="img-wrapper one h-[320px] md:h-[580px]"></div>
-      </template>
-    </PointMaker>
+      <HomeFamiliar />
+    </div>
 
-    <!-- POINT MAKER SECTION TWO -->
-    <PointMaker>
-      <template #texts>
-        <h3 class="text-3xl md:text-5xl font-bold">
-          Empower your media team with a
-          <span class="emphasis-text">collaborative</span> team workflow
-        </h3>
-        <p class="description xl:text-md 2xl:text-lg md:font-medium">
-          Work together with your team in real-time, no matter where you are.
-          Whether you’re selecting songs, editing slides, or opening a
-          scripture, everyone can contribute simultaneously.
-        </p>
-        <a
-          class="primary-btn w-[220px] mt-[5%] gap-8"
-          href="/features/team-workflow"
-          >See more info <ArrowDown class="-rotate-90" white-color
-        /></a>
-      </template>
-      <template #img>
-        <div class="img-wrapper two h-[380px] md:h-[700px]"></div>
-      </template>
-    </PointMaker>
+    <HomePricing />
 
-    <!-- POINT MAKER SECTION Three -->
-    <PointMaker is-text-start>
-      <template #texts>
-        <h3 class="text-3xl md:text-5xl font-bold">
-          100% Reliable with
-          <span class="emphasis-text">offline-ready</span> technology
-        </h3>
-        <p class="description xl:text-md 2xl:text-lg md:font-medium">
-          Empower your team to deliver exceptional experiences to your
-          congregation without being tethered to an internet connection. Bring
-          confidence and consistency to your services with our offline-ready
-          capability.
-        </p>
-        <a
-          class="primary-btn w-[220px] mt-[5%] gap-8"
-          href="/features/offline-first"
-          >See more info <ArrowDown class="-rotate-90" white-color
-        /></a>
-      </template>
-      <template #img>
-        <div class="img-wrapper three h-[320px] md:h-[580px]"></div>
-      </template>
-    </PointMaker>
+    <HomeTestimonials />
 
-    <!-- POINT MAKER SECTION FOUR -->
-    <PointMaker class="mb-[3%]">
-      <template #texts>
-        <h3 class="text-3xl md:text-5xl font-bold">
-          There's
-          <span class="emphasis-text">more</span> to do with Cloud of Worship.
-        </h3>
-        <p class="description xl:text-md 2xl:text-lg md:font-medium">
-          Whether it's searching for a scripture, editing templated slides,
-          searching songs and hymns in our global songs database—there's plenty
-          of things to try out and more are added every week.
-        </p>
-        <a
-          class="primary-btn w-[220px] mt-[5%]"
-          :href="
-            mergeUtmsIntoUrl(
-              'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=cta'
-            )
-          "
-          >Get started for free</a
-        >
-      </template>
-      <template #img>
-        <div class="img-wrapper four h-[320px] md:h-[640px]"></div>
-      </template>
-    </PointMaker>
+    <!--
+      One box for these, so the last section can sit pinned under the church
+      rows and then under the footer. The footer is pulled up over the space
+      the section leaves after itself (see .footer-over in app.vue).
+    -->
+    <div class="relative">
+      <HomeChurches />
 
-    <!-- WALL OF LOVE SECTION -->
-    <WallOfLove />
-
-    <!-- COMPARISON SECTION -->
-    <PricingTable />
-
-    <!-- ABOVE FOOTER SECTION -->
-    <AboveFooterSection />
-
-    <TestimonialPopup v-if="showTestimonialPopup" />
+      <HomeCta />
+    </div>
   </div>
 </template>
 
 <script setup>
 const { mergeUtmsIntoUrl } = useUtm()
-const { churchCountLabel } = useChurchCount()
-const showTestimonialPopup = ref(false)
+const heroText = ref(null)
+const stage = ref(null)
+const heading = ref(null)
+const subtext = ref(null)
+const cta = ref(null)
 
-const heroVideoId = "uXHuISXJ7yE"
-const heroVideoSrc = `https://www.youtube-nocookie.com/embed/${heroVideoId}?autoplay=1&mute=1&loop=1&playlist=${heroVideoId}&playsinline=1&rel=0&modestbranding=1`
-const loadHeroVideo = ref(false)
-const heroVideoReady = ref(false)
+// 0 while the hero is untouched, 1 once the horizon has covered it. The hero
+// stays pinned for one screen of scrolling while this runs.
+const progress = ref(0)
+
+// The horizon starts just below the screen and rises to cover it; its white
+// part begins 80% of a screen down its height, so it ends 80svh above the top.
+const horizonY = computed(() => 100 - 180 * progress.value)
+
+const navTheme = useState("navTheme", () => "dark")
+
+const clamp01 = (v) => Math.min(1, Math.max(0, v))
+
+// The headline, then the subtext and button, slide up out of their slots one
+// after another during the first part of the scroll.
+const EXIT_START = 0.02
+const EXIT_LENGTH = 0.22
+const EXIT_STAGGER = 0.05
+
+let lines = []
+let frame = 0
+
+const update = () => {
+  frame = 0
+  const el = stage.value
+  if (!el) return
+  const rect = el.getBoundingClientRect()
+  const travel = el.offsetHeight - window.innerHeight
+  progress.value = clamp01(-rect.top / travel)
+
+  const items = [...lines, subtext.value, cta.value]
+  items.forEach((item, i) => {
+    if (!item) return
+    const t = clamp01((progress.value - EXIT_START - i * EXIT_STAGGER) / EXIT_LENGTH)
+    const eased = t * t * (3 - 2 * t)
+    item.style.transform = eased ? `translateY(${-118 * eased}%)` : ""
+  })
+
+  // The bar goes light once the white part of the horizon reaches it.
+  navTheme.value = progress.value > 0.86 ? "light" : "dark"
+}
+
+const onScroll = () => {
+  if (!frame) frame = requestAnimationFrame(update)
+}
 
 useHead({
   title: "Cloud of Worship - Presentation software for your growing church",
@@ -201,8 +141,6 @@ useSeoMeta({
     "Run your church media smoothly, without the heavy setup. Cloud of Worship is a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
   ogDescription:
     "Run your church media smoothly, without the heavy setup. Cloud of Worship is a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com",
   ogType: "website",
@@ -212,65 +150,61 @@ useSeoMeta({
 useOgCard("home")
 
 onMounted(() => {
-  // Defer the YouTube player (~1MB of JS) until after the page has loaded and gone idle
-  const startHeroVideo = () => {
-    const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200))
-    idle(() => (loadHeroVideo.value = true))
-  }
-  if (document.readyState === "complete") startHeroVideo()
-  else window.addEventListener("load", startHeroVideo, { once: true })
+  lines = heading.value ? [...heading.value.querySelectorAll(".line")] : []
+  update()
+  window.addEventListener("scroll", onScroll, { passive: true })
+  window.addEventListener("resize", onScroll)
 
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
     useGtag()
   }
+})
 
-  // show testimonial popup on mobile
-  if (
-    window.innerWidth >= 768 &&
-    location.hostname !== "localhost" &&
-    location.hostname !== "127.0.0.1"
-  ) {
-    showTestimonialPopup.value = true
-  }
-  window.addEventListener("resize", () => {
-    if (
-      window.innerWidth >= 768 &&
-      location.hostname !== "localhost" &&
-      location.hostname !== "127.0.0.1"
-    ) {
-      showTestimonialPopup.value = true
-    }
-  })
+onBeforeUnmount(() => {
+  cancelAnimationFrame(frame)
+  window.removeEventListener("scroll", onScroll)
+  window.removeEventListener("resize", onScroll)
+  navTheme.value = "dark"
 })
 </script>
 
 <style scoped>
-.img-wrapper.one {
-  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/browser-first.webp")
-    no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 120%;
+.exit-slot {
+  overflow: hidden;
 }
-.img-wrapper.two {
-  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/team-workflow.webp")
-    no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 120%;
+/* Each headline line slides up out of its own slot; the padding keeps
+   descenders inside it. */
+.line-slot {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
 }
-.img-wrapper.three {
-  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/offline-ready.webp")
-    no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 110%;
+.line {
+  display: block;
+  will-change: transform;
 }
-.img-wrapper.four {
-  background: url("https://revaise.s3.us-east-2.amazonaws.com/website/actions.webp")
-    no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 120%;
+.exit-slot > * {
+  will-change: transform;
+}
+
+/* Bowl-shaped: the edge sits higher at the sides than in the middle, like the
+   rim of a planet seen from just above it. The ellipse is wider than the
+   screen so its top edge stays clear all the way across. It settles on pure
+   white before the ellipse ends, so the light navbar and the white features
+   section meet it without a lavender band between them. */
+.horizon {
+  will-change: transform;
+  background: radial-gradient(
+    ellipse 110% 40% at 50% 0%,
+    rgba(16, 16, 16, 0) 0%,
+    rgba(16, 16, 16, 0) 52%,
+    rgba(30, 10, 52, 0.92) 64%,
+    #4c1d95 72%,
+    #8a41c9 79%,
+    #d8b4fe 86%,
+    #f6e8ff 92%,
+    #ffffff 97%
+  );
 }
 </style>
