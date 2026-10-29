@@ -34,15 +34,17 @@
 
 const IMAGES = [
   "oceans-song-slide",
-  "bible-slide",
-  "interlude-slide",
-  "spanish-song-slide",
+  // The order picks where each slide lands: this one is in the middle of the
+  // wall once the opening sweep settles, and the countdown sits further back.
   "countdown-slide",
-  "hymn-slide",
+  "interlude-slide",
+  "santo-translation-slide",
+  "bible-slide",
+  "amazing-grace-song-slide",
   "song-slide-with-highlight",
   "announcements-interlude-slide",
   "rahama-song-with-translation-slide",
-  "text-slide-for-sermons",
+  "let-us-pray-interlude-slide",
 ].map((name) => `/hero/${name}.webp`)
 
 // A slide is about half a plane unit wide. Right of the headline about 1.2
@@ -177,6 +179,9 @@ const props = defineProps({
   clearTo: { type: Object, default: null },
   // True once the next section has scrolled over the hero; drawing stops.
   covered: { type: Boolean, default: false },
+  // While true the wall stays hidden and still, so the hero text can make its
+  // entrance first. The slides keep loading meanwhile.
+  held: { type: Boolean, default: false },
 })
 
 const canvas = ref(null)
@@ -199,6 +204,7 @@ let motionQuery = null
 let resizeObserver = null
 let intersectionObserver = null
 let readyTimer = 0
+let loaded = false
 
 // The offset is never wrapped, because each row multiplies its x by its own
 // parallax rate; tiles wrap individually when drawn.
@@ -221,7 +227,11 @@ let pixelScale = 1
 let slowFrames = 0
 let cullRadius = HORIZON
 
-const isWide = () => canvas.value.clientWidth >= 768
+// Wide needs landscape as well as width. A tablet held upright is 768px or
+// more across, but the headline takes most of that, so with the text on the
+// left the wall shrank to a sliver at the right edge. Upright, it stacks like
+// a phone. Matches the `orientation: landscape` query in pages/index.vue.
+const isWide = () => canvas.value.clientWidth >= 768 && canvas.value.clientWidth > canvas.value.clientHeight
 
 // Wide layouts put the text on the left: hide the wall up to 40px past the
 // text, then fade it in, reaching full strength no later than 45% across.
@@ -303,7 +313,7 @@ const buildTiles = () => {
   return list.sort((a, b) => a.image - b.image)
 }
 
-// About twenty slides show at once and there are eleven images, so some repeat
+// About twenty slides show at once and there are ten images, so some repeat
 // on screen; this keeps copies apart. Each slide takes the least used image
 // that no nearby slide (across the wrap too) already has: two either side in
 // its own row, the overlapping ones in the rows above and below, and the one
@@ -388,11 +398,12 @@ const loadTexture = (src) => {
   return entry
 }
 
-// Show the wall once every slide is in (or after a moment regardless), and
-// sweep it in so the bend is the first thing people see.
+// Show the wall once every slide is in (or after a moment regardless) and it
+// is no longer held, and sweep it in so the bend is the first thing people see.
 const reveal = () => {
   clearTimeout(readyTimer)
-  if (ready.value) return
+  loaded = true
+  if (ready.value || props.held) return
   ready.value = true
   if (!reducedMotion) velocity.x = INTRO_SPEED
 }
@@ -619,7 +630,7 @@ const stop = () => {
   cancelAnimationFrame(frame)
 }
 
-const sync = () => (visible && !props.covered && !document.hidden ? start() : stop())
+const sync = () => (visible && !props.covered && !props.held && !document.hidden ? start() : stop())
 
 const onPointerDown = (e) => {
   if (e.button !== 0) return
@@ -701,6 +712,13 @@ onMounted(() => {
   // The headline gets wider once its web font arrives.
   document.fonts?.ready.then(() => gl && layout())
   watch(() => props.covered, sync)
+  watch(
+    () => props.held,
+    () => {
+      if (loaded) reveal()
+      sync()
+    }
+  )
   intersectionObserver = new IntersectionObserver(([entry]) => {
     visible = entry.isIntersecting
     sync()

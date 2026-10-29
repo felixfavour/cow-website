@@ -39,12 +39,16 @@
         >
           <div class="card">
             <img
+              v-if="item.photo"
               :src="item.photo"
               :alt="item.name"
               class="photo"
               loading="lazy"
               decoding="async"
             />
+            <div v-else class="photo monogram" aria-hidden="true">
+              {{ item.monogram || initials(item.name) }}
+            </div>
             <div class="card-text">
               <p class="quote">{{ item.quote }}</p>
               <footer class="mt-auto">
@@ -93,55 +97,81 @@
 // their own, so nothing is laid out or repainted while they move. Vue only
 // re-renders when the current testimonial changes.
 
-// TODO: placeholder testimonials and photos (pravatar.cc), to be replaced with
-// real ones before this goes live. Only Moshood's and Yinka's words are real.
+// Real reviews from Senja and Trustpilot, in the reviewers' own words (trimmed
+// with ellipses). A photo is optional; without one the card shows initials,
+// or `monogram` where the name's first and last letters don't suit (a church).
+import moshood from "~/assets/images/testimonials/moshood-olawale-mustapha.webp"
+import adebayo from "~/assets/images/testimonials/adebayo-awoyele.webp"
+
 const testimonials = [
+  {
+    name: "Loving Lord Baptist Church",
+    role: ["Cavite, Philippines.", "Review on Trustpilot"],
+    quote:
+      "We don’t have a big budget or a big team, so finding a tool that helps us prepare our Sunday services, and finding out it’s free, felt like an answer to prayer… It has made our worship so much smoother.",
+    monogram: "LL",
+  },
+  {
+    name: "Enesi Nathan",
+    role: ["Review on Trustpilot"],
+    quote:
+      "For the quality you get from the software, the price is one of the best values for money… All in all, Cloud of Worship has to be the best display software I’ve used.",
+  },
   {
     name: "Moshood Olawale Mustapha",
     role: ["Live Streaming Lead, RCF Unilag.", "Head of Media, TEM"],
     quote:
       "As a media personnel, finding the right projection software has always been challenging. However, Cloud of Worship has revolutionized our work. Unlike other tools, it works seamlessly on the web, making it easy for our whole team to prepare and project from any device.",
-    photo: "https://i.pravatar.cc/640?img=12",
+    photo: moshood,
   },
   {
-    name: "Yinka Adenikinju",
-    role: [
-      "Head, Media Department,",
-      "Foursquare Gospel Church, Salvation Chapel",
-    ],
+    name: "Aquaisua Victor Essien",
+    role: ["Review on Trustpilot"],
     quote:
-      "The app’s ability for different users to create accounts and share lyrics fosters community. Cloud of Worship is indispensable, and we highly recommend it for any congregation looking to enhance their worship experience.",
-    photo: "https://i.pravatar.cc/640?img=59",
+      "Used by kids in the children’s ministry every Sunday, that’s how easy it is to use. Media in church would have been a hassle without the software from my experience so far.",
   },
   {
-    name: "Grace Okafor",
-    role: ["Media Coordinator,", "Placeholder Church"],
+    name: "Emmanuel Sebastian",
+    role: ["Media Handler,", "MFMCF Unijos"],
     quote:
-      "We used to spend Saturday nights building slides. Now our volunteers put the whole service together in minutes, and anyone on the team can step in on Sunday morning.",
-    photo: "https://i.pravatar.cc/640?img=47",
+      "Its browser-based platform means no more complicated installations, just log in and you’re ready to go… The offline capability ensures that our presentations run smoothly, regardless of internet connectivity.",
   },
   {
-    name: "Daniel Mensah",
-    role: ["Projection Volunteer,", "Placeholder Church"],
+    name: "Matthew Ọbańlá",
+    role: ["Review on Trustpilot"],
     quote:
-      "Bible verses, hymns and announcements all live in one place, and it kept working when our internet dropped halfway through the service. That alone won our team over.",
-    photo: "https://i.pravatar.cc/640?img=68",
+      "Using Cloud of Worship has simplified my church media process. We now have everything in one place. All the team members can access and work on the same schedule and nothing breaks.",
   },
   {
-    name: "Ruth Adeyemi",
-    role: ["Worship Leader,", "Placeholder Church"],
+    name: "Monte Young",
+    role: ["Review on Trustpilot"],
     quote:
-      "Our lyrics are on screen the moment the band starts the next song. The team can follow the flow of worship instead of chasing slides.",
-    photo: "https://i.pravatar.cc/640?img=32",
+      "Cloud of Worship has been the most amazing discovery. The ease of use and features are remarkable. This has absolutely changed the church worship service.",
   },
   {
-    name: "Samuel Boateng",
-    role: ["Media Lead,", "Placeholder Church"],
+    name: "Engr Adebayo Awoyele",
+    role: ["Congregant,", "Foursquare Gospel Church, Ifako"],
     quote:
-      "We run it from a laptop at the back of the hall and a phone at the front. Setting up for a new service takes minutes, not an afternoon.",
-    photo: "https://i.pravatar.cc/640?img=15",
+      "I am not a direct handler of the Cloud of Worship software, but I am a part of the congregation using it. When I suddenly realised… worship lyrics, Bible references and PowerPoint slides now come up speedily without delay, I knew something different had been added.",
+    photo: adebayo,
+  },
+  {
+    name: "John Akinkunmi",
+    role: ["Review on Trustpilot"],
+    quote:
+      "I found it while looking for an alternative to EasyWorship. The UI is intuitively simple and easy to learn.",
   },
 ]
+
+// "Matthew Ọbańlá" → "MỌ"; skips titles such as "Engr".
+const initials = (name) =>
+  name
+    .split(" ")
+    .filter((word) => !/^(engr|dr|pst|rev)\.?$/i.test(word))
+    .map((word) => word[0])
+    .filter((_, i, all) => i === 0 || i === all.length - 1)
+    .join("")
+    .toUpperCase()
 
 // Scrolling spent on each testimonial while the section is pinned.
 const STEP_SVH = 40
@@ -415,6 +445,27 @@ onBeforeUnmount(() => {
   object-position: 50% 25%;
   -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
   mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+/* Stands in for a photo: the reviewer's initials, large and faint, over a
+   soft glow of the brand purple. It fades into the card like a photo does. */
+.monogram {
+  display: grid;
+  place-items: center;
+  padding-bottom: 8%;
+  background: radial-gradient(circle at 50% 45%, rgba(138, 65, 201, 0.42), rgba(76, 29, 149, 0.16) 45%, transparent 72%);
+  color: rgba(255, 255, 255, 0.14);
+  font-family: var(--heading-font);
+  font-size: 96px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  user-select: none;
+}
+@media (min-width: 1024px) {
+  .monogram {
+    padding-bottom: 0;
+    font-size: clamp(120px, calc(var(--stack-height) * 0.36), 190px);
+  }
 }
 .card-text {
   position: relative;

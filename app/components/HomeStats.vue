@@ -32,13 +32,15 @@ const churches = computed(() => (churchCount.value ? Math.floor(churchCount.valu
 const stats = computed(() => [
   { value: churches.value, suffix: "+", label: "Churches served" },
   { value: 99, suffix: "%", label: "Uptime during service hours" },
-  { value: 7, suffix: "+", label: "Countries" },
+  { value: 63, suffix: "+", label: "Countries" },
 ])
 
 const root = ref(null)
 const started = ref(false)
 const shown = ref(stats.value.map(() => false))
-const display = ref(stats.value.map(() => 0))
+// The real values go out in the prerendered page, so crawlers read them; the
+// stats are invisible until they play, and drop to zero to count up then.
+const display = ref(stats.value.map((stat) => stat.value))
 
 const frames = []
 const timers = []
@@ -91,6 +93,7 @@ let observer = null
 
 onMounted(() => {
   reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  if (!reducedMotion) display.value = stats.value.map(() => 0)
   if (props.start) play()
   if (!props.auto) return
   observer = new IntersectionObserver(

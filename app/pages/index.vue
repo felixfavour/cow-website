@@ -2,27 +2,43 @@
   <div class="page">
     <!-- HERO: pinned while the light horizon scrolls up over it -->
     <div ref="stage" class="hero-stage relative h-[200svh] -mt-[60px] md:-mt-[76px]">
-      <section class="hero sticky top-0 h-[100svh] overflow-hidden bg-[#101010]">
-        <HeroSlideWall :clear-to="heroText" :covered="progress >= 0.99" class="absolute inset-0" />
+      <section class="hero sticky top-0 h-[100svh] overflow-hidden bg-[#101010]" :class="{ entering, mounted }">
+        <HeroSlideWall
+          :clear-to="heroText"
+          :covered="progress >= 0.99"
+          :held="!textSettled"
+          class="absolute inset-0"
+        />
         <div
-          class="absolute inset-x-0 bottom-0 h-[70%] bg-gradient-to-t from-[#101010] from-60% to-transparent pointer-events-none md:hidden"
+          class="stack-fade absolute inset-x-0 bottom-0 h-[70%] bg-gradient-to-t from-[#101010] from-60% to-transparent pointer-events-none"
         ></div>
         <div
           class="relative mx-auto max-w-[1600px] px-5 md:px-10 lg:px-16 h-full flex flex-col justify-end pb-[clamp(56px,15.5vh,140px)] pointer-events-none"
         >
           <div ref="heroText" class="w-fit pointer-events-auto">
-            <h1
+            <RevealText
               ref="heading"
-              class="text-white font-bold text-[60px] md:text-[76px] lg:text-[90px] leading-[0.943] tracking-[-0.02em]"
-            >
-              <span class="line-slot"><span class="line">Run your church</span></span>
-              <span class="line-slot"><span class="line">media projection easily</span></span>
-            </h1>
+              as="h1"
+              :lines="['Run your church', 'media projection easily']"
+              scrub
+              :progress="headingReveal"
+              :waiting-opacity="0"
+              :waiting-blur="0"
+              class="hero-reveal text-white font-bold text-[60px] md:text-[76px] lg:text-[90px] leading-[0.943] tracking-[-0.02em]"
+            />
             <div class="exit-slot mt-[22px]">
-              <p ref="subtext" class="max-w-[372px] text-[18px] leading-[1.19] text-[#B7B7B7]">
-                Your sub-1000 church congregation doesn't need overly complex
-                software or overburdened volunteers.
-              </p>
+              <div ref="subtext">
+                <RevealText
+                  as="p"
+                  by="words"
+                  :lines="[subcopy]"
+                  scrub
+                  :progress="subReveal"
+                  :waiting-opacity="0"
+                  :waiting-blur="0"
+                  class="hero-reveal max-w-[372px] text-[18px] leading-[1.19] text-[#B7B7B7]"
+                />
+              </div>
             </div>
             <div class="exit-slot -mx-6 mt-[44px] px-6 pt-[8px] pb-[26px] -mb-[26px]">
               <a
@@ -32,7 +48,7 @@
                     'https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=hero'
                   )
                 "
-                class="pill-btn"
+                class="hero-cta pill-btn"
               >
                 Get started for free
               </a>
@@ -42,7 +58,7 @@
 
         <!-- The horizon: dark, then brand purple, then lavender, then white. -->
         <div
-          class="horizon absolute inset-x-0 top-0 h-[200svh] pointer-events-none"
+          class="horizon absolute inset-x-0 top-0 h-[250svh] pointer-events-none"
           :style="{ transform: `translateY(${horizonY}svh)` }"
           aria-hidden="true"
         ></div>
@@ -59,6 +75,16 @@
       <HomeProjection />
 
       <HomeFamiliar />
+    </div>
+
+    <!--
+      On narrow screens the numbers come after the photo section rather than
+      beside it. They sit outside the box above, so the section has let go of
+      the screen before they arrive; inside it, the pinned section stayed put
+      while they scrolled across its photo and avatars.
+    -->
+    <div class="bg-[#FBF7FF] px-5 pb-20 pt-4 md:px-10 lg:hidden">
+      <HomeStats auto />
     </div>
 
     <HomePricing />
@@ -82,6 +108,38 @@
 const { mergeUtmsIntoUrl } = useUtm()
 const heroText = ref(null)
 const stage = ref(null)
+
+const subcopy =
+  "Your sub-1000 church congregation doesn't need overly complex software or overburdened volunteers."
+
+// On load the headline, then the subtext, write themselves in with the same
+// sweep as the statements further down the page, only run by the clock
+// instead of the scroll, and with letters unseen (not faint and blurred) until
+// the purple edge reaches them. Each is [start, length] in seconds.
+const HEADING_SWEEP = [0.15, 1.3]
+const SUB_SWEEP = [0.9, 1]
+const headingReveal = ref(0)
+const subReveal = ref(0)
+const mounted = ref(false)
+let sweepFrame = 0
+
+// True while the text writes in and the button fades in after it. The slots
+// stop clipping meanwhile, so the blurred letters aren't cut off square.
+const entering = ref(true)
+const ENTRANCE_MS = 2500 // the button's delay plus its fade (see .hero-cta)
+let entranceTimer = 0
+// The slide wall waits for the text to settle, then sweeps in with the button.
+const textSettled = ref(false)
+const TEXT_MS = 1900 // when the subtext's sweep ends (SUB_SWEEP)
+let textTimer = 0
+
+const sweep = (start) => {
+  const at = (performance.now() - start) / 1000
+  const along = ([from, length]) => clamp01((at - from) / length)
+  headingReveal.value = along(HEADING_SWEEP)
+  subReveal.value = along(SUB_SWEEP)
+  sweepFrame = subReveal.value < 1 ? requestAnimationFrame(() => sweep(start)) : 0
+}
 const heading = ref(null)
 const subtext = ref(null)
 const cta = ref(null)
@@ -91,8 +149,11 @@ const cta = ref(null)
 const progress = ref(0)
 
 // The horizon starts just below the screen and rises to cover it; its white
-// part begins 80% of a screen down its height, so it ends 80svh above the top.
-const horizonY = computed(() => 100 - 180 * progress.value)
+// part begins 80% of a screen down its height, so it ends 47svh above the top.
+// It rises fast enough that the screen is white before the features section
+// (64svh up into this stage) climbs into view, so that section's top edge
+// never cuts across the purple.
+const horizonY = computed(() => 100 - 225 * progress.value)
 
 const navTheme = useState("navTheme", () => "dark")
 
@@ -124,7 +185,7 @@ const update = () => {
   })
 
   // The bar goes light once the white part of the horizon reaches it.
-  navTheme.value = progress.value > 0.86 ? "light" : "dark"
+  navTheme.value = progress.value > 0.69 ? "light" : "dark"
 }
 
 const onScroll = () => {
@@ -150,7 +211,12 @@ useSeoMeta({
 useOgCard("home")
 
 onMounted(() => {
-  lines = heading.value ? [...heading.value.querySelectorAll(".line")] : []
+  mounted.value = true
+  const start = performance.now()
+  sweepFrame = requestAnimationFrame(() => sweep(start))
+  entranceTimer = setTimeout(() => (entering.value = false), ENTRANCE_MS)
+  textTimer = setTimeout(() => (textSettled.value = true), TEXT_MS)
+  lines = heading.value ? [...heading.value.$el.querySelectorAll(".reveal-line-inner")] : []
   update()
   window.addEventListener("scroll", onScroll, { passive: true })
   window.addEventListener("resize", onScroll)
@@ -161,6 +227,9 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
+  clearTimeout(entranceTimer)
+  clearTimeout(textTimer)
+  cancelAnimationFrame(sweepFrame)
   cancelAnimationFrame(frame)
   window.removeEventListener("scroll", onScroll)
   window.removeEventListener("resize", onScroll)
@@ -169,23 +238,50 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+/* The fade that keeps the wall from showing through the text is for layouts
+   that stack the text under the wall: phones, and tablets held upright. Wide
+   landscape screens put the wall beside the text instead (see isWide in
+   HeroSlideWall). */
+@media (min-width: 768px) and (orientation: landscape) {
+  .stack-fade {
+    display: none;
+  }
+}
+
 .exit-slot {
   overflow: hidden;
 }
-/* Each headline line slides up out of its own slot; the padding keeps
-   descenders inside it. */
-.line-slot {
-  display: block;
+/* Each headline line slides up out of its own slot (RevealText's lines) on
+   the way out. Scrubbed text leaves its slots unclipped, so clip them again
+   once the text has written in. */
+.hero:not(.entering) :deep(.reveal-line) {
   overflow: hidden;
-  padding-bottom: 0.12em;
-  margin-bottom: -0.12em;
-}
-.line {
-  display: block;
-  will-change: transform;
 }
 .exit-slot > * {
   will-change: transform;
+}
+
+/* Until the page is live the text would show in full, before the sweep
+   takes it back to faint; keep it out of sight until then. The button fades
+   in once the text has settled (TEXT_MS). */
+.hero:not(.mounted) .hero-reveal {
+  opacity: 0;
+}
+.entering .exit-slot {
+  overflow: visible;
+}
+.hero-cta {
+  animation: fade-in 0.6s ease-out 1.9s backwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-cta {
+    animation: none;
+  }
 }
 
 /* Bowl-shaped: the edge sits higher at the sides than in the middle, like the
@@ -196,7 +292,7 @@ onBeforeUnmount(() => {
 .horizon {
   will-change: transform;
   background: radial-gradient(
-    ellipse 110% 40% at 50% 0%,
+    ellipse 110% 32% at 50% 0%,
     rgba(16, 16, 16, 0) 0%,
     rgba(16, 16, 16, 0) 52%,
     rgba(30, 10, 52, 0.92) 64%,

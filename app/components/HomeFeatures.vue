@@ -1,13 +1,13 @@
 <template>
   <!--
     The section pins while you scroll through its tabs, one after another, and
-    starts a little over half a screen early so it rises inside the white end
+    starts nearly two thirds of a screen early so it rises inside the white end
     of the hero's horizon rather than after it. Any earlier and its top edge
-    would cut across the horizon's purple.
+    would cut across the horizon's purple (see horizonY in pages/index.vue).
   -->
   <div
     ref="stage"
-    class="features-stage relative z-[1] -mt-[55svh]"
+    class="features-stage relative z-[1] -mt-[64svh]"
     :style="{ height: `calc(${sectionHeight}px + ${TRAVEL_SVH}svh)` }"
   >
     <section
@@ -123,7 +123,7 @@ const tabs = [
   },
   {
     key: "offline",
-    label: "Cloud-based (offline first)",
+    label: "Browser-first (offline)",
     image: PLACEHOLDER, // offline.webp
     alt: "Cloud of Worship running in the browser, ready to keep working offline",
   },

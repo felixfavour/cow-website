@@ -4,46 +4,77 @@
     from behind the price ticket and the dark part of the section rises a
     little further into the lavender.
   -->
-  <div ref="stage" class="pricing-stage relative bg-[#0C0F19]" :style="stageStyle">
+  <div
+    ref="stage"
+    class="pricing-stage relative bg-[#0C0F19]"
+    :style="stageStyle"
+  >
     <section
       ref="section"
       class="home-pricing relative overflow-hidden bg-[#FBF7FF] pb-16 lg:sticky lg:top-[76px] lg:pb-0"
       :style="{ '--s': scale }"
     >
       <!-- The dark part: the top of a very large circle, rising from below. -->
-      <svg class="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true">
+      <svg
+        class="pointer-events-none absolute inset-0 h-full w-full"
+        aria-hidden="true"
+      >
         <path ref="maskPath" fill="#0C0F19" />
       </svg>
 
-      <div class="relative mx-auto max-w-[1600px] px-5 pt-16 md:px-10 lg:px-16 lg:pt-[73px]">
-        <p class="text-[11px] font-medium uppercase leading-[14px] tracking-[0.08em] text-[#8A41C9]">Pricing</p>
+      <div
+        class="relative mx-auto max-w-[1600px] px-5 pt-16 md:px-10 lg:px-16 lg:pt-[73px]"
+      >
+        <p
+          class="text-[11px] font-medium uppercase leading-[14px] tracking-[0.08em] text-[#8A41C9]"
+        >
+          Pricing
+        </p>
         <RevealText
           as="h2"
-          :lines="['You can start for free', 'and pay only when', 'your church needs it.']"
+          :lines="[
+            'You can start for free',
+            'and pay only if',
+            'your church needs it.',
+          ]"
+          :link="{ text: 'only if', label: 'only if (why our free plan is not a trial)' }"
           scrub
           :range="[0.9, 0.35]"
           class="pricing-heading mt-[5px] font-bold text-[#1A1F2E]"
+          @link="sayFreeIsFree"
         />
+        <ActivityToasts ref="toasts" />
         <a :href="signupUrl" class="pill-btn mt-7">Get started for free</a>
       </div>
 
       <div class="cluster">
         <!-- Behind the ticket until the scroll brings them out. -->
         <div ref="blueCard" class="side-card side-card-blue">
-          <span class="heart" aria-hidden="true"><svg viewBox="0 0 256 256"><path :d="HEART" /></svg></span>
+          <span class="heart" aria-hidden="true"
+            ><svg viewBox="0 0 256 256"><path :d="HEART" /></svg
+          ></span>
           <p class="side-card-text">
-            Save at least 10 minutes every Sunday with Teams by reusing songs added by nearby churches.
+            Save at least 10 minutes every Sunday with Teams by reusing songs
+            added by nearby churches.
           </p>
         </div>
         <div ref="yellowCard" class="side-card side-card-yellow">
-          <span class="heart" aria-hidden="true"><svg viewBox="0 0 256 256"><path :d="HEART" /></svg></span>
+          <span class="heart" aria-hidden="true"
+            ><svg viewBox="0 0 256 256"><path :d="HEART" /></svg
+          ></span>
           <p class="side-card-text mt-[27px]">
-            Monthly cost too high? Tell us what your church can afford. We’ll reply in about 30 minutes—or 8½
-            hours if we’re asleep.
+            Monthly cost too high? Tell us what your church can afford. We’ll
+            reply in about 30 minutes—or 8.5 hours if we’re asleep :)
           </p>
           <a href="/contact" class="pill-btn pill-btn-dark mt-[14px] gap-3">
             Contact us
-            <svg width="20" height="20" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 256 256"
+              fill="currentColor"
+              aria-hidden="true"
+            >
               <path
                 d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
               />
@@ -54,7 +85,14 @@
         <!-- The price ticket: the card, a perforation, and the stub. -->
         <div class="ticket">
           <div class="ticket-top flex flex-col items-center">
-            <PillTabs v-model="cycle" :tabs="cycles" label="Billing period" id-prefix="billing" />
+            <!-- The ticket is white too, so the bar keeps an outline here. -->
+            <PillTabs
+              v-model="cycle"
+              :tabs="cycles"
+              label="Billing period"
+              id-prefix="billing"
+              class="border border-[#9BA3B2]"
+            />
             <div class="price-box">
               <Transition name="price" mode="out-in">
                 <p
@@ -64,20 +102,33 @@
                   :aria-label="`${price.whole}${price.cents ? '.' + price.cents : ''}`"
                 >
                   <span aria-hidden="true">{{ price.whole }}</span
-                  ><span v-if="price.cents" class="price-cents" aria-hidden="true">.{{ price.cents }}</span>
+                  ><span
+                    v-if="price.cents"
+                    class="price-cents"
+                    aria-hidden="true"
+                    >.{{ price.cents }}</span
+                  >
                 </p>
               </Transition>
             </div>
-            <p class="billed text-[15px] font-medium uppercase leading-[18px] tracking-[0.04em] text-[#1A1F2E]">
+            <p class="sr-only">{{ bothPrices }}</p>
+            <p
+              class="billed text-[15px] font-medium uppercase leading-[18px] tracking-[0.04em] text-[#1A1F2E]"
+            >
               {{ price.billed }}
             </p>
-            <a :href="planUrl" class="pill-btn mt-[35px] w-full max-w-[286px]">Get started</a>
+            <a :href="planUrl" class="pill-btn mt-[35px] w-full max-w-[286px]"
+              >Get started</a
+            >
           </div>
           <div ref="perforation" class="perforation" aria-hidden="true"></div>
           <div class="ticket-stub grid place-items-center px-8">
-            <p class="max-w-[370px] text-center text-[15px] uppercase leading-[1.25] tracking-[0.02em] text-[#1A1F2E]">
-              90% of profits from Teams plan sales go directly to efforts pushing the gospel forward in churches
-              across Africa and other regions.
+            <p
+              class="max-w-[370px] text-center text-[15px] uppercase leading-[1.25] tracking-[0.02em] text-[#1A1F2E]"
+            >
+              90% of profits from Teams plan sales go directly to efforts
+              pushing the gospel forward in churches across Africa and other
+              regions.
             </p>
           </div>
         </div>
@@ -113,6 +164,18 @@ const signupUrl = mergeUtmsIntoUrl(
   "https://app.cloudofworship.com/signup?utm_source=marketing_website&utm_medium=home_pricing"
 )
 
+// "Only if": a word from us, in the same glass toast as the teammates'.
+const toasts = ref(null)
+const sayFreeIsFree = () => {
+  toasts.value?.push({
+    name: "Cloud of Worship",
+    image: "/cow-logo-square.jpg",
+    message:
+      "Our free plan isn't a trial. 99.74% of the churches that use us every weekend never paid a dime, and we'd still pick up their calls",
+    meta: "Cloud of Worship · just now",
+  })
+}
+
 // ---- Prices ----
 
 const { plans } = usePricingPlans()
@@ -123,13 +186,18 @@ const SYMBOLS = { USD: "$", NGN: "₦", GBP: "£" }
 const amountOf = (plan) => (plan.amountKobo ?? plan.amountCents ?? 0) / 100
 const isYearly = (plan) => /annual|yearly/i.test(plan.alias || "")
 const planFor = (yearly) =>
-  plans.value?.find((p) => p.currency === currency.value && isYearly(p) === yearly) || null
+  plans.value?.find(
+    (p) => p.currency === currency.value && isYearly(p) === yearly
+  ) || null
 
 const discount = computed(() => {
   const monthly = planFor(false)
   const yearly = planFor(true)
   if (!monthly || !yearly) return "10% off"
-  const off = Math.round(((amountOf(monthly) * 12 - amountOf(yearly)) / (amountOf(monthly) * 12)) * 100)
+  const off = Math.round(
+    ((amountOf(monthly) * 12 - amountOf(yearly)) / (amountOf(monthly) * 12)) *
+      100
+  )
   return off > 0 ? `${off}% off` : null
 })
 
@@ -145,7 +213,10 @@ const split = (amount) => {
   const cents = Math.round(amount * 100)
   const whole = Math.floor(cents / 100)
   const rest = cents % 100
-  return { whole: `${symbol()}${whole.toLocaleString("en-US")}`, cents: rest ? String(rest).padStart(2, "0") : "" }
+  return {
+    whole: `${symbol()}${whole.toLocaleString("en-US")}`,
+    cents: rest ? String(rest).padStart(2, "0") : "",
+  }
 }
 const money = (amount) => {
   const { whole, cents } = split(amount)
@@ -153,8 +224,7 @@ const money = (amount) => {
 }
 
 // Annual shows what it comes to per month, with the yearly total underneath.
-const price = computed(() => {
-  const yearly = cycle.value === 1
+const priceFor = (yearly) => {
   const plan = planFor(yearly)
   let parts
   let billed
@@ -172,6 +242,16 @@ const price = computed(() => {
   const length = parts.whole.length
   const size = length <= 4 ? "160px" : length <= 6 ? "128px" : "104px"
   return { ...parts, billed, size }
+}
+const price = computed(() => priceFor(cycle.value === 1))
+
+// Only one billing period is on the ticket at a time, so both are spelled out
+// for screen readers and crawlers, who never press the toggle.
+const bothPrices = computed(() => {
+  const amount = (p) => (p.cents ? `${p.whole}.${p.cents}` : p.whole)
+  const monthly = priceFor(false)
+  const yearly = priceFor(true)
+  return `Teams plan: ${amount(monthly)} a month, billed monthly, or ${amount(yearly)} a month, ${yearly.billed.toLowerCase()}.`
 })
 
 const planUrl = computed(() => {
@@ -194,7 +274,9 @@ const scale = ref(1)
 const wide = ref(true)
 const sectionHeight = ref(800)
 
-const stageStyle = computed(() => (wide.value ? { height: `calc(${sectionHeight.value}px + ${PIN_SVH}svh)` } : {}))
+const stageStyle = computed(() =>
+  wide.value ? { height: `calc(${sectionHeight.value}px + ${PIN_SVH}svh)` } : {}
+)
 
 const clamp01 = (v) => Math.min(1, Math.max(0, v))
 const smooth = (a, b, v) => {
@@ -217,7 +299,11 @@ const drawMask = (rise) => {
   const H = s.height
   const k = W / DESIGN_WIDTH
   const R = MASK_RADIUS * Math.max(k, 0.26)
-  const apex = p.top - s.top - MASK_ABOVE_PERFORATION * scale.value - rise * MASK_RISE * scale.value
+  const apex =
+    p.top -
+    s.top -
+    MASK_ABOVE_PERFORATION * scale.value -
+    rise * MASK_RISE * scale.value
   const arcY = (x) => apex + R - Math.sqrt(R * R - (x - W / 2) ** 2)
   const r = MASK_CORNER * Math.min(1, k * 1.2)
   const yEdge = arcY(r)
@@ -254,7 +340,9 @@ const measureTarget = () => {
     // How far through its pinned stretch the section is.
     const pinTop = parseFloat(getComputedStyle(section.value).top) || 0
     const travel = stage.value.offsetHeight - section.value.offsetHeight
-    target = clamp01((pinTop - stage.value.getBoundingClientRect().top) / travel)
+    target = clamp01(
+      (pinTop - stage.value.getBoundingClientRect().top) / travel
+    )
   } else {
     // Narrow screens don't pin: the cards come in as the stub's bottom rises
     // through the screen.
@@ -307,7 +395,12 @@ onMounted(() => {
     (list) => {
       if (!list?.length) return
       const has = (c) => list.some((p) => p.currency === c)
-      currency.value = zone === "Africa/Lagos" && has("NGN") ? "NGN" : zone === "Europe/London" && has("GBP") ? "GBP" : "USD"
+      currency.value =
+        zone === "Africa/Lagos" && has("NGN")
+          ? "NGN"
+          : zone === "Europe/London" && has("GBP")
+            ? "GBP"
+            : "USD"
     },
     { immediate: true }
   )
@@ -479,7 +572,10 @@ onBeforeUnmount(() => {
 /* The price blurs out and back in when the billing period changes. */
 .price-enter-active,
 .price-leave-active {
-  transition: opacity 0.2s ease, filter 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    filter 0.2s ease,
+    transform 0.2s ease;
 }
 .price-enter-from,
 .price-leave-to {

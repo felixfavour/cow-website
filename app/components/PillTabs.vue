@@ -1,12 +1,12 @@
 <template>
   <!--
-    The home page's pill tab group: a thin grey outline holding a row of tabs,
+    The home page's pill tab group: a solid white bar holding a row of tabs,
     with a dark pill that slides behind the active one. On narrow screens the
     row scrolls sideways and keeps the active tab in view.
   -->
   <div
     ref="bar"
-    class="pill-tabs relative max-w-full overflow-x-auto rounded-full border border-[#9BA3B2] p-1"
+    class="pill-tabs relative max-w-full overflow-x-auto rounded-full bg-white p-1"
     role="tablist"
     :aria-label="label"
   >
@@ -22,8 +22,8 @@
         :aria-selected="modelValue === i"
         :aria-controls="controls ? `${idPrefix}-panel-${tab.key}` : undefined"
         :tabindex="modelValue === i ? 0 : -1"
-        class="pill-tab flex h-[43px] items-center whitespace-nowrap rounded-full px-3 text-[15px] transition-colors duration-300 md:px-[13px] md:text-[17px]"
-        :class="modelValue === i ? 'text-white' : 'text-[#5A6170] hover:text-[#1A1F2E]'"
+        class="pill-tab flex h-[43px] items-center whitespace-nowrap rounded-full px-3 text-[15px] font-medium transition-colors duration-300 md:px-[13px] md:text-base"
+        :class="modelValue === i ? 'text-white' : 'text-[#6E7787] hover:text-[#1A1F2E]'"
         @click="choose(i)"
         @keydown.right.prevent="choose((i + 1) % tabs.length, true)"
         @keydown.left.prevent="choose((i - 1 + tabs.length) % tabs.length, true)"

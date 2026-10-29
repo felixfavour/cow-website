@@ -9,7 +9,7 @@
     ref="section"
     :href="signupUrl"
     class="home-cta sticky bottom-0 top-[60px] z-0 block overflow-hidden text-[#0C0F19] md:top-[76px]"
-    aria-label="Are you ready to move faster? Get started with Cloud of Worship for free"
+    aria-label="Sunday’s coming. Are you ready? Get started with Cloud of Worship for free"
     @pointerenter="onPointerEnter"
     @pointermove="onPointerMove"
     @pointerleave="onPointerLeave"
@@ -18,11 +18,11 @@
          can see it. -->
     <span class="backdrop" aria-hidden="true"></span>
 
-    <p ref="headline" class="headline font-bold" aria-hidden="true">Are you ready to move faster?</p>
+    <p ref="headline" class="headline font-bold" aria-hidden="true">Sunday’s coming. Are you ready?</p>
 
     <RevealText
       as="p"
-      :lines="['Cloud of Worship is your', 'church’s literal powerpoint.']"
+      :lines="['Prepare once,', 'use everywhere.']"
       scrub
       :progress="smallPrintProgress"
       class="small-print text-[17px] leading-[1.2] md:text-[20px]"
@@ -42,7 +42,7 @@
 </template>
 
 <script setup>
-// "Are you ready to move faster?": the last stop before the footer. Clicking
+// "Sunday’s coming. Are you ready?": the last stop before the footer. Clicking
 // anywhere in it goes to sign-up. Over it, the pointer becomes the black "Get Started" disc,
 // which inverts the giant headline where it passes over the letters; when the
 // pointer leaves, the disc drifts back to its place in the design.

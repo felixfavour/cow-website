@@ -14,6 +14,7 @@
           v-for="(church, i) in row"
           :key="i"
           class="church"
+          :class="{ 'on-light': church.onLight }"
           :role="i < churches.length ? 'listitem' : undefined"
           :aria-hidden="i >= churches.length || r > 0 ? 'true' : undefined"
           :tabindex="i < churches.length && r === 0 ? 0 : -1"
@@ -38,8 +39,7 @@
     >
       <span class="heart"><svg viewBox="0 0 256 256"><path :d="HEART" /></svg></span>
       <p class="mt-[30px] text-[16px] leading-[1.26]">
-        <strong class="font-bold">{{ card.name }}</strong> is a real church that has used Cloud of Worship in
-        the last 30 days.
+        {{ card.line[0] }}<strong class="font-bold">{{ card.name }}</strong>{{ card.line[1] }}
       </p>
     </div>
   </section>
@@ -51,13 +51,72 @@
 // left as you scroll down, the bottom row right). Hovering a church shows a
 // pastel card about it, tilted; moving to another church glides that card
 // across, changing colour and angle on the way.
-import rccg from "~/assets/images/rccg.webp"
-
 const HEART =
   "M240,102c0,70-103.79,126.66-108.21,129a8,8,0,0,1-7.58,0C119.79,228.66,16,172,16,102A62.07,62.07,0,0,1,78,40c20.65,0,38.73,8.88,50,23.89C139.27,48.88,157.35,40,178,40A62.07,62.07,0,0,1,240,102Z"
 
-// TODO: every church is RCCG for now.
-const churches = Array.from({ length: 10 }, () => ({ name: "Redeemed Christian Church of God", logo: rccg }))
+// Logos are keyed by file name, e.g. "rccg" for churches/rccg.webp.
+const LOGOS = Object.fromEntries(
+  Object.entries(import.meta.glob("~/assets/images/churches/*.webp", { eager: true, import: "default" })).map(
+    ([path, url]) => [path.split("/").pop().replace(".webp", ""), url]
+  )
+)
+
+// The few logos made for a dark background; every other one was drawn for white.
+const ON_DARK = new Set(["anglican-communion", "church-of-pentecost", "celebration-church"])
+
+const churches = [
+  ["Redeemed Christian Church of God (RCCG)", "rccg"],
+  ["Celebration Church International (CCI)", "celebration-church"],
+  ["Foursquare Gospel Church in Nigeria", "foursquare"],
+  ["House on the Rock", "house-on-the-rock"],
+  ["The Redeemed Evangelical Mission (TREM)", "trem"],
+  ["Anglican Church (Anglican Communion)", "anglican-communion"],
+  ["Living Faith Church Worldwide (Winners' Chapel)", "winners-chapel"],
+  ["Christ Embassy (Believers' LoveWorld)", "christ-embassy"],
+  ["Deeper Christian Life Ministry (DCLM)", "dclm"],
+  ["Mountain of Fire and Miracles Ministries (MFM)", "mfm"],
+  ["General Council of the Assemblies of God, Nigeria", "assemblies-of-god"],
+  ["Dunamis International Gospel Centre", "dunamis"],
+  ["Christ Apostolic Church (CAC)", "cac"],
+  ["The Church of Pentecost", "church-of-pentecost"],
+  ["Seventh-day Adventist Church", "adventist"],
+  ["Salvation Ministries", "salvation-ministries"],
+  ["Catholic Church", "catholic"],
+  ["Dominion City Church", "dominion-city"],
+  ["Celestial Church of Christ (CCC)", "celestial-church"],
+  ["International Central Gospel Church (ICGC)", "icgc"],
+  ["Evangelical Church Winning All (ECWA)", "ecwa"],
+  ["The Apostolic Church Nigeria (TAC)", "tac"],
+  ["Watoto Church", "watoto"],
+  ["The Anglican Church of Kenya", "anglican-church-kenya"],
+  ["ZAOGA Forward in Faith Ministries International (FIFMI)", "zaoga-fifmi"],
+].map(([name, slug]) => ({ name, logo: LOGOS[slug], onLight: !ON_DARK.has(slug) }))
+
+// What the card says, as the words before and after the church's name. Every
+// line has to stay true of every church on the wall: a real church that used
+// Cloud of Worship in the last 30 days. Each hover picks one at random.
+const LINES = [
+  ["", " projected with us this month. Amen to that."],
+  ["", " is real, and so are their slides."],
+  ["", ": on the wall and on our screens, this month."],
+  ["Not a stock photo. ", " used us in the last 30 days."],
+  ["", " put lyrics on screen with us this month, right on cue."],
+  ["", " put hymns on screen with us this month, every verse on cue."],
+  ["", " put scripture on screen with us this month, chapter and verse."],
+  ["", " sang along to our lyrics this month, right on cue."],
+  ["", " opened the Word with us this month. We kept the verses coming."],
+  ["Fresh from the projector: ", " used us in the last 30 days."],
+  ["", " made a joyful noise with us this month. We handled the words."],
+  ["", " let their light shine this month. We supplied the slides."],
+  ["", " trusted us with their Sunday this month."],
+  ["", " chose us in the last 30 days."],
+]
+
+// Any line but the one showing, so two hovers in a row never read the same.
+const nextLine = (current) => {
+  const pick = LINES[Math.floor(Math.random() * (LINES.length - 1))]
+  return pick === current ? LINES[LINES.length - 1] : pick
+}
 
 // Bright pastels and tilts for the hover card; each church gets its own pair.
 const PASTELS = ["#E2EFFF", "#FDEFD4", "#FDE2EC", "#DFF5E4", "#ECE4FF", "#FFE6D6", "#DDF4F4"]
@@ -80,7 +139,7 @@ const rowEls = ref([])
 const tracks = ref([])
 const hoverCard = ref(null)
 const paused = reactive([false, false])
-const card = reactive({ shown: false, instant: true, x: 0, y: 0, angle: 0, color: PASTELS[0], name: churches[0].name })
+const card = reactive({ shown: false, instant: true, x: 0, y: 0, angle: 0, color: PASTELS[0], name: churches[0].name, line: LINES[0] })
 
 const offsets = [0, -PITCH / 2]
 const speeds = [1, 1]
@@ -120,8 +179,12 @@ const start = () => {
 
 let hideTimer = 0
 
-const show = (el, i, r) => {
+const show = async (el, i, r) => {
   clearTimeout(hideTimer)
+  card.name = churches[i % churches.length].name
+  card.line = nextLine(card.line)
+  // Lines differ in length, so measure the card once the new one is in.
+  await nextTick()
   const s = section.value.getBoundingClientRect()
   const c = el.getBoundingClientRect()
   const w = hoverCard.value.offsetWidth
@@ -136,7 +199,6 @@ const show = (el, i, r) => {
   card.y = y
   card.angle = ANGLES[(index * 5) % ANGLES.length]
   card.color = PASTELS[(index * 3) % PASTELS.length]
-  card.name = churches[i % churches.length].name
   if (card.instant) {
     nextTick(() => {
       // Let the jump land before switching transitions back on.
@@ -206,21 +268,44 @@ onBeforeUnmount(() => {
 .church:focus-visible {
   background: #1a1f2e;
 }
+/* A logo drawn for a white page shows in colour on white. */
+.church.on-light:hover,
+.church.on-light:focus-visible {
+  background: #fff;
+}
 .church:focus-visible {
   box-shadow: 0 0 0 2px #8a41c9;
 }
-/* Grey at rest, as in the design; in colour under the pointer. */
+/* Grey at rest, as in the design; in colour under the pointer. Logos come in
+   every shape, so each keeps its own proportions inside the card. Each file
+   sits on pure black (or pure white, inverted to black at rest), and screen
+   blending drops that black into the card, so no box shows around a logo. */
 .logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 9999px;
-  filter: grayscale(1) contrast(1.05);
+  width: auto;
+  height: auto;
+  max-width: 147px;
+  max-height: 56px;
+  filter: grayscale(1);
+  mix-blend-mode: screen;
   transition: filter 0.3s ease, transform 0.3s ease;
+}
+/* Dark ink would vanish on the dark card, so it turns white at rest. The
+   filter swaps at once rather than fading, since a half-inverted logo would
+   show a grey box; the card's own fade to white carries the change. */
+.on-light .logo {
+  filter: grayscale(1) invert(1);
+  transition: transform 0.3s ease;
 }
 .church:hover .logo,
 .church:focus-visible .logo {
   filter: none;
   transform: scale(1.06);
+}
+/* On the white card the logo shows exactly as drawn; multiplying keeps its
+   white background matched to the card while the card fades to white. */
+.church.on-light:hover .logo,
+.church.on-light:focus-visible .logo {
+  mix-blend-mode: multiply;
 }
 
 .hover-card {

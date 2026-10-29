@@ -16,10 +16,13 @@ export interface OgCard {
   accent?: string
   title: string
   subtitle?: string
+  /** Hand-made artwork committed as-is: og:generate leaves the file alone. */
+  static?: boolean
 }
 
 export const OG_CARDS = {
-  home: { file: "home", accent: "Your church's", title: "presentation software, right in the browser." },
+  // Designed by hand ("Prepare Once, Use Everywhere" over the hero), not rendered.
+  home: { file: "home", static: true, title: "Prepare Once, Use Everywhere" },
   pricing: { file: "pricing", eyebrow: "Pricing", accent: "Free forever", title: "for one operator. Teams when you grow." },
   contact: { file: "contact", eyebrow: "Contact", accent: "Talk to us.", title: "We reply to every church that writes in." },
   wallOfLove: { file: "wall-of-love", eyebrow: "Wall of Love", accent: "What churches say", title: "after moving their Sunday to Cloud of Worship." },

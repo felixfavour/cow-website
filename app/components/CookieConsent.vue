@@ -1,7 +1,7 @@
 <template>
   <Transition name="consent">
     <div
-      v-if="shouldAsk"
+      v-if="mounted && shouldAsk"
       class="cookie-consent fixed bottom-0 right-0 z-[60] p-4 md:p-6 w-full md:w-auto"
       role="dialog"
       aria-modal="false"
@@ -36,6 +36,12 @@
 
 <script setup>
 const { shouldAsk, dismiss } = useCookieConsent()
+
+// The prerendered page can't know whether this visitor has answered, so it
+// leaves the banner out. Asking only once mounted keeps hydration matching the
+// server's HTML, and lets the banner slide in rather than appear already there.
+const mounted = ref(false)
+onMounted(() => (mounted.value = true))
 </script>
 
 <style scoped>

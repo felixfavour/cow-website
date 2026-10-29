@@ -6,15 +6,29 @@
     :class="{ revealed, scrub }"
     :aria-label="label"
   >
-    <span
-      v-for="(line, l) in parts"
-      :key="l"
-      class="reveal-line"
-      aria-hidden="true"
-    >
+    <span v-for="(line, l) in parts" :key="l" class="reveal-line">
       <span class="reveal-line-inner">
         <template v-for="(word, w) in line" :key="w">
-          <span class="reveal-word">
+          <button
+            v-if="word.link"
+            type="button"
+            class="reveal-link"
+            :aria-label="link.label"
+            @click="emit('link')"
+          >
+            <template v-for="(inner, i) in word.words" :key="i">
+              <span class="reveal-word" aria-hidden="true">
+                <span
+                  v-for="(unit, u) in inner.units"
+                  :key="u"
+                  class="reveal-unit"
+                  :style="{ '--reveal-delay': `${unit.delay}s` }"
+                >{{ unit.text }}</span>
+              </span>
+              {{ i < word.words.length - 1 ? " " : "" }}
+            </template>
+          </button>
+          <span v-else class="reveal-word" aria-hidden="true">
             <span
               v-for="(unit, u) in word.units"
               :key="u"
@@ -64,11 +78,16 @@ const props = defineProps({
   // With `scrub`: drive the reveal from outside (0 to 1) instead of from where
   // the text sits on screen, for text in a pinned section that doesn't move.
   progress: { type: Number, default: null },
+  // With `scrub`: how letters waiting for the edge look. The design's default
+  // is faint and blurred; 0 and 0 leaves them unseen until the edge arrives.
+  waitingOpacity: { type: Number, default: 0.2 },
+  waitingBlur: { type: Number, default: 5 },
+  // A word or phrase to make a button, as { text, label }: underlined with
+  // dashes, emitting "link" when pressed. The phrase must sit on one line;
+  // its first match is used.
+  link: { type: Object, default: null },
 })
-
-// How letters waiting for the edge look in scrub mode, from the design.
-const WAITING_OPACITY = 0.2
-const WAITING_BLUR = 5
+const emit = defineEmits(["link"])
 // How many letters (or words) the soft edge spans.
 const EDGE_CHARS = 16
 const EDGE_WORDS = 4
@@ -83,15 +102,23 @@ const label = computed(() => props.lines.join(" "))
 const parts = computed(() => {
   const step = props.stagger ?? (props.by === "words" ? 0.04 : 0.022)
   let index = 0
+  const phrase = props.link?.text.split(" ") ?? []
+  let linked = false
   return props.lines.map((line, l) => {
     // Each new line starts a little before the previous one finishes.
     index = Math.max(0, index - (l ? 4 : 0))
-    return line.split(" ").map((word) => ({
+    const words = line.split(" ").map((word) => ({
       units: (props.by === "words" ? [word] : [...word]).map((text) => ({
         text,
         delay: props.delay + step * index++,
       })),
     }))
+    // Gather the linked phrase's words into one button.
+    const plain = line.split(" ")
+    const at = linked || !phrase.length ? -1 : plain.findIndex((_, i) => phrase.every((p, j) => plain[i + j] === p))
+    if (at < 0) return words
+    linked = true
+    return [...words.slice(0, at), { link: true, words: words.slice(at, at + phrase.length) }, ...words.slice(at + phrase.length)]
   })
 })
 
@@ -144,9 +171,9 @@ const paint = (p) => {
     }
     // Purple peaks halfway through, then hands back to the text's colour.
     const tint = 1 - Math.abs(2 * t - 1)
-    const alpha = (WAITING_OPACITY + (1 - WAITING_OPACITY) * t).toFixed(3)
+    const alpha = (props.waitingOpacity + (1 - props.waitingOpacity) * t).toFixed(3)
     const colour = `rgba(${mix(finalColour, TINT, tint).join(",")},${alpha})`
-    const blur = (1 - t) * WAITING_BLUR
+    const blur = (1 - t) * props.waitingBlur
     if (blur < 0.1) {
       style.color = colour
       style.textShadow = ""
@@ -234,6 +261,30 @@ onBeforeUnmount(() => {
 .reveal-word {
   display: inline-block;
   white-space: nowrap;
+}
+.reveal-link {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  /* Dashes under the word, drawn as a background so they sit beneath the
+     letters' own boxes (an underline doesn't reach into inline blocks). */
+  background-image: linear-gradient(to right, #8a41c9 55%, transparent 55%);
+  background-size: 0.22em 0.06em;
+  background-repeat: repeat-x;
+  background-position: 0 92%;
+  transition: background-color 0.2s ease;
+  border-radius: 0.08em;
+}
+.reveal-link:hover {
+  background-color: rgba(138, 65, 201, 0.08);
+}
+.reveal-link:focus-visible {
+  outline: 2px solid #8a41c9;
+  outline-offset: 2px;
 }
 .reveal-unit {
   display: inline-block;

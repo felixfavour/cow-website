@@ -24,15 +24,19 @@
 
         <!-- The cursors fly home into the first three of these. -->
         <div ref="avatarRow" class="avatars mt-5 flex lg:mt-[26px]" aria-label="Operators">
-          <span
+          <button
             v-for="avatar in avatars"
             :key="avatar.initials"
+            type="button"
             class="avatar"
-            :style="{ background: avatar.color, color: avatar.textColor }"
+            :style="{ background: avatar.color, color: avatar.textColor, '--ring': avatar.color }"
             :data-cursor-home="avatar.cursor"
-            :title="avatar.cursor || undefined"
-          >{{ avatar.initials }}</span>
+            :data-name="avatar.name"
+            :aria-label="`${avatar.name}: show what they just did`"
+            @click="announce(avatar)"
+          >{{ avatar.initials }}</button>
         </div>
+        <ActivityToasts ref="toasts" />
 
         <div ref="box" class="box mt-8 lg:mt-[88px]" aria-hidden="true"></div>
       </div>
@@ -64,10 +68,22 @@
           If you’ve never used a projection <br class="hidden md:inline" />software before, you’d somehow
           <br class="hidden md:inline" />still find this familiar
         </h2>
-        <p class="text-[17px] leading-[1.2] text-white md:w-[192px] md:shrink-0 md:text-[20px]">
-          Kids become experts <br class="hidden md:inline" />at Cloud of Worship <br class="hidden md:inline" />on one
-          Sunday
-        </p>
+        <figure ref="quote" class="text-white md:w-[240px] md:shrink-0">
+          <RevealText
+            as="blockquote"
+            :lines="['“Used by kids in the', 'children’s ministry', 'every Sunday. That’s', 'how easy it is to use.”']"
+            scrub
+            :progress="quoteProgress"
+            class="text-[17px] leading-[1.2] md:text-[20px]"
+          />
+          <RevealText
+            as="figcaption"
+            :lines="['Victor, Foursquare Church']"
+            scrub
+            :progress="captionProgress"
+            class="mt-3 text-[14px] leading-[1.2] text-white/70 md:text-[15px]"
+          />
+        </figure>
       </div>
     </div>
   </section>
@@ -75,10 +91,8 @@
   <!-- The scrolling the section stays pinned for while the photo shrinks. -->
   <div ref="spacer" class="familiar-spacer bg-[#FBF7FF]" aria-hidden="true"></div>
 
-  <!-- On narrow screens the numbers come after, rather than beside. -->
-  <div class="bg-[#FBF7FF] px-5 pb-20 pt-4 md:px-10 lg:hidden">
-    <HomeStats auto />
-  </div>
+  <!-- On narrow screens the numbers come after, rather than beside: see
+       pages/index.vue, which places them outside the box this section pins in. -->
 </template>
 
 <script setup>
@@ -94,10 +108,24 @@
 // (HomeProjection reads this section's progress for that).
 
 const avatars = [
-  { initials: "FF", color: "#BC7BE8", textColor: "#FFFFFF", cursor: "Favour" },
-  { initials: "LO", color: "#528BFE", textColor: "#FFFFFF", cursor: "Lanre O." },
-  { initials: "IA", color: "#F1C778", textColor: "#1A1F2E", cursor: "Inioluwa" },
+  { initials: "FF", name: "Favour Felix", color: "#BC7BE8", textColor: "#FFFFFF", cursor: "Favour" },
+  { initials: "LO", name: "Lanre O.", color: "#528BFE", textColor: "#FFFFFF", cursor: "Lanre O." },
+  { initials: "IA", name: "Inioluwa A.", color: "#F1C778", textColor: "#1A1F2E", cursor: "Inioluwa" },
 ]
+
+// Clicking an operator shows what they just did, a different thing each time.
+const ACTIONS = [
+  "added a slide",
+  "sent “Way Maker” live",
+  "queued Psalm 23",
+  "started the countdown",
+  "edited the announcements",
+]
+const toasts = ref(null)
+let actionIndex = 0
+const announce = (avatar) => {
+  toasts.value?.push({ ...avatar, action: ACTIONS[actionIndex++ % ACTIONS.length] })
+}
 
 // How far the photo pans at the edges of the section, as a share of its size.
 const PAN_X = 0.025
@@ -124,6 +152,14 @@ const box = ref(null)
 const slotHeading = ref(null)
 const avatarRow = ref(null)
 const statsStarted = ref(false)
+// Victor's review writes itself in, like "Prepare once, use everywhere", over
+// the scrolling after the section above uncovers it and before the photo
+// starts to shrink. The caption follows a little behind the quote.
+const quote = ref(null)
+const quoteProgress = ref(0)
+const captionProgress = computed(() => clamp01((quoteProgress.value - 0.55) / 0.45))
+// Share of the screen's height scrolled from uncovered to fully written.
+const QUOTE_SPAN = 0.3
 
 // HomeProjection reads this to send the cursors home.
 const shrinkTarget = useState("familiarShrink", () => 0)
@@ -219,6 +255,9 @@ const measureScroll = () => {
   // While the section above still covers the photo: 1 fully, 0 not at all.
   const above = section.value.previousElementSibling
   rise = above ? clamp01((above.getBoundingClientRect().bottom - vh + s.height) / s.height) : 0
+  // How far the section above has scrolled past the review's top edge.
+  const uncovered = above ? quote.value.getBoundingClientRect().top - above.getBoundingClientRect().bottom : vh
+  quoteProgress.value = clamp01(uncovered / (QUOTE_SPAN * vh))
   // How far through its pinned stretch the section is.
   const pinTop = parseFloat(getComputedStyle(section.value).top) || 0
   const travel = spacer.value.offsetHeight
@@ -377,14 +416,63 @@ onBeforeUnmount(() => {
   box-shadow: 0 0 0 3px #fbf7ff;
   font-size: 21px;
   font-weight: 600;
-  transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.3, 1.4, 0.5, 1);
+  position: relative;
+  cursor: pointer;
+  transition:
+    opacity 0.3s ease,
+    transform 0.4s cubic-bezier(0.3, 1.4, 0.5, 1),
+    box-shadow 0.3s ease;
 }
 .avatar + .avatar {
   margin-left: -5px;
+}
+/* Hovered, it lifts above its neighbours with a halo in its own colour,
+   and its name pops up above it. */
+.avatar:hover,
+.avatar:focus-visible {
+  z-index: 1;
+  outline: none;
+  transform: translateY(-4px) scale(1.08);
+  box-shadow:
+    0 0 0 3px #fbf7ff,
+    0 0 0 6px color-mix(in srgb, var(--ring) 35%, transparent),
+    0 10px 20px -6px color-mix(in srgb, var(--ring) 60%, transparent);
+}
+.avatar:active {
+  transform: translateY(-1px) scale(1.02);
+  transition-duration: 0.1s;
+}
+.avatar::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  padding: 5px 10px;
+  border-radius: 9999px;
+  background: #1a1f2e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  filter: blur(4px);
+  transform: translate(-50%, 4px);
+  transition:
+    opacity 0.2s ease,
+    filter 0.25s ease,
+    transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.avatar:hover::after,
+.avatar:focus-visible::after {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(-50%, 0);
 }
 /* The three with a cursor wait for it to land. */
 .avatar[data-cursor-home]:not([data-arrived="true"]) {
   opacity: 0;
   transform: scale(0.6);
+  pointer-events: none;
 }
 </style>

@@ -22,7 +22,8 @@ async function loadCards() {
   const src = await readFile(join(root, 'app/utils/ogCards.ts'), 'utf8')
   const body = src.slice(src.indexOf('export const OG_CARDS = {') + 'export const OG_CARDS = '.length)
   const obj = body.slice(0, body.indexOf('\n} as const') + 2)
-  return Object.values(eval(`(${obj})`))
+  // Static cards are hand-made artwork; regenerating would overwrite them.
+  return Object.values(eval(`(${obj})`)).filter((card) => !card.static)
 }
 
 function waitForServer(child) {
