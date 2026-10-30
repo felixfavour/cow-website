@@ -12,7 +12,7 @@
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
           100% Reliable with <br />
-          <span class="emphasis-text">offline-ready</span> technology
+          offline-ready technology
         </h1>
         <p
           class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[65%] mx-auto"

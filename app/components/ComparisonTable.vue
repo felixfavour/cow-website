@@ -9,7 +9,7 @@
       >
         <h3 class="text-3xl md:text-5xl font-bold">
           You have not seen
-          <span class="emphasis-text">anything like this</span> before.
+          anything like this before.
         </h3>
         <p class="description xl:text-md 2xl:text-lg md:font-medium mt-[2%]">
           Here's how Cloud of Worship compares to other tools you might be

@@ -72,7 +72,11 @@ const NARROW = { y: 0.3, widest: 0.78 }
 
 // Motion, in band units (a slide is one).
 const DRIFT = 0.12 // per second, the film's own run
-const INTRO_SECONDS = 3.2 // the band twirls in from the bottom over this long
+const INTRO_SECONDS = 2.2 // the band twirls in from the bottom over this long...
+// ...on this CSS-style cubic-bezier: it picks up speed softly below the
+// screen, reaches the top of it in about three quarters of a second, and
+// spends the rest in a long, gentle slowdown into the drift.
+const INTRO_CURVE = [0.25, 0, 0.05, 1]
 const SCROLL_RUN = 8 // run over the hero's whole scroll
 const SMOOTHING = 0.22 // seconds for the eased scroll to catch up
 
@@ -400,6 +404,35 @@ const watchFrameRate = (seconds) => {
   resize()
 }
 
+// A CSS cubic-bezier(x1, y1, x2, y2) timing function: for a share of the time
+// x, the share of the way along. Finds the curve's parameter for x by
+// Newton's method, falling back to halving where the slope is too flat.
+const cubicBezier = ([x1, y1, x2, y2]) => {
+  const at = (a, b, u) => ((1 - 3 * b + 3 * a) * u + (3 * b - 6 * a)) * u * u + 3 * a * u
+  const slope = (a, b, u) => 3 * (1 - 3 * b + 3 * a) * u * u + 2 * (3 * b - 6 * a) * u + 3 * a
+  return (x) => {
+    if (x <= 0 || x >= 1) return Math.min(Math.max(x, 0), 1)
+    let u = x
+    for (let i = 0; i < 8; i++) {
+      const d = slope(x1, x2, u)
+      if (Math.abs(d) < 1e-6) break
+      u -= (at(x1, x2, u) - x) / d
+    }
+    if (Math.abs(at(x1, x2, u) - x) > 1e-5 || u < 0 || u > 1) {
+      let lo = 0
+      let hi = 1
+      u = x
+      for (let i = 0; i < 30; i++) {
+        if (at(x1, x2, u) < x) lo = u
+        else hi = u
+        u = (lo + hi) / 2
+      }
+    }
+    return at(y1, y2, u)
+  }
+}
+const introEase = cubicBezier(INTRO_CURVE)
+
 // How much of the band the entrance has still to fill: the film is held back
 // by this much and the band is cut off that far short of its top end, so it
 // feeds in from its bottom end with the film. The extra PITCH lets the cut
@@ -407,7 +440,7 @@ const watchFrameRate = (seconds) => {
 const introLag = () => {
   if (introStart < 0) return 0
   const t = Math.min((time - introStart) / INTRO_SECONDS, 1)
-  return (bandLength + PITCH) * (1 - t) ** 2
+  return (bandLength + PITCH) * (1 - introEase(t))
 }
 
 // How far the film has run along the band: its own drift and the scroll.
@@ -594,7 +627,7 @@ onBeforeUnmount(() => {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.15s ease; /* short, so the fast twirl-in shows at full strength */
 }
 .hero-slide-wall.ready {
   opacity: 1;

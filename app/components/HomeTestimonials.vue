@@ -1,19 +1,12 @@
 <template>
   <!--
-    Pins below the navbar while scrolling moves through the testimonials one at
-    a time: the current one sits in front, and two more wait on either side,
-    smaller and more blurred the further they are from the centre. The cards
-    follow the scroll position itself, so they glide as you scroll.
+    The testimonials go round on their own, one at a time: the current one sits
+    in front, and two more wait on either side, smaller and more blurred the
+    further they are from the centre. They can be dragged or swiped round too,
+    and settle on whichever card is nearest.
   -->
-  <div
-    ref="stage"
-    class="testimonials-stage relative bg-[#0C0F19]"
-    :style="{ height: `calc(${sectionHeight}px + ${TRAVEL_SVH}svh)` }"
-  >
-    <section
-      ref="section"
-      class="home-testimonials sticky top-[60px] overflow-hidden bg-[#0C0F19] pb-10 md:top-[76px]"
-    >
+  <div ref="stage" class="relative bg-[#0C0F19]">
+    <section class="home-testimonials overflow-hidden bg-[#0C0F19] pb-16 lg:pb-20">
       <div class="px-5 pt-12 text-center lg:pt-[64px]">
         <p
           class="text-[11px] font-medium uppercase leading-[14px] tracking-[0.08em] text-[#8A41C9]"
@@ -29,7 +22,17 @@
         />
       </div>
 
-      <div class="stack relative mx-auto mt-8 lg:mt-[48px]">
+      <div
+        ref="stack"
+        class="stack relative mx-auto mt-8 lg:mt-[48px]"
+        :class="{ dragging }"
+        @pointerdown="onPointerDown"
+        @pointermove="onPointerMove"
+        @pointerup="onPointerUp"
+        @pointercancel="onPointerCancel"
+        @pointerenter="onPointerEnter"
+        @pointerleave="hovering = false"
+      >
         <article
           v-for="(item, i) in testimonials"
           :key="item.name"
@@ -43,6 +46,7 @@
               :src="item.photo"
               :alt="item.name"
               class="photo"
+              draggable="false"
               loading="lazy"
               decoding="async"
             />
@@ -64,7 +68,7 @@
         </article>
       </div>
 
-      <!-- Which testimonial is showing; the current one fills as you scroll. -->
+      <!-- Which testimonial is showing; the current one fills while it waits. -->
       <div class="mt-8 flex justify-center gap-[6px] lg:mt-[43px]">
         <button
           v-for="(item, i) in testimonials"
@@ -87,12 +91,14 @@
 </template>
 
 <script setup>
-// "Don't just take our word for it": testimonials in glass frames, moved
-// through by scrolling. Each one rests in the centre for part of its stretch,
-// then glides aside as the next comes in; the others wait behind it, smaller
-// and blurred by how far out they sit, and sharpen as they near the centre.
+// "Don't just take our word for it": testimonials in glass frames that go
+// round on their own. Each one rests in the centre for a few seconds, then
+// glides aside as the next comes in; the others wait behind it, smaller and
+// blurred by how far out they sit, and sharpen as they near the centre.
+// Dragging or swiping moves them with the finger, and letting go throws them
+// on and springs them onto the nearest card.
 //
-// Kept cheap so scrolling stays smooth: one animation frame loop writes only
+// Kept cheap so it stays smooth: one animation frame loop writes only
 // transform, opacity and filter straight onto the cards, which have layers of
 // their own, so nothing is laid out or repainted while they move. Vue only
 // re-renders when the current testimonial changes.
@@ -173,15 +179,21 @@ const initials = (name) =>
     .join("")
     .toUpperCase()
 
-// Scrolling spent on each testimonial while the section is pinned.
-const STEP_SVH = 40
-const TRAVEL_SVH = STEP_SVH * testimonials.length
-// Share of each stretch spent gliding over to the next testimonial; for the
-// rest of it the current one rests in the centre.
-const GLIDE = 0.5
-// Seconds for the cards to catch up with the scroll position, so a stepped
-// mouse wheel still reads as one smooth glide.
-const SMOOTHING = 0.18
+// How long each testimonial rests in the centre before the next comes in.
+const DWELL_S = 5
+// The spring that carries the cards onto a card after a glide or a swipe:
+// stiffness, and damping just short of critical so it settles without a bounce.
+const STIFFNESS = 120
+const DAMPING = 21
+// Pixels a finger must move sideways before it counts as a drag rather than a
+// tap or the start of a scroll.
+const DRAG_SLOP = 6
+// Seconds of the release speed carried forward when picking where a swipe
+// lands, so a flick goes further than a slow drag.
+const THROW_S = 0.2
+// The fastest a swipe can send the cards, in testimonials per second, so a
+// hard flick still glides rather than snapping across.
+const MAX_SPEED = 6
 
 // How a card looks by its distance from the centre, at whole steps; in
 // between it blends. Side offsets are a share of the card's own width, so
@@ -195,6 +207,8 @@ const WIDE = {
   blur: [0, 3, 8, 12],
   brightness: [1, 0.7, 0.5, 0.4],
   opacity: [1, 1, 1, 0],
+  // The most cards one swipe can move along.
+  throw: 2,
 }
 // Narrow screens: one at a time. The next slides in from the side as the
 // current one slides out, side by side rather than over each other.
@@ -204,12 +218,14 @@ const NARROW = {
   blur: [0, 4, 8, 8],
   brightness: [1, 0.7, 0.5, 0.5],
   opacity: [1, 1, 0, 0],
+  throw: 1,
 }
 
 const stage = ref(null)
-const section = ref(null)
-const sectionHeight = ref(800)
+const stack = ref(null)
 const active = ref(0)
+const dragging = ref(false)
+const hovering = ref(false)
 
 // Written to directly every frame, so kept out of Vue's reactivity.
 const frames = []
@@ -217,32 +233,33 @@ const fills = []
 let shown = []
 let fillShown = []
 let look = WIDE
-let pinTop = 0
-let travel = 1
+// Pixels of drag that move the cards along by one testimonial.
+let stepPx = 300
+// Where the cards are, in testimonials: whole numbers are a card centred, and
+// it counts on past the last one rather than wrapping, so the loop never
+// jumps. `target` is the card it is heading for.
+let position = 0
+let velocity = 0
 let target = 0
-let current = 0
+let waited = 0
 let frame = 0
 let lastTime = 0
 let near = false
 let reducedMotion = false
 
+// The drag in progress: where it started, and recent samples for its speed.
+let pointer = null
+
 const clamp = (v, min, max) => Math.min(max, Math.max(min, v))
+const wrap = (i) => {
+  const n = testimonials.length
+  return ((i % n) + n) % n
+}
 
 // A value from one of the looks' rows, `at` steps from the centre.
 const sample = (stops, at) => {
   const i = Math.min(Math.floor(at), stops.length - 2)
   return stops[i] + (stops[i + 1] - stops[i]) * (at - i)
-}
-
-// Which testimonial is centred, possibly part-way between two, for a scroll
-// position counted in stretches: it rests on each one, then glides across to
-// the next over the boundary between their stretches.
-const centreAt = (s) => {
-  const last = testimonials.length - 1
-  if (reducedMotion) return clamp(Math.floor(s), 0, last)
-  const boundary = clamp(Math.round(s), 1, last)
-  const t = clamp((s - boundary) / GLIDE + 0.5, 0, 1)
-  return boundary - 1 + t * t * (3 - 2 * t)
 }
 
 // Card i's offset from the centre, going round in a loop so there are always
@@ -280,14 +297,13 @@ const place = (i, centre) => {
   shown[i] = next
 }
 
-const render = (s) => {
-  const centre = centreAt(s)
-  testimonials.forEach((_, i) => place(i, centre))
+const render = () => {
+  testimonials.forEach((_, i) => place(i, position))
 
-  const now = Math.round(centre)
+  const now = wrap(Math.round(position))
   if (active.value !== now) active.value = now
-  // The current dot fills across its testimonial's stretch.
-  const progress = clamp(s - now, 0.2, 1)
+  // The current dot fills while its testimonial waits for the next.
+  const progress = autoplays() ? clamp(waited / DWELL_S, 0, 1) : 1
   fills.forEach((fill, i) => {
     if (!fill) return
     const x = i === now ? `${((progress - 1) * 100).toFixed(1)}%` : "-100%"
@@ -296,50 +312,151 @@ const render = (s) => {
   })
 }
 
-// Where the scroll is, counted in testimonials' stretches (0 to n).
-const measure = () => {
-  const top = stage.value.getBoundingClientRect().top
-  target = clamp((pinTop - top) / travel, 0, 1) * testimonials.length
-}
+// Going round on its own stops while the reader is holding or pointing at a
+// card, and for anyone who asked for less motion.
+const autoplays = () => !reducedMotion && !dragging.value && !hovering.value
+
+const settled = () => position === target && velocity === 0
 
 const tick = (now) => {
   const dt = Math.min((now - (lastTime || now)) / 1000, 0.05)
   lastTime = now
-  current += (target - current) * (1 - Math.exp(-dt / SMOOTHING))
-  if (reducedMotion || Math.abs(target - current) < 0.0005) current = target
-  render(current)
-  frame = current === target ? 0 : requestAnimationFrame(tick)
+
+  if (!dragging.value) {
+    if (reducedMotion) {
+      position = target
+      velocity = 0
+    } else {
+      velocity += (STIFFNESS * (target - position) - DAMPING * velocity) * dt
+      position += velocity * dt
+      if (Math.abs(target - position) < 0.0005 && Math.abs(velocity) < 0.005) {
+        position = target
+        velocity = 0
+      }
+    }
+  }
+
+  if (autoplays() && settled() && !document.hidden) {
+    waited += dt
+    if (waited >= DWELL_S) {
+      waited = 0
+      target += 1
+    }
+  }
+
+  render()
+  // Keep going while on screen, unless there's nothing left to move or count.
+  const idle = settled() && !autoplays() && !dragging.value
+  frame = near && !idle ? requestAnimationFrame(tick) : 0
   if (!frame) lastTime = 0
 }
 
-const onScroll = () => {
-  if (!near) return
-  measure()
-  if (!frame) frame = requestAnimationFrame(tick)
+const wake = () => {
+  if (near && !frame) frame = requestAnimationFrame(tick)
 }
+
+// Head for the nearest copy of testimonial i, the short way round.
+const goTo = (i) => {
+  target = Math.round(position + offsetOf(i, position))
+  waited = 0
+  wake()
+}
+
+// ---- Dragging and swiping ----
+
+const onPointerDown = (event) => {
+  if (event.pointerType === "mouse" && event.button !== 0) return
+  pointer = {
+    id: event.pointerId,
+    x: event.clientX,
+    from: position,
+    samples: [{ t: event.timeStamp, p: position }],
+    frame: event.target.closest(".frame"),
+  }
+}
+
+const onPointerMove = (event) => {
+  if (!pointer || event.pointerId !== pointer.id) return
+  const dx = event.clientX - pointer.x
+  if (!dragging.value) {
+    if (Math.abs(dx) < DRAG_SLOP) return
+    dragging.value = true
+    // Start from here, so the cards don't jump by the slop.
+    pointer.x = event.clientX
+    pointer.from = position
+    velocity = 0
+    stack.value.setPointerCapture(event.pointerId)
+    wake()
+    return
+  }
+  position = pointer.from - (event.clientX - pointer.x) / stepPx
+  pointer.samples.push({ t: event.timeStamp, p: position })
+  if (pointer.samples.length > 6) pointer.samples.shift()
+}
+
+// Testimonials per second over the last moments of the drag.
+const releaseSpeed = (now) => {
+  const recent = pointer.samples.filter((s) => now - s.t < 100)
+  if (recent.length < 2) return 0
+  const first = recent[0]
+  const last = recent[recent.length - 1]
+  const seconds = (last.t - first.t) / 1000
+  return seconds > 0 ? clamp((last.p - first.p) / seconds, -MAX_SPEED, MAX_SPEED) : 0
+}
+
+const onPointerUp = (event) => {
+  if (!pointer || event.pointerId !== pointer.id) return
+  if (dragging.value) {
+    dragging.value = false
+    const speed = releaseSpeed(event.timeStamp)
+    // A flick lands on the card its speed carries it to, at least the next one
+    // in the direction it was thrown, and no further than the layout allows.
+    let landing = Math.round(position + speed * THROW_S)
+    if (Math.abs(speed) > 1.5 && landing === Math.round(pointer.from)) landing += Math.sign(speed)
+    const from = Math.round(pointer.from)
+    target = clamp(landing, from - look.throw, from + look.throw)
+    velocity = reducedMotion ? 0 : speed
+    waited = 0
+    wake()
+  } else if (pointer.frame) {
+    // A tap on a card at the side brings it to the centre.
+    const i = frames.indexOf(pointer.frame)
+    if (i >= 0 && i !== active.value) goTo(i)
+  }
+  pointer = null
+}
+
+const onPointerCancel = (event) => {
+  if (!pointer || event.pointerId !== pointer.id) return
+  pointer = null
+  if (!dragging.value) return
+  dragging.value = false
+  target = Math.round(position)
+  wake()
+}
+
+const onPointerEnter = (event) => {
+  // Only a mouse resting on the cards holds them; a touch would leave them
+  // held after the finger lifts.
+  if (event.pointerType === "mouse") hovering.value = true
+}
+watch(hovering, (now) => {
+  if (now) waited = 0
+  wake()
+})
 
 // Sizes only change on resize, so they're read then rather than every frame.
 const layout = () => {
-  if (!stage.value || !section.value) return
-  sectionHeight.value = section.value.offsetHeight
-  pinTop = parseFloat(getComputedStyle(section.value).top) || 0
-  travel = Math.max(1, stage.value.offsetHeight - section.value.offsetHeight)
   look = window.matchMedia("(min-width: 1024px)").matches ? WIDE : NARROW
+  stepPx = Math.max(1, ((frames[0]?.offsetWidth || 600) * look.x[1]) / 100)
   shown = []
   fillShown = []
-  measure()
-  current = target
-  render(current)
+  render()
 }
 
-// Scroll to where testimonial i rests in the centre.
-const goTo = (i) => {
-  const top =
-    stage.value.getBoundingClientRect().top +
-    window.scrollY -
-    pinTop +
-    ((i + 0.3) / testimonials.length) * travel
-  window.scrollTo({ top: Math.ceil(top), behavior: "smooth" })
+const onVisibility = () => {
+  waited = 0
+  wake()
 }
 
 let resizeObserver = null
@@ -349,42 +466,31 @@ onMounted(() => {
   reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
   layout()
   resizeObserver = new ResizeObserver(layout)
-  resizeObserver.observe(stage.value)
-  resizeObserver.observe(section.value)
-  // Only follow the scroll while the section is on or near the screen. Coming
-  // back to it after a jump shows it where it should be straight away.
+  resizeObserver.observe(stack.value)
+  // Only run while the section is on or near the screen, and give the first
+  // testimonial its full turn when the reader arrives.
   intersectionObserver = new IntersectionObserver(
     ([entry]) => {
       near = entry.isIntersecting
       if (!near) return
-      measure()
-      current = target
-      render(current)
+      waited = 0
+      wake()
     },
-    { rootMargin: "50% 0px" }
+    { rootMargin: "20% 0px" }
   )
   intersectionObserver.observe(stage.value)
-  window.addEventListener("scroll", onScroll, { passive: true })
+  document.addEventListener("visibilitychange", onVisibility)
 })
 
 onBeforeUnmount(() => {
   cancelAnimationFrame(frame)
   resizeObserver?.disconnect()
   intersectionObserver?.disconnect()
-  window.removeEventListener("scroll", onScroll)
+  document.removeEventListener("visibilitychange", onVisibility)
 })
 </script>
 
 <style scoped>
-.home-testimonials {
-  min-height: calc(100svh - 60px);
-}
-@media (min-width: 768px) {
-  .home-testimonials {
-    min-height: calc(100svh - 76px);
-  }
-}
-
 .testimonials-heading {
   font-size: clamp(36px, 4.2vw, 60px);
   line-height: 0.98;
@@ -395,7 +501,17 @@ onBeforeUnmount(() => {
   width: min(648px, calc(100% - 40px));
   height: 520px;
 }
-/* Grows with the screen's height so the whole section still fits when pinned. */
+/* Drags sideways; up and down still scroll the page. */
+.stack {
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.stack.dragging {
+  cursor: grabbing;
+}
+/* Grows with the screen's height so the whole section fits on screen. */
 @media (min-width: 1024px) {
   .stack {
     --stack-height: clamp(400px, 52svh, 520px);
@@ -540,7 +656,7 @@ onBeforeUnmount(() => {
   outline: 2px solid #8a41c9;
   outline-offset: 2px;
 }
-/* With reduced motion the script moves the cards in single steps, without gliding. */
+/* With reduced motion the cards don't go round on their own, and move in single steps. */
 @media (prefers-reduced-motion: reduce) {
   .dot {
     transition: none;

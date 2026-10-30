@@ -8,7 +8,7 @@
         v-if="$route.name === 'index' || $route.name === 'pricing'"
       >
         <h3 class="text-3xl md:text-5xl font-bold">
-          Cloud of Worship <span class="emphasis-text">Pricing</span>
+          Cloud of Worship Pricing
         </h3>
         <p class="description xl:text-md 2xl:text-lg md:font-medium mt-[2%]">
           For churches that need simple, reliable worship media — Free to start.

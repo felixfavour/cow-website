@@ -3,7 +3,7 @@
     :is="as"
     ref="root"
     class="reveal-text"
-    :class="{ revealed, scrub }"
+    :class="{ revealed, scrub, focus: effect === 'focus' }"
     :aria-label="label"
   >
     <span v-for="(line, l) in parts" :key="l" class="reveal-line">
@@ -54,6 +54,9 @@
 // edge eases towards the scroll position rather than jumping with it, so a
 // stepped mouse wheel still reads as one smooth sweep.
 //
+// With effect "focus" it plays without the edge or the purple instead: each
+// word (or letter) comes into focus from a heavy blur, one after another.
+//
 // Each line also sits in its own clipping slot (.reveal-line), so a page can
 // slide `.reveal-line-inner` up out of view, line by line, for an exit.
 
@@ -86,6 +89,9 @@ const props = defineProps({
   // dashes, emitting "link" when pressed. The phrase must sit on one line;
   // its first match is used.
   link: { type: Object, default: null },
+  // "sweep" for the purple edge, "focus" for a plain blur into focus. Focus
+  // plays once; it has no scrub.
+  effect: { type: String, default: "sweep" },
 })
 const emit = defineEmits(["link"])
 // How many letters (or words) the soft edge spans.
@@ -105,8 +111,9 @@ const parts = computed(() => {
   const phrase = props.link?.text.split(" ") ?? []
   let linked = false
   return props.lines.map((line, l) => {
-    // Each new line starts a little before the previous one finishes.
-    index = Math.max(0, index - (l ? 4 : 0))
+    // Each new line starts a little before the previous one finishes. Focus
+    // runs straight on, one unit after another.
+    if (props.effect !== "focus") index = Math.max(0, index - (l ? 4 : 0))
     const words = line.split(" ").map((word) => ({
       units: (props.by === "words" ? [word] : [...word]).map((text) => ({
         text,
@@ -295,6 +302,23 @@ onBeforeUnmount(() => {
 }
 .reveal-text.revealed .reveal-unit {
   animation: reveal-unit 0.75s cubic-bezier(0.3, 0.7, 0.3, 1) var(--reveal-delay) both;
+}
+/* Focus blurs further than the sweep, so it must not be clipped either. */
+.reveal-text.focus .reveal-line {
+  overflow: visible;
+}
+.reveal-text.focus.revealed .reveal-unit {
+  animation: reveal-focus 1.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--reveal-delay) both;
+}
+@keyframes reveal-focus {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 /* The last keyframe leaves colour out, so it eases back to the text's own. */
 @keyframes reveal-unit {

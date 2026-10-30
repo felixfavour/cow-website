@@ -5,29 +5,19 @@
       class="cookie-consent fixed bottom-0 right-0 z-[60] p-4 md:p-6 w-full md:w-auto"
       role="dialog"
       aria-modal="false"
-      aria-labelledby="cookie-consent-title"
+      aria-label="Cookies"
       aria-describedby="cookie-consent-description"
     >
-      <div
-        class="ml-auto w-full md:w-[456px] bg-white border border-gray-200 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.12)] p-5 flex items-center gap-4"
-      >
-        <div class="texts flex-1">
-          <h6 id="cookie-consent-title" class="font-bold text-base mb-1">
-            A cookie for a cookie 🍪
-          </h6>
-          <p
-            id="cookie-consent-description"
-            class="text-sm text-gray-600 leading-relaxed"
-          >
-            We use a few to see what's working on the site.
-          </p>
-        </div>
-        <button
-          type="button"
-          class="btn-accept font-semibold text-sm px-5 py-3 rounded-lg text-white transition-opacity hover:opacity-90 shrink-0"
-          @click="dismiss"
+      <div class="consent-card ml-auto w-full md:w-[384px] rounded-[20px] px-6 pt-5 pb-6">
+        <p
+          id="cookie-consent-description"
+          class="text-[16px] leading-[1.35] text-[#1A1F2E]"
         >
-          That's okay
+          We keep a few cookies around. They help us see what’s working, so this
+          site runs as smoothly as your Sunday service should.
+        </p>
+        <button type="button" class="pill-btn mt-5" @click="dismiss">
+          That’s Okay
         </button>
       </div>
     </div>
@@ -45,14 +35,12 @@ onMounted(() => (mounted.value = true))
 </script>
 
 <style scoped>
-.btn-accept {
-  background-color: var(--primary-color);
-}
-
-.policy-link {
-  color: var(--primary-color);
-  font-weight: 600;
-  border-bottom: 1px solid var(--primary-color);
+/* Soft lavender, lighter at the top left, as in the design. */
+.consent-card {
+  background: linear-gradient(135deg, #fbf8ff 0%, #f1e6fd 55%, #e6d2fa 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(138, 65, 201, 0.08),
+    0 12px 40px rgba(76, 29, 149, 0.14);
 }
 
 .consent-enter-active,

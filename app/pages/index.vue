@@ -21,10 +21,11 @@
               ref="heading"
               as="h1"
               :lines="['Run your church', 'media projection easily']"
-              scrub
-              :progress="headingReveal"
-              :waiting-opacity="0"
-              :waiting-blur="0"
+              by="words"
+              effect="focus"
+              immediate
+              :stagger="0.12"
+              :delay="0.15"
               class="hero-reveal text-white font-bold text-[60px] md:text-[76px] lg:text-[90px] leading-[0.943] tracking-[-0.02em]"
             />
             <div class="exit-slot mt-[22px]">
@@ -33,10 +34,10 @@
                   as="p"
                   by="words"
                   :lines="[subcopy]"
-                  scrub
-                  :progress="subReveal"
-                  :waiting-opacity="0"
-                  :waiting-blur="0"
+                  effect="focus"
+                  immediate
+                  :stagger="0.04"
+                  :delay="0.7"
                   class="hero-reveal max-w-[372px] text-[18px] leading-[1.19] text-[#B7B7B7]"
                 />
               </div>
@@ -113,34 +114,20 @@ const stage = ref(null)
 const subcopy =
   "Your sub-1000 church congregation doesn't need overly complex software or overburdened volunteers."
 
-// On load the headline, then the subtext, write themselves in with the same
-// sweep as the statements further down the page, only run by the clock
-// instead of the scroll, and with letters unseen (not faint and blurred) until
-// the purple edge reaches them. Each is [start, length] in seconds.
-const HEADING_SWEEP = [0.15, 1.3]
-const SUB_SWEEP = [0.9, 1]
-const headingReveal = ref(0)
-const subReveal = ref(0)
+// On load the headline, then the subtext, come into focus word by word (see
+// the delays and staggers on their RevealText).
 const mounted = ref(false)
-let sweepFrame = 0
 
 // True while the text writes in and the button fades in after it. The slots
 // stop clipping meanwhile, so the blurred letters aren't cut off square.
 const entering = ref(true)
-const ENTRANCE_MS = 2500 // the button's delay plus its fade (see .hero-cta)
+const ENTRANCE_MS = 2600 // when the subtext's last word is sharp
 let entranceTimer = 0
 // The slide wall waits for the text to settle, then sweeps in with the button.
 const textSettled = ref(false)
-const TEXT_MS = 1900 // when the subtext's sweep ends (SUB_SWEEP)
+const TEXT_MS = 1900 // when the text reads as settled
 let textTimer = 0
 
-const sweep = (start) => {
-  const at = (performance.now() - start) / 1000
-  const along = ([from, length]) => clamp01((at - from) / length)
-  headingReveal.value = along(HEADING_SWEEP)
-  subReveal.value = along(SUB_SWEEP)
-  sweepFrame = subReveal.value < 1 ? requestAnimationFrame(() => sweep(start)) : 0
-}
 const heading = ref(null)
 const subtext = ref(null)
 const cta = ref(null)
@@ -215,8 +202,6 @@ useOgCard("home")
 
 onMounted(() => {
   mounted.value = true
-  const start = performance.now()
-  sweepFrame = requestAnimationFrame(() => sweep(start))
   entranceTimer = setTimeout(() => (entering.value = false), ENTRANCE_MS)
   textTimer = setTimeout(() => (textSettled.value = true), TEXT_MS)
   lines = heading.value ? [...heading.value.$el.querySelectorAll(".reveal-line-inner")] : []
@@ -232,7 +217,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
   clearTimeout(entranceTimer)
   clearTimeout(textTimer)
-  cancelAnimationFrame(sweepFrame)
   cancelAnimationFrame(frame)
   window.removeEventListener("scroll", onScroll)
   window.removeEventListener("resize", onScroll)
@@ -255,7 +239,7 @@ onBeforeUnmount(() => {
   overflow: hidden;
 }
 /* Each headline line slides up out of its own slot (RevealText's lines) on
-   the way out. Scrubbed text leaves its slots unclipped, so clip them again
+   the way out. Focus text leaves its slots unclipped, so clip them again
    once the text has written in. */
 .hero:not(.entering) :deep(.reveal-line) {
   overflow: hidden;
@@ -264,8 +248,8 @@ onBeforeUnmount(() => {
   will-change: transform;
 }
 
-/* Until the page is live the text would show in full, before the sweep
-   takes it back to faint; keep it out of sight until then. The button fades
+/* Keep the text out of sight until the page is live and its words can
+   start coming into focus. The button fades
    in once the text has settled (TEXT_MS). */
 .hero:not(.mounted) .hero-reveal {
   opacity: 0;

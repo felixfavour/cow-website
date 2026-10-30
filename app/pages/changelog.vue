@@ -12,7 +12,7 @@
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
           New updates
-          <span class="emphasis-text">every week</span> <br />
+          every week <br />
           just for your church.
         </h1>
       </div>

@@ -11,7 +11,7 @@
           Live transcription
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
-          Every sermon, <span class="emphasis-text">summed up</span> <br />
+          Every sermon, summed up <br />
           before anyone leaves
         </h1>
         <p
@@ -57,7 +57,7 @@
       <template #texts>
         <h2 class="text-3xl md:text-5xl font-bold">
           The sermon does not end when the
-          <span class="emphasis-text">preacher</span> sits down
+          preacher sits down
         </h2>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
           At the end of every sermon you get a summary of what was actually
@@ -84,7 +84,7 @@
       <template #texts>
         <h2 class="text-3xl md:text-5xl font-bold">
           It is listening anyway, so it
-          <span class="emphasis-text">helps out</span>
+          helps out
         </h2>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
           While it transcribes, it can flag the
@@ -104,7 +104,7 @@
     <div class="section faq-section py-[10%] lg:py-[4%]">
       <div class="inner smaller-inner">
         <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">
-          Frequently asked <span class="emphasis-text">questions</span>
+          Frequently asked questions
         </h2>
         <div class="flex flex-col gap-3">
           <details
