@@ -1,10 +1,11 @@
 <template>
   <div class="page">
     <!-- HERO: pinned while the light horizon scrolls up over it -->
-    <div ref="stage" class="hero-stage relative h-[200svh] -mt-[60px] md:-mt-[76px]">
+    <div ref="stage" class="hero-stage relative h-[230svh] -mt-[60px] md:-mt-[76px]">
       <section class="hero sticky top-0 h-[100svh] overflow-hidden bg-[#101010]" :class="{ entering, mounted }">
         <HeroSlideWall
           :clear-to="heroText"
+          :progress="progress"
           :covered="progress >= 0.99"
           :held="!textSettled"
           class="absolute inset-0"
@@ -145,15 +146,15 @@ const subtext = ref(null)
 const cta = ref(null)
 
 // 0 while the hero is untouched, 1 once the horizon has covered it. The hero
-// stays pinned for one screen of scrolling while this runs.
+// stays pinned for 1.3 screens of scrolling while this runs.
 const progress = ref(0)
 
 // The horizon starts just below the screen and rises to cover it; its white
-// part begins 80% of a screen down its height, so it ends 47svh above the top.
+// part begins 80% of a screen down its height, so it ends 12svh above the top.
 // It rises fast enough that the screen is white before the features section
-// (64svh up into this stage) climbs into view, so that section's top edge
+// (80svh up into this stage) climbs into view, so that section's top edge
 // never cuts across the purple.
-const horizonY = computed(() => 100 - 225 * progress.value)
+const horizonY = computed(() => 100 - 190 * progress.value)
 
 const navTheme = useState("navTheme", () => "dark")
 
@@ -161,9 +162,9 @@ const clamp01 = (v) => Math.min(1, Math.max(0, v))
 
 // The headline, then the subtext and button, slide up out of their slots one
 // after another during the first part of the scroll.
-const EXIT_START = 0.02
-const EXIT_LENGTH = 0.22
-const EXIT_STAGGER = 0.05
+const EXIT_START = 0.015
+const EXIT_LENGTH = 0.17
+const EXIT_STAGGER = 0.04
 
 let lines = []
 let frame = 0
@@ -185,7 +186,7 @@ const update = () => {
   })
 
   // The bar goes light once the white part of the horizon reaches it.
-  navTheme.value = progress.value > 0.69 ? "light" : "dark"
+  navTheme.value = progress.value > 0.82 ? "light" : "dark"
 }
 
 const onScroll = () => {

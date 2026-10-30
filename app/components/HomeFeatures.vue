@@ -7,7 +7,7 @@
   -->
   <div
     ref="stage"
-    class="features-stage relative z-[1] -mt-[64svh]"
+    class="features-stage relative z-[1] -mt-[80svh]"
     :style="{ height: `calc(${sectionHeight}px + ${TRAVEL_SVH}svh)` }"
   >
     <section
