@@ -6,7 +6,7 @@
       <div class="texts w-[95%] lg:w-[40%]">
         <h3 class="text-3xl 2xl:text-4xl font-bold">
           Cloud of Worship is your church’s literal
-          <span class="emphasis-text">powerpoint</span>.
+          powerpoint.
         </h3>
         <div class="early-users flex my-[3%] lg:my-[7%]">
           <img

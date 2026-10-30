@@ -11,7 +11,7 @@
           Live projection
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
-          What you <span class="emphasis-text">choose</span> is <br />
+          What you choose is <br />
           what they see
         </h1>
         <p
@@ -57,7 +57,7 @@
       <template #texts>
         <h2 class="text-3xl md:text-5xl font-bold">
           Two screens, one
-          <span class="emphasis-text">source of truth</span>
+          source of truth
         </h2>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
           The projection window holds nothing but the slide. Drag it to the
@@ -84,7 +84,7 @@
       <template #texts>
         <h2 class="text-3xl md:text-5xl font-bold">
           Control it from
-          <span class="emphasis-text">anywhere</span> in the room
+          anywhere in the room
         </h2>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
           Connect a phone or tablet as a remote and advance slides from the
@@ -104,7 +104,7 @@
     <div class="section faq-section py-[10%] lg:py-[4%]">
       <div class="inner smaller-inner">
         <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">
-          Frequently asked <span class="emphasis-text">questions</span>
+          Frequently asked questions
         </h2>
         <div class="flex flex-col gap-3">
           <details

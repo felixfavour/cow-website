@@ -11,7 +11,7 @@
           Songs & hymns
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
-          Every <span class="emphasis-text">lyric</span> ready <br />
+          Every lyric ready <br />
           before the band is
         </h1>
         <p
@@ -56,7 +56,7 @@
       <template #texts>
         <h2 class="text-3xl md:text-5xl font-bold">
           When the worship leader goes back to the
-          <span class="emphasis-text">chorus</span>
+          chorus
         </h2>
         <p class="description xl:text-md 2xl:text-lg md:font-medium">
           Sunday never follows the setlist. Jump straight to any verse, the
@@ -82,7 +82,7 @@
     <div class="section faq-section py-[10%] lg:py-[4%]">
       <div class="inner smaller-inner">
         <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">
-          Frequently asked <span class="emphasis-text">questions</span>
+          Frequently asked questions
         </h2>
         <div class="flex flex-col gap-3">
           <details

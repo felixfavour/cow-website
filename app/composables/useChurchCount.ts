@@ -15,6 +15,10 @@
 const CHURCH_COUNT_API = 'https://api.cloudofworship.com/api/v1/church/count'
 
 export const useChurchCount = () => {
+  // Locally the API refuses localhost without the dev token (see nuxt.config).
+  const { devToken } = useRuntimeConfig().public
+  const headers = import.meta.dev && devToken ? { 'x-dev-token': devToken } : undefined
+
   const { data: churchCount } = useAsyncData<number | null>(
     'church-count',
     async () => {
@@ -22,6 +26,7 @@ export const useChurchCount = () => {
         // The endpoint answers with a bare JSON number, e.g. 4382.
         const body = await $fetch<number | string>(CHURCH_COUNT_API, {
           timeout: 8000,
+          headers,
         })
         const count = Number(body)
 

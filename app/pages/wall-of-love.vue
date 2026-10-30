@@ -11,7 +11,7 @@
           Wall of Love
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
-          Hear what others are <span class="emphasis-text">saying</span> about
+          Hear what others are saying about
           Cloud of Worship.
         </h1>
       </div>

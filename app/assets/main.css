@@ -1,31 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,100..900&family=Inter:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Geist:wght@400..700&display=swap");
+
+/* Headings use the condensed cut of Bricolage Grotesque, self-hosted from public/fonts.
+   The regular cut (Google Fonts, above) is kept for the wordmark. */
+@font-face {
+  font-family: "Bricolage Grotesque Condensed";
+  src: url("/fonts/BricolageGrotesque48ptCondensed-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque Condensed";
+  src: url("/fonts/BricolageGrotesque48ptCondensed-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque Condensed";
+  src: url("/fonts/BricolageGrotesque48ptCondensed-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --primary-color: #9333ea;
   --accent-color: #ff8980;
+  --heading-font: "Bricolage Grotesque Condensed", "Bricolage Grotesque", sans-serif;
 }
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Geist", sans-serif;
+}
+
+.wordmark {
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .secondary-font {
-  font-family: "Fraunces", cursive;
-  font-style: italic;
-}
-.emphasis-text {
-  font-family: "Fraunces", cursive;
-  font-style: italic;
-  background: -webkit-linear-gradient(left, #8946c9, #442263);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.emphasis-text.text-white {
-  background: -webkit-linear-gradient(left, #ffffff, #d3a4ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: var(--heading-font);
 }
 
 h1,
@@ -34,7 +48,63 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: var(--heading-font);
+}
+/* The * rule above would otherwise put spans inside a heading back in Geist. */
+:is(h1, h2, h3, h4, h5, h6) * {
+  font-family: inherit;
+}
+
+/* Pill CTA, built like the web app's CowButton: a darker bottom ledge under a
+   top-lit face, which compresses when pressed. */
+.pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 9999px;
+  background-color: #8a41c9;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 5px 0 0 #6b17a9,
+    0 12px 18px -8px rgba(107, 23, 169, 0.45);
+  color: #f8f9fb;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: transform 0.08s ease, box-shadow 0.08s ease,
+    background-color 0.2s ease;
+  will-change: transform;
+}
+/* Hover lifts the face 4px and the ledge grows to fill the gap underneath. */
+.pill-btn:hover {
+  background-color: #9450d0;
+  transform: translateY(-4px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 9px 0 0 #6b17a9,
+    0 16px 22px -8px rgba(107, 23, 169, 0.45);
+}
+.pill-btn:active {
+  transform: translateY(4px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 0 #6b17a9,
+    0 4px 8px -6px rgba(107, 23, 169, 0.6);
+}
+/* The same button in charcoal, for light cards. */
+.pill-btn.pill-btn-dark {
+  background-color: #3b4151;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 5px 0 0 #1f232c,
+    0 12px 18px -8px rgba(15, 18, 26, 0.45);
+}
+.pill-btn.pill-btn-dark:hover {
+  background-color: #464d60;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 9px 0 0 #1f232c,
+    0 16px 22px -8px rgba(15, 18, 26, 0.45);
+}
+.pill-btn.pill-btn-dark:active {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 1px 0 0 #1f232c,
+    0 4px 8px -6px rgba(15, 18, 26, 0.6);
+}
+.pill-btn:focus-visible {
+  outline: 2px solid #c084fc;
+  outline-offset: 3px;
 }
 
 .primary-btn {
@@ -180,7 +250,7 @@ article h2 a {
   margin-bottom: 1rem;
   font-weight: 800;
   border-bottom: none;
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: var(--heading-font);
   line-height: 100%;
   text-decoration: none;
   color: #000000;
@@ -193,7 +263,7 @@ article h3 a {
   margin-top: 1.2rem;
   font-weight: 800;
   border-bottom: none;
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: var(--heading-font);
   color: #525252;
   text-decoration: none;
 }

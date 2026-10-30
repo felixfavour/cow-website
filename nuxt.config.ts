@@ -102,6 +102,9 @@ export default defineNuxtConfig({
       // useCookieConsent.ts on app start, same as gtag above.
       posthogPublicKey: process.env.NUXT_PUBLIC_POSTHOG_PUBLIC_KEY || 'phc_sZj5IKRKRCd6Mv8GrthWQOlWu4ihmCFry3oQAIKrW9T',
       posthogHost: process.env.NUXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
+      // The API turns away localhost unless it carries this token. Only read
+      // under `nuxt dev`, so it never lands in a production bundle.
+      devToken: process.env.NODE_ENV === 'development' ? process.env.DEV_ACCESS_TOKEN || '' : '',
     },
   },
   studio: {

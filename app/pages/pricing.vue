@@ -12,7 +12,7 @@
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
           Cloud of Worship is
-          <span class="emphasis-text">free</span> <br />
+          free <br />
           Yes, without watermarks!
         </h1>
         <p

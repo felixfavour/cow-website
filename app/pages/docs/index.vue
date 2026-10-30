@@ -11,7 +11,7 @@
         <div class="relative max-w-[760px] mx-auto">
           <div class="secondary-font text-md lg:text-lg text-[#FF8980] font-bold mb-3">Help Center</div>
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.05] mb-4">
-            How can we <span class="emphasis-text">help</span>?
+            How can we help?
           </h1>
           <p class="text-base md:text-lg text-gray-500 max-w-[560px] mx-auto leading-relaxed mb-8">
             Guides and answers for running Cloud of Worship at your church, from your first slide to
@@ -143,7 +143,7 @@
       <div class="rounded-[28px] md:rounded-[32px] bg-[#FFE9E8] p-8 md:p-12 flex flex-col lg:flex-row lg:items-center gap-8 justify-between">
         <div class="max-w-[560px]">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            Still need <span class="emphasis-text">help</span>?
+            Still need help?
           </h2>
           <p class="text-gray-600 leading-relaxed">
             Can't find what you're looking for? Reach the team directly, or ask thousands of other

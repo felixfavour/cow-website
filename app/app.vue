@@ -1,9 +1,9 @@
 <template>
   <div>
-    <AnnouncementBanner />
+    <!-- Horizon announcement paused for now; re-add <AnnouncementBanner /> to bring it back. -->
     <Navbar />
     <NuxtPage />
-    <Footer />
+    <Footer :class="{ 'footer-over': route.path === '/' }" />
     <CookieConsent />
   </div>
 </template>
@@ -27,6 +27,15 @@ useHead({
 </script>
 
 <style>
+/* On the home page the footer slides up over the pinned last section: it is
+   pulled up a screen into the space the page leaves for it, and is at least a
+   screen tall so it covers that section completely. */
+footer.footer-over {
+  z-index: 3;
+  margin-top: -100svh;
+  min-height: 100svh;
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;

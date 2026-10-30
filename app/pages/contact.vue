@@ -12,7 +12,7 @@
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
           Get
-          <span class="emphasis-text">real help</span> or ask us <br />
+          real help or ask us <br />
           anything.
         </h1>
       </div>

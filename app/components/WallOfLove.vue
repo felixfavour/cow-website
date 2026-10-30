@@ -7,7 +7,7 @@
         class="text-3xl md:text-5xl w-[65%] font-bold text-white mb-[7.5%] md:mb-[5%]"
       >
         What
-        <span class="emphasis-text text-white">people are saying</span> about
+        people are saying about
         Cloud of Worship.
       </h3>
       <div

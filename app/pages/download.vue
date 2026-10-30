@@ -12,7 +12,7 @@
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
           Cloud of Worship,
-          <span class="emphasis-text">on your projection machine</span>.
+          on your projection machine.
         </h1>
         <p
           class="description xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[70%] mx-auto"
@@ -88,7 +88,7 @@
           class="text-3xl md:text-4xl 2xl:text-5xl font-bold text-center max-w-[800px] mx-auto"
         >
           Your browser already
-          <span class="emphasis-text">does it all</span>.
+          does it all.
         </h2>
         <p
           class="text-center xl:text-md 2xl:text-lg md:font-medium w-[95%] md:w-[60%] mx-auto mt-4"
@@ -127,7 +127,7 @@
         <h2
           class="text-3xl md:text-4xl 2xl:text-5xl font-bold text-center max-w-[800px] mx-auto"
         >
-          Installing takes about <span class="emphasis-text">a minute</span>.
+          Installing takes about a minute.
         </h2>
 
         <ol

@@ -11,7 +11,7 @@
           Team workflow
         </div>
         <h1 class="text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold">
-          Enjoy a <span class="emphasis-text">collaborative</span> <br />
+          Enjoy a collaborative <br />
           team workflow
         </h1>
         <p
