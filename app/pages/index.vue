@@ -193,16 +193,18 @@ const onScroll = () => {
   if (!frame) frame = requestAnimationFrame(update)
 }
 
+const seoTitle = "Cloud of Worship - Run your church media projection easily"
+const seoDescription =
+  "Free, browser-based presentation software for churches under 1,000. Put scripture, songs, hymns and videos on screen in seconds, even when the Wi-Fi drops."
+
 useHead({
-  title: "Cloud of Worship - Presentation software for your growing church",
+  title: seoTitle,
 })
 useSeoMeta({
-  title: "Cloud of Worship - Presentation software for your growing church",
-  ogTitle: "Cloud of Worship - Presentation software for your growing church",
-  description:
-    "Run your church media smoothly, without the heavy setup. Cloud of Worship is a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
-  ogDescription:
-    "Run your church media smoothly, without the heavy setup. Cloud of Worship is a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides for your growing church.",
+  title: seoTitle,
+  ogTitle: seoTitle,
+  description: seoDescription,
+  ogDescription: seoDescription,
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com",
   ogType: "website",
