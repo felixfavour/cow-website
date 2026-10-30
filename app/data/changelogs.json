@@ -1,5 +1,17 @@
 [
   {
+    "version": "v1.4.2",
+    "title": "Version Excellence",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 28, 2026",
+    "description": "Navbar avatars line up on one centre, stack in one direction, and drop the coloured ring",
+    "changes": [
+      "Navbar avatars line up on one centre, stack in one direction, and drop the coloured ring",
+      "Interludes and presentations save to the library, setlist songs reorder by drag, and pairs put the camera in the frame",
+      "PDF pages render as JPEG capped at 1920px so large pages upload instead of being refused"
+    ]
+  },
+  {
     "version": "v1.4.1",
     "title": "Version Contentment",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
