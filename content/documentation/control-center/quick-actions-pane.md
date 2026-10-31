@@ -3,7 +3,7 @@ title: "The Quick Actions Pane"
 description: "Every tool in CoW, presented in an easy-to-search format. One search box covers actions, the Bible, your songs, your library and the hymnal."
 category: "The Control Center"
 order: 2
-lastUpdated: "2026-10-25"
+lastUpdated: "2026-10-31"
 ---
 
 *Left pane.*
@@ -39,6 +39,10 @@ Press **`/`** anywhere in the app to jump straight into the Quick Actions search
 ::callout{type="tip"}
 The placeholder rotates through real examples (*"Matt 28:19"*, *"Amazing Grace"*, *"Way Maker"*, *"kids pickup alert"*, *"30s timer"*, *"motion background"*), a good hint at the range of things you can type.
 ::
+
+## New actions
+
+A newly released action carries a **NEW** badge for its first 60 days. The first time you open it, a short animation shows how it works. Interlude and Add Camera have these now, and Import Slides (PDF) and Transcribe Sermon show the same kind of intro in their panels.
 
 ## Navigating inside an action
 

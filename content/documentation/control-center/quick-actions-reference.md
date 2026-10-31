@@ -24,6 +24,7 @@ Actions marked **Teams** require a Teams subscription. Teams-only actions stay v
 | **Add Time Slide** | Display the current time on a slide | Teams |
 | **Add Countdown Timer** | Open the countdown form for a live slide or private stage timer | Teams |
 | **Add Camera** | Show a webcam or capture card full screen | Free |
+| **Create Slide Pair** | Show a camera and another slide on screen together | Teams |
 | **Add Interlude** | An animated break screen with a heading and sub text | Teams |
 | **Slide Templates** | Use pre-made, fancy slide templates | Teams |
 | **Add YouTube Video** | Embed YouTube videos | Teams |
