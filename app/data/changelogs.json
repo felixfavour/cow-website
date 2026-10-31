@@ -1,5 +1,16 @@
 [
   {
+    "version": "v1.4.3",
+    "title": "Version Generosity",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 30, 2026",
+    "description": "Updated splash logo",
+    "changes": [
+      "Updated splash logo",
+      "Duplicated slides land right after their source, and edits made while a new slide uploads are kept and saved"
+    ]
+  },
+  {
     "version": "v1.4.2",
     "title": "Version Excellence",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
