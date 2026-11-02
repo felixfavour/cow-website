@@ -267,6 +267,40 @@ article h3 a {
   color: #525252;
   text-decoration: none;
 }
+/* h4-h6 had no article styles, so they fell back to ~1rem in the condensed
+   heading font (smaller than the 1.1rem body text) and their anchor links
+   picked up the purple underline from `article a`. */
+article h4,
+article h4 a,
+article h5,
+article h5 a,
+article h6,
+article h6 a {
+  font-family: var(--heading-font);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #262626;
+  border-bottom: none;
+  text-decoration: none;
+}
+article h4,
+article h4 a {
+  font-size: 1.4rem;
+}
+article h5,
+article h5 a {
+  font-size: 1.25rem;
+}
+article h6,
+article h6 a {
+  font-size: 1.15rem;
+}
+article h4,
+article h5,
+article h6 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+}
 article h1,
 article h2,
 article h3 {
@@ -445,5 +479,15 @@ article td {
   article h3,
   article h3 a {
     font-size: 1.2rem;
+  }
+  article h4,
+  article h4 a {
+    font-size: 1.15rem;
+  }
+  article h5,
+  article h5 a,
+  article h6,
+  article h6 a {
+    font-size: 1.05rem;
   }
 }
