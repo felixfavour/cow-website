@@ -137,7 +137,64 @@ article {
   display: grid;
   gap: 10px;
   grid-template-areas: "content";
-  grid-template-columns: 1fr;
+  /* minmax(0, 1fr) rather than 1fr: a plain 1fr track grows to its widest
+     child's min-content width, so one long code line or wide table would
+     stretch the whole page sideways and push the text off-screen. */
+  grid-template-columns: minmax(0, 1fr);
+}
+
+article > * {
+  min-width: 0;
+}
+
+/* Wide content (code blocks, tables) scrolls inside its own box instead of
+   widening the page. */
+article pre {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 20px 0px;
+  padding: 16px 20px;
+  background: #f5f3ff;
+  border: 1px solid #ede9fe;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+}
+
+article pre code {
+  font-size: inherit;
+  color: #3b0764;
+  background: none;
+  padding: 0;
+}
+
+article table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 20px 0px;
+  font-size: 0.95rem;
+}
+
+article th,
+article td {
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+article th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
 }
 
 article a {
@@ -190,7 +247,7 @@ article iframe {
 @media only screen and (max-width: 1024px) {
   article {
     grid-template-areas: "content";
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 </style>
