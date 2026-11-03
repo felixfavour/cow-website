@@ -53,6 +53,17 @@
         </li>
       </ul>
       <div class="ml-auto flex items-center gap-3">
+        <a
+          href="https://github.com/CoW-Labs/cloudofworship"
+          target="_blank"
+          rel="noopener"
+          aria-label="Cloud of Worship on GitHub"
+          title="Cloud of Worship on GitHub"
+          class="grid place-items-center w-[40px] h-[40px] mt-1 lg:mt-0 rounded-full transition-colors"
+          :class="isDark ? 'text-white/80 hover:text-white hover:bg-white/10' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'"
+        >
+          <GithubIcon class="w-[26px] h-[26px]" aria-hidden="true" />
+        </a>
         <!-- .pill-btn sets display itself, so the wrapper does the hiding -->
         <div class="hidden lg:block">
           <a :href="signupUrl" class="pill-btn">Get started for free</a>
