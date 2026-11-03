@@ -17,6 +17,8 @@ export default defineContentConfig({
         read_time: z.string().optional(),
         user_title: z.string().optional(),
         excerpt: z.string().optional(),
+        /** Help Center article that covers this post's topic, e.g. /docs/going-live/multi-screen-setup. */
+        docs: z.string().optional(),
       }),
     }),
     documentation: defineCollection({
@@ -24,6 +26,8 @@ export default defineContentConfig({
       source: 'documentation/**',
       schema: z.object({
         title: z.string(),
+        /** Search-result title, phrased the way people search. Falls back to `title`. */
+        seoTitle: z.string().optional(),
         description: z.string().optional(),
         category: z.string().optional(),
         lastUpdated: z.string().optional(),

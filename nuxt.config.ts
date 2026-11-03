@@ -33,17 +33,9 @@ export default defineNuxtConfig({
           name: "twitter:domain",
           content: "cloudofworship.com",
         },
-        {
-          hid: "twitter:description",
-          name: "twitter:description",
-          content:
-            "Display song lyrics, scriptures, videos and fully customizable slides for your growing church all on the web.",
-        },
-        {
-          hid: "twitter:url",
-          name: "twitter:url",
-          content: "https://cloudofworship.com",
-        },
+        // No site-wide twitter:description / twitter:url here: a global value
+        // stays on every page that doesn't override it, so links shared on X
+        // all showed the homepage text. X falls back to each page's og: tags.
       ]
     },
   },

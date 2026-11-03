@@ -9,6 +9,10 @@
         :icon="category.icon"
       />
 
+      <div v-if="hasBody(doc)" class="doc-article doc-category-intro mb-8">
+        <ContentRenderer :value="doc!" />
+      </div>
+
       <p class="text-sm text-gray-400 mb-4">
         {{ category.articles.length }} {{ category.articles.length === 1 ? 'article' : 'articles' }}
       </p>
@@ -93,40 +97,122 @@ const category = computed(() => (parts.value.length === 1 ? nav.getCategory(part
 const article = computed(() => nav.getArticle(routePath.value))
 const parentCategory = computed(() => (article.value ? nav.getCategory(article.value.categorySlug) : undefined))
 
+// Articles and category pages both have a markdown file: <category>/index.md
+// holds the category's intro text, which is rendered above its article list.
 const { data: doc } = await useAsyncData(
   `doc-${slug.value}`,
-  () =>
-    category.value
-      ? Promise.resolve(null)
-      : queryCollection('documentation').path(toContentPath(routePath.value)).first(),
+  () => queryCollection('documentation').path(toContentPath(routePath.value)).first(),
   { watch: [slug] }
 )
 
-const toc = computed(() => (doc.value ? getTableOfContents(doc.value.body) : []))
+const hasBody = (d: any) => Array.isArray(d?.body?.value) && d.body.value.length > 0
+
+const toc = computed(() => (doc.value && !category.value ? getTableOfContents(doc.value.body) : []))
 const breadcrumbs = computed(() => nav.getBreadcrumbs(routePath.value))
 const prevNext = computed(() => nav.getPrevNext(routePath.value))
 const related = computed(() => nav.getRelated(routePath.value))
 
+// Kept short so the page's own title survives the ~60 character cut-off in search results.
+const TITLE_SUFFIX = ' | Cloud of Worship Docs'
+const SITE_URL = 'https://cloudofworship.com'
+
 const pageTitle = computed(() => {
-  if (category.value) return `${category.value.title} - Cloud of Worship Help Center`
-  if (doc.value) return `${doc.value.title} - Cloud of Worship Help Center`
-  return 'Article not found - Cloud of Worship Help Center'
+  const name = doc.value?.seoTitle || category.value?.title || doc.value?.title
+  return name ? `${name}${TITLE_SUFFIX}` : `Article not found${TITLE_SUFFIX}`
 })
 const pageDescription = computed(
   () => category.value?.description || doc.value?.description || 'Cloud of Worship Help Center'
 )
-const canonical = computed(() => `https://cloudofworship.com${routePath.value}`)
+const canonical = computed(() => `${SITE_URL}${routePath.value}`)
+
+// Date-only values like "2026-09-03" are the shape every article uses.
+const modifiedTime = computed(() => {
+  const value = category.value ? undefined : doc.value?.lastUpdated
+  if (!value) return undefined
+  return Number.isNaN(new Date(value).getTime()) ? undefined : value
+})
 
 useSeoMeta({
   title: pageTitle,
   ogTitle: pageTitle,
+  twitterTitle: pageTitle,
   description: pageDescription,
   ogDescription: pageDescription,
+  twitterDescription: pageDescription,
   ogUrl: canonical,
-  ogType: 'article',
+  ogType: () => (category.value ? 'website' : 'article'),
+  articleModifiedTime: modifiedTime,
+  articleSection: () => (category.value ? undefined : parentCategory.value?.title),
+  robots: () => (category.value || doc.value ? undefined : 'noindex'),
 })
 
 useOgCard("docs")
+
+// Structured data: breadcrumbs everywhere, plus TechArticle for articles and
+// CollectionPage (listing its articles) for categories.
+const structuredData = computed(() => {
+  if (!category.value && !doc.value) return null
+
+  const crumbs = [{ label: 'Help Center', href: '/docs' }, ...breadcrumbs.value]
+  const breadcrumbList = {
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((crumb, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: crumb.label,
+      item: `${SITE_URL}${crumb.href}`,
+    })),
+  }
+
+  const publisher = {
+    '@type': 'Organization',
+    name: 'Cloud of Worship',
+    url: SITE_URL,
+    logo: `${SITE_URL}/cow-logo-square.jpg`,
+  }
+
+  const page = category.value
+    ? {
+        '@type': 'CollectionPage',
+        name: category.value.title,
+        description: pageDescription.value,
+        url: canonical.value,
+        isPartOf: { '@type': 'WebSite', name: 'Cloud of Worship', url: SITE_URL },
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: category.value.articles.map((a, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: a.title,
+            url: `${SITE_URL}${a.path}`,
+          })),
+        },
+      }
+    : {
+        '@type': 'TechArticle',
+        headline: doc.value!.title,
+        description: pageDescription.value,
+        url: canonical.value,
+        mainEntityOfPage: canonical.value,
+        image: `${SITE_URL}/images/og/docs.jpg`,
+        inLanguage: 'en',
+        ...(parentCategory.value ? { articleSection: parentCategory.value.title } : {}),
+        ...(modifiedTime.value ? { dateModified: modifiedTime.value } : {}),
+        about: { '@type': 'SoftwareApplication', name: 'Cloud of Worship', applicationCategory: 'BusinessApplication' },
+        author: publisher,
+        publisher,
+      }
+
+  return { '@context': 'https://schema.org', '@graph': [page, breadcrumbList] }
+})
+
+useHead({
+  script: computed(() =>
+    structuredData.value
+      ? [{ key: 'docs-ld', type: 'application/ld+json', innerHTML: JSON.stringify(structuredData.value) }]
+      : []
+  ),
+})
 
 if (!category.value && !doc.value) {
   setResponseStatus(useRequestEvent(), 404)

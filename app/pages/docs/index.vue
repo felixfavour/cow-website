@@ -216,18 +216,42 @@ const quickReference = [
   },
 ]
 
-const title = 'Help Center - Cloud of Worship'
+const title = 'Help Center: Church Media Guides | Cloud of Worship'
 const description =
-  'Guides and answers for running Cloud of Worship at your church: getting started, the Control Center, building your service, going live, teams, settings and troubleshooting.'
+  'Step-by-step guides for Cloud of Worship: put scripture and lyrics on a projector, set up a second screen, stream to OBS or vMix, work as a team and fix common problems.'
 
 useSeoMeta({
   title,
   ogTitle: title,
+  twitterTitle: title,
   description,
   ogDescription: description,
+  twitterDescription: description,
   ogUrl: 'https://cloudofworship.com/docs',
   ogType: 'website',
 })
 
 useOgCard("docs")
+
+useHead({
+  script: computed(() => [
+    {
+      key: 'docs-ld',
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Cloud of Worship Help Center',
+        description,
+        url: 'https://cloudofworship.com/docs',
+        isPartOf: { '@type': 'WebSite', name: 'Cloud of Worship', url: 'https://cloudofworship.com' },
+        hasPart: categories.value.map((c) => ({
+          '@type': 'CollectionPage',
+          name: c.title,
+          url: `https://cloudofworship.com${c.path}`,
+        })),
+      }),
+    },
+  ]),
+})
 </script>
