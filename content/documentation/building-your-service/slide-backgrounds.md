@@ -1,5 +1,6 @@
 ---
 title: "Slide Backgrounds"
+seoTitle: "Slide Backgrounds: Images & Video"
 description: "Add an image, video, colour or gradient behind a slide, tune blur and brightness, and pick how media fills the screen."
 category: "Building Your Service"
 order: 13
@@ -32,3 +33,10 @@ Use the **Brightness** slider to darken a busy photo so lyrics stay readable, ra
 ## Default backgrounds
 
 You can set **default backgrounds per slide type** (Bible, hymn, text) in **Settings → Slide Background Settings**.
+
+## Related guides
+
+- [Editing a slide](/docs/building-your-service/editing-a-slide): change the font, size and lines per slide.
+- [Adding media](/docs/building-your-service/adding-media): put a full-screen image or video on its own slide.
+- [Settings reference](/docs/settings-and-shortcuts/settings-reference): default backgrounds and the blank-screen background.
+- [Plans: Free vs Teams](/docs/teams-and-collaboration/plans-free-vs-teams): upload limits on each plan.

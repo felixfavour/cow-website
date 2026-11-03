@@ -1,5 +1,6 @@
 ---
 title: "Layout Overview"
+seoTitle: "Control Center Layout Overview"
 description: "The Control Center is divided into three panes: Quick Actions, Preview and Edit Content, and the Slide Schedule."
 category: "The Control Center"
 order: 1

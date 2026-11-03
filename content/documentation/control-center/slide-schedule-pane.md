@@ -1,5 +1,6 @@
 ---
 title: "The Slide Schedule Pane"
+seoTitle: "The Slide Schedule Pane"
 description: "Your running order. Every slide that's ready to go live, and the Blank and Go Live controls."
 category: "The Control Center"
 order: 4

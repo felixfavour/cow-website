@@ -1,5 +1,6 @@
 ---
 title: "Using Cloud of Worship on Your Phone"
+seoTitle: "Control Slides from Your Phone"
 description: "Build slides, switch schedules and drive the projector at the media desk from a phone, without taking over anyone else's screen."
 category: "Teams & Collaboration"
 order: 4

@@ -1,5 +1,6 @@
 ---
 title: "Working as a Team"
+seoTitle: "Edit Slides Together as a Team"
 description: "CoW is real-time collaborative. Invite teammates, see what syncs live, and understand slide locking."
 category: "Teams & Collaboration"
 order: 1

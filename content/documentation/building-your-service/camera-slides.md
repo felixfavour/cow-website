@@ -1,5 +1,6 @@
 ---
 title: "Camera Slides"
+seoTitle: "Show a Live Camera on the Projector"
 description: "Show a webcam or capture card full screen on the Live Output, for the preacher, a stage shot or a baptism."
 category: "Building Your Service"
 order: 9

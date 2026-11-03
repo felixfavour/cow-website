@@ -1,5 +1,6 @@
 ---
 title: "Interlude Slides"
+seoTitle: "Welcome & Offering Break Screens"
 description: "An animated break screen with a heading and sub text, for welcomes, offering, announcements and pauses in the service. A Teams feature."
 category: "Building Your Service"
 order: 8

@@ -1,5 +1,6 @@
 ---
 title: "Installing Cloud of Worship as an App"
+seoTitle: "Install Cloud of Worship as an App"
 description: "Install CoW to your dock, taskbar or home screen as a Progressive Web App, or install the native Windows desktop app."
 category: "Settings, Shortcuts & Offline"
 order: 4

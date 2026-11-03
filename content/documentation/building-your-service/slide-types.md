@@ -1,5 +1,6 @@
 ---
 title: "Slide Types"
+seoTitle: "Slide Types for Church Services"
 description: "Bible, Song, Song Setlist, Hymn, Text, Media, Countdown, Interlude, Camera and Presentation slides, and which Quick Action creates each one."
 category: "Building Your Service"
 order: 2

@@ -1,5 +1,6 @@
 ---
 title: "Live Display Problems"
+seoTitle: "Fix Projector & Live Display Issues"
 description: "Sluggish Control Center, a black live window, Go Live not showing a slide, the live window closing, and screens not detected."
 category: "Troubleshooting"
 order: 2

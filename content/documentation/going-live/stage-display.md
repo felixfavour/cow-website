@@ -1,5 +1,6 @@
 ---
 title: "Stage Display"
+seoTitle: "Stage Display Confidence Monitor"
 description: "A confidence monitor for musicians and speakers with live and next content, a service stopwatch, a private countdown and the clock."
 category: "Going Live"
 order: 4

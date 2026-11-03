@@ -1,5 +1,6 @@
 ---
 title: "Keyboard Shortcuts"
+seoTitle: "Keyboard Shortcuts"
 description: "The full shortcut sheet, grouped the same way as in-app: general, slide schedule, live and stage display, and slide styling."
 category: "Settings, Shortcuts & Offline"
 order: 1
@@ -62,3 +63,9 @@ Open the full reference sheet any time by pressing **`?`**, **Cmd/Ctrl + H**, or
 ::callout{type="tip"}
 Formatting shortcuts (bold, alignment) work the same whether you're in a text slide's rich-text editor or using the slide toolbar directly: **Cmd/Ctrl + B** for bold, and the usual alignment chords.
 ::
+
+## Related guides
+
+- [Promoting slides](/docs/going-live/promoting-slides): run a whole service from the arrow keys.
+- [Text slides](/docs/building-your-service/text-slides): formatting shortcuts in the text editor.
+- [Quick Actions pane](/docs/control-center/quick-actions-pane): what Cmd/Ctrl + K searches.

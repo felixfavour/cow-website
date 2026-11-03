@@ -1,5 +1,6 @@
 ---
 title: "Limitations & Known Behaviours"
+seoTitle: "Known Limitations"
 description: "Honest notes about how CoW behaves in the real world, so nothing surprises you mid-service."
 category: "Troubleshooting"
 order: 1
@@ -55,3 +56,10 @@ The copied livestream URL is tied to the active schedule. Switch schedules and y
 ## Verification code limits
 
 Three resends maximum, with a two-minute cooldown between them.
+
+## Related guides
+
+- [Live display problems](/docs/troubleshooting/live-display-problems): fixes for the projection window.
+- [Offline use](/docs/settings-and-shortcuts/offline-use): what works without a connection.
+- [Sync & team problems](/docs/troubleshooting/sync-and-team-problems): when changes do not show up.
+- [The desktop app](/docs/settings-and-shortcuts/desktop-app): native multi-monitor windows on Windows.

@@ -1,5 +1,6 @@
 ---
 title: "Plans: Free vs Teams"
+seoTitle: "Free vs Teams Plan Comparison"
 description: "What's included on the Free plan, what Teams unlocks, and how your plan is tied to your church."
 category: "Teams & Collaboration"
 order: 3
@@ -74,3 +75,10 @@ For the first 3 days the banner tells you when Teams features switch off. After 
 ## Upgrading
 
 Use the **Upgrade Plan** quick action, or go to **App Settings → Subscription Settings**. Current prices are on the [pricing page](/pricing).
+
+## Related guides
+
+- [Quick Actions reference](/docs/control-center/quick-actions-reference): every action and the plan it needs.
+- [Working as a team](/docs/teams-and-collaboration/working-as-a-team): invite your media team.
+- [Sermon transcription](/docs/teams-and-collaboration/sermon-transcription): transcription minutes on each plan.
+- [Account & sign-in problems](/docs/troubleshooting/account-and-sign-in-problems): Teams features greyed out after upgrading.

@@ -1,5 +1,6 @@
 ---
 title: "Opening the Live Display"
+seoTitle: "Open the Live Display on a Projector"
 description: "Go Live opens the projection window. Drag it to your projector, go fullscreen, and you're ready to promote slides."
 category: "Going Live"
 order: 1

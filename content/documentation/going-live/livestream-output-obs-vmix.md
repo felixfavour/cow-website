@@ -1,5 +1,6 @@
 ---
 title: "Livestream Output (OBS / vMix)"
+seoTitle: "Add Church Lyrics to OBS or vMix"
 description: "Feed your live slides into OBS, vMix or similar software as a browser source, so your online congregation sees the same lyrics and scripture as the room."
 category: "Going Live"
 order: 7

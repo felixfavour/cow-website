@@ -1,5 +1,6 @@
 ---
 title: "Quick Actions Reference"
+seoTitle: "Quick Actions Reference"
 description: "Every action available in the Quick Actions Pane, grouped by what it does, with the plan it needs."
 category: "The Control Center"
 order: 6

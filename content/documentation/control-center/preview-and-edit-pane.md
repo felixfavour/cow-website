@@ -1,5 +1,6 @@
 ---
 title: "The Preview and Edit Content Pane"
+seoTitle: "Preview and Edit Content Pane"
 description: "The processing and refinement centre: a grid of every slide in the schedule and an editor for the one you've selected."
 category: "The Control Center"
 order: 3

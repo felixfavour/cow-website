@@ -1,5 +1,6 @@
 ---
 title: "The Top Bar & Live Output Preview"
+seoTitle: "Top Bar and Live Output Preview"
 description: "Rename and switch schedules, invite teammates, toggle the theme, open your account menu, and watch a mirror of the live screen."
 category: "The Control Center"
 order: 5
@@ -22,3 +23,10 @@ lastUpdated: "2026-10-31"
 *Top-right pane.* A miniature mirror of exactly what your congregation sees right now, with the slide title and a **LIVE** badge. The badge stays grey and still until the output actually reaches a screen: a live window, the Stage Display or a livestream page is open. It turns red once something is on air. When nothing is live it shows the blank or idle screen.
 
 Use the expand icon in its bottom-right corner to enlarge it.
+
+## Related guides
+
+- [Schedules](/docs/building-your-service/schedules): create, switch, rename and delete schedules.
+- [Working as a team](/docs/teams-and-collaboration/working-as-a-team): what happens after you invite a teammate.
+- [Opening the live display](/docs/going-live/opening-the-live-display): get the output onto your projector.
+- [Settings reference](/docs/settings-and-shortcuts/settings-reference): every page in App Settings.

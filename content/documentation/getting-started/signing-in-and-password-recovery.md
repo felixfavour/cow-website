@@ -1,5 +1,6 @@
 ---
 title: "Signing In & Password Recovery"
+seoTitle: "Sign In and Reset Your Password"
 description: "Sign in with Google or email, reset a forgotten password, and sign out."
 category: "Getting Started"
 order: 4

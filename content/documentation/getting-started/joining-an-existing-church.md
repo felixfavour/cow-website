@@ -1,5 +1,6 @@
 ---
 title: "Joining an Existing Church"
+seoTitle: "Join Your Church with an Invite"
 description: "Invited by a teammate? Your invite link opens a short join page instead of the full sign-up wizard."
 category: "Getting Started"
 order: 3
