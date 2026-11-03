@@ -59,19 +59,20 @@
         </div>
         <button
           class="menu-btn w-[45px] h-[45px] mt-1 lg:hidden"
-          :class="{ invert: isDark }"
+          :class="{ invert: isDark, 'is-open': isMenuOpen }"
           :aria-label="ariaText"
+          :aria-expanded="isMenuOpen"
           @click="toggleMenu"
-        ></button>
+        >
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import lottie from "lottie-web"
 const { mergeUtmsIntoUrl } = useUtm()
-const menuAnim = ref(null)
 const isMenuOpen = ref(false)
 const isScrolled = ref(false)
 const ariaText = ref("Open Navigation Menu")
@@ -137,7 +138,6 @@ const isActive = (path, prefix = false) =>
 const onScroll = () => (isScrolled.value = window.scrollY > 8)
 
 onMounted(() => {
-  menuAnim.value = loadAnimation()
   onScroll()
   window.addEventListener("scroll", onScroll, { passive: true })
   if (window.innerWidth >= 1024) {
@@ -154,26 +154,13 @@ onMounted(() => {
 
 onBeforeUnmount(() => window.removeEventListener("scroll", onScroll))
 
-const loadAnimation = () => {
-  return lottie.loadAnimation({
-    container: document.querySelector("button.menu-btn"),
-    renderer: "svg",
-    loop: false,
-    autoplay: false,
-    path: "/animation/hamburger.json",
-    name: "Navigation Menu",
-  })
-}
-
 const toggleMenu = () => {
   if (process.client && window.innerWidth < 1024) {
     if (!isMenuOpen.value) {
-      menuAnim.value.playSegments([0, 17], true)
       ariaText.value = "Close Navigation Menu"
       isMenuOpen.value = true
       document.body.classList.add("modal-open")
     } else {
-      menuAnim.value.playSegments([17, 0], true)
       ariaText.value = "Open Navigation Menu"
       isMenuOpen.value = false
       document.body.classList.remove("modal-open")
@@ -193,6 +180,35 @@ watch(
 </script>
 
 <style scoped>
+/* Hamburger that folds into an X. Replaces a lottie animation, which put
+   lottie-web (~250 KB) into the bundle every page loads. Lines are black;
+   the dark home-page bar inverts the button, as it did the lottie SVG. */
+.menu-icon {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 18px;
+  margin: 0 auto;
+}
+.menu-icon > span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  border-radius: 2px;
+  background: #000;
+  transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+}
+.menu-icon > span:nth-child(1) { top: 0; }
+.menu-icon > span:nth-child(2) { top: 7.75px; }
+.menu-icon > span:nth-child(3) { top: 15.5px; }
+.menu-btn.is-open .menu-icon > span:nth-child(1) { top: 7.75px; transform: rotate(45deg); }
+.menu-btn.is-open .menu-icon > span:nth-child(2) { opacity: 0; }
+.menu-btn.is-open .menu-icon > span:nth-child(3) { top: 7.75px; transform: rotate(-45deg); }
+@media (prefers-reduced-motion: reduce) {
+  .menu-icon > span { transition: none; }
+}
+
 .menu-open {
   visibility: visible;
 }

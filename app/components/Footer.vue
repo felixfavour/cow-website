@@ -150,7 +150,7 @@ const isActive = (path) =>
 
 <style scoped>
 .footer-heading {
-  font-family: "Geist", sans-serif;
+  font-family: var(--body-font);
   font-size: 16px;
   font-weight: 500;
   color: #fff;

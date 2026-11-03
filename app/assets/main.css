@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Geist:wght@400..700&display=swap");
 
 /* Headings use the condensed cut of Bricolage Grotesque, self-hosted from public/fonts.
-   The regular cut (Google Fonts, above) is kept for the wordmark. */
+   The regular cut (assets/fonts.css) is kept for the wordmark. */
 @font-face {
   font-family: "Bricolage Grotesque Condensed";
   src: url("/fonts/BricolageGrotesque48ptCondensed-ExtraLight.woff2") format("woff2");
@@ -27,15 +26,17 @@
 :root {
   --primary-color: #9333ea;
   --accent-color: #ff8980;
-  --heading-font: "Bricolage Grotesque Condensed", "Bricolage Grotesque", sans-serif;
+  --heading-font: "Bricolage Grotesque Condensed", "Bricolage Grotesque Condensed Fallback",
+    "Bricolage Grotesque Condensed Fallback Android", sans-serif;
+  --body-font: "Geist", "Geist Fallback", "Geist Fallback Android", sans-serif;
 }
 
 * {
-  font-family: "Geist", sans-serif;
+  font-family: var(--body-font);
 }
 
 .wordmark {
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Bricolage Grotesque", "Bricolage Grotesque Fallback", "Bricolage Grotesque Fallback Android", sans-serif;
 }
 
 .secondary-font {
