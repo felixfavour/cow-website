@@ -12,7 +12,7 @@ updated: "September 26, 2026 9:32 AM"
 
 Most church screens display lyric lines, announcement text, and stock graphics that feel disconnected from everyday church life. Visitors and regular attenders sit in rows without knowing what God is doing in mid-week youth club, home groups, or community outreach projects. Showing real photos and short clips of your people in action puts flesh on church announcements and brings community life into the room.
 
-## What you need
+## What you need :span{.as-h3}
 
 - A shared cloud folder (such as Google Drive or Dropbox File Requests) with an easy upload link
 - A smartphone or camera that captures 1080p video in 16:9 landscape format
@@ -20,7 +20,7 @@ Most church screens display lyric lines, announcement text, and stock graphics t
 - A photo consent register (particularly for children and vulnerable adults)
 - Presentation software that handles media slides and video playback
 
-## 1. Set up a simple upload routine for ministry leaders
+## 1. Set up a simple upload routine for ministry leaders :span{.as-h3}
 
 Your media volunteers cannot be at every youth night, men's breakfast, or food bank distribution. You need ministry leaders to capture moments as they happen. When you ask leaders to "send photos," they send them through personal text messages at 11:00 PM on Saturday. The files get compressed, lost, or forgotten.
 
@@ -32,7 +32,7 @@ Create a permanent Dropbox File Request or Google Drive upload link. Paste this 
 
 Make sure ministry leaders know who has opted out of photography. A simple coloured wristband or a checked register at children's check-in helps your leaders know which kids must stay off the screen.
 
-## 2. Filter for emotion, clarity, and relevance
+## 2. Filter for emotion, clarity, and relevance :span{.as-h3}
 
 Go through the upload folder on Thursday night. Mid-size churches often receive dozens of shots of backs of heads, dark room corners, or half-eaten plates of food. Be selective. Pick three to five photos or one 15-second video clip that tells a clear story.
 
@@ -40,7 +40,7 @@ Look for faces and genuine emotion. A photo of two people praying together at a 
 
 Check every selected image against your consent register. If an image includes a child whose parents have not granted screen permission, discard it immediately. Never put your Sunday slide operator in the awkward position of showing an unvetted photo to the whole room.
 
-## 3. Crop and format media for a 16:9 projector
+## 3. Crop and format media for a 16:9 projector :span{.as-h3}
 
 Vertical photos leave thick black bars on modern church projectors and TVs. Take two minutes to crop every photo into standard 16:9 widescreen format (1920x1080 pixels) before importing it into your service deck.
 
@@ -48,7 +48,7 @@ Use basic editing tools on your desktop or phone to brighten dark shots. Communi
 
 For short video clips, trim the head and tail. A clip should start right as the action begins and cut away after 6 to 10 seconds. If the audio is just wind noise or loud room chatter, mute the clip entirely so it can play smoothly while music plays or a pastor speaks.
 
-## 4. Build the media into your presentation software
+## 4. Build the media into your presentation software :span{.as-h3}
 
 Do not jump between your presentation app and an external video player or desktop photo viewer. That exposes your computer desktop and risks playing media at the wrong volume.
 
@@ -56,7 +56,7 @@ Import your edited media directly into your software. In Cloud of Worship, you c
 
 If you have multiple media team members on a rota, use a shared workspace. Cloud of Worship allows teams to edit schedules together in real time, meaning the media coordinator can load the photos from home on Friday, and the slide operator on duty Sunday morning will see them ready to run.
 
-## 5. Place media at moments where people pay attention
+## 5. Place media at moments where people pay attention :span{.as-h3}
 
 Many churches run photo loops only before the service starts. The problem is that late arrivals miss them, and those already seated are talking to friends. If a ministry story matters, give it a place in the main service order.
 
@@ -68,7 +68,7 @@ Here are three practical places to show church life media:
 
 Give your slide operator exact instructions on the cue sheet. Note whether the media should auto-advance or wait for a manual click, and whether the audio should play through the sound desk or stay muted.
 
-## Common mistakes
+## Common mistakes :span{.as-h3}
 
 - **Showing portrait phone videos:** Vertical videos look amateur on a widescreen projector. If a volunteer only captured vertical video, place a blurred, darkened copy of the video behind it to fill the 16:9 space, or ask them to hold the phone horizontally next time.
 - **Leaving photos on screen too long:** A photo slide should stay on screen for 5 to 7 seconds. Leaving a static photo up for two minutes while someone speaks causes people to stare at freeze-framed faces instead of listening to the speaker.

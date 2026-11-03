@@ -492,3 +492,67 @@ article td {
     font-size: 1.365rem;
   }
 }
+
+/* Blog headings keep the size they were written at.
+   Heading levels in posts were renumbered so none is skipped (an h1 in the
+   body, or h2 -> h4, fails accessibility checks). A renumbered heading carries
+   its original size as an empty marker, `## Title :span{.as-h3}` (MDC has
+   no attribute syntax for headings), and these rules render the heading
+   exactly as that level did, at every breakpoint. */
+article h2:has(.as-h1),
+article h2:has(.as-h1) a {
+  font-size: 3.3rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #000000;
+}
+article h2:has(.as-h1) {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+article h2:has(.as-h3),
+article h2:has(.as-h3) a {
+  font-size: 1.6rem;
+  line-height: 100%;
+  font-weight: 800;
+  color: #525252;
+}
+article h2:has(.as-h3) {
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+article h3:has(.as-h4),
+article h3:has(.as-h4) a {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #262626;
+}
+article h3:has(.as-h4) {
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+@media screen and (max-width: 768px) {
+  article h2:has(.as-h1),
+  article h2:has(.as-h1) a {
+    font-size: 2.5rem;
+  }
+  article h2:has(.as-h3),
+  article h2:has(.as-h3) a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  article h2:has(.as-h1),
+  article h2:has(.as-h1) a {
+    font-size: 2rem;
+  }
+  article h2:has(.as-h3),
+  article h2:has(.as-h3) a {
+    font-size: 1.2rem;
+  }
+  article h3:has(.as-h4),
+  article h3:has(.as-h4) a {
+    font-size: 1.5rem;
+  }
+}

@@ -12,14 +12,14 @@ updated: "September 26, 2026 9:32 AM"
 
 A slide that looks sharp on your laptop screen can wash out completely under an outdoor canopy or blur into tiny dots at the back of an auditorium. When power blinks, projectors change, or your congregation gathers outside for a special programme, badly formatted slides force people to squint instead of worship. Creating slides that work in any space requires clear layout rules that hold up under harsh sun, basic hardware, and multi-language services.
 
-## What you need
+## What you need :span{.as-h3}
 
 - A laptop running your presentation software (Cloud of Worship works offline once loaded in your browser or desktop app, so poor internet will not stop your service).
 - A high-contrast color standard tested for low-lumen projectors.
 - Two standard sans-serif system fonts installed on your presentation computer.
 - Text templates saved for both single-language and bilingual lyrics.
 
-## 1. Set a hard limit of four lines per slide
+## 1. Set a hard limit of four lines per slide :span{.as-h3}
 
 When a worship team sings quickly, operators often try to fit an entire eight-line verse onto one screen. In a small classroom with a 40-inch television, that wall of text looks crowded. In a deep 500-seat auditorium or an open field, anyone sitting beyond the tenth row cannot read it.
 
@@ -34,7 +34,7 @@ For example, format a verse like this:
 
 Set your line spacing (leading) between 1.2 and 1.4. This prevents the descenders of letters like "g" and "y" from colliding with capital letters on the line below. When singers repeat a chorus, do not combine it with a bridge on the same slide. Split the song across more slides and click through them cleanly.
 
-## 2. Choose high-contrast backgrounds based on venue lighting
+## 2. Choose high-contrast backgrounds based on venue lighting :span{.as-h3}
 
 Different spaces demand completely different background rules.
 
@@ -44,7 +44,7 @@ In an outdoor service under a daylight marquee or tent, black backgrounds do not
 
 Avoid busy photographic backgrounds and looped motion graphics behind song words. If your projector is fighting against outdoor sunlight or aging hall lights, a moving video background destroys letter legibility. Keep backgrounds simple and solid so the lyrics stand out clearly.
 
-## 3. Use bold, heavy fonts sized for the worst seat
+## 3. Use bold, heavy fonts sized for the worst seat :span{.as-h3}
 
 Never design slides while sitting 40 centimeters away from your laptop screen. You must design for the person sitting in the last plastic chair under the side fan.
 
@@ -58,7 +58,7 @@ Apply these exact size rules for standard 16:9 widescreen slides:
 
 As Habakkuk 2:2 tells us, "Write the vision, and make it plain upon tables, that he may run that readeth it." Slide text must be readable at a glance so the church can sing without hesitation.
 
-## 4. Build clear bilingual layouts for local languages
+## 4. Build clear bilingual layouts for local languages :span{.as-h3}
 
 Many services across Africa operate in two or more languages. A service might move between English and Yoruba, Igbo, French, or Swahili. Cramming both languages into the same color and weight confuses first-time visitors who cannot tell which line is being sung.
 
@@ -69,7 +69,7 @@ Use a clear visual hierarchy for dual-language slides:
 
 If you are reading scripture during the sermon, present translations clearly. With Cloud of Worship, you can pull scriptures from the King James Version, New International Version, and the Yoruba Bibeli Mimo (YBCV). When showing verses in two languages, show the English passage first, then move to the translation on the next slide, or split the screen evenly with a visible divider so the pastor can switch between them easily.
 
-## 5. Keep safe margins on every edge
+## 5. Keep safe margins on every edge :span{.as-h3}
 
 Many church venues use older VGA cables, HDMI-to-RCA converters, or rented projectors that stretch the picture. If your slide operator puts lyrics right up against the bottom or sides of the slide, the projector's overscan will crop off words.
 
@@ -81,7 +81,7 @@ Set a 10% safe zone margin around every side of your slide canvas:
 
 If you use on-screen banners for emergency alerts—such as asking a driver to move a car blocking the gate or calling a parent to the children's department—use presentation software with dedicated overlay tools. Cloud of Worship includes built-in alert banners that run cleanly across the screen without interrupting the active lyric slide.
 
-## 6. Keep presentation files light for unstable power and slow data
+## 6. Keep presentation files light for unstable power and slow data :span{.as-h3}
 
 Imagine a church where the public power cuts mid-service and the sound team switches to the backup diesel generator. When laptops reboot or drop their Wi-Fi connections, heavy presentation decks that rely on steady high-speed internet will freeze.
 
@@ -91,7 +91,7 @@ Build your slides to be completely self-reliant:
 - Avoid downloading high-definition video loops over expensive, slow mobile hotspot data during Sunday morning prep.
 - Pre-build your service setlists during the week. Cloud of Worship lets you build setlists ahead of time and control your output from a browser or desktop app, running fully offline once the schedule is loaded.
 
-## Common slide design mistakes
+## Common slide design mistakes :span{.as-h3}
 
 - Centering every line of long scripture: Long scripture passages are much easier to read when left-aligned with a clean left margin. Center-align only short choruses and hymn stanzas.
 - Using low-contrast accent colors: Bright red, dark blue, or dark purple text on a black background disappears completely for anyone wearing glasses or sitting past row five. Stick to white, cream, and pale yellow on dark backgrounds.

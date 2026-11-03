@@ -20,19 +20,19 @@ As a media professional, he had tested and wrestled with multiple tools, some to
 
 > “Unlike other tools, it works seamlessly on the web, making it accessible from anywhere without complex installations. The user interface is incredibly intuitive, allowing our team to learn and operate it with ease quickly. The outstanding quality and features make our worship experience more engaging and professional.” — Moshood Olawale Mustapha
 
-## **Seamless Access, Anywhere**
+## **Seamless Access, Anywhere** :span{.as-h3}
 
 What sets CoW apart is its **web-first design**. No downloads. No bulky setups. Churches can log in from any location and run their worship service with nothing more than a stable internet connection. For media teams under pressure, this is a game-changer.
 
-## **Built for Teams, Not Just Tech Experts**
+## **Built for Teams, Not Just Tech Experts** :span{.as-h3}
 
 Ease of use is often overlooked in church tech, but CoW prioritizes it. With its **intuitive interface**, teams don’t need weeks of training to get started. Volunteers and professionals alike can quickly adapt, saving time and ensuring services run without interruption.
 
-## **Professional Quality Without the Complexity**
+## **Professional Quality Without the Complexity** :span{.as-h3}
 
 Moshood emphasizes how CoW elevates worship: engaging visuals, seamless scripture projection, and smooth song transitions, without the heavy technical burden. This blend of simplicity and excellence empowers media teams to focus less on troubleshooting and more on enhancing the worship experience.
 
-## **A Recommendation Backed by Results**
+## **A Recommendation Backed by Results** :span{.as-h3}
 
 Moshood’s endorsement is powerful because it comes from experience at the frontline of church media. For churches searching for reliability, accessibility, and professionalism in their worship presentation tools, his message is clear:
 

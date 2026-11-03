@@ -13,19 +13,19 @@ Preparing a sermon is both spiritual and practical. While prayer and study shape
 
 That’s why many church leaders are rethinking how they access and work with the Bible during sermon preparation.
 
-## **The Everyday Challenge Pastors and Media Teams Face**
+## **The Everyday Challenge Pastors and Media Teams Face** :span{.as-h3}
 
 In many churches, sermon prep still involves jumping between multiple tools: a physical Bible, a mobile app, notes, and presentation software. Each switch takes time and focus. Over the course of a week, those small interruptions add up, making preparation feel more task-heavy than it needs to be.
 
 When momentum is broken, clarity can suffer.
 
-## **What Changes When Scripture Search Is Instant**
+## **What Changes When Scripture Search Is Instant** :span{.as-h3}
 
 Having the ability to search the entire Bible in seconds changes the preparation experience entirely. Instead of hunting for verses, pastors and teachers can stay focused on themes, meaning, and application.
 
 With an integrated search system like the one built into Cloud of Worship, users can type a word or phrase and immediately see every related scripture across supported Bible versions. This makes it easier to explore topics deeply without losing context or inspiration.
 
-## **Practical Benefits of Faster Bible Search**
+## **Practical Benefits of Faster Bible Search** :span{.as-h3}
 
 **1. Better Thematic Study**
 
@@ -43,13 +43,13 @@ When scriptures are easy to find and organize, preparation becomes calmer and mo
 
 Finding a verse and displaying it no longer feels like two separate tasks. This is especially helpful for churches where pastors and media teams work closely together.
 
-## **Why This Matters for Churches Today**
+## **Why This Matters for Churches Today** :span{.as-h3}
 
 Time is one of the most limited resources in ministry. Tools that reduce friction during preparation help leaders spend more energy on prayer, reflection, and delivery, where it matters most.
 
 Instant Bible search isn’t about speed for its own sake. It’s about creating space for clarity, confidence, and depth in teaching.
 
-## **Final Thoughts**
+## **Final Thoughts** :span{.as-h3}
 
 When scripture is easy to access, preparation becomes more fluid and intentional. By removing unnecessary hurdles, church leaders can focus less on searching and more on studying, ensuring that every message is delivered with clarity, accuracy, and purpose.
 

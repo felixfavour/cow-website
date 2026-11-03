@@ -14,7 +14,7 @@ When Sunday morning arrives, small delays quickly compound. If the audio enginee
 
 A clear, shared timeline keeps your tech crew aligned. This guide provides a plug-and-play schedule designed for mid-size churches running a 4-to-8 person volunteer team across sound, presentation, lighting, and livestream.
 
-## When to Use This Timeline
+## When to Use This Timeline :span{.as-h3}
 
 Use this timeline every Sunday when running a regular service. It is especially useful when:
 
@@ -26,7 +26,7 @@ Print this schedule and pin it in your sound booth, or share it in your team mes
 
 ---
 
-## Master Timeline Template
+## Master Timeline Template :span{.as-h3}
 
 Copy and paste this template into your church planning doc or print it out for the booth.
 
@@ -78,39 +78,39 @@ Service Start Time: [ __ : __ AM ]
 
 ---
 
-## Filled-In Example: 10:00 AM Service
+## Filled-In Example: 10:00 AM Service :span{.as-h3}
 
 Here is how this looks in practice for a church with a 10:00 AM service and five tech volunteers: **Tech Lead (Mark)**, **Audio FOH (Sarah)**, **Presentation Operator (James)**, **Broadcast Audio (Elena)**, and **Camera Operator (David)**.
 
-### 8:00 AM – 8:30 AM: Power-On and Tech Check
+### 8:00 AM – 8:30 AM: Power-On and Tech Check :span{.as-h4}
 * **Mark (Lead)** opens the booth, checks the room temperature, turns on the main rack power, and confirms the run sheet matches the service order.
 * **Sarah (FOH)** powers up the Behringer X32, un mutes the talkback mic, checks wireless receiver batteries, and sets fresh AA batteries in the preaching mic.
 * **James (Presentation)** opens his laptop. In Cloud of Worship, he opens the morning schedule. Because Cloud of Worship runs in the browser and desktop app with offline support, the setlist synced during his preparation at home is ready to go. He enables the live output window on the primary projector and checks the stage display output for the band.
 * **Elena and David (Stream & Cameras)** power up the Blackmagic ATEM Mini, check two PTZ cameras, adjust white balance under house lighting, and test the stream encoder.
 
-### 8:30 AM – 9:15 AM: Rehearsal with Worship Team
+### 8:30 AM – 9:15 AM: Rehearsal with Worship Team :span{.as-h4}
 * Sarah works through gain staging and monitor levels while the worship team warms up.
 * James follows the lyrics slide-by-slide. The band repeats the chorus of the second song three times; James uses keyboard shortcuts to jump back to the chorus without fumbling through slides.
 * Elena balances the separate livestream mix in her headphones to make sure vocals sit clearly above the drums.
 
-### 9:15 AM – 9:35 AM: Pastor Check-In and Media Updates
+### 9:15 AM – 9:35 AM: Pastor Check-In and Media Updates :span{.as-h4}
 * The visiting pastor brings two extra scripture passages: Romans 8:28 and Psalm 100:1–5. James opens the scripture search tool, selects the NIV translation, and drops both passages directly into the sermon schedule within 60 seconds.
 * Mark tests the platform stage display clock: 35-minute countdown timer set for the message, followed by a soft amber warning at 5 minutes remaining.
 * James loads the car-park announcement slide and verifies the emergency alert banner overlay function is working in case a vehicle blocks the driveway.
 
-### 9:35 AM – 9:45 AM: Team Prayer
+### 9:35 AM – 9:45 AM: Team Prayer :span{.as-h4}
 * The entire production crew steps away from the consoles for five minutes behind the sound booth. Mark leads a brief prayer, thanking God for the opportunity to serve the church family.
 
-### 9:45 AM – 10:00 AM: Doors Open and Countdown
+### 9:45 AM – 10:00 AM: Doors Open and Countdown :span{.as-h4}
 * **9:45 AM:** House lights at 70%. Sarah brings up the pre-service Spotify playlist. James starts the rotating announcement carousel on the auditorium screens.
 * **9:55 AM:** James fires the 5-minute countdown timer slide on the main output and starts the platform stage clock.
 * **9:58 AM:** David and Elena push the stream live with the pre-service countdown and title card.
 * **9:59 AM:** Sarah fades the house music. Band takes positions.
 
-### 10:00 AM – 11:25 AM: Live Service
+### 10:00 AM – 11:25 AM: Live Service :span{.as-h4}
 * The service runs according to schedule. James operates song lyrics and scripture references, while Mark monitors audio levels and checks in with the platform director via headset.
 
-### 11:25 AM – 11:45 AM: Walk-Out and Pack-Down
+### 11:25 AM – 11:45 AM: Walk-Out and Pack-Down :span{.as-h4}
 * Sarah powers down stage boxes, collects wireless mics, and places rechargeable cells back on the dock.
 * James sends post-service slides to the screens, exits the output, and ensures the service recording saves cleanly.
 * David packs up loose camera cables and covers the lenses.
@@ -118,7 +118,7 @@ Here is how this looks in practice for a church with a 10:00 AM service and five
 
 ---
 
-## How to Adapt This for Your Team
+## How to Adapt This for Your Team :span{.as-h3}
 
 Every church operates with distinct building setups and volunteer counts. Adapt this template using these practical rules:
 

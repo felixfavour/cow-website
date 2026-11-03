@@ -17,25 +17,25 @@ In many churches, media challenges don’t come from a lack of passion or effort
 
 Ironically, the solution isn’t more technology, it’s better simplicity.
 
-## **Complexity Creates Pressure**
+## **Complexity Creates Pressure** :span{.as-h3}
 
 When systems are hard to learn or maintain, volunteers feel anxious. Media teams worry about mistakes. Pastors hesitate to try new ideas. Over time, this pressure shows up as delays, errors, and unnecessary stress during services.
 
-## **Simplicity Builds Confidence**
+## **Simplicity Builds Confidence** :span{.as-h3}
 
 Simple systems do more than save time, they build confidence. When volunteers can understand what they’re doing without constant supervision, they serve better. Confidence allows teams to focus on timing, clarity, and flow rather than troubleshooting.
 
-## **Why Simple Media Systems Work Better**
+## **Why Simple Media Systems Work Better** :span{.as-h3}
 
 - Faster onboarding for new volunteers
 - Fewer errors during service
 - Less dependency on one “expert” person
 - More consistency week after week
 
-## **What Churches Should Aim For**
+## **What Churches Should Aim For** :span{.as-h3}
 
 The best media setup is one that disappears into the background. When media runs smoothly, the congregation doesn’t notice the tools, they engage with the message.
 
-## **Final Reflection**
+## **Final Reflection** :span{.as-h3}
 
 Church media should support ministry, not complicate it. Simplicity creates space for excellence, peace, and focus, exactly what every service needs.

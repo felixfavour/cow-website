@@ -27,7 +27,7 @@ With multiple tools, recurring subscriptions, and upgrade fees, church media bud
 
 This is where modern, cloud-based solutions like **Cloud of Worship** provide a more sustainable alternative.
 
-## The Cost Challenge in Church Media
+## The Cost Challenge in Church Media :span{.as-h1}
 
 Church presentation tools are designed to help media teams:
 
@@ -40,7 +40,7 @@ While these tools are important, many traditional systems require **paid license
 
 For churches looking to manage resources wisely, reducing these expenses without compromising quality becomes a priority.
 
-## A Simpler, Cost-Effective Approach
+## A Simpler, Cost-Effective Approach :span{.as-h1}
 
 Cloud of Worship offers a **browser-based church presentation platform** that allows churches to manage their worship slides without the complexity of traditional software.
 
@@ -53,7 +53,7 @@ With a **free plan available**, churches can access essential features such as:
 
 This allows churches to meet their core media needs **without immediate financial pressure**.
 
-## Why Browser-Based Tools Help Reduce Costs
+## Why Browser-Based Tools Help Reduce Costs :span{.as-h1}
 
 One of the key advantages of Cloud of Worship is that it runs entirely in a web browser.
 
@@ -67,7 +67,7 @@ Media teams can access their presentations from multiple devices, making it easi
 
 This simplicity translates into **time savings and reduced operational costs**.
 
-## Supporting Church Media Teams with Collaboration
+## Supporting Church Media Teams with Collaboration :span{.as-h1}
 
 Church media is often a team effort involving:
 
@@ -79,7 +79,7 @@ Cloud of Worship supports this by allowing teams to **prepare and organize prese
 
 For churches that require more structured collaboration, the **Teams subscription** provides additional capabilities for managing users and coordinating service content effectively.
 
-## What Churches Are Saying
+## What Churches Are Saying :span{.as-h1}
 
 Many churches using Cloud of Worship have shared positive feedback about how the platform simplifies their media workflow.
 
@@ -95,7 +95,7 @@ One user described it as:
 
 This reflects a growing number of churches choosing simpler, more accessible tools for their media needs.
 
-## A Smarter Way to Steward Church Resources
+## A Smarter Way to Steward Church Resources :span{.as-h1}
 
 Reducing unnecessary software expenses allows churches to **redirect resources to other areas of ministry**.
 
@@ -106,7 +106,7 @@ By adopting cloud-based tools like Cloud of Worship, churches can:
 - Improve collaboration among volunteers
 - Maintain high-quality worship presentations
 
-## Final Thoughts
+## Final Thoughts :span{.as-h1}
 
 Church technology should support ministry, not create financial strain.
 

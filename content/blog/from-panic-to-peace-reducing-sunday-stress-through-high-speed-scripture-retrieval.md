@@ -18,7 +18,7 @@ Sunday stress is common in churches and media teams often feel it the most. Last
 
 But stress isn’t inevitable. It’s often a sign of poor preparation.
 
-## **The Root of Media Stress**
+## **The Root of Media Stress** :span{.as-h3}
 
 Most Sunday problems don’t start on Sunday. They begin earlier in the week:
 
@@ -27,7 +27,7 @@ Most Sunday problems don’t start on Sunday. They begin earlier in the week:
 - No clear service flow
 - Media teams guessing what comes next
 
-## **What Better Preparation Looks Like**
+## **What Better Preparation Looks Like** :span{.as-h3}
 
 Strong preparation doesn’t require perfection, just structure.
 
@@ -38,7 +38,7 @@ Strong preparation doesn’t require perfection, just structure.
 - Running quick pre-service checks
 - Communicating clearly with worship leaders and pastors
 
-## **Why Preparation Changes Everything**
+## **Why Preparation Changes Everything** :span{.as-h3}
 
 When media teams are prepared:
 
@@ -49,10 +49,10 @@ When media teams are prepared:
 
 Preparation builds confidence and confidence shows on screen.
 
-## **A Healthier Way to Serve**
+## **A Healthier Way to Serve** :span{.as-h3}
 
 The media ministry shouldn’t feel like survival mode. With the right preparation habits and tools, teams can serve joyfully instead of anxiously.
 
-## **Closing Thought**
+## **Closing Thought** :span{.as-h3}
 
 The goal of church technology is never to draw attention to the screen, but to remove every distraction from the Word. When your preparation is seamless and your tools are instant, the 'tech' disappears, leaving only the Truth for the congregation to see. A peaceful media booth creates a focused sanctuary

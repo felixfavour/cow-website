@@ -27,7 +27,7 @@ However, without a clear process, slide preparation can become stressful and dis
 
 This guide explains **how to prepare worship slides for church in a simple, structured way**.
 
-## Why Worship Slide Preparation Matters
+## Why Worship Slide Preparation Matters :span{.as-h1}
 
 Worship slides support key parts of a church service:
 
@@ -38,7 +38,7 @@ Worship slides support key parts of a church service:
 
 When slides are prepared properly, services feel smoother and more coordinated.
 
-## Step 1: Gather All Service Content Early
+## Step 1: Gather All Service Content Early :span{.as-h1}
 
 Start by collecting everything you need for the service:
 
@@ -48,7 +48,7 @@ Start by collecting everything you need for the service:
 
 Having all content ready ahead of time prevents last-minute confusion.
 
-## Step 2: Organize Your Slides Clearly
+## Step 2: Organize Your Slides Clearly :span{.as-h1}
 
 Structure your slides in the exact order of the service.
 
@@ -62,7 +62,7 @@ A simple flow could look like:
 
 This helps the media operator move smoothly during the service.
 
-## Step 3: Format for Readability
+## Step 3: Format for Readability :span{.as-h1}
 
 Slides should be easy for everyone in the room to read.
 
@@ -75,7 +75,7 @@ Best practices include:
 
 Clarity is more important than design complexity.
 
-## Step 4: Add Bible Verses Correctly
+## Step 4: Add Bible Verses Correctly :span{.as-h1}
 
 When adding scripture:
 
@@ -85,7 +85,7 @@ When adding scripture:
 
 Using tools that allow quick scripture insertion can save time and reduce errors.
 
-## Step 5: Review Before Service
+## Step 5: Review Before Service :span{.as-h1}
 
 Before the service starts:
 
@@ -95,7 +95,7 @@ Before the service starts:
 
 A quick review can prevent disruptions during the service.
 
-## Step 6: Use Tools That Simplify the Process
+## Step 6: Use Tools That Simplify the Process :span{.as-h1}
 
 Preparing slides manually or across multiple tools can be time-consuming.
 
@@ -108,7 +108,7 @@ Using a platform like **[Cloud of Worship](https://app.cloudofworship.com/signup
 
 This makes it easier for media teams to stay organized and focused.
 
-## Final Thoughts
+## Final Thoughts :span{.as-h1}
 
 Preparing worship slides doesn’t have to be complicated.
 

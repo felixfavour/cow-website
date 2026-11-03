@@ -10,7 +10,7 @@ tag: "Guides, How To"
 updated: "September 26, 2026 9:32 AM"
 ---
 
-## When to Use This Cue Sheet
+## When to Use This Cue Sheet :span{.as-h3}
 
 Use this cue sheet whenever your worship set moves between different slide formats or involves musical shifts that a volunteer cannot predict by ear alone. It is designed for two people: the worship leader on the platform and the slide operator in the booth.
 
@@ -18,7 +18,7 @@ Keep this sheet on the music stand and next to the media keyboard during your mi
 
 ---
 
-## The Transition Cue Sheet Template
+## The Transition Cue Sheet Template :span{.as-h3}
 
 Copy and paste this template into a document, print it on a single sheet of paper, or paste it directly into your shared planning notes.
 
@@ -34,7 +34,7 @@ Copy and paste this template into a document, print it on a single sheet of pape
 
 ---
 
-## Filled-In Example: 20-Minute Worship Set
+## Filled-In Example: 20-Minute Worship Set :span{.as-h3}
 
 Here is how this template looks when filled out for a complete Sunday opening set that moves directly from music into a scripture reading, a response song, and the sermon hand-off.
 
@@ -51,21 +51,21 @@ In this example, the slide operator does not need to guess when "Gratitude" ends
 
 ---
 
-## How to Adapt This Sheet for Your Team
+## How to Adapt This Sheet for Your Team :span{.as-h3}
 
-### 1. Prioritize Audio Cues Over Visual Cues
+### 1. Prioritize Audio Cues Over Visual Cues :span{.as-h4}
 Slide operators look back and forth between their monitor screen, the congregation, and their software interface. They rarely stare at the worship leader's hands for an entire service. Use distinct audio triggers in your sheet. A spoken sentence, a specific keyboard pad, a drum count, or a sudden change in instrumentation works far better than "worship leader nods head."
 
-### 2. Specify the Slide Type for Every Move
+### 2. Specify the Slide Type for Every Move :span{.as-h4}
 Avoid writing simply "change screen." Name the specific slide type so the tech operator can prepare the right element inside their software schedule. In Cloud of Worship, an operator works with distinct slide types including lyrics, Bible verses from specific translations like the NIV or NKJV, countdown timers, media videos, and text slides. If an item switches from song lyrics to a Bible verse, identifying that slide type on the cue sheet helps the volunteer locate it instantly in the schedule drawer.
 
-### 3. Match the Stage Display to Platform Needs
+### 3. Match the Stage Display to Platform Needs :span{.as-h4}
 The stage screen facing the band needs different information during transitions than the congregation sees. Use the rightmost column of your sheet to define what the stage monitor should do. If your worship team relies on a stage clock or countdown timer to keep the service on schedule, note when that timer should start, pause, or reset. For instance, you can instruct the operator to keep the stage clock running during the song set, but switch to a speaker countdown when the preacher begins.
 
-### 4. Keep Schedule Adjustments in Sync
+### 4. Keep Schedule Adjustments in Sync :span{.as-h4}
 Last-minute setlist changes happen during Sunday morning soundchecks. If you cut a chorus or swap a song order twenty minutes before doors open, update the sheet immediately. Because Cloud of Worship provides a shared workspace with real-time editing, the worship leader can adjust the song setlist and schedule items on a laptop or phone while the slide operator sees those changes appear on the booth computer without needing a manual file transfer.
 
-### 5. Limit Notes to One Page
+### 5. Limit Notes to One Page :span{.as-h4}
 If a cue sheet spans three pages, volunteers will miss transitions while flipping paper. Keep the document to a single page containing only the start triggers, the song transitions, and the hand-offs. The simpler the cue, the faster your tech team can execute it.
 
 If you want an easier way to build service schedules and keep your booth team aligned, [try Cloud of Worship free](https://app.cloudofworship.com/?utm_source=blog&utm_medium=article&utm_campaign=art-of-seamless-transitions-worship-flow)

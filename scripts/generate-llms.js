@@ -71,6 +71,14 @@ function parseMarkdown(content) {
 }
 
 /**
+ * Drop the `:span{.as-h3}` size markers from the end of heading lines; they
+ * style the page and mean nothing to a reader of the raw text.
+ */
+function stripAttributes(markdown) {
+  return markdown.replace(/^(#{1,6} .*?)\s*:span\{[^}\n]*\}\s*$/gm, "$1")
+}
+
+/**
  * Read and parse all blog posts from content/blog/.
  */
 function readBlogPosts() {
@@ -319,7 +327,7 @@ function buildLlmsFullTxt(pageDefs, blogPosts, docsCategories) {
   // Individual blog post content
   for (const post of blogPosts) {
     sections.push(
-      `## Blog: ${post.title}\n\nURL: ${post.url}\n\n${post.body.trim()}`
+      `## Blog: ${post.title}\n\nURL: ${post.url}\n\n${stripAttributes(post.body.trim())}`
     )
   }
 

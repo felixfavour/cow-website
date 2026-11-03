@@ -26,7 +26,7 @@ While this may seem manageable, it often leads to **inefficiency and confusion d
 
 A better approach is using a **centralized presentation system**.
 
-## **The Problem with Fragmented Tools**
+## **The Problem with Fragmented Tools** :span{.as-h1}
 
 When media tasks are spread across different platforms:
 
@@ -37,7 +37,7 @@ When media tasks are spread across different platforms:
 
 This affects the overall worship experience.
 
-## **What Is a Centralized Presentation System?**
+## **What Is a Centralized Presentation System?** :span{.as-h1}
 
 A centralized system allows churches to manage:
 
@@ -48,7 +48,7 @@ A centralized system allows churches to manage:
 
 This simplifies both preparation and execution.
 
-## **Key Benefits for Church Media Teams**
+## **Key Benefits for Church Media Teams** :span{.as-h1}
 
 ### **[1. Faster Service Transitions](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_1-faster-service-transitions)**
 
@@ -66,7 +66,7 @@ Slides and content can be organized in advance.
 
 Fewer systems mean fewer points of failure.
 
-## **A Practical Example**
+## **A Practical Example** :span{.as-h1}
 
 Instead of:
 
@@ -76,7 +76,7 @@ Instead of:
 
 A centralized system brings everything together, allowing the media team to focus on **execution, not troubleshooting**.
 
-## **How Cloud of Worship Supports This**
+## **How Cloud of Worship Supports This** :span{.as-h1}
 
 **[Cloud of Worship](https://app.cloudofworship.com/signup?utm_source=marketing_website_blog)** provides a centralized platform where churches can:
 
@@ -87,7 +87,7 @@ A centralized system brings everything together, allowing the media team to focu
 
 This approach reduces complexity and improves the overall service experience.
 
-## **Why Simplicity Matters**
+## **Why Simplicity Matters** :span{.as-h1}
 
 The goal of church media is not to manage tools, it is to **support worship effectively**.
 
@@ -97,7 +97,7 @@ When systems are simple:
 - Services run more smoothly
 - The congregation remains focused
 
-## **Final Thoughts**
+## **Final Thoughts** :span{.as-h1}
 
 A centralized presentation system is not just a convenience, it is a necessity for modern church media teams.
 

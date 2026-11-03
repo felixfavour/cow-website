@@ -25,7 +25,7 @@ However, many churches unknowingly make small media mistakes that can **distract
 
 The good news is that most of these issues are easy to fix with the right approach and the right tools.
 
-## 1. Last-Minute Slide Preparation
+## 1. Last-Minute Slide Preparation :span{.as-h1}
 
 One of the most common issues is preparing slides too close to service time.
 
@@ -39,7 +39,7 @@ This often leads to:
 
 Prepare all slides ahead of time and review them before service begins.
 
-## 2. Slow Scripture Search During Sermons
+## 2. Slow Scripture Search During Sermons :span{.as-h1}
 
 When a pastor calls out a Bible verse and the media team struggles to find it quickly, it breaks the flow of the message.
 
@@ -47,7 +47,7 @@ When a pastor calls out a Bible verse and the media team struggles to find it qu
 
 Use tools that allow **instant scripture search and insertion**, so verses can be displayed immediately without delays.
 
-## 3. Overcrowded Slides
+## 3. Overcrowded Slides :span{.as-h1}
 
 Slides filled with too much text can make it difficult for the congregation to read and follow along.
 
@@ -57,7 +57,7 @@ Slides filled with too much text can make it difficult for the congregation to r
 - Keep text minimal
 - Break long passages into multiple slides
 
-## 4. Poor Coordination Between Team Members
+## 4. Poor Coordination Between Team Members :span{.as-h1}
 
 When media teams are not aligned with worship leaders or pastors, it creates confusion during the service.
 
@@ -65,7 +65,7 @@ When media teams are not aligned with worship leaders or pastors, it creates con
 
 Use a system that allows **shared access and collaboration**, so everyone is working with the same content.
 
-## 5. Switching Between Multiple Tools
+## 5. Switching Between Multiple Tools :span{.as-h1}
 
 Using different apps for lyrics, scriptures, and media can slow down transitions and increase the risk of errors.
 
@@ -73,7 +73,7 @@ Using different apps for lyrics, scriptures, and media can slow down transitions
 
 Use a single platform that manages everything in one place.
 
-## A Better Way to Manage Church Media
+## A Better Way to Manage Church Media :span{.as-h1}
 
 Many of these challenges come from using tools that are not built specifically for church workflows.
 
@@ -86,7 +86,7 @@ Many of these challenges come from using tools that are not built specifically f
 
 This allows media teams to focus less on technical issues and more on supporting worship.
 
-## Why Simplicity Matters in Worship
+## Why Simplicity Matters in Worship :span{.as-h1}
 
 The goal of church media is not to impress, it is to **support the message and create a distraction-free environment**.
 
@@ -96,7 +96,7 @@ When systems are simple and reliable:
 - Volunteers feel more confident
 - The congregation stays focused
 
-## Final Thoughts
+## Final Thoughts :span{.as-h1}
 
 Most church media problems are not caused by lack of effort, they are caused by **inefficient systems**.
 

@@ -26,7 +26,7 @@ Displaying Bible verses on a projector has become a standard practice in many ch
 
 Whether your church is just getting started with media or looking to improve its setup, this guide explains **how to display Bible verses on a projector in a simple and effective way**.
 
-## Why Churches Project Bible Verses
+## Why Churches Project Bible Verses :span{.as-h1}
 
 Projecting scripture during services offers several benefits:
 
@@ -37,7 +37,7 @@ Projecting scripture during services offers several benefits:
 
 With the right setup, displaying Bible verses can be smooth and distraction-free.
 
-## What You Need to Get Started
+## What You Need to Get Started :span{.as-h1}
 
 To display Bible verses in church, you need a few basic components:
 
@@ -57,7 +57,7 @@ This is the tool used to prepare and display Bible verses, songs, and slides dur
 
 You will need HDMI, VGA, or a wireless connection to link your computer to the projector.
 
-## Step-by-Step: How to Display Bible Verses
+## Step-by-Step: How to Display Bible Verses :span{.as-h1}
 
 ### Step 1: Choose a Presentation Tool
 
@@ -88,7 +88,7 @@ When the pastor references a scripture, the media operator selects the prepared 
 
 Timing is important to ensure smooth transitions during the service.
 
-## Best Practices for Clear Scripture Display
+## Best Practices for Clear Scripture Display :span{.as-h1}
 
 To ensure Bible verses are easy to read:
 
@@ -99,7 +99,7 @@ To ensure Bible verses are easy to read:
 
 These small adjustments make a big difference in visibility and engagement.
 
-## Using Cloud-Based Tools for Simplicity
+## Using Cloud-Based Tools for Simplicity :span{.as-h1}
 
 Modern churches are increasingly using **browser-based presentation tools** to simplify media operations.
 
@@ -107,7 +107,7 @@ Platforms like **Cloud of Worship** allow churches to prepare and display Bible 
 
 This makes it easier to prepare scripture slides ahead of time and manage them during the service.
 
-## Common Challenges and How to Avoid Them
+## Common Challenges and How to Avoid Them :span{.as-h1}
 
 ### Poor Visibility
 
@@ -125,7 +125,7 @@ Test your projector and connections before the service begins.
 
 Keep slides simple and focused for better readability.
 
-## Final Thoughts
+## Final Thoughts :span{.as-h1}
 
 Displaying Bible verses on a projector is a simple yet powerful way to enhance worship services.
 

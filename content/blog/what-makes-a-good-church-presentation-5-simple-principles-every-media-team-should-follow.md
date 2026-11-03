@@ -25,7 +25,7 @@ When slides are clear and well-organized, they help the congregation stay focuse
 
 Here are **5 simple principles every church media team should follow** to create effective presentations.
 
-## 1. Clarity Over Design
+## 1. Clarity Over Design :span{.as-h1}
 
 The primary goal of any church slide is readability.
 
@@ -43,7 +43,7 @@ Instead:
 
 If people struggle to read the screen, the message is lost.
 
-## 2. Keep Slides Simple
+## 2. Keep Slides Simple :span{.as-h1}
 
 Too much information on a slide can overwhelm the audience.
 
@@ -55,7 +55,7 @@ Best practice:
 
 Simple slides improve understanding and engagement.
 
-## 3. Maintain Consistency
+## 3. Maintain Consistency :span{.as-h1}
 
 Consistency helps your service feel organized.
 
@@ -67,7 +67,7 @@ Ensure:
 
 This creates a professional and distraction-free experience.
 
-## 4. Prepare in Advance
+## 4. Prepare in Advance :span{.as-h1}
 
 Last-minute preparation often leads to mistakes.
 
@@ -79,7 +79,7 @@ Plan ahead by:
 
 Preparation reduces stress and improves delivery.
 
-## 5. Use the Right Tools
+## 5. Use the Right Tools :span{.as-h1}
 
 Many presentation issues come from using tools that are not designed for church workflows.
 
@@ -92,7 +92,7 @@ Platforms like **[Cloud of Worship](https://app.cloudofworship.com/signup?utm_so
 
 This reduces technical challenges and improves overall service quality.
 
-## Why Good Presentations Matter
+## Why Good Presentations Matter :span{.as-h1}
 
 A well-prepared presentation:
 
@@ -103,7 +103,7 @@ A well-prepared presentation:
 
 Ultimately, the goal is to make technology invisible so the focus remains on worship.
 
-## Final Thoughts
+## Final Thoughts :span{.as-h1}
 
 Good church presentations are not about complexity, they are about clarity, preparation, and consistency.
 

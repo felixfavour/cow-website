@@ -22,7 +22,7 @@ For years, the gold standard was simple: Download a heavy file, install it on a 
 
 But in 2026, the "Download" model isn't just old, it’s a bottleneck. Here is why the most forward-thinking ministries are moving their sanctuary screens to the browser.
 
-## The Hidden "Tax" of Downloadable Software
+## The Hidden "Tax" of Downloadable Software :span{.as-h3}
 
 While a "free download" sounds attractive, it often comes with hidden operational costs that drain a media team’s energy:
 
@@ -30,27 +30,27 @@ While a "free download" sounds attractive, it often comes with hidden operationa
 2. **The Version Trap:** Legacy software requires manual updates. Running an outdated version during a live service is like driving a car that hasn't been serviced in three years, it’s a risk you shouldn't take.
 3. **The "Single-Booth" Prison:** You can only prepare slides on the computer where the software is installed. This forces media teams to stay late at the office or rush to church hours early just to type in lyrics.
 
-## Why the Cloud is Winning the Sanctuary
+## Why the Cloud is Winning the Sanctuary :span{.as-h3}
 
 Browser-based platforms like **Cloud of Worship** have redefined what "easy" looks like. We’ve moved from **Installation** to **Instant Access.**
 
-## 1. Zero-Install, Infinite Power
+## 1. Zero-Install, Infinite Power :span{.as-h3}
 
 When we say "No Installation," we mean it. You don't need to be an IT expert. If you can open Google Chrome, you can run a professional church service. This hardware-agnostic approach means you can project from a Mac, a Windows PC, or even a Chromebook in a pinch.
 
-## 2. The Collaborative Workflow (Remote Preparation)
+## 2. The Collaborative Workflow (Remote Preparation) :span{.as-h3}
 
 This is the "Growth Genius" secret: **Preparation should not happen in the media booth.** With a browser-based standard, your Pastor can update a scripture from his study, and your worship leader can add a new bridge to a song from her phone. By the time the media team arrives on Sunday, the service is already synced and ready.
 
-## 3. Native Multilingual Intelligence
+## 3. Native Multilingual Intelligence :span{.as-h3}
 
 Legacy downloads often struggle with non-English characters or require paid "plugins" for local Bibles. Browser-based tools are built for the global church. Whether it’s **Yoruba, Twi, Igbo, or Tagalog**, projecting side-by-side heart languages is a native, one-click experience.
 
-## 4. Absolute Reliability (The Internet Myth)
+## 4. Absolute Reliability (The Internet Myth) :span{.as-h3}
 
 The #1 question we get is: *"What if the internet fails?"* Modern browser-based tech is built for efficiency. Platforms like **Cloud of Worship** are optimized to use minimal bandwidth. Once your service is loaded, the "engine" runs locally in your browser’s cache. In 2026, cloud reliability actually surpasses the risk of a "hard drive failure" on an old church laptop.
 
-## Final Thoughts: The Verdict
+## Final Thoughts: The Verdict :span{.as-h3}
 
 Technology should never interrupt the flow of the Spirit. While download-based tools served us well in the past, the **Cloud Standard** of 2026 offers a level of freedom that stationary software simply cannot match.
 
