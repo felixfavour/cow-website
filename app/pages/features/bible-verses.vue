@@ -6,7 +6,7 @@
         class="texts max-w-[900px] 2xl:max-w-[1000px] text-center mx-auto flex flex-col gap-4 2xl:gap-6"
       >
         <div
-          class="small-text secondary-font text-center text-md lg:text-lg text-[#FF8980] font-bold"
+          class="small-text secondary-font text-center text-md lg:text-lg text-[#C94136] font-bold"
         >
           Bible & scripture
         </div>

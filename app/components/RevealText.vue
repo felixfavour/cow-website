@@ -4,8 +4,12 @@
     ref="root"
     class="reveal-text"
     :class="{ revealed, scrub, focus: effect === 'focus' }"
-    :aria-label="label"
+    :aria-label="link ? label : undefined"
   >
+    <!-- The words below are split into animated pieces and hidden from screen
+         readers, so they read this instead. (aria-label isn't allowed on a
+         plain <p> or <span>.) -->
+    <span v-if="!link" class="sr-only">{{ label }}</span>
     <span v-for="(line, l) in parts" :key="l" class="reveal-line">
       <span class="reveal-line-inner">
         <template v-for="(word, w) in line" :key="w">

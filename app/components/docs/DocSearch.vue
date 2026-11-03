@@ -65,7 +65,7 @@
         class="absolute left-0 right-0 z-40 mt-2 bg-white border border-gray-100 rounded-2xl shadow-2xl shadow-gray-200/80 overflow-hidden text-left"
         role="listbox"
       >
-        <div v-if="loading" class="px-5 py-4 text-sm text-gray-400 flex items-center gap-2">
+        <div v-if="loading" class="px-5 py-4 text-sm text-gray-500 flex items-center gap-2">
           <span class="w-3.5 h-3.5 rounded-full border-2 border-purple-200 border-t-purple-600 animate-spin" />
           Searching…
         </div>
@@ -79,7 +79,7 @@
               @mouseenter="active = i"
               @click="close"
             >
-              <div class="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-gray-400 mb-0.5">
+              <div class="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-gray-500 mb-0.5">
                 <span>{{ r.category }}</span>
                 <template v-if="r.section">
                   <span aria-hidden="true">›</span>
@@ -98,7 +98,7 @@
           and we'll help.
         </div>
 
-        <div class="hidden md:flex items-center gap-4 px-5 py-2 border-t border-gray-100 bg-gray-50 text-[11px] text-gray-400">
+        <div class="hidden md:flex items-center gap-4 px-5 py-2 border-t border-gray-100 bg-gray-50 text-[11px] text-gray-500">
           <span><kbd class="font-sans">↑↓</kbd> navigate</span>
           <span><kbd class="font-sans">↵</kbd> open</span>
           <span><kbd class="font-sans">esc</kbd> close</span>

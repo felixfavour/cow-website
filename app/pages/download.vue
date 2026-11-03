@@ -6,7 +6,7 @@
         class="texts max-w-[900px] 2xl:max-w-[1000px] text-center mx-auto flex flex-col gap-4 2xl:gap-6"
       >
         <div
-          class="small-text secondary-font text-center text-md lg:text-lg text-[#FF8980] font-bold"
+          class="small-text secondary-font text-center text-md lg:text-lg text-[#C94136] font-bold"
         >
           Desktop app
         </div>
@@ -105,7 +105,7 @@
         <div
           class="max-w-[560px] mx-auto mt-[7%] md:mt-[4%] p-6 md:p-8 rounded-[24px] bg-gray-50 border border-gray-100"
         >
-          <div class="text-sm font-bold text-[#FF8980]">
+          <div class="text-sm font-bold text-[#C94136]">
             The one thing the desktop app adds
           </div>
           <h3 class="mt-2 text-xl font-bold">{{ ndi.title }}</h3>

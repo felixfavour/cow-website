@@ -171,6 +171,14 @@ let scroll = 0 // the eased scroll progress
 let aspect = 1
 let pixelScale = 1
 let slowFrames = 0
+// Still mode: the band is drawn as a single frame and never animated. Used
+// where WebGL runs on the CPU (no GPU, e.g. remote desktops, many budget
+// laptops with drivers missing, and the machines PageSpeed Insights tests on),
+// where every frame of the animation blocks the page for 50-200 ms, and where
+// frames stay slow even at the lowest resolution.
+let still = false
+let slowAtFloor = 0
+let idleHandle = 0
 const focal = 1 / Math.tan(((FOV / 2) * Math.PI) / 180)
 const front = [0, 0, -3] // the band at angle 0, in camera space
 
@@ -330,8 +338,10 @@ const loadTexture = (src) => {
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE)
     const aniso = gl.getExtension("EXT_texture_filter_anisotropic")
     if (aniso) gl.texParameterf(gl.TEXTURE_2D, aniso.TEXTURE_MAX_ANISOTROPY_EXT, 8)
-    entry.loadedAt = performance.now()
+    // Still mode has no animation to fade the slide in, so show it as is.
+    entry.loadedAt = still ? performance.now() - 1000 : performance.now()
     if (textures.every((t) => t.loadedAt)) reveal()
+    else if (still && ready.value) drawStill()
   }
   img.src = src
   return entry
@@ -344,7 +354,28 @@ const reveal = () => {
   loaded = true
   if (ready.value || props.held) return
   ready.value = true
-  introStart = reducedMotion ? -1 : time
+  introStart = reducedMotion || still ? -1 : time
+  if (still) drawStill()
+}
+
+// One frame of the band where it rests after the intro, with nothing queued.
+const drawStill = () => {
+  if (!gl) return
+  scroll = props.progress
+  draw()
+}
+
+// SwiftShader (Chrome without a GPU), llvmpipe/softpipe (Mesa), Microsoft's
+// Basic Render Driver and similar all render WebGL on the CPU.
+const SOFTWARE_RENDERER = /swiftshader|llvmpipe|softpipe|software|basic render|microsoft basic/i
+const isSoftwareRenderer = () => {
+  try {
+    const info = gl.getExtension("WEBGL_debug_renderer_info")
+    const name = `${gl.getParameter(gl.RENDERER) || ""} ${info ? gl.getParameter(info.UNMASKED_RENDERER_WEBGL) || "" : ""}`
+    return SOFTWARE_RENDERER.test(name)
+  } catch {
+    return false
+  }
 }
 
 const init = () => {
@@ -352,6 +383,10 @@ const init = () => {
   gl = canvas.value.getContext("webgl2", options) || canvas.value.getContext("webgl", options)
   if (!gl) return false
   generation++
+  if (isSoftwareRenderer()) {
+    still = true
+    pixelScale = 1
+  }
 
   const program = gl.createProgram()
   gl.attachShader(program, compile(gl.VERTEX_SHADER, VERTEX))
@@ -396,7 +431,18 @@ const resize = () => {
 // Drop the resolution in steps on devices that can't keep up. It never goes
 // back up, so it can't flip back and forth.
 const watchFrameRate = (seconds) => {
-  if (time < 2 || pixelScale <= 1) return
+  if (time < 2) return
+  if (pixelScale <= 1) {
+    // Already at the lowest resolution and still under 20 fps for about two
+    // seconds: stop animating and leave the band as a still.
+    slowAtFloor = seconds > 1 / 20 ? slowAtFloor + 1 : Math.max(slowAtFloor - 1, 0)
+    if (slowAtFloor >= 40) {
+      still = true
+      stop()
+      drawStill()
+    }
+    return
+  }
   slowFrames = seconds > 1 / 40 ? slowFrames + 1 : Math.max(slowFrames - 1, 0)
   if (slowFrames < 45) return
   pixelScale = Math.max(1, pixelScale - 0.5)
@@ -545,7 +591,14 @@ const stop = () => {
   cancelAnimationFrame(frame)
 }
 
-const sync = () => (visible && !props.covered && !props.held && !document.hidden ? start() : stop())
+const sync = () => {
+  if (still) {
+    stop()
+    if (ready.value) drawStill()
+    return
+  }
+  visible && !props.covered && !props.held && !document.hidden ? start() : stop()
+}
 
 const onContextLost = (e) => {
   e.preventDefault()
@@ -560,13 +613,16 @@ const onContextRestored = () => {
 
 const onMotionChange = (e) => (reducedMotion = e.matches)
 
-onMounted(() => {
+// Setting up WebGL (compiling shaders, uploading ten slide textures) is heavy,
+// and the band only sweeps in once the headline has settled anyway, so it
+// waits until the page has loaded and the main thread is idle rather than
+// competing with the first render and hydration.
+const boot = () => {
+  idleHandle = 0
   const el = canvas.value
+  if (!el || gl) return
   pixelScale = Math.min(window.devicePixelRatio || 1, 2)
   if (!init()) return
-  motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
-  reducedMotion = motionQuery.matches
-  motionQuery.addEventListener("change", onMotionChange)
   readyTimer = setTimeout(reveal, 1500)
   // Arriving part-way down the page shows the band as far as it should be.
   scroll = props.progress
@@ -574,22 +630,30 @@ onMounted(() => {
 
   el.addEventListener("webglcontextlost", onContextLost)
   el.addEventListener("webglcontextrestored", onContextRestored)
-  document.addEventListener("visibilitychange", sync)
-
   resizeObserver = new ResizeObserver(resize)
   resizeObserver.observe(el)
+  if (props.clearTo) resizeObserver.observe(props.clearTo)
+  // The headline gets wider once its web font arrives.
+  document.fonts?.ready.then(() => gl && layout())
+  sync()
+}
+
+onMounted(() => {
+  motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+  reducedMotion = motionQuery.matches
+  motionQuery.addEventListener("change", onMotionChange)
+  document.addEventListener("visibilitychange", sync)
+
   // The text block's ref is filled in after the first render, so watch for it.
   watch(
     () => props.clearTo,
     (text, old) => {
+      if (!gl) return
       if (old) resizeObserver.unobserve(old)
       if (text) resizeObserver.observe(text)
       layout()
-    },
-    { immediate: true }
+    }
   )
-  // The headline gets wider once its web font arrives.
-  document.fonts?.ready.then(() => gl && layout())
   watch(() => props.covered, sync)
   watch(
     () => props.held,
@@ -602,12 +666,22 @@ onMounted(() => {
     visible = entry.isIntersecting
     sync()
   })
-  intersectionObserver.observe(el)
-  sync()
+  intersectionObserver.observe(canvas.value)
+
+  const schedule = () => {
+    idleHandle =
+      "requestIdleCallback" in window
+        ? window.requestIdleCallback(boot, { timeout: 1200 })
+        : setTimeout(boot, 300)
+  }
+  if (document.readyState === "complete") schedule()
+  else window.addEventListener("load", schedule, { once: true })
 })
 
 onBeforeUnmount(() => {
   const el = canvas.value
+  if (idleHandle && "cancelIdleCallback" in window) window.cancelIdleCallback(idleHandle)
+  else clearTimeout(idleHandle)
   stop()
   clearTimeout(readyTimer)
   resizeObserver?.disconnect()

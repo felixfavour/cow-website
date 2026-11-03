@@ -24,7 +24,7 @@ Every pastor who manages their own slides has lived through this moment. Tech br
 
 How you handle those thirty seconds of dead air matters far more than the slide that failed to appear.
 
-### Where Our Panic Comes From
+## Where Our Panic Comes From :span{.as-h3}
 
 When tech fails mid-service, our quick reaction is rarely about the missing graphic. It is about control.
 
@@ -46,7 +46,7 @@ If you groan, glare at your laptop, fiddle frantically with cables for five unco
 
 On the other hand, if you smile, breathe, and pivot straight into the Word without apology, the entire room relaxes. You show them that the power of Sunday morning never lived inside an HDMI port.
 
-### The Ten-Second Rule
+## The Ten-Second Rule :span{.as-h3}
 
 When the screen goes black or locks up while you are speaking, follow what I call the Ten-Second Rule.
 
@@ -58,23 +58,23 @@ Look up, look at your people, and speak the truth plainly: "Looks like our scree
 
 By speaking immediately, you break the tension. You take away the awkwardness. You give your church a clear direction to open their Bibles or their phones, and you move forward with the sermon. The congregation did not gather to worship your slide deck. They gathered to worship God and hear His Word.
 
-### Three Practical Actions for Solo Pastors
+## Three Practical Actions for Solo Pastors :span{.as-h3}
 
 To keep tech failures from derailing your Sunday mornings, put these three practical habits in place this week.
 
-#### 1. Always preach from printed notes with full scriptures included
+### 1. Always preach from printed notes with full scriptures included :span{.as-h4}
 
 Never rely on the projector screen as your primary sermon prompter. If your laptop is running both your personal speaker notes and the live display, a software crash can leave you completely stranded.
 
 Print your outline on paper. Print every single scripture verse you intend to read directly onto the page, complete with chapter and verse references. If the projector dies, your phone battery drains, or the room loses power entirely, your preaching rhythm will not skip a beat. You can look down at your binder or physical Bible and keep preaching with full confidence.
 
-#### 2. Choose software built to handle unreliable setups
+### 2. Choose software built to handle unreliable setups :span{.as-h4}
 
 Many presentation tools require a heavy local installation that bogs down an older pastor's laptop, or they require constant high-speed internet to load assets. In an older church building or a rented school hall, Wi-Fi can drop out the moment forty people walk in the door with smartphones in their pockets.
 
 Use tools built for practical church environments. For instance, [Cloud of Worship](https://app.cloudofworship.com/?utm_source=blog&utm_medium=article&utm_campaign=invisible-bridge-worship-tech-spiritual-engagement) runs directly in your web browser or desktop app and keeps working offline once your service schedule is loaded. If your church router disconnects mid-service, your Bible passages, lyrics, and sermon slides stay available on your machine without crashing. Because it lets you control the live output from a smartphone, you can also advance your scripture slides from the pulpit without having to pace back and forth to your laptop desk.
 
-#### 3. Run a five-minute hardware audit before you leave on Sunday
+### 3. Run a five-minute hardware audit before you leave on Sunday :span{.as-h4}
 
 Do not try to fix broken hardware during fellowship time over coffee. When service ends, enjoy your people. 
 
@@ -83,7 +83,7 @@ Once the room clears, take five focused minutes to run through the failure point
 - Did an operating system update begin running in the background? Turn off automatic background updates during weekend hours.
 - Is your HDMI adapter loose? Inexpensive dongles wear out quickly when plugged and unplugged every week. Keep a tested spare adapter in your bag.
 
-### Grace in the Pulpit
+## Grace in the Pulpit :span{.as-h3}
 
 A tech hiccup on Sunday is not a failure of your calling. It is an opportunity to show your congregation that Christ is honored when we lead with patience, humility, and steady joy.
 

@@ -57,8 +57,6 @@
                   v-if="tab.video"
                   :ref="(el) => (videos[i] = el)"
                   :id="`feature-panel-${tab.key}`"
-                  role="tabpanel"
-                  :aria-labelledby="`feature-dot-${tab.key}`"
                   :aria-hidden="active !== i"
                   :aria-label="tab.alt"
                   :src="tab.video"
@@ -74,8 +72,6 @@
                 <img
                   v-else
                   :id="`feature-panel-${tab.key}`"
-                  role="tabpanel"
-                  :aria-labelledby="`feature-dot-${tab.key}`"
                   :aria-hidden="active !== i"
                   :src="tab.image"
                   :alt="tab.alt"
@@ -103,7 +99,7 @@
            it), and a button to pause or resume its video. -->
       <div class="mt-6 md:mt-[34px] flex items-center justify-center gap-[10px]">
         <div
-          class="flex h-[42px] items-center gap-[8px] rounded-full bg-[#EFEFF1] px-[18px]"
+          class="flex h-[42px] items-center rounded-full bg-[#EFEFF1] px-[11px]"
           role="tablist"
           aria-label="Key features"
         >
@@ -113,8 +109,8 @@
             :id="`feature-dot-${tab.key}`"
             type="button"
             role="tab"
-            class="dot relative h-[10px] overflow-hidden rounded-full bg-[#D6D6DA]"
-            :class="active === i ? 'w-[50px]' : 'w-[10px]'"
+            class="dot-hit grid h-6 place-items-center"
+            :class="active === i ? 'w-[58px]' : 'w-6'"
             :aria-label="tab.label"
             :aria-selected="active === i"
             :aria-controls="`feature-panel-${tab.key}`"
@@ -123,11 +119,17 @@
             @keydown.right.prevent="focusDot(i + 1)"
             @keydown.left.prevent="focusDot(i - 1)"
           >
+            <!-- The 24px button is the tap target; the dot inside is what shows. -->
             <span
-              v-if="active === i"
-              class="absolute inset-y-0 left-0 rounded-full bg-[#A9AEB8]"
-              :style="{ width: `${Math.max(20, stepProgress * 100)}%` }"
-            ></span>
+              class="dot relative block h-[10px] overflow-hidden rounded-full bg-[#D6D6DA]"
+              :class="active === i ? 'w-[50px]' : 'w-[10px]'"
+            >
+              <span
+                v-if="active === i"
+                class="absolute inset-y-0 left-0 rounded-full bg-[#A9AEB8]"
+                :style="{ width: `${Math.max(20, stepProgress * 100)}%` }"
+              ></span>
+            </span>
           </button>
         </div>
 
@@ -372,12 +374,16 @@ onBeforeUnmount(() => {
   background: #ffffff;
 }
 
-.dot:focus-visible,
+.dot-hit:focus-visible {
+  outline: none;
+}
+.dot-hit:focus-visible .dot,
 .play:focus-visible {
   outline: 2px solid #8a41c9;
   outline-offset: 2px;
 }
-.dot {
+.dot,
+.dot-hit {
   transition: width 0.45s cubic-bezier(0.3, 0.7, 0.2, 1);
 }
 .dot span {

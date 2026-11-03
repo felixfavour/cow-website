@@ -19,15 +19,15 @@ You’ve discovered CoW. You’ve signed up. But how do you get your church, fel
 
 Let’s talk about this in detail:
 
-### 1. Share the Onboarding Video or Host a Live Demo
+## 1. Share the Onboarding Video or Host a Live Demo :span{.as-h3}
 
 You don’t have to explain everything yourself. Use the official onboarding video or invite your team to a brief Zoom or Google Meet walkthrough. Showing the app in action can build instant buy-in.
 
-### 2. Run a Trial Service with Your Media Lead or Pastor
+## 2. Run a Trial Service with Your Media Lead or Pastor :span{.as-h3}
 
 Select a low-pressure service (like a prayer night or youth meeting) to try CoW in real time. Keep it simple. Prepare slides together and test the full flow from Laptop to display.
 
-### 3. Assign a 'CoW Champion' in Your Church
+## 3. Assign a 'CoW Champion' in Your Church :span{.as-h3}
 
 Adoption is smoother when someone leads the process. Appoint a tech-savvy or committed person to oversee setup, help others onboard, and answer questions.
 

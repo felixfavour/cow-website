@@ -13,7 +13,7 @@
         <ContentRenderer :value="doc!" />
       </div>
 
-      <p class="text-sm text-gray-400 mb-4">
+      <p class="text-sm text-gray-500 mb-4">
         {{ category.articles.length }} {{ category.articles.length === 1 ? 'article' : 'articles' }}
       </p>
 

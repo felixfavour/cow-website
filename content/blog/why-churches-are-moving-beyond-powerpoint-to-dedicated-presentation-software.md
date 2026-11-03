@@ -27,7 +27,7 @@ This raises an important question:
 
 **Is PowerPoint still the best tool for church services, or is it time to switch to dedicated church presentation software?**
 
-### **Why PowerPoint Falls Short in Worship Settings**
+## **Why PowerPoint Falls Short in Worship Settings** :span{.as-h3}
 
 PowerPoint was built for corporate presentations, not live church services.
 
@@ -40,7 +40,7 @@ While it works, it introduces several challenges for media teams:
 
 In a live service environment, these limitations can lead to delays, errors, and unnecessary stress.
 
-### **What Church Presentation Software Does Better**
+## **What Church Presentation Software Does Better** :span{.as-h3}
 
 Church presentation software is designed specifically for worship flow.
 
@@ -55,7 +55,7 @@ With a dedicated platform, media teams can:
 
 This reduces technical distractions and keeps the focus on worship.
 
-### **The Real Difference: Service Flow**
+## **The Real Difference: Service Flow** :span{.as-h3}
 
 The biggest difference isn’t features, it’s **flow**.
 
@@ -69,7 +69,7 @@ With the right software:
 
 This directly impacts how the congregation experiences worship.
 
-### **Why Churches Are Moving to Cloud-Based Solutions**
+## **Why Churches Are Moving to Cloud-Based Solutions** :span{.as-h3}
 
 Modern church presentation tools are moving to the cloud and for good reason.
 
@@ -82,7 +82,7 @@ Cloud-based platforms eliminate many traditional challenges:
 
 This makes church media more flexible and reliable.
 
-### **How Cloud of Worship Supports Modern Churches**
+## **How Cloud of Worship Supports Modern Churches** :span{.as-h3}
 
 [Cloud of Worship](https://app.cloudofworship.com/signup?utm_source=marketing_website_blog) is built to simplify worship presentations without adding complexity.
 
@@ -95,7 +95,7 @@ It allows churches to:
 
 It’s designed for real church environments—where speed, clarity, and reliability matter.
 
-### **Final Thought**
+## **Final Thought** :span{.as-h3}
 
 PowerPoint can get the job done but it wasn’t designed for worship.
 

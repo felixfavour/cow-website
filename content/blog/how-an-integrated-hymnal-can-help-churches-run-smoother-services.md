@@ -13,7 +13,7 @@ updated: December 26, 2025 1:00 PM
 
 After watching ministry workflows, I can tell you that nothing disrupts the **Flow State of Worship** like a scramble for a forgotten hymnal or a manually-typed verse. The unique beauty of the church service is its seamless blending of historic hymns and contemporary worship. We built Cloud of Worship (CoW) to finally unite them.
 
-### **The Problem of the Split Library**
+## **The Problem of the Split Library** :span{.as-h3}
 
 The majority of church presentation software forces a "split library" workflow: one database for modern CCLI-licensed songs and a separate, manually-managed folder for traditional hymns. This inefficiency means media teams must juggle two systems, leading to:
 
@@ -21,11 +21,11 @@ The majority of church presentation software forces a "split library" workflow: 
 - **Licensing Risks:** Confusion over what is licensed and what is public domain.
 - **Volunteer Stress:** Increased complexity for new or rotating volunteers.
 
-### **CoW’s Unified Vision: All Your Hymns in One Place**
+## **CoW’s Unified Vision: All Your Hymns in One Place** :span{.as-h3}
 
 Cloud of Worship is the presentation software I bet you haven’t seen, because it solves this specific, pervasive problem. CoW integrates your entire worship library, both modern and traditional, into **a single, searchable database.**
 
-### **The Power of the Unified Hymnal on CoW**
+## **The Power of the Unified Hymnal on CoW** :span{.as-h3}
 
 **1. Zero-Friction Access to Classics:** Your hymnal is pre-loaded and integrated. Simply type the hymn name, and every verse, along with associated musical cues, is ready to be added to your service timeline with a single click.
 
@@ -37,6 +37,6 @@ Cloud of Worship is the presentation software I bet you haven’t seen, because 
 
 **Growth Insight:** A unified, effortless library increases volunteer recruitment and retention. By simplifying the tools, you lower the barrier to entry for serving, making the media team a source of **joyful contribution** rather than stress.
 
-### **Conclusion: Unlocking True Worship Flow**
+## **Conclusion: Unlocking True Worship Flow** :span{.as-h3}
 
 The single-library approach is not just a technical feature; it is an **act of organizational stewardship**. It allows the worship team to focus entirely on leading the congregation, knowing that every song, from the 18th-century hymnal to the latest release, is instantly accessible, perfectly formatted, and fully integrated. This is the future of worship presentation.

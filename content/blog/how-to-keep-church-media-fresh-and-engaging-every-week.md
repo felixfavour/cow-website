@@ -18,7 +18,7 @@ When creativity fades, engagement drops, but keeping the media fresh doesn’t h
 
 Below are some Nuggets
 
-### **1. Refresh Your Song and Scripture Templates Regularly**
+## **1. Refresh Your Song and Scripture Templates Regularly** :span{.as-h3}
 
 Using the same template for too long can make services feel routine. Refresh your templates with subtle design updates \[color palettes, backgrounds, or layout adjustments] while keeping them clean and readable.
 
@@ -30,7 +30,7 @@ Using the same template for too long can make services feel routine. Refresh you
 
 Fresh visuals signal attention to detail and remind the congregation that media is part of worship, not just decoration.
 
-### **2. Keep an Updated Song Library**
+## **2. Keep an Updated Song Library** :span{.as-h3}
 
 Outdated song lists make the media feel disconnected from what people are currently singing or streaming. Regularly adding new songs to your database helps the team stay current and relatable.
 
@@ -42,7 +42,7 @@ Outdated song lists make the media feel disconnected from what people are curren
 
 When songs reflect what people are singing in their daily lives, participation skyrockets.
 
-### **3. Align Media with Sermon Themes**
+## **3. Align Media with Sermon Themes** :span{.as-h3}
 
 One of the simplest ways to stay fresh is to visually reinforce what is being preached. Colors, backgrounds, and slide designs that match sermon topics make the entire experience feel intentional.
 
@@ -54,7 +54,7 @@ One of the simplest ways to stay fresh is to visually reinforce what is being pr
 
 The more the media connects to the message, the more people remember it.
 
-### **4. Tell Stories Visually**
+## **4. Tell Stories Visually** :span{.as-h3}
 
 Don’t just project text, project meaning.
 
@@ -68,7 +68,7 @@ Simple photo slides, short clips, or impactful quotes can help communicate value
 
 Visual storytelling keeps your media ministry dynamic and human.
 
-### **5. Review and Reflect After Each Service**
+## **5. Review and Reflect After Each Service** :span{.as-h3}
 
 The best way to grow is to look back.
 
@@ -82,7 +82,7 @@ Gather quick feedback after services to identify what worked and what didn’t. 
 
 Excellence isn’t built in a day; it’s built in decisions.
 
-### **💡 Final Insight: Consistency is the Real Creativity**
+## **💡 Final Insight: Consistency is the Real Creativity** :span{.as-h3}
 
 Innovation doesn’t mean constant change, it means consistent growth.
 

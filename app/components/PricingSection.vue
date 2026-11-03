@@ -128,9 +128,9 @@
               </div>
 
               <div :class="['mb-6', plan.highlighted ? 'mt-6' : '']">
-                <h3 class="text-2xl font-bold text-purple-900 mb-2">
+                <h2 class="text-2xl font-bold text-purple-900 mb-2">
                   {{ plan.name }}
-                </h3>
+                </h2>
                 <p class="text-gray-600">
                   {{ plan.description }}
                 </p>
@@ -260,9 +260,9 @@
           d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         ></path>
       </svg>
-      <h3 class="text-xl font-bold text-gray-900 mb-2">
+      <h2 class="text-xl font-bold text-gray-900 mb-2">
         Unable to load pricing
-      </h3>
+      </h2>
       <p class="text-red-600 mb-4">{{ error.message || error }}</p>
       <p class="text-gray-600 mb-6">
         Please check your connection and try again.

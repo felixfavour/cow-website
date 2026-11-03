@@ -20,7 +20,7 @@ Across Nigeria, many congregations include Yoruba-speaking members. Yet during s
 
 And that difference matters.
 
-### Why Yoruba in Service Matters
+## Why Yoruba in Service Matters :span{.as-h3}
 
 For many believers:
 
@@ -30,7 +30,7 @@ For many believers:
 
 When Scripture is displayed in Yoruba, service becomes participation and not observation.
 
-### The Practical Challenge
+## The Practical Challenge :span{.as-h3}
 
 Churches want to include Yoruba Bible translations, but often face challenges:
 
@@ -41,7 +41,7 @@ Churches want to include Yoruba Bible translations, but often face challenges:
 
 This creates friction during service.
 
-### A Simpler Way Forward
+## A Simpler Way Forward :span{.as-h3}
 
 With the right worship software, churches can:
 
@@ -52,7 +52,7 @@ With the right worship software, churches can:
 
 This is what modern worship tools should enable.
 
-### Built for Churches Like Yours
+## Built for Churches Like Yours :span{.as-h3}
 
 Cloud of Worship supports multilingual congregations by making Bible translation projection simple and seamless.
 

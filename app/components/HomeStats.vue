@@ -2,7 +2,8 @@
   <div ref="root" class="home-stats">
     <p class="stat-label text-[20px] leading-6 text-[#8A41C9]" :class="{ shown: started }">The result</p>
     <div v-for="(stat, i) in stats" :key="stat.label" class="stat" :class="{ shown: shown[i] }">
-      <p class="stat-number font-bold text-[#1A1F2E]" :aria-label="`${stat.value}${stat.suffix}`">
+      <p class="stat-number font-bold text-[#1A1F2E]">
+        <span class="sr-only">{{ stat.value }}{{ stat.suffix }}</span>
         <span aria-hidden="true">{{ display[i] }}{{ stat.suffix }}</span>
       </p>
       <p class="stat-caption text-[20px] leading-6 text-[#1A1F2E]">{{ stat.label }}</p>

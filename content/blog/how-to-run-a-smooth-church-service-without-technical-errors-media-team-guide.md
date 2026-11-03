@@ -32,7 +32,7 @@ The good news?
 
 **Most technical issues in church services are preventable.**
 
-### **Why Technical Errors Happen**
+## **Why Technical Errors Happen** :span{.as-h3}
 
 Technical problems during service usually start before Sunday.
 
@@ -45,7 +45,7 @@ Common causes include:
 
 When these issues combine, they create pressure during live service.
 
-### **What a Smooth Service Looks Like**
+## **What a Smooth Service Looks Like** :span{.as-h3}
 
 A well-managed church service has a clear structure.
 
@@ -60,7 +60,7 @@ Key elements include:
 
 When everything is in place, the service runs naturally.
 
-### **Simple Practices That Make a Big Difference**
+## **Simple Practices That Make a Big Difference** :span{.as-h3}
 
 You don’t need complex systems, just consistent habits.
 
@@ -80,7 +80,7 @@ Test slides, scriptures, and transitions before service starts.
 
 Ensure the media team and worship leaders are aligned.
 
-### **The Role of the Right Tools**
+## **The Role of the Right Tools** :span{.as-h3}
 
 Even with good preparation, tools matter.
 
@@ -94,7 +94,7 @@ Dedicated platforms simplify everything:
 
 This reduces pressure on volunteers and improves consistency.
 
-### **How Cloud of Worship Helps Reduce Errors**
+## **How Cloud of Worship Helps Reduce Errors** :span{.as-h3}
 
 [Cloud of Worship](https://app.cloudofworship.com/signup?utm_source=marketing_website_blog) is built to support smooth and stress-free services.
 
@@ -107,7 +107,7 @@ It helps churches:
 
 Because it is cloud-based, teams can prepare ahead and access everything easily on service day.
 
-### **The Real Impact**
+## **The Real Impact** :span{.as-h3}
 
 When technical distractions are removed:
 
@@ -118,7 +118,7 @@ When technical distractions are removed:
 
 The difference is not just technical, it’s spiritual and experiential.
 
-### **Final Thought**
+## **Final Thought** :span{.as-h3}
 
 A smooth service is not about perfection, it’s about preparation and simplicity.
 

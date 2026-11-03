@@ -6,7 +6,6 @@
 # file to apply: when on, Cloudflare appends Disallow rules for AI bots below.
 
 User-agent: *
-Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Scrapers that ignore crawl rates and send no referral traffic.

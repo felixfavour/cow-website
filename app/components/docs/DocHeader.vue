@@ -1,7 +1,7 @@
 <template>
   <header class="doc-header mb-8">
     <nav v-if="breadcrumbs && breadcrumbs.length" class="flex items-center gap-1.5 flex-wrap mb-5" aria-label="Breadcrumb">
-      <a href="/docs" class="text-sm text-gray-400 hover:text-purple-600 transition-colors">Help Center</a>
+      <a href="/docs" class="text-sm text-gray-500 hover:text-purple-600 transition-colors">Help Center</a>
       <template v-for="(crumb, i) in breadcrumbs" :key="crumb.href || crumb.label">
         <svg class="w-3.5 h-3.5 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -9,7 +9,7 @@
         <a
           v-if="i < breadcrumbs.length - 1 && crumb.href"
           :href="crumb.href"
-          class="text-sm text-gray-400 hover:text-purple-600 transition-colors"
+          class="text-sm text-gray-500 hover:text-purple-600 transition-colors"
         >
           {{ crumb.label }}
         </a>
@@ -35,7 +35,7 @@
           >
             {{ category }}
           </a>
-          <span v-if="lastUpdated" class="text-xs text-gray-400">Updated {{ formattedDate }}</span>
+          <span v-if="lastUpdated" class="text-xs text-gray-500">Updated {{ formattedDate }}</span>
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ If you’d love to help your church embrace this kind of simplicity, here are th
 2. Show, Don't just tell
 3. Remove the pressure
 
-### **Step 1: Start With the Real Problem**
+## **Step 1: Start With the Real Problem** :span{.as-h3}
 
 Don’t begin by listing features. Instead, talk about what the church already struggles with:
 
@@ -35,11 +35,11 @@ Don’t begin by listing features. Instead, talk about what the church already s
 
 Once you point out these everyday challenges, show how CoW solves them with ease, it is free, reliable, and made for churches of every size.
 
-### **Step 2: Show, Don’t Just Tell**
+## **Step 2: Show, Don’t Just Tell** :span{.as-h3}
 
 Pastors are very busy. A long explanation might not stick. But a **3-minute live demo** from your laptop can do the magic. Simply display a scripture and a song lyric using CoW, your pastor will see immediately how effortless it is.
 
-### **Step 3: Remove the Pressure**
+## **Step 3: Remove the Pressure** :span{.as-h3}
 
 Offer to manage CoW for your pastor during services, or let them know the CoW team is ready to onboard them quickly. When pastors see they won’t be left alone to figure it out, they will feel confident about giving it a try.
 

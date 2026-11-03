@@ -26,7 +26,7 @@
         class="relative mx-auto max-w-[1600px] px-5 pt-16 md:px-10 lg:px-16 lg:pt-[73px]"
       >
         <p
-          class="text-[11px] font-medium uppercase leading-[14px] tracking-[0.08em] text-[#8A41C9]"
+          class="text-[11px] font-medium uppercase leading-[14px] tracking-[0.08em] text-[#B98AE6]"
         >
           Pricing
         </p>
@@ -99,8 +99,8 @@
                   :key="price.whole + price.cents"
                   class="price font-bold text-[#1A1F2E]"
                   :style="{ fontSize: price.size }"
-                  :aria-label="`${price.whole}${price.cents ? '.' + price.cents : ''}`"
                 >
+                  <span class="sr-only">{{ price.whole }}{{ price.cents ? "." + price.cents : "" }}</span>
                   <span aria-hidden="true">{{ price.whole }}</span
                   ><span
                     v-if="price.cents"
