@@ -50,7 +50,21 @@
         <div class="icons" style="grid-area: icon">
           <BlogSocialMediaIcons class="inner" />
         </div>
-        <ContentRenderer v-if="data" :value="data" style="grid-area: content" />
+        <div style="grid-area: content">
+          <a
+            v-if="docsArticle"
+            :href="data.docs"
+            class="docs-callout not-prose group flex items-start gap-3 p-4 md:p-5 mb-8 rounded-2xl border border-purple-100 bg-purple-50/60 hover:border-purple-300 transition-colors"
+          >
+            <span class="text-xl leading-none mt-0.5" aria-hidden="true">📘</span>
+            <span class="min-w-0">
+              <span class="block text-xs font-semibold uppercase tracking-wide text-purple-600 mb-1">Step-by-step guide in the Help Center</span>
+              <span class="block font-bold text-gray-900 group-hover:text-purple-700 transition-colors">{{ docsArticle.title }}</span>
+              <span v-if="docsArticle.description" class="block text-sm text-gray-600 mt-1">{{ docsArticle.description }}</span>
+            </span>
+          </a>
+          <ContentRenderer v-if="data" :value="data" />
+        </div>
       </article>
     </section>
     <!-- <AboveFooterSection /> -->
@@ -79,6 +93,17 @@ const { data } = await useAsyncData(`blog-${params.id}`, async () => {
   return result
 })
 const content = data.value
+
+// Posts that overlap a Help Center article link to it, so the guide (which is
+// kept current) is the page readers and search engines treat as the reference.
+const { data: docsArticle } = await useAsyncData(`blog-docs-${params.id}`, () =>
+  content?.docs
+    ? queryCollection("documentation")
+        .path(content.docs.replace(/^\/docs/, "/documentation"))
+        .select("title", "description")
+        .first()
+    : Promise.resolve(null)
+)
 const showTestimonialPopup = ref(false)
 
 const getDate = (time) => {

@@ -1,5 +1,6 @@
 ---
 title: "How to use Cloud of Worship with vMix - Livestream"
+docs: "/docs/going-live/livestream-output-obs-vmix"
 author: Favour Felix
 cover: /images/blog/blog-vmix.webp
 created: November 17, 2024 11:00 PM

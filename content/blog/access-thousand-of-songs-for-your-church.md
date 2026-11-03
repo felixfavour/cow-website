@@ -1,5 +1,6 @@
 ---
 title: How to Access thousands of songs for your church compiled by others
+docs: "/docs/building-your-service/adding-songs-and-hymns"
 author: Favour Felix
 cover: /images/blog/blog-song-library.webp
 created: September 25, 2024 12:00 PM

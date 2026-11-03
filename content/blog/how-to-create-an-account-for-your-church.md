@@ -1,5 +1,6 @@
 ---
 title: "How to Create an Account on Cloud of Worship"
+docs: "/docs/getting-started/creating-your-account"
 author: Favour Felix
 cover: /images/blog/blog-create-account.webp
 created: September 25, 2024 12:00 PM

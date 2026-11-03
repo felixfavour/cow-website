@@ -1,5 +1,6 @@
 ---
 title: "How to Use Sermon Transcription and Voice Commands in Cloud of Worship"
+docs: "/docs/teams-and-collaboration/sermon-transcription"
 author: Favour Felix
 author_img: /images/author/favour.jpeg
 cover: /images/blog/preacher-reading-bible-voice-commands.webp

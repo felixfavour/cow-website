@@ -1,5 +1,6 @@
 ---
 title: "How to Run a Stage Display Countdown Without Changing the Live Screen"
+docs: "/docs/going-live/stage-display"
 author: Favour Felix
 author_img: /images/author/favour.jpeg
 cover: /images/blog/stage-display-countdown.jpg

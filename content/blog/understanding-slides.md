@@ -1,5 +1,6 @@
 ---
 title: "Understanding Slides in Cloud of Worship."
+docs: "/docs/building-your-service/slide-types"
 author: Favour Felix
 cover: /images/blog/blog-understanding-slides.webp
 created: September 25, 2024 12:00 PM

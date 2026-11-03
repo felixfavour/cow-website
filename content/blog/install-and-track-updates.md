@@ -1,5 +1,6 @@
 ---
 title: "How to install and track updates on Cloud of Worship"
+docs: "/docs/settings-and-shortcuts/installing-cloud-of-worship"
 author: Favour Felix
 cover: /images/blog/blog-track-updates.webp
 created: September 25, 2024 12:00 PM

@@ -1,5 +1,6 @@
 ---
 title: How to Display Bible Verses on a Projector in Church
+docs: "/docs/building-your-service/adding-scripture"
 description: Displaying Bible verses on a projector has become a standard practice in many churches. It helps the congregation follow along during sermons, improves engagement, and ensures that everyone can clearly see the scripture being referenced.  Whether your church is just getting started with media or looking to improve its setup, this guide explains how to display Bible verses on a projector in a simple and effective way.
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg

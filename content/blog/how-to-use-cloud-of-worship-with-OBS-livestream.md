@@ -1,5 +1,6 @@
 ---
 title: "How to use Cloud of Worship with OBS Studio - Livestream"
+docs: "/docs/going-live/livestream-output-obs-vmix"
 author: Favour Felix
 cover: /images/blog/blog-obs.webp
 created: December 28, 2024 11:00 AM

@@ -1,5 +1,6 @@
 ---
 title: "How to Run a Church Countdown Timer That Ends on Time"
+docs: "/docs/building-your-service/countdown-timers"
 author: Favour Felix
 author_img: /images/author/favour.jpg
 cover: /images/blog/how-to-run-a-church-countdown-timer-that-ends-on-time.jpg

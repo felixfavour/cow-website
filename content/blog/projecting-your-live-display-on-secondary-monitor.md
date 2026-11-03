@@ -1,5 +1,6 @@
 ---
 title: "How to project your LIVE slides to another display"
+docs: "/docs/going-live/multi-screen-setup"
 author: Favour Felix
 cover: /images/blog/blog-live-display.webp
 created: September 25, 2024 12:00 PM

@@ -1,5 +1,6 @@
 ---
 title: "How to Display Multiple Versions of Scripture: From Yoruba to Twi in One Click"
+docs: "/docs/building-your-service/adding-scripture"
 description: Worship is most powerful when people don’t just hear the Word — but understand it deeply.
 author: Kiitan Jones
 author_img: /images/author/kiitan.jpg

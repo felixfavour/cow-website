@@ -1,5 +1,6 @@
 ---
 title: "What Is NDI? A Simple Guide for Churches"
+docs: "/docs/going-live/ndi-output"
 author: Favour Felix
 cover: /images/blog/ndi-church-media-team.webp
 created: September 18, 2026 10:00 AM

@@ -1,5 +1,6 @@
 ---
 title: "How to Display Bible Verses Faster During Sermons Using Voice Commands"
+docs: "/docs/teams-and-collaboration/sermon-transcription"
 author: Favour Felix
 author_img: /images/author/favour.jpeg
 cover: /images/blog/media-operator-video-editing-computer.webp

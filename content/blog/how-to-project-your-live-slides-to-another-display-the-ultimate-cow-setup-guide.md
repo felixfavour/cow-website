@@ -1,5 +1,6 @@
 ---
 title: "How to Project Your LIVE Slides to Another Display: The Ultimate CoW Setup Guide"
+docs: "/docs/going-live/multi-screen-setup"
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: https://images.unsplash.com/photo-1740645580366-c4f1de0219dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFRyb3VibGVzaG9vdGluZyUyMCUyNiUyMEhlbHAlMjBHdWlkZXN8ZW58MHx8MHx8fDA%3D
