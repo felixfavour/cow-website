@@ -31,5 +31,5 @@ The copied link ends in the schedule's **6-character code**, for example `/lives
 
 ## Step-by-step guides
 
-- [Using Cloud of Worship with OBS](/blog/how-to-use-cloud-of-worship-with-OBS-livestream)
+- [Using Cloud of Worship with OBS](/blog/how-to-use-cloud-of-worship-with-obs-livestream)
 - [Using Cloud of Worship with vMix](/blog/how-to-use-cloud-of-worship-with-vmix-livestream)

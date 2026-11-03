@@ -1,5 +1,19 @@
 <template>
   <div
+    v-if="!data"
+    class="section min-h-[70vh] flex flex-col items-center justify-center text-center px-4 py-20"
+  >
+    <h1 class="text-3xl font-bold text-gray-800 mb-3">We couldn't find that post</h1>
+    <p class="text-gray-500 mb-8 max-w-[420px]">
+      It may have moved or been renamed. Browse the latest posts, or find a step-by-step guide in the Help Center.
+    </p>
+    <div class="flex gap-3">
+      <a href="/blog" class="primary-btn">Go to the blog</a>
+      <a href="/docs" class="border-btn">Help Center</a>
+    </div>
+  </div>
+  <div
+    v-else
     class="content pt-[7.5%] flex flex-col gap-8 items-center justify-center"
   >
     <div class="inner w-[90%] max-w-[800px] mx-auto">
@@ -40,7 +54,9 @@
       </div>
     </div>
     <img
+      v-if="data?.cover"
       :src="data?.cover"
+      :alt="data?.title"
       fetchpriority="high"
       decoding="async"
       class="w-[95%] max-h-[600px] object-cover max-w-[1200px] rounded-3xl group-hover:scale-110 transition-all"
@@ -112,24 +128,111 @@ const getDate = (time) => {
   return split.splice(0, 3).join(" ")
 }
 
-useSeoMeta({
-  title: content?.title,
-  ogTitle: content?.title,
-  description: content?.excerpt,
-  ogDescription: content?.excerpt,
-  keywords:
-    content?.tag +
-    " cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-  ogSiteName: "Cloud of Worship",
-  ogUrl: "https://cloudofworship.com",
-  ogType: "website",
-  ogLocale: "en_US",
-})
+const SITE_URL = "https://cloudofworship.com"
 
-if (content?.cover) {
-  useSeoMeta({ ogImage: content.cover, twitterCard: "summary_large_image" })
+if (!content) {
+  // A missing post used to render an empty page with a 200, which Google
+  // reports as a soft 404.
+  if (import.meta.server) setResponseStatus(useRequestEvent(), 404)
+  useSeoMeta({ title: "Post not found | Cloud of Worship Blog", robots: "noindex" })
 } else {
-  useOgCard("blog")
+  // The post's real URL. A request in any other letter case (or with a trailing
+  // slash) is sent here with a 301, so each post has exactly one address.
+  const postPath = content.path
+  const postUrl = `${SITE_URL}${postPath}`
+  const route = useRoute()
+  if (route.path !== postPath) {
+    // Keep the query (UTM tags) and hash.
+    await navigateTo({ path: postPath, query: route.query, hash: route.hash }, { redirectCode: 301, replace: true })
+  }
+
+  /** Plain text cut at a word boundary, for meta descriptions. */
+  const clip = (text, max = 158) => {
+    const plain = (text || "").replace(/\s+/g, " ").trim()
+    if (plain.length <= max) return plain
+    const cut = plain.slice(0, max)
+    return `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[\s,;:.\-–—]+$/, "")}…`
+  }
+
+  // `metaDescription` is the hand-written search snippet where one exists.
+  // Otherwise use the post's summary (`paragraph`, or `description`, which
+  // Nuxt Content fills from the first paragraph). The template used to read
+  // only `excerpt`, which Nuxt Content drops, so no post had a description.
+  const description = clip(content.metaDescription || content.paragraph || content.description)
+
+  /** "September 25, 2024 12:00 PM" → ISO 8601, or undefined if unparseable. */
+  const isoDate = (value) => {
+    if (!value) return undefined
+    const date = new Date(value)
+    return Number.isNaN(date.getTime()) ? undefined : date.toISOString()
+  }
+  const published = isoDate(content.created)
+  const modified = isoDate(content.updated) || published
+
+  const absolute = (src) => (src && src.startsWith("/") ? `${SITE_URL}${src}` : src)
+  const coverUrl = absolute(content.cover)
+
+  const pageTitle = content.seoTitle || content.title
+  useSeoMeta({
+    title: pageTitle,
+    ogTitle: pageTitle,
+    twitterTitle: pageTitle,
+    description,
+    ogDescription: description,
+    twitterDescription: description,
+    ogSiteName: "Cloud of Worship",
+    ogUrl: postUrl,
+    ogType: "article",
+    ogLocale: "en_US",
+    articlePublishedTime: published,
+    articleModifiedTime: modified,
+    articleAuthor: content.author ? [content.author] : undefined,
+  })
+
+  if (coverUrl) {
+    useSeoMeta({ ogImage: coverUrl, twitterImage: coverUrl, twitterCard: "summary_large_image" })
+  } else {
+    useOgCard("blog")
+  }
+
+  useHead({
+    script: [
+      {
+        key: "blog-ld",
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BlogPosting",
+              headline: content.title,
+              description,
+              url: postUrl,
+              mainEntityOfPage: postUrl,
+              image: coverUrl || `${SITE_URL}/images/og/blog.jpg`,
+              ...(published ? { datePublished: published } : {}),
+              ...(modified ? { dateModified: modified } : {}),
+              ...(content.author ? { author: { "@type": "Person", name: content.author } } : {}),
+              publisher: {
+                "@type": "Organization",
+                name: "Cloud of Worship",
+                url: SITE_URL,
+                logo: `${SITE_URL}/cow-logo-square.jpg`,
+              },
+              inLanguage: "en",
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Blog", item: `${SITE_URL}/blog` },
+                { "@type": "ListItem", position: 2, name: content.title, item: postUrl },
+              ],
+            },
+          ],
+        }),
+      },
+    ],
+  })
 }
 
 onMounted(() => {

@@ -136,12 +136,16 @@ function xmlEscape(str) {
 function buildSitemap(blogPosts, docsPages) {
   const today = new Date().toISOString().split('T')[0]
 
+  // No lastmod for static pages: we don't track when each was last edited, and
+  // stamping today's date on every build teaches Google to ignore lastmod for
+  // the whole sitemap, including the accurate blog and docs dates.
   const staticEntries = STATIC_PAGES.map(
     ({ path, changefreq }) =>
-      `  <url>\n    <loc>${xmlEscape(BASE_URL + path)}</loc>\n    <changefreq>${changefreq}</changefreq>\n    <lastmod>${today}</lastmod>\n  </url>`,
+      `  <url>\n    <loc>${xmlEscape(BASE_URL + path)}</loc>\n    <changefreq>${changefreq}</changefreq>\n  </url>`,
   ).join('\n')
 
-  const blogIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/blog')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${today}</lastmod>\n  </url>`
+  const blogLastmod = blogPosts.map((post) => post.lastmod).sort().pop() || today
+  const blogIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/blog')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${blogLastmod}</lastmod>\n  </url>`
 
   const docsLastmod = docsPages.map((page) => page.lastmod).sort().pop() || today
   const docsIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/docs')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${docsLastmod}</lastmod>\n  </url>`

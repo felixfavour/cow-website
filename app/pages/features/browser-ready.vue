@@ -62,15 +62,13 @@ const { mergeUtmsIntoUrl } = useUtm()
 const showTestimonialPopup = ref(false)
 useSeoMeta({
   title:
-    "Church presentation software that works on your browser - Cloud of Worship",
+    "Browser-Based Church Presentation Software | Cloud of Worship",
   ogTitle:
-    "Church presentation software that works on your browser - Cloud of Worship",
+    "Browser-Based Church Presentation Software | Cloud of Worship",
   description:
-    "No more cumbersome downloads and installation processes—experience worship presentation to your fingertips, directly through your web browser.",
+    "Run lyrics, scripture and slides from any web browser on Windows, Mac, Linux or a tablet. No install, no licence keys. Free to start with Cloud of Worship.",
   ogDescription:
-    "No more cumbersome downloads and installation processes—experience worship presentation to your fingertips, directly through your web browser.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "Run lyrics, scripture and slides from any web browser on Windows, Mac, Linux or a tablet. No install, no licence keys. Free to start with Cloud of Worship.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/browser-ready",
   ogType: "website",

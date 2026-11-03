@@ -156,8 +156,6 @@ useSeoMeta({
   ogTitle: title,
   description,
   ogDescription: description,
-  keywords:
-    "bible verse projection software, project bible verses on screen, church scripture presentation software, bible presentation software for church, display bible verses church, scripture slides, church projection software, cloud of worship",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/bible-verses",
   ogType: "website",

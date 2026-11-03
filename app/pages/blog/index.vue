@@ -9,6 +9,7 @@
       >
         <img
           :src="topBlog?.cover"
+          :alt="topBlog?.title"
           class="h-auto xl:h-[600px] 2xl:h-[630px] group-hover:scale-110 transition-all object-contain"
         />
         <div
@@ -171,15 +172,13 @@ const pageSuffix = computed(() =>
 )
 
 useSeoMeta({
-  title: () => `Blog, Resources, Guides and More - Cloud of Worship${pageSuffix.value}`,
+  title: () => `Church Media Blog: Guides & Tips | Cloud of Worship${pageSuffix.value}`,
   ogTitle: () =>
-    `Blog, Resources, Guides and More - Cloud of Worship${pageSuffix.value}`,
+    `Church Media Blog: Guides & Tips | Cloud of Worship${pageSuffix.value}`,
   description:
-    "Stay up to date with the latest updates, resources, guides and more from Cloud of Worship. See how you can use our software to enhance your worship experience.",
+    "Practical guides for church media teams: projecting scripture and lyrics, livestreaming with OBS and vMix, running smooth services and leading volunteers.",
   ogDescription:
-    "Stay up to date with the latest updates, resources, guides and more from Cloud of Worship. See how you can use our software to enhance your worship experience.",
-  keywords:
-    "cloud of worship, guide, how to, resources, blog, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "Practical guides for church media teams: projecting scripture and lyrics, livestreaming with OBS and vMix, running smooth services and leading volunteers.",
   ogSiteName: "Cloud of Worship",
   ogUrl: () => canonicalUrl.value,
   ogType: "website",

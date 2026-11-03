@@ -1,5 +1,7 @@
 ---
 title: "How to use Cloud of Worship with OBS Studio - Livestream"
+seoTitle: "How to Add Church Lyrics to OBS Studio"
+metaDescription: "Show worship lyrics and Bible verses on your OBS livestream: add the Cloud of Worship livestream link as a browser source and layer it over your camera."
 docs: "/docs/going-live/livestream-output-obs-vmix"
 author: Favour Felix
 cover: /images/blog/blog-obs.webp

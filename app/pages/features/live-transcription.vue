@@ -183,8 +183,6 @@ useSeoMeta({
   ogTitle: title,
   description,
   ogDescription: description,
-  keywords:
-    "sermon summary software, sermon notes for church, church sermon transcription, live sermon transcription, sermon nuggets, automatic scripture detection, voice commands church presentation, cloud of worship",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/live-transcription",
   ogType: "website",

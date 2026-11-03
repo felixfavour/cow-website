@@ -53,17 +53,15 @@
 <script setup>
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Pricing - Cloud of Worship is free to use",
+  title: "Pricing: Free Church Presentation Software | Cloud of Worship",
 })
 useSeoMeta({
-  title: "Pricing - Cloud of Worship is free to use",
-  ogTitle: "Pricing - Cloud of Worship is free to use",
+  title: "Pricing: Free Church Presentation Software | Cloud of Worship",
+  ogTitle: "Pricing: Free Church Presentation Software | Cloud of Worship",
   description:
-    "We believe every congregation deserves to enjoy a quality time in church with affordable tool that helps them to be more connected to God, regardless of their location; our free browser-based presentation software helps us achieve this goal.",
+    "Cloud of Worship is free for one operator: Bible verses, 3,000+ hymns, lyrics and offline use. Teams adds collaboration from $24.99 a month. Compare plans.",
   ogDescription:
-    "We believe every congregation deserves to enjoy a quality time in church with affordable tool that helps them to be more connected to God, regardless of their location; our free browser-based presentation software helps us achieve this goal.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "Cloud of Worship is free for one operator: Bible verses, 3,000+ hymns, lyrics and offline use. Teams adds collaboration from $24.99 a month. Compare plans.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/pricing",
   ogType: "website",

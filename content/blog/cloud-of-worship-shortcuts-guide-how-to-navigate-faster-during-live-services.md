@@ -16,7 +16,6 @@ updated: April 8, 2026 10:00 AM
 user_title: ""
 ---
 
-#
 
 In a live worship service, timing is everything.
 

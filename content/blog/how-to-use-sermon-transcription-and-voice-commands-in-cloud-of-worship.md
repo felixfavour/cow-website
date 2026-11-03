@@ -7,7 +7,7 @@ cover: /images/blog/preacher-reading-bible-voice-commands.webp
 created: September 1, 2026 9:00 AM
 updated: September 1, 2026 9:00 AM
 paragraph: "Learn how to transcribe sermons live, detect Bible references, navigate verses, and switch Bible translations using voice commands in Cloud of Worship."
-excerpt: "Learn how to transcribe sermons live, detect Bible references, navigate verses, and switch Bible translations using voice commands in Cloud of Worship."
+metaDescription: "Learn how to transcribe sermons live, detect Bible references, navigate verses, and switch Bible translations using voice commands in Cloud of Worship."
 read_time: "7 min read"
 tag: How-to, Guides, Sermon Tools, Voice Commands
 user_title: "How to Use Sermon Transcription and Voice Commands in Cloud of Worship"

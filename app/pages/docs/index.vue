@@ -218,7 +218,7 @@ const quickReference = [
 
 const title = 'Help Center: Church Media Guides | Cloud of Worship'
 const description =
-  'Step-by-step guides for Cloud of Worship: put scripture and lyrics on a projector, set up a second screen, stream to OBS or vMix, work as a team and fix common problems.'
+  'Step-by-step Cloud of Worship guides: put scripture and lyrics on a projector, set up a second screen, stream to OBS or vMix, and fix common problems.'
 
 useSeoMeta({
   title,

@@ -18,7 +18,6 @@ seo:
   title: In many churches, media teams don’t struggle because they lack passion.  They struggle because the tools are not always easy to use.      Too many steps    Too much confusion    Too little guidance  And in a live environment, that combination creates pressure.  But what happens when the system is different?  When the tool doesn’t just work, but actually works with you?
 ---
 
-#
 
 In many churches, media teams don’t struggle because they lack passion.
 

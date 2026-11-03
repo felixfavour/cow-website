@@ -113,7 +113,7 @@ const { mergeUtmsIntoUrl } = useUtm()
 const showTestimonialPopup = ref(false)
 
 const title =
-  "Song Lyrics & Hymn Projection Software for Churches - Cloud of Worship"
+  "Song Lyrics & Hymn Projection Software | Cloud of Worship"
 const description =
   "Project song lyrics and hymns on screen. Over 3,000 hymns offline, 15,000+ shared songs, and jump to any verse or chorus mid song. Free to start."
 
@@ -162,8 +162,6 @@ useSeoMeta({
   ogTitle: title,
   description,
   ogDescription: description,
-  keywords:
-    "church lyrics projection software, song lyrics on screen church, hymn projection software, worship lyrics software, church song presentation software, hymn slides, praise and worship slides, cloud of worship",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/song-lyrics",
   ogType: "website",

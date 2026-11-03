@@ -13,7 +13,6 @@ seo:
   description: The next generation isn’t just the church of tomorrow, they are the heartbeat of the church today, But let’s face it, young people think, interact, and connect differently. They scroll faster, multitask more, and respond to what feels authentic and creative. If the church must continue to reach and disciple this generation effectively, our media must speak their language visually, emotionally, and spiritually.
 ---
 
-#
 
 The days of carrying USB flash drives back and forth between the Pastor’s office and the media booth are over. In 2026, the most effective ministries are "Cloud-First."
 
