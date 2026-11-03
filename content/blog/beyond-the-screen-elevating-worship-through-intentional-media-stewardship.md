@@ -16,7 +16,7 @@ As a church administrator, you manage the money, the software logins, the credit
 
 Yet church budgets are limited, and buying shiny hardware rarely solves deeper organizational problems. Good stewardship demands a clear method for deciding when to spend money, when to bring out a soldering iron, when to leave things alone, and when to send gear to the recycling depot.
 
-### The Reality in the Tech Booth
+## The Reality in the Tech Booth
 
 Imagine a church where an administrator named Sarah manages three credit cards, eleven monthly software subscriptions, and the facility calendar. 
 
@@ -26,7 +26,7 @@ Sarah pulls up the asset register and digs into the problem. She discovers the c
 
 If Sarah had simply approved the $1,400 purchase order, the church would have owned an expensive new camera plugged into the same damaged cable, running through software the team did not need, while throwing away hundreds of dollars a year in zombie fees.
 
-### Counting the Cost Before the Purchase
+## Counting the Cost Before the Purchase
 
 Scripture treats stewardship as an ongoing duty of oversight, not a panicked reaction when things break down.
 
@@ -36,7 +36,7 @@ Later, in the Gospel of Luke, Jesus points out the practical wisdom of construct
 
 Counting the cost is not just checking if you have enough cash for the invoice on day one. It includes the cost of replacement parts, licensing renewals, setup time, volunteer training, and future maintenance. When you look at your setup through this lens, equipment falls naturally into four distinct bins.
 
-### 1. Retire: Clearing Out the Dead Weight
+## 1. Retire: Clearing Out the Dead Weight
 
 Retiring gear is often the hardest decision for a church because of the sunk cost fallacy. Leaders think, "We paid $800 for that projector switcher in 2011; we cannot throw it away." 
 
@@ -50,7 +50,7 @@ Software counts as gear here. If your church pays monthly fees for presentation 
 
 When gear is truly retired, remove it from the building immediately. Do not put it back in the closet "just in case." Donate working basic items, e-waste the broken electronics, and cancel unused user seats.
 
-### 2. Repair: The Overlooked Middle Ground
+## 2. Repair: The Overlooked Middle Ground
 
 Not everything that fails is trash. Many church hardware problems are simple physical wear-and-tear issues that take twenty minutes and five dollars to solve.
 
@@ -61,7 +61,7 @@ Consider repairing when:
 
 Keep a simple maintenance bin in the office: a basic soldering iron, electrical contact cleaner, zip ties, a cable tester, and quality gaffer tape. If your volunteers do not know how to test a cable, spend one Saturday morning teaching them. It will save the church thousands over three years.
 
-### 3. Keep: Celebrating the Workhorses
+## 3. Keep: Celebrating the Workhorses
 
 The tech industry thrives on planned obsolescence. Every autumn, manufacturers release updates designed to make you feel that your 1080p cameras, analog soundboards, and passive speakers are inadequate.
 
@@ -72,7 +72,7 @@ Keep equipment when:
 
 A ten-year-old Shure SM58 dynamic microphone does not sound any worse today than it did the day it was manufactured. A basic 1080p display screen communicates lyrics clearly. If an asset works, leave it alone. Do not upgrade functional equipment simply to match trends you saw in a mega-church production clip.
 
-### 4. Buy: Solving Actual Bottlenecks
+## 4. Buy: Solving Actual Bottlenecks
 
 Buying new media gear is justified only when your current tools actively block ministry or create constant volunteer burnout.
 
@@ -83,7 +83,7 @@ Buy new gear when:
 
 For example, because Cloud of Worship works offline once loaded and lets multiple team members build schedules in a shared workspace on the Teams plan, an administrator can cut obsolete software subscriptions and keep the volunteer team coordinated without purchasing extra hardware seats. That is an acquisition that reduces your net budget.
 
-### 3 Practical Actions for This Week
+## 3 Practical Actions for This Week
 
 1. **Run a subscription and login audit.** Open your church card statements from the last three months. List every digital charge: cloud storage, media libraries, streaming services, and presentation tools. Check the last login date for each service. Cancel any subscription that has been idle for ninety days.
 

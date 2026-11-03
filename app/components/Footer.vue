@@ -8,7 +8,7 @@
     >
       <div class="grid grid-cols-2 gap-x-6 gap-y-12 lg:gap-y-[42px] lg:grid-cols-[222px_222px] pointer-events-auto">
         <div v-for="group in groups" :key="group.title">
-          <h6 class="footer-heading">{{ group.title }}</h6>
+          <h2 class="footer-heading">{{ group.title }}</h2>
           <ul class="mt-[13px] flex flex-col gap-[10px]">
             <li v-for="link in group.links" :key="link.label">
               <button

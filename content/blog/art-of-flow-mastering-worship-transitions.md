@@ -12,7 +12,7 @@ updated: "September 26, 2026 9:32 AM"
 
 The final chord of the worship set fades out, the band steps back, and the congregation stands waiting in complete stillness while the preacher walks up the steps and adjusts the microphone. An unplanned twenty-second gap does not sound long on paper, but in an auditorium it feels like five minutes and drains the room of momentum. Planning the exact handoffs between songs, corporate prayer, offering, and the sermon keeps your congregation focused and helps your volunteer media team stay calm.
 
-### What you need
+## What you need
 
 - A 30-minute weekly planning check-in between the worship leader and the preaching pastor.
 - A shared running order completed by Thursday noon.
@@ -20,7 +20,7 @@ The final chord of the worship set fades out, the band steps back, and the congr
 - Defined stage positions and designated handheld or headset microphones for each speaker.
 - A 10-minute transition rehearsal during Sunday morning soundcheck.
 
-### 1. Assign an owner to every bridge
+## 1. Assign an owner to every bridge
 
 A service bridge is the space between two major sections—for example, the gap between the last worship song and the pastoral prayer. When no one knows who owns that space, everyone waits for someone else to act.
 
@@ -32,7 +32,7 @@ Sit down with your weekly schedule and write the name of one specific person res
 
 Write these names directly on your running sheet. A bridge without an assigned owner will almost always stall.
 
-### 2. Script the platform movements and mic cues
+## 2. Script the platform movements and mic cues
 
 Awkward gaps rarely happen because of bad music or poor preaching. They happen because people are physically out of position. In a church with 200 to 400 people, watching a speaker walk forty feet down a center aisle in silence breaks the natural rhythm of the service.
 
@@ -44,7 +44,7 @@ Map out physical movement rules for your Sunday platform team:
 
 When your sound volunteer on the rota knows that Brother David always enters from stage left on Mic 2 during the final chorus, they can un-mute the channel before David even speaks.
 
-### 3. Build two-second visual cushions in your presentation schedule
+## 3. Build two-second visual cushions in your presentation schedule
 
 Your projection operator faces the hardest task during transitions. If they get lost or do not know what slide comes next, the screen sits frozen on an old song lyric while the pastor talks about church finances.
 
@@ -56,7 +56,7 @@ Set up your Sunday schedule inside your software so that every major section has
 
 Because multiple volunteers can log into a shared workspace in Cloud of Worship, the media lead can lay out these transition cues on Friday, allowing the Sunday morning operator to run the service with simple keyboard shortcuts.
 
-### 4. Agree on the platform audio pad rule
+## 4. Agree on the platform audio pad rule
 
 Complete silence during a transition makes the room feel stiff and emphasizes every creaking floorboard, cough, or microphone pop. Music provides a cushion that holds the room together.
 
@@ -68,7 +68,7 @@ Set up a simple audio protocol with your instrumentalists:
 
 If your church does not have an instrumentalist who can play pads by ear, load three 2-minute ambient audio tracks onto a media player or soundboard channel in the keys of C, G, and D. Train your sound tech to fade them up under spoken moments.
 
-### 5. Rehearse the handoffs during Sunday soundcheck
+## 5. Rehearse the handoffs during Sunday soundcheck
 
 Most volunteer worship teams spend 40 minutes rehearsing song intros and endings, and zero minutes rehearsing the spaces between them. That is why Sunday morning transitions feel clumsy.
 
@@ -82,7 +82,7 @@ Reserve the last ten minutes of your Sunday morning rehearsal strictly for trans
 
 Running these handoffs once or twice on a Sunday morning takes five minutes. It removes all doubt about who walks where, which mic turns on, and what slide appears on the projector.
 
-### Common mistakes
+## Common mistakes
 
 - **Waiting for silence before moving:** Platform participants often wait until the previous person has completely stopped and left the stage. This creates dead space. Teach leaders to begin their forward walk while the previous person is wrapping up their final sentence.
 - **Unannounced running order changes:** When a worship leader drops a song or swaps the sermon and communion order during the service without telling the tech desk, the screen team gets lost. If a change must happen, use your software's stage messaging or alert features to send a quick cue to the booth.

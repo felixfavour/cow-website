@@ -17,15 +17,15 @@ Many small congregations often feel that technology is only for large, well-fund
 
 Here is why small congregations often see the biggest impact:
 
-### **No Heavy Costs**
+## **No Heavy Costs**
 
 You don’t need to worry about costly licenses or complicated equipment. CoW is completely free and works from any laptop, removing financial barriers that often hold smaller churches back.
 
-### **Easy for Volunteers**
+## **Easy for Volunteers**
 
 Most small churches rely on faithful volunteers who may not have technical expertise. CoW’s simple, intuitive interface makes it easy for anyone to run a worship service without stress.
 
-### **Flexible for Any Setting**
+## **Flexible for Any Setting**
 
 Whether your church meets in a hall, a classroom, under a tent, or outdoors, CoW adapts. It’s designed for diverse contexts, so worship runs smoothly in any environment.
 
@@ -33,10 +33,10 @@ A great example is the experience shared by the media team at **RCF Unilag**, a 
 
 You can explore a similar story in our testimonial blog here: [Why Daniel Chooses Cloud of Worship Over Paid Church Presentation Software](https://cloudofworship.com/blog/why-daniel-chooses-cloud-of-worship-over-paid-church-presentation-software).
 
-### **Grows With Your Church**
+## **Grows With Your Church**
 
 As your ministry expands, CoW expands with you. No costly upgrades or new subscriptions are needed, the platform scales alongside your church.
 
-### Cloud of Worship was built with your church in mind.
+## Cloud of Worship was built with your church in mind.
 
 Small churches don’t have to “wait until they are big” to embrace technology. With Cloud of Worship, they can start today leading worship confidently, serving members with excellence, and keeping the focus on what truly matters, which is God’s presence.

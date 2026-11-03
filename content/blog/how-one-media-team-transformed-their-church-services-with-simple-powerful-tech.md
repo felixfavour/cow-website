@@ -19,17 +19,17 @@ When it comes to church media, the right tools can either make service a struggl
 >
 > — *Yinka Adenikinju, Head of Media Ministry*
 
-### **Enhancing Participation with Ease**
+## **Enhancing Participation with Ease**
 
 One of the biggest hurdles many media teams face is keeping the congregation engaged. Between late scripture displays, inconsistent song lyrics, and technical glitches, it’s easy for people to get distracted. Yinka’s testimony highlights how a user-friendly platform made it easy for his team to keep the flow of service intact.
 
 By projecting lyrics and scriptures clearly, and in multiple Bible editions, the media team ensured that everyone could follow along effortlessly, making services not just smoother but more inclusive.
 
-### **Custom Alerts that Keep the Church Connected**
+## **Custom Alerts that Keep the Church Connected**
 
 Beyond presentations, the customizable message alerts became a game-changer. From service announcements to reminders, the media team could communicate with the congregation instantly, without breaking the flow of the program. This added a layer of professionalism and intentionality that members appreciated.
 
-### **Versatility That Adapts to Every Program**
+## **Versatility That Adapts to Every Program**
 
 After four months of consistent use, Yinka and his team discovered the tool’s full versatility:
 
@@ -39,7 +39,7 @@ After four months of consistent use, Yinka and his team discovered the tool’s 
 
 This adaptability meant that the tool wasn’t just for Sunday, it became indispensable for midweek gatherings, special programs, and even training sessions.
 
-### **Building Community Through Shared Access**
+## **Building Community Through Shared Access**
 
 Another highlight for the Salvation Chapel media team was the ability for multiple users to create accounts and share lyrics. Instead of relying on one person to manage everything, the whole team could contribute, learn, and collaborate. This not only lightened the load but also fostered a stronger sense of community within the ministry.
 
@@ -47,7 +47,7 @@ Another highlight for the Salvation Chapel media team was the ability for multip
 >
 > — *Yinka Adenikinju*
 
-### **Final Thoughts**
+## **Final Thoughts**
 
 What Yinka’s story proves is simple: media tools don’t have to be complex or intimidating to make a lasting impact. With the right platform, even a small team can create professional, engaging, and meaningful services that bless the entire congregation.
 

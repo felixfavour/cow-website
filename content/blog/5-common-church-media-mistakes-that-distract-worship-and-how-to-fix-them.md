@@ -35,7 +35,7 @@ This often leads to:
 - Incorrect scriptures
 - Poor formatting
 
-#### Fix:
+### Fix:
 
 Prepare all slides ahead of time and review them before service begins.
 
@@ -43,7 +43,7 @@ Prepare all slides ahead of time and review them before service begins.
 
 When a pastor calls out a Bible verse and the media team struggles to find it quickly, it breaks the flow of the message.
 
-#### Fix:
+### Fix:
 
 Use tools that allow **instant scripture search and insertion**, so verses can be displayed immediately without delays.
 
@@ -51,7 +51,7 @@ Use tools that allow **instant scripture search and insertion**, so verses can b
 
 Slides filled with too much text can make it difficult for the congregation to read and follow along.
 
-#### Fix:
+### Fix:
 
 - Use large fonts
 - Keep text minimal
@@ -61,7 +61,7 @@ Slides filled with too much text can make it difficult for the congregation to r
 
 When media teams are not aligned with worship leaders or pastors, it creates confusion during the service.
 
-#### Fix:
+### Fix:
 
 Use a system that allows **shared access and collaboration**, so everyone is working with the same content.
 
@@ -69,7 +69,7 @@ Use a system that allows **shared access and collaboration**, so everyone is wor
 
 Using different apps for lyrics, scriptures, and media can slow down transitions and increase the risk of errors.
 
-#### Fix:
+### Fix:
 
 Use a single platform that manages everything in one place.
 

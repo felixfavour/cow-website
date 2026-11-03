@@ -15,7 +15,7 @@ The next generation isn’t just the church of tomorrow, they are the heartbeat 
 
 Here are four powerful ways to do just that:
 
-### **1. Speak in Visuals, Not Paragraphs**
+## **1. Speak in Visuals, Not Paragraphs**
 
 Young people are visual learners. They connect more through what they *see* than through what they *hear.* When crafting slides, announcements, or posts, think minimal and meaningful:
 
@@ -27,13 +27,13 @@ A single well-designed slide can communicate more powerfully than ten cluttered 
 
 *Rule of thumb:* If it wouldn’t grab your attention while scrolling, it probably won’t grab theirs either.
 
-### **2. Involve Them in the Process**
+## **2. Involve Them in the Process**
 
 Nothing engages youth more than **ownership.**
 
 Give them space to serve, let them handle social media updates, design visuals, run slides, or create short clips from Sunday services. When they contribute their creativity, they feel seen, valued, and part of something bigger. You don’t just get better media; you raise future leaders who understand both faith and technology. *Tip:* Pair experienced media team members with young volunteers for mentorship. It builds teamwork, responsibility, and growth.
 
-### **3. Create Short, Shareable Content**
+## **3. Create Short, Shareable Content**
 
 Attention spans are short, but creativity can stretch far. Transform your long messages into short, powerful snippets:
 
@@ -45,13 +45,13 @@ These clips travel fast on social media and carry your church’s message beyond
 
 *Remember:* The youth are online meet them there with purpose-driven content.
 
-### **4. Be Real: Show Authenticity**
+## **4. Be Real: Show Authenticity**
 
 Today’s youth can spot pretense instantly. What they crave is **authenticity**\*.\*
 
 Show real people, real stories, and real impact. Let testimonies, service moments, and team interactions reflect genuine community and faith. When your media feels personal and honest, young people don’t just watch, they connect.
 
-### **Final Thought**
+## **Final Thought**
 
 When churches empower young people through media, something beautiful happens creativity meets calling.
 

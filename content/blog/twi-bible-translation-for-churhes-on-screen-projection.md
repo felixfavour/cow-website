@@ -15,7 +15,7 @@ In many Ghanaian churches, Twi-speaking members attend faithfully, yet Scripture
 
 Language affects understanding.
 
-### Why Twi Matters in Church Services
+## Why Twi Matters in Church Services
 
 When Scripture appears in Twi:
 
@@ -25,7 +25,7 @@ When Scripture appears in Twi:
 
 Inclusion isn’t about changing the Gospel, it’s about communicating it clearly.
 
-### The Common Struggles Churches Face
+## The Common Struggles Churches Face
 
 - Switching between English and Twi manually
 - Slow transitions during Bible reading
@@ -34,7 +34,7 @@ Inclusion isn’t about changing the Gospel, it’s about communicating it clear
 
 These small disruptions reduce the flow of worship.
 
-### Supporting Multilingual Worship the Right Way
+## Supporting Multilingual Worship the Right Way
 
 Churches need tools that:
 

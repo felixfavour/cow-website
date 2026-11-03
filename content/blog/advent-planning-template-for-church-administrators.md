@@ -14,7 +14,7 @@ December puts unique pressure on a church office. While pastors draft sermons an
 
 Without a structured system, the four weeks leading to Christmas turn into last-minute runs to the craft store, missing presentation files, and confusion over who is lighting the wreath. This guide provides a practical Advent planning template designed specifically for church administration.
 
-### When to Use This Template
+## When to Use This Template
 
 Pull out this template at least five to six weeks before the first Sunday of Advent (typically late October or the first week of November). 
 
@@ -26,7 +26,7 @@ Starting then gives you enough margin to:
 
 ---
 
-### The Master Advent Planning Template
+## The Master Advent Planning Template
 
 Copy and paste this markdown grid into your team workspace, project board, or internal wiki:
 
@@ -41,13 +41,13 @@ Copy and paste this markdown grid into your team workspace, project board, or in
 
 ---
 
-### Filled-In Example: 4 Sundays of Advent
+## Filled-In Example: 4 Sundays of Advent
 
 Imagine a church where Sunday morning includes an opening countdown, a blended music set, an Advent wreath lighting with a short family reading, and a 30-minute sermon.
 
 Here is how that church might complete the template for the first two Sundays:
 
-#### Advent 1: Hope
+### Advent 1: Hope
 - **Date:** December 1
 - **Theme & Scripture:** Hope. Reading: Isaiah 9:2 ("The people that walked in darkness have seen a great light").
 - **Candle Lighters:** The Miller Family (David, Sarah, and two kids). Confirmed via text on Nov 12. Rehearsal on stage at 8:45 AM.
@@ -59,7 +59,7 @@ Here is how that church might complete the template for the first two Sundays:
   - Lower-third banner ready in case of parking lot overflow.
 - **Admin Tasks:** New purple candles installed on Friday; lighters tested and spare butane placed in the sound booth; extra welcome packets printed.
 
-#### Advent 2: Peace
+### Advent 2: Peace
 - **Date:** December 8
 - **Theme & Scripture:** Peace. Reading: Luke 1:78-79 ("Through the tender mercy of our God; whereby the dayspring from on high hath visited us").
 - **Candle Lighters:** Marcus Chen (Student Ministry Leader). Confirmed via email Nov 15. Mic check at 9:00 AM.
@@ -72,20 +72,20 @@ Here is how that church might complete the template for the first two Sundays:
 
 ---
 
-### Practical Tips for the Church Administrator
+## Practical Tips for the Church Administrator
 
-#### 1. Keep Presentation Software Accessible Across Roles
+### 1. Keep Presentation Software Accessible Across Roles
 Avoid bottlenecks where only one person holds the password to update Sunday morning slides. If your pastor changes the scripture translation on Saturday evening, nobody should have to drive to the church building to update a local file.
 
 Using [Cloud of Worship](https://app.cloudofworship.com/?utm_source=blog&utm_medium=article&utm_campaign=advent-planning-template-for-church-administrators) makes this simple: you can invite multiple operators to a shared workspace on a paid Teams plan. The worship leader adds the songs from the built-in hymnal, the pastor drops in verses using whole-Bible search across translations like KJV, NIV, or NLT, and you review the complete order of service from your desk. Because it runs in your browser and syncs automatically, last-minute edits do not disrupt rehearsals.
 
-#### 2. Standardize Your Visual Layout Early
+### 2. Standardize Your Visual Layout Early
 Decide on your visual theme in November. Choose one readable font and consistent slide backgrounds for all four Sundays. If you plan to run video announcements, keep them inside a slideshow carousel rather than switching between desktop video players and browser tabs during the service.
 
-#### 3. Prepare Stage and Room Communication
+### 3. Prepare Stage and Room Communication
 Advent services frequently run over time because of extra musical specials, drama sketches, and candle readings. Set up a dedicated stage display for the choir and pastor. Showing a clear countdown clock keeps the platform on schedule without distracting the congregation. If the parking area fills up or nursery workers need assistance, you can push a quiet screen banner or parent alert over the live output directly from your laptop or phone.
 
-#### 4. Build in Tech Redundancy
+### 4. Build in Tech Redundancy
 Internet hiccups happen during winter storms. Make sure your presentation tool works offline once loaded so your slides continue advancing smoothly on the projector even if the church router drops connection. Keep printed paper copies of the candle readings in the sound booth just in case.
 
 If you want a simple way to build your Advent slide sets and keep your team coordinated, [try Cloud of Worship free](https://app.cloudofworship.com/?utm_source=blog&utm_medium=article&utm_campaign=advent-planning-template-for-church-administrators).

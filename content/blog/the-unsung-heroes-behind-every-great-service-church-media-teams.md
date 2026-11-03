@@ -16,7 +16,7 @@ Every light that shines, every lyric that appears on the screen, every sound tha
 
 These are the **church media teams**,  the unsung heroes who stand behind cameras, screens, and soundboards, ensuring excellence where few eyes see but everyone feels the impact.
 
-### **The Silent Backbone of Every Service**
+## **The Silent Backbone of Every Service**
 
 It’s easy to notice the preacher, the choir, or the worship leader, but behind them are individuals who serve with the same devotion,  not from the pulpit, but from the background. Their job? To create an atmosphere where people can connect with God without technical interruptions.
 
@@ -24,19 +24,19 @@ The media ministry is more than just technology. It’s ministry through **excel
 
 It’s bridging the message and the moment. It’s ensuring that faith is heard, seen, and felt clearly.
 
-### **The Beauty of Quiet Service**
+## **The Beauty of Quiet Service**
 
 True excellence in media doesn’t draw attention to itself,  it allows the message to shine.
 
 The best media teams are often invisible, not because they do little, but because they do everything right. They are the first to arrive, running last-minute checks. They are the ones troubleshooting cables, syncing lyrics, fixing projectors, and staying up late editing highlight videos that help the church relive its moments. Every transition that feels smooth…every scripture that appears right on time… that is their fingerprint of service.
 
-### **When Service Becomes Worship**
+## **When Service Becomes Worship**
 
 For many media volunteers, this is their form of worship,  using skill, discipline, and creativity to support the message of hope. It’s not just about “running slides.” It’s about creating a visual and auditory space where distractions fade and the Word stands clear. Even when no one claps for them, heaven does.
 
 When a pastor says, “Media, are you with me?”  they already are.
 
-### **A Word to Every Volunteer**
+## **A Word to Every Volunteer**
 
 To everyone who’s ever:
 
@@ -49,7 +49,7 @@ This is your reminder  “**you are doing God’s work”.**
 
 Your excellence speaks louder than any announcement. Your diligence carries the message further than you may ever realize. Keep showing up. Keep learning. Keep serving. Because while the world may not always see you, **heaven always does.**
 
-### **Final Reflection**
+## **Final Reflection**
 
 Technology is powerful, but it’s people who bring it to life. Church media teams are not just support staff,  they are **ministers of order, clarity, and excellence**. So the next time a slide moves seamlessly or a message is projected clearly, take a moment to thank the unseen hands behind it.
 

@@ -9,7 +9,7 @@
         <div class="pointer-events-none absolute -bottom-28 -right-10 w-80 h-80 rounded-full bg-[#FF8980]/20 blur-3xl" aria-hidden="true" />
 
         <div class="relative max-w-[760px] mx-auto">
-          <div class="secondary-font text-md lg:text-lg text-[#FF8980] font-bold mb-3">Help Center</div>
+          <div class="secondary-font text-md lg:text-lg text-[#C94136] font-bold mb-3">Help Center</div>
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.05] mb-4">
             How can we help?
           </h1>
@@ -21,7 +21,7 @@
           <DocSearch variant="hero" hotkeys placeholder="Search for guides, features or error messages…" />
 
           <div class="flex flex-wrap items-center justify-center gap-2 mt-5 text-sm">
-            <span class="text-gray-400">Popular:</span>
+            <span class="text-gray-500">Popular:</span>
             <a
               v-for="link in popularLinks"
               :key="link.href"
@@ -42,7 +42,7 @@
           <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Browse by topic</h2>
           <p class="text-gray-500 mt-1">Everything in the Help Center, grouped by what you're trying to do.</p>
         </div>
-        <span class="hidden sm:block text-sm text-gray-400 shrink-0">{{ articles.length }} articles</span>
+        <span class="hidden sm:block text-sm text-gray-500 shrink-0">{{ articles.length }} articles</span>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
@@ -106,7 +106,7 @@
               </svg>
               <div class="min-w-0">
                 <div class="text-[15px] font-semibold text-gray-800 group-hover:text-purple-700 transition-colors leading-snug">{{ a.title }}</div>
-                <div class="text-xs text-gray-400 mt-0.5">{{ a.category }}</div>
+                <div class="text-xs text-gray-500 mt-0.5">{{ a.category }}</div>
               </div>
             </a>
           </li>
@@ -162,7 +162,7 @@
           </a>
         </div>
       </div>
-      <p class="text-center text-sm text-gray-400 mt-6">
+      <p class="text-center text-sm text-gray-500 mt-6">
         Looking for tips and stories instead?
         <a href="/blog" class="text-purple-600 font-semibold hover:underline">Read the blog</a>
         ·

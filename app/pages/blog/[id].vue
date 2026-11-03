@@ -20,7 +20,7 @@
       <div class="flex items-center tags gap-2 cursor-default mb-4">
         <a
           href="/blog"
-          class="font-semibold px-3 py-1 bg-purple-500 border-2 border-transparent hover:border-black text-white rounded-full mr-1 lg:mr-4 flex items-center gap-1 text-xs md:text-sm"
+          class="font-semibold px-3 py-1 bg-purple-600 border-2 border-transparent hover:border-black text-white rounded-full mr-1 lg:mr-4 flex items-center gap-1 text-xs md:text-sm"
         >
           <ArrowDown class="w-5 h-5 rotate-90" whiteColor />
           Go Home</a
@@ -326,7 +326,7 @@ article img {
 }
 
 article a {
-  color: rgba(139, 92, 246);
+  color: #7c3aed; /* violet-600: 5.7:1 on white (violet-500 was 4.2:1) */
   /* underline comes from the border-bottom in main.css; setting
      text-decoration here too would draw a second line */
   text-decoration: none;

@@ -18,19 +18,19 @@ The days of carrying USB flash drives back and forth between the Pastor’s offi
 
 If your church is still relying on a single computer to house all your lyrics, backgrounds, and service flows, you are one hardware crash away from a Sunday morning disaster. Here is how to transition your media to the cloud safely and efficiently.
 
-### Step 1: Audit Your Current Assets
+## Step 1: Audit Your Current Assets
 
 Before moving to the cloud, know what you have. Collect your most-used song lyrics, your brand-standard backgrounds, and your sermon templates.
 
 - **Tip:** Look for duplicates. The move to the cloud is the perfect time to "clean house" and ensure your lyric library is accurate.
 
-### Step 2: Choose a Centralized Repository
+## Step 2: Choose a Centralized Repository
 
 The biggest mistake churches make is using general storage (like Dropbox or Google Drive) for media presentation. These tools are great for files but terrible for *presentation flow*. You need a platform designed for worship.
 
 - **The Cloud of Worship Advantage:** CoW allows you to prep your service from a laptop at home and have it automatically sync to the media booth PC instantly. No manual uploading required.
 
-### Step 3: Train Your Team on the "Prep-Anywhere" Model
+## Step 3: Train Your Team on the "Prep-Anywhere" Model
 
 The "Cloud" isn't just a storage space; it’s a lifestyle for your volunteers.
 
@@ -38,19 +38,19 @@ The "Cloud" isn't just a storage space; it’s a lifestyle for your volunteers.
 2. **Review:** The Pastor can review the slides on Thursday to ensure scripture versions match the sermon.
 3. **Execution:** The Sunday morning volunteer simply logs in and hits "Play."
 
-### Step 4: Establish a Hardware Redundancy
+## Step 4: Establish a Hardware Redundancy
 
 One of the best parts of being in the cloud is that your hardware no longer "owns" your data.
 
 - **The Backup Plan:** Always have a secondary laptop (even a lower-spec one) with the Cloud of Worship app installed. If the main PC fails, you can log in on the backup and be ready to go in under 60 seconds because your entire library is already synced.
 
-### Step 5: Test Your Connectivity
+## Step 5: Test Your Connectivity
 
 Cloud-based media is powerful, but it relies on a stable connection.
 
 - **Pro Tip:** While Cloud of Worship has offline capabilities, always ensure your media booth has a dedicated, stable connection for the initial sync of the week’s assets.
 
-### Conclusion
+## Conclusion
 
 Moving to the cloud isn't just a technical upgrade; it’s a leadership decision that empowers your volunteers and protects your service from technical friction.
 

@@ -9,7 +9,7 @@
     <section class="home-testimonials overflow-hidden bg-[#0C0F19] pb-16 lg:pb-20">
       <div class="px-5 pt-12 text-center lg:pt-[64px]">
         <p
-          class="text-[11px] font-medium uppercase leading-[14px] tracking-[0.08em] text-[#8A41C9]"
+          class="text-[11px] font-medium uppercase leading-[14px] tracking-[0.08em] text-[#B98AE6]"
         >
           Featured testimonials
         </p>
@@ -69,21 +69,27 @@
       </div>
 
       <!-- Which testimonial is showing; the current one fills while it waits. -->
-      <div class="mt-8 flex justify-center gap-[6px] lg:mt-[43px]">
+      <div class="mt-8 flex justify-center lg:mt-[43px]">
         <button
           v-for="(item, i) in testimonials"
           :key="item.name"
           type="button"
-          class="dot relative h-[10px] overflow-hidden rounded-full bg-[#2C3041]"
-          :class="active === i ? 'w-[50px]' : 'w-[10px]'"
+          class="dot-hit grid h-6 place-items-center"
+          :class="active === i ? 'w-[58px]' : 'w-6'"
           :aria-label="`Show ${item.name}'s testimonial`"
           :aria-current="active === i ? 'true' : undefined"
           @click="goTo(i)"
         >
+          <!-- The 24px button is the tap target; the dot inside is what shows. -->
           <span
-            :ref="(el) => (fills[i] = el)"
-            class="fill absolute inset-0 rounded-full bg-[#4A5066]"
-          ></span>
+            class="dot relative block h-[10px] overflow-hidden rounded-full bg-[#2C3041]"
+            :class="active === i ? 'w-[50px]' : 'w-[10px]'"
+          >
+            <span
+              :ref="(el) => (fills[i] = el)"
+              class="fill absolute inset-0 rounded-full bg-[#4A5066]"
+            ></span>
+          </span>
         </button>
       </div>
     </section>
@@ -645,20 +651,25 @@ onBeforeUnmount(() => {
   }
 }
 
-.dot {
+.dot,
+.dot-hit {
   transition: width 0.45s cubic-bezier(0.3, 0.7, 0.2, 1);
 }
 .fill {
   transform: translateX(-100%);
   will-change: transform;
 }
-.dot:focus-visible {
+.dot-hit:focus-visible {
+  outline: none;
+}
+.dot-hit:focus-visible .dot {
   outline: 2px solid #8a41c9;
   outline-offset: 2px;
 }
 /* With reduced motion the cards don't go round on their own, and move in single steps. */
 @media (prefers-reduced-motion: reduce) {
-  .dot {
+  .dot,
+  .dot-hit {
     transition: none;
   }
 }

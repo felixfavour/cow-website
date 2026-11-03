@@ -38,7 +38,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
         <div class="min-w-0">
-          <div class="text-xs text-gray-400 mb-0.5">Previous</div>
+          <div class="text-xs text-gray-500 mb-0.5">Previous</div>
           <div class="text-sm font-semibold text-gray-700 group-hover:text-purple-700 truncate transition-colors">{{ prev.title }}</div>
         </div>
       </a>
@@ -50,7 +50,7 @@
         class="group flex-1 flex items-center justify-end gap-3 p-4 rounded-2xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50/40 transition-all text-right"
       >
         <div class="min-w-0">
-          <div class="text-xs text-gray-400 mb-0.5">Next up</div>
+          <div class="text-xs text-gray-500 mb-0.5">Next up</div>
           <div class="text-sm font-semibold text-gray-700 group-hover:text-purple-700 truncate transition-colors">{{ next.title }}</div>
         </div>
         <svg class="w-5 h-5 text-gray-300 group-hover:text-purple-500 shrink-0 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">

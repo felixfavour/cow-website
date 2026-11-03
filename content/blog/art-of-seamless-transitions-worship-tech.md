@@ -16,7 +16,7 @@ When you are in your first month running church slides, transitions are the hard
 
 Awkward gaps pull focus away from worship and create distraction. The good news is that these delays almost always come down to a few predictable technical glitches and habits. Here is how to identify what is causing each gap and fix it right away.
 
-### Symptom: Your computer desktop or wallpaper flashes on the screen
+## Symptom: Your computer desktop or wallpaper flashes on the screen
 
 **Likely Causes:** You are switching between different programs—such as closing presentation software to open a video file or a web browser—while the projector display is still active. Alternatively, your computer display settings might be set to "Duplicate" instead of "Extend."
 
@@ -25,7 +25,7 @@ Awkward gaps pull focus away from worship and create distraction. The good news 
 2. Keep all your content in one program whenever possible. Presentation software like Cloud of Worship uses a dedicated live output window that stays fixed to the projector. The audience only sees the slides you push live, while you manage the service order on your own private laptop screen.
 3. Change your computer desktop wallpaper to pure black. If an app ever crashes or minimizes unexpectedly, the audience will see a clean black background instead of your personal desktop icons or family photos.
 
-### Symptom: The screen freezes or goes black for five seconds when launching a video
+## Symptom: The screen freezes or goes black for five seconds when launching a video
 
 **Likely Causes:** The computer is trying to load a massive, uncompressed 4K video file from a slow USB flash drive, or an online video link is buffering on a weak church Wi-Fi connection.
 
@@ -34,7 +34,7 @@ Awkward gaps pull focus away from worship and create distraction. The good news 
 2. Standardize video resolutions to 1080p (1920x1080) in MP4 format with H.264 compression. Church projectors rarely benefit from 4K resolution, and 1080p files load instantly without taxing your graphics card.
 3. If someone sends you an online video link on Sunday morning, test it at least 20 minutes before doors open. Cloud of Worship lets you add direct YouTube and Vimeo videos straight into your schedule, but they still depend on your local internet speed. If your connection is unreliable, ask the team for a downloaded video file instead.
 
-### Symptom: The pastor calls for an unannounced scripture and the screen stays empty
+## Symptom: The pastor calls for an unannounced scripture and the screen stays empty
 
 **Likely Causes:** You are hunting through an open browser window, copying and pasting verses into a blank slide template on the fly, or typing out long passages by hand.
 
@@ -44,7 +44,7 @@ Awkward gaps pull focus away from worship and create distraction. The good news 
 3. Learn your software hotkeys for search. If you can open the Bible tool with a keystroke rather than dragging your mouse, you cut your reaction time in half.
 4. Remember 1 Corinthians 14:40: "Let all things be done decently and in order." If you cannot find the reference within five seconds, leave the screen on a clean background or hold slide. It is better to have no text on screen than to display half-typed words or wrong chapters while the pastor reads.
 
-### Symptom: Old song lyrics linger on screen while the speaker begins talking
+## Symptom: Old song lyrics linger on screen while the speaker begins talking
 
 **Likely Causes:** You are waiting for the musicians to put down their guitars before clearing the slide, or you are unsure who makes the call to switch off the lyrics.
 
@@ -53,7 +53,7 @@ Awkward gaps pull focus away from worship and create distraction. The good news 
 2. Use the dedicated "Clear Text" or "Clear Slide" hotkey on your keyboard rather than clicking an icon with your mouse. Memorize this shortcut during your first week.
 3. Decide on a default landing slide for after the music stops. If your church displays an announcement graphic, a message series slide, or a clean black screen during the transition, stage that slide in your queue so it is ready to fire with one press of the spacebar.
 
-### Symptom: A wandering mouse cursor distracts the congregation
+## Symptom: A wandering mouse cursor distracts the congregation
 
 **Likely Causes:** You are dragging a mouse cursor across the desktop onto the projector screen to double-click a file or click a play button.
 
@@ -62,7 +62,7 @@ Awkward gaps pull focus away from worship and create distraction. The good news 
 2. Run your slide progression with physical keys. The right arrow key, down arrow key, or spacebar should advance slides, while the left arrow key moves back. You should almost never need to move your mouse cursor over to the congregation display.
 3. If your operating system keeps showing the mouse on the extended screen, click back into the main control window on your laptop to pull focus away from the live window.
 
-### Quick-Reference Troubleshooting Guide
+## Quick-Reference Troubleshooting Guide
 
 | Problem on Screen | Most Likely Cause | Immediate Fix |
 | :--- | :--- | :--- |

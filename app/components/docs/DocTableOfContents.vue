@@ -1,6 +1,6 @@
 <template>
   <nav class="doc-toc" aria-label="On this page">
-    <p class="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-3">On this page</p>
+    <p class="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-3">On this page</p>
     <ul class="border-l border-gray-100">
       <li v-for="heading in headings" :key="heading.id">
         <a

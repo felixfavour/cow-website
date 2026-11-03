@@ -50,19 +50,19 @@ This simplifies both preparation and execution.
 
 ## **Key Benefits for Church Media Teams**
 
-#### **[1. Faster Service Transitions](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_1-faster-service-transitions)**
+### **[1. Faster Service Transitions](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_1-faster-service-transitions)**
 
 No need to switch between tools during the service.
 
-#### **[2. Better Team Coordination](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_2-better-team-coordination)**
+### **[2. Better Team Coordination](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_2-better-team-coordination)**
 
 Everyone works from the same system, reducing confusion.
 
-#### **[3. Easier Preparation](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_3-easier-preparation)**
+### **[3. Easier Preparation](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_3-easier-preparation)**
 
 Slides and content can be organized in advance.
 
-#### **[4. Reduced Technical Errors](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_4-reduced-technical-errors)**
+### **[4. Reduced Technical Errors](/blog/why-your-church-media-team-needs-a-centralized-presentation-system#_4-reduced-technical-errors)**
 
 Fewer systems mean fewer points of failure.
 
