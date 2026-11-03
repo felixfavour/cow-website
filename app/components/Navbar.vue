@@ -1,7 +1,7 @@
 <template>
   <div
     class="navbar sticky top-0 inset-x-0 z-20 h-[60px] md:h-[76px] flex items-center transition-colors duration-300"
-    :class="barClass"
+    :class="[barClass, { 'is-dark': isDark }]"
   >
     <div class="w-full max-w-[1600px] mx-auto px-5 md:px-10 lg:px-16 flex items-center">
       <a href="/" class="logo-ctn flex items-center shrink-0 lg:w-[232px]">
@@ -15,16 +15,18 @@
       </a>
       <ul
         :class="[
-          isMenuOpen ? 'visible' : 'invisible lg:visible',
+          { 'is-open': isMenuOpen },
           isDark ? 'bg-[#101010] text-[#B7B7B7]' : 'bg-white text-gray-600',
         ]"
+        :style="{ '--count': rowCount }"
         class="nav-actions fixed inset-0 top-[60px] md:top-[76px] overflow-y-auto px-5 md:px-10 pt-8 pb-10 text-lg flex flex-col gap-5 lg:static lg:overflow-visible lg:bg-transparent lg:p-0 lg:flex-row lg:items-center lg:gap-3 lg:text-[16px]"
       >
-        <li v-for="item in links" :key="item.label" class="nav-item relative">
+        <li v-for="item in rows" :key="item.label" class="nav-item relative">
           <a
             :href="item.href"
-            class="nav-link top-link flex items-center transition-colors"
-            :class="linkClass(isActive(item.href, item.prefix))"
+            class="nav-link top-link menu-row flex items-center transition-colors"
+            :class="[linkClass(isActive(item.href, item.prefix)), { 'is-active': isActive(item.href, item.prefix) }]"
+            :style="{ '--i': item.i }"
           >
             {{ item.label }}
             <!-- Opens out beside the label while its menu shows. -->
@@ -34,13 +36,14 @@
               </svg>
             </span>
           </a>
-          <div v-if="item.children" class="menu pt-3 z-10">
+          <div v-if="item.children" class="menu pt-3 z-10" :style="{ '--i': item.i }">
             <ul class="menu-panel">
               <li v-for="child in item.children" :key="child.href">
                 <a
                   :href="child.href"
-                  class="nav-link menu-link block py-2 text-base transition-colors"
+                  class="nav-link menu-link menu-row block py-2 text-base transition-colors"
                   :class="[linkClass(isActive(child.href)), { 'is-active': isActive(child.href) }]"
+                  :style="{ '--i': child.i }"
                 >
                   {{ child.label }}
                 </a>
@@ -48,7 +51,7 @@
             </ul>
           </div>
         </li>
-        <li class="nav-item lg:hidden pt-2">
+        <li class="nav-item menu-row lg:hidden pt-2" :style="{ '--i': rowCount - 1 }">
           <a :href="signupUrl" class="pill-btn w-full">Get started for free</a>
         </li>
       </ul>
@@ -124,6 +127,16 @@ const links = [
   },
   { label: "Download", href: "/download" },
 ]
+
+// Every row of the mobile menu (main links, their sub links, then the button)
+// gets a running index, which staggers its slide-in.
+let rowIndex = 0
+const rows = links.map((item) => ({
+  ...item,
+  i: rowIndex++,
+  children: item.children?.map((child) => ({ ...child, i: rowIndex++ })),
+}))
+const rowCount = rowIndex + 1
 
 // The home page opens on a dark hero, so the bar starts dark and see-through there.
 // The home page sets this to "light" once its hero has scrolled under the
@@ -208,7 +221,8 @@ watch(
   height: 2.5px;
   border-radius: 2px;
   background: #000;
-  transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+  transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.2s cubic-bezier(0.65, 0, 0.35, 1),
+    top 0.35s cubic-bezier(0.65, 0, 0.35, 1);
 }
 .menu-icon > span:nth-child(1) { top: 0; }
 .menu-icon > span:nth-child(2) { top: 7.75px; }
@@ -220,8 +234,95 @@ watch(
   .menu-icon > span { transition: none; }
 }
 
-.menu-open {
-  visibility: visible;
+/* Small screens: the menu is a full-screen sheet.
+   Main links are large, bold and dark; sub links sit indented under a thin
+   guide line, smaller and lighter, so the two levels read apart at a glance.
+   On open the rows slide up into place one after another; on close they
+   slide back down and the sheet fades, in reverse order and faster. */
+@media (max-width: 1023px) {
+  .nav-actions {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.12s, visibility 0s linear 0.42s;
+  }
+  .nav-actions.is-open {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.25s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s;
+  }
+
+  .menu-row {
+    opacity: 0;
+    transform: translateY(24px);
+    /* Closing: drop down, last row first. */
+    transition:
+      transform 0.32s cubic-bezier(0.55, 0, 0.75, 0.06) calc((var(--count, 16) - var(--i, 0)) * 12ms),
+      opacity 0.24s cubic-bezier(0.4, 0, 1, 1) calc((var(--count, 16) - var(--i, 0)) * 12ms),
+      color 0.2s ease;
+  }
+  .nav-actions.is-open .menu-row {
+    opacity: 1;
+    transform: none;
+    /* Opening: rise up, first row first, easing out to a soft stop. */
+    transition:
+      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) calc(80ms + var(--i, 0) * 32ms),
+      opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1) calc(80ms + var(--i, 0) * 32ms),
+      color 0.2s ease;
+  }
+
+  .top-link {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #111827;
+  }
+  .menu {
+    margin: 4px 0 2px 3px;
+    padding-top: 0;
+    padding-left: 18px;
+    border-left: 1.5px solid #e5e7eb;
+  }
+  /* The guide line draws down with its group instead of waiting, empty,
+     for the rows to arrive. */
+  .nav-actions .menu {
+    border-left-color: transparent;
+    transition: border-color 0.2s cubic-bezier(0.4, 0, 1, 1);
+  }
+  .nav-actions.is-open .menu {
+    border-left-color: #e5e7eb;
+    transition: border-color 0.5s cubic-bezier(0.22, 1, 0.36, 1) calc(140ms + var(--i, 0) * 32ms);
+  }
+  .menu-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7280;
+  }
+  .top-link.is-active,
+  .menu-link.is-active {
+    color: #8a41c9;
+  }
+
+  /* The dark home-page sheet. */
+  .is-dark .top-link {
+    color: #ffffff;
+  }
+  .is-dark .nav-actions.is-open .menu {
+    border-left-color: #2e2e2e;
+  }
+  .is-dark .menu-link {
+    color: #8c8c8c;
+  }
+  .is-dark .top-link.is-active,
+  .is-dark .menu-link.is-active {
+    color: #c084fc;
+  }
+}
+@media (max-width: 1023px) and (prefers-reduced-motion: reduce) {
+  .menu-row,
+  .nav-actions.is-open .menu-row {
+    transform: none;
+    transition: opacity 0.2s linear;
+  }
 }
 
 /* Wide screens: the link under the pointer sits in a pale lilac pill, and its
