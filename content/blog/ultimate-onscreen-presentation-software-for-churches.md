@@ -1,5 +1,7 @@
 ---
 title: The Ultimate On-Screen Presentation Software for Churches
+seoTitle: "On-Screen Presentation Software for Churches"
+metaDescription: "Lyrics, Bible verses, multi-screen output, livestream integration and team collaboration in one free church presentation tool. See what it can do."
 author: Kiitan Jones
 author_img: /images/author/kiitan.jpg
 cover: https://revaise.s3.us-east-2.amazonaws.com/website/song.webp

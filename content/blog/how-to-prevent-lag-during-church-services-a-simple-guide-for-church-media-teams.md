@@ -13,7 +13,6 @@ tag: How-to, Guides
 updated: March 09, 2026 10:00 AM
 ---
 
-#
 
 In the high-pressure environment of a live worship service, the "spinning wheel of death" is a media team’s greatest fear. We have all been there: the Pastor calls for a scripture, you click search, and the screen freezes.
 

@@ -1,5 +1,6 @@
 ---
 title: "Media and Bible downloads, October 2026"
+seoTitle: "Download Outage, October 2026"
 description: "Why some media and Bible translations would not download from 11 October 2026, and how everything was restored by 22 October 2026."
 category: "Post Mortems"
 order: 1
@@ -67,3 +68,9 @@ Nothing. All media and Bible translations are available again.
 We are sorry. Sunday services depend on Cloud of Worship, and this should not have happened.
 
 If something is still not working for your church, write to [hello@cloudofworship.com](mailto:hello@cloudofworship.com).
+
+## Related guides
+
+- [Offline use](/docs/settings-and-shortcuts/offline-use): save Bible versions so they work without a connection.
+- [Media & transcription problems](/docs/troubleshooting/media-and-transcription-problems): fixes for media that will not load.
+- [Adding media](/docs/building-your-service/adding-media): add media ahead of the service.

@@ -1,5 +1,6 @@
 ---
 title: "Multi-Screen Setup"
+seoTitle: "Projector & Second Screen Setup"
 description: "Assign your projector as the Live display and a second monitor as the Stage display from Display Settings."
 category: "Going Live"
 order: 3

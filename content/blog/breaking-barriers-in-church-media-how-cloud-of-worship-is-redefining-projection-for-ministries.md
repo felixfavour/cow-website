@@ -1,5 +1,6 @@
 ---
 title: How to enhance projection for your growing student fellowship
+metaDescription: "How RCF Unilag's livestream team runs projection on Cloud of Worship: web-first access, an interface volunteers learn fast, and professional results."
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: /images/blog/blog-moshood-olawale-cloudofworship.webp

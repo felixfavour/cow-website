@@ -13,7 +13,7 @@ read_time: "Most conversations around church presentation software focus on feat
 tag: How-to, Guides
 updated: May 15, 2026 10:00 AM
 user_title: When Church Media Tools Actually Feel Supportive
-excerpt: "Most conversations around church presentation software focus on features.      Better visuals    Faster transitions    More tools  But one thing churches rarely talk about is this:"
+metaDescription: "Most conversations around church presentation software focus on features.      Better visuals    Faster transitions    More tools  But one thing churches rarely talk about is this:"
 ---
 
 Most conversations around church presentation software focus on features.

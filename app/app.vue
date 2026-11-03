@@ -24,6 +24,10 @@ const canonical = computed(() => `${SITE_URL}${route.path.replace(/(.)\/+$/, "$1
 useHead({
   link: [{ rel: "canonical", href: canonical, key: "canonical" }],
 })
+
+// Default og:url to the same address. Pages that set their own still win; a
+// site-wide hard-coded value sent the homepage URL for every page that didn't.
+useSeoMeta({ ogUrl: canonical })
 </script>
 
 <style>

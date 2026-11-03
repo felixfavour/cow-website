@@ -113,18 +113,41 @@ const onPointerMove = (e) => {
   if (!frame) frame = requestAnimationFrame(tick)
 }
 
-onMounted(() => {
+let nearObserver = null
+
+const loadImage = () => {
+  if (img) return
   img = new Image()
   img.onload = prepare
   img.src = SRC
+}
+
+onMounted(() => {
+  // The reveal follows a mouse, so a touch-only device never sees it: don't
+  // download the image (~130 KB) there at all.
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return
+
   // The canvas sits behind the footer's links, so listen on the footer itself.
   host = canvas.value.parentElement
   host.addEventListener("pointermove", onPointerMove)
   resizeObserver = new ResizeObserver(prepare)
   resizeObserver.observe(canvas.value)
+
+  // Fetch the image as the footer approaches, not with the page's first load.
+  if (!("IntersectionObserver" in window)) return loadImage()
+  nearObserver = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) return
+      nearObserver.disconnect()
+      loadImage()
+    },
+    { rootMargin: "600px 0px" }
+  )
+  nearObserver.observe(canvas.value)
 })
 
 onBeforeUnmount(() => {
+  nearObserver?.disconnect()
   cancelAnimationFrame(frame)
   host?.removeEventListener("pointermove", onPointerMove)
   resizeObserver?.disconnect()

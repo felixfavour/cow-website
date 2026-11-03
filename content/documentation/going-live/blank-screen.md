@@ -1,5 +1,6 @@
 ---
 title: "Blank Screen"
+seoTitle: "Blank the Projector Screen"
 description: "Clear the Live Display between segments, during prayer or while you set up. Formerly called Intermission."
 category: "Going Live"
 order: 5
@@ -21,3 +22,10 @@ By default the screen goes **completely black**. There's no more automatic churc
 ::callout{type="warning" title="Blank is not a toggle"}
 It clears the live slide and does not remember what was there. To resume, click the slide you want. The button is **disabled while nothing is live**.
 ::
+
+## Related guides
+
+- [Promoting slides](/docs/going-live/promoting-slides): put a slide back on screen after blanking.
+- [Interlude slides](/docs/building-your-service/interlude-slides): an animated break screen instead of black.
+- [Settings reference](/docs/settings-and-shortcuts/settings-reference): Blank Settings and the idle background.
+- [Live display problems](/docs/troubleshooting/live-display-problems): a black screen you did not ask for.

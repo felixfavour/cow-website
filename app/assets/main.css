@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Geist:wght@400..700&display=swap");
 
 /* Headings use the condensed cut of Bricolage Grotesque, self-hosted from public/fonts.
-   The regular cut (Google Fonts, above) is kept for the wordmark. */
+   The regular cut (assets/fonts.css) is kept for the wordmark. */
 @font-face {
   font-family: "Bricolage Grotesque Condensed";
   src: url("/fonts/BricolageGrotesque48ptCondensed-ExtraLight.woff2") format("woff2");
@@ -27,15 +26,17 @@
 :root {
   --primary-color: #9333ea;
   --accent-color: #ff8980;
-  --heading-font: "Bricolage Grotesque Condensed", "Bricolage Grotesque", sans-serif;
+  --heading-font: "Bricolage Grotesque Condensed", "Bricolage Grotesque Condensed Fallback",
+    "Bricolage Grotesque Condensed Fallback Android", sans-serif;
+  --body-font: "Geist", "Geist Fallback", "Geist Fallback Android", sans-serif;
 }
 
 * {
-  font-family: "Geist", sans-serif;
+  font-family: var(--body-font);
 }
 
 .wordmark {
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Bricolage Grotesque", "Bricolage Grotesque Fallback", "Bricolage Grotesque Fallback Android", sans-serif;
 }
 
 .secondary-font {
@@ -267,6 +268,40 @@ article h3 a {
   color: #525252;
   text-decoration: none;
 }
+/* h4-h6 had no article styles, so they fell back to ~1rem in the condensed
+   heading font (smaller than the 1.1rem body text) and their anchor links
+   picked up the purple underline from `article a`. */
+article h4,
+article h4 a,
+article h5,
+article h5 a,
+article h6,
+article h6 a {
+  font-family: var(--heading-font);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #262626;
+  border-bottom: none;
+  text-decoration: none;
+}
+article h4,
+article h4 a {
+  font-size: 1.4rem;
+}
+article h5,
+article h5 a {
+  font-size: 1.25rem;
+}
+article h6,
+article h6 a {
+  font-size: 1.15rem;
+}
+article h4,
+article h5,
+article h6 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+}
 article h1,
 article h2,
 article h3 {
@@ -445,5 +480,15 @@ article td {
   article h3,
   article h3 a {
     font-size: 1.2rem;
+  }
+  article h4,
+  article h4 a {
+    font-size: 1.5rem;
+  }
+  article h5,
+  article h5 a,
+  article h6,
+  article h6 a {
+    font-size: 1.365rem;
   }
 }

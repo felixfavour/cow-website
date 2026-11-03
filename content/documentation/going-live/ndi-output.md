@@ -1,5 +1,6 @@
 ---
 title: "NDI Live Output"
+seoTitle: "Send Slides over NDI"
 description: "Publish the live display as an NDI source on your local network, so OBS, vMix, TriCaster or any NDI receiver can pick up your slides without a capture card."
 category: "Going Live"
 order: 8

@@ -10,7 +10,6 @@ tag: How-to, Guides
 updated: December 24, 2025 9:00 AM
 ---
 
-#
 
 As a leader in the digital ministry, you understand that **user experience (UX)** and **security** are not separate goals, they are two sides of the same growth coin. A complicated or lengthy password reset process is a major point of friction that leads to user abandonment and time wasted by your tech team. Our goal at Cloud of Worship (CoW) is to transform this friction into a flawless, secure experience.
 

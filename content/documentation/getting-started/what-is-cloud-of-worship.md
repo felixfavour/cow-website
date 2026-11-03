@@ -1,5 +1,6 @@
 ---
 title: "What is Cloud of Worship?"
+seoTitle: "What Is Cloud of Worship?"
 description: "Presentation software for churches that runs in your browser, with a Control Center for you and a Live Display for your congregation."
 category: "Getting Started"
 order: 1

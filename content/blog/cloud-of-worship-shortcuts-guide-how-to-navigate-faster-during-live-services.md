@@ -1,5 +1,6 @@
 ---
 title: "Cloud of Worship Shortcuts Guide: How to Navigate Faster During Live Services"
+docs: "/docs/settings-and-shortcuts/keyboard-shortcuts"
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: https://images.unsplash.com/photo-1557240503-5ef8ff7a34c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RW1wb3dlcmluZyUyMHRoZSUyME5leHQlMjBHZW5lcmF0aW9uJTNBJTIwSG93JTIwQ2h1cmNoZXMlMjBDYW4lMjBJbnZvbHZlJTIwWW91dGglMjBpbiUyMENodXJjaCUyME1lZGlhfGVufDB8fDB8fHww
@@ -15,7 +16,6 @@ updated: April 8, 2026 10:00 AM
 user_title: ""
 ---
 
-#
 
 In a live worship service, timing is everything.
 

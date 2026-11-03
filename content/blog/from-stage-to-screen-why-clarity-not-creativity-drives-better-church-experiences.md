@@ -15,7 +15,6 @@ updated: April 17, 2026 10:00 AM
 user_title: ""
 ---
 
-#
 
 In many churches today, there is a growing desire to improve the “look” of services.
 

@@ -1,5 +1,6 @@
 ---
 title: "How to display multiple versions of scripture"
+docs: "/docs/building-your-service/adding-scripture"
 author: Favour Felix
 cover: /images/blog/blog-scripture-versions.webp
 created: September 25, 2024 12:00 PM

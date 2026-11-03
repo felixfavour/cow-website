@@ -10,7 +10,6 @@ tag: How-to, Guides
 updated: December 26, 2025 12:00 PM
 ---
 
-#
 
 Every now and then, a story emerges from the community that reminds us why tools exist, not just to perform tasks, but to empower people. Recently, Judy Tuifangaloka shared an experience that embodies this perfectly. Her words capture the heart of what modern church media should be: simple, accessible, and empowering for anyone who desires to serve.
 

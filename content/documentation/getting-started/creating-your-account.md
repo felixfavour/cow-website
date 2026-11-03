@@ -1,5 +1,6 @@
 ---
 title: "Creating Your Account"
+seoTitle: "Create a Church Account"
 description: "Sign up with Google or email in a short guided wizard: your name, your church, optional team invites, verification and plan choice."
 category: "Getting Started"
 order: 2

@@ -15,7 +15,6 @@ updated: April 10, 2026 10:00 AM
 user_title: ""
 ---
 
-#
 
 Church media teams are some of the most committed yet most overlooked groups in modern ministry.
 

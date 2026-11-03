@@ -13,10 +13,9 @@ read_time: "For years, church media has been treated as a technical department. 
 tag: How-to, Guides, church media
 updated: may 31, 2026 10:00 AM
 user_title: Church Media Is Not Technical, It’s Strategic
-excerpt: "For years, church media has been treated as a technical department.  Something focused mainly on:      screens,    cables,    software,    and live projection.  But church media has quietly become much bigger than that.  Today, media is part of how people experience the service itself.  And that changes everything."
+metaDescription: "For years, church media has been treated as a technical department.  Something focused mainly on:      screens,    cables,    software,    and live projection.  But church media has quietly become much bigger than that.  Today, media is part of how people experience the service itself.  And that changes everything."
 ---
 
-#
 
 For years, church media has been treated as a technical department.
 

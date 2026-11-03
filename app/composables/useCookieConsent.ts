@@ -59,7 +59,28 @@ export const useCookieConsent = () => {
 
   const startAnalytics = () => {
     if (import.meta.server || analyticsStarted.value || isLocalHost()) return
+    analyticsStarted.value = true
 
+    // Wait until the page has loaded and the main thread is idle. PostHog
+    // alone is ~100 KB gzipped of script to parse; starting it during
+    // hydration pushed back LCP and interaction responsiveness (INP) on
+    // phones. Both tools still record the landing page and its UTM tags,
+    // which stay in the URL.
+    const whenIdle = (fn: () => void) => {
+      const run = () =>
+        "requestIdleCallback" in window
+          ? window.requestIdleCallback(fn, { timeout: 4000 })
+          : setTimeout(fn, 1500)
+      if (document.readyState === "complete") run()
+      else window.addEventListener("load", run, { once: true })
+    }
+    // useGtag/useRuntimeConfig need the Nuxt context, which a deferred
+    // callback has lost, so re-enter it.
+    const nuxtApp = useNuxtApp()
+    whenIdle(() => nuxtApp.runWithContext(loadAnalytics))
+  }
+
+  const loadAnalytics = () => {
     const { gtag, initialize } = useGtag()
     initialize()
     gtag("consent", "update", { analytics_storage: "granted" })
@@ -77,8 +98,6 @@ export const useCookieConsent = () => {
         disable_session_recording: true,
       })
     })
-
-    analyticsStarted.value = true
   }
 
   /** Called once on app start: always starts analytics, and shows the notice if unseen. */

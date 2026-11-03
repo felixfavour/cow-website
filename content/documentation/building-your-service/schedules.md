@@ -1,5 +1,6 @@
 ---
 title: "Schedules"
+seoTitle: "Plan a Service Order (Schedules)"
 description: "A schedule is the ordered set of slides for one service or event. Create one from a template or from blank, then switch, rename or delete."
 category: "Building Your Service"
 order: 1

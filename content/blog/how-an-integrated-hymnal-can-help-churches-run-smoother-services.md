@@ -10,7 +10,6 @@ tag: How-to, Guides
 updated: December 26, 2025 1:00 PM
 ---
 
-#
 
 After watching ministry workflows, I can tell you that nothing disrupts the **Flow State of Worship** like a scramble for a forgotten hymnal or a manually-typed verse. The unique beauty of the church service is its seamless blending of historic hymns and contemporary worship. We built Cloud of Worship (CoW) to finally unite them.
 

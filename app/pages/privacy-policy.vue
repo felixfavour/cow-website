@@ -965,15 +965,15 @@
 <script setup>
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Privacy Policy - Cloud of Worship",
+  title: "Privacy Policy | Cloud of Worship",
 })
 useSeoMeta({
-  title: "Privacy Policy - Cloud of Worship",
-  ogTitle: "Privacy Policy - Cloud of Worship",
+  title: "Privacy Policy | Cloud of Worship",
+  ogTitle: "Privacy Policy | Cloud of Worship",
   description:
-    "How Cloud of Worship collects, uses, shares and protects your data, including your content, analytics, payments and live voice transcription, and the privacy rights you have.",
+    "How Cloud of Worship collects, uses and protects your data, including your content, payments and live voice transcription, and the rights you have.",
   ogDescription:
-    "How Cloud of Worship collects, uses, shares and protects your data, including your content, analytics, payments and live voice transcription, and the privacy rights you have.",
+    "How Cloud of Worship collects, uses and protects your data, including your content, payments and live voice transcription, and the rights you have.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/privacy-policy",
   ogType: "website",

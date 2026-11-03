@@ -451,17 +451,15 @@ const changelogData = computed(() => {
 
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Changelog - updates every week - Cloud of Worship",
+  title: "Changelog: What's New in Cloud of Worship",
 })
 useSeoMeta({
-  title: "Changelog - updates every week - Cloud of Worship",
-  ogTitle: "Changelog - updates every week - Cloud of Worship",
+  title: "Changelog: What's New in Cloud of Worship",
+  ogTitle: "Changelog: What's New in Cloud of Worship",
   description:
-    "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
+    "Every Cloud of Worship release: new features, fixes and improvements for church media teams, shipped most weeks.",
   ogDescription:
-    "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "Every Cloud of Worship release: new features, fixes and improvements for church media teams, shipped most weeks.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/changelog",
   ogType: "website",

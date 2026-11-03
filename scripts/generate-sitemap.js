@@ -71,13 +71,26 @@ function readDocsPages() {
   for (const category of readdirSync(docsDir, { withFileTypes: true })) {
     if (!category.isDirectory()) continue
     const files = readdirSync(join(docsDir, category.name)).filter((f) => f.endsWith('.md')).sort()
+    const categoryPages = []
     for (const file of files) {
       const raw = readFileSync(join(docsDir, category.name, file), 'utf-8')
       const frontmatter = parseFrontmatter(raw)
       if (frontmatter.draft === 'true') continue
       const slug = file.replace('.md', '')
-      const path = slug === 'index' ? `/docs/${category.name}` : `/docs/${category.name}/${slug}`
-      pages.push({ path, lastmod: toISODate(frontmatter.lastUpdated) })
+      const isIndex = slug === 'index'
+      const path = isIndex ? `/docs/${category.name}` : `/docs/${category.name}/${slug}`
+      categoryPages.push({ path, isIndex, lastUpdated: frontmatter.lastUpdated })
+    }
+    // A category page lists its articles, so it changes when its newest article
+    // does. Using today's date on every build would make lastmod meaningless.
+    const newestArticle = categoryPages
+      .filter((page) => !page.isIndex && page.lastUpdated)
+      .map((page) => toISODate(page.lastUpdated))
+      .sort()
+      .pop()
+    for (const page of categoryPages) {
+      const date = page.lastUpdated || (page.isIndex ? newestArticle : undefined)
+      pages.push({ path: page.path, lastmod: toISODate(date) })
     }
   }
   return pages
@@ -92,6 +105,7 @@ const STATIC_PAGES = [
   { path: '/pricing', changefreq: 'weekly' },
   { path: '/changelog', changefreq: 'weekly' },
   { path: '/wall-of-love', changefreq: 'weekly' },
+  { path: '/download', changefreq: 'monthly' },
   { path: '/contact', changefreq: 'weekly' },
   { path: '/privacy-policy', changefreq: 'monthly' },
   { path: '/terms-of-service', changefreq: 'monthly' },
@@ -122,14 +136,19 @@ function xmlEscape(str) {
 function buildSitemap(blogPosts, docsPages) {
   const today = new Date().toISOString().split('T')[0]
 
+  // No lastmod for static pages: we don't track when each was last edited, and
+  // stamping today's date on every build teaches Google to ignore lastmod for
+  // the whole sitemap, including the accurate blog and docs dates.
   const staticEntries = STATIC_PAGES.map(
     ({ path, changefreq }) =>
-      `  <url>\n    <loc>${xmlEscape(BASE_URL + path)}</loc>\n    <changefreq>${changefreq}</changefreq>\n    <lastmod>${today}</lastmod>\n  </url>`,
+      `  <url>\n    <loc>${xmlEscape(BASE_URL + path)}</loc>\n    <changefreq>${changefreq}</changefreq>\n  </url>`,
   ).join('\n')
 
-  const blogIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/blog')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${today}</lastmod>\n  </url>`
+  const blogLastmod = blogPosts.map((post) => post.lastmod).sort().pop() || today
+  const blogIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/blog')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${blogLastmod}</lastmod>\n  </url>`
 
-  const docsIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/docs')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${today}</lastmod>\n  </url>`
+  const docsLastmod = docsPages.map((page) => page.lastmod).sort().pop() || today
+  const docsIndexEntry = `  <url>\n    <loc>${xmlEscape(BASE_URL + '/docs')}</loc>\n    <changefreq>weekly</changefreq>\n    <lastmod>${docsLastmod}</lastmod>\n  </url>`
 
   const docsEntries = docsPages
     .map(

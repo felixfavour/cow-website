@@ -1,5 +1,6 @@
 ---
 title: "Settings Reference"
+seoTitle: "Settings Reference"
 description: "All ten settings sections: profile, subscription, display, microphone, slides, backgrounds, blank screen, Bible versions, storage and other."
 category: "Settings, Shortcuts & Offline"
 order: 2

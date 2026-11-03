@@ -1,5 +1,6 @@
 ---
 title: "Understanding the Cloud of Worship Layout."
+docs: "/docs/control-center/layout-overview"
 author: Favour Felix
 cover: /images/blog/blog-understanding-layout.webp
 created: September 25, 2024 12:00 PM

@@ -160,17 +160,15 @@ const { mergeUtmsIntoUrl } = useUtm()
 const { churchCountLabel } = useChurchCount()
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Contact us - Cloud of Worship",
+  title: "Contact Us | Cloud of Worship",
 })
 useSeoMeta({
-  title: "Contact us - Cloud of Worship",
-  ogTitle: "Contact us - Cloud of Worship",
+  title: "Contact Us | Cloud of Worship",
+  ogTitle: "Contact Us | Cloud of Worship",
   description:
-    "Get in touch with us for any questions or concerns; a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
+    "Questions about Cloud of Worship? Reach the team by email, join the WhatsApp community, or send a feature request. We reply to every church.",
   ogDescription:
-    "Get in touch with us for any questions or concerns; a free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "Questions about Cloud of Worship? Reach the team by email, join the WhatsApp community, or send a feature request. We reply to every church.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/contact",
   ogType: "website",

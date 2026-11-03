@@ -1,5 +1,6 @@
 ---
 title: "The Desktop App"
+seoTitle: "Windows Desktop App"
 description: "Install Cloud of Worship as a native Windows app for real multi-monitor windows, NDI output and background updates."
 category: "Settings, Shortcuts & Offline"
 order: 5

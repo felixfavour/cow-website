@@ -1,5 +1,6 @@
 ---
 title: "Adding Songs & Hymns"
+seoTitle: "Add Song Lyrics & Hymns to Slides"
 description: "Save your own songs to My Library, pull lyrics for any song, and find hymns by title or number."
 category: "Building Your Service"
 order: 4

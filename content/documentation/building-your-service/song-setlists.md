@@ -1,5 +1,6 @@
 ---
 title: "Song Setlists"
+seoTitle: "Run a Worship Medley (Setlists)"
 description: "Hold several songs in order on a single slide, so you can move through a worship medley without juggling separate slides."
 category: "Building Your Service"
 order: 15
@@ -36,3 +37,9 @@ The setlist tracks two positions at once: **which song** is active, and **which 
 | Slides in schedule | One per song | One for the whole set |
 | Reordering mid-service | Move slides around | Reorder within the setlist |
 | Best for | A song at one point in the service | A back-to-back worship medley |
+
+## Related guides
+
+- [Adding songs & hymns](/docs/building-your-service/adding-songs-and-hymns): add the songs a setlist is built from.
+- [Promoting slides](/docs/going-live/promoting-slides): the arrow keys for moving through verses live.
+- [Stage display](/docs/going-live/stage-display): show the band what is next.

@@ -1,5 +1,6 @@
 ---
 title: "Adding Media"
+seoTitle: "Add Videos & Images to Church Slides"
 description: "Display images, video or audio from your files, or embed a YouTube or Vimeo video."
 category: "Building Your Service"
 order: 6

@@ -63,9 +63,13 @@
           </a>
         </div>
 
+        <!-- Before mount, phones and tablets (no mouse) already get this note
+             from the server via CSS (.until-detected), so it doesn't push the
+             page down once the platform is known (layout shift on mobile). -->
         <div
-          v-else-if="platform === 'other'"
+          v-else-if="platform === 'other' || platform === null"
           class="platform-note mx-auto mt-6 max-w-[560px] rounded-2xl bg-[#FFE9E8] p-5 text-left text-sm"
+          :class="{ 'until-detected': platform === null }"
         >
           <p class="font-bold">The desktop app is Windows-only for now.</p>
           <p class="mt-1">
@@ -246,7 +250,7 @@ const trackDownload = () => {
 }
 
 useSeoMeta({
-  title: "Download Cloud of Worship for Windows - Church presentation software",
+  title: "Download Cloud of Worship for Windows (Free)",
   ogTitle: "Download Cloud of Worship for Windows",
   description:
     "Download the Cloud of Worship desktop app for Windows. Native multi-monitor projection, NDI output for OBS and vMix, and background updates. Free on every plan.",
@@ -276,3 +280,16 @@ onMounted(() => {
   }
 })
 </script>
+
+<style scoped>
+/* The "Windows-only" note before the platform is detected: shown to touch
+   devices straight from the server HTML, hidden for everyone else. */
+.platform-note.until-detected {
+  display: none;
+}
+@media (hover: none) and (pointer: coarse) {
+  .platform-note.until-detected {
+    display: block;
+  }
+}
+</style>

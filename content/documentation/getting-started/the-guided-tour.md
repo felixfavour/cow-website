@@ -1,5 +1,6 @@
 ---
 title: "The Guided Tour"
+seoTitle: "Guided Tour of the Control Center"
 description: "A two-minute, nine-step spotlight tour that appears the first time you reach the Control Center with a slide on your schedule."
 category: "Getting Started"
 order: 6
@@ -28,3 +29,9 @@ Click **"Show me around"** to start it, or dismiss it. It doesn't reappear on it
 ::callout{type="tip" title="Step 7 waits for you"}
 The **Next** button won't advance until a Bible slide is actually selected. This is the one step of the tour that needs you to act, not just read.
 ::
+
+## Related guides
+
+- [Layout overview](/docs/control-center/layout-overview): the three panes the tour points at.
+- [Your first five minutes](/docs/getting-started/your-first-five-minutes): put a Bible verse on your projector.
+- [Keyboard shortcuts](/docs/settings-and-shortcuts/keyboard-shortcuts): the shortcut sheet the tour mentions.

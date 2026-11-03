@@ -1,5 +1,6 @@
 ---
 title: "Editing a Slide"
+seoTitle: "Edit Slide Fonts, Size & Layout"
 description: "Change the font, size, lines per slide and background of a single slide, even while it's live."
 category: "Building Your Service"
 order: 12

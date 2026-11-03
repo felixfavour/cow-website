@@ -1,12 +1,13 @@
 ---
 title: "How to Run a Stage Display Countdown Without Changing the Live Screen"
+docs: "/docs/going-live/stage-display"
 author: Favour Felix
 author_img: /images/author/favour.jpeg
 cover: /images/blog/stage-display-countdown.jpg
 created: September 16, 2026 9:00 AM UTC
 updated: September 16, 2026 9:00 AM UTC
 paragraph: "Give musicians and speakers a private countdown while the congregation keeps seeing the live slide. Here is when to use each countdown and how to control the stage clock."
-excerpt: "Learn how to start a private stage countdown in Cloud of Worship while keeping the congregation's live screen and service stopwatch intact."
+metaDescription: "Learn how to start a private stage countdown in Cloud of Worship while keeping the congregation's live screen and service stopwatch intact."
 tag: Guides, Stage Display
 ---
 

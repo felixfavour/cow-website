@@ -1,5 +1,6 @@
 ---
 title: "Sermon Transcription"
+seoTitle: "Live Sermon Transcription"
 description: "Turn your microphone into a live note-taker that surfaces relevant Bible passages automatically as you preach. A Teams feature."
 category: "Teams & Collaboration"
 order: 2
@@ -38,3 +39,10 @@ In **Settings → Other Settings**:
 ::callout{type="tip"}
 Read the full walkthrough: [How to use sermon transcription and voice commands](/blog/how-to-use-sermon-transcription-and-voice-commands-in-cloud-of-worship).
 ::
+
+## Related guides
+
+- [Adding scripture](/docs/building-your-service/adding-scripture): put a suggested passage on screen.
+- [Settings reference](/docs/settings-and-shortcuts/settings-reference): microphone and transcription settings.
+- [Media & transcription problems](/docs/troubleshooting/media-and-transcription-problems): microphone access denied and minutes used up.
+- [Plans: Free vs Teams](/docs/teams-and-collaboration/plans-free-vs-teams): what each plan includes.

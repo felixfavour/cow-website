@@ -1,5 +1,36 @@
 [
   {
+    "version": "v1.4.4",
+    "title": "Version Strength",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 31, 2026",
+    "description": "Share schedule links to other teammates",
+    "changes": [
+      "Share schedule links to other teammates",
+      "Add a perf-review skill for checking recent changes on low-end laptops",
+      "Glass toasts stop animating after one drift, and PDF imports free their worker and page memory",
+      "Teammate toasts name the slides they added or deleted",
+      "Pair members show and hide from the editor toolbar, and Pair settings holds layout and background behind one tab",
+      "Create Slide Pair is a quick action, starting from a camera in the schedule",
+      "The LIVE pill stays grey until the output actually reaches a screen",
+      "Schedules sort by when their slides last changed, not only when the schedule itself was saved",
+      "Clicking the Teams badge shows a random tip about using Cloud of Worship",
+      "Toasts stack in a glass toaster at the top right, and the close X gets a hover state",
+      "New quick actions carry a NEW badge and a one-time intro with a short animation"
+    ]
+  },
+  {
+    "version": "v1.4.3",
+    "title": "Version Generosity",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Oct 30, 2026",
+    "description": "Updated splash logo",
+    "changes": [
+      "Updated splash logo",
+      "Duplicated slides land right after their source, and edits made while a new slide uploads are kept and saved"
+    ]
+  },
+  {
     "version": "v1.4.2",
     "title": "Version Excellence",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",

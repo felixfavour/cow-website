@@ -60,19 +60,17 @@ const { mergeUtmsIntoUrl } = useUtm()
 const showTestimonialPopup = ref(false)
 useHead({
   title:
-    "Church presentation software that works without an internet connection - Cloud of Worship",
+    "Offline Church Presentation Software | Cloud of Worship",
 })
 useSeoMeta({
   title:
-    "Church presentation software that works without an internet connection - Cloud of Worship",
+    "Offline Church Presentation Software | Cloud of Worship",
   ogTitle:
-    "Church presentation software that works without an internet connection - Cloud of Worship",
+    "Offline Church Presentation Software | Cloud of Worship",
   description:
-    "Empower your media team to deliver exceptional experiences to your congregation without being tethered to an internet connection.",
+    "Keep projecting when the church Wi-Fi drops. Bibles, hymns and your schedule work offline, and changes sync when you reconnect. Free to start.",
   ogDescription:
-    "Empower your media team to deliver exceptional experiences to your congregation without being tethered to an internet connection.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "Keep projecting when the church Wi-Fi drops. Bibles, hymns and your schedule work offline, and changes sync when you reconnect. Free to start.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/offline-first",
   ogType: "website",

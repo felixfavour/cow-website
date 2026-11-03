@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         lang: "en",
       },
       lang: "en",
-      viewport: "initial-scale=1",
+      viewport: "width=device-width, initial-scale=1",
       title: "Cloud of Worship - Presentation software for your growing church",
       meta: [
         {
@@ -16,35 +16,25 @@ export default defineNuxtConfig({
           content:
             "Display song lyrics, scriptures, videos and fully customizable slides for your growing church all on the web.",
         },
-        {
-          name: "keywords",
-          content:
-            "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
-        },
         { name: "format-detection", content: "telephone=no" },
         { hid: "og:type", property: "og:type", content: "website" },
-        {
-          hid: "og:url",
-          property: "og:url",
-          content: "https://cloudofworship.com",
-        },
         {
           hid: "twitter:domain",
           name: "twitter:domain",
           content: "cloudofworship.com",
         },
-        {
-          hid: "twitter:description",
-          name: "twitter:description",
-          content:
-            "Display song lyrics, scriptures, videos and fully customizable slides for your growing church all on the web.",
-        },
-        {
-          hid: "twitter:url",
-          name: "twitter:url",
-          content: "https://cloudofworship.com",
-        },
-      ]
+        // No site-wide twitter:description / twitter:url here: a global value
+        // stays on every page that doesn't override it, so links shared on X
+        // all showed the homepage text. X falls back to each page's og: tags.
+      ],
+      link: [
+        // The condensed bold heading font, requested with the HTML instead of
+        // after the CSS. Without it the home page headline is laid out in the
+        // fallback first and re-wraps when this arrives (layout shift). Body
+        // text (Geist) isn't preloaded: its size-matched fallback is close
+        // enough, and preloading it delays images on slow connections.
+        { rel: "preload", href: "/fonts/BricolageGrotesque48ptCondensed-Bold.woff2", as: "font", type: "font/woff2", crossorigin: "" },
+      ],
     },
   },
   experimental: {
@@ -80,7 +70,7 @@ export default defineNuxtConfig({
       { name: "Bricolage Grotesque", provider: "google", weights: [400, 600, 700] },
     ],
   },
-  css: ["@/assets/main.css"],
+  css: ["@/assets/fonts.css", "@/assets/main.css"],
   routeRules: {
     // The Help Center moved from /documentation to /docs.
     '/documentation': { redirect: { to: '/docs', statusCode: 301 } },

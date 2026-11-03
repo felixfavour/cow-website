@@ -13,7 +13,7 @@ read_time: Choosing between free software and modern platforms can be tricky.  O
 tag: How-to, Guides
 updated: May 9, 2026 10:00 AM
 user_title: "OpenLP vs Cloud of Worship: Which One Is More Practical for Your Church?"
-excerpt: Choosing between free software and modern platforms can be tricky.  On one hand, you want to save money.  On the other hand, you want something that works smoothly every Sunday.  Two options often compared are OpenLP and Cloud of Worship.
+metaDescription: Choosing between free software and modern platforms can be tricky.  On one hand, you want to save money.  On the other hand, you want something that works smoothly every Sunday.  Two options often compared are OpenLP and Cloud of Worship.
 ---
 
 Choosing between free software and modern platforms can be tricky.
