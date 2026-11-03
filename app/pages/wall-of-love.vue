@@ -47,17 +47,15 @@ const { mergeUtmsIntoUrl } = useUtm()
 const { churchCountLabel } = useChurchCount()
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Wall of Love - Cloud of Worship",
+  title: "Wall of Love: What Churches Say | Cloud of Worship",
 })
 useSeoMeta({
-  title: "Wall of Love - Cloud of Worship",
-  ogTitle: "Wall of Love - Cloud of Worship",
+  title: "Wall of Love: What Churches Say | Cloud of Worship",
+  ogTitle: "Wall of Love: What Churches Say | Cloud of Worship",
   description:
-    "Hear what others are saying about Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
+    "Reviews and stories from church media teams who run their Sunday services on Cloud of Worship, the free church presentation software.",
   ogDescription:
-    "Hear what others are saying about Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "Reviews and stories from church media teams who run their Sunday services on Cloud of Worship, the free church presentation software.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/wall-of-love",
   ogType: "website",

@@ -13,7 +13,7 @@ read_time: Sometimes, the most important insights don’t come from long feedbac
 tag: How-to, Guides
 updated: April 27, 2026 10:00 AM
 user_title: What One Feature Request Reveals About the Future of Church Media
-excerpt: Sometimes, the most important insights don’t come from long feedback forms.
+metaDescription: Sometimes, the most important insights don’t come from long feedback forms.
 ---
 
 Sometimes, the most important insights don’t come from long feedback forms.

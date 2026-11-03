@@ -1,5 +1,6 @@
 ---
 title: "Media & Transcription Problems"
+seoTitle: "Fix Media Upload & Mic Problems"
 description: "Hymns not found, microphone access denied, and background images or videos that won't upload."
 category: "Troubleshooting"
 order: 5

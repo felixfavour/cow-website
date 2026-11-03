@@ -1,5 +1,6 @@
 ---
 title: How to Build a Strong Media Team in Your Church
+metaDescription: "How to recruit, train and keep a church media team: clear roles, simple tools, rotas and habits that keep volunteers confident and services smooth."
 author: Praise Simileoluwa
 author_img: /images/author/praise.jpg
 cover: /images/blog/strong-media-team.jpg

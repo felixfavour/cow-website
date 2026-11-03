@@ -1,5 +1,8 @@
 ---
 title: "How to use Cloud of Worship with vMix - Livestream"
+seoTitle: "How to Use vMix for Church Livestream Lyrics"
+metaDescription: "Add your church's lyrics and scripture to a vMix livestream: copy the Cloud of Worship livestream link, add it as a web browser input and mix it in."
+docs: "/docs/going-live/livestream-output-obs-vmix"
 author: Favour Felix
 cover: /images/blog/blog-vmix.webp
 created: November 17, 2024 11:00 PM

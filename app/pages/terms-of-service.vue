@@ -147,17 +147,15 @@
 <script setup>
 const showTestimonialPopup = ref(false)
 useHead({
-  title: "Terms of Service - Cloud of Worship",
+  title: "Terms of Service | Cloud of Worship",
 })
 useSeoMeta({
-  title: "Terms of Service - Cloud of Worship",
-  ogTitle: "Terms of Service - Cloud of Worship",
+  title: "Terms of Service | Cloud of Worship",
+  ogTitle: "Terms of Service | Cloud of Worship",
   description:
-    "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
+    "The terms that govern your church's use of Cloud of Worship: accounts, plans and payments, your content, acceptable use and our responsibilities.",
   ogDescription:
-    "Get updates every week for your church with Cloud of Worship; free browser-based presentation software to display song lyrics, scriptures, videos and fully customizable slides.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "The terms that govern your church's use of Cloud of Worship: accounts, plans and payments, your content, acceptable use and our responsibilities.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/terms-of-service",
   ogType: "website",

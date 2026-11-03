@@ -94,6 +94,51 @@ function readBlogPosts() {
 }
 
 /**
+ * Read every published Help Center page from content/documentation/.
+ * <category>/index.md → /docs/<category>, <category>/<slug>.md → /docs/<category>/<slug>
+ * Categories come back in their `order`, each followed by its articles in order.
+ */
+function readDocsPages() {
+  const docsDir = join(ROOT, "content/documentation")
+  const byOrder = (a, b) => a.order - b.order || a.title.localeCompare(b.title)
+
+  const categories = readdirSync(docsDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => {
+      const pages = readdirSync(join(docsDir, entry.name))
+        .filter((f) => f.endsWith(".md"))
+        .map((file) => {
+          const raw = readFileSync(join(docsDir, entry.name, file), "utf-8")
+          const { frontmatter, body } = parseMarkdown(raw)
+          const slug = file.replace(".md", "")
+          const isIndex = slug === "index"
+          return {
+            isIndex,
+            draft: frontmatter.draft === "true",
+            title: frontmatter.title || slug,
+            description: frontmatter.description || "",
+            order: Number(frontmatter.order ?? 999),
+            url: `${BASE_URL}/docs/${entry.name}${isIndex ? "" : "/" + slug}`,
+            body,
+          }
+        })
+        .filter((page) => !page.draft)
+      const index = pages.find((page) => page.isIndex)
+      return {
+        title: index?.title || entry.name,
+        description: index?.description || "",
+        order: index?.order ?? 999,
+        url: `${BASE_URL}/docs/${entry.name}`,
+        body: index?.body || "",
+        articles: pages.filter((page) => !page.isIndex).sort(byOrder),
+      }
+    })
+    .sort(byOrder)
+
+  return categories
+}
+
+/**
  * Static definitions for Vue page routes.
  * Add a new entry here whenever you add a new public page.
  */
@@ -194,8 +239,15 @@ function formatBlogEntry(post) {
 /**
  * Build the content of llms.txt (index/summary file).
  */
-function buildLlmsTxt(blogPosts) {
+function buildLlmsTxt(blogPosts, docsCategories) {
   const blogLines = blogPosts.map(formatBlogEntry).join("\n")
+  const docsLines = docsCategories
+    .map(
+      (cat) =>
+        `### ${cat.title}\n\n` +
+        [cat, ...cat.articles].map((page) => `- [${page.title}](${page.url}): ${page.description}`).join("\n")
+    )
+    .join("\n\n")
 
   return `# Cloud of Worship
 
@@ -212,6 +264,11 @@ function buildLlmsTxt(blogPosts) {
 - [Song Lyrics & Hymns](${BASE_URL}/features/song-lyrics): Over 3,000 hymns offline, 15,000+ shared songs, and jump to any verse or chorus while a song is live.
 - [Live Projection](${BASE_URL}/features/live-projection): Dual screen output, phone remote control, and an output window OBS can capture for livestream.
 - [Live Transcription](${BASE_URL}/features/live-transcription): Transcribes the sermon live and suggests the Bible passage the moment the preacher names it.
+- [Help Center](${BASE_URL}/docs): Step-by-step guides for every feature, from creating an account to multi-screen setups, livestreams and troubleshooting.
+
+## Help Center
+
+${docsLines}
 
 ## Optional
 
@@ -229,7 +286,7 @@ ${blogLines}
 /**
  * Build the content of llms-full.txt (consolidated full-text file).
  */
-function buildLlmsFullTxt(pageDefs, blogPosts) {
+function buildLlmsFullTxt(pageDefs, blogPosts, docsCategories) {
   const sections = []
 
   // Primary pages
@@ -239,6 +296,18 @@ function buildLlmsFullTxt(pageDefs, blogPosts) {
     sections.push(
       `# ${page.title}\n\nURL: ${page.url}\n\n${page.description}\n\n${pageText}`
     )
+  }
+
+  // Help Center: each category's intro, then its articles in order
+  for (const cat of docsCategories) {
+    sections.push(
+      `# Help Center: ${cat.title}\n\nURL: ${cat.url}\n\n${cat.description}\n\n${cat.body.trim()}`.trim()
+    )
+    for (const article of cat.articles) {
+      sections.push(
+        `## Help Center: ${article.title}\n\nURL: ${article.url}\n\n${article.description}\n\n${article.body.trim()}`
+      )
+    }
   }
 
   // Blog index
@@ -260,11 +329,12 @@ function buildLlmsFullTxt(pageDefs, blogPosts) {
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 const blogPosts = readBlogPosts()
+const docsCategories = readDocsPages()
 
-const llmsTxt = buildLlmsTxt(blogPosts)
+const llmsTxt = buildLlmsTxt(blogPosts, docsCategories)
 writeFileSync(join(ROOT, "public/llms.txt"), llmsTxt, "utf-8")
 console.log("✓ Generated public/llms.txt")
 
-const llmsFullTxt = buildLlmsFullTxt(PAGE_DEFINITIONS, blogPosts)
+const llmsFullTxt = buildLlmsFullTxt(PAGE_DEFINITIONS, blogPosts, docsCategories)
 writeFileSync(join(ROOT, "public/llms-full.txt"), llmsFullTxt, "utf-8")
 console.log("✓ Generated public/llms-full.txt")

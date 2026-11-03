@@ -8,7 +8,7 @@ created: October 20, 2026 12:00 PM
 paragraph: Over 3,500 churches have shaped how we see church media. HORIZON is where we take the next step.
 tag: LAUNCH
 updated: October 20, 2026 9:32 AM
-excerpt: Over 3,500 churches have shaped how we see church media. HORIZON is where we take the next step.
+metaDescription: Over 3,500 churches have shaped how we see church media. HORIZON is where we take the next step.
 read_time: LAUNCH
 ---
 

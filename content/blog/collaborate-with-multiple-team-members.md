@@ -1,5 +1,6 @@
 ---
 title: How to Collaborate with Multiple Members of Your Media Team
+docs: "/docs/teams-and-collaboration/working-as-a-team"
 author: Favour Felix
 cover: /images/blog/blog-collaborate.webp
 created: September 25, 2024 12:00 PM

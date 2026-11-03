@@ -107,6 +107,7 @@
 </template>
 
 <script setup>
+import pricing from "~/data/pricing.json"
 const { mergeUtmsIntoUrl } = useUtm()
 const heroText = ref(null)
 const stage = ref(null)
@@ -180,12 +181,71 @@ const onScroll = () => {
   if (!frame) frame = requestAnimationFrame(update)
 }
 
-const seoTitle = "Cloud of Worship - Run your church media projection easily"
+// Leads with the brand (most clicks are brand searches) and names the category
+// people search for, which the old "run your church media projection easily" did not.
+const seoTitle = "Cloud of Worship: Free Church Presentation Software"
 const seoDescription =
   "Free, browser-based presentation software for churches under 1,000. Put scripture, songs, hymns and videos on screen in seconds, even when the Wi-Fi drops."
 
+const SITE_URL = "https://cloudofworship.com"
+const teamsMonthly = String(pricing.plans.teams.prices.USD)
+
 useHead({
   title: seoTitle,
+  script: [
+    {
+      key: "home-ld",
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": `${SITE_URL}/#organization`,
+            name: "Cloud of Worship",
+            url: SITE_URL,
+            logo: `${SITE_URL}/cow-logo-square.jpg`,
+            sameAs: [
+              "https://www.facebook.com/cloudofworshipapp/",
+              "https://www.instagram.com/cloudofworshipapp/",
+              "https://www.youtube.com/@CloudofWorshipApp",
+            ],
+          },
+          {
+            "@type": "WebSite",
+            "@id": `${SITE_URL}/#website`,
+            name: "Cloud of Worship",
+            url: SITE_URL,
+            publisher: { "@id": `${SITE_URL}/#organization` },
+          },
+          {
+            "@type": "SoftwareApplication",
+            name: "Cloud of Worship",
+            url: SITE_URL,
+            description: seoDescription,
+            applicationCategory: "MultimediaApplication",
+            operatingSystem: "Web browser, Windows",
+            publisher: { "@id": `${SITE_URL}/#organization` },
+            offers: [
+              { "@type": "Offer", name: "Starter", price: "0", priceCurrency: "USD" },
+              {
+                "@type": "Offer",
+                name: "Teams",
+                price: teamsMonthly,
+                priceCurrency: "USD",
+                priceSpecification: {
+                  "@type": "UnitPriceSpecification",
+                  price: teamsMonthly,
+                  priceCurrency: "USD",
+                  unitCode: "MON",
+                },
+              },
+            ],
+          },
+        ],
+      }),
+    },
+  ],
 })
 useSeoMeta({
   title: seoTitle,
@@ -248,12 +308,10 @@ onBeforeUnmount(() => {
   will-change: transform;
 }
 
-/* Keep the text out of sight until the page is live and its words can
-   start coming into focus. The button fades
-   in once the text has settled (TEXT_MS). */
-.hero:not(.mounted) .hero-reveal {
-  opacity: 0;
-}
+/* The headline is rendered already revealed (RevealText's `immediate`), so
+   its words come into focus from the first paint instead of waiting for the
+   page's JavaScript; hiding it until mount cost phones seconds of LCP. The
+   button fades in once the text has settled (see .hero-cta). */
 .entering .exit-slot {
   overflow: visible;
 }

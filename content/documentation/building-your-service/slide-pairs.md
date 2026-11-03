@@ -1,5 +1,6 @@
 ---
 title: "Slide Pairs"
+seoTitle: "Show Camera and Lyrics Together"
 description: "Show a camera together with another slide on the Live Output: beside it, over it or as a caption. A Teams feature."
 category: "Building Your Service"
 order: 10

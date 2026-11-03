@@ -15,7 +15,6 @@ updated: April 13, 2026 10:00 AM
 user_title: ""
 ---
 
-#
 
 Every Sunday, while the congregation focuses on worship, there’s a quiet team working behind the scenes, anticipating every move, adjusting in real time, and ensuring the service flows without distraction. “The church media team”
 

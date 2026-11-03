@@ -134,9 +134,9 @@
 const { mergeUtmsIntoUrl } = useUtm();
 const showTestimonialPopup = ref(false);
 
-const title = "Dual Screen Church Projection & Live Output - Cloud of Worship";
+const title = "Dual Screen Church Projection Software | Cloud of Worship";
 const description =
-  "Run your service on two screens. Controls stay on the operator window, only the slide you send reaches the projector, and OBS can capture the output for livestream.";
+  "Run your service on two screens: controls stay on your laptop, only the slide you send reaches the projector, and OBS can capture the output for your livestream.";
 
 const faqs = [
   {
@@ -183,8 +183,6 @@ useSeoMeta({
   ogTitle: title,
   description,
   ogDescription: description,
-  keywords:
-    "church projection software, dual screen presentation church, live output projector church, second monitor worship software, obs church livestream slides, church slide remote control, cloud of worship",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/live-projection",
   ogType: "website",

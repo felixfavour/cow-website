@@ -1,5 +1,6 @@
 ---
 title: "Livestream Output (OBS / vMix)"
+seoTitle: "Add Church Lyrics to OBS or vMix"
 description: "Feed your live slides into OBS, vMix or similar software as a browser source, so your online congregation sees the same lyrics and scripture as the room."
 category: "Going Live"
 order: 7
@@ -30,5 +31,5 @@ The copied link ends in the schedule's **6-character code**, for example `/lives
 
 ## Step-by-step guides
 
-- [Using Cloud of Worship with OBS](/blog/how-to-use-cloud-of-worship-with-OBS-livestream)
+- [Using Cloud of Worship with OBS](/blog/how-to-use-cloud-of-worship-with-obs-livestream)
 - [Using Cloud of Worship with vMix](/blog/how-to-use-cloud-of-worship-with-vmix-livestream)

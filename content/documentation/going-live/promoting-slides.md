@@ -1,5 +1,6 @@
 ---
 title: "Promoting Slides"
+seoTitle: "Put Slides on Screen During Service"
 description: "Three ways to put a slide on screen, and the arrow keys that make running a service fast."
 category: "Going Live"
 order: 2
@@ -32,3 +33,10 @@ The live slide is marked **LIVE** in both the Slide Schedule Pane and the Live O
 | **B** | Blank the live output |
 
 Inside a scripture, song or hymn slide, **←** and **→** move between verses.
+
+## Related guides
+
+- [Opening the live display](/docs/going-live/opening-the-live-display): open the projection window first.
+- [Blank screen](/docs/going-live/blank-screen): clear the screen between segments.
+- [Keyboard shortcuts](/docs/settings-and-shortcuts/keyboard-shortcuts): every shortcut, including the live ones.
+- [Using Cloud of Worship on your phone](/docs/teams-and-collaboration/using-cloud-of-worship-on-your-phone): drive the projector from your phone.

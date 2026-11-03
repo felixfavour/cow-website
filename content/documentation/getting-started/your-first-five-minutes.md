@@ -1,5 +1,6 @@
 ---
 title: "Your First Five Minutes"
+seoTitle: "Project Your First Slide in 5 Min"
 description: "From login to a Bible verse on your projector in five short steps."
 category: "Getting Started"
 order: 5

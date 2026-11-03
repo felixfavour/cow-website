@@ -1,5 +1,6 @@
 ---
 title: "My Library"
+seoTitle: "Save Songs & Slides to Your Library"
 description: "Your permanent, schedule-independent store of saved songs and slides."
 category: "Building Your Service"
 order: 14
@@ -31,3 +32,9 @@ Empty states tell you what to do. With no saved songs you'll see *"No songs save
 ::callout{type="tip"}
 Long lists load progressively as you scroll (15 at a time), so a large song library stays fast. You can also navigate the list with your keyboard.
 ::
+
+## Related guides
+
+- [Adding songs & hymns](/docs/building-your-service/adding-songs-and-hymns): save a song so it is ready every week.
+- [Schedules](/docs/building-your-service/schedules): build the order of service from your library.
+- [Song setlists](/docs/building-your-service/song-setlists): run several saved songs as one medley.

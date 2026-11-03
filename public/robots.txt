@@ -1,6 +1,20 @@
-# Cloudflare appends its managed AI-crawler rules below this block.
+# Cloud of Worship welcomes search engines and AI crawlers, including AI
+# training and AI answer/search bots, so the site, the Help Center and
+# /llms.txt can be found and cited.
+#
+# Cloudflare's "managed robots.txt" (AI Crawl Control) must stay OFF for this
+# file to apply: when on, Cloudflare appends Disallow rules for AI bots below.
 
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
+
+# Scrapers that ignore crawl rates and send no referral traffic.
+User-agent: Bytespider
+Disallow: /
+
+User-agent: AwarioSmartBot
+User-agent: AwarioRssBot
+Disallow: /
 
 Sitemap: https://cloudofworship.com/sitemap.xml

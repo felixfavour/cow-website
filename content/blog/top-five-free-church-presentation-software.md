@@ -1,5 +1,7 @@
 ---
 title: "Top 5 Free Church Presentation Software Options in 2025"
+seoTitle: "5 Free Church Presentation Software Options Compared"
+metaDescription: "OpenLP, EasyWorship, Worship Extreme, ProPresenter and Cloud of Worship compared: what each free church presentation software includes and its limits."
 author: Kiitan Jones
 author_img: /images/author/kiitan.jpg
 cover: /images/blog/blog-app-comparison.webp

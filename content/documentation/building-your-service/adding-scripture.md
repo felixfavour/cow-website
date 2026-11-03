@@ -1,5 +1,6 @@
 ---
 title: "Adding Scripture"
+seoTitle: "Display Bible Verses on a Projector"
 description: "Open any Bible reference with Display Bible, search the whole Bible by phrase, and step through verses with the arrow keys."
 category: "Building Your Service"
 order: 3

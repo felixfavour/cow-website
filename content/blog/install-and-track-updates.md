@@ -1,5 +1,8 @@
 ---
 title: "How to install and track updates on Cloud of Worship"
+seoTitle: "Install Cloud of Worship on PC, Mac or Phone"
+metaDescription: "Install Cloud of Worship as an app on Windows, Mac, Android or iPhone in a few clicks, use it offline, and see how updates arrive automatically."
+docs: "/docs/settings-and-shortcuts/installing-cloud-of-worship"
 author: Favour Felix
 cover: /images/blog/blog-track-updates.webp
 created: September 25, 2024 12:00 PM
@@ -8,7 +11,7 @@ paragraph: Cloud of Worship is a fully browser-based web app, but it also works 
 tag: How-to, Guides
 ---
 
-Cloud of Worship is a fully browser-based web app, but it also works offline. Once you load the app at [app.cloudofworship.com](http://app.cloudofworship.com/), it caches the most recent version on your device, allowing you to access it without an active internet connection.
+Cloud of Worship is a fully browser-based web app, but it also works offline. Once you load the app at [app.cloudofworship.com](https://app.cloudofworship.com/), it caches the most recent version on your device, allowing you to access it without an active internet connection.
 
 ## Installing Cloud of Worship
 

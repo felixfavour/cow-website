@@ -1,5 +1,6 @@
 ---
 title: "Countdown Timers"
+seoTitle: "Church Countdown Timer Slides"
 description: "Create a countdown slide for the congregation or run a private countdown on the stage display. A Teams feature."
 category: "Building Your Service"
 order: 7

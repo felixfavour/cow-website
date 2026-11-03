@@ -15,7 +15,6 @@ updated: April 21, 2026 10:00 AM
 user_title: ""
 ---
 
-#
 
 In many churches, media improvements are often judged from the control room.
 

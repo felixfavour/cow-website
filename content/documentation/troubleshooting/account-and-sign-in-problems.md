@@ -1,5 +1,6 @@
 ---
 title: "Account & Sign-in Problems"
+seoTitle: "Fix Account and Sign-in Problems"
 description: "Email already linked to an account, verification codes not arriving, broken password reset links, and Teams features greyed out."
 category: "Troubleshooting"
 order: 3

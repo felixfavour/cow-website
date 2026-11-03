@@ -69,19 +69,17 @@ const { mergeUtmsIntoUrl } = useUtm()
 const showTestimonialPopup = ref(false)
 useHead({
   title:
-    "Church presentation software where you can work together - Cloud of Worship",
+    "Church Media Team Collaboration Software | Cloud of Worship",
 })
 useSeoMeta({
   title:
-    "Church presentation software where you can work together - Cloud of Worship",
+    "Church Media Team Collaboration Software | Cloud of Worship",
   ogTitle:
-    "Church presentation software where you can work together - Cloud of Worship",
+    "Church Media Team Collaboration Software | Cloud of Worship",
   description:
-    "Work with your team in real-time, wherever you are. Whether you’re adding lyrics, editing slides, or opening scripture.",
+    "Prepare Sunday's slides together in real time from different computers: lyrics, scripture and announcements, with slide locking so nobody overwrites anyone.",
   ogDescription:
-    "Work with your team in real-time, wherever you are. Whether you’re adding lyrics, editing slides, or opening scripture.",
-  keywords:
-    "cloud of worship, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, cloud of worship app, cloud of worship website, cloud of worship software, cloud of worship online, cloud of worship free, cloud of worship download, cloud of worship chrome extension, cloud of worship extension, cloud of worship chrome, easy worship, propresenter, presenter, freeshow, powerpoint, google slides, CoW",
+    "Prepare Sunday's slides together in real time from different computers: lyrics, scripture and announcements, with slide locking so nobody overwrites anyone.",
   ogSiteName: "Cloud of Worship",
   ogUrl: "https://cloudofworship.com/features/team-workflow",
   ogType: "website",

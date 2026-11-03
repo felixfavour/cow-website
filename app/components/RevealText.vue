@@ -102,7 +102,11 @@ const TINT = [138, 65, 201]
 const SMOOTHING = 0.18
 
 const root = ref(null)
-const revealed = ref(false)
+// Text that plays straight away is rendered revealed from the server, so its
+// CSS animation starts on first paint rather than after the page's JavaScript
+// has downloaded and hydrated. On the home page hero that wait was most of a
+// phone's Largest Contentful Paint.
+const revealed = ref(props.immediate && !props.scrub)
 const label = computed(() => props.lines.join(" "))
 
 const parts = computed(() => {

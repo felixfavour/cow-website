@@ -1,5 +1,6 @@
 ---
 title: "The Quick Actions Pane"
+seoTitle: "Quick Actions: Search Everything"
 description: "Every tool in CoW, presented in an easy-to-search format. One search box covers actions, the Bible, your songs, your library and the hymnal."
 category: "The Control Center"
 order: 2
