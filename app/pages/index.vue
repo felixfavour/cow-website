@@ -205,6 +205,11 @@ useHead({
             name: "Cloud of Worship",
             url: SITE_URL,
             logo: `${SITE_URL}/cow-logo-square.jpg`,
+            sameAs: [
+              "https://www.facebook.com/cloudofworshipapp/",
+              "https://www.instagram.com/cloudofworshipapp/",
+              "https://www.youtube.com/@CloudofWorshipApp",
+            ],
           },
           {
             "@type": "WebSite",
