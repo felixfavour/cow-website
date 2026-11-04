@@ -45,6 +45,7 @@ export const OG_CARDS = {
   },
 
   download: { file: "download", eyebrow: "Desktop app", accent: "Download for Windows.", title: "Native projection, NDI output, automatic updates." },
+  openSource: { file: "open-source", eyebrow: "Open source", accent: "Open to every church.", title: "Read the code, change it and run it, free." },
 
   browserReady: { file: "features-browser-ready", eyebrow: "Feature", accent: "No install.", title: "Run your whole service from the browser." },
   offlineFirst: { file: "features-offline-first", eyebrow: "Feature", accent: "Works offline.", title: "Keep presenting when the wifi drops." },

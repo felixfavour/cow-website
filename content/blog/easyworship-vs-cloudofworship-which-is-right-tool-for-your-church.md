@@ -121,7 +121,7 @@ With every update, we’re working toward providing churches with a fully-featur
 | Realtime update | Yes |  |
 | NDI Output | No | Yes |
 | Play External Videos (Youtube, Vimeo) | No | No |
-| Open Source | Yes | No |
+| [Open Source](/open-source) | Yes | No |
 |  |  |  |
 
 

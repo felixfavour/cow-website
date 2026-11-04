@@ -107,6 +107,7 @@ const STATIC_PAGES = [
   { path: '/wall-of-love', changefreq: 'weekly' },
   { path: '/download', changefreq: 'monthly' },
   { path: '/contact', changefreq: 'weekly' },
+  { path: '/open-source', changefreq: 'monthly' },
   { path: '/privacy-policy', changefreq: 'monthly' },
   { path: '/terms-of-service', changefreq: 'monthly' },
   { path: '/features/browser-ready', changefreq: 'weekly' },

@@ -235,6 +235,13 @@ const PAGE_DEFINITIONS = [
       "Testimonials and success stories from churches using Cloud of Worship.",
     file: "app/pages/wall-of-love.vue",
   },
+  {
+    url: `${BASE_URL}/open-source`,
+    title: "Open Source",
+    description:
+      "Cloud of Worship is open source under AGPLv3. Why the code is public, what the license allows, and the Ends of The Earth Initiative.",
+    file: "app/pages/open-source.vue",
+  },
 ]
 
 /**
@@ -283,6 +290,7 @@ ${docsLines}
 - [Blog](${BASE_URL}/blog): Guides, tutorials, comparisons, and updates for church media teams.
 - [Changelog](${BASE_URL}/changelog): Release notes and version history for the Cloud of Worship app.
 - [Wall of Love](${BASE_URL}/wall-of-love): Testimonials and stories from churches using Cloud of Worship.
+- [Open Source](${BASE_URL}/open-source): Why Cloud of Worship's code is public, and what the AGPLv3 license allows.
 - [Contact](${BASE_URL}/contact): Reach the team via WhatsApp community, feature requests, feedback, or email.
 
 ## Blog Posts

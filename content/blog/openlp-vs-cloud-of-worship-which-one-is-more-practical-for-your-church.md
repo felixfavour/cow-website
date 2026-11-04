@@ -49,6 +49,7 @@ Two options often compared are **OpenLP** and **Cloud of Worship**.
 
 - Affordable and flexible pricing
 - Includes support, updates, and reliability
+- Open source too ([see how we build in the open](/open-source))
 
 **The Edge:**
 

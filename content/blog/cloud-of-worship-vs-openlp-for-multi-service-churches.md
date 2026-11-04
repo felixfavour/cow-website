@@ -67,6 +67,7 @@ Cloud of Worship is built for collaborative church teams who need flexible acces
 - **Stage Display and Timing Controls:** For churches managing precise broadcast or service windows, the dedicated stage display includes a countdown timer and a stage clock that can be started, paused, and restarted directly from the desk or a phone. This keeps speakers and worship teams synchronized without distracting the congregation.
 - **Banners and Urgent Alerts:** If a car is blocking the parking lane or a parent is needed in the children's department during the second service, the operator can display an alert banner directly over the live output without interrupting song lyrics or video playback.
 - **Offline Reliability with Phone Control:** The software functions offline once loaded, protecting your service if the sanctuary router drops out. Operators can advance slides using standard keyboard shortcuts, hotkeys, or a connected mobile phone.
+- **Open Source:** Like OpenLP, its code is public, so your team can see exactly what runs on Sunday. [See how we build in the open](/open-source).
 
 ### Weaknesses :span{.as-h4}
 - **Initial Web Connection Needed:** While it operates offline once loaded, opening the workspace and syncing new media from team members requires an initial internet connection before the service begins.

@@ -6,17 +6,27 @@
     <div class="w-full max-w-[1600px] mx-auto px-5 md:px-10 lg:px-16 flex items-center">
       <a href="/" class="logo-ctn flex items-center shrink-0 lg:w-[232px]">
         <img
-          :src="isDark ? '/logo/cloud-of-worship-all-white.png' : '/logo/cow-logo-purple-and-black.png'"
+          :src="
+            isDark
+              ? '/logo/cloud-of-worship-all-white.png'
+              : isPoster
+                ? '/logo/cloud-of-worship-all-black.png'
+                : '/logo/cow-logo-purple-and-black.png'
+          "
           alt="Cloud of Worship"
           width="170"
           height="36"
-          class="h-[30px] md:h-[36px] w-auto"
+          class="h-[36px] md:h-[44px] w-auto"
         />
       </a>
       <ul
         :class="[
           { 'is-open': isMenuOpen },
-          isDark ? 'bg-[#101010] text-[#B7B7B7]' : 'bg-white text-gray-600',
+          isDark
+            ? 'bg-[#101010] text-[#B7B7B7]'
+            : isPoster
+              ? 'bg-[#A855F7] text-[#0C0F19]'
+              : 'bg-white text-gray-600',
         ]"
         :style="{ '--count': rowCount }"
         class="nav-actions fixed inset-0 top-[60px] md:top-[76px] overflow-y-auto px-5 md:px-10 pt-8 pb-10 text-lg flex flex-col gap-5 lg:static lg:overflow-visible lg:bg-transparent lg:p-0 lg:flex-row lg:items-center lg:gap-3 lg:text-[16px]"
@@ -52,7 +62,7 @@
           </div>
         </li>
         <li class="nav-item menu-row lg:hidden pt-2" :style="{ '--i': rowCount - 1 }">
-          <a :href="signupUrl" class="pill-btn w-full">Get started for free</a>
+          <a :href="signupUrl" class="pill-btn w-full" :class="{ 'pill-btn-dark': isPoster }">Get started for free</a>
         </li>
       </ul>
       <div class="ml-auto flex items-center gap-3">
@@ -63,13 +73,19 @@
           aria-label="Cloud of Worship on GitHub"
           title="Cloud of Worship on GitHub"
           class="grid place-items-center w-[40px] h-[40px] mt-1 lg:mt-0 rounded-full transition-colors"
-          :class="isDark ? 'text-white/80 hover:text-white hover:bg-white/10' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'"
+          :class="
+            isDark
+              ? 'text-white/80 hover:text-white hover:bg-white/10'
+              : isPoster
+                ? 'text-[#0C0F19] hover:bg-[#0C0F19]/10'
+                : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
+          "
         >
           <GithubIcon class="w-[26px] h-[26px]" aria-hidden="true" />
         </a>
         <!-- .pill-btn sets display itself, so the wrapper does the hiding -->
         <div class="hidden lg:block">
-          <a :href="signupUrl" class="pill-btn">Get started for free</a>
+          <a :href="signupUrl" class="pill-btn" :class="{ 'pill-btn-dark': isPoster }">Get started for free</a>
         </div>
         <button
           class="menu-btn w-[45px] h-[45px] mt-1 lg:hidden"
@@ -144,7 +160,21 @@ const rowCount = rowIndex + 1
 const navTheme = useState("navTheme", () => "dark")
 const isDark = computed(() => route.path === "/" && navTheme.value !== "light")
 
+// Pages that open on a brand-purple poster (the open source page). The bar
+// starts see-through there, with ink links and the black logo. The route sets
+// the starting state, so the server draws it the same way; the page then sets
+// navPoster to true or false as its purple sections pass under the bar.
+const POSTER_ROUTES = ["/open-source"]
+const navPoster = useState("navPoster", () => null)
+const isPoster = computed(
+  () => !isDark.value && (navPoster.value ?? POSTER_ROUTES.includes(route.path))
+)
+
 const barClass = computed(() => {
+  if (isPoster.value) {
+    if (isMenuOpen.value && window.innerWidth < 1024) return "bg-[#A855F7]"
+    return isScrolled.value ? "bg-[#A855F7]/85 backdrop-blur-md" : "bg-transparent"
+  }
   if (!isDark.value) return "bg-white"
   if (isMenuOpen.value && window.innerWidth < 1024) return "bg-[#101010]"
   return isScrolled.value ? "bg-[#101010]/85 backdrop-blur-md" : "bg-transparent"
@@ -152,6 +182,7 @@ const barClass = computed(() => {
 
 const linkClass = (active) => {
   if (isDark.value) return active ? "text-white" : "hover:text-white"
+  if (isPoster.value) return active ? "text-[#0C0F19] font-semibold" : "text-[#0C0F19]"
   return active ? "text-[var(--primary-color)] font-semibold" : "hover:text-gray-900"
 }
 

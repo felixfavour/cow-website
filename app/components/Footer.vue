@@ -100,6 +100,7 @@ const groups = [
         external: true,
       },
       { label: "What’s New!", href: "/changelog" },
+      { label: "Open Source", href: "/open-source" },
     ],
   },
   {

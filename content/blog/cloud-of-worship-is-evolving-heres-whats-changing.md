@@ -91,4 +91,4 @@ Experience Cloud of Worship the way it was designed to be **smooth, powerful, an
 
 ### Ends of The Earth Initiative
 
-90% of profits from Teams plan sales go directly to efforts pushing the gospel forward in churches across Africa and other regions. Your subscription helps equip ministries with the tools they need to spread the good news.
+90% of profits from Teams plan sales go directly to efforts pushing the gospel forward in churches across Africa and other regions. Your subscription helps equip ministries with the tools they need to spread the good news. Read more, and why our code is open, on our [open source page](/open-source).
