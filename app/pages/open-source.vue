@@ -322,8 +322,9 @@ const description =
   "Cloud of Worship is open source under AGPLv3. Read the code, change it and run it, free. Here is why we build in the open."
 
 useSeoMeta({
-  title: "Open source - Cloud of Worship",
-  ogTitle: "Open source - Cloud of Worship",
+  title: "Cloud of Worship is open source.",
+  ogTitle: "Cloud of Worship is open source.",
+  twitterTitle: "Cloud of Worship is open source.",
   description,
   ogDescription: description,
   twitterDescription: description,
