@@ -17,6 +17,24 @@
           class="relative mx-auto max-w-[1600px] px-5 md:px-10 lg:px-16 h-full flex flex-col justify-end pb-[clamp(56px,15.5vh,140px)] pointer-events-none"
         >
           <div ref="heroText" class="w-fit pointer-events-auto">
+            <div class="exit-slot -mx-2 -mt-1 mb-[14px] px-2 py-1">
+              <a
+                ref="badge"
+                :href="trustpilot.url"
+                target="_blank"
+                rel="noopener"
+                class="hero-badge"
+              >
+                <svg class="badge-star" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2.5l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.7l7.1-.6z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span class="badge-text">Top-rated open source tool · {{ trustpilot.rating.toFixed(1) }} on Trustpilot</span>
+                <PhCaretRight class="badge-arrow" weight="bold" aria-hidden="true" />
+              </a>
+            </div>
             <RevealText
               ref="heading"
               as="h1"
@@ -107,7 +125,9 @@
 </template>
 
 <script setup>
+import { PhCaretRight } from "@phosphor-icons/vue"
 import pricing from "~/data/pricing.json"
+import { trustpilot } from "~/data/trustpilot"
 const { mergeUtmsIntoUrl } = useUtm()
 const heroText = ref(null)
 const stage = ref(null)
@@ -129,6 +149,7 @@ const textSettled = ref(false)
 const TEXT_MS = 1900 // when the text reads as settled
 let textTimer = 0
 
+const badge = ref(null)
 const heading = ref(null)
 const subtext = ref(null)
 const cta = ref(null)
@@ -165,7 +186,7 @@ const update = () => {
   const travel = el.offsetHeight - window.innerHeight
   progress.value = clamp01(-rect.top / travel)
 
-  const items = [...lines, subtext.value, cta.value]
+  const items = [badge.value, ...lines, subtext.value, cta.value]
   items.forEach((item, i) => {
     if (!item) return
     const t = clamp01((progress.value - EXIT_START - i * EXIT_STAGGER) / EXIT_LENGTH)
@@ -325,6 +346,148 @@ onBeforeUnmount(() => {
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-cta {
+    animation: none;
+  }
+}
+
+/* The Trustpilot badge over the headline: a dark glossy pill whose border
+   carries a light sweeping round it, with a shine passing over the text. The
+   arrow slides in on hover. */
+@property --badge-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.hero-badge {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  color: #fff;
+  background: linear-gradient(180deg, #1d1d21 0%, #0c0c0e 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.6),
+    0 10px 28px -12px rgba(0, 0, 0, 0.9);
+  transition: box-shadow 0.3s ease;
+}
+@media (min-width: 768px) {
+  .hero-badge {
+    font-size: 13px;
+  }
+}
+/* The border: a faint ring with one bright arc travelling round it. */
+.hero-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  padding: 1px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--badge-angle),
+    rgba(255, 255, 255, 0.12) 0deg,
+    rgba(255, 255, 255, 0.12) 230deg,
+    rgba(192, 132, 252, 0.7) 290deg,
+    #ffffff 318deg,
+    rgba(255, 255, 255, 0.12) 350deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  animation: badge-spin 5s linear infinite;
+}
+/* The gloss: light catching the top half of the pill. */
+.hero-badge::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0) 55%);
+  pointer-events: none;
+}
+.hero-badge:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 10px 32px -10px rgba(139, 92, 246, 0.45);
+}
+.badge-star {
+  width: 13px;
+  height: 13px;
+  flex: none;
+  color: #00b67a;
+}
+.badge-text {
+  background: linear-gradient(110deg, #a1a1aa 40%, #ffffff 50%, #a1a1aa 60%);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: badge-shine 5s linear infinite;
+}
+.badge-arrow {
+  width: 0;
+  height: 13px;
+  flex: none;
+  margin-left: -8px;
+  opacity: 0;
+  color: #fff;
+  transform: translateX(-4px);
+  transition:
+    width 0.25s ease,
+    margin 0.25s ease,
+    opacity 0.2s ease,
+    transform 0.25s ease;
+}
+.hero-badge:hover .badge-arrow,
+.hero-badge:focus-visible .badge-arrow {
+  width: 13px;
+  margin-left: 0;
+  opacity: 1;
+  transform: none;
+}
+@keyframes badge-spin {
+  to {
+    --badge-angle: 360deg;
+  }
+}
+/* The shine crosses in the first half, then rests off the right edge. */
+@keyframes badge-shine {
+  0% {
+    background-position: 100% 0;
+  }
+  50%,
+  100% {
+    background-position: 0% 0;
+  }
+}
+/* Fades in with the headline, once the page is live. */
+.hero:not(.mounted) .hero-badge {
+  opacity: 0;
+}
+.hero.mounted .hero-badge {
+  animation: fade-in 0.6s ease-out 0.1s backwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-badge::before,
+  .badge-text,
+  .hero.mounted .hero-badge {
     animation: none;
   }
 }
