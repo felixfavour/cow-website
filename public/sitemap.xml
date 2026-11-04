@@ -27,6 +27,10 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://cloudofworship.com/open-source</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://cloudofworship.com/privacy-policy</loc>
     <changefreq>monthly</changefreq>
   </url>
