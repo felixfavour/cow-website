@@ -1,5 +1,19 @@
 [
   {
+    "version": "v1.4.6",
+    "title": "Version Kindness",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 4, 2026",
+    "description": "Reconnect transcription after a dropped connection",
+    "changes": [
+      "Reconnect transcription after a dropped connection",
+      "Report deployments on hosts we don't run",
+      "Relicense under PolyForm Shield 1.0.0 with trademark notice",
+      "Undo/redo stack rebuilt from ground up",
+      "Livestream and live updates reconnection stability"
+    ]
+  },
+  {
     "version": "v1.4.5",
     "title": "Version Temperance",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
