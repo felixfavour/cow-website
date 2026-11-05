@@ -6,19 +6,18 @@ author: Favour Felix
 author_img: /images/author/favour.jpg
 cover: /images/blog/blog-app-comparison.webp
 created: "November 05, 2026 9:00 AM"
-updated: "November 05, 2026 9:00 AM"
+updated: "November 05, 2026 3:00 PM"
 description: "Looking for open source church presentation software? We compare OpenLP, FreeShow, Quelea, OpenSong and Cloud of Worship on features, platforms, licenses and the kind of church each one suits best."
 paragraph: "Looking for open source church presentation software? We compare OpenLP, FreeShow, Quelea, OpenSong and Cloud of Worship on features, platforms, licenses and the kind of church each one suits best."
 tag: "Guides, Comparisons"
 read_time: "9 min read"
-docs: /docs/getting-started/what-is-cloud-of-worship
 ---
 
 Most churches don't go looking for **open source church presentation software** because they care about licenses. They go looking because the budget is tight, the media laptop is old, and they need lyrics and Bible verses on the screen by Sunday.
 
 Open source tools answer that need well. They cost nothing, they don't lock your songs inside a company's format, and when something breaks there is usually a community of other church volunteers who have hit the same problem.
 
-This guide walks through the best open source and source-available options for churches in 2026. We build one of them, Cloud of Worship, so we'll be upfront about where it fits and where another tool may serve you better. Every project on this list is doing good work for the Church, and the right choice depends on your team, your hardware and your services.
+This guide walks through the best open source options for churches in 2026. We build one of them, Cloud of Worship, so we'll be upfront about where it fits and where another tool may serve you better. Every project on this list is doing good work for the Church, and the right choice depends on your team, your hardware and your services.
 
 ## Quick answer :span{.as-h3}
 
@@ -45,7 +44,7 @@ Keep these questions in mind as you read the list below.
 ## 1. Cloud of Worship :span{.as-h3}
 
 **Platforms:** Any modern browser (Windows, macOS, Linux, ChromeOS), plus a desktop app for Windows
-**License:** Source available on [GitHub](https://github.com/CoW-Labs/cloudofworship). Free to read, change and run for your own church or ministry
+**License:** GNU AGPL v3, code on [GitHub](https://github.com/CoW-Labs/cloudofworship)
 **Price:** Free plan for one operator. Teams plan for collaboration
 
 [Cloud of Worship](https://app.cloudofworship.com/) is a church presentation app that runs in your browser. There is nothing to install: sign in, build your schedule and open the live display on your projector or second screen. A Windows desktop app is there for churches that prefer one, and it adds [NDI output](/docs/going-live/ndi-output) for livestream switchers.
@@ -68,7 +67,7 @@ We started building it because many of the churches we serve, especially across 
 - The desktop app is Windows only for now. Mac and Linux users run it in the browser.
 - Real-time collaboration and the shared song library need an internet connection while you prepare.
 
-**A note on the license:** our code is public. You can read it, change it and run it for your own church for free. The license stops someone repackaging Cloud of Worship as a competing product, so strictly speaking it is *source available* rather than open source in the OSI sense. We think that's the honest way to describe it. You can read more about why we build in the open on our [open source page](/open-source).
+**A note on the license:** Cloud of Worship is open source under the GNU AGPL v3. You can read the code, change it and run it for your church for free. If you change it and offer it to others over a network, the AGPL asks you to share your changes too, so improvements come back to every church. The Cloud of Worship name and logo aren't covered by the license. Read more about why we build in the open on our [open source page](/open-source).
 
 **Best for:** churches with a few people preparing services, churches on older or mixed hardware, and multilingual congregations.
 
@@ -165,7 +164,7 @@ OpenSong was one of the pioneers of free worship software, and its song format i
 | **Phone or tablet remote** | ✅ (Teams) | ✅ | ✅ | ✅ |
 | **NDI output** | ✅ (desktop) | — | ✅ | — |
 | **Voice commands and transcription** | ✅ | — | — | — |
-| **License** | Source available | GPL v2 | GPL v3 | GPL v3 |
+| **License** | AGPL v3 | GPL v2 | GPL v3 | GPL v3 |
 | **Cost** | Free plan, paid Teams | Free | Free | Free |
 
 OpenSong is left out of the table because it is no longer under active development. Feature sets change quickly, so check each project's site for the latest before you decide.
@@ -175,10 +174,9 @@ OpenSong is left out of the table because it is no longer under active developme
 "Free" and "open source" often get used as if they mean the same thing. They don't.
 
 - **Free software** costs nothing to download. Tools like VideoPsalm are free but closed, so you can't see or change how they work.
-- **Open source software** publishes its code under a license that lets anyone use, change and share it. OpenLP, FreeShow, Quelea and OpenSong fall here.
-- **Source available software** publishes its code so you can read, change and run it, but limits some uses, such as selling it as a rival product. Cloud of Worship falls here.
+- **Open source software** publishes its code under a license that lets anyone use, change and share it. Cloud of Worship, OpenLP, FreeShow, Quelea and OpenSong all fall here.
 
-For most churches the practical benefits are the same across the last two: you are not locked in, you can see exactly what the software does with your data, and a tech-minded volunteer can fix or improve it.
+For a church, the practical benefits of open source are real: you are not locked in, you can see exactly what the software does with your data, and a tech-minded volunteer can fix or improve it.
 
 If you want to compare closed, paid tools as well, see our guides on [ProPresenter](/blog/propresenter-vs-cloud-of-worship-which-one-fits-your-church-better), [EasyWorship](/blog/cloud-of-worship-vs-easyworship-which-one-works-better-for-your-church) and [Proclaim](/blog/proclaim-vs-cloud-of-worship-which-one-is-better-for-your-church-team-copy).
 
@@ -196,7 +194,7 @@ The best way to decide is to try two of them on your own hardware with last Sund
 
 ### What is the best free open source church presentation software? :span{.as-h4}
 
-For a fully free, fully open source desktop tool, OpenLP and FreeShow are the strongest choices in 2026. If you want something that runs in the browser on any computer, with team preparation and a built-in hymn and song library, Cloud of Worship offers a free plan and publishes its code on GitHub.
+For a fully free, fully open source desktop tool, OpenLP and FreeShow are the strongest choices in 2026. If you want something that runs in the browser on any computer, with team preparation and a built-in hymn and song library, Cloud of Worship is open source under the AGPL v3 and has a free plan.
 
 ### Is there an open source alternative to ProPresenter? :span{.as-h4}
 
