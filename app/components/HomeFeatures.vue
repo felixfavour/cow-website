@@ -162,12 +162,12 @@
 // button beside the dots pauses and resumes the video.
 
 // Recordings stream from the media bucket (R2 `cow-media`, under
-// open/website/features/) as <key>.mp4: 1600px wide, 30fps, no audio, cached
+// open/website/features/) as <key>.mp4: 1600px wide, 30fps (bibles is 60fps), no audio, cached
 // for a year. Re-uploading one under the same name needs VIDEO_VERSION bumped
 // so browsers and the edge fetch it again. Each has a <key>.webp poster from
 // its first frame in public/features/posters/, so it shows before the video
 // loads.
-const VIDEO_VERSION = 2
+const VIDEO_VERSION = 3
 const videoUrl = (key) => `https://media.cloudofworship.com/open/website/features/${key}.mp4?v=${VIDEO_VERSION}`
 const posterUrl = (key) => `/features/posters/${key}.webp`
 
@@ -178,7 +178,7 @@ const tabs = [
     title: ["Put scripture on", "screen in seconds"],
     video: videoUrl("bibles"),
     poster: posterUrl("bibles"),
-    alt: "Typing John 3 16 into Quick Actions in Cloud of Worship to put the verse on screen, then switching to Romans 8:28 from the editor's Scripture picker",
+    alt: "Typing John 3 16 into Quick Actions in Cloud of Worship to put the verse on screen, then typing rom 8 28 into the editor's verse field to switch to Romans 8:28",
   },
   {
     key: "songs",
