@@ -169,6 +169,8 @@
 // loads.
 const VIDEO_VERSION = 1
 const videoUrl = (key) => `https://media.cloudofworship.com/open/website/features/${key}.mp4?v=${VIDEO_VERSION}`
+// Replacement recordings live under open/marketing/ and are used as-is.
+const marketingVideoUrl = (key) => `https://media.cloudofworship.com/open/marketing/${key}.mp4`
 const posterUrl = (key) => `/features/posters/${key}.webp`
 
 const tabs = [
@@ -176,7 +178,7 @@ const tabs = [
     key: "bibles",
     label: "Bibles",
     title: ["Put scripture on", "screen in seconds"],
-    video: videoUrl("bibles"),
+    video: marketingVideoUrl("bibles"),
     poster: posterUrl("bibles"),
     alt: "Searching the Bible in Cloud of Worship and putting a verse on screen",
   },
@@ -184,7 +186,7 @@ const tabs = [
     key: "songs",
     label: "Songs & Hymns",
     title: ["Find any song or hymn,", "typos and all"],
-    video: videoUrl("songs-hymns"),
+    video: marketingVideoUrl("songs-hymns"),
     poster: posterUrl("songs-hymns"),
     alt: "Searching for a song with a typo in Cloud of Worship and adding it to the service",
   },
@@ -192,7 +194,7 @@ const tabs = [
     key: "offline",
     label: "Browser-first (offline)",
     title: ["Keeps going when", "the Wi-Fi doesn't"],
-    video: videoUrl("offline"),
+    video: marketingVideoUrl("offline"),
     poster: posterUrl("offline"),
     alt: "Cloud of Worship staying live after the Wi-Fi is turned off, saving work until it returns",
   },
@@ -200,15 +202,15 @@ const tabs = [
     key: "team",
     label: "Team workflow",
     title: ["Plan Sunday's", "service together"],
-    // TODO: no recording yet; shows the Songs & Hymns screenshot until team.mp4 exists.
-    image: "/features/songs-hymns.webp",
+    video: marketingVideoUrl("team"),
+    poster: "/features/songs-hymns.webp",
     alt: "Inviting team members to work on the same service in Cloud of Worship",
   },
   {
     key: "transcription",
     label: "Transcription",
     title: ["Say the verse,", "see it on screen"],
-    video: videoUrl("transcription"),
+    video: marketingVideoUrl("transcription"),
     poster: posterUrl("transcription"),
     alt: "Cloud of Worship hearing a Bible reference in the sermon and putting the verse on screen",
   },
