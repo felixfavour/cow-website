@@ -169,8 +169,8 @@
 // loads.
 const VIDEO_VERSION = 1
 const videoUrl = (key) => `https://media.cloudofworship.com/open/website/features/${key}.mp4?v=${VIDEO_VERSION}`
-// Replacement recordings live under open/marketing/ and are used as-is.
-const marketingVideoUrl = (key) => `https://media.cloudofworship.com/open/marketing/${key}.mp4`
+// Replacement recordings live under open/marketing/ as landscape-<key>.mp4.
+const marketingVideoUrl = (key) => `https://media.cloudofworship.com/open/marketing/landscape-${key}.mp4`
 const posterUrl = (key) => `/features/posters/${key}.webp`
 
 const tabs = [
