@@ -167,7 +167,7 @@
 // so browsers and the edge fetch it again. Each has a <key>.webp poster from
 // its first frame in public/features/posters/, so it shows before the video
 // loads.
-const VIDEO_VERSION = 1
+const VIDEO_VERSION = 2
 const videoUrl = (key) => `https://media.cloudofworship.com/open/website/features/${key}.mp4?v=${VIDEO_VERSION}`
 const posterUrl = (key) => `/features/posters/${key}.webp`
 
@@ -178,7 +178,7 @@ const tabs = [
     title: ["Put scripture on", "screen in seconds"],
     video: videoUrl("bibles"),
     poster: posterUrl("bibles"),
-    alt: "Searching the Bible in Cloud of Worship and putting a verse on screen",
+    alt: "Typing John 3 16 into Quick Actions in Cloud of Worship to put the verse on screen, then switching to Romans 8:28 from the editor's Scripture picker",
   },
   {
     key: "songs",
