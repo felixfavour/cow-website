@@ -1,5 +1,23 @@
 [
   {
+    "version": "v1.4.8",
+    "title": "Version Wisdom",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 8, 2026",
+    "description": "Fix avatar ping overlap, toast padding and fix alert limit at 30",
+    "changes": [
+      "Fix avatar ping overlap, toast padding and fix alert limit at 30",
+      "Add notification sounds setting for teammate chime",
+      "Re-identify PostHog user when sign-in or plan changes",
+      "Stop repeat slide deliveries from toasting twice",
+      "Add transcription benchmark scripts, document PostHog events, update Discord link",
+      "Add copy-line button to transcripts and BETA tag on Transcribe",
+      "Persist media video slide settings without overwriting the upload fields",
+      "Chime and toast when teammates pair slides or add setlist songs",
+      "Fall back to default transition interval when synced value is out of range"
+    ]
+  },
+  {
     "version": "v1.4.7",
     "title": "Version Discernment",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
