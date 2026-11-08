@@ -1,5 +1,20 @@
 [
   {
+    "version": "v1.4.7",
+    "title": "Version Discernment",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 6, 2026",
+    "description": "Let the Live Output preview video follow the projector's playback",
+    "changes": [
+      "Let the Live Output preview video follow the projector's playback",
+      "Raise slide padding limit to 200 on every side",
+      "Stop tracking internal notes and unused hymns asset",
+      "Update README.md",
+      "Update readme",
+      "Relicense under AGPL-3.0-only"
+    ]
+  },
+  {
     "version": "v1.4.6",
     "title": "Version Kindness",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
