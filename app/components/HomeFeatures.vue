@@ -218,7 +218,7 @@ const tabs = [
     key: "livestream",
     label: "Livestream",
     title: ["Your camera and slides,", "in one stream"],
-    video: videoUrl("livestream"),
+    video: "https://media.cloudofworship.com/open/marketing/camera-pairs.mp4",
     poster: posterUrl("livestream"),
     alt: "Pairing a camera with scripture slides for the livestream in Cloud of Worship",
   },
