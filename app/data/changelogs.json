@@ -1,5 +1,16 @@
 [
   {
+    "version": "v1.4.9",
+    "title": "Version Humility",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 8, 2026",
+    "description": "Share a camera between teammates' computers over WebRTC",
+    "changes": [
+      "Share a camera between teammates' computers over WebRTC",
+      "Open live output on newly plugged displays, explain blocked display access, fix advert links without a scheme"
+    ]
+  },
+  {
     "version": "v1.4.8",
     "title": "Version Wisdom",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
