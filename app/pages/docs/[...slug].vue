@@ -27,7 +27,7 @@
               {{ i + 1 }}
             </span>
             <div class="min-w-0 flex-1">
-              <h2 class="text-lg font-bold text-gray-800 group-hover:text-purple-700 transition-colors leading-snug mb-1">
+              <h2 class="text-2xl font-bold text-gray-800 group-hover:text-purple-700 transition-colors leading-snug mb-1">
                 {{ a.title }}
               </h2>
               <p class="text-sm text-gray-500 leading-relaxed">{{ a.description }}</p>
@@ -222,16 +222,16 @@ if (!category.value && !doc.value) {
 <style>
 /* Help Center article prose. Overrides the generic `article` styles in main.css. */
 .doc-article h2 {
-  font-size: 1.6rem;
-  line-height: 1.25;
+  font-size: 2.5rem;
+  line-height: 1.05;
   font-weight: 800;
   margin: 2.75rem 0 0.85rem;
   color: #111827;
   scroll-margin-top: 7rem;
 }
 .doc-article h3 {
-  font-size: 1.2rem;
-  line-height: 1.3;
+  font-size: 1.85rem;
+  line-height: 1.1;
   font-weight: 700;
   margin: 2rem 0 0.6rem;
   color: #1f2937;

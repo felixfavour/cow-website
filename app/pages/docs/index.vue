@@ -39,7 +39,7 @@
     <div class="inner !max-w-[1400px] pt-14 md:pt-20">
       <div class="flex items-end justify-between gap-4 mb-7">
         <div>
-          <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Browse by topic</h2>
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Browse by topic</h2>
           <p class="text-gray-500 mt-1">Everything in the Help Center, grouped by what you're trying to do.</p>
         </div>
         <span class="hidden sm:block text-sm text-gray-500 shrink-0">{{ articles.length }} articles</span>
@@ -56,7 +56,7 @@
               <DocIcon :name="cat.icon" :size="26" />
             </div>
             <div class="min-w-0">
-              <h3 class="text-lg font-bold text-gray-900 leading-tight">
+              <h3 class="text-2xl font-bold text-gray-900 leading-tight">
                 <a :href="cat.path" class="hover:text-purple-700 transition-colors">
                   <span class="absolute inset-0 rounded-3xl" aria-hidden="true" />
                   {{ cat.title }}
@@ -96,7 +96,7 @@
     <!-- POPULAR ARTICLES + QUICK REFERENCE -->
     <div class="inner !max-w-[1400px] pt-14 md:pt-20 grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-10 lg:gap-14">
       <section>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-1">Popular articles</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-1">Popular articles</h2>
         <p class="text-gray-500 mb-6">The guides worship teams open most often.</p>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
           <li v-for="a in featured" :key="a.path" class="border-b border-gray-100">
@@ -114,7 +114,7 @@
       </section>
 
       <section>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-1">Quick reference</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-1">Quick reference</h2>
         <p class="text-gray-500 mb-6">Handy pages to keep open on a Sunday.</p>
         <ul class="space-y-3">
           <li v-for="q in quickReference" :key="q.href">
@@ -142,7 +142,7 @@
     <div class="inner !max-w-[1400px] pt-14 md:pt-20 pb-6 md:pb-10">
       <div class="rounded-[28px] md:rounded-[32px] bg-[#FFE9E8] p-8 md:p-12 flex flex-col lg:flex-row lg:items-center gap-8 justify-between">
         <div class="max-w-[560px]">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
             Still need help?
           </h2>
           <p class="text-gray-600 leading-relaxed">

@@ -11,7 +11,7 @@
       </div>
       <div class="col">
         <div class="header flex flex-row gap-4 items-center">
-          <h4 class="text-xl lg:text-2xl font-bold">{{ title }}</h4>
+          <h4 class="text-2xl lg:text-3xl font-bold">{{ title }}</h4>
           <div
             v-if="latest"
             class="bg-purple-800 text-white p-1 px-3 rounded-2xl"

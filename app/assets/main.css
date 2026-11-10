@@ -246,7 +246,7 @@ article h1 a {
 }
 article h2,
 article h2 a {
-  font-size: 2.2rem;
+  font-size: 3rem;
   margin-top: 5%;
   margin-bottom: 1rem;
   font-weight: 800;
@@ -258,7 +258,7 @@ article h2 a {
 }
 article h3,
 article h3 a {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   line-height: 100%;
   margin-bottom: 1rem;
   margin-top: 1.2rem;
@@ -286,15 +286,15 @@ article h6 a {
 }
 article h4,
 article h4 a {
-  font-size: 1.4rem;
+  font-size: 1.75rem;
 }
 article h5,
 article h5 a {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 article h6,
 article h6 a {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 article h4,
 article h5,

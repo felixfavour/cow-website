@@ -47,7 +47,7 @@
       <!-- ALL BLOGS -->
       <div class="inner py-[10%] md:py-[5%]">
         <div class="flex mb-[2%]">
-          <h2 class="text-2xl lg:text-3xl font-bold group-hover:underline">
+          <h2 class="text-3xl lg:text-4xl font-bold group-hover:underline">
             All resources, guides and more
           </h2>
         </div>

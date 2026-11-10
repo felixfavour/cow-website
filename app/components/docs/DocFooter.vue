@@ -61,7 +61,7 @@
 
     <!-- Related -->
     <section v-if="related && related.length" class="mt-10">
-      <h2 class="text-lg font-bold text-gray-800 mb-3">Related articles</h2>
+      <h2 class="text-2xl font-bold text-gray-800 mb-3">Related articles</h2>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <li v-for="a in related" :key="a.path">
           <a

@@ -21,7 +21,7 @@
       </div>
       <div class="blog-card-title">
         <h2
-          class="text-xl leading-[115%] md:text-2xl font-bold group-hover:underline mb-2"
+          class="text-2xl leading-[115%] md:text-3xl font-bold group-hover:underline mb-2"
         >
           {{ blog?.title }}
         </h2>

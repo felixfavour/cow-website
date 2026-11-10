@@ -200,13 +200,15 @@ h6 {
 }
 
 main h2 {
-  font-size: 160%;
-  line-height: 250%;
+  font-size: 250%;
+  line-height: 120%;
+  margin-bottom: 1%;
   margin-top: 3%;
 }
 
 main h3 {
-  font-size: 135%;
+  font-size: 190%;
+  line-height: 120%;
   margin-bottom: 2%;
   /* margin-top: 3.5%; */
 }

@@ -20,7 +20,7 @@
             ></path>
           </svg>
           <div>
-            <h4 class="font-bold text-purple-900 mb-1">
+            <h4 class="text-xl font-bold text-purple-900 mb-1">
               Ends of The Earth Initiative
             </h4>
             <p class="text-sm text-gray-700">
@@ -128,7 +128,7 @@
               </div>
 
               <div :class="['mb-6', plan.highlighted ? 'mt-6' : '']">
-                <h2 class="text-2xl font-bold text-purple-900 mb-2">
+                <h2 class="text-3xl font-bold text-purple-900 mb-2">
                   {{ plan.name }}
                 </h2>
                 <p class="text-gray-600">
@@ -260,7 +260,7 @@
           d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         ></path>
       </svg>
-      <h2 class="text-xl font-bold text-gray-900 mb-2">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">
         Unable to load pricing
       </h2>
       <p class="text-red-600 mb-4">{{ error.message || error }}</p>
