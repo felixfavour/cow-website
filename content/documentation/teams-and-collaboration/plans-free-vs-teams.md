@@ -4,7 +4,7 @@ seoTitle: "Free vs Teams Plan Comparison"
 description: "What's included on the Free plan, what Teams unlocks, and how your plan is tied to your church."
 category: "Teams & Collaboration"
 order: 3
-lastUpdated: "2026-10-25"
+lastUpdated: "2026-11-11"
 ---
 
 | | Free | Teams |
@@ -23,6 +23,7 @@ lastUpdated: "2026-10-25"
 | **Time slides** | — | ✅ |
 | **Interlude slides** | — | ✅ |
 | **Slide pairs** | — | ✅ |
+| **Using a teammate's camera** | — | ✅ |
 | **YouTube / Vimeo embeds** | — | ✅ |
 | **Sermon transcription** | 10 minutes, once | 3 hours a week, unused minutes roll over a week |
 | **Inviting teammates** | — | ✅ |

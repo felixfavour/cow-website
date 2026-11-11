@@ -4,7 +4,7 @@ seoTitle: "Edit Slides Together as a Team"
 description: "CoW is real-time collaborative. Invite teammates, see what syncs live, and understand slide locking."
 category: "Teams & Collaboration"
 order: 1
-lastUpdated: "2026-10-31"
+lastUpdated: "2026-11-11"
 featured: true
 ---
 
@@ -31,7 +31,7 @@ Invitees land on the [dedicated join page](/docs/getting-started/joining-an-exis
 - Online presence: who else is in the workspace
 - Alerts and overlays
 
-When a teammate adds or deletes slides, you get a short notice naming them, for example *"Amazing Grace" and "John 3:16"* or *"Amazing Grace" and 4 other slides*, so you can see what changed without hunting for it.
+When a teammate adds or deletes slides, you get a short notice naming them, for example *"Amazing Grace" and "John 3:16"* or *"Amazing Grace" and 4 other slides*, so you can see what changed without hunting for it. A soft chime plays too, and also when a teammate pairs slides or adds songs to a setlist. Turn it off with **Notification sounds** in **Settings → Other Settings**.
 
 ## What does not sync: the live output
 

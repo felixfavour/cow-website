@@ -4,7 +4,7 @@ seoTitle: "Edit Slide Fonts, Size & Layout"
 description: "Change the font, size, lines per slide and background of a single slide, even while it's live."
 category: "Building Your Service"
 order: 12
-lastUpdated: "2026-10-25"
+lastUpdated: "2026-11-11"
 ---
 
 Select a slide in the Preview and Edit Content Pane:
@@ -28,6 +28,10 @@ Style changes here apply to **this slide only**. To change how *future* slides l
 ::callout{type="important" title="You can edit a slide while it is live"}
 Changes appear on the Live Display as you make them.
 ::
+
+## Previewing video
+
+While a video file or a YouTube or Vimeo link isn't live, the editor plays a silent preview of it. One preview plays at a time, and it stops when you go live. Once it's live, the play and pause buttons follow what the projector is really playing.
 
 ## Report an issue
 

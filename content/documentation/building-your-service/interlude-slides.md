@@ -4,7 +4,7 @@ seoTitle: "Welcome & Offering Break Screens"
 description: "An animated break screen with a heading and sub text, for welcomes, offering, announcements and pauses in the service. A Teams feature."
 category: "Building Your Service"
 order: 8
-lastUpdated: "2026-10-25"
+lastUpdated: "2026-11-11"
 ---
 
 *Teams feature.* On the Free plan you can open the panel and try every animation. The upgrade prompt appears when you create the slide.
@@ -43,6 +43,14 @@ The heading in **Rolling Stone** rolls across the screen in big purple type, row
 - **Animation default** lets each animation decide.
 - **Always on** keeps the text readable on busy animations or bright projectors.
 - **Off** shows the text straight on the animation.
+
+## Colour, size and speed
+
+Each animation can be tuned to match your service. In the form, and in the **Style** tab of the editor's background panel, you can:
+
+- Tint the animation from a single **colour**. **Reset** goes back to the animation's own colours.
+- Hold it to a **Light / dark** tone.
+- Change its **Size** and **Speed**.
 
 ## Changing an interlude later
 

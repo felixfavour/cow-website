@@ -4,7 +4,7 @@ seoTitle: "Settings Reference"
 description: "All ten settings sections: profile, subscription, display, microphone, slides, backgrounds, blank screen, Bible versions, storage and other."
 category: "Settings, Shortcuts & Offline"
 order: 2
-lastUpdated: "2026-10-25"
+lastUpdated: "2026-11-11"
 ---
 
 Open settings with **Cmd/Ctrl + ,**, the avatar menu, or the **Open App Settings** quick action. Ten sections:
@@ -19,7 +19,7 @@ Your profile and, for admins, your church's details.
 Your plan, subscription status, **Cancel Subscription** and **Billing History** are in Subscription Settings.
 
 ## Subscription Settings
-Your plan, billing and payment method. If a payment has failed, a banner offers **Retry payment** and **Update payment method**. See [Plans](/docs/teams-and-collaboration/plans-free-vs-teams#if-a-payment-fails). The default **Look and Feel** for new slides: **Default font**, **Default font size** (50–150%), **Default slide alignment**, **Uppercase text**, **Outlined text**, **Bold text**.
+Your plan, billing and payment method. If a payment has failed, a banner offers **Retry payment** and **Update payment method**. See [Plans](/docs/teams-and-collaboration/plans-free-vs-teams#if-a-payment-fails). The default **Look and Feel** for new slides: **Default font**, **Default font size** (50–150%), **Default slide alignment (padding up to 200 on every side)**, **Uppercase text**, **Outlined text**, **Bold text**.
 
 ## Display Settings
 **Control Center** screen info · **Live Window Settings** (Open in fullscreen mode; Close live window when this tab or window is closed; **Let a team member's phone control this output**) · **Secondary Screens** (pick which monitor is the Live display; Refresh screens) · **NDI Live Output** (desktop app only). See [Multi-screen setup](/docs/going-live/multi-screen-setup), [using CoW on your phone](/docs/teams-and-collaboration/using-cloud-of-worship-on-your-phone) and [NDI output](/docs/going-live/ndi-output).
@@ -45,7 +45,7 @@ Default background per slide type: colour, gradient, or image.
 **Cloud storage used** against your plan's limit, a breakdown of stored media groups by size, removal options, and **Upload videos to cloud** (on by default; turn it off if you'd rather keep large videos device-local only. Images and audio are unaffected). Destructive actions require typing **"intentionally deleting"** to confirm.
 
 ## Other Settings
-**Alert Settings** (Default alert limit) · **Content Overlay Layout** (Position and Size) · **Overlays & Themes** (Decorative overlay) · **Transcription Settings** (Automatic transcription actions, Voice Bible version changes)
+**Notification sounds** (play a chime when a teammate changes the schedule) · **Content Overlay Layout** (Position and Size) · **Overlays & Themes** (Decorative overlay) · **Transcription Settings** (Automatic transcription actions, Voice Bible version changes)
 
 ::callout{type="important" title="Defaults apply to new slides only"}
 "Look and Feel" defaults apply to **new slides only**. They do not retroactively restyle existing slides. Edit those individually.

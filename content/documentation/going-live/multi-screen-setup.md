@@ -4,7 +4,7 @@ seoTitle: "Projector & Second Screen Setup"
 description: "Assign your projector as the Live display and a second monitor as the Stage display from Display Settings."
 category: "Going Live"
 order: 3
-lastUpdated: "2026-09-28"
+lastUpdated: "2026-11-11"
 featured: true
 ---
 
@@ -34,6 +34,7 @@ CoW detects connected monitors and lists each with its label and resolution. Eac
 A screen can only hold one role at a time. Turning **Live display** on for a screen already assigned as the stage display releases it from that role first (and vice versa).
 
 - **Refresh screens** re-detects monitors if you plugged one in after loading.
+- Plug in a new display and CoW opens the live output on it. If your browser has blocked screen access, CoW explains how to allow it again.
 - **"No external screens detected"** means only one display is connected, or your browser hasn't granted screen-detection permission. Chrome and Edge support this best.
 - With only one external screen connected, you can still assign the **stage display**. It just opens in a new browser tab instead of on its own monitor.
 

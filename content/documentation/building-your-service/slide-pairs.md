@@ -4,19 +4,19 @@ seoTitle: "Show Camera and Lyrics Together"
 description: "Show a camera together with another slide on the Live Output: beside it, over it or as a caption. A Teams feature."
 category: "Building Your Service"
 order: 10
-lastUpdated: "2026-10-31"
+lastUpdated: "2026-11-11"
 ---
 
 *Teams feature.* A slide pair puts **two slides on the Live Output at once**. Every pair includes a [camera slide](/docs/building-your-service/camera-slides), so you can show the speaker next to the scripture, or the choir next to the lyrics.
 
 ::callout{type="note" title="Rolling out gradually"}
-Slide pairs depend on camera slides, which are being switched on in stages. If you don't see **Add Camera**, you won't see pairing either.
+Slide pairs depend on camera slides, which are being switched on in stages. If you don't see **Add Video Input (Camera)**, you won't see pairing either.
 ::
 
 ## Make a pair
 
 1. Add a camera slide to the schedule.
-2. Search Quick Actions for **Create Slide Pair**, or open the camera slide's **⋯** menu and choose **Start a pair**. Quick Actions starts from the selected camera, or the first unpaired camera in the schedule. With no camera yet, it asks you to add one first and opens **Add Camera**.
+2. Search Quick Actions for **Create Slide Pair**, or open the camera slide's **⋯** menu and choose **Start a pair**. Quick Actions starts from the selected camera, or the first unpaired camera in the schedule. With no camera yet, it asks you to add one first and opens **Add Video Input (Camera)**.
 3. Pick the other slide from the list. Use **Search slides** to find it.
 
 Alternatively, drag a slide onto a camera slide in the schedule. Only camera slides accept a drop. A pair can be a camera and one other slide, or two cameras. A slide can only be in one pair at a time.

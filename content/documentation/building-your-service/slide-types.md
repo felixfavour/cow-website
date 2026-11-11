@@ -4,7 +4,7 @@ seoTitle: "Slide Types for Church Services"
 description: "Bible, Song, Song Setlist, Hymn, Text, Media, Countdown, Interlude, Camera and Presentation slides, and which Quick Action creates each one."
 category: "Building Your Service"
 order: 2
-lastUpdated: "2026-10-25"
+lastUpdated: "2026-11-11"
 ---
 
 | Type | Badge | Created by |
@@ -17,7 +17,7 @@ lastUpdated: "2026-10-25"
 | **Media** | Media | Add Media / YouTube / Vimeo |
 | **Countdown** | — | Add Countdown Timer |
 | **Interlude** | Interlude | Add Interlude |
-| **Camera** | Camera | Add Camera |
+| **Camera** | Camera | Add Video Input (Camera) |
 | **Presentation** | — | Import Slides from PDF |
 
 ## Overlays

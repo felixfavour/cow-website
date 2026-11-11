@@ -4,7 +4,7 @@ seoTitle: "Church Alerts & Lower-Third Overlays"
 description: "Put a scrolling alert or a lower-third overlay on screen without disturbing the slide underneath. Teams features."
 category: "Going Live"
 order: 6
-lastUpdated: "2026-11-03"
+lastUpdated: "2026-11-11"
 ---
 
 Sometimes you need to tell the room something without taking the lyrics or the sermon point off the screen: a parent needed at the children's church, a car blocking the gate, a reminder about the next event. Alerts and overlays sit **on top of** the live slide, so the service carries on underneath.
@@ -35,7 +35,7 @@ The alert scrolls across the [Live Display](/docs/going-live/opening-the-live-di
 
 ### The alert schedule
 
-Alerts you've sent are kept in an **Alert schedule** at the top of the panel, so you can send the same notice again with one click instead of retyping it. Only one alert is live at a time, marked with the live dot. The counter shows how many you've saved out of your limit, which you can change from 5 to 30 in **Settings → Other Settings → Default alert limit** (5 by default).
+Alerts you've sent are kept in an **Alert schedule** at the top of the panel, so you can send the same notice again with one click instead of retyping it. Only one alert is live at a time, marked with the live dot. The counter shows how many you've saved out of your limit of 30.
 
 ### Remove an alert
 
