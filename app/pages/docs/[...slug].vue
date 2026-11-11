@@ -329,14 +329,16 @@ if (!category.value && !doc.value) {
   border-top: 1px solid #e5e7eb;
   margin: 2.5rem 0;
 }
-.doc-article table {
-  display: block;
+.doc-article .doc-table-wrapper {
   width: 100%;
   max-width: 100%;
   overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.doc-article table {
+  width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  margin: 1.5rem 0;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   font-size: 0.95rem;

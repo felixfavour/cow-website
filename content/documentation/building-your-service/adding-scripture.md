@@ -26,6 +26,20 @@ Use **Search Whole Bible** when you remember a phrase but not the reference.
 
 Change the default translation in **Settings → Bible Version Settings**. You can also save translations for [offline use](/docs/settings-and-shortcuts/offline-use).
 
+## Choose a layout
+
+With a Bible slide selected, click **Layout** to change how the verse and reference are arranged:
+
+| Layout | What it does |
+|--------|--------------|
+| **Classic** | Scripture on top, reference at bottom |
+| **Header Reference** | Reference appears at the top |
+| **Bold Reference** | Reference is 2x larger |
+| **Boxed Reference** | Reference has a background |
+| **Overlay** | Reference overlays the bottom of the scripture |
+
+The layout applies to this slide only. To change the default for new Bible slides, set it in **Settings → Bible Version Settings**.
+
 ::callout{type="tip" title="Step through verses"}
 With a Bible slide selected, **←** and **→** step through verses.
 ::
