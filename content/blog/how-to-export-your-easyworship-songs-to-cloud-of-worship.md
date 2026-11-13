@@ -3,7 +3,7 @@ title: "How to Export Your EasyWorship Songs to Cloud of Worship"
 seoTitle: "Move Your Song Library from EasyWorship to Cloud of Worship"
 author: Favour Felix
 author_img: /images/author/favour.jpeg
-cover: /images/blog/blog-song-library.webp
+cover: /images/blog/blog-easyworship-import.webp
 created: November 12, 2026 9:00 AM UTC
 updated: November 12, 2026 9:00 AM UTC
 paragraph: "Switching from EasyWorship doesn't mean retyping every song. Here's the step-by-step way to back up your EasyWorship library and bring it straight into Cloud of Worship."
