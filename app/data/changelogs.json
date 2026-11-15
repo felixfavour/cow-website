@@ -1,5 +1,22 @@
 [
   {
+    "version": "v1.4.10",
+    "title": "Version Compassion",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 12, 2026",
+    "description": "Set git identity before creating the release tag",
+    "changes": [
+      "Set git identity before creating the release tag",
+      "Rev-yt-changes",
+      "Send issue reports to PostHog as support tickets",
+      "Zoom the desktop app natively so dropdowns and modals scale in place",
+      "Import a church's song library from an EasyWorship backup",
+      "Status bar for streaming on desktop",
+      "Performance updates with media slides",
+      "Low-end performance fixes for live video, Quick Actions and cross-window messages"
+    ]
+  },
+  {
     "version": "v1.4.9",
     "title": "Version Humility",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
