@@ -48,8 +48,6 @@
 
     <!-- ABOVE FOOTER SECTION -->
     <AboveFooterSection />
-
-    <TestimonialPopup v-if="showTestimonialPopup" />
   </div>
 </template>
 
@@ -449,7 +447,6 @@ const changelogData = computed(() => {
   ]
 })
 
-const showTestimonialPopup = ref(false)
 useHead({
   title: "Changelog: What's New in Cloud of Worship",
 })
@@ -472,24 +469,6 @@ onMounted(() => {
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
     useGtag()
   }
-
-  // show testimonial popup on mobile
-  if (
-    window.innerWidth >= 768 &&
-    location.hostname !== "localhost" &&
-    location.hostname !== "127.0.0.1"
-  ) {
-    showTestimonialPopup.value = true
-  }
-  window.addEventListener("resize", () => {
-    if (
-      window.innerWidth >= 768 &&
-      location.hostname !== "localhost" &&
-      location.hostname !== "127.0.0.1"
-    ) {
-      showTestimonialPopup.value = true
-    }
-  })
 })
 </script>
 

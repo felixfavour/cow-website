@@ -64,12 +64,10 @@ export const useDownloadPage = (release: Ref<any>) => {
     })
   }
 
-  const showTestimonialPopup = ref(false)
   onMounted(() => {
     platform.value = detectPlatform()
     if (!isLocal()) {
       useGtag()
-      if (window.innerWidth >= 768) showTestimonialPopup.value = true
     }
   })
 
@@ -81,6 +79,5 @@ export const useDownloadPage = (release: Ref<any>) => {
     releasedOn,
     platform,
     trackDownload,
-    showTestimonialPopup,
   }
 }

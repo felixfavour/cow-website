@@ -146,8 +146,6 @@
         </div>
       </div>
     </section>
-
-    <TestimonialPopup v-if="showTestimonialPopup" />
   </div>
 </template>
 
@@ -160,7 +158,6 @@ const props = defineProps({
 })
 
 const { mergeUtmsIntoUrl } = useUtm()
-const showTestimonialPopup = ref(false)
 
 const signupUrl = computed(() =>
   mergeUtmsIntoUrl(
@@ -270,7 +267,6 @@ onMounted(() => {
   const local = location.hostname === "localhost" || location.hostname === "127.0.0.1"
   if (!local) {
     useGtag()
-    if (window.innerWidth >= 768) showTestimonialPopup.value = true
   }
 })
 onBeforeUnmount(() => {

@@ -177,8 +177,6 @@
         </div>
       </div>
     </section>
-
-    <TestimonialPopup v-if="showTestimonialPopup" />
   </div>
 </template>
 
@@ -195,7 +193,6 @@ const {
   releasedOn,
   platform,
   trackDownload,
-  showTestimonialPopup,
 } = useDownloadPage(release)
 
 const scene = [
