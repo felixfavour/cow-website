@@ -1,5 +1,21 @@
 [
   {
+    "version": "v1.4.11",
+    "title": "Version Mercy",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 15, 2026",
+    "description": "Include slide details in every issue report ticket",
+    "changes": [
+      "Include slide details in every issue report ticket",
+      "Skip virtual NDI Audio device when picking default mic",
+      "Gate YouTube streaming behind a feature flag",
+      "Correct HEVC colour tags, stop NDI waiting on frame copies, cap raw frame queue",
+      "Scale and convert on the GPU on Windows, tiers up to 4K60 for YouTube and NDI",
+      "Quality tiers up to 4K60 for YouTube and NDI, encoded on the GPU on macOS",
+      "Satisfaction prompt frequency reduced"
+    ]
+  },
+  {
     "version": "v1.4.10",
     "title": "Version Compassion",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
