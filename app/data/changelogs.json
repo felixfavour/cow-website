@@ -1,5 +1,27 @@
 [
   {
+    "version": "v1.4.12",
+    "title": "Version Mercy",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 16, 2026",
+    "description": "Tag Bachs payment cancellations with their provider, document PAYMENT_PENDING, add the Nov 2026 roadmap",
+    "changes": [
+      "Tag Bachs payment cancellations with their provider, document PAYMENT_PENDING, add the Nov 2026 roadmap",
+      "Read flag countries from the store instead of a version manager per flag",
+      "Bundle only the flags the Bible versions use",
+      "Show country flags and search by country or language in Bible version pickers",
+      "Skip the state snapshot when a live broadcast changes nothing",
+      "Stop the /live window from resetting a pair going live",
+      "Stop idle cameras in every window when Keep camera on is switched off",
+      "Add a Keep camera on performance setting",
+      "Lift the jump to latest button higher so it is not clipped",
+      "Build the jump to latest button from CowButton so it matches the design system",
+      "Round icon-only jump button and pulsing dots for the live transcript",
+      "Cap transcript to latest 100 lines and follow new text only while at the bottom",
+      "Pay for Teams by mobile money through Bachs"
+    ]
+  },
+  {
     "version": "v1.4.11",
     "title": "Version Mercy",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
