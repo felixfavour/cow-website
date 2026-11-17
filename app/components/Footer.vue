@@ -1,13 +1,44 @@
 <template>
-  <footer
-    class="footer relative overflow-hidden bg-black min-h-[max(720px,62.5vw)] md:min-h-[min(900px,62.5vw)]"
-  >
-    <FooterIllustration class="absolute inset-0" />
+  <footer class="footer relative overflow-hidden bg-black">
+    <div class="footer-glow" aria-hidden="true" />
     <div
-      class="relative mx-auto max-w-[1600px] px-5 md:px-10 lg:px-16 pt-14 lg:pt-16 pb-16 flex flex-col lg:flex-row gap-12 lg:gap-0 pointer-events-none"
+      class="relative mx-auto max-w-[1920px] px-5 md:px-10 lg:px-16 pt-14 lg:pt-[70px] grid gap-x-6 gap-y-12 grid-cols-2 lg:grid-cols-[1fr_222px_222px_220px_340px] lg:gap-x-0"
     >
-      <div class="grid grid-cols-2 gap-x-6 gap-y-12 lg:gap-y-[42px] lg:grid-cols-[222px_222px] pointer-events-auto">
-        <div v-for="group in groups" :key="group.title">
+      <ul class="col-span-2 lg:col-span-1 flex lg:flex-col items-center lg:items-start gap-3 lg:gap-[12px]">
+        <li v-for="social in socials" :key="social.label">
+          <a
+            :href="social.href"
+            target="_blank"
+            rel="noopener"
+            :aria-label="social.label"
+            class="block text-[#9BA3B2] hover:text-white transition-colors"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path :d="social.icon" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div v-for="group in [groups[2], groups[0]]" :key="group.title">
+        <h2 class="footer-heading">{{ group.title }}</h2>
+        <ul class="mt-[13px] flex flex-col gap-[10px]">
+          <li v-for="link in group.links" :key="link.label">
+            <a
+              :href="link.href"
+              :target="link.external ? '_blank' : undefined"
+              :rel="link.external ? 'noopener' : undefined"
+              class="footer-link"
+              :class="{ active: isActive(link.href) }"
+            >
+              {{ link.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-[42px]">
+        <div v-for="group in [groups[1], groups[3]]" :key="group.title">
           <h2 class="footer-heading">{{ group.title }}</h2>
           <ul class="mt-[13px] flex flex-col gap-[10px]">
             <li v-for="link in group.links" :key="link.label">
@@ -34,40 +65,19 @@
         </div>
       </div>
 
-      <div class="lg:w-[340px] pointer-events-auto">
+      <div class="col-span-2 lg:col-span-1">
         <p class="text-[14px] leading-[22px] text-[#9BA3B2] max-w-[330px]">
           Cloud of Worship is a browser-based worship support system built for
           growing churches that want simple, reliable media setup
         </p>
-        <ul class="mt-[14px] flex items-center gap-3">
-          <li v-for="social in socials" :key="social.label">
-            <a
-              :href="social.href"
-              target="_blank"
-              rel="noopener"
-              :aria-label="social.label"
-              class="block text-[#9BA3B2] hover:text-white transition-colors"
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path :d="social.icon" />
-              </svg>
-            </a>
-          </li>
-        </ul>
         <p class="mt-[18px] text-[14px] text-[#9BA3B2]">
           &copy; CoW Labs, All Rights Reserved, {{ new Date().getFullYear() }}
         </p>
       </div>
+    </div>
 
-      <a href="/" class="lg:ml-auto self-start pointer-events-auto">
-        <img
-          src="/logo/cow-logo-purple-and-white.png"
-          alt="Cloud of Worship"
-          width="197"
-          height="42"
-          class="h-[34px] lg:h-[42px] w-auto"
-        />
-      </a>
+    <div class="relative mt-14 lg:mt-[110px] pb-[10vw]">
+      <FooterWordmark />
     </div>
   </footer>
 </template>
@@ -165,5 +175,19 @@ const isActive = (path) =>
 .footer-link:hover,
 .footer-link.active {
   color: #fff;
+}
+
+/* The purple glow rising from the bottom edge. */
+.footer-glow {
+  position: absolute;
+  left: 50%;
+  bottom: -9vw;
+  width: 86%;
+  height: 12vw;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: linear-gradient(#a94fff, #f6e8ff);
+  filter: blur(10.4vw);
+  pointer-events: none;
 }
 </style>
