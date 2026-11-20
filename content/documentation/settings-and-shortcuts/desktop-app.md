@@ -4,7 +4,7 @@ seoTitle: "Windows Desktop App"
 description: "Install Cloud of Worship as a native Windows app for real multi-monitor windows, NDI output and background updates."
 category: "Settings, Shortcuts & Offline"
 order: 5
-lastUpdated: "2026-09-12"
+lastUpdated: "2026-11-18"
 ---
 
 *Free feature. Windows only for now.*
@@ -18,6 +18,8 @@ Alongside the browser app, Cloud of Worship is available as a **native desktop a
 | **Live and stage windows** | Browser popups, subject to popup blockers | Real application windows placed on the monitor you choose |
 | **Monitor detection** | Needs browser permission, best in Chrome or Edge | Monitors listed by name, resolution and position, no prompt |
 | **[NDI output](/docs/going-live/ndi-output)** | Not available | Available |
+| **[Streaming to YouTube](/docs/going-live/streaming-to-youtube)** | Not available | Beta, rolling out gradually |
+| **Import from EasyWorship** | Not available | Available |
 | **Updates** | Reload when prompted | Downloaded in the background, applied on restart |
 
 Everything else, every slide type, schedule, setting and shortcut, works identically in both.

@@ -4,7 +4,7 @@ seoTitle: "Free vs Teams Plan Comparison"
 description: "What's included on the Free plan, what Teams unlocks, and how your plan is tied to your church."
 category: "Teams & Collaboration"
 order: 3
-lastUpdated: "2026-11-11"
+lastUpdated: "2026-11-18"
 ---
 
 | | Free | Teams |
@@ -76,6 +76,12 @@ For the first 3 days the banner tells you when Teams features switch off. After 
 ## Upgrading
 
 Use the **Upgrade Plan** quick action, or go to **App Settings → Subscription Settings**. Current prices are on the [pricing page](/pricing).
+
+## Paying by mobile money
+
+In Kenya, Ghana, Uganda and the other mobile-money markets, you can pay for Teams from your phone in your own currency, for example M-Pesa, MTN MoMo or Airtel Money. Prices show in that currency. Approve the payment on your phone and CoW waits for it to settle, then turns Teams on. If it hasn't settled after a minute the window closes so you don't pay twice, and Teams still switches on when the payment arrives. A link beside the price lets you **pay by card in USD** instead.
+
+Mobile money, bank transfer and gifted plans don't renew by themselves. A **Renew** button appears in the expiry banner and in Subscription Settings when it's time to pay again.
 
 ## Related guides
 

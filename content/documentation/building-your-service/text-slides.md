@@ -4,7 +4,7 @@ seoTitle: "Create Announcement Text Slides"
 description: "Make announcement, welcome and sermon-point slides with Create Text Slide: fonts, sizes, colours, lists, quotes and alignment."
 category: "Building Your Service"
 order: 5
-lastUpdated: "2026-11-03"
+lastUpdated: "2026-11-18"
 ---
 
 Text slides are for anything that isn't a song, a hymn or a Bible verse: announcements, a welcome message, sermon points, giving details, event dates or a prayer focus. They're free on every plan.
@@ -18,6 +18,8 @@ Text slides are for anything that isn't a song, a hymn or a Bible verse: announc
 3. Type your text straight onto the slide. Changes save as you go.
 
 ## The text toolbar
+
+A text slide uses [free layout](/docs/building-your-service/editing-a-slide#free-layout): you can drag its text boxes anywhere, and **Add text box** adds another.
 
 When a text slide is selected, the toolbar above it shows:
 

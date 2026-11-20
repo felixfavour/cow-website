@@ -4,14 +4,16 @@ seoTitle: "Known Limitations"
 description: "Honest notes about how CoW behaves in the real world, so nothing surprises you mid-service."
 category: "Troubleshooting"
 order: 1
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-11-20"
 ---
 
 ## Performance on low-end devices
 
 On a low-end or heavily loaded machine, the **Control Center** can gradually slow down over a long service, especially with large schedules, lots of media, or many hours of continuous use.
 
-**If that happens, just reload the Control Center** (`app.cloudofworship.com`). **Your Live Display (`app.cloudofworship.com/live`) stays active.** It keeps projecting the whole time you're reloading. The two windows are independent, and when the Control Center comes back it re-reads the current live state from the live window, so you pick up exactly where you left off.
+**First, try Lite mode:** turn it on in **Settings → Performance Settings**. It reduces visual effects, shows a still frame of video in the preview and opens cameras at 720p. It only affects that computer.
+
+**If it still slows down, reload the Control Center** (`app.cloudofworship.com`). **Your Live Display (`app.cloudofworship.com/live`) stays active.** It keeps projecting the whole time you're reloading. The two windows are independent, and when the Control Center comes back it re-reads the current live state from the live window, so you pick up exactly where you left off.
 
 ::callout{type="warning" title="Never reload the /live window mid-service"}
 That's the one your congregation is looking at. Reload the Control Center instead.

@@ -4,7 +4,7 @@ seoTitle: "Projector & Second Screen Setup"
 description: "Assign your projector as the Live display and a second monitor as the Stage display from Display Settings."
 category: "Going Live"
 order: 3
-lastUpdated: "2026-11-11"
+lastUpdated: "2026-11-18"
 featured: true
 ---
 
@@ -26,12 +26,14 @@ If the Control Center has ended up on the wrong monitor, click **Move to primary
 
 ## Secondary Screens
 
-CoW detects connected monitors and lists each with its label and resolution. Each screen can be assigned one of two roles:
+CoW detects connected monitors and lists each with its label and resolution. Each screen can be assigned one of three roles:
 
 - Toggle **Live display** on the screen you want to project the service to.
 - Toggle **Stage display** on a screen facing your musicians and speakers (Teams). See [Stage display](/docs/going-live/stage-display).
 
-A screen can only hold one role at a time. Turning **Live display** on for a screen already assigned as the stage display releases it from that role first (and vice versa).
+- Toggle **Slides-only display** on a screen that should show your slides without cameras or overlays. Go Live opens it as a third window on that screen.
+
+A screen can only hold one role at a time. Choosing a role for a screen clears whichever role it held before, and CoW tells you so.
 
 - **Refresh screens** re-detects monitors if you plugged one in after loading.
 - Plug in a new display and CoW opens the live output on it. If your browser has blocked screen access, CoW explains how to allow it again.

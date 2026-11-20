@@ -4,7 +4,7 @@ seoTitle: "Send Slides over NDI"
 description: "Publish the live display as an NDI source on your local network, so OBS, vMix, TriCaster or any NDI receiver can pick up your slides without a capture card."
 category: "Going Live"
 order: 8
-lastUpdated: "2026-09-12"
+lastUpdated: "2026-11-18"
 ---
 
 *Free feature. Desktop app only.*
@@ -36,6 +36,10 @@ In your receiver, look for a source named **CoW Live Output** on the sending com
 ::callout{type="tip" title="The preference stays on this machine"}
 **Broadcast live output over NDI** is stored on that computer only. It never syncs to your account or to your teammates, so turning it on at the church laptop will not turn it on for someone at home.
 ::
+
+## Choose the quality
+
+Under **NDI quality** in Display Settings, pick the size and frame rate sent to receivers: 1080p at 30 or 60, or 4K at 30 or 60. It is never larger than your live window, and CoW never upscales. 4K and 60 frames per second need a wired gigabit network and a receiver that can keep up. Changes apply the next time NDI starts.
 
 ## What the output looks like
 

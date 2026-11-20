@@ -4,7 +4,7 @@ seoTitle: "Open the Live Display on a Projector"
 description: "Go Live opens the projection window. Drag it to your projector, go fullscreen, and you're ready to promote slides."
 category: "Going Live"
 order: 1
-lastUpdated: "2026-09-30"
+lastUpdated: "2026-11-18"
 featured: true
 ---
 
@@ -14,6 +14,7 @@ Click **Go Live** in the Slide Schedule Pane header. It opens a small menu:
 |--------|--------------|
 | **Open live window** | Opens another browser window with the live display. Drag this to your projector |
 | **Open stage display** | Opens the confidence monitor for musicians and speakers. Teams, see [Stage Display](/docs/going-live/stage-display) |
+| **Go live on YouTube** | Desktop app only, rolling out gradually. Opens the live display and streams it to YouTube once. See [Streaming to YouTube](/docs/going-live/streaming-to-youtube) |
 | **Copy livestream link** | A link for OBS, vMix or similar software. Free churches get 5 sessions, see [Livestream output](/docs/going-live/livestream-output-obs-vmix) |
 | **Copy stage display link** | Opens the stage display on any phone, tablet or TV. Teams, see [Stage Display](/docs/going-live/stage-display#on-a-phone-tablet-or-tv) |
 

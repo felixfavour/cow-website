@@ -4,7 +4,7 @@ seoTitle: "Live Sermon Transcription"
 description: "Turn your microphone into a live note-taker that surfaces relevant Bible passages automatically as you preach. A Teams feature."
 category: "Teams & Collaboration"
 order: 2
-lastUpdated: "2026-11-11"
+lastUpdated: "2026-11-18"
 ---
 
 *Teams feature, with 10 free minutes on Free. In beta.* Open with **Transcribe Sermon**.
@@ -24,6 +24,10 @@ The panel has two tabs, **Transcripts** and **Scriptures**. Before anything is d
 ## Copying and voice commands
 
 Hover a transcript line and click **Copy line** to copy it. Voice navigation between verses only listens for the word *verse*, so ordinary sermon words like *next* or *back* won't move your verses. CoW also understands spoken references such as *chapter 4, verse 23* and *Psalms 1 1 4*. A chapter on its own, like *Joshua chapter 14*, appears as a link you can click but never goes live by itself. If the connection drops, transcription reconnects on its own. **Microphone Settings** opens from the panel.
+
+## Long sermons
+
+The panel keeps the latest **100 lines** on screen, so the Control Center stays quick through a long sermon. Older lines drop off the top, but the full transcript is still saved. New lines scroll into view only while you're at the bottom. Scroll up to read back and the panel stays put. Click **Jump to latest** to catch up. Verse references that arrive before their line finishes no longer land on the previous line, and a verse number alone, like *verse 5*, takes its book and chapter from earlier in the sermon.
 
 ## How much you can transcribe
 

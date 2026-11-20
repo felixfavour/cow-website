@@ -4,7 +4,7 @@ seoTitle: "Display Bible Verses on a Projector"
 description: "Open any Bible reference with Display Bible, search the whole Bible by phrase, and step through verses with the arrow keys."
 category: "Building Your Service"
 order: 3
-lastUpdated: "2026-09-03"
+lastUpdated: "2026-11-18"
 featured: true
 ---
 
@@ -26,19 +26,18 @@ Use **Search Whole Bible** when you remember a phrase but not the reference.
 
 Change the default translation in **Settings → Bible Version Settings**. You can also save translations for [offline use](/docs/settings-and-shortcuts/offline-use).
 
-## Choose a layout
+## Place the verse and reference
 
-With a Bible slide selected, click **Layout** to change how the verse and reference are arranged:
+Bible slides use [free layout](/docs/building-your-service/editing-a-slide#free-layout), so you drag the verse and the reference wherever you want them. There is no separate **Layout** tab on Bible slides.
 
-| Layout | What it does |
-|--------|--------------|
-| **Classic** | Scripture on top, reference at bottom |
-| **Header Reference** | Reference appears at the top |
-| **Bold Reference** | Reference is 2x larger |
-| **Boxed Reference** | Reference has a background |
+Two themes remain for new Bible slides, set in **Settings → Bible Version Settings**:
+
+| Theme | What it does |
+|-------|--------------|
+| **Classic** | Scripture on top, reference at the bottom |
 | **Overlay** | Reference overlays the bottom of the scripture |
 
-The layout applies to this slide only. To change the default for new Bible slides, set it in **Settings → Bible Version Settings**.
+The other themes (Header Reference, Bold Reference and Boxed Reference) were removed. Slides that used one now show Classic. Drag the reference to the top to get the same look.
 
 ::callout{type="tip" title="Step through verses"}
 With a Bible slide selected, **←** and **→** step through verses.
