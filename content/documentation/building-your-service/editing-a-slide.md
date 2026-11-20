@@ -36,7 +36,7 @@ Click **Text colour** in the toolbar and pick a swatch. It colours the slide's t
 
 ## Free layout
 
-Free layout lets you place text anywhere on a slide, like a lower third or an upper third. It works on text, song, hymn, Bible and countdown slides. It doesn't apply to media, presentation, camera or overlay slides.
+Free layout lets you place text anywhere on a slide, like a lower third or an upper third. It works on text, song, hymn, Bible, countdown and time slides. It doesn't apply to media, presentation, camera or overlay slides.
 
 - **Move and resize:** drag a box to move it, pull a corner to resize it. With a box selected, the arrow keys nudge it, so they stop stepping through verses until you deselect it.
 - **Add a box:** on a text slide, click **Add text box** in the toolbar.
