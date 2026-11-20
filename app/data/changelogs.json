@@ -1,5 +1,38 @@
 [
   {
+    "version": "v1.5.0",
+    "title": "Version Generosity",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 20, 2026",
+    "description": "Ask for feedback less often",
+    "changes": [
+      "Ask for feedback less often",
+      "Stop duplicate slides after revisiting the operator page",
+      "Pin library songs and slides, and add keyboard control for saved slides",
+      "Apply performance settings to live output and cameras",
+      "Add device-local Performance settings with a Lite mode",
+      "Speed up Library search and loading, and restyle the expiry banner",
+      "Add Christmas interlude and colour themes, and a seek track for videos",
+      "Add Drift, Breathe and Cascade slide transitions",
+      "Add a slides-only display and unify screen roles",
+      "Add free layout for slide text and trim Bible themes"
+    ]
+  },
+  {
+    "version": "v1.4.13",
+    "title": "Version Faithfulness",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 17, 2026",
+    "description": "Keep slow uploads alive for teammates and cut re-renders while uploading",
+    "changes": [
+      "Keep slow uploads alive for teammates and cut re-renders while uploading",
+      "Add a volume slider for media slides and restyle CoWSlider",
+      "Share media slides with teammates while their files upload",
+      "Tighten Bible reference parsing and bridge verses from context in transcripts",
+      "Stop interim scripture references landing on the previous transcript line"
+    ]
+  },
+  {
     "version": "v1.4.12",
     "title": "Version Mercy",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
