@@ -110,6 +110,7 @@ const STATIC_PAGES = [
   { path: '/open-source', changefreq: 'monthly' },
   { path: '/privacy-policy', changefreq: 'monthly' },
   { path: '/terms-of-service', changefreq: 'monthly' },
+  { path: '/content-licenses', changefreq: 'monthly' },
   { path: '/features/browser-ready', changefreq: 'weekly' },
   { path: '/features/offline-first', changefreq: 'weekly' },
   { path: '/features/team-workflow', changefreq: 'weekly' },

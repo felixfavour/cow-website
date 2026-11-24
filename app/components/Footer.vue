@@ -130,6 +130,7 @@ const groups = [
     links: [
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms of Service", href: "/terms-of-service" },
+      { label: "Content and Licences", href: "/content-licenses" },
       { label: "Cookie Notice", action: "cookies" },
     ],
   },
