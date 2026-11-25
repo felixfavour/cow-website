@@ -7,8 +7,8 @@
   -->
   <div
     ref="stage"
-    class="features-stage relative z-[1] -mt-[80svh]"
-    :style="{ height: `calc(${sectionHeight}px + ${TRAVEL_SVH}svh)` }"
+    class="features-stage relative z-[1]"
+    :style="{ height: `calc(${sectionHeight}px + ${TRAVEL_SVH}svh)`, marginTop: tuckOffset }"
   >
     <section
       ref="section"
@@ -148,6 +148,12 @@
           </svg>
         </button>
       </div>
+
+      <!-- Optional CTA under the dots, for pages (e.g. switch) that want one
+           here; the home page leaves this slot empty. -->
+      <div v-if="$slots.cta" class="mt-8 flex justify-center md:mt-10">
+        <slot name="cta" />
+      </div>
     </section>
   </div>
 </template>
@@ -167,6 +173,12 @@
 // so browsers and the edge fetch it again. Each has a <key>.webp poster from
 // its first frame in public/features/posters/, so it shows before the video
 // loads.
+// On the home page this section rises up under the end of the pinned hero's
+// white horizon, so it starts 80svh higher than it sits in normal flow. Pages
+// without that pinned hero (e.g. switch) pass tuckOffset="0px" to drop it in
+// as a plain section instead.
+const { tuckOffset = "-80svh" } = defineProps({ tuckOffset: { type: String, default: "-80svh" } })
+
 const VIDEO_VERSION = 1
 const videoUrl = (key) => `https://media.cloudofworship.com/open/website/features/${key}.mp4?v=${VIDEO_VERSION}`
 // Replacement recordings live under open/marketing/ as landscape-<key>.mp4.
