@@ -11,6 +11,8 @@ lastUpdated: "2026-10-12"
 
 The Stage Display is a confidence monitor for musicians, vocalists and speakers. It shows what's live, what's coming next, a timer and the time of day, without the Control Center's slide editing tools. On the Starter plan, opening it shows an upgrade screen instead.
 
+![The Go Live menu offers live, stage and livestream outputs](https://media.cloudofworship.com/open/marketing/docs/live-menu.webp)
+
 ## Opening it
 
 Open it with the **Open Stage Display** quick action, or by assigning a monitor to it in **Settings → Display Settings**. See [Multi-screen setup](/docs/going-live/multi-screen-setup).
@@ -28,6 +30,8 @@ When the live or next slide is a presentation page or an image, the Now and Next
 If the Control Center is closed or crashes, the Stage Display shows a warning row instead of leaving stale words on screen as if they were live. Reopen the Control Center and it carries on.
 
 ## Four panels
+
+![The stage display showing the current slide, next slide, timer and clock](https://media.cloudofworship.com/open/marketing/docs/stage-display-hd.webp)
 
 | Panel | Shows |
 |-------|-------|

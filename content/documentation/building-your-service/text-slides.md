@@ -9,7 +9,7 @@ lastUpdated: "2026-11-18"
 
 Text slides are for anything that isn't a song, a hymn or a Bible verse: announcements, a welcome message, sermon points, giving details, event dates or a prayer focus. They're free on every plan.
 
-![Rich text editor](/images/docs/09-create-text-slide.webp)
+![Rich text editor](https://media.cloudofworship.com/open/marketing/docs/text-editor.webp)
 
 ## Create a text slide
 

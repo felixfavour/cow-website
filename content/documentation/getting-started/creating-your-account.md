@@ -12,7 +12,7 @@ Signing up is a **5-step guided wizard**, not one long form. Your progress is sh
 
 ## Step 1: Get started (credentials)
 
-![Get Started, sign-up step 1](/images/docs/16-signup-step1.webp)
+![Get Started, sign-up step 1](https://media.cloudofworship.com/open/marketing/docs/signup-current.webp)
 
 Choose one:
 

@@ -9,6 +9,8 @@ lastUpdated: "2026-09-03"
 
 Click **Background** in the slide editor. Five sections:
 
+![The background picker open in the slide editor](https://media.cloudofworship.com/open/marketing/docs/background.webp)
+
 | Section | What it does |
 |---------|--------------|
 | **Add Image** | Upload or drag and drop a background image |

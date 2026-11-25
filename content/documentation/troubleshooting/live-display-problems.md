@@ -30,6 +30,8 @@ Turn off **Settings → Display Settings → "Close live window when this tab is
 
 ## "No external screens detected"
 
+![Display Settings showing the external screen detection section](https://media.cloudofworship.com/open/marketing/docs/display-settings.webp)
+
 Click **Refresh screens**. If it persists, your browser may not support screen detection. Chrome and Edge work best. You can always drag the live window to the projector by hand. See [Multi-screen setup](/docs/going-live/multi-screen-setup).
 
 On Windows, the [desktop app](/docs/settings-and-shortcuts/desktop-app) reads monitors from the operating system instead of the browser, so this message does not occur there.

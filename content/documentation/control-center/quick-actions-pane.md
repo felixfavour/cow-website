@@ -22,7 +22,7 @@ The full list is in the [Quick Actions reference](/docs/control-center/quick-act
 
 Type into the search box and CoW searches your **actions, the Bible, your songs, your library and the hymnal simultaneously**.
 
-![Quick Actions search returning actions, scripture, songs and hymns together](/images/docs/05-display-hymns.webp)
+![The Quick Actions panel with its search field](https://media.cloudofworship.com/open/marketing/docs/control-center.webp)
 
 It understands what you type:
 

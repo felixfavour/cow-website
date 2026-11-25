@@ -14,6 +14,8 @@ Open the full reference sheet any time by pressing **`?`**, **Cmd/Ctrl + H**, or
 
 ## General
 
+![The Shortcuts and Hotkeys reference sheet in the app](https://media.cloudofworship.com/open/marketing/docs/shortcuts-sheet.webp)
+
 | Shortcut | Action |
 |----------|--------|
 | **Cmd/Ctrl + K** | Search actions, songs, scriptures, and anything else |

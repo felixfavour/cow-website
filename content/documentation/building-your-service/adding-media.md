@@ -7,7 +7,7 @@ order: 6
 lastUpdated: "2026-11-18"
 ---
 
-![Media picker](/images/docs/10-add-media.webp)
+![Media picker](https://media.cloudofworship.com/open/marketing/docs/media-upload.webp)
 
 **Add Media** has two tabs:
 

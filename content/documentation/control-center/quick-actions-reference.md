@@ -11,6 +11,8 @@ Actions marked **Teams** require a Teams subscription. Teams-only actions stay v
 
 ## Content creation
 
+![Quick Actions on the left of the Control Center](https://media.cloudofworship.com/open/marketing/docs/control-center.webp)
+
 | Action | What it does | Plan |
 |--------|---------------|------|
 | **Display Bible** | Select and open scriptures | Free |

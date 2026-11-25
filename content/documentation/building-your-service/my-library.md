@@ -4,14 +4,14 @@ seoTitle: "Save Songs & Slides to Your Library"
 description: "Your permanent, schedule-independent store of saved songs and slides."
 category: "Building Your Service"
 order: 14
-lastUpdated: "2026-11-20"
+lastUpdated: "2026-11-24"
 ---
 
 **My Library** is your permanent, schedule-independent store of reusable content.
 
-![My Library](/images/docs/07-my-library.webp)
-
 ## Two tabs
+
+![My Library showing the Songs and Slides tabs and a saved song search](https://media.cloudofworship.com/open/marketing/docs/library-songs.webp)
 
 | Tab | Contains | How things get here |
 |-----|----------|---------------------|
@@ -31,7 +31,7 @@ A presentation can be saved once all of its pages have uploaded, so the saved co
 Empty states tell you what to do. With no saved songs you'll see *"No songs saved yet. Click the save icon on the Slide card to start saving."*
 
 ::callout{type="tip"}
-Long lists load progressively as you scroll (15 at a time), so a large song library stays fast. You can also navigate the list with your keyboard.
+Long lists load progressively as you scroll (15 at a time), so a large song library stays fast. You can also navigate both tabs with your keyboard: the arrow keys move through the list, and **Enter** adds the focused song or slide to the schedule. Matching words are highlighted when you search.
 ::
 
 ## Import from EasyWorship

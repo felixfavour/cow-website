@@ -25,6 +25,10 @@ To swap the partner later, use **Change paired slide** in the camera's **⋯** m
 
 ## Choose a layout
 
+![Illustrative examples of four slide pair layouts, showing a speaker alongside or behind a slide](https://media.cloudofworship.com/open/marketing/docs/slide-pair-layouts.webp)
+
+*Illustrative layouts. Speaker photo by [Phil Hearing on Unsplash](https://unsplash.com/photos/a-man-standing-on-top-of-a-stage-next-to-a-microphone-mgPIJGLM0SU).*
+
 Select either slide in the pair and open **Pair settings** in the Preview & Edit Pane. It has two sections: **Layout**, and **Pair background**, which sets the background behind the pair. The camera always takes the picture's place in the layout, whatever the other slide is. With two cameras, the first in the pair does.
 
 | Layout | What the congregation sees |

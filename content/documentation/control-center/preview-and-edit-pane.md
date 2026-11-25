@@ -13,6 +13,8 @@ The Preview and Edit Content Pane is what we like to call the **"processing and 
 
 ## Two halves
 
+![The slide grid and text editor in the centre pane](https://media.cloudofworship.com/open/marketing/docs/text-editor.webp)
+
 | Half | What it shows |
 |------|---------------|
 | **Top: the slide grid** | Every slide in the active schedule as a thumbnail, tagged with its type (Text, Media, Song, Hymn, Setlist…). Click one to select it. |

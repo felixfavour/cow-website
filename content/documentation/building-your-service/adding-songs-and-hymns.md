@@ -9,7 +9,7 @@ lastUpdated: "2026-10-25"
 
 ## Adding a song
 
-![Add a song](/images/docs/06-add-song.webp)
+![Add a song](https://media.cloudofworship.com/open/marketing/docs/song-form.webp)
 
 1. Click **Add Song**.
 2. Fill in **Title** and **Artist**.
@@ -45,6 +45,8 @@ If you paste lyrics that already have the English in brackets after each line, C
 To show a translation on screen, select the song slide and click **Show translation** in the toolbar. It is on by default when the song has one. The translation sits under each lyric line. Opening a song slide picks up lyric and translation fixes without pressing Refresh. If a translation is wrong, use **Report an issue** in the editor, see [Editing a slide](/docs/building-your-service/editing-a-slide#report-an-issue).
 
 ## Hymns
+
+![The hymn search panel in Quick Actions](https://media.cloudofworship.com/open/marketing/docs/hymns.webp)
 
 Click **Display Hymns** and search by **title or hymn number**. No match shows *"We couldn't find that hymn"*. Try the number or a distinctive lyric.
 

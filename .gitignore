@@ -24,3 +24,4 @@ logs
 !.env.example
 
 pnpm-lock.yaml
+public/images/docs/

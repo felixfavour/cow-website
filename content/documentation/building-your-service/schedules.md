@@ -13,7 +13,7 @@ A **schedule** is the ordered set of slides for one service or event.
 
 Click the **⌄** next to the schedule name in the top bar:
 
-![Create a schedule dialog](/images/docs/01-schedule-picker.webp)
+![Create a schedule dialog](https://media.cloudofworship.com/open/marketing/docs/schedule-dialog.webp)
 
 | Option | Use it when |
 |--------|-------------|

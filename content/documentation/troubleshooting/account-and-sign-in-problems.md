@@ -9,6 +9,8 @@ lastUpdated: "2026-09-03"
 
 ## "Email linked to an account" during sign-up
 
+![The Cloud of Worship sign-in form](https://media.cloudofworship.com/open/marketing/docs/login-current.webp)
+
 That email already has a CoW account. Use **Sign in**, or [reset your password](/docs/getting-started/signing-in-and-password-recovery).
 
 ## My verification code isn't arriving

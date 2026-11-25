@@ -19,7 +19,7 @@ The Slide Schedule Pane shows all the slides that are ready to be promoted to th
 
 **To promote a slide to the live display, simply click on it.** The projected slide is marked with a red **LIVE** badge.
 
-![A slide live with the LIVE badge](/images/docs/13-go-live-active.webp)
+![A slide selected in the schedule and shown in the live preview](https://media.cloudofworship.com/open/marketing/docs/live-preview.webp)
 
 ## Row actions
 

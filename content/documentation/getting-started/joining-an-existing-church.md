@@ -24,4 +24,6 @@ On this page the password hint is the simpler *"at least 8 characters and includ
 
 ## Getting an invite
 
+![The Invite button in the Control Center](https://media.cloudofworship.com/open/marketing/docs/control-center.webp)
+
 Ask an existing member to click **Invite** in the Control Center's top bar. They can email you directly or copy an invite link. See [Working as a Team](/docs/teams-and-collaboration/working-as-a-team).

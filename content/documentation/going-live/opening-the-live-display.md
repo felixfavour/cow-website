@@ -22,9 +22,11 @@ Click **Go Live** in the Slide Schedule Pane header. It opens a small menu:
 **Go Live** opens the output *window*. It does not by itself put a slide on screen. Once the window is open, the button becomes **End Live Session**. To show something, [promote a slide](/docs/going-live/promoting-slides).
 ::
 
-![Live projection output](/images/docs/14-live-projection.webp)
+![The Go Live menu offers live, stage and livestream outputs](https://media.cloudofworship.com/open/marketing/docs/live-menu.webp)
 
 ## Going fullscreen
+
+![A sample slide shown in the live output window](https://media.cloudofworship.com/open/marketing/docs/live-output-hd.webp)
 
 A banner reads *"Double click the display below to toggle full screen and remove this banner."* Do exactly that, or press **F** with the live window focused.
 

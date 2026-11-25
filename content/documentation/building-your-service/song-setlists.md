@@ -9,7 +9,7 @@ lastUpdated: "2026-10-25"
 
 A **Song Setlist** is a single slide holding **several songs in order**, so you can move through a worship medley without juggling separate slides.
 
-![Song Setlist builder](/images/docs/08-song-setlist.webp)
+![Song Setlist builder](https://media.cloudofworship.com/open/marketing/docs/setlist.webp)
 
 ## Creating one
 

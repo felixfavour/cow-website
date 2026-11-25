@@ -8,7 +8,7 @@ lastUpdated: "2026-11-18"
 featured: true
 ---
 
-![Display Bible panel](/images/docs/04-display-bible.webp)
+![The Display Bible search panel in Quick Actions](https://media.cloudofworship.com/open/marketing/docs/scripture-search.webp)
 
 ## Display a reference
 

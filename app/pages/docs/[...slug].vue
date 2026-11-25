@@ -368,7 +368,7 @@ if (!category.value && !doc.value) {
 .doc-article img {
   display: block;
   max-width: 100%;
-  width: 100%;
+  width: auto;
   border-radius: 16px;
   border: 1px solid #e5e7eb;
   margin: 1.5rem 0;

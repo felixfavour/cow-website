@@ -31,6 +31,8 @@ A **"You are offline"** notice appears: *"CoW will save your work until an inter
 
 ## Prepare before the service
 
+![Diagram showing preparation online, presenting offline and syncing after reconnecting](https://media.cloudofworship.com/open/marketing/docs/offline-flow.svg)
+
 1. **Save your Bible translations.** In **Settings → Bible Version Settings**, click **Save** next to each translation you want offline. Saved versions show as **Saved**, with a progress bar while downloading. **KJV, NIV and NKJV** are bundled.
 2. **Open the schedule on the media computer while you're online**, and click through any slides with videos or large images so they're downloaded.
 3. **Add media ahead of time.** Media uploads in the background, so a large video added just before the service may not be ready. See [Adding media](/docs/building-your-service/adding-media).

@@ -9,6 +9,8 @@ lastUpdated: "2026-09-03"
 
 ## Signing in
 
+![The Cloud of Worship sign-in screen](https://media.cloudofworship.com/open/marketing/docs/login-current.webp)
+
 Go to `app.cloudofworship.com/login` and use **Google** or your **email and password**.
 
 ## Forgot your password

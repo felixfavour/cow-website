@@ -9,6 +9,8 @@ lastUpdated: "2026-10-31"
 
 ## The top bar
 
+![The Control Center panes and live output preview](https://media.cloudofworship.com/open/marketing/docs/control-center.webp)
+
 | Element | What it does |
 |---------|--------------|
 | **Schedule name** (centre) | Click to rename the current schedule inline |

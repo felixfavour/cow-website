@@ -14,7 +14,11 @@ The first time you reach the Control Center with a slide on your schedule, CoW o
 
 Click **"Show me around"** to start it, or dismiss it. It doesn't reappear on its own once dismissed.
 
+![The guided tour welcome card](https://media.cloudofworship.com/open/marketing/docs/guided-tour-welcome.webp)
+
 ## The nine steps
+
+![The guided tour highlights Quick Search and explains the first step](https://media.cloudofworship.com/open/marketing/docs/guided-tour-search.webp)
 
 1. **Quick Search Bar**: search actions, songs, scriptures, or anything else.
 2. **Quick Actions**: every way to build a slide.

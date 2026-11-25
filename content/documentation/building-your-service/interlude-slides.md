@@ -13,6 +13,8 @@ An interlude is an animated slide for the moments between segments: before servi
 
 ## Create an interlude slide
 
+![The interlude form and animation choices](https://media.cloudofworship.com/open/marketing/docs/interlude-form.webp)
+
 1. Open **Add Interlude** in Quick Actions. Searching *break*, *welcome*, *fellowship* or *we'll be right back* finds it too.
 2. Type a **Heading** (up to 60 characters) and, optionally, a **Sub text** (up to 70 characters). New interludes start with *Welcome Home* and *We'll begin shortly*.
 3. Choose an **Animation**. Hover over a card to see it move.

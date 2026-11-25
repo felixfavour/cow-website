@@ -15,6 +15,8 @@ Camera slides are being switched on for churches in stages. If **Add Video Input
 
 ## Add a camera slide
 
+![Introduction to video input slides](https://media.cloudofworship.com/open/marketing/docs/camera-intro.webp)
+
 1. Open **Add Video Input (Camera)** in Quick Actions. Searching *webcam*, *capture card*, *obs*, *vmix* or *preacher* finds it too.
 2. Allow camera access when your browser asks. If you refuse, the form says **Video access denied** and explains how to allow it again in your browser's site settings.
 3. Pick a camera from the dropdown. Click **Refresh** if you plugged one in after opening the form. A preview shows the picture.
@@ -41,6 +43,10 @@ The effect looks the same on the projector, the Live Output and inside a [slide 
 ## Using a teammate's camera
 
 *Teams feature.* If the slide's camera is plugged into a teammate's computer, your Live Output shows their picture instead of opening a camera of your own. It shows *Connecting to (name)'s camera* while it links up, and *(name) is offline* if their computer goes away, and picks up again when it returns. A short Wi-Fi drop reconnects by itself without asking for camera permission. Up to 3 computers can watch one camera at a time.
+
+![Illustrative camera output showing a speaker on stage](https://media.cloudofworship.com/open/marketing/docs/camera-output-example.webp)
+
+*Illustrative output. Speaker photo by [Phil Hearing on Unsplash](https://unsplash.com/photos/a-man-standing-on-top-of-a-stage-next-to-a-microphone-mgPIJGLM0SU).*
 
 ## Where the camera opens
 

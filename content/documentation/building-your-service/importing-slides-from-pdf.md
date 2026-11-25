@@ -20,6 +20,8 @@ CoW imports PDFs from any app. Export or download your deck as a PDF from:
 
 ## Import the PDF
 
+![The media panel accepts PDF files](https://media.cloudofworship.com/open/marketing/docs/media-upload.webp)
+
 1. In the [Quick Actions Pane](/docs/control-center/quick-actions-pane), click **Import Slides from PDF** (or press **Cmd/Ctrl + K** and search for it).
 2. Drag your PDF onto **Upload a File or Drag & Drop here**, or click to browse. The maximum file size is **50 MB**.
 3. Click **Create slides**. CoW reads the PDF, renders each page, and adds a single presentation slide to your schedule holding all the pages.

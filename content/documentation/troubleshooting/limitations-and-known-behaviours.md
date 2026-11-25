@@ -37,6 +37,8 @@ One-way. It clears the live output and won't restore the old slide. It's disable
 
 ## Style defaults only affect new slides
 
+![Slide Settings where defaults for new slides are configured](https://media.cloudofworship.com/open/marketing/docs/settings-general.webp)
+
 Changing default font, size or alignment won't restyle slides you already created. Edit those individually.
 
 ## Upload size caps

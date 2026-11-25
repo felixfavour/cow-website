@@ -20,7 +20,7 @@ Free churches can open the alert panel to try it; sending an alert live needs [T
 
 ## Alerts (Teams)
 
-![Alert configuration](/images/docs/12-add-banner-alert.webp)
+![Alert configuration](https://media.cloudofworship.com/open/marketing/docs/alert-form.webp)
 
 ### Send an alert
 

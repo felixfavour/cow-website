@@ -4,7 +4,7 @@ seoTitle: "Live Sermon Transcription"
 description: "Turn your microphone into a live note-taker that surfaces relevant Bible passages automatically as you preach. A Teams feature."
 category: "Teams & Collaboration"
 order: 2
-lastUpdated: "2026-11-18"
+lastUpdated: "2026-11-24"
 ---
 
 *Teams feature, with 10 free minutes on Free. In beta.* Open with **Transcribe Sermon**.
@@ -33,7 +33,11 @@ The panel keeps the latest **100 lines** on screen, so the Control Center stays 
 
 Teams includes **3 hours of transcription every week**, and the limit resets every Monday. Minutes you don't use roll over into the next week, so a quiet week leaves you up to 6 hours for the one after. Rollover only carries one week: minutes that were rolled over don't roll again. A church on Free gets **10 minutes** once, to try it on a real sermon. The panel shows how many free minutes are left, and the timer turns amber when you're close to the end. Once the free minutes are used, transcription is part of Teams.
 
+On Teams, a notice appears when you have **10 minutes** and again at **2 minutes** left for the week, so transcription doesn't stop mid-sermon without warning. If the connection drops, CoW reconnects without looping, and replays the audio it held while it was down.
+
 ## Setup
+
+![The transcription panel with Transcripts and Scriptures tabs](https://media.cloudofworship.com/open/marketing/docs/transcription.webp)
 
 Choose your input in **Settings → Microphone Settings**, which lists **Available Microphones** and lets you mark one **Use as default**. If the browser blocks access you'll see **"Microphone access denied"**. Grant mic permission in your browser's site settings.
 

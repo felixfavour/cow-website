@@ -12,6 +12,8 @@ CoW is real-time collaborative. Everyone signed into the same church works on th
 
 ## Inviting people
 
+![The Control Center workspace](https://media.cloudofworship.com/open/marketing/docs/control-center.webp)
+
 Click **Invite** in the top bar. You can:
 
 - Enter **email addresses** (comma-separated) and click **Send Invite**, or

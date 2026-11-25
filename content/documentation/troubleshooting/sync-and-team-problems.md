@@ -23,6 +23,8 @@ If the banner keeps coming back, check the computer's Wi-Fi or network cable. Fo
 
 ## Slides I made offline aren't on other computers
 
+![Offline workflow from preparing a device to syncing after reconnection](https://media.cloudofworship.com/open/marketing/docs/offline-flow.svg)
+
 Search the Quick Actions Pane for **Upload Offline Slides**. It pushes slides saved on this device up to the cloud. Then run **Refresh Slides** on the other computer.
 
 ## A slide won't let me edit it

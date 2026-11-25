@@ -18,13 +18,13 @@ Log in at `app.cloudofworship.com`. You land in the **Control Center**.
 
 Click the **⌄** next to the schedule name in the top bar. Pick a template (**Regular Sunday**, **Communion Service**, **Christmas Schedule**) or **Start from blank**.
 
-![Create a schedule dialog](/images/docs/01-schedule-picker.webp)
+![Create a schedule dialog](https://media.cloudofworship.com/open/marketing/docs/schedule-dialog.webp)
 
 ## 3. Add your first slide
 
 From the **Quick Actions Pane** on the left, click **Display Bible** and search `John 3:16`. Select the verse and it lands in your schedule.
 
-![Display Bible panel](/images/docs/04-display-bible.webp)
+![The Display Bible search panel in Quick Actions](https://media.cloudofworship.com/open/marketing/docs/scripture-search.webp)
 
 ## 4. Open the live window
 
@@ -34,7 +34,7 @@ Click **Go Live → Open live window** in the Slide Schedule Pane header, and dr
 
 Click the slide in the **Slide Schedule Pane** to promote it to the Live Display. The projected slide gets a red **LIVE** badge.
 
-![A slide live with the LIVE badge](/images/docs/13-go-live-active.webp)
+![A slide selected in the schedule and shown in the live preview](https://media.cloudofworship.com/open/marketing/docs/live-preview.webp)
 
 ::callout{type="success" title="That's it"}
 You're projecting. Press **↓** and **↑** to move through the schedule, and **B** to blank the screen.

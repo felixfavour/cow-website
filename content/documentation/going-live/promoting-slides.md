@@ -13,7 +13,7 @@ Three ways to put a slide on screen:
 2. Click **Go Live** inside the slide's editor.
 3. Keyboard: **Cmd/Ctrl + P** for the slide in the editor, or **Cmd/Ctrl + [number]** by position.
 
-![A slide live with the LIVE badge](/images/docs/13-go-live-active.webp)
+![A slide selected in the schedule and shown in the live preview](https://media.cloudofworship.com/open/marketing/docs/live-preview.webp)
 
 The live slide is marked **LIVE** in both the Slide Schedule Pane and the Live Output Preview. Clicking a different slide switches instantly.
 

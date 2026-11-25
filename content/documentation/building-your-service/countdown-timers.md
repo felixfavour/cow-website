@@ -13,6 +13,8 @@ Quick Actions has two countdown destinations. Use **Live Display** when the cong
 
 ## Countdown slide for the congregation
 
+![The countdown form in Quick Actions](https://media.cloudofworship.com/open/marketing/docs/countdown-live.webp)
+
 1. Open **Add Countdown Timer** in Quick Actions and choose **Live Display**.
 2. Pick a **Countdown duration**, or set the minutes and seconds precisely.
 3. Optionally add text above the countdown.
@@ -21,6 +23,8 @@ Quick Actions has two countdown destinations. Use **Live Display** when the cong
 When that slide is live, the Stage Display mirrors its remaining time unless a private stage countdown is active.
 
 ## Private countdown for the stage
+
+![The stage display countdown form](https://media.cloudofworship.com/open/marketing/docs/countdown-stage.webp)
 
 1. On the computer running the Stage Display, search Quick Actions for **Stage Display Countdown**. This opens the same form on its **Stage Display** tab.
 2. Set the duration and, if useful, add text beneath the countdown.

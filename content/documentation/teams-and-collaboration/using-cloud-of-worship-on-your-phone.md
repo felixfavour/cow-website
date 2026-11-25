@@ -15,6 +15,10 @@ This is for the moments that do not happen at the media desk. The pastor changes
 
 ## The layout
 
+![The mobile slide grid and navigation buttons](https://media.cloudofworship.com/open/marketing/docs/mobile-grid.webp)
+
+![The Quick Actions panel on a phone-sized screen](https://media.cloudofworship.com/open/marketing/docs/mobile-actions.webp)
+
 The phone opens on the **slide grid**, which is your schedule. Tapping a slide selects it, exactly as on desktop. Three buttons along the bottom bring up the rest, one at a time, and tapping the button you are already on returns you to the grid.
 
 | Tab | What it is |
@@ -28,6 +32,8 @@ Anything you create on the phone reaches the rest of your team instantly, and th
 The phone can create a countdown slide for the congregation. It does not offer [Stage Display](/docs/going-live/stage-display) clock controls, which work on the presentation computer connected to that screen.
 
 ## Driving the projector from a phone
+
+![The mobile Live tab showing the preview and slide schedule](https://media.cloudofworship.com/open/marketing/docs/mobile-live.webp)
 
 Creating slides is one thing. Changing what the congregation is looking at is another, and Cloud of Worship is deliberately careful here.
 

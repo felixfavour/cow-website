@@ -15,7 +15,11 @@ Beyond the projector, CoW can feed your **online stream**. Click **Go Live → C
 
 Each church on Free gets **5 livestream sessions**. Streaming a schedule on a new day uses one, so a Sunday service and a midweek service are two sessions. The **Go Live** menu shows how many are left, for example *"3 of 5 free sessions left"*. Once they are used, the link shows an upgrade message instead of your slides. See [Plans](/docs/teams-and-collaboration/plans-free-vs-teams#free-allowances).
 
+![The Go Live menu offers live, stage and livestream outputs](https://media.cloudofworship.com/open/marketing/docs/live-menu.webp)
+
 ## Using the URL
+
+![Diagram showing the schedule-specific livestream link feeding a browser source](https://media.cloudofworship.com/open/marketing/docs/livestream-flow.svg)
 
 The copied URL points at a dedicated, schedule-specific viewer page. Add it as a **Browser Source** in OBS, vMix or similar software and it will follow your live slides automatically, so your online congregation sees the same lyrics and scripture as the room.
 

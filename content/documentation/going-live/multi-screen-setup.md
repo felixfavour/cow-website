@@ -10,6 +10,8 @@ featured: true
 
 **Settings → Display Settings** handles projector setup.
 
+![Diagram of the Control Center, live display and optional stage display](https://media.cloudofworship.com/open/marketing/docs/display-setup.svg)
+
 ## Control Center
 
 Shows the screen you're operating on, its resolution, and whether it's your primary screen, with the advice: *"This is where behind the scene control is done. We advise you get a second screen for the live content."*
@@ -17,6 +19,8 @@ Shows the screen you're operating on, its resolution, and whether it's your prim
 If the Control Center has ended up on the wrong monitor, click **Move to primary screen**.
 
 ## Live Window Settings
+
+![Display Settings showing the Control Center and live window options](https://media.cloudofworship.com/open/marketing/docs/display-settings.webp)
 
 | Setting | What it does |
 |---------|--------------|

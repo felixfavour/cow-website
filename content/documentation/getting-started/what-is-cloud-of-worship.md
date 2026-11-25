@@ -39,7 +39,7 @@ You'll normally run it on a laptop connected to a projector or second monitor.
 
 ## Logging in
 
-![Login screen](/images/docs/00-login.webp)
+![Login screen](https://media.cloudofworship.com/open/marketing/docs/login-current.webp)
 
 Already have an account? Sign in with **Google** or with your **email and password**. New here? Click **Create an account** and follow the [sign-up wizard](/docs/getting-started/creating-your-account).
 

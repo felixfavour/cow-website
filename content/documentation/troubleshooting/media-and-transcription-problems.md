@@ -17,6 +17,8 @@ Grant microphone permission for `app.cloudofworship.com` in your browser's site 
 
 ## My background image or video won't upload
 
+![The slide background picker in the editor](https://media.cloudofworship.com/open/marketing/docs/background.webp)
+
 Check the size against your plan's cap. Free allows 3 MB images and 250 MB videos. See [Slide backgrounds](/docs/building-your-service/slide-backgrounds).
 
 ## "Some pages didn't upload"

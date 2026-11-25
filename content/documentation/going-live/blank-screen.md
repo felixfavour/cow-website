@@ -13,9 +13,9 @@ This was called **Intermission** in earlier versions of CoW. The feature and the
 
 **Blank** clears the Live Display. Click **Blank** in the Slide Schedule Pane header, or press **B**, whenever the screen should rest: between segments, during prayer, or while you set up.
 
-![Blank idle live screen](/images/docs/15-intermission-live.webp)
-
 ## What shows while blank
+
+![Blank Settings showing the optional video or image background](https://media.cloudofworship.com/open/marketing/docs/blank-settings.webp)
 
 By default the screen goes **completely black**. There's no more automatic church-branding (logo and name) screen. If you want something other than black while idle, set a custom **video or image** background in **Settings → Blank Settings** (**Use a video / image background**).
 

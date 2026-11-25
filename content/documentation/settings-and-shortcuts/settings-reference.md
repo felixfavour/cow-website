@@ -30,6 +30,8 @@ Your plan, billing and payment method. If a payment has failed, a banner offers 
 **Active Microphone**, **Available Microphones**, **Use as default**. Shows **Microphone access denied** if the browser blocks it.
 
 ## Slide Settings
+
+![Slide settings for fonts and formatting](https://media.cloudofworship.com/open/marketing/docs/settings-general.webp)
 Default font · Default font size · Default lines per slide · **Default line spacing** (Single, Normal or Double) · **Fit each line on one row** (shrinks song and hymn text so each lyric line stays on one row) · Default slide alignment · Default background fill type · Uppercase text · Outlined text · Bold text · Text line background · **Song/hymn title and artistes** (show or hide labels) · **Footnotes and credits** · **Transitions between slides** · **Transition style** (Fade, Drift, Breathe or Cascade, a Teams feature, applies to every slide) · **Transition interval** · **Micro animations**
 
 ## Slide Background Settings

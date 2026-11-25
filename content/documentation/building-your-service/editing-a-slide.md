@@ -9,7 +9,7 @@ lastUpdated: "2026-11-18"
 
 Select a slide in the Preview and Edit Content Pane:
 
-![Slide editor](/images/docs/03-slide-editor.webp)
+![A text slide selected in the editor, with formatting controls above its preview](https://media.cloudofworship.com/open/marketing/docs/text-editor.webp)
 
 | Control | What it does |
 |---------|--------------|

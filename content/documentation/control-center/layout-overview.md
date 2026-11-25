@@ -16,7 +16,7 @@ The Cloud of Worship interface is divided into three main sections:
 
 Each section is designed to simplify controlling your church's on-screen projection and let you multitask effectively.
 
-![The three-pane Control Center](/images/docs/02-operator-dashboard.webp)
+![The three-pane Control Center](https://media.cloudofworship.com/open/marketing/docs/control-center.webp)
 
 ## Resizing the panes
 

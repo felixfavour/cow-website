@@ -22,6 +22,8 @@ lastUpdated: "2026-11-11"
 
 ## Overlays
 
+![Examples of slide types in a schedule](https://media.cloudofworship.com/open/marketing/docs/control-center.webp)
+
 Any slide can also be flagged as an **overlay** (via **⋮ → Duplicate as Overlay**), which layers it over the live slide rather than replacing it. See [Alerts & overlays](/docs/going-live/alerts-and-overlays).
 
 ## Walkthroughs
