@@ -1,5 +1,18 @@
 [
   {
+    "version": "v1.5.1",
+    "title": "Version Hope",
+    "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
+    "date": "Nov 22, 2026",
+    "description": "Stop transcription reconnect loops and warn before the weekly limit",
+    "changes": [
+      "Stop transcription reconnect loops and warn before the weekly limit",
+      "Keep the video link when adding a saved YouTube or Vimeo slide",
+      "Scale bible reference text with its box font size",
+      "Apply free layout to time slides"
+    ]
+  },
+  {
     "version": "v1.5.0",
     "title": "Version Generosity",
     "image": "https://revaise.s3.us-east-2.amazonaws.com/cow-og.webp",
